@@ -7,6 +7,15 @@
     <meta name="description" content="上海虚空有物科技有限公司 - 我们专注于科技未来的认知套利，为具备远见的资本导航至价值的目的地。">
     <meta name="keywords" content="虚空有物,科技投资,人工智能投资,深科技,认知套利,科技价值">
     
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PNS6CHMQZ3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-PNS6CHMQZ3');
+    </script>
+    
     <!-- 外部资源 -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
@@ -262,17 +271,19 @@
     <nav class="vm-nav fixed top-0 w-full z-50">
         <div class="max-w-7xl mx-auto px-6 py-4">
             <div class="flex justify-between items-center">
-                <div class="vm-gradient-text text-2xl font-bold">VM</div>
-                <div class="hidden md:flex space-x-6">
-                    <a href="#" class="hover:text-yellow-400 transition-colors">首页</a>
-                    <a href="#philosophy" class="hover:text-yellow-400 transition-colors">虚空有物</a>
-                    <a href="#cognitive-arbitrage" class="hover:text-yellow-400 transition-colors">认知套利</a>
-                    <a href="#performance" class="hover:text-yellow-400 transition-colors">业绩表现</a>
-                    <a href="#values" class="hover:text-yellow-400 transition-colors">核心价值观</a>
-                    <a href="#focus-areas" class="hover:text-yellow-400 transition-colors">关注领域</a>
-                    <a href="#story" class="hover:text-yellow-400 transition-colors">品牌故事</a>
-                    <a href="#contact" class="hover:text-yellow-400 transition-colors">联系我们</a>
+                <!-- 左侧：品牌标识 -->
+                <div class="flex items-center space-x-4">
+                    <div class="vm-gradient-text text-2xl font-bold">VM</div>
+                    <div class="text-gray-300 text-sm font-light">上海虚空有物科技公司</div>
                 </div>
+                
+                <!-- 右侧：导航菜单 -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#" class="hover:text-yellow-400 transition-colors">首页</a>
+                    <a href="#" class="hover:text-yellow-400 transition-colors opacity-60 cursor-not-allowed">行业趋势</a>
+                </div>
+                
+                <!-- 移动端菜单按钮 -->
                 <button class="md:hidden text-yellow-400">
                     <i class="fas fa-bars"></i>
                 </button>
@@ -418,7 +429,7 @@
                 <div class="luxury-card p-12 rounded-2xl text-center hover:scale-105 transition-all duration-300">
                     <div class="mb-8">
                         <div class="text-8xl vm-gradient-text mb-6">∅</div>
-                        <h3 class="text-4xl font-bold mb-4 text-white">虚空 <span class="vm-gold-text">VOID</span></h3>
+                        <h3 class="text-4xl font-bold mb-4 vm-gold-text">虚空 <span class="vm-gold-text">VOID</span></h3>
                     </div>
                     <div class="space-y-4 text-left">
                         <p class="text-lg text-gray-300 leading-relaxed">
@@ -437,7 +448,7 @@
                 <div class="luxury-card p-12 rounded-2xl text-center hover:scale-105 transition-all duration-300">
                     <div class="mb-8">
                         <div class="text-8xl vm-gradient-text mb-6">◉</div>
-                        <h3 class="text-4xl font-bold mb-4 text-white">有物 <span class="vm-gold-text">SUBSTANCE</span></h3>
+                        <h3 class="text-4xl font-bold mb-4 vm-gold-text">有物 <span class="vm-gold-text">SUBSTANCE</span></h3>
                     </div>
                     <div class="space-y-4 text-left">
                         <p class="text-lg text-gray-300 leading-relaxed">

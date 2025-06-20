@@ -32,6 +32,7 @@
 - **Anime.js**: 轻量级动画库，实现流畅的页面动效
 - **Apache ECharts 5**: 专业的数据可视化图表库
 - **Font Awesome**: 图标库
+- **Google Analytics 4**: 网站流量分析和用户行为追踪
 
 ### 核心功能模块
 
@@ -145,8 +146,12 @@ vm-website/
 ## 📈 数据分析
 
 ### 用户行为追踪
-建议集成以下分析工具：
-- Google Analytics 4
+已集成的分析工具：
+- **Google Analytics 4**: 衡量ID `G-PNS6CHMQZ3`，数据流ID `113749428883`
+- 数据流名称: voidmatter
+- 监控域名: https://www.voidmatter.cn
+
+建议额外集成：
 - 百度统计
 - 用户热力图工具
 
