@@ -19,9 +19,6 @@
     
     <!-- 外部资源 -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- 自定义字体 -->
@@ -2121,18 +2118,18 @@
                     
                     // 如果还没有加载过图片，则开始加载
                     if (!qrLoaded) {
-                        // 模拟加载延迟（可以替换为实际的图片加载）
-                        setTimeout(() => {
-                            wechatQrImage.src = 'wxcode.jpg';
-                            wechatQrImage.onload = function() {
-                                wechatQrLoading.style.display = 'none';
-                                wechatQrImage.style.display = 'block';
-                                qrLoaded = true;
-                            };
-                            wechatQrImage.onerror = function() {
-                                wechatQrLoading.innerHTML = '<div class="flex flex-col items-center"><i class="fas fa-exclamation-triangle text-2xl text-red-400 mb-2"></i><span class="text-sm text-red-500">加载失败</span></div>';
-                            };
-                        }, 800);
+                        wechatQrLoading.style.display = 'flex';
+                        wechatQrImage.style.display = 'none';
+                        
+                        wechatQrImage.src = 'wxcode.jpg';
+                        wechatQrImage.onload = function() {
+                            wechatQrLoading.style.display = 'none';
+                            wechatQrImage.style.display = 'block';
+                            qrLoaded = true;
+                        };
+                        wechatQrImage.onerror = function() {
+                            wechatQrLoading.innerHTML = '<div class="flex flex-col items-center"><i class="fas fa-exclamation-triangle text-2xl text-red-400 mb-2"></i><span class="text-sm text-red-500">加载失败</span></div>';
+                        };
                     } else {
                         // 如果已经加载过，直接显示
                         wechatQrLoading.style.display = 'none';
@@ -2167,5 +2164,10 @@
 
     <!-- JavaScript -->
     <script src="js/main.js"></script>
+
+    <!-- 外部JS资源 -->
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" defer></script>
 </body>
 </html> 
