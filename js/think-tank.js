@@ -206,6 +206,7 @@ function openReportModal(reportUrl, reportTitle) {
                          .tk-modal-body {
                  height: calc(100% - 100px);
                  position: relative;
+                 overflow: hidden;
              }
             
             .tk-loading-container {

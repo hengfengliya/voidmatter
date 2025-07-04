@@ -45,7 +45,7 @@
                 </div>
                 
                 <!-- 右侧：导航菜单 -->
-                <div class="hidden md:flex space-x-12">
+                <div class="hidden md:flex space-x-12 items-center">
                     <a href="index.html" class="relative group text-gray-300 hover:text-yellow-400 transition-colors duration-300 font-light tracking-wide">
                         <span class="relative z-10">首页</span>
                         <div class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-yellow-400 to-yellow-600 group-hover:w-full transition-all duration-300"></div>
@@ -58,12 +58,46 @@
                         <span class="relative z-10">行业趋势</span>
                         <div class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-yellow-400 to-yellow-600 group-hover:w-full transition-all duration-300"></div>
                     </a>
+                    <!-- 会员区域将由JS动态插入这里 -->
                 </div>
                 
-                <!-- 移动端菜单按钮 -->
-                <button class="md:hidden text-yellow-400 hover:text-yellow-300 transition-colors duration-300 transform hover:scale-110">
-                    <i class="fas fa-bars text-xl"></i>
-                </button>
+                <!-- 移动端菜单按钮和会员区域 -->
+                <div class="md:hidden flex items-center space-x-4">
+                    <!-- 移动端会员区域 -->
+                    <div class="mobile-member-area" id="mobile-member-area"></div>
+                    
+                    <!-- 移动端菜单按钮 -->
+                    <button class="text-yellow-400 hover:text-yellow-300 transition-colors duration-300 transform hover:scale-110" id="mobile-menu-btn">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 移动端菜单 -->
+        <div class="mobile-menu hidden md:hidden" id="mobile-menu">
+            <div class="absolute top-full left-0 right-0 bg-gradient-to-b from-black/95 to-gray-900/95 backdrop-blur-lg border-t border-yellow-400/20">
+                <div class="max-w-7xl mx-auto px-6 py-6">
+                    <div class="flex flex-col space-y-4">
+                        <a href="index.html" class="flex items-center space-x-3 text-gray-300 hover:text-yellow-400 transition-colors duration-300 py-3 border-b border-gray-800">
+                            <i class="fas fa-home w-5"></i>
+                            <span>首页</span>
+                        </a>
+                        <a href="think-tank.html" class="flex items-center space-x-3 text-yellow-400 py-3 border-b border-gray-800">
+                            <i class="fas fa-brain w-5"></i>
+                            <span>质点智库</span>
+                        </a>
+                        <a href="#" class="flex items-center space-x-3 text-gray-300 hover:text-yellow-400 transition-colors duration-300 py-3 border-b border-gray-800">
+                            <i class="fas fa-chart-line w-5"></i>
+                            <span>行业趋势</span>
+                        </a>
+                        
+                        <!-- 移动端会员信息区域 -->
+                        <div class="mobile-member-info pt-4" id="mobile-member-info">
+                            <!-- 会员信息将由JS动态插入 -->
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
@@ -321,6 +355,8 @@
     </footer>
 
     <!-- JavaScript -->
+    <script src="js/auth-credentials.js"></script>
+    <script src="js/auth.js"></script>
     <script src="js/reports-manager.js"></script>
     <script src="js/think-tank.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" defer></script>

@@ -1,0 +1,17 @@
+{
+  "name": "vm_1.1_jin",
+  "version": "1.0.0",
+  "description": "> 于未知处，见未来值 - VM（上海虚空有物科技有限公司）官方网站",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.11"
+  }
+}

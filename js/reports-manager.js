@@ -102,8 +102,7 @@ function generateReportCard(report) {
     return `
         <div class="report-card cursor-pointer" 
              ${dataAttrs}
-             data-report-url="${report.filePath}"
-             onclick="openReportModal('${report.filePath}', '${report.title}')">
+             onclick="requestAccess('${report.filePath}')">
             
             <div class="report-card-header">
                 <div class="report-tags">
@@ -259,4 +258,7 @@ if (typeof window !== 'undefined') {
         formatPublishDate,
         formatNumber
     };
+    
+    // 暴露报告数据库供认证系统使用
+    window.reportsDatabase = reportsDatabase;
 } 
