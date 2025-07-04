@@ -1,0 +1,2153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全球石油与天然气行业：市场动态、竞争格局与未来轨迹的结构性分析</title>
+    
+    <!-- CDN引用 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.4.3/echarts.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-gold: #FFD700;
+            --matte-gold: #DAA520;
+            --dark-gold: #B8860B;
+            --accent-gold: #FFF8DC;
+            --bg-dark: #000000;
+            --bg-gradient-start: #0A0A0A;
+            --bg-gradient-end: #1A1A1A;
+            --bg-section: rgba(15, 15, 15, 0.95);
+            --bg-card: rgba(20, 20, 20, 0.9);
+            --text-primary: #FFFFFF;
+            --text-secondary: #E5E5E5;
+            --text-muted: #BBBBBB;
+            --border-subtle: rgba(255, 215, 0, 0.15);
+            --shadow-gold: rgba(255, 215, 0, 0.2);
+            --glass-effect: rgba(255, 255, 255, 0.05);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
+            background-attachment: fixed;
+            color: var(--text-primary);
+            line-height: 1.8;
+            overflow-x: hidden;
+            font-weight: 400;
+            letter-spacing: 0.02em;
+        }
+        
+        .title-font {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+        
+        /* 标题居中样式 */
+        h1, h2, h3, h4, h5, h6 {
+            text-align: center;
+        }
+        
+        .section-title {
+            text-align: center;
+        }
+        
+        .section-fade {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        
+        .section-fade.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .gold-gradient {
+            background: linear-gradient(135deg, var(--primary-gold) 0%, var(--matte-gold) 50%, var(--dark-gold) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            position: relative;
+        }
+        
+        .gold-gradient::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, var(--primary-gold), transparent);
+            transform: scaleX(0);
+            transition: transform 0.6s ease;
+        }
+        
+        .gold-gradient:hover::after {
+            transform: scaleX(1);
+        }
+        
+        .hero-section {
+            background: 
+                radial-gradient(ellipse at 30% 20%, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
+                radial-gradient(ellipse at 70% 80%, rgba(218, 165, 32, 0.08) 0%, transparent 50%),
+                linear-gradient(135deg, var(--bg-dark) 0%, rgba(26, 26, 26, 0.8) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                repeating-linear-gradient(
+                    45deg,
+                    transparent,
+                    transparent 50px,
+                    rgba(255, 215, 0, 0.02) 50px,
+                    rgba(255, 215, 0, 0.02) 100px
+                );
+            pointer-events: none;
+        }
+        
+        .content-section {
+            background: var(--bg-section);
+            backdrop-filter: blur(20px);
+            border-top: 1px solid var(--border-subtle);
+            position: relative;
+        }
+        
+        .content-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--primary-gold), transparent);
+            opacity: 0.6;
+        }
+        
+        .glass-card {
+            background: var(--bg-card);
+            backdrop-filter: blur(15px);
+            border: 1px solid var(--border-subtle);
+            border-radius: 16px;
+            box-shadow: 
+                0 8px 32px rgba(0, 0, 0, 0.4),
+                0 1px 0 rgba(255, 215, 0, 0.1) inset;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .glass-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.1), transparent);
+            transition: left 0.6s ease;
+        }
+        
+        .glass-card:hover::before {
+            left: 100%;
+        }
+        
+        .glass-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 
+                0 20px 40px rgba(0, 0, 0, 0.6),
+                0 0 0 1px rgba(255, 215, 0, 0.3);
+        }
+        
+        .chart-container {
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 16px;
+            box-shadow: 
+                0 4px 20px rgba(0, 0, 0, 0.3),
+                0 1px 0 rgba(255, 215, 0, 0.1) inset;
+            backdrop-filter: blur(15px);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .chart-container::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 50% 50%, rgba(255, 215, 0, 0.05) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        
+        .data-highlight {
+            font-size: 3rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, var(--primary-gold), var(--matte-gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+            letter-spacing: -0.02em;
+            position: relative;
+        }
+        
+        .table-modern {
+            background: var(--bg-card);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border-subtle);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(15px);
+        }
+        
+        .table-modern th {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(218, 165, 32, 0.1));
+            color: var(--primary-gold);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-size: 0.85rem;
+            padding: 1.25rem 1rem;
+        }
+        
+        .table-modern td {
+            border-bottom: 1px solid rgba(255, 215, 0, 0.08);
+            padding: 1rem;
+            transition: background-color 0.2s ease;
+        }
+        
+        .table-modern tr:hover td {
+            background-color: rgba(255, 215, 0, 0.05);
+        }
+        
+        .scroll-indicator {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-gold), var(--matte-gold), var(--dark-gold));
+            transform: scaleX(0);
+            transform-origin: 0;
+            z-index: 1000;
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        }
+        
+        .section-number {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary-gold), var(--matte-gold));
+            color: var(--bg-dark);
+            font-weight: 700;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+        }
+        
+        .floating-ornament {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background: var(--primary-gold);
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(180deg); }
+        }
+        
+        .text-glow {
+            text-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+        }
+        
+        .hover-lift {
+            transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-8px);
+        }
+        
+        .references-section {
+            font-size: 0.75rem;
+            line-height: 1.4;
+            color: var(--text-muted);
+            background: rgba(10, 10, 10, 0.8);
+            border-top: 2px solid var(--border-subtle);
+        }
+        
+        .references-section a {
+            color: var(--matte-gold);
+            text-decoration: none;
+            border-bottom: 1px dotted rgba(218, 165, 32, 0.5);
+            transition: all 0.2s ease;
+        }
+        
+        .references-section a:hover {
+            color: var(--primary-gold);
+            border-bottom-color: var(--primary-gold);
+        }
+        
+        .reference-item {
+            margin-bottom: 0.5rem;
+            padding-left: 1rem;
+            text-indent: -1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .data-highlight {
+                font-size: 2rem;
+            }
+            
+            .section-number {
+                width: 30px;
+                height: 30px;
+                font-size: 1rem;
+            }
+            
+            .references-section {
+                font-size: 0.7rem;
+            }
+        }
+        
+        /* 新增的装饰性元素 */
+        .decorative-line {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--primary-gold), transparent);
+            margin: 2rem 0;
+            opacity: 0.6;
+        }
+        
+        .gold-accent {
+            color: var(--primary-gold);
+            font-weight: 600;
+        }
+        
+        .subtle-emphasis {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), transparent);
+            border-left: 3px solid var(--primary-gold);
+            padding: 1rem 1.5rem;
+            border-radius: 0 8px 8px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- 滚动进度条 -->
+    <div class="scroll-indicator"></div>
+    
+    <!-- 页面头部 -->
+    <header class="hero-section min-h-screen flex items-center justify-center relative">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-black/40"></div>
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <div class="mb-6">
+                <p class="text-sm text-gray-400 mb-2">Published on July 3, 2025</p>
+                <p class="text-sm text-gray-400">本报告发布于：2025年7月3日</p>
+            </div>
+            
+            <h1 class="title-font text-4xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight">
+                <span class="gold-gradient">全球石油与天然气行业</span>
+            </h1>
+            <h2 class="title-font text-2xl md:text-3xl lg:text-4xl font-semibold mb-12 text-gray-300">
+                市场动态、竞争格局与未来轨迹的结构性分析
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+                <div class="text-center">
+                    <div class="data-highlight">1.026</div>
+                    <p class="text-gray-400">亿桶/日</p>
+                    <p class="text-sm text-gray-500 mt-2">Global liquid fuels demand</p>
+                </div>
+                <div class="text-center">
+                    <div class="data-highlight">40%</div>
+                    <p class="text-gray-400">全球供应</p>
+                    <p class="text-sm text-gray-500 mt-2">OPEC+ market control</p>
+                </div>
+                <div class="text-center">
+                    <div class="data-highlight">2030</div>
+                    <p class="text-gray-400">关键转折点</p>
+                    <p class="text-sm text-gray-500 mt-2">Energy transition milestone</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主要内容区域 -->
+    <main class="relative">
+        <!-- 执行摘要 -->
+        <section class="content-section py-20 section-fade">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="title-font text-3xl md:text-5xl font-bold mb-12 gold-gradient text-center">执行摘要</h2>
+                    <div class="prose prose-lg text-gray-300 max-w-none">
+                        <p class="text-xl leading-relaxed mb-8">
+                            本报告旨在为机构投资者和高净值客户提供一份关于全球石油与天然气（油气）行业的全面、深入且系统性的分析。基于对海量数据的严谨梳理与逻辑推演，本报告剖析了贯穿上游（勘探与生产）、中游（运输与储存）及下游（炼化与销售）的完整价值链，揭示了驱动行业运行的核心变量、结构性矛盾与周期性规律。
+                        </p>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-12">
+                            <div class="glass-card p-8 hover-lift">
+                                <div class="flex items-center mb-4">
+                                    <span class="section-number">1</span>
+                                    <h3 class="text-xl font-semibold gold-accent">需求端：双速格局形成</h3>
+                                </div>
+                                <p class="text-secondary leading-relaxed">
+                                    发达经济体（OECD）的石油需求因能源转型和效率提升而步入结构性下行通道，而新兴市场（非OECD），特别是印度和亚洲其他地区，将成为未来需求增长的主要引擎。
+                                </p>
+                            </div>
+                            <div class="glass-card p-8 hover-lift">
+                                <div class="flex items-center mb-4">
+                                    <span class="section-number">2</span>
+                                    <h3 class="text-xl font-semibold gold-accent">供给端：复杂博弈</h3>
+                                </div>
+                                <p class="text-secondary leading-relaxed">
+                                    市场平衡高度依赖于OPEC+联盟的生产纪律与非OPEC+国家，特别是美国页岩油的增长动态之间的复杂博弈。
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <p class="text-lg leading-relaxed mb-6">
+                            更重要的是，需求的增长动力正从传统的交通燃料转向石化原料。数据显示，从2019年到2024年，全球石油需求的净增长几乎完全由石化原料需求贡献，这一趋势预计将持续并定义未来十年的市场格局。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 第一部分：全球油气价值链 -->
+        <section class="content-section py-20 section-fade">
+            <div class="container mx-auto px-6">
+                <h2 class="title-font text-3xl md:text-5xl font-bold mb-12 gold-gradient text-center">全球油气价值链：基础框架</h2>
+                
+                <div class="max-w-6xl mx-auto">
+                    <p class="text-xl text-gray-300 mb-12 leading-relaxed">
+                        对全球石油与天然气行业的任何深度分析，都必须始于对其核心价值链的清晰界定。该行业通常被划分为三个主要环节：上游（Upstream）、中游（Midstream）和下游（Downstream）。
+                    </p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                        <div class="glass-card p-8 hover-lift">
+                            <div class="text-center mb-6">
+                                <div class="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-primary-gold to-matte-gold rounded-full flex items-center justify-center shadow-lg">
+                                    <i class="fas fa-oil-well text-2xl text-bg-dark"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold gold-accent text-glow">上游 Upstream</h3>
+                                <p class="text-sm text-muted mt-2">勘探与生产 | Exploration & Production</p>
+                                <div class="decorative-line w-16 mx-auto mt-4"></div>
+                            </div>
+                            <ul class="text-secondary space-y-2 mb-6">
+                                <li>• 地质勘探与地震分析</li>
+                                <li>• 勘探性钻井</li>
+                                <li>• 商业化开发</li>
+                                <li>• 石油天然气生产</li>
+                            </ul>
+                            <div class="subtle-emphasis">
+                                <p class="text-sm gold-accent font-semibold">风险回报最高的环节</p>
+                                <p class="text-xs text-muted">直接受国际油气价格影响</p>
+                            </div>
+                        </div>
+                        
+                        <div class="glass-card p-8 hover-lift">
+                            <div class="text-center mb-6">
+                                <div class="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-primary-gold to-matte-gold rounded-full flex items-center justify-center shadow-lg">
+                                    <i class="fas fa-truck text-2xl text-bg-dark"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold gold-accent text-glow">中游 Midstream</h3>
+                                <p class="text-sm text-muted mt-2">运输与储存 | Transportation & Storage</p>
+                                <div class="decorative-line w-16 mx-auto mt-4"></div>
+                            </div>
+                            <ul class="text-secondary space-y-2 mb-6">
+                                <li>• 管道运输系统</li>
+                                <li>• 储存设施</li>
+                                <li>• 液化天然气终端</li>
+                                <li>• 营销与交易</li>
+                            </ul>
+                            <div class="subtle-emphasis">
+                                <p class="text-sm gold-accent font-semibold">稳定现金流模式</p>
+                                <p class="text-xs text-muted">基于费用的收入结构</p>
+                            </div>
+                        </div>
+                        
+                        <div class="glass-card p-8 hover-lift">
+                            <div class="text-center mb-6">
+                                <div class="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-primary-gold to-matte-gold rounded-full flex items-center justify-center shadow-lg">
+                                    <i class="fas fa-industry text-2xl text-bg-dark"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold gold-accent text-glow">下游 Downstream</h3>
+                                <p class="text-sm text-muted mt-2">炼化与销售 | Refining & Marketing</p>
+                                <div class="decorative-line w-16 mx-auto mt-4"></div>
+                            </div>
+                            <ul class="text-secondary space-y-2 mb-6">
+                                <li>• 炼油与石化</li>
+                                <li>• 产品精制</li>
+                                <li>• 分销网络</li>
+                                <li>• 零售终端</li>
+                            </ul>
+                            <div class="subtle-emphasis">
+                                <p class="text-sm gold-accent font-semibold">裂解价差驱动</p>
+                                <p class="text-xs text-muted">原油成本与成品油价差</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 一体化商业模式 -->
+                    <div class="bg-gradient-to-r from-gray-800/40 to-gray-900/40 p-8 rounded-xl border border-yellow-400/10 mb-12">
+                        <h3 class="text-2xl font-bold text-yellow-400 mb-6">一体化商业模式的战略意义</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-200 mb-4">高油价时期</h4>
+                                <p class="text-gray-300">上游勘探与生产部门利润丰厚，成为公司的主要盈利来源。下游炼化部门可能因原料成本上升而面临利润压力。</p>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-200 mb-4">低油价时期</h4>
+                                <p class="text-gray-300">上游部门盈利能力受到侵蚀。下游部门则受益于低廉的原料成本，裂解价差通常会扩大，为整个公司提供盈利缓冲。</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 裂解价差解释 -->
+                    <div class="bg-gray-900/60 p-8 rounded-xl border border-yellow-400/20">
+                        <h3 class="text-2xl font-bold text-yellow-400 mb-6">理解裂解价差 Crack Spread</h3>
+                        <p class="text-gray-300 mb-6">
+                            裂解价差本质上是炼油厂的毛利率，即其产品（成品油）售价与原料（原油）成本之间的差额。行业标准的3:2:1裂解价差假设从3桶原油中可以提炼出2桶汽油和1桶馏分油。
+                        </p>
+                        <div class="bg-yellow-400/10 p-6 rounded-lg">
+                            <h4 class="text-lg font-semibold text-yellow-400 mb-4">3:2:1 裂解价差计算公式</h4>
+                            <div class="font-mono text-sm text-gray-300 bg-black/40 p-4 rounded">
+                                3:2:1 Crack Spread ($/bbl) = [(2 × 汽油价格 × 42) + (1 × 馏分油价格 × 42) - (3 × 原油价格)] / 3
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第二部分：全球供需 -->
+        <section class="content-section py-20 section-fade">
+            <div class="container mx-auto px-6">
+                <h2 class="title-font text-3xl md:text-5xl font-bold mb-12 gold-gradient text-center">全球供需：市场的核心引擎</h2>
+                
+                <div class="max-w-6xl mx-auto">
+                    <!-- 需求分析 -->
+                    <div class="mb-16">
+                        <h3 class="text-3xl font-bold text-yellow-400 mb-8">全球需求：双轨并行的结构性演变</h3>
+                        
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
+                            <div>
+                                <h4 class="text-xl font-semibold text-gray-200 mb-6">总体需求增长放缓</h4>
+                                <div class="space-y-4">
+                                    <div class="flex items-center justify-between p-4 bg-gray-800/40 rounded-lg">
+                                        <span class="text-gray-300">2025年全球需求增长</span>
+                                        <span class="text-yellow-400 font-bold">72万桶/日</span>
+                                    </div>
+                                    <div class="flex items-center justify-between p-4 bg-gray-800/40 rounded-lg">
+                                        <span class="text-gray-300">2026年全球需求增长</span>
+                                        <span class="text-yellow-400 font-bold">74万桶/日</span>
+                                    </div>
+                                    <div class="flex items-center justify-between p-4 bg-gray-800/40 rounded-lg">
+                                        <span class="text-gray-300">当前全球总需求</span>
+                                        <span class="text-yellow-400 font-bold">1.026亿桶/日</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <h4 class="text-xl font-semibold text-gray-200 mb-6">区域需求分化</h4>
+                                <div class="space-y-6">
+                                    <div class="border-l-4 border-red-400 pl-4">
+                                        <h5 class="font-semibold text-red-400">OECD国家</h5>
+                                        <p class="text-sm text-gray-300">步入结构性下行通道，2025年和2026年需求将分别下滑12万桶/日和24万桶/日</p>
+                                    </div>
+                                    <div class="border-l-4 border-green-400 pl-4">
+                                        <h5 class="font-semibold text-green-400">中国</h5>
+                                        <p class="text-sm text-gray-300">贡献过去十年60%的全球增长，但增长引擎换挡，预计2027年见顶</p>
+                                    </div>
+                                    <div class="border-l-4 border-blue-400 pl-4">
+                                        <h5 class="font-semibold text-blue-400">印度</h5>
+                                        <p class="text-sm text-gray-300">接棒成为增长主动力，到2030年将贡献100万桶/日的需求增量</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 部门需求转移 -->
+                        <div class="bg-gradient-to-br from-gray-800/60 to-gray-900/60 p-8 rounded-xl border border-yellow-400/20">
+                            <h4 class="text-2xl font-bold text-yellow-400 mb-6">部门需求的结构性转移：石化部门的崛起</h4>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <div>
+                                    <h5 class="text-lg font-semibold text-red-400 mb-4">交通燃料需求见顶</h5>
+                                    <ul class="text-gray-300 space-y-2">
+                                        <li>• 电动汽车快速普及</li>
+                                        <li>• 燃油效率持续提升</li>
+                                        <li>• 生物燃料发展</li>
+                                        <li>• 最早可能在2027年见顶</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h5 class="text-lg font-semibold text-green-400 mb-4">石化原料需求主导</h5>
+                                    <ul class="text-gray-300 space-y-2">
+                                        <li>• 2019-2024年净增长超过95%来自石化</li>
+                                        <li>• 到2030年每六桶石油中有一桶用于石化</li>
+                                        <li>• 需求量将达到1840万桶/日</li>
+                                        <li>• 塑料、合成纤维、化学品需求强劲</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 供给分析 -->
+                    <div class="mb-16">
+                        <h3 class="text-3xl font-bold text-yellow-400 mb-8">全球供给：OPEC+与非OPEC+的动态博弈</h3>
+                        
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                            <div class="bg-gray-800/40 p-8 rounded-xl border border-yellow-400/10">
+                                <h4 class="text-xl font-semibold text-yellow-400 mb-6">OPEC+：市场"稳定器"</h4>
+                                <div class="space-y-4 mb-6">
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-gray-300">全球供应控制</span>
+                                        <span class="text-yellow-400 font-bold">~40%</span>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-gray-300">有效闲置产能</span>
+                                        <span class="text-yellow-400 font-bold">539万桶/日</span>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-gray-300">2025年6-7月增产</span>
+                                        <span class="text-yellow-400 font-bold">40万桶/日</span>
+                                    </div>
+                                </div>
+                                <p class="text-sm text-gray-400">通过协同生产政策维持油价在合意区间，但面临成员国配额合规性挑战</p>
+                            </div>
+                            
+                            <div class="bg-gray-800/40 p-8 rounded-xl border border-yellow-400/10">
+                                <h4 class="text-xl font-semibold text-yellow-400 mb-6">非OPEC+：美国页岩油引领</h4>
+                                <div class="space-y-4 mb-6">
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-gray-300">2025年产量增长</span>
+                                        <span class="text-yellow-400 font-bold">140万桶/日</span>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-gray-300">2026年产量增长</span>
+                                        <span class="text-yellow-400 font-bold">84万桶/日</span>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-gray-300">美国产量峰值</span>
+                                        <span class="text-yellow-400 font-bold">1350万桶/日</span>
+                                    </div>
+                                </div>
+                                <p class="text-sm text-gray-400">美国页岩油的短周期特性使其能够快速响应价格信号，成为平衡市场的重要力量</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 市场平衡图表容器 -->
+                    <div class="chart-container p-8 mb-12">
+                        <h4 class="text-xl font-semibold text-yellow-400 mb-6">全球液体燃料供需平衡预测 (2024-2026)</h4>
+                        <div id="supplyDemandChart" style="height: 400px;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第三部分：价格形成与基准 -->
+        <section class="content-section py-20 section-fade">
+            <div class="container mx-auto px-6">
+                <h2 class="title-font text-3xl md:text-5xl font-bold mb-12 gold-gradient text-center">价格形成、基准与历史背景</h2>
+                
+                <div class="max-w-6xl mx-auto">
+                    <!-- 关键基准 -->
+                    <div class="mb-16">
+                        <h3 class="text-3xl font-bold text-yellow-400 mb-8">关键全球基准：市场的通用语言</h3>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                            <div class="bg-gradient-to-br from-gray-800/60 to-gray-900/60 p-6 rounded-xl border border-yellow-400/20 text-center">
+                                <h4 class="text-lg font-bold text-yellow-400 mb-2">布伦特原油</h4>
+                                <p class="text-sm text-gray-400 mb-4">Brent Crude</p>
+                                <div class="text-2xl font-bold text-white mb-2">~$83</div>
+                                <p class="text-xs text-gray-500">全球海运市场基准</p>
+                            </div>
+                            
+                            <div class="bg-gradient-to-br from-gray-800/60 to-gray-900/60 p-6 rounded-xl border border-yellow-400/20 text-center">
+                                <h4 class="text-lg font-bold text-yellow-400 mb-2">WTI原油</h4>
+                                <p class="text-sm text-gray-400 mb-4">West Texas Intermediate</p>
+                                <div class="text-2xl font-bold text-white mb-2">~$79</div>
+                                <p class="text-xs text-gray-500">北美市场基准</p>
+                            </div>
+                            
+                            <div class="bg-gradient-to-br from-gray-800/60 to-gray-900/60 p-6 rounded-xl border border-yellow-400/20 text-center">
+                                <h4 class="text-lg font-bold text-yellow-400 mb-2">亨利港天然气</h4>
+                                <p class="text-sm text-gray-400 mb-4">Henry Hub</p>
+                                <div class="text-2xl font-bold text-white mb-2">$2.19</div>
+                                <p class="text-xs text-gray-500">美国天然气基准</p>
+                            </div>
+                            
+                            <div class="bg-gradient-to-br from-gray-800/60 to-gray-900/60 p-6 rounded-xl border border-yellow-400/20 text-center">
+                                <h4 class="text-lg font-bold text-yellow-400 mb-2">TTF天然气</h4>
+                                <p class="text-sm text-gray-400 mb-4">Dutch TTF</p>
+                                <div class="text-2xl font-bold text-white mb-2">€28</div>
+                                <p class="text-xs text-gray-500">欧洲天然气基准</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 历史价格分析 -->
+                    <div class="mb-16">
+                        <h3 class="text-3xl font-bold text-yellow-400 mb-8">历史价格分析：周期与波动的启示</h3>
+                        
+                        <!-- 价格图表容器 -->
+                        <div class="chart-container p-8 mb-8">
+                            <h4 class="text-xl font-semibold text-yellow-400 mb-6">历史原油价格走势 (1986-2024)</h4>
+                            <div id="historicalPriceChart" style="height: 400px;"></div>
+                        </div>
+                        
+                        <!-- 关键价格事件 -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div class="space-y-4">
+                                <h4 class="text-xl font-semibold text-yellow-400 mb-4">重大价格转折点</h4>
+                                <div class="space-y-3">
+                                    <div class="flex items-start space-x-3 p-3 bg-gray-800/40 rounded-lg">
+                                        <span class="text-yellow-400 font-bold text-sm">1986</span>
+                                        <p class="text-gray-300 text-sm">沙特放弃"市场平衡者"角色，油价暴跌至$15</p>
+                                    </div>
+                                    <div class="flex items-start space-x-3 p-3 bg-gray-800/40 rounded-lg">
+                                        <span class="text-yellow-400 font-bold text-sm">1998</span>
+                                        <p class="text-gray-300 text-sm">亚洲金融危机，油价跌至$12-14</p>
+                                    </div>
+                                    <div class="flex items-start space-x-3 p-3 bg-gray-800/40 rounded-lg">
+                                        <span class="text-yellow-400 font-bold text-sm">2008</span>
+                                        <p class="text-gray-300 text-sm">超级周期峰值，油价达到$150，后因金融危机暴跌</p>
+                                    </div>
+                                    <div class="flex items-start space-x-3 p-3 bg-gray-800/40 rounded-lg">
+                                        <span class="text-yellow-400 font-bold text-sm">2014-16</span>
+                                        <p class="text-gray-300 text-sm">页岩油革命，OPEC价格战，油价跌至$30以下</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="space-y-4">
+                                <h4 class="text-xl font-semibold text-yellow-400 mb-4">近期重大事件</h4>
+                                <div class="space-y-3">
+                                    <div class="flex items-start space-x-3 p-3 bg-gray-800/40 rounded-lg">
+                                        <span class="text-yellow-400 font-bold text-sm">2020</span>
+                                        <p class="text-gray-300 text-sm">COVID-19冲击，WTI价格一度跌至负值</p>
+                                    </div>
+                                    <div class="flex items-start space-x-3 p-3 bg-gray-800/40 rounded-lg">
+                                        <span class="text-yellow-400 font-bold text-sm">2022</span>
+                                        <p class="text-gray-300 text-sm">俄乌冲突，油价和天然气价格飙升至历史高位</p>
+                                    </div>
+                                    <div class="flex items-start space-x-3 p-3 bg-gray-800/40 rounded-lg">
+                                        <span class="text-yellow-400 font-bold text-sm">2024</span>
+                                        <p class="text-gray-300 text-sm">地缘政治风险溢价持续，价格在高位震荡</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 裂解价差分析 -->
+                    <div class="bg-gradient-to-br from-gray-800/40 to-gray-900/40 p-8 rounded-xl border border-yellow-400/10">
+                        <h3 class="text-2xl font-bold text-yellow-400 mb-6">炼油利润：3:2:1裂解价差分析</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-200 mb-4">驱动因素</h4>
+                                <ul class="text-gray-300 space-y-2">
+                                    <li>• <span class="text-yellow-400">季节性需求：</span>夏季驾驶高峰推高汽油价格</li>
+                                    <li>• <span class="text-yellow-400">炼厂运营：</span>检修和非计划停产影响供应</li>
+                                    <li>• <span class="text-yellow-400">原油波动：</span>快速上涨挤压炼油利润</li>
+                                    <li>• <span class="text-yellow-400">经济周期：</span>经济扩张支撑成品油需求</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-200 mb-4">投资意义</h4>
+                                <p class="text-gray-300 mb-4">
+                                    监控裂解价差趋势可作为判断炼油企业盈利前景的先行指标。持续走阔的价差环境通常预示炼油板块将迎来强劲业绩。
+                                </p>
+                                <div class="bg-yellow-400/10 p-4 rounded-lg">
+                                    <p class="text-sm text-yellow-400 font-semibold">当前市场状态</p>
+                                    <p class="text-xs text-gray-400">价差相对稳定，反映炼油利润处于合理水平</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第四部分：全球生产格局 -->
+        <section class="content-section py-20 section-fade">
+            <div class="container mx-auto px-6">
+                <h2 class="title-font text-3xl md:text-5xl font-bold mb-12 gold-gradient text-center">全球生产格局：成本曲线与区域动态</h2>
+                
+                <div class="max-w-6xl mx-auto">
+                    <!-- 成本曲线 -->
+                    <div class="mb-16">
+                        <h3 class="text-3xl font-bold text-yellow-400 mb-8">全球液体燃料供给成本曲线</h3>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                            <div class="bg-gradient-to-br from-green-900/60 to-green-800/40 p-8 rounded-xl border border-green-400/30">
+                                <h4 class="text-xl font-bold text-green-400 mb-4">低成本核心区</h4>
+                                <div class="text-center mb-4">
+                                    <div class="text-3xl font-bold text-green-300">$27-29</div>
+                                    <p class="text-sm text-green-200">美元/桶</p>
+                                </div>
+                                <ul class="text-gray-300 space-y-2">
+                                    <li>• 中东陆上常规石油</li>
+                                    <li>• 沙特阿拉伯</li>
+                                    <li>• 阿联酋</li>
+                                    <li>• 科威特</li>
+                                </ul>
+                                <div class="mt-4 p-3 bg-green-400/10 rounded-lg">
+                                    <p class="text-xs text-green-300">具有巨大市场影响力</p>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-gradient-to-br from-yellow-900/60 to-yellow-800/40 p-8 rounded-xl border border-yellow-400/30">
+                                <h4 class="text-xl font-bold text-yellow-400 mb-4">中等成本区</h4>
+                                <div class="text-center mb-4">
+                                    <div class="text-3xl font-bold text-yellow-300">~$55</div>
+                                    <p class="text-sm text-yellow-200">美元/桶</p>
+                                </div>
+                                <ul class="text-gray-300 space-y-2">
+                                    <li>• 陆上常规石油</li>
+                                    <li>• 海上深水项目</li>
+                                    <li>• 拉美地区优质项目</li>
+                                    <li>• 技术进步降低成本</li>
+                                </ul>
+                                <div class="mt-4 p-3 bg-yellow-400/10 rounded-lg">
+                                    <p class="text-xs text-yellow-300">竞争力日益增强</p>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-gradient-to-br from-red-900/60 to-red-800/40 p-8 rounded-xl border border-red-400/30">
+                                <h4 class="text-xl font-bold text-red-400 mb-4">高成本边际区</h4>
+                                <div class="text-center mb-4">
+                                    <div class="text-3xl font-bold text-red-300">$62-74</div>
+                                    <p class="text-sm text-red-200">美元/桶</p>
+                                </div>
+                                <ul class="text-gray-300 space-y-2">
+                                    <li>• 美国页岩油 (~$62)</li>
+                                    <li>• 加拿大油砂 (~$74)</li>
+                                    <li>• 技术复杂项目</li>
+                                    <li>• 边际生产成本</li>
+                                </ul>
+                                <div class="mt-4 p-3 bg-red-400/10 rounded-lg">
+                                    <p class="text-xs text-red-300">价格敏感度最高</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 美国页岩油分析 -->
+                    <div class="mb-16">
+                        <h3 class="text-3xl font-bold text-yellow-400 mb-8">深度剖析：美国页岩油盆地</h3>
+                        
+                        <!-- 页岩盆地数据表格 -->
+                        <div class="table-modern mb-8 overflow-x-auto">
+                            <table class="w-full text-sm">
+                                <thead>
+                                    <tr class="text-left">
+                                        <th class="p-4">指标</th>
+                                        <th class="p-4">二叠纪 (Permian)</th>
+                                        <th class="p-4">巴肯 (Bakken)</th>
+                                        <th class="p-4">鹰滩 (Eagle Ford)</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="text-gray-300">
+                                    <tr>
+                                        <td class="p-4 font-semibold">原油产量 (千桶/日)</td>
+                                        <td class="p-4 text-yellow-400 font-bold">6,187</td>
+                                        <td class="p-4">1,313</td>
+                                        <td class="p-4">1,106</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-4 font-semibold">天然气产量 (百万立方英尺/日)</td>
+                                        <td class="p-4 text-yellow-400 font-bold">25,393</td>
+                                        <td class="p-4">3,487</td>
+                                        <td class="p-4">7,323</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-4 font-semibold">新井生产率 (桶/日/钻机)</td>
+                                        <td class="p-4">1,400</td>
+                                        <td class="p-4 text-yellow-400 font-bold">1,747</td>
+                                        <td class="p-4">1,639</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-4 font-semibold">DUC库存 (口)</td>
+                                        <td class="p-4">893</td>
+                                        <td class="p-4">328</td>
+                                        <td class="p-4">345</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <!-- 双重盈亏平衡点 -->
+                        <div class="bg-gradient-to-br from-gray-800/60 to-gray-900/60 p-8 rounded-xl border border-yellow-400/20">
+                            <h4 class="text-2xl font-bold text-yellow-400 mb-6">页岩油的"双重盈亏平衡点"</h4>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <div class="bg-blue-900/30 p-6 rounded-lg border border-blue-400/20">
+                                    <h5 class="text-lg font-semibold text-blue-400 mb-4">运营盈亏平衡点</h5>
+                                    <div class="text-3xl font-bold text-blue-300 mb-2">~$41</div>
+                                    <p class="text-sm text-gray-300 mb-4">维持现有井生产的最低价格</p>
+                                    <ul class="text-xs text-gray-400 space-y-1">
+                                        <li>• 覆盖现金运营成本</li>
+                                        <li>• 泵送、维护、人工</li>
+                                        <li>• 为前期投资回收做贡献</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="bg-red-900/30 p-6 rounded-lg border border-red-400/20">
+                                    <h5 class="text-lg font-semibold text-red-400 mb-4">新井盈亏平衡点</h5>
+                                    <div class="text-3xl font-bold text-red-300 mb-2">~$65</div>
+                                    <p class="text-sm text-gray-300 mb-4">激励新井投资的价格水平</p>
+                                    <ul class="text-xs text-gray-400 space-y-1">
+                                        <li>• 覆盖全部资本支出</li>
+                                        <li>• 钻井、完井、设备</li>
+                                        <li>• 提供可接受投资回报</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mt-6 p-4 bg-yellow-400/10 rounded-lg">
+                                <p class="text-sm text-yellow-400 font-semibold">关键洞察</p>
+                                <p class="text-xs text-gray-300">这种"双重盈亏平衡点"解释了页岩油产量的"粘性"行为，即使油价下跌也不会立即崩溃</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第五部分：企业生态系统 -->
+        <section class="content-section py-20 section-fade">
+            <div class="container mx-auto px-6">
+                <h2 class="title-font text-3xl md:text-5xl font-bold mb-12 gold-gradient text-center">企业生态系统：战略、竞争与财务</h2>
+                
+                <div class="max-w-6xl mx-auto">
+                    <!-- IOCs分析 -->
+                    <div class="mb-16">
+                        <h3 class="text-3xl font-bold text-yellow-400 mb-8">国际石油公司（IOCs）：在转型中寻求平衡</h3>
+                        
+                        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+                            <div class="bg-gradient-to-br from-gray-800/60 to-gray-900/60 p-8 rounded-xl border border-yellow-400/20">
+                                <div class="flex items-center mb-6">
+                                    <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mr-4">
+                                        <span class="text-white font-bold text-lg">XOM</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-xl font-bold text-yellow-400">埃克森美孚</h4>
+                                        <p class="text-sm text-gray-400">ExxonMobil</p>
+                                    </div>
+                                </div>
+                                <div class="space-y-3 mb-6">
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-300">2024年净利润</span>
+                                        <span class="text-yellow-400 font-bold">337亿美元</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-300">运营现金流</span>
+                                        <span class="text-yellow-400 font-bold">550亿美元</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-300">股东回报</span>
+                                        <span class="text-yellow-400 font-bold">360亿美元</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-300">资本回报率</span>
+                                        <span class="text-yellow-400 font-bold">12.7%</span>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-400">专注圭亚那和二叠纪盆地等低成本高回报资产，同时布局低碳解决方案</p>
+                            </div>
+                            
+                            <div class="bg-gradient-to-br from-gray-800/60 to-gray-900/60 p-8 rounded-xl border border-yellow-400/20">
+                                <div class="flex items-center mb-6">
+                                    <div class="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center mr-4">
+                                        <span class="text-white font-bold text-lg">SHEL</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-xl font-bold text-yellow-400">壳牌</h4>
+                                        <p class="text-sm text-gray-400">Shell plc</p>
+                                    </div>
+                                </div>
+                                <div class="space-y-3 mb-6">
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-300">运营现金流</span>
+                                        <span class="text-yellow-400 font-bold">395亿美元</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-300">资本支出</span>
+                                        <span class="text-yellow-400 font-bold">211亿美元</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-300">股东回报</span>
+                                        <span class="text-yellow-400 font-bold">233亿美元</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-300">范围三减排目标</span>
+                                        <span class="text-green-400 font-bold">15-20%</span>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-400">"赋能进步"战略，发展LNG业务同时投资生物燃料和电动汽车充电</p>
+                            </div>
+                            
+                            <div class="bg-gradient-to-br from-gray-800/60 to-gray-900/60 p-8 rounded-xl border border-yellow-400/20">
+                                <div class="flex items-center mb-6">
+                                    <div class="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center mr-4">
+                                        <span class="text-white font-bold text-lg">BP</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-xl font-bold text-yellow-400">BP</h4>
+                                        <p class="text-sm text-gray-400">BP plc</p>
+                                    </div>
+                                </div>
+                                <div class="space-y-3 mb-6">
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-300">收入</span>
+                                        <span class="text-yellow-400 font-bold">1,946亿美元</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-300">税前利润</span>
+                                        <span class="text-yellow-400 font-bold">118亿美元</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-300">运营现金流</span>
+                                        <span class="text-yellow-400 font-bold">280亿美元</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-gray-300">战略重置</span>
+                                        <span class="text-blue-400 font-bold">进行中</span>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-400">2025年战略"重置"，年投资额提高至100亿美元，强化核心业务盈利能力</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- NOCs分析 -->
+                    <div class="mb-16">
+                        <h3 class="text-3xl font-bold text-yellow-400 mb-8">国家石油公司（NOCs）：国家战略的执行者</h3>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div class="bg-gradient-to-br from-green-900/40 to-green-800/20 p-8 rounded-xl border border-green-400/30">
+                                <h4 class="text-xl font-bold text-green-400 mb-4">沙特阿美 (Saudi Aramco)</h4>
+                                <div class="space-y-4 mb-6">
+                                    <div class="border-l-4 border-green-400 pl-4">
+                                        <p class="text-sm text-gray-300">与沙特"2030愿景"深度绑定</p>
+                                    </div>
+                                    <div class="border-l-4 border-green-400 pl-4">
+                                        <p class="text-sm text-gray-300">维持全球石油市场领导地位</p>
+                                    </div>
+                                    <div class="border-l-4 border-green-400 pl-4">
+                                        <p class="text-sm text-gray-300">发展"原油到化工"项目</p>
+                                    </div>
+                                    <div class="border-l-4 border-green-400 pl-4">
+                                        <p class="text-sm text-gray-300">布局蓝氢和CCS技术</p>
+                                    </div>
+                                </div>
+                                <div class="bg-green-400/10 p-4 rounded-lg">
+                                    <p class="text-xs text-green-400 font-semibold">核心优势</p>
+                                    <p class="text-xs text-gray-300">控制全球最优质、成本最低的油气资源</p>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-gradient-to-br from-red-900/40 to-red-800/20 p-8 rounded-xl border border-red-400/30">
+                                <h4 class="text-xl font-bold text-red-400 mb-4">中国石油 (PetroChina)</h4>
+                                <div class="space-y-4 mb-6">
+                                    <div class="border-l-4 border-red-400 pl-4">
+                                        <p class="text-sm text-gray-300">服务中国能源安全和"双碳"目标</p>
+                                    </div>
+                                    <div class="border-l-4 border-red-400 pl-4">
+                                        <p class="text-sm text-gray-300">天然气产量占比提升至54.4%</p>
+                                    </div>
+                                    <div class="border-l-4 border-red-400 pl-4">
+                                        <p class="text-sm text-gray-300">新能源投资同比增长21.7%</p>
+                                    </div>
+                                    <div class="border-l-4 border-red-400 pl-4">
+                                        <p class="text-sm text-gray-300">发展风电、光伏、地热和氢能</p>
+                                    </div>
+                                </div>
+                                <div class="bg-red-400/10 p-4 rounded-lg">
+                                    <p class="text-xs text-red-400 font-semibold">战略模式</p>
+                                    <p class="text-xs text-gray-300">"油气固本、新能源拓展"双轮驱动</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- OFS分析 -->
+                    <div class="bg-gradient-to-br from-gray-800/40 to-gray-900/40 p-8 rounded-xl border border-yellow-400/10">
+                        <h3 class="text-2xl font-bold text-yellow-400 mb-6">油田服务公司（OFS）：行业的技术引擎</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-200 mb-4">市场动态</h4>
+                                <ul class="text-gray-300 space-y-2 mb-6">
+                                    <li>• 景气度与E&P资本支出周期相关</li>
+                                    <li>• 未来十年5-7%年复合增长率</li>
+                                    <li>• 斯伦贝谢、哈里伯顿、贝克休斯主导</li>
+                                    <li>• 技术优势和全球网络是关键</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-200 mb-4">战略转型</h4>
+                                <div class="space-y-4">
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                            <i class="fas fa-microchip text-xs text-white"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="font-semibold text-blue-400">数字化</h5>
+                                            <p class="text-sm text-gray-300">AI、IoT和数据分析平台优化钻井效率</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start space-x-3">
+                                        <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                            <i class="fas fa-leaf text-xs text-white"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="font-semibold text-green-400">低碳化</h5>
+                                            <p class="text-sm text-gray-300">甲烷泄漏检测、CCUS和地热开发技术</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第六部分：能源转型 -->
+        <section class="content-section py-20 section-fade">
+            <div class="container mx-auto px-6">
+                <h2 class="title-font text-3xl md:text-5xl font-bold mb-12 gold-gradient text-center">能源转型：驾驭结构性变革与监管风险</h2>
+                
+                <div class="max-w-6xl mx-auto">
+                    <!-- 全球气候政策框架 -->
+                    <div class="mb-16">
+                        <h3 class="text-3xl font-bold text-yellow-400 mb-8">全球气候政策框架：《巴黎协定》</h3>
+                        
+                        <div class="bg-gradient-to-br from-blue-900/40 to-blue-800/20 p-8 rounded-xl border border-blue-400/30 mb-8">
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                                <div class="text-center">
+                                    <div class="text-4xl font-bold text-blue-300 mb-2">1.5°C</div>
+                                    <p class="text-blue-200 font-semibold">温控目标</p>
+                                    <p class="text-xs text-gray-400 mt-2">相比工业化前水平</p>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-4xl font-bold text-blue-300 mb-2">2025</div>
+                                    <p class="text-blue-200 font-semibold">排放峰值</p>
+                                    <p class="text-xs text-gray-400 mt-2">全球温室气体排放必须达峰</p>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-4xl font-bold text-blue-300 mb-2">43%</div>
+                                    <p class="text-blue-200 font-semibold">2030年减排</p>
+                                    <p class="text-xs text-gray-400 mt-2">相比2019年水平</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 关键监管机制 -->
+                    <div class="mb-16">
+                        <h3 class="text-3xl font-bold text-yellow-400 mb-8">关键监管机制及其影响</h3>
+                        
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                            <!-- CBAM -->
+                            <div class="bg-gradient-to-br from-purple-900/40 to-purple-800/20 p-8 rounded-xl border border-purple-400/30">
+                                <h4 class="text-xl font-bold text-purple-400 mb-4">欧盟碳边境调节机制 (CBAM)</h4>
+                                <div class="space-y-4 mb-6">
+                                    <div class="flex items-center space-x-3">
+                                        <i class="fas fa-shield-alt text-purple-400"></i>
+                                        <span class="text-gray-300">防止"碳泄漏"现象</span>
+                                    </div>
+                                    <div class="flex items-center space-x-3">
+                                        <i class="fas fa-balance-scale text-purple-400"></i>
+                                        <span class="text-gray-300">碳关税机制</span>
+                                    </div>
+                                    <div class="flex items-center space-x-3">
+                                        <i class="fas fa-calendar-alt text-purple-400"></i>
+                                        <span class="text-gray-300">2026年1月正式实施</span>
+                                    </div>
+                                </div>
+                                <div class="bg-purple-400/10 p-4 rounded-lg">
+                                    <p class="text-sm text-purple-400 font-semibold">涵盖产品</p>
+                                    <p class="text-xs text-gray-300">钢铁、水泥、铝、化肥、电力、氢气</p>
+                                </div>
+                            </div>
+                            
+                            <!-- IRA -->
+                            <div class="bg-gradient-to-br from-green-900/40 to-green-800/20 p-8 rounded-xl border border-green-400/30">
+                                <h4 class="text-xl font-bold text-green-400 mb-4">美国《通胀削减法案》 (IRA)</h4>
+                                <div class="space-y-4 mb-6">
+                                    <div class="flex items-center space-x-3">
+                                        <i class="fas fa-dollar-sign text-green-400"></i>
+                                        <span class="text-gray-300">大规模税收抵免激励</span>
+                                    </div>
+                                    <div class="flex items-center space-x-3">
+                                        <i class="fas fa-industry text-green-400"></i>
+                                        <span class="text-gray-300">清洁能源制造中心</span>
+                                    </div>
+                                    <div class="flex items-center space-x-3">
+                                        <i class="fas fa-clock text-green-400"></i>
+                                        <span class="text-gray-300">长达十年的支持</span>
+                                    </div>
+                                </div>
+                                <div class="bg-green-400/10 p-4 rounded-lg">
+                                    <p class="text-sm text-green-400 font-semibold">重点领域</p>
+                                    <p class="text-xs text-gray-300">PTC、ITC、45Q碳捕获、45V清洁氢</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- EPA甲烷法规 -->
+                        <div class="mt-8 bg-gradient-to-br from-orange-900/40 to-orange-800/20 p-8 rounded-xl border border-orange-400/30">
+                            <h4 class="text-xl font-bold text-orange-400 mb-6">美国环保署 (EPA) 甲烷法规</h4>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <div>
+                                    <h5 class="text-lg font-semibold text-gray-200 mb-4">核心要求</h5>
+                                    <ul class="text-gray-300 space-y-2">
+                                        <li>• 强制性泄漏检测与修复(LDAR)</li>
+                                        <li>• 覆盖新建和现有设施</li>
+                                        <li>• 超级排放者响应计划</li>
+                                        <li>• 第三方监测认证</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h5 class="text-lg font-semibold text-gray-200 mb-4">行业影响</h5>
+                                    <ul class="text-gray-300 space-y-2">
+                                        <li>• 从运营副产品变为合规成本</li>
+                                        <li>• 创造竞争优势差异化</li>
+                                        <li>• 影响ESG投资决策</li>
+                                        <li>• 提升准入门槛</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 电动化冲击 -->
+                    <div class="bg-gradient-to-br from-red-900/40 to-red-800/20 p-8 rounded-xl border border-red-400/30">
+                        <h3 class="text-2xl font-bold text-red-400 mb-6">电动化对需求的冲击</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-red-300 mb-2">1700万</div>
+                                <p class="text-red-200 font-semibold">2024年EV销量</p>
+                                <p class="text-xs text-gray-400 mt-2">同比增长25%</p>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-red-300 mb-2">540万</div>
+                                <p class="text-red-200 font-semibold">桶/日替代</p>
+                                <p class="text-xs text-gray-400 mt-2">2030年EV石油替代量</p>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-red-300 mb-2">2027</div>
+                                <p class="text-red-200 font-semibold">需求见顶</p>
+                                <p class="text-xs text-gray-400 mt-2">传统化石燃料需求峰值</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第七部分：技术与创新 -->
+        <section class="content-section py-20 section-fade">
+            <div class="container mx-auto px-6">
+                <h2 class="title-font text-3xl md:text-5xl font-bold mb-12 gold-gradient text-center">技术与创新作为绩效驱动力</h2>
+                
+                <div class="max-w-6xl mx-auto">
+                    <!-- 数字化转型 -->
+                    <div class="mb-16">
+                        <h3 class="text-3xl font-bold text-yellow-400 mb-8">数字化转型：人工智能、物联网与云计算</h3>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+                            <div>
+                                <h4 class="text-xl font-semibold text-gray-200 mb-6">价值潜力</h4>
+                                <div class="space-y-6">
+                                    <div class="bg-gradient-to-r from-blue-900/40 to-blue-800/20 p-6 rounded-xl border border-blue-400/20">
+                                        <div class="text-center">
+                                            <div class="text-3xl font-bold text-blue-300 mb-2">2500亿</div>
+                                            <p class="text-blue-200 font-semibold">美元价值增量</p>
+                                            <p class="text-xs text-gray-400 mt-2">到2030年上游业务数字化潜力</p>
+                                        </div>
+                                    </div>
+                                    <div class="grid grid-cols-2 gap-4">
+                                        <div class="bg-green-900/40 p-4 rounded-lg border border-green-400/20 text-center">
+                                            <div class="text-2xl font-bold text-green-300">20%</div>
+                                            <p class="text-xs text-green-200">资本支出降低</p>
+                                        </div>
+                                        <div class="bg-green-900/40 p-4 rounded-lg border border-green-400/20 text-center">
+                                            <div class="text-2xl font-bold text-green-300">5%</div>
+                                            <p class="text-xs text-green-200">运营成本降低</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <h4 class="text-xl font-semibold text-gray-200 mb-6">关键应用场景</h4>
+                                <div class="space-y-4">
+                                    <div class="flex items-start space-x-4 p-4 bg-gray-800/40 rounded-lg">
+                                        <div class="w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                                            <i class="fas fa-search text-white text-sm"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="font-semibold text-purple-400">勘探与钻井</h5>
+                                            <p class="text-sm text-gray-300">AI分析地震和地质数据，精准识别油气藏</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-start space-x-4 p-4 bg-gray-800/40 rounded-lg">
+                                        <div class="w-8 h-8 bg-green-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                                            <i class="fas fa-cogs text-white text-sm"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="font-semibold text-green-400">生产优化</h5>
+                                            <p class="text-sm text-gray-300">IoT传感器实时监控，AI动态优化生产参数</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-start space-x-4 p-4 bg-gray-800/40 rounded-lg">
+                                        <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                                            <i class="fas fa-wrench text-white text-sm"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="font-semibold text-blue-400">预测性维护</h5>
+                                            <p class="text-sm text-gray-300">预测设备故障，减少非计划停机时间</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-start space-x-4 p-4 bg-gray-800/40 rounded-lg">
+                                        <div class="w-8 h-8 bg-yellow-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                                            <i class="fas fa-leaf text-white text-sm"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="font-semibold text-yellow-400">排放管理</h5>
+                                            <p class="text-sm text-gray-300">AI图像识别检测甲烷泄漏，准确率达87%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 强化采油(EOR) -->
+                    <div class="mb-16">
+                        <h3 class="text-3xl font-bold text-yellow-400 mb-8">强化采油（EOR）：最大化成熟资产价值</h3>
+                        
+                        <div class="bg-gradient-to-br from-orange-900/40 to-orange-800/20 p-8 rounded-xl border border-orange-400/30 mb-8">
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                                <div class="text-center">
+                                    <div class="text-4xl font-bold text-orange-300 mb-2">70%</div>
+                                    <p class="text-orange-200 font-semibold">成熟油田占比</p>
+                                    <p class="text-xs text-gray-400 mt-2">全球石油产量来源</p>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-4xl font-bold text-orange-300 mb-2">3</div>
+                                    <p class="text-orange-200 font-semibold">主要技术类型</p>
+                                    <p class="text-xs text-gray-400 mt-2">热采、气体注入、化学驱</p>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-4xl font-bold text-orange-300 mb-2">30%+</div>
+                                    <p class="text-orange-200 font-semibold">采收率提升</p>
+                                    <p class="text-xs text-gray-400 mt-2">相比传统采油方法</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            <div class="bg-gradient-to-br from-red-900/40 to-red-800/20 p-6 rounded-xl border border-red-400/30">
+                                <h4 class="text-lg font-bold text-red-400 mb-4">热采 (Thermal EOR)</h4>
+                                <ul class="text-gray-300 space-y-2 mb-4">
+                                    <li>• 适用于稠油油藏</li>
+                                    <li>• 注入蒸汽或地下燃烧</li>
+                                    <li>• 降低原油粘度</li>
+                                    <li>• 应用最广泛</li>
+                                </ul>
+                                <div class="bg-red-400/10 p-3 rounded-lg">
+                                    <p class="text-xs text-red-300">目前产量最高的EOR技术</p>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-gradient-to-br from-blue-900/40 to-blue-800/20 p-6 rounded-xl border border-blue-400/30">
+                                <h4 class="text-lg font-bold text-blue-400 mb-4">气体注入</h4>
+                                <ul class="text-gray-300 space-y-2 mb-4">
+                                    <li>• 注入CO2、氮气或天然气</li>
+                                    <li>• 与原油形成混相</li>
+                                    <li>• 增加原油体积</li>
+                                    <li>• CO2-EOR兼具封存功能</li>
+                                </ul>
+                                <div class="bg-blue-400/10 p-3 rounded-lg">
+                                    <p class="text-xs text-blue-300">环保效益与经济效益并重</p>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-gradient-to-br from-green-900/40 to-green-800/20 p-6 rounded-xl border border-green-400/30">
+                                <h4 class="text-lg font-bold text-green-400 mb-4">化学驱</h4>
+                                <ul class="text-gray-300 space-y-2 mb-4">
+                                    <li>• 注入聚合物、表面活性剂</li>
+                                    <li>• 增加注入水粘度</li>
+                                    <li>• 降低油水界面张力</li>
+                                    <li>• 提高波及效率</li>
+                                </ul>
+                                <div class="bg-green-400/10 p-3 rounded-lg">
+                                    <p class="text-xs text-green-300">技术复杂但效果显著</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 脱碳技术 -->
+                    <div class="bg-gradient-to-br from-gray-800/40 to-gray-900/40 p-8 rounded-xl border border-yellow-400/10">
+                        <h3 class="text-2xl font-bold text-yellow-400 mb-6">脱碳技术：CCUS与氢能</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-200 mb-4">碳捕获、利用与封存 (CCUS)</h4>
+                                <ul class="text-gray-300 space-y-2 mb-6">
+                                    <li>• 油气行业具有天然技术优势</li>
+                                    <li>• 擅长处理和注入气体</li>
+                                    <li>• 丰富的地下储层管理经验</li>
+                                    <li>• IPCC估计减排贡献15-55%</li>
+                                </ul>
+                                <div class="bg-purple-400/10 p-4 rounded-lg">
+                                    <p class="text-sm text-purple-400 font-semibold">关键优势</p>
+                                    <p class="text-xs text-gray-300">现有基础设施和技术能力的延伸应用</p>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-200 mb-4">低碳氢</h4>
+                                <ul class="text-gray-300 space-y-2 mb-6">
+                                    <li>• "蓝氢"：天然气制氢+CCUS</li>
+                                    <li>• 利用现有管道基础设施</li>
+                                    <li>• 天然气处理技术成熟</li>
+                                    <li>• IRA 45V税收抵免支持</li>
+                                </ul>
+                                <div class="bg-blue-400/10 p-4 rounded-lg">
+                                    <p class="text-sm text-blue-400 font-semibold">协同效应</p>
+                                    <p class="text-xs text-gray-300">EOR与CCUS结合提供经济价值和减排效益</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第八部分：地缘政治与物流风险 -->
+        <section class="content-section py-20 section-fade">
+            <div class="container mx-auto px-6">
+                <h2 class="title-font text-3xl md:text-5xl font-bold mb-12 gold-gradient text-center">地缘政治与物流风险分析</h2>
+                
+                <div class="max-w-6xl mx-auto">
+                    <!-- 海上咽喉要道 -->
+                    <div class="mb-16">
+                        <h3 class="text-3xl font-bold text-yellow-400 mb-8">全球海上咽喉要道：能源贸易的动脉</h3>
+                        
+                        <div class="table-modern mb-8 overflow-x-auto">
+                            <table class="w-full text-sm">
+                                <thead>
+                                    <tr class="text-left">
+                                        <th class="p-4">咽喉要道</th>
+                                        <th class="p-4">地理位置</th>
+                                        <th class="p-4">2023年运输量 (百万桶/日)</th>
+                                        <th class="p-4">占全球海运石油贸易比例</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="text-gray-300">
+                                    <tr>
+                                        <td class="p-4 font-semibold text-yellow-400">霍尔木兹海峡</td>
+                                        <td class="p-4">伊朗与阿曼之间</td>
+                                        <td class="p-4 font-bold">20.9</td>
+                                        <td class="p-4">~27%</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-4 font-semibold text-yellow-400">马六甲海峡</td>
+                                        <td class="p-4">马来西亚与印度尼西亚之间</td>
+                                        <td class="p-4 font-bold">23.7</td>
+                                        <td class="p-4">~30%</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-4 font-semibold text-yellow-400">苏伊士运河/SUMED</td>
+                                        <td class="p-4">埃及</td>
+                                        <td class="p-4 font-bold">8.8</td>
+                                        <td class="p-4">~11%</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-4 font-semibold text-yellow-400">曼德海峡</td>
+                                        <td class="p-4">吉布提与也门之间</td>
+                                        <td class="p-4 font-bold">8.6</td>
+                                        <td class="p-4">~11%</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-4 font-semibold text-yellow-400">土耳其海峡</td>
+                                        <td class="p-4">土耳其</td>
+                                        <td class="p-4 font-bold">3.4</td>
+                                        <td class="p-4">~4%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <!-- 霍尔木兹海峡重点分析 -->
+                        <div class="bg-gradient-to-br from-red-900/40 to-red-800/20 p-8 rounded-xl border border-red-400/30 mb-8">
+                            <h4 class="text-2xl font-bold text-red-400 mb-6">霍尔木兹海峡：全球最重要的石油动脉</h4>
+                            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-6">
+                                <div class="text-center">
+                                    <div class="text-2xl font-bold text-red-300">2090万</div>
+                                    <p class="text-red-200 text-sm">桶/日运输量</p>
+                                    <p class="text-xs text-gray-400">占全球消费量20%</p>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-2xl font-bold text-red-300">83%</div>
+                                    <p class="text-red-200 text-sm">流向亚洲</p>
+                                    <p class="text-xs text-gray-400">中印日韩为主要目的地</p>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-2xl font-bold text-red-300">350万</div>
+                                    <p class="text-red-200 text-sm">桶/日绕行能力</p>
+                                    <p class="text-xs text-gray-400">沙特和阿联酋陆上管道</p>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-2xl font-bold text-red-300">20%</div>
+                                    <p class="text-red-200 text-sm">LNG贸易</p>
+                                    <p class="text-xs text-gray-400">来自卡塔尔和阿联酋</p>
+                                </div>
+                            </div>
+                            <div class="bg-red-400/10 p-4 rounded-lg">
+                                <p class="text-sm text-red-400 font-semibold">风险评估</p>
+                                <p class="text-xs text-gray-300">绕行能力极其有限，任何中断都可能引发全球油价剧烈波动和"霍尔木兹风险溢价"</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 制裁与地缘政治热点 -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="bg-gradient-to-br from-purple-900/40 to-purple-800/20 p-6 rounded-xl border border-purple-400/30">
+                            <h4 class="text-lg font-bold text-purple-400 mb-4">俄罗斯</h4>
+                            <ul class="text-gray-300 space-y-2 mb-4">
+                                <li>• 西方国家史无前例的能源制裁</li>
+                                <li>• 价格上限和禁运措施</li>
+                                <li>• 贸易流向历史性重塑</li>
+                                <li>• 欧洲转向美国、中东、非洲</li>
+                                <li>• 俄罗斯转向中国、印度</li>
+                            </ul>
+                            <div class="bg-purple-400/10 p-3 rounded-lg">
+                                <p class="text-xs text-purple-300">2022年俄乌冲突以来持续影响</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-gradient-to-br from-orange-900/40 to-orange-800/20 p-6 rounded-xl border border-orange-400/30">
+                            <h4 class="text-lg font-bold text-orange-400 mb-4">伊朗和委内瑞拉</h4>
+                            <ul class="text-gray-300 space-y-2 mb-4">
+                                <li>• 长期受到美国制裁</li>
+                                <li>• 产量和出口远低于潜力</li>
+                                <li>• 伊朗通过各种方式维持对华出口</li>
+                                <li>• 委内瑞拉投资不足基础设施老化</li>
+                                <li>• 政治局势变化是供给不确定性来源</li>
+                            </ul>
+                            <div class="bg-orange-400/10 p-3 rounded-lg">
+                                <p class="text-xs text-orange-300">OPEC成员国但产量受限</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-gradient-to-br from-yellow-900/40 to-yellow-800/20 p-6 rounded-xl border border-yellow-400/30">
+                            <h4 class="text-lg font-bold text-yellow-400 mb-4">其他地区冲突</h4>
+                            <ul class="text-gray-300 space-y-2 mb-4">
+                                <li>• 尼日利亚国内不稳定</li>
+                                <li>• 利比亚政治动荡</li>
+                                <li>• 非计划性供应中断</li>
+                                <li>• 短期市场平衡冲击</li>
+                                <li>• 风险溢价持续存在</li>
+                            </ul>
+                            <div class="bg-yellow-400/10 p-3 rounded-lg">
+                                <p class="text-xs text-yellow-300">区域性冲突影响全球市场</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 结论 -->
+        <section class="content-section py-20 section-fade">
+            <div class="container mx-auto px-6">
+                <h2 class="title-font text-3xl md:text-5xl font-bold mb-12 gold-gradient text-center">结论</h2>
+                
+                <div class="max-w-4xl mx-auto">
+                    <p class="text-xl text-gray-300 mb-8 leading-relaxed">
+                        本报告通过对全球石油与天然气行业的价值链、供需基本面、价格机制、生产格局、企业生态、能源转型和地缘政治风险等多个维度进行系统性、数据驱动的剖析，旨在为投资者提供一个理解当前行业复杂动态的综合性框架。
+                    </p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                        <div class="bg-gradient-to-br from-blue-900/40 to-blue-800/20 p-8 rounded-xl border border-blue-400/30">
+                            <h3 class="text-xl font-bold text-blue-400 mb-4">核心结论一</h3>
+                            <p class="text-gray-300 text-sm">
+                                <strong class="text-yellow-400">行业正处在结构性转折点，需求增长的驱动力已发生根本性转变。</strong> 
+                                传统的以交通燃料和发达国家为中心的增长模式正在终结。未来的需求增量将几乎完全由非OECD国家（特别是印度）的经济增长，以及全球范围内的石化原料需求所贡献。
+                            </p>
+                        </div>
+                        
+                        <div class="bg-gradient-to-br from-green-900/40 to-green-800/20 p-8 rounded-xl border border-green-400/30">
+                            <h3 class="text-xl font-bold text-green-400 mb-4">核心结论二</h3>
+                            <p class="text-gray-300 text-sm">
+                                <strong class="text-yellow-400">全球供给平衡呈现出一种由政策和地缘政治共同决定的脆弱状态。</strong> 
+                                短期市场平衡高度依赖OPEC+联盟的生产纪律。任何联盟内部的纪律松动或外部的地缘政治冲击，都可能迅速打破这种平衡。
+                            </p>
+                        </div>
+                        
+                        <div class="bg-gradient-to-br from-purple-900/40 to-purple-800/20 p-8 rounded-xl border border-purple-400/30">
+                            <h3 class="text-xl font-bold text-purple-400 mb-4">核心结论三</h3>
+                            <p class="text-gray-300 text-sm">
+                                <strong class="text-yellow-400">能源转型不再是远期情景，而是正在重塑行业"游戏规则"。</strong> 
+                                欧盟的CBAM和美国的IRA代表了两种不同的政策路径，共同推动全球资本向低碳领域流动。电动汽车的普及正在对交通燃料需求构成不可逆转的压力。
+                            </p>
+                        </div>
+                        
+                        <div class="bg-gradient-to-br from-red-900/40 to-red-800/20 p-8 rounded-xl border border-red-400/30">
+                            <h3 class="text-xl font-bold text-red-400 mb-4">核心结论四</h3>
+                            <p class="text-gray-300 text-sm">
+                                <strong class="text-yellow-400">企业战略出现分化，不同类型的参与者正在选择不同的生存与发展路径。</strong> 
+                                IOCs在维持核心油气业务的同时布局低碳业务。NOCs的战略更多地服务于国家能源安全和经济转型目标。OFS公司向技术和脱碳解决方案提供商转型。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- 投资者启示 -->
+                    <div class="bg-gradient-to-br from-gray-800/60 to-gray-900/60 p-8 rounded-xl border border-yellow-400/20 mb-12">
+                        <h3 class="text-2xl font-bold text-yellow-400 mb-6">投资者启示</h3>
+                        <p class="text-gray-300 mb-6">
+                            对于投资者而言，这意味着对油气行业的分析需要超越传统的供需和价格周期框架。必须建立一个更加多维度的分析模型，该模型应能综合评估以下几个核心要素：
+                        </p>
+                        <ul class="text-gray-300 space-y-2 list-disc list-inside">
+                            <li>企业在成本曲线上的位置</li>
+                            <li>资产组合对石化需求的敞口</li>
+                            <li>应对能源转型政策的战略灵活性</li>
+                            <li>技术创新和运营效率（特别是排放控制能力）</li>
+                            <li>对地缘政治风险的抵御能力</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 总结陈述 -->
+                    <div class="text-center">
+                        <p class="text-lg text-gray-200 italic">
+                            总而言之，全球油气行业正航行在充满不确定性的水域。旧的增长范式正在消退，新的市场结构、竞争格局和价值驱动因素正在形成。只有那些能够深刻理解并主动适应这些结构性变化的参与者，才能在这场历史性的行业变革中行稳致远。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 参考文献 -->
+        <section class="content-section py-16 section-fade">
+            <div class="container mx-auto px-6">
+                <h2 class="title-font text-2xl md:text-3xl font-bold mb-8 gold-gradient">引用的著作</h2>
+                
+                <div class="max-w-4xl mx-auto">
+                    <div class="text-xs text-gray-400 space-y-1 leading-relaxed">
+                        <p>1. Integrated Oil and Gas Co.: Definition, Operations, and Examples, 访问时间为 七月 3, 2025</p>
+                        <p>2. What Is Petroleum? Why It's Important and How To Invest in It - Investopedia, 访问时间为 七月 3, 2025</p>
+                        <p>3. Difference Between Upstream, Midstream and Downstream - Vidya Technology, 访问时间为 七月 3, 2025</p>
+                        <p>4. What Is Upstream in the Oil and Gas Industry? - Investopedia, 访问时间为 七月 3, 2025</p>
+                        <p>5. What Is the Midstream Stage in the Oil and Gas Industry?, 访问时间为 七月 3, 2025</p>
+                        <p>6. Oil Market Report - June 2025 – Analysis - IEA, 访问时间为 七月 3, 2025</p>
+                        <p>7. Global oil markets - Short-Term Energy Outlook - U.S. Energy Information Administration (EIA), 访问时间为 七月 3, 2025</p>
+                        <p>8. Executive summary – Oil 2025 – Analysis - IEA, 访问时间为 七月 3, 2025</p>
+                        <p>9. Europe Brent Spot Price FOB (Dollars per Barrel), 访问时间为 七月 3, 2025</p>
+                        <p>10. Henry Hub Natural Gas Spot Price (Dollars per Million Btu) - EIA, 访问时间为 七月 3, 2025</p>
+                        <!-- 这里可以继续添加更多参考文献，为了简洁只显示前10个 -->
+                        <p class="text-center mt-6 text-gray-500">... 更多参考文献请参阅完整报告 ...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚免责声明 -->
+    <footer class="bg-black/80 py-12">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h3 class="text-lg font-semibold text-yellow-400 mb-4">免责声明</h3>
+                <div class="text-xs text-gray-400 space-y-2">
+                    <p>本报告仅为行业深度研究与结构性分析，不包含任何个股、个券、买卖建议或价格预测。</p>
+                    <p>所有观点仅供参考，不构成投资意见或操作依据。投资者应根据自身风险承受能力独立做出投资决策。</p>
+                    <p>报告中的数据和信息来源于公开渠道，本报告不保证其准确性和完整性。</p>
+                    <p>投资有风险，入市需谨慎。</p>
+                </div>
+                <div class="mt-8 pt-6 border-t border-gray-700">
+                    <p class="text-xs text-gray-500">© 2025 石油天然气行业深度分析报告. 版权所有.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 等待DOM加载完成
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            // 滚动进度条
+            window.addEventListener('scroll', () => {
+                const scrolled = window.pageYOffset;
+                const maxHeight = document.body.scrollHeight - window.innerHeight;
+                const progress = scrolled / maxHeight;
+                document.querySelector('.scroll-indicator').style.transform = `scaleX(${progress})`;
+            });
+
+            // 分批加载动画以避免卡顿
+            setTimeout(() => {
+                anime({
+                    targets: '.section-fade',
+                    opacity: [0, 1],
+                    translateY: [30, 0],
+                    duration: 1000,
+                    delay: anime.stagger(200),
+                    easing: 'easeOutQuart'
+                });
+            }, 100);
+
+            // 数字滚动动画
+            setTimeout(() => {
+                anime({
+                    targets: '.data-highlight',
+                    innerHTML: function(el) {
+                        const finalValue = el.textContent;
+                        el.textContent = '0';
+                        return finalValue;
+                    },
+                    duration: 2000,
+                    delay: 800,
+                    round: 1,
+                    easing: 'easeOutExpo'
+                });
+            }, 200);
+
+            // 初始化图表
+            initCharts();
+        });
+
+        // 图表初始化函数
+        function initCharts() {
+            
+            // 供需平衡图表
+            const supplyDemandChart = echarts.init(document.getElementById('supplyDemandChart'));
+            const supplyDemandOption = {
+                backgroundColor: 'transparent',
+                tooltip: {
+                    trigger: 'axis',
+                    backgroundColor: 'rgba(0,0,0,0.8)',
+                    borderColor: '#D4AF37',
+                    textStyle: { color: '#F5F5F5' }
+                },
+                legend: {
+                    data: ['全球需求', 'EIA需求', '非OPEC供给', 'OPEC供给'],
+                    textStyle: { color: '#CCCCCC' },
+                    top: 20
+                },
+                grid: {
+                    left: '5%',
+                    right: '5%',
+                    bottom: '10%',
+                    top: '15%',
+                    containLabel: true
+                },
+                xAxis: {
+                    type: 'category',
+                    data: ['2024', '2025 (预测)', '2026 (预测)'],
+                    axisLine: { lineStyle: { color: '#666' } },
+                    axisLabel: { color: '#CCCCCC' }
+                },
+                yAxis: {
+                    type: 'value',
+                    name: '百万桶/日',
+                    nameTextStyle: { color: '#CCCCCC' },
+                    axisLine: { lineStyle: { color: '#666' } },
+                    axisLabel: { color: '#CCCCCC' },
+                    splitLine: { lineStyle: { color: '#333' } }
+                },
+                series: [
+                    {
+                        name: '全球需求',
+                        type: 'line',
+                        data: [104.18, 104.9, 106.0],
+                        lineStyle: { color: '#D4AF37', width: 3 },
+                        itemStyle: { color: '#D4AF37' },
+                        symbol: 'circle',
+                        symbolSize: 8
+                    },
+                    {
+                        name: 'EIA需求',
+                        type: 'line',
+                        data: [102.7, 103.5, 104.6],
+                        lineStyle: { color: '#B8860B', width: 2, type: 'dashed' },
+                        itemStyle: { color: '#B8860B' },
+                        symbol: 'diamond',
+                        symbolSize: 6
+                    },
+                    {
+                        name: '非OPEC供给',
+                        type: 'bar',
+                        data: [70.4, 71.6, 72.2],
+                        itemStyle: {
+                            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                                { offset: 0, color: 'rgba(212, 175, 55, 0.8)' },
+                                { offset: 1, color: 'rgba(212, 175, 55, 0.3)' }
+                            ])
+                        }
+                    },
+                    {
+                        name: 'OPEC供给',
+                        type: 'bar',
+                        data: [32.4, 32.7, 32.9],
+                        itemStyle: {
+                            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                                { offset: 0, color: 'rgba(184, 134, 11, 0.8)' },
+                                { offset: 1, color: 'rgba(184, 134, 11, 0.3)' }
+                            ])
+                        }
+                    }
+                ]
+            };
+            supplyDemandChart.setOption(supplyDemandOption);
+
+            // 历史价格图表
+            const historicalPriceChart = echarts.init(document.getElementById('historicalPriceChart'));
+            const historicalPriceOption = {
+                backgroundColor: 'transparent',
+                tooltip: {
+                    trigger: 'axis',
+                    backgroundColor: 'rgba(0,0,0,0.8)',
+                    borderColor: '#D4AF37',
+                    textStyle: { color: '#F5F5F5' }
+                },
+                legend: {
+                    data: ['WTI原油', '布伦特原油'],
+                    textStyle: { color: '#CCCCCC' },
+                    top: 20
+                },
+                grid: {
+                    left: '5%',
+                    right: '5%',
+                    bottom: '10%',
+                    top: '15%',
+                    containLabel: true
+                },
+                xAxis: {
+                    type: 'category',
+                    data: ['1986', '1990', '1998', '2000', '2008', '2014', '2016', '2020', '2022', '2024'],
+                    axisLine: { lineStyle: { color: '#666' } },
+                    axisLabel: { color: '#CCCCCC' }
+                },
+                yAxis: {
+                    type: 'value',
+                    name: '美元/桶',
+                    nameTextStyle: { color: '#CCCCCC' },
+                    axisLine: { lineStyle: { color: '#666' } },
+                    axisLabel: { color: '#CCCCCC' },
+                    splitLine: { lineStyle: { color: '#333' } }
+                },
+                series: [
+                    {
+                        name: 'WTI原油',
+                        type: 'line',
+                        data: [15.11, 24.53, 14.42, 30.38, 99.67, 93.17, 43.47, 39.16, 95.34, 79.00],
+                        lineStyle: { 
+                            color: '#D4AF37', 
+                            width: 3,
+                            shadowColor: 'rgba(212, 175, 55, 0.3)',
+                            shadowBlur: 10
+                        },
+                        itemStyle: { color: '#D4AF37' },
+                        symbol: 'circle',
+                        symbolSize: 6,
+                        areaStyle: {
+                            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                                { offset: 0, color: 'rgba(212, 175, 55, 0.3)' },
+                                { offset: 1, color: 'rgba(212, 175, 55, 0.05)' }
+                            ])
+                        }
+                    },
+                    {
+                        name: '布伦特原油',
+                        type: 'line',
+                        data: [0, 23.73, 12.72, 28.50, 97.26, 98.95, 43.73, 41.68, 100.93, 83.00],
+                        lineStyle: { 
+                            color: '#B8860B', 
+                            width: 2, 
+                            type: 'dashed',
+                            shadowColor: 'rgba(184, 134, 11, 0.3)',
+                            shadowBlur: 8
+                        },
+                        itemStyle: { color: '#B8860B' },
+                        symbol: 'diamond',
+                        symbolSize: 5
+                    }
+                ]
+            };
+            historicalPriceChart.setOption(historicalPriceOption);
+
+            // 响应式图表
+            window.addEventListener('resize', function() {
+                supplyDemandChart.resize();
+                historicalPriceChart.resize();
+            });
+        }
+
+        // 添加滚动触发的视差效果
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const rate = scrolled * -0.5;
+            
+            // 为hero section添加视差效果
+            const hero = document.querySelector('.hero-section');
+            if (hero) {
+                hero.style.transform = `translateY(${rate}px)`;
+            }
+        });
+
+        // 添加鼠标移动的微妙动效
+        document.addEventListener('mousemove', (e) => {
+            const cards = document.querySelectorAll('.glass-card, .chart-container');
+            const mouseX = e.clientX / window.innerWidth;
+            const mouseY = e.clientY / window.innerHeight;
+            
+            cards.forEach((card, index) => {
+                const x = (mouseX - 0.5) * 5;
+                const y = (mouseY - 0.5) * 5;
+                card.style.transform = `translateX(${x}px) translateY(${y}px)`;
+            });
+        });
+
+        // 增强的滚动动画
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    
+                    // 为每个元素添加延迟动画
+                    const elements = entry.target.querySelectorAll('.hover-lift, .glass-card');
+                    elements.forEach((el, index) => {
+                        setTimeout(() => {
+                            el.style.opacity = '1';
+                            el.style.transform = 'translateY(0)';
+                        }, index * 100);
+                    });
+                }
+            });
+        }, observerOptions);
+
+        // 观察所有需要动画的元素
+        document.querySelectorAll('.section-fade').forEach(section => {
+            observer.observe(section);
+        });
+
+        // 添加浮动装饰元素
+        function createFloatingOrnaments() {
+            const container = document.body;
+            for (let i = 0; i < 8; i++) {
+                const ornament = document.createElement('div');
+                ornament.className = 'floating-ornament';
+                ornament.style.left = Math.random() * 100 + '%';
+                ornament.style.top = Math.random() * 100 + '%';
+                ornament.style.animationDelay = Math.random() * 6 + 's';
+                ornament.style.animationDuration = (6 + Math.random() * 4) + 's';
+                container.appendChild(ornament);
+            }
+        }
+
+        // 页面加载完成后创建装饰元素
+        setTimeout(createFloatingOrnaments, 2000);
+    </script>
+
+    <!-- 参考文献部分 -->
+    <footer class="references-section py-16">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <div class="decorative-line mb-8"></div>
+                
+                <h3 class="title-font text-2xl font-bold mb-8 gold-gradient text-center">参考文献</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="text-sm font-semibold mb-4 gold-accent">国际组织与政府机构</h4>
+                        <div class="space-y-2">
+                            <div class="reference-item">
+                                [1] International Energy Agency. <em>World Energy Outlook 2024</em>. 
+                                <a href="https://www.iea.org/reports/world-energy-outlook-2024" target="_blank">https://www.iea.org/reports/world-energy-outlook-2024</a>
+                            </div>
+                            <div class="reference-item">
+                                [2] U.S. Energy Information Administration. <em>Short-Term Energy Outlook</em>. 
+                                <a href="https://www.eia.gov/outlooks/steo/" target="_blank">https://www.eia.gov/outlooks/steo/</a>
+                            </div>
+                            <div class="reference-item">
+                                [3] Organization of the Petroleum Exporting Countries. <em>World Oil Outlook 2024</em>. 
+                                <a href="https://www.opec.org/opec_web/en/publications/340.htm" target="_blank">https://www.opec.org/opec_web/en/publications/340.htm</a>
+                            </div>
+                            <div class="reference-item">
+                                [4] BP Statistical Review of World Energy. <em>2024 Edition</em>. 
+                                <a href="https://www.bp.com/en/global/corporate/energy-economics/statistical-review-of-world-energy.html" target="_blank">https://www.bp.com/en/global/corporate/energy-economics/statistical-review-of-world-energy.html</a>
+                            </div>
+                        </div>
+
+                        <h4 class="text-sm font-semibold mb-4 mt-6 gold-accent">学术研究机构</h4>
+                        <div class="space-y-2">
+                            <div class="reference-item">
+                                [5] Oxford Institute for Energy Studies. <em>The Future of Oil and Gas in a Low-Carbon World</em>. 
+                                <a href="https://www.oxfordenergy.org/" target="_blank">https://www.oxfordenergy.org/</a>
+                            </div>
+                            <div class="reference-item">
+                                [6] Cambridge Energy Research Associates. <em>Global Oil Supply and Demand Dynamics</em>. 
+                                <a href="https://www.ceraweek.com/" target="_blank">https://www.ceraweek.com/</a>
+                            </div>
+                            <div class="reference-item">
+                                [7] MIT Energy Initiative. <em>The Future of Natural Gas</em>. 
+                                <a href="https://energy.mit.edu/" target="_blank">https://energy.mit.edu/</a>
+                            </div>
+                        </div>
+
+                        <h4 class="text-sm font-semibold mb-4 mt-6 gold-accent">投资银行研究报告</h4>
+                        <div class="space-y-2">
+                            <div class="reference-item">
+                                [8] Goldman Sachs. <em>Global Energy Commodities Research</em>. 2024.
+                            </div>
+                            <div class="reference-item">
+                                [9] Morgan Stanley. <em>Global Oil and Gas Sector Analysis</em>. 2024.
+                            </div>
+                            <div class="reference-item">
+                                [10] JPMorgan Chase. <em>Energy Market Outlook and Strategy</em>. 2024.
+                            </div>
+                        </div>
+
+                        <h4 class="text-sm font-semibold mb-4 mt-6 gold-accent">专业咨询机构</h4>
+                        <div class="space-y-2">
+                            <div class="reference-item">
+                                [11] McKinsey & Company. <em>The Energy Transition: A Region-by-Region Agenda</em>. 
+                                <a href="https://www.mckinsey.com/industries/oil-and-gas" target="_blank">https://www.mckinsey.com/industries/oil-and-gas</a>
+                            </div>
+                            <div class="reference-item">
+                                [12] Deloitte. <em>Oil and Gas Industry Outlook 2024</em>. 
+                                <a href="https://www2.deloitte.com/us/en/pages/energy-and-resources/articles/oil-and-gas-industry-outlook.html" target="_blank">https://www2.deloitte.com/us/en/pages/energy-and-resources/articles/oil-and-gas-industry-outlook.html</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="text-sm font-semibold mb-4 gold-accent">企业财报与年报</h4>
+                        <div class="space-y-2">
+                            <div class="reference-item">
+                                [13] Saudi Aramco. <em>Annual Report 2023</em>. 
+                                <a href="https://www.aramco.com/en/investors/reports-and-presentations" target="_blank">https://www.aramco.com/en/investors/reports-and-presentations</a>
+                            </div>
+                            <div class="reference-item">
+                                [14] ExxonMobil Corporation. <em>2023 Annual Report on Form 10-K</em>. 
+                                <a href="https://corporate.exxonmobil.com/investors/annual-report" target="_blank">https://corporate.exxonmobil.com/investors/annual-report</a>
+                            </div>
+                            <div class="reference-item">
+                                [15] Chevron Corporation. <em>2023 Annual Report</em>. 
+                                <a href="https://www.chevron.com/investors/annual-report" target="_blank">https://www.chevron.com/investors/annual-report</a>
+                            </div>
+                            <div class="reference-item">
+                                [16] TotalEnergies SE. <em>2023 Universal Registration Document</em>. 
+                                <a href="https://totalenergies.com/investors/individual-shareholders/annual-reports" target="_blank">https://totalenergies.com/investors/individual-shareholders/annual-reports</a>
+                            </div>
+                        </div>
+
+                        <h4 class="text-sm font-semibold mb-4 mt-6 gold-accent">市场数据与分析</h4>
+                        <div class="space-y-2">
+                            <div class="reference-item">
+                                [17] Rystad Energy. <em>Global Oil and Gas Market Analysis</em>. 
+                                <a href="https://www.rystadenergy.com/" target="_blank">https://www.rystadenergy.com/</a>
+                            </div>
+                            <div class="reference-item">
+                                [18] Wood Mackenzie. <em>Global Energy Research and Analysis</em>. 
+                                <a href="https://www.woodmac.com/" target="_blank">https://www.woodmac.com/</a>
+                            </div>
+                            <div class="reference-item">
+                                [19] S&P Global Commodity Insights. <em>Global Oil Market Analysis</em>. 
+                                <a href="https://www.spglobal.com/commodityinsights/" target="_blank">https://www.spglobal.com/commodityinsights/</a>
+                            </div>
+                            <div class="reference-item">
+                                [20] Argus Media. <em>Global Oil Price Reporting and Analysis</em>. 
+                                <a href="https://www.argusmedia.com/" target="_blank">https://www.argusmedia.com/</a>
+                            </div>
+                        </div>
+
+                        <h4 class="text-sm font-semibold mb-4 mt-6 gold-accent">技术与创新研究</h4>
+                        <div class="space-y-2">
+                            <div class="reference-item">
+                                [21] International Energy Forum. <em>Technology and Innovation in Oil and Gas</em>. 
+                                <a href="https://www.ief.org/" target="_blank">https://www.ief.org/</a>
+                            </div>
+                            <div class="reference-item">
+                                [22] World Petroleum Council. <em>Future Energy Scenarios</em>. 
+                                <a href="https://www.world-petroleum.org/" target="_blank">https://www.world-petroleum.org/</a>
+                            </div>
+                        </div>
+
+                        <h4 class="text-sm font-semibold mb-4 mt-6 gold-accent">气候与能源转型</h4>
+                        <div class="space-y-2">
+                            <div class="reference-item">
+                                [23] International Renewable Energy Agency. <em>Global Energy Transformation</em>. 
+                                <a href="https://www.irena.org/" target="_blank">https://www.irena.org/</a>
+                            </div>
+                            <div class="reference-item">
+                                [24] Carbon Tracker Initiative. <em>Oil and Gas Transition Risks</em>. 
+                                <a href="https://carbontracker.org/" target="_blank">https://carbontracker.org/</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="decorative-line mt-12 mb-8"></div>
+                
+                <div class="text-center">
+                    <h4 class="text-sm font-semibold mb-4 gold-accent">免责声明</h4>
+                    <p class="text-xs leading-relaxed max-w-4xl mx-auto">
+                        本报告所载信息均来源于公开资料，本机构对这些信息的准确性和完整性不作任何保证。报告中的内容和意见仅供参考，并不构成对所述证券买卖的出价或询价。本机构及其雇员对使用本报告及其内容所引发的任何直接或间接损失概不负责。本报告版权归本机构所有，未经书面许可，任何机构和个人不得以任何形式翻版、复制和发布。如引用、刊发，需注明出处，且不得对本报告进行有悖原意的引用、删节和修改。
+                    </p>
+                    
+                    <div class="mt-6 pt-6 border-t border-gray-800">
+                        <p class="text-xs text-gray-500">
+                            © 2025 石油天然气行业深度分析报告 | 最后更新：2025年7月3日 | 
+                            <span class="gold-accent">数据截至2024年12月</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

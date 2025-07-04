@@ -1,0 +1,492 @@
+/* 质点智库专用样式 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap');
+
+:root {
+    --tk-black: #0a0a0a;
+    --tk-gray: #1a1a1a;
+    --tk-gold: #D4AF37;
+    --tk-gold-light: #F5E6A8;
+    --tk-gold-dark: #B8860B;
+    --tk-white: #ffffff;
+    --tk-gray-text: #f8f9fa;
+    --tk-gray-medium: #6c757d;
+}
+
+body {
+    font-family: 'Noto Sans SC', 'Poppins', sans-serif;
+    background: linear-gradient(135deg, var(--tk-black) 0%, var(--tk-gray) 50%, var(--tk-black) 100%);
+    color: var(--tk-gray-text);
+    overflow-x: hidden;
+}
+
+/* 智库专用渐变文字 */
+.tk-gradient-text {
+    background: linear-gradient(135deg, #D4AF37, #FFD700, #F5E6A8, #C9AA71, #B8860B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-size: 200% 200%;
+    animation: tk-shimmer 4s ease-in-out infinite;
+}
+
+@keyframes tk-shimmer {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* 智库卡片样式 */
+.tk-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(212, 175, 55, 0.15);
+    backdrop-filter: blur(15px);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.tk-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.1), transparent);
+    transition: left 0.6s ease;
+}
+
+.tk-card:hover::before {
+    left: 100%;
+}
+
+.tk-card:hover {
+    border-color: rgba(212, 175, 55, 0.4);
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-8px);
+    box-shadow: 
+        0 25px 50px rgba(0, 0, 0, 0.5),
+        0 0 50px rgba(212, 175, 55, 0.15);
+}
+
+/* 标签页样式 */
+.tk-tab {
+    position: relative;
+    padding: 12px 24px;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    background: rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.tk-tab.active {
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.2), rgba(255, 215, 0, 0.1));
+    border-color: rgba(212, 175, 55, 0.5);
+    color: var(--tk-gold);
+}
+
+.tk-tab:hover {
+    background: rgba(212, 175, 55, 0.1);
+    border-color: rgba(212, 175, 55, 0.3);
+}
+
+/* 行业分类容器样式 */
+#industry-tabs {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 8px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+#industry-tabs::-webkit-scrollbar {
+    display: none;
+}
+
+#sub-industry-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+#third-level-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+#fourth-level-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+/* 统一分类Tab样式 */
+.industry-tab,
+.sub-industry-tab,
+.third-level-tab,
+.fourth-level-tab {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(212, 175, 55, 0.15);
+    border-radius: 8px;
+    color: #e5e7eb;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    white-space: nowrap;
+    flex-shrink: 0;
+    min-width: fit-content;
+}
+
+/* 统一悬停和激活状态样式 */
+.industry-tab::before,
+.sub-industry-tab::before,
+.third-level-tab::before,
+.fourth-level-tab::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.1), transparent);
+    transition: left 0.6s ease;
+}
+
+.industry-tab:hover::before,
+.sub-industry-tab:hover::before,
+.third-level-tab:hover::before,
+.fourth-level-tab:hover::before {
+    left: 100%;
+}
+
+.industry-tab:hover,
+.sub-industry-tab:hover,
+.third-level-tab:hover,
+.fourth-level-tab:hover {
+    background: rgba(212, 175, 55, 0.1);
+    border-color: rgba(212, 175, 55, 0.3);
+    color: #fbbf24;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.15);
+}
+
+.industry-tab.active,
+.sub-industry-tab.active,
+.third-level-tab.active,
+.fourth-level-tab.active {
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.2), rgba(255, 215, 0, 0.15));
+    border-color: rgba(212, 175, 55, 0.5);
+    color: var(--tk-gold);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.25);
+}
+
+.industry-tab.active::after,
+.sub-industry-tab.active::after,
+.third-level-tab.active::after,
+.fourth-level-tab.active::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--tk-gold), transparent);
+    opacity: 0.8;
+}
+
+.industry-tab i,
+.sub-industry-tab i,
+.third-level-tab i,
+.fourth-level-tab i {
+    font-size: 16px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.industry-tab:hover i,
+.industry-tab.active i,
+.sub-industry-tab:hover i,
+.sub-industry-tab.active i,
+.third-level-tab:hover i,
+.third-level-tab.active i,
+.fourth-level-tab:hover i,
+.fourth-level-tab.active i {
+    opacity: 1;
+}
+
+.industry-tab span,
+.sub-industry-tab span,
+.third-level-tab span,
+.fourth-level-tab span {
+    font-weight: 500;
+    letter-spacing: 0.025em;
+}
+
+/* 分类响应式调整 */
+@media (max-width: 768px) {
+    #classification-area .mb-6 {
+        padding: 0 12px;
+        margin-bottom: 20px;
+    }
+    
+    #industry-tabs {
+        gap: 6px;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+    
+    #sub-industry-tabs,
+    #third-level-tabs,
+    #fourth-level-tabs {
+        gap: 8px;
+    }
+    
+    .industry-tab,
+    .sub-industry-tab,
+    .third-level-tab,
+    .fourth-level-tab {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 640px) {
+    #classification-area .mb-6 {
+        padding: 0 8px;
+        margin-bottom: 16px;
+    }
+    
+    #industry-tabs {
+        gap: 4px;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+    
+    #sub-industry-tabs,
+    #third-level-tabs,
+    #fourth-level-tabs {
+        gap: 6px;
+    }
+    
+    .industry-tab,
+    .sub-industry-tab,
+    .third-level-tab,
+    .fourth-level-tab {
+        padding: 5px 8px;
+        font-size: 11px;
+    }
+}
+
+/* 报告卡片专用样式 */
+.tk-report-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(212, 175, 55, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    transition: all 0.3s ease, opacity 0.2s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    group: true;
+}
+
+.tk-report-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--tk-gold), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.tk-report-card:hover::after {
+    opacity: 1;
+}
+
+.tk-report-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    border-color: rgba(212, 175, 55, 0.4);
+    box-shadow: 
+        0 20px 40px rgba(0, 0, 0, 0.6),
+        0 0 30px rgba(212, 175, 55, 0.2);
+}
+
+/* 标签样式 */
+.tk-tag {
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.2), rgba(184, 134, 11, 0.3));
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    color: var(--tk-gold);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* 按钮样式 */
+.tk-btn {
+    background: linear-gradient(135deg, var(--tk-gold-dark), var(--tk-gold));
+    color: black;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.tk-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.6s ease;
+}
+
+.tk-btn:hover::before {
+    left: 100%;
+}
+
+.tk-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(212, 175, 55, 0.4);
+}
+
+/* 导航栏样式 */
+.tk-nav {
+    backdrop-filter: blur(15px);
+    background: rgba(10, 10, 10, 0.9);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+/* 滚动动画 */
+.tk-fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.tk-fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .tk-card {
+        margin-bottom: 16px;
+    }
+    
+    .tk-report-card {
+        padding: 16px;
+    }
+}
+
+/* 加载动画 */
+.tk-loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(212, 175, 55, 0.3);
+    border-radius: 50%;
+    border-top-color: var(--tk-gold);
+    animation: tk-spin 1s ease-in-out infinite;
+}
+
+@keyframes tk-spin {
+    to { transform: rotate(360deg); }
+}
+
+/* 特殊装饰元素 */
+.tk-decorator {
+    position: relative;
+}
+
+.tk-decorator::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    width: 4px;
+    height: 4px;
+    background: var(--tk-gold);
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.tk-decorator::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    width: 4px;
+    height: 4px;
+    background: var(--tk-gold);
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+/* 二级分类显示/隐藏动画 */
+.sub-tabs-show {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateY(0) !important;
+}
+
+.sub-tabs-hide {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transform: translateY(4px) !important;
+}
+
+
+
+
+
+/* 三级分类显示/隐藏动画 */
+.third-tabs-show {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateY(0) !important;
+}
+
+.third-tabs-hide {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transform: translateY(4px) !important;
+}
+
+
+
