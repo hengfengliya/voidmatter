@@ -55,6 +55,74 @@ const reportsDatabase = [
             thirdLevel: '农用化工',
             fourthLevel: ''
         }
+    },
+    {
+        id: 'chemical-industry-2025',
+        title: '全球化学工业：周期底部徘徊，创新驱动未来',
+        publishDate: '2025-07-10',
+        tags: ['周期分析', '技术创新', '市场前景'],
+        preview: '深入分析全球化学工业在当前周期底部的发展态势，探讨技术创新如何重塑行业格局，并展望未来市场的发展前景与投资机遇。',
+        viewCount: 1800,
+        downloadCount: 420,
+        rating: 4.6,
+        filePath: 'industry-reports/化学工业.html',
+        classification: {
+            industry: '原材料',
+            subIndustry: '化工',
+            thirdLevel: '基础化工',
+            fourthLevel: '化学制品'
+        }
+    },
+    {
+        id: 'chemical-fiber-2025',
+        title: '化学纤维行业：需求复苏与技术升级双轮驱动',
+        publishDate: '2025-07-11',
+        tags: ['需求复苏', '技术升级', '产业链'],
+        preview: '全面解读化学纤维行业在全球需求复苏背景下的增长潜力，聚焦技术升级对产业链的深远影响，评估龙头企业的竞争优势。',
+        viewCount: 1650,
+        downloadCount: 380,
+        rating: 4.5,
+        filePath: 'industry-reports/化学纤维.html',
+        classification: {
+            industry: '原材料',
+            subIndustry: '化工',
+            thirdLevel: '化学纤维',
+            fourthLevel: ''
+        }
+    },
+    {
+        id: 'plastics-industry-2025',
+        title: '塑料行业：环保新规下的挑战与新材料机遇',
+        publishDate: '2025-07-12',
+        tags: ['环保新规', '新材料', '可持续发展'],
+        preview: '系统梳理全球环保新规对塑料行业的冲击，分析可降解塑料、高性能塑料等新材料带来的市场机遇，探讨行业的可持续发展路径。',
+        viewCount: 2100,
+        downloadCount: 510,
+        rating: 4.7,
+        filePath: 'industry-reports/塑料.html',
+        classification: {
+            industry: '原材料',
+            subIndustry: '化工',
+            thirdLevel: '塑料',
+            fourthLevel: ''
+        }
+    },
+    {
+        id: 'rubber-industry-2025',
+        title: '橡胶行业：供需格局演变与下游应用前景',
+        publishDate: '2025-07-13',
+        tags: ['供需格局', '下游应用', '价格预测'],
+        preview: '深入研究天然及合成橡胶的全球供需格局演变，分析其在轮胎、工业制品等下游应用领域的增长前景，并对未来价格走势做出预测。',
+        viewCount: 1500,
+        downloadCount: 350,
+        rating: 4.4,
+        filePath: 'industry-reports/橡胶.html',
+        classification: {
+            industry: '原材料',
+            subIndustry: '化工',
+            thirdLevel: '橡胶',
+            fourthLevel: ''
+        }
     }
 ];
 
