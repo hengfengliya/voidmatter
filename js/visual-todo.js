@@ -128,7 +128,7 @@ class VisualTodoSystem {
 
             <!-- 浮动操作按钮 -->
             <div class="fab-container">
-                <button class="fab main-fab" onclick="todoSystem.toggleTodo()" title="打开/关闭TODO">
+                <button class="fab main-fab" onclick="todoSystem.toggleTodo()" title="Alt+Q: 打开/关闭TODO">
                     <i class="fas fa-tasks"></i>
                 </button>
             </div>
@@ -705,8 +705,8 @@ class VisualTodoSystem {
      */
     setupKeyboardShortcuts() {
         document.addEventListener('keydown', (e) => {
-            // Ctrl/Cmd + T 打开TODO
-            if ((e.ctrlKey || e.metaKey) && e.key === 't' && !e.shiftKey) {
+            // Alt + Q 打开/关闭TODO (避免与浏览器快捷键冲突)
+            if (e.altKey && e.key === 'q' && !e.ctrlKey && !e.metaKey) {
                 e.preventDefault();
                 this.toggleTodo();
             }
@@ -716,8 +716,8 @@ class VisualTodoSystem {
                 this.hideTodo();
             }
             
-            // Ctrl/Cmd + N 新建任务
-            if ((e.ctrlKey || e.metaKey) && e.key === 'n' && this.isVisible) {
+            // Alt + A 新建任务 (仅在TODO界面打开时)
+            if (e.altKey && e.key === 'a' && this.isVisible && !e.ctrlKey && !e.metaKey) {
                 e.preventDefault();
                 this.addNewTodo();
             }
