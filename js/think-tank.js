@@ -60,7 +60,7 @@ function initTabs() {
 function initTabAnimations(tabId) {
     const tabContent = document.getElementById(tabId);
     if (tabContent) {
-        const cards = tabContent.querySelectorAll('.tk-report-card');
+        const cards = tabContent.querySelectorAll('.report-card, .tk-report-card');
         cards.forEach((card, index) => {
             card.style.opacity = '0';
             card.style.transform = 'translateY(30px)';
@@ -76,29 +76,52 @@ function initTabAnimations(tabId) {
 
 // 报告卡片事件
 function initReportCards() {
-    const reportCards = document.querySelectorAll('.tk-report-card');
-    
-    reportCards.forEach(card => {
-        // 点击事件
-        card.addEventListener('click', function() {
-            const reportUrl = this.dataset.reportUrl;
-            const reportTitle = this.querySelector('h3').textContent;
-            
-            if (reportUrl) {
-                openReportModal(reportUrl, reportTitle);
+    // 使用事件委托处理动态生成的报告卡片
+    const container = document.getElementById('reports-container');
+    if (container) {
+        container.addEventListener('click', function(e) {
+            const reportCard = e.target.closest('.report-card');
+            if (reportCard) {
+                // 检查是否有点击访问权限
+                if (typeof requestAccess === 'function') {
+                    // 从onclick属性中提取文件路径，或从data属性中获取
+                    const onclickAttr = reportCard.getAttribute('onclick');
+                    if (onclickAttr) {
+                        const match = onclickAttr.match(/requestAccess\(['"]([^'"]+)['"]\)/);
+                        if (match) {
+                            const reportPath = match[1];
+                            requestAccess(reportPath);
+                            return;
+                        }
+                    }
+                }
+                
+                // 备用方案：使用data属性或标题打开报告
+                const reportUrl = reportCard.dataset.reportUrl || reportCard.dataset.filePath;
+                const reportTitle = reportCard.querySelector('.report-title, h3')?.textContent || '报告';
+                
+                if (reportUrl) {
+                    openReportModal(reportUrl, reportTitle);
+                }
             }
         });
         
-        // 鼠标进入效果
-        card.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateY(-6px) scale(1.02)';
-        });
+        // 处理鼠标悬停效果
+        container.addEventListener('mouseenter', function(e) {
+            const reportCard = e.target.closest('.report-card');
+            if (reportCard) {
+                reportCard.style.transform = 'translateY(-6px) scale(1.02)';
+                reportCard.style.transition = 'all 0.3s ease';
+            }
+        }, true);
         
-        // 鼠标离开效果
-        card.addEventListener('mouseleave', function() {
-            this.style.transform = 'translateY(0) scale(1)';
-        });
-    });
+        container.addEventListener('mouseleave', function(e) {
+            const reportCard = e.target.closest('.report-card');
+            if (reportCard) {
+                reportCard.style.transform = 'translateY(0) scale(1)';
+            }
+        }, true);
+    }
 }
 
 // 打开报告模态框
@@ -268,29 +291,106 @@ function closeReportModal() {
 // 搜索功能
 function initSearch() {
     const searchInput = document.querySelector('#searchInput');
+    const clearBtn = document.querySelector('#clearSearchBtn');
+    
     if (searchInput) {
+        // 搜索输入事件
         searchInput.addEventListener('input', function() {
-            const searchTerm = this.value.toLowerCase();
-            const cards = document.querySelectorAll('.tk-report-card');
+            const searchTerm = this.value.toLowerCase().trim();
+            const cards = document.querySelectorAll('.report-card');
+            
+            let visibleCount = 0;
+            
+            // 显示/隐藏清空按钮
+            if (clearBtn) {
+                if (searchTerm) {
+                    clearBtn.classList.remove('hidden');
+                } else {
+                    clearBtn.classList.add('hidden');
+                }
+            }
             
             cards.forEach(card => {
-                const title = card.querySelector('h3').textContent.toLowerCase();
-                const description = card.querySelector('p').textContent.toLowerCase();
-                const tags = Array.from(card.querySelectorAll('.tk-tag')).map(tag => tag.textContent.toLowerCase());
+                // 获取标题文本
+                const titleElement = card.querySelector('.report-title, h3');
+                const title = titleElement ? titleElement.textContent.toLowerCase() : '';
                 
-                const isMatch = title.includes(searchTerm) || 
+                // 获取描述文本
+                const descriptionElement = card.querySelector('.report-preview, p');
+                const description = descriptionElement ? descriptionElement.textContent.toLowerCase() : '';
+                
+                // 获取标签文本
+                const tagElements = card.querySelectorAll('.report-tag, .tk-tag');
+                const tags = Array.from(tagElements).map(tag => tag.textContent.toLowerCase());
+                
+                // 检查是否匹配搜索词
+                const isMatch = searchTerm === '' || 
+                               title.includes(searchTerm) || 
                                description.includes(searchTerm) || 
                                tags.some(tag => tag.includes(searchTerm));
                 
-                if (isMatch || searchTerm === '') {
+                if (isMatch) {
                     card.style.display = 'block';
                     card.style.opacity = '1';
+                    card.style.transform = 'scale(1)';
+                    card.style.transition = 'all 0.3s ease';
+                    visibleCount++;
                 } else {
                     card.style.display = 'none';
                     card.style.opacity = '0';
+                    card.style.transform = 'scale(0.95)';
+                    card.style.transition = 'all 0.3s ease';
                 }
             });
+            
+            // 更新搜索结果统计
+            updateSearchStats(searchTerm, visibleCount);
         });
+        
+        // 键盘事件：ESC键清空搜索
+        searchInput.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                clearSearch();
+            }
+        });
+    }
+    
+    // 清空按钮点击事件
+    if (clearBtn) {
+        clearBtn.addEventListener('click', clearSearch);
+    }
+}
+
+// 清空搜索
+function clearSearch() {
+    const searchInput = document.querySelector('#searchInput');
+    const clearBtn = document.querySelector('#clearSearchBtn');
+    
+    if (searchInput) {
+        searchInput.value = '';
+        searchInput.focus();
+        
+        // 触发input事件以重置显示
+        const event = new Event('input', { bubbles: true });
+        searchInput.dispatchEvent(event);
+    }
+    
+    if (clearBtn) {
+        clearBtn.classList.add('hidden');
+    }
+}
+
+// 更新搜索结果统计
+function updateSearchStats(searchTerm, visibleCount) {
+    const statsElement = document.querySelector('.tk-content-stats');
+    if (statsElement) {
+        if (searchTerm === '') {
+            // 如果没有搜索词，显示原始分类统计
+            updateContentStats(currentIndustry, currentSubIndustry, currentThirdLevel, currentFourthLevel, visibleCount);
+        } else {
+            // 如果有搜索词，显示搜索结果统计
+            statsElement.textContent = `搜索"${searchTerm}" · 找到 ${visibleCount} 个相关报告`;
+        }
     }
 }
 
@@ -970,8 +1070,44 @@ function filterIndustryContent(industry, subIndustry, thirdLevel, fourthLevel) {
             fourthLevel
         );
         
-        // 更新显示统计
-        updateContentStats(industry, subIndustry, thirdLevel, fourthLevel, reportCount);
+        // 重新应用搜索过滤器（如果有搜索词）
+        const searchInput = document.querySelector('#searchInput');
+        if (searchInput && searchInput.value.trim()) {
+            const searchTerm = searchInput.value.toLowerCase().trim();
+            const cards = document.querySelectorAll('.report-card');
+            let visibleCount = 0;
+            
+            cards.forEach(card => {
+                const titleElement = card.querySelector('.report-title, h3');
+                const title = titleElement ? titleElement.textContent.toLowerCase() : '';
+                
+                const descriptionElement = card.querySelector('.report-preview, p');
+                const description = descriptionElement ? descriptionElement.textContent.toLowerCase() : '';
+                
+                const tagElements = card.querySelectorAll('.report-tag, .tk-tag');
+                const tags = Array.from(tagElements).map(tag => tag.textContent.toLowerCase());
+                
+                const isMatch = title.includes(searchTerm) || 
+                               description.includes(searchTerm) || 
+                               tags.some(tag => tag.includes(searchTerm));
+                
+                if (isMatch) {
+                    card.style.display = 'block';
+                    card.style.opacity = '1';
+                    card.style.transform = 'scale(1)';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                    card.style.opacity = '0';
+                    card.style.transform = 'scale(0.95)';
+                }
+            });
+            
+            updateSearchStats(searchTerm, visibleCount);
+        } else {
+            // 更新显示统计
+            updateContentStats(industry, subIndustry, thirdLevel, fourthLevel, reportCount);
+        }
     } else {
         console.warn('ReportsManager not available');
     }

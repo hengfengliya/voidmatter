@@ -1,0 +1,1860 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>节能与生态修复行业研究报告：双碳目标下的结构性机遇与全球产业重塑 — 2025年Q3</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700;800;900&family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            /* 深邃黑金权力色系 */
+            --obsidian-black: #0A0A0A;
+            --midnight-black: #151515;
+            --shadow-black: #1F1F1F;
+            --charcoal-deep: #2A2A2A;
+            
+            /* 稀缺金色层次 */
+            --sovereign-gold: #B8860B;
+            --imperial-gold: #DAA520;
+            --aureate-whisper: #F4E4BC;
+            --golden-shadow: #8B6914;
+            
+            /* 权力灰度 */
+            --platinum-mist: #E5E5E5;
+            --sterling-silver: #C0C0C0;
+            --graphite-steel: #696969;
+            --charcoal-whisper: #808080;
+            
+            /* 稀缺强调色 */
+            --ruby-accent: #8B0000;
+            --emerald-depth: #006400;
+            --sapphire-authority: #1e3a8a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, 
+                var(--obsidian-black) 0%, 
+                var(--midnight-black) 40%, 
+                var(--shadow-black) 100%);
+            color: var(--platinum-mist);
+            line-height: 1.8;
+            letter-spacing: 0.02em;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        /* 排版系统 */
+        .imperial-title {
+            font-family: 'Playfair Display', serif;
+            font-weight: 200;
+            letter-spacing: 0.12em;
+            line-height: 1.05;
+            color: var(--aureate-whisper);
+            text-shadow: 0 3px 12px rgba(184, 134, 11, 0.4);
+        }
+
+        .imperial-subtitle {
+            font-family: 'Playfair Display', serif;
+            font-weight: 300;
+            letter-spacing: 0.08em;
+            line-height: 1.15;
+            color: var(--imperial-gold);
+            text-shadow: 0 2px 8px rgba(218, 165, 32, 0.3);
+        }
+
+        .imperial-tagline {
+            font-family: 'Inter', sans-serif;
+            font-weight: 200;
+            letter-spacing: 0.06em;
+            line-height: 1.4;
+            color: var(--sterling-silver);
+            font-style: italic;
+        }
+
+        .imperial-dedication {
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+            letter-spacing: 0.04em;
+            line-height: 1.3;
+            color: var(--imperial-gold);
+        }
+
+        .imperial-dedication-sub {
+            font-family: 'Inter', sans-serif;
+            font-weight: 200;
+            letter-spacing: 0.05em;
+            line-height: 1.3;
+            color: var(--sterling-silver);
+            font-style: italic;
+        }
+
+        .sovereign-heading {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            color: var(--imperial-gold);
+            text-shadow: 0 1px 4px rgba(218, 165, 32, 0.4);
+        }
+
+        .noble-text {
+            font-weight: 300;
+            letter-spacing: 0.03em;
+            line-height: 2.2;
+            color: var(--platinum-mist);
+        }
+
+        .executive-quote {
+            font-weight: 300;
+            letter-spacing: 0.02em;
+            line-height: 1.8;
+            color: var(--sterling-silver);
+            font-size: 0.95rem;
+            font-style: italic;
+            position: relative;
+            padding: 0 2rem;
+            margin: 2rem 0;
+        }
+
+        .executive-quote::before {
+            content: '"';
+            position: absolute;
+            left: 0;
+            top: -0.5rem;
+            font-size: 3rem;
+            color: var(--sovereign-gold);
+            opacity: 0.3;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .executive-quote::after {
+            content: '"';
+            position: absolute;
+            right: 0;
+            bottom: -0.5rem;
+            font-size: 3rem;
+            color: var(--sovereign-gold);
+            opacity: 0.3;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .exclusive-number {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: var(--sovereign-gold);
+            text-shadow: 0 1px 3px rgba(184, 134, 11, 0.5);
+        }
+
+        /* 布局容器系统 */
+        .sovereign-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 5rem;
+        }
+
+        .imperial-section {
+            margin: 12rem 0;
+            position: relative;
+        }
+
+        /* 卡片系统 */
+        .authority-card {
+            background: linear-gradient(145deg, 
+                rgba(21, 21, 21, 0.9) 0%, 
+                rgba(31, 31, 31, 0.8) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.15);
+            border-radius: 2px;
+            padding: 3rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            box-shadow: 
+                0 8px 32px rgba(0, 0, 0, 0.6),
+                inset 0 1px 1px rgba(244, 228, 188, 0.05);
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .authority-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(184, 134, 11, 0.3);
+            box-shadow: 
+                0 16px 48px rgba(0, 0, 0, 0.8),
+                0 0 24px rgba(184, 134, 11, 0.1),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08);
+        }
+
+        .authority-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(90deg, var(--sovereign-gold), transparent);
+            opacity: 0.6;
+        }
+
+        .authority-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(270deg, var(--sovereign-gold), transparent);
+            opacity: 0.6;
+        }
+
+        .golden-glass-card {
+            background: 
+                radial-gradient(circle at 30% 30%, rgba(218, 165, 32, 0.12) 0%, transparent 50%),
+                radial-gradient(circle at 70% 70%, rgba(184, 134, 11, 0.08) 0%, transparent 50%),
+                linear-gradient(135deg, 
+                    rgba(244, 228, 188, 0.06) 0%, 
+                    rgba(218, 165, 32, 0.04) 30%,
+                    rgba(184, 134, 11, 0.03) 70%,
+                    rgba(139, 105, 20, 0.02) 100%);
+            border: 1px solid rgba(218, 165, 32, 0.15);
+            border-radius: 4px;
+            padding: 2.5rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            box-shadow: 
+                0 8px 32px rgba(0, 0, 0, 0.6),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08),
+                inset 0 0 30px rgba(218, 165, 32, 0.03);
+            transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .golden-glass-card::before {
+            content: '';
+            position: absolute;
+            inset: -1px;
+            background: linear-gradient(45deg, 
+                rgba(218, 165, 32, 0.2) 0%, 
+                rgba(184, 134, 11, 0.1) 25%,
+                transparent 50%,
+                rgba(244, 228, 188, 0.1) 75%,
+                rgba(218, 165, 32, 0.15) 100%);
+            border-radius: 4px;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.8s ease;
+        }
+
+        .golden-glass-card:hover {
+            transform: translateY(-3px);
+            border-color: rgba(218, 165, 32, 0.3);
+            box-shadow: 
+                0 16px 48px rgba(0, 0, 0, 0.8),
+                0 0 40px rgba(218, 165, 32, 0.1),
+                inset 0 1px 1px rgba(244, 228, 188, 0.12),
+                inset 0 0 40px rgba(218, 165, 32, 0.05);
+        }
+
+        .golden-glass-card:hover::before {
+            opacity: 1;
+        }
+
+        .investment-logic-card {
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(218, 165, 32, 0.08) 0%, transparent 60%),
+                radial-gradient(circle at 80% 20%, rgba(244, 228, 188, 0.05) 0%, transparent 60%),
+                linear-gradient(135deg, 
+                    rgba(184, 134, 11, 0.06) 0%, 
+                    rgba(139, 105, 20, 0.04) 50%,
+                    rgba(218, 165, 32, 0.02) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.12);
+            border-radius: 2px;
+            padding: 3rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            box-shadow: 
+                0 8px 32px rgba(0, 0, 0, 0.6),
+                inset 0 1px 1px rgba(244, 228, 188, 0.06),
+                inset 0 0 25px rgba(184, 134, 11, 0.02);
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .investment-logic-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, 
+                transparent 0%,
+                rgba(218, 165, 32, 0.4) 25%,
+                rgba(244, 228, 188, 0.6) 50%,
+                rgba(218, 165, 32, 0.4) 75%,
+                transparent 100%);
+            opacity: 0;
+            transition: opacity 0.6s ease;
+        }
+
+        .investment-logic-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(184, 134, 11, 0.25);
+            box-shadow: 
+                0 16px 48px rgba(0, 0, 0, 0.8),
+                0 0 30px rgba(218, 165, 32, 0.08),
+                inset 0 1px 1px rgba(244, 228, 188, 0.1),
+                inset 0 0 35px rgba(184, 134, 11, 0.04);
+        }
+
+        .investment-logic-card:hover::after {
+            opacity: 1;
+        }
+
+        .disclaimer-card {
+            background: linear-gradient(145deg, 
+                rgba(31, 31, 31, 0.95) 0%, 
+                rgba(42, 42, 42, 0.9) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.18);
+            border-radius: 3px;
+            padding: 4rem;
+            position: relative;
+            backdrop-filter: blur(25px);
+            box-shadow: 
+                0 12px 40px rgba(0, 0, 0, 0.7),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08),
+                inset 0 0 30px rgba(184, 134, 11, 0.02);
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .disclaimer-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 2px;
+            background: linear-gradient(90deg, 
+                transparent, 
+                var(--sovereign-gold), 
+                transparent);
+            opacity: 0.6;
+        }
+
+        .disclaimer-card:hover {
+            border-color: rgba(184, 134, 11, 0.25);
+            box-shadow: 
+                0 16px 50px rgba(0, 0, 0, 0.8),
+                0 0 25px rgba(184, 134, 11, 0.08),
+                inset 0 1px 1px rgba(244, 228, 188, 0.12);
+        }
+
+        .disclaimer-text {
+            font-weight: 300;
+            letter-spacing: 0.02em;
+            line-height: 2;
+            color: var(--platinum-mist);
+            font-size: 1rem;
+        }
+
+        /* 表格系统 */
+        .imperial-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            background: rgba(15, 15, 15, 0.8);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(184, 134, 11, 0.2);
+            border-radius: 2px;
+        }
+
+        .imperial-table th {
+            background: rgba(184, 134, 11, 0.08);
+            padding: 2rem 1.5rem;
+            text-align: left;
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--imperial-gold);
+            border-bottom: 1px solid rgba(184, 134, 11, 0.2);
+        }
+
+        .imperial-table td {
+            padding: 1.8rem 1.5rem;
+            border-bottom: 1px solid rgba(184, 134, 11, 0.05);
+            font-weight: 300;
+        }
+
+        .imperial-table tbody tr:hover {
+            background: rgba(184, 134, 11, 0.03);
+        }
+
+        /* 垂直进度条导航系统 */
+        .reading-progress {
+            position: fixed;
+            top: 50%;
+            right: 2rem;
+            width: 4px;
+            height: 200px;
+            transform: translateY(-50%);
+            background: linear-gradient(180deg, 
+                rgba(184, 134, 11, 0.2) 0%, 
+                rgba(218, 165, 32, 0.3) 30%,
+                rgba(244, 228, 188, 0.4) 60%,
+                rgba(218, 165, 32, 0.3) 85%,
+                rgba(139, 105, 20, 0.2) 100%);
+            z-index: 1001;
+            box-shadow: 
+                0 0 12px rgba(184, 134, 11, 0.6),
+                2px 0 8px rgba(184, 134, 11, 0.3),
+                inset 1px 0 2px rgba(244, 228, 188, 0.4);
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+        .reading-progress::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(180deg,
+                rgba(244, 228, 188, 0.1) 0%,
+                rgba(218, 165, 32, 0.15) 50%,
+                rgba(244, 228, 188, 0.1) 100%);
+            border-radius: 2px;
+            animation: progressShimmer 3s ease-in-out infinite;
+        }
+
+        .reading-progress-fill {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(180deg,
+                var(--golden-shadow) 0%,
+                var(--sovereign-gold) 50%,
+                var(--imperial-gold) 100%);
+            border-radius: 2px;
+            transition: height 0.1s ease;
+            box-shadow: 
+                inset 0 1px 2px rgba(244, 228, 188, 0.3),
+                0 0 8px rgba(184, 134, 11, 0.4);
+        }
+
+        @keyframes progressShimmer {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.8; }
+        }
+
+        .progress-tooltip {
+            position: fixed;
+            top: 50%;
+            right: 7rem;
+            transform: translateY(-50%);
+            background: linear-gradient(135deg, 
+                rgba(15, 15, 15, 0.95) 0%, 
+                rgba(31, 31, 31, 0.9) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.25);
+            border-radius: 8px;
+            padding: 0.8rem 2rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 0.85rem;
+            font-weight: 300;
+            color: var(--imperial-gold);
+            backdrop-filter: blur(20px);
+            box-shadow: 
+                0 8px 32px rgba(0, 0, 0, 0.7),
+                0 0 20px rgba(184, 134, 11, 0.1),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+            z-index: 1002;
+            white-space: nowrap;
+            letter-spacing: 0.03em;
+        }
+
+        .progress-tooltip.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(-50%) translateX(-8px);
+        }
+
+        .progress-tooltip::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -8px;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-left: 8px solid rgba(184, 134, 11, 0.25);
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+        }
+
+        .progress-tooltip::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -7px;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-left: 7px solid rgba(15, 15, 15, 0.95);
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+        }
+
+        /* 装饰元素 */
+        .sovereign-divider {
+            height: 1px;
+            background: linear-gradient(90deg, 
+                transparent 0%, 
+                rgba(184, 134, 11, 0.3) 30%, 
+                rgba(184, 134, 11, 0.6) 50%, 
+                rgba(184, 134, 11, 0.3) 70%, 
+                transparent 100%);
+            margin: 8rem 0;
+            position: relative;
+        }
+
+        .sovereign-divider::before {
+            content: '◆';
+            position: absolute;
+            top: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--sovereign-gold);
+            font-size: 16px;
+            background: var(--obsidian-black);
+            padding: 0 1rem;
+        }
+
+        /* 引用文献系统 */
+        .citation-item {
+            padding: 1.5rem 2rem;
+            margin: 0.8rem 0;
+            background: linear-gradient(135deg, 
+                rgba(21, 21, 21, 0.8) 0%, 
+                rgba(31, 31, 31, 0.6) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.15);
+            border-radius: 3px;
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .citation-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--sovereign-gold), var(--golden-shadow));
+            opacity: 0.6;
+            transition: opacity 0.3s ease;
+        }
+
+        .citation-item:hover {
+            border-color: rgba(184, 134, 11, 0.4);
+            background: linear-gradient(135deg, 
+                rgba(31, 31, 31, 0.9) 0%, 
+                rgba(42, 42, 42, 0.7) 100%);
+            transform: translateX(6px) translateY(-1px);
+            box-shadow: 
+                0 8px 25px rgba(0, 0, 0, 0.5),
+                0 0 20px rgba(184, 134, 11, 0.08);
+        }
+
+        .citation-item:hover::before {
+            opacity: 1;
+        }
+
+        .citation-item a {
+            color: var(--platinum-mist);
+            text-decoration: none;
+            font-size: 0.85rem;
+            line-height: 1.7;
+            font-weight: 300;
+            transition: color 0.4s ease;
+            display: block;
+            position: relative;
+        }
+
+        .citation-item a::before {
+            content: '';
+            position: absolute;
+            left: -0.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 4px;
+            background: var(--sovereign-gold);
+            border-radius: 50%;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .citation-item:hover a {
+            color: var(--aureate-whisper);
+            padding-left: 1rem;
+        }
+
+        .citation-item:hover a::before {
+            opacity: 0.8;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 1024px) {
+            .sovereign-container {
+                padding: 0 2.5rem;
+            }
+            .imperial-section {
+                margin: 8rem 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .sovereign-container {
+                padding: 0 1.5rem;
+            }
+            .imperial-section {
+                margin: 6rem 0;
+            }
+            .authority-card {
+                padding: 2rem;
+            }
+            .reading-progress {
+                right: 1rem;
+                height: 150px;
+                width: 3px;
+            }
+            .progress-tooltip {
+                right: 5rem;
+                padding: 0.6rem 1.5rem;
+                font-size: 0.75rem;
+            }
+        }
+        
+        /* 选择高亮 */
+        ::selection {
+            background: rgba(184, 134, 11, 0.2);
+            color: var(--aureate-whisper);
+        }
+        
+        /* 滚动条 */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: var(--obsidian-black);
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: var(--sovereign-gold);
+            border-radius: 3px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--imperial-gold);
+        }
+    </style>
+</head>
+<body>
+    <!-- 垂直进度条 -->
+    <div class="reading-progress">
+        <div class="reading-progress-fill"></div>
+    </div>
+    
+    <!-- 进度标题提示器 -->
+    <div class="progress-tooltip" id="progress-tooltip"></div>
+    
+    <!-- 首屏标题 -->
+    <header id="header" class="min-h-screen flex items-center justify-center relative" data-title="节能与生态修复行业研究报告">
+        <div class="sovereign-container text-center relative z-10">
+            <!-- 主标题区域 -->
+            <div class="mb-16">
+                <h1 class="imperial-title text-5xl md:text-7xl mb-6">
+                    节能与生态修复行业研究报告
+                </h1>
+                
+                <h2 class="imperial-subtitle text-2xl md:text-4xl mb-12 opacity-90">
+                    双碳目标下的结构性机遇与全球产业重塑
+                </h2>
+            </div>
+            
+            <!-- 英文副标题 -->
+            <div class="mb-12">
+                <div class="imperial-tagline text-sm md:text-base opacity-75 max-w-4xl mx-auto">
+                    Energy Conservation and Ecological Restoration Industry Research Report:<br class="md:hidden">
+                    Structural Opportunities and Global Industrial Transformation under Dual Carbon Goals
+                </div>
+            </div>
+            
+            <!-- 致敬区域 -->
+            <div class="mb-16">
+                <div class="imperial-dedication text-sm md:text-base">
+                    致：机构投资者与高净值客户
+                </div>
+                <div class="imperial-dedication-sub text-xs md:text-sm opacity-60 mt-2">
+                    For: Institutional Investors and High Net Worth Clients
+                </div>
+            </div>
+            
+            <!-- 发布日期卡片 -->
+            <div class="golden-glass-card inline-block">
+                <div class="text-xs uppercase tracking-[0.2em] opacity-50 mb-4 font-light">
+                    本报告发布于 · Published on
+                </div>
+                <div class="sovereign-heading text-base">
+                    <span id="date-cn" class="exclusive-number">2025年7月</span> 
+                    <span class="mx-4 text-sovereign-gold opacity-40">◆</span> 
+                    <span id="date-en" class="exclusive-number">July 2025</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 背景装饰 -->
+        <div class="absolute inset-0 pointer-events-none opacity-8">
+            <div class="absolute top-20 left-20 w-px h-32 bg-gradient-to-b from-sovereign-gold to-transparent"></div>
+            <div class="absolute bottom-20 right-20 w-px h-32 bg-gradient-to-t from-sovereign-gold to-transparent"></div>
+            <div class="absolute top-1/2 left-1/4 w-24 h-px bg-gradient-to-r from-sovereign-gold to-transparent"></div>
+            <div class="absolute top-1/3 right-1/4 w-24 h-px bg-gradient-to-l from-sovereign-gold to-transparent"></div>
+        </div>
+    </header>
+
+    <!-- 摘要 -->
+    <section id="summary" class="imperial-section" data-title="摘要">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl md:text-4xl mb-12 text-center">摘要</h2>
+            
+            <div class="executive-quote max-w-4xl mx-auto text-center mb-16">
+                本报告旨在构建一个系统性的认知框架，以剖析"节能与生态修复"这一宏大产业的结构性转变与战略机遇。
+            </div>
+
+            <div class="grid md:grid-cols-1 gap-8 mb-16">
+                <div class="investment-logic-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="fas fa-lightbulb mr-3"></i>
+                        产业转型的核心逻辑
+                    </h3>
+                    <div class="noble-text">
+                        该行业正经历从传统的、以政策合规为主要驱动的"环保"概念，向由技术创新、商业模式变革和全球碳中和共识共同驱动的"绿色经济增长引擎"的结构性转变。这一转变的核心逻辑在于，环境议题已从单纯的外部性成本，演变为关乎国家能源安全、产业竞争力和经济可持续性的核心战略议题。
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-16">
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="fas fa-chart-line mr-3"></i>
+                        市场规模与增长
+                    </h3>
+                    <div class="noble-text">
+                        综合多个细分市场数据，预计全球节能与生态修复核心市场规模在2024年合计超过<span class="exclusive-number">2.5万亿美元</span>，并有望在2030年突破<span class="exclusive-number">4万亿美元</span>。其中，全球水处理市场在2024年规模约为<span class="exclusive-number">3464亿美元</span>，固体废弃物管理市场规模约<span class="exclusive-number">1.4万亿美元</span>，空气质量控制系统市场约<span class="exclusive-number">1074亿美元</span>。
+                    </div>
+                </div>
+
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="fas fa-sync-alt mr-3"></i>
+                        结构性转变三大趋势
+                    </h3>
+                    <div class="noble-text mb-4">
+                        <strong class="exclusive-number">从末端治理到源头减量：</strong> 产业重心正从污染产生后的处理，转向通过能效提升、清洁生产和循环经济模式从源头减少能耗与污染。
+                    </div>
+                    <div class="noble-text mb-4">
+                        <strong class="exclusive-number">从工程驱动到服务驱动：</strong> 商业模式正从一次性的EPC模式，向提供长期稳定现金流的运营服务、合同能源管理乃至"能源即服务"（EaaS）模式演进。
+                    </div>
+                    <div class="noble-text">
+                        <strong class="exclusive-number">从孤立技术到系统集成：</strong> 数字化、智能化技术正将孤立的节能设备和环保设施整合成高效的系统解决方案。
+                    </div>
+                </div>
+            </div>
+
+            <div class="investment-logic-card">
+                <h3 class="sovereign-heading text-xl mb-6">
+                    <i class="fas fa-globe-americas mr-3"></i>
+                    区域差异化分析
+                </h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="authority-card">
+                        <h4 class="sovereign-heading text-lg mb-4">中国</h4>
+                        <div class="noble-text">
+                            政策执行力强，"双碳"目标下的"1+N"顶层设计为产业提供了高度确定性的增长路径。政府通过五年规划、专项行动方案等工具，自上而下地分解目标、配置资源。
+                        </div>
+                    </div>
+                    <div class="authority-card">
+                        <h4 class="sovereign-heading text-lg mb-4">欧盟</h4>
+                        <div class="noble-text">
+                            依托全球最成熟的碳定价机制（EU-ETS）和严格的《可持续金融分类法案》，欧盟的绿色产业市场化程度最高，技术标准引领全球。
+                        </div>
+                    </div>
+                    <div class="authority-card">
+                        <h4 class="sovereign-heading text-lg mb-4">美国</h4>
+                        <div class="noble-text">
+                            《通胀削减法案》（IRA）通过历史性的大规模财税激励，强力催化本土清洁技术制造和应用市场，在CCUS、绿氢和交通电动化等前沿领域展现出强大的产业塑造能力。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 行业全景与定义 -->
+    <section id="industry-overview" class="imperial-section" data-title="行业全景与定义">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl md:text-4xl mb-12 text-center">行业全景与定义：勾勒"大环保"产业的边界与核心</h2>
+            
+            <div class="executive-quote max-w-4xl mx-auto text-center mb-16">
+                为了构建一个严谨的行业认知体系，首要任务是界定研究范围。通过比较全球主要经济体对该产业的官方定义与统计口径的异同，我们不仅能明确本报告的研究边界，更能揭示不同区域政策导向和市场成熟度的深层次差异。
+            </div>
+
+            <div class="grid md:grid-cols-1 gap-8 mb-16">
+                <div class="investment-logic-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="fas fa-map-marker-alt mr-3"></i>
+                        中国标准：顶层设计下的战略性新兴产业
+                    </h3>
+                    <div class="noble-text mb-6">
+                        在《国民经济和社会发展第十四个五年规划和2035年远景目标纲要》中，"节能环保"被明确列为需要培育壮大的战略性新兴产业之一。这一定位表明，该产业在中国并非仅仅是解决环境问题的辅助性行业，而是被视为推动经济结构转型和实现高质量发展的新增长引擎。
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="authority-card">
+                            <h4 class="sovereign-heading text-lg mb-4">高效节能产业</h4>
+                            <div class="noble-text">
+                                包括节能设备制造（如高效电机、变压器）、节能技术推广与服务（如合同能源管理）、节能改造工程等。
+                            </div>
+                        </div>
+                        <div class="authority-card">
+                            <h4 class="sovereign-heading text-lg mb-4">先进环保产业</h4>
+                            <div class="noble-text">
+                                涵盖环保技术装备制造（如水、气、固、土、噪声等污染防治设备）和环保服务（如环境监测、治理服务）。
+                            </div>
+                        </div>
+                        <div class="authority-card">
+                            <h4 class="sovereign-heading text-lg mb-4">资源循环利用产业</h4>
+                            <div class="noble-text">
+                                包括固体废弃物资源化利用、再生资源回收加工、水资源循环利用等。
+                            </div>
+                        </div>
+                        <div class="authority-card">
+                            <h4 class="sovereign-heading text-lg mb-4">绿色交通车船和设备制造</h4>
+                            <div class="noble-text">
+                                重点关注新能源汽车、节能船舶等交通工具的制造。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-16">
+                <div class="investment-logic-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="fas fa-euro-sign mr-3"></i>
+                        欧盟标准：以金融为杠杆的"绿色"界定
+                    </h3>
+                    <div class="noble-text mb-6">
+                        欧盟的《可持续金融分类法案》（EU Taxonomy）是一个动态的、以科学标准为基础的筛选工具，旨在界定何种经济活动可被视为"环境可持续"，从而引导资本流向真正的绿色项目，防止"洗绿"。
+                    </div>
+                    <div class="space-y-3">
+                        <div class="noble-text">• 气候变化减缓</div>
+                        <div class="noble-text">• 气候变化适应</div>
+                        <div class="noble-text">• 水和海洋资源的可持续利用和保护</div>
+                        <div class="noble-text">• 向循环经济转型</div>
+                        <div class="noble-text">• 污染防治与控制</div>
+                        <div class="noble-text">• 生物多样性和生态系统的保护与恢复</div>
+                    </div>
+                </div>
+
+                <div class="investment-logic-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="fas fa-flag-usa mr-3"></i>
+                        美国标准：市场驱动下的分类滞后与演进
+                    </h3>
+                    <div class="noble-text mb-6">
+                        与中国和欧盟不同，美国的产业分类体系更多地反映了市场自发演进的结果，官方分类标准往往滞后于产业的实际发展。北美产业分类系统（NAICS）目前并未为"生态修复"等新兴的综合性服务行业设立专门的代码。
+                    </div>
+                    <div class="noble-text">
+                        产业界已正式向政府提议，为2027年的NAICS修订增设三个新的六位代码：生态修复重型和土木工程施工、生态修复服务、生态修复支持活动。这一提议说明，该行业已经发展到相当的规模（年产值超90亿美元）和专业化程度。
+                    </div>
+                </div>
+            </div>
+
+            <div class="authority-card">
+                <h3 class="sovereign-heading text-xl mb-6">
+                    <i class="fas fa-sitemap mr-3"></i>
+                    产业图谱与价值链
+                </h3>
+                <div class="noble-text mb-8">
+                    为了回答产业内部是如何运作的，各个环节如何分工协作，价值和利润在产业链的何处产生、又在何处集中，我们绘制了详细的产业生态全景图。
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="authority-card">
+                        <h4 class="sovereign-heading text-lg mb-4">上游：核心部件与设备制造商</h4>
+                        <div class="noble-text">
+                            研发、生产构成节能系统的基础元器件和核心设备。包括高效电机、变频器、节能型变压器、先进的保温隔热材料等。上游是技术创新的源头，拥有核心专利、先进材料技术的企业享有较高的技术壁垒和利润率。
+                        </div>
+                    </div>
+                    <div class="authority-card">
+                        <h4 class="sovereign-heading text-lg mb-4">中游：技术方案提供商与工程服务商</h4>
+                        <div class="noble-text">
+                            针对特定客户的用能痛点，提供系统性的节能解决方案。包括前期的能源审计与诊断、节能方案设计、设备采购与集成、项目施工与改造。核心价值在于系统集成能力和项目管理能力。
+                        </div>
+                    </div>
+                    <div class="authority-card">
+                        <h4 class="sovereign-heading text-lg mb-4">下游：综合能源服务与运营</h4>
+                        <div class="noble-text">
+                            提供长期的能源管理和运营服务，超越一次性的工程项目。核心代表是合同能源管理公司（ESCOs）和新兴的"能源即服务"（EaaS）提供商。核心价值在于创造稳定、长期的现金流。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 宏观驱动力 -->
+    <section id="macro-drivers" class="imperial-section" data-title="宏观驱动力">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl md:text-4xl mb-12 text-center">宏观驱动力：全球"碳中和"共识下的政策、经济与技术变革</h2>
+            
+            <div class="executive-quote max-w-4xl mx-auto text-center mb-16">
+                《巴黎协定》是理解本轮绿色产业浪潮的起点。它并非一份孤立的环保条约，而是一个旨在重塑全球能源结构和经济发展模式的长期制度框架。
+            </div>
+
+            <div class="grid md:grid-cols-1 gap-8 mb-16">
+                <div class="investment-logic-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="fas fa-globe-americas mr-3"></i>
+                        《巴黎协定》的制度框架
+                    </h3>
+                    <div class="noble-text mb-6">
+                        《巴黎协定》的核心目标是"将全球平均气温较前工业化时期上升幅度控制在2摄氏度以内，并努力将温度上升幅度限制在1.5摄氏度以内"。这一目标意味着，全球经济必须在21世纪中叶（约2050年）左右实现温室气体的净零排放，即"碳中和"。
+                    </div>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="authority-card">
+                            <h4 class="sovereign-heading text-lg mb-4">核心目标的确立</h4>
+                            <div class="noble-text">
+                                要实现1.5°C的目标，全球温室气体排放量必须在2025年前达到峰值，并在2030年前下降43%。这为节能（降低能源需求）和生态修复（增加碳汇、治理环境）提供了基本支点。
+                            </div>
+                        </div>
+                        <div class="authority-card">
+                            <h4 class="sovereign-heading text-lg mb-4">"棘轮效应"机制</h4>
+                            <div class="noble-text">
+                                各国首先根据自身情况提交减排承诺（NDCs），然后每五年进行一次全球盘点，评估集体进展与目标的差距。这一循环形成了一个只进不退的"棘轮效应"。
+                            </div>
+                        </div>
+                        <div class="authority-card">
+                            <h4 class="sovereign-heading text-lg mb-4">全球合作与传导路径</h4>
+                            <div class="noble-text">
+                                协定建立了资金、技术和能力建设的支持框架，促进了绿色技术和资本的跨国流动，为节能环保企业打开了广阔的国际市场空间。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 主要经济体战略对比表 -->
+            <div class="mb-16">
+                <h3 class="sovereign-heading text-2xl mb-8 text-center">全球主要经济体核心气候政策对比</h3>
+                <div class="overflow-x-auto">
+                    <table class="imperial-table">
+                        <thead>
+                            <tr>
+                                <th>维度</th>
+                                <th>中国："双碳"与"1+N"体系</th>
+                                <th>欧盟：《绿色协议》与"Fit for 55"</th>
+                                <th>美国：《通胀削减法案》（IRA）</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-semibold">核心目标</td>
+                                <td>2030年前碳达峰，2060年前碳中和</td>
+                                <td>2030年减排55%，2050年气候中和</td>
+                                <td>2030年减排41%左右，加速清洁能源转型</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">主要政策工具</td>
+                                <td>行政指令与五年规划目标分解、能耗与碳排放"双控"、重点领域专项行动方案、全国性碳市场</td>
+                                <td>欧盟碳排放交易体系（EU-ETS）及扩容、碳边境调节机制（CBAM）、严格的行业法规与标准</td>
+                                <td>生产/投资税收抵免（PTC/ITC）、消费者补贴与税收抵免、针对特定技术的高额激励</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">关键传导机制</td>
+                                <td>政策信号 → 地方政府/国企执行 → 项目投资</td>
+                                <td>碳价信号/法规标准 → 企业成本/收益变化 → 技术创新/减排投资</td>
+                                <td>财政补贴 → 降低项目成本/提升投资回报 → 吸引私人资本进入</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">主要风险点</td>
+                                <td>地方执行力度差异、政策连续性、经济下行压力对投资的影响</td>
+                                <td>碳价波动风险、政策协调复杂性、能源价格上涨引发的社会反弹</td>
+                                <td>财政赤字压力、政治周期导致的政策不确定性、供应链瓶颈</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="investment-logic-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="fas fa-map-marker-alt mr-3"></i>
+                        中国："双碳"目标与"1+N"政策体系
+                    </h3>
+                    <div class="noble-text mb-4">
+                        <strong>国家战略承诺：</strong> 2020年9月，中国在联合国大会上正式宣布，将力争于2030年前实现二氧化碳排放达到峰值，努力争取2060年前实现碳中和。
+                    </div>
+                    <div class="noble-text">
+                        <strong>政策特点：</strong> 中国的模式可以概括为"行政主导、目标驱动、自上而下"。最大优势在于强大的政策执行力和资源调动能力，能够集中力量推动大规模的基础设施建设和产业改造。
+                    </div>
+                </div>
+
+                <div class="investment-logic-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="fas fa-euro-sign mr-3"></i>
+                        欧盟：《欧洲绿色协议》与"Fit for 55"一揽子计划
+                    </h3>
+                    <div class="noble-text mb-4">
+                        <strong>战略愿景：</strong> 《欧洲绿色协议》不仅是一项气候政策，更是一项旨在将欧盟转变为一个资源高效、具有竞争力的全新经济发展战略。
+                    </div>
+                    <div class="noble-text">
+                        <strong>政策特点：</strong> 欧盟的模式可以概括为"市场化、法制化、标准引领"。优势在于建立了一套成熟、稳定且可预测的政策框架，通过价格信号有效激励企业进行技术创新和减排投资。
+                    </div>
+                </div>
+
+                <div class="investment-logic-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="fas fa-flag-usa mr-3"></i>
+                        美国：《通胀削减法案》（IRA）与环保署战略
+                    </h3>
+                    <div class="noble-text mb-4">
+                        <strong>核心驱动法案：</strong> 2022年通过的《通胀削减法案》是美国历史上在气候和清洁能源领域最大规模的投资法案，预计将在十年内投入数千亿美元。
+                    </div>
+                    <div class="noble-text">
+                        <strong>政策特点：</strong> 美国的模式可以概括为"财政激励、产业扶持、需求拉动"。优势在于政策见效快，能够迅速、大规模地撬动私人部门投资，并直接惠及消费者。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 核心赛道深度剖析 -->
+    <section id="core-sectors" class="imperial-section" data-title="核心赛道深度剖析">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl md:text-4xl mb-12 text-center">核心赛道深度剖析</h2>
+            
+            <div class="executive-quote max-w-4xl mx-auto text-center mb-16">
+                从传统的"成本中心"到现代的"效益引擎"，产业的核心赛道正在经历深刻的价值重塑。
+            </div>
+
+            <div class="grid md:grid-cols-1 gap-8 mb-16">
+                <div class="investment-logic-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="fas fa-industry mr-3"></i>
+                        工业节能：存量改造与能效提升的核心战场
+                    </h3>
+                    <div class="noble-text mb-8">
+                        工业节能市场正从一个由合规驱动的成本中心，转变为一个由成本效益和供应链压力共同驱动的效益引擎。工业企业进行节能改造的动机正在从被动合规转向主动求利。
+                    </div>
+                    
+                    <div class="grid md:grid-cols-3 gap-6 mb-8">
+                        <div class="authority-card">
+                            <h4 class="sovereign-heading text-lg mb-4">政策强制性</h4>
+                            <div class="noble-text">
+                                这是传统且依然强劲的驱动力。在中国，能源消费强度和总量"双控"制度，以及对"两高"项目的严格限制，为工业企业设定了不可逾越的节能红线。
+                            </div>
+                        </div>
+                        <div class="authority-card">
+                            <h4 class="sovereign-heading text-lg mb-4">成本效益驱动</h4>
+                            <div class="noble-text">
+                                这是当前最核心的驱动力。全球能源价格的波动和长期上涨趋势，使得能源成本在企业总成本中的占比日益提高，降低能耗直接等同于提升利润率。
+                            </div>
+                        </div>
+                        <div class="authority-card">
+                            <h4 class="sovereign-heading text-lg mb-4">供应链压力</h4>
+                            <div class="noble-text">
+                                随着全球领先企业纷纷设定覆盖全价值链的净零目标，压力正沿着供应链向上传导。能否提供低碳产品，正逐渐成为获取订单、维持供应链地位的关键。
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="authority-card">
+                        <h4 class="sovereign-heading text-lg mb-6">合同能源管理（EPC/EMC）模式</h4>
+                        <div class="noble-text">
+                            合同能源管理是撬动工业节能市场的关键商业模式。其核心在于，由专业的能源服务公司（ESCO）为客户提供包括能源审计、方案设计、项目融资、设备采购、工程施工、节能量测量与验证、运行管理在内的一站式"交钥匙"服务。ESCO通过与客户分享项目产生的节能效益来收回投资并获取利润。
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-16">
+                <div class="investment-logic-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="fas fa-home mr-3"></i>
+                        建筑节能：绿色建筑与电气化的双轮驱动
+                    </h3>
+                    <div class="noble-text mb-6">
+                        建筑节能市场正由"新建"和"存量改造"两大板块共同驱动。新建建筑市场由日益严格的强制性标准引领，而规模更为庞大的存量建筑改造市场，则由政策激励和技术进步共同激活。
+                    </div>
+                    <div class="space-y-4">
+                        <div class="noble-text">
+                            <strong class="exclusive-number">新建建筑市场：</strong> 核心驱动力是各国政府不断收紧的建筑节能设计标准。重点在于发展超低能耗建筑和近零能耗建筑。
+                        </div>
+                        <div class="noble-text">
+                            <strong class="exclusive-number">既有建筑改造：</strong> 存量建筑的能效水平普遍偏低，其改造市场空间远大于新建市场。核心改造措施包括降低建筑本体能耗、提升用能设备效率、优化能源供给结构。
+                        </div>
+                    </div>
+                </div>
+
+                <div class="investment-logic-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="fas fa-car mr-3"></i>
+                        交通节能：电动化之外的增量机会
+                    </h3>
+                    <div class="noble-text mb-6">
+                        尽管交通工具的全面电动化是长期趋势，但在未来10-20年的过渡期内，传统燃油车仍将占据巨大存量，且在航运、航空等难以电气化的"硬脱碳"领域，提升能源效率仍然是短期内最经济、最有效的减排手段。
+                    </div>
+                    <div class="space-y-4">
+                        <div class="noble-text">
+                            <strong class="exclusive-number">存量燃油车能效提升：</strong> 通过推广更高效的发动机技术、应用轻量化材料、优化空气动力学设计等方式，持续降低存量燃油车的油耗水平。
+                        </div>
+                        <div class="noble-text">
+                            <strong class="exclusive-number">商用车与物流效率优化：</strong> 商用车是交通领域能耗和排放的"大户"。通过车联网和智慧物流平台，优化货物运输路线和车辆调度，减少空驶率。
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investment-logic-card">
+                <h3 class="sovereign-heading text-xl mb-6">
+                    <i class="fas fa-tint mr-3"></i>
+                    生态修复：从污染治理到价值再生
+                </h3>
+                <div class="noble-text mb-8">
+                    生态修复产业的价值核心正从传统的"消除负外部性"向"创造正价值"迁移，而"资源化"是理解这一转变的关键词。
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="authority-card">
+                        <h4 class="sovereign-heading text-lg mb-4">水环境综合治理</h4>
+                        <div class="noble-text">
+                            水处理行业的增长逻辑正在发生深刻转变，从过去依赖于"规模扩张"的粗放式增长，转向由"提质增效"和"资源化利用"驱动的内涵式增长。膜技术是实现水质深度净化和资源化利用的关键。
+                        </div>
+                    </div>
+                    <div class="authority-card">
+                        <h4 class="sovereign-heading text-lg mb-4">固废处理与资源化</h4>
+                        <div class="noble-text">
+                            固废处理行业正经历从"线性经济"向"循环经济"的根本性转型。焚烧发电（WtE）项目通常采用BOT模式运营，能够产生稳定的售电收入和垃圾处理费收入，是产业链中利润最丰厚的环节之一。
+                        </div>
+                    </div>
+                    <div class="authority-card">
+                        <h4 class="sovereign-heading text-lg mb-4">土壤与地下水修复</h4>
+                        <div class="noble-text">
+                            土壤修复是一个典型的政策驱动、技术密集、项目周期长、进入壁垒极高的"慢热型"蓝海市场。其发展逻辑与水、气、固等领域的"增量污染控制"不同，核心是解决过去数十年工业化进程中积累的"存量污染"问题。
+                        </div>
+                    </div>
+                    <div class="authority-card">
+                        <h4 class="sovereign-heading text-lg mb-4">大气污染治理</h4>
+                        <div class="noble-text">
+                            大气污染治理市场正在经历深刻的结构性转型。治理重点从电力行业的常规污染物，转向非电行业的深度治理以及挥发性有机物（VOCs）和温室气体等新型污染物。CCUS技术正从研发示范走向商业化前夜。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 商业模式与投资机遇 -->
+    <section id="business-models" class="imperial-section" data-title="商业模式与投资机遇">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl md:text-4xl mb-12 text-center">商业模式、财务特征与并购趋势</h2>
+            
+            <div class="executive-quote max-w-4xl mx-auto text-center mb-16">
+                商业模式是连接技术与市场的桥梁，是企业价值创造方式的集中体现。本行业的商业模式正经历着从传统项目制向长期服务制、从重资产向轻资产的深刻演进。
+            </div>
+
+            <!-- 主流商业模式对比表 -->
+            <div class="mb-16">
+                <h3 class="sovereign-heading text-2xl mb-8 text-center">主流商业模式对比分析</h3>
+                <div class="overflow-x-auto">
+                    <table class="imperial-table">
+                        <thead>
+                            <tr>
+                                <th>维度</th>
+                                <th>EPC (工程总包)</th>
+                                <th>PPP / BOT</th>
+                                <th>EPC (合同能源管理)</th>
+                                <th>EaaS (能源即服务)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-semibold">核心业务</td>
+                                <td>工程项目建设</td>
+                                <td>基础设施投资、建设、运营</td>
+                                <td>节能改造项目总包与效果保证</td>
+                                <td>综合能源解决方案的订阅式服务</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">资产属性</td>
+                                <td>轻资产（项目制）</td>
+                                <td>重资产（持有运营资产）</td>
+                                <td>轻/重资产皆可</td>
+                                <td>轻资产（服务平台）</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">收入模式</td>
+                                <td>一次性工程收入</td>
+                                <td>长期、稳定的运营服务费</td>
+                                <td>节能效益分享（非固定）</td>
+                                <td>长期、稳定的经常性订阅费</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">主要风险承担方</td>
+                                <td>客户（业主）</td>
+                                <td>服务商、政府、金融机构共同分担</td>
+                                <td>ESCO（承担技术与部分财务风险）</td>
+                                <td>服务商（承担全部资产、技术、运营风险）</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">适用场景</td>
+                                <td>各类新建、改造项目</td>
+                                <td>大型公共基础设施</td>
+                                <td>工业、公共建筑节能改造</td>
+                                <td>商业、工业用户的综合能源需求</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-16">
+                <div class="investment-logic-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="fas fa-chart-bar mr-3"></i>
+                        行业财务特征分析
+                    </h3>
+                    <div class="noble-text mb-6">
+                        本行业的财务特征呈现出显著的异质性，主要取决于其在价值链中的位置和所采用的商业模式。
+                    </div>
+                    <div class="space-y-4">
+                        <div class="noble-text">
+                            <strong class="exclusive-number">盈利能力：</strong> 呈现出"微笑曲线"两端高、中间低的特征。上游掌握核心技术和关键产品的企业，以及下游提供高附加值运营和资源化服务的企业，通常享有较高的毛利率。
+                        </div>
+                        <div class="noble-text">
+                            <strong class="exclusive-number">资本结构：</strong> 资产负债率普遍偏高，特别是对于采用PPP/BOT模式进行大规模重资产投资的下游运营类公司。
+                        </div>
+                        <div class="noble-text">
+                            <strong class="exclusive-number">现金流：</strong> 优质的运营类公司能够产生强大、稳定且持续增长的经营性现金流，这是其支付股息、进行再投资和偿还债务的基础。
+                        </div>
+                    </div>
+                </div>
+
+                <div class="investment-logic-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="fas fa-code-merge mr-3"></i>
+                        全球并购（M&A）趋势
+                    </h3>
+                    <div class="noble-text mb-6">
+                        节能与生态修复行业正处于一个加速整合的时期。并购不仅是企业外延式增长的重要手段，也是产业结构优化和技术迭代的关键催化剂。
+                    </div>
+                    <div class="space-y-4">
+                        <div class="noble-text">
+                            <strong class="exclusive-number">追求规模效应：</strong> 在固废处理、水务运营等领域，规模经济效应显著。通过并购扩大运营网络，可以摊薄管理、采购等固定成本。
+                        </div>
+                        <div class="noble-text">
+                            <strong class="exclusive-number">获取核心技术：</strong> 大型平台型公司常常通过并购来快速获取其自身不具备的细分领域核心技术。
+                        </div>
+                        <div class="noble-text">
+                            <strong class="exclusive-number">实现跨区域扩张：</strong> 对于具有地域性特征的环保服务业，并购是进入新的地理市场的最快捷方式。
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="authority-card">
+                <h3 class="sovereign-heading text-xl mb-6">
+                    <i class="fas fa-arrow-trend-up mr-3"></i>
+                    结构性趋势：塑造行业未来的三大力量
+                </h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="authority-card">
+                        <h4 class="sovereign-heading text-lg mb-4">数字化与智能化</h4>
+                        <div class="noble-text">
+                            人工智能、物联网、大数据分析、云计算等数字技术正在从根本上改变传统环保和节能行业的运营方式。拥有强大数据获取、处理和算法能力的企业，将建立起新的竞争壁垒。
+                        </div>
+                    </div>
+                    <div class="authority-card">
+                        <h4 class="sovereign-heading text-lg mb-4">服务化转型</h4>
+                        <div class="noble-text">
+                            产业的价值主张正在从"销售产品"或"交付工程"，转向"提供服务"和"保障效果"。服务化转型将彻底重塑行业的商业模式和盈利结构。
+                        </div>
+                    </div>
+                    <div class="authority-card">
+                        <h4 class="sovereign-heading text-lg mb-4">循环经济闭环</h4>
+                        <div class="noble-text">
+                            循环经济的终极目标是消除"废弃物"的概念，将所有生产和消费过程中产生的副产品都视为下一轮生产的"资源"，从而实现物质的无限循环。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 风险分析 -->
+    <section id="risk-analysis" class="imperial-section" data-title="风险分析">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl md:text-4xl mb-12 text-center">风险分析框架</h2>
+            
+            <div class="executive-quote max-w-4xl mx-auto text-center mb-16">
+                任何高增长的行业都伴随着高不确定性。我们构建一个风险矩阵，从"政策与监管"、"技术"、"市场与经营"和"地缘政治与供应链"四个维度，系统性地梳理本行业面临的核心风险。
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-16">
+                <div class="investment-logic-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="fas fa-file-contract mr-3"></i>
+                        政策与监管风险
+                    </h3>
+                    <div class="noble-text mb-4">
+                        <strong>风险等级：</strong> <span class="text-red-400 font-bold">高可能性，高影响</span>
+                    </div>
+                    <div class="noble-text mb-4">
+                        这是本行业当前面临的最大、最直接的风险。由于行业的增长在很大程度上依赖于政策驱动，任何政策的变动都可能对行业基本面产生重大影响。
+                    </div>
+                    <div class="noble-text">
+                        具体包括：气候政策的摇摆、环保标准的突然放松或收紧、财政补贴或税收抵免的力度不及预期或提前退坡、碳市场价格的大幅波动等。
+                    </div>
+                </div>
+
+                <div class="investment-logic-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="fas fa-flask mr-3"></i>
+                        技术风险
+                    </h3>
+                    <div class="noble-text mb-4">
+                        <strong>风险等级：</strong> <span class="text-yellow-400 font-bold">中等可能性，高影响</span>
+                    </div>
+                    <div class="noble-text mb-4">
+                        主要体现在两个方面：一是新兴技术商业化不及预期，例如CCUS、化学回收、绿氢等前沿技术，可能因成本居高不下、技术可靠性不足或规模化放大困难，导致其商业化进程远慢于市场预期。
+                    </div>
+                    <div class="noble-text">
+                        二是现有技术路线被颠覆的风险，在技术快速迭代的领域，今天的主流技术可能在几年后被更高效、更低成本的新技术所取代。
+                    </div>
+                </div>
+
+                <div class="investment-logic-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="fas fa-arrow-trend-down mr-3"></i>
+                        市场与经营风险
+                    </h3>
+                    <div class="noble-text mb-4">
+                        <strong>风险等级：</strong> <span class="text-yellow-400 font-bold">高可能性，中等影响</span>
+                    </div>
+                    <div class="noble-text">
+                        包括宏观经济下行导致工业产出和固定资产投资减少，从而抑制对节能环保服务的需求；大宗商品价格上涨，推高设备和药剂成本，侵蚀项目利润；项目制业务的回款周期长，导致企业现金流紧张和坏账风险。
+                    </div>
+                </div>
+
+                <div class="investment-logic-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="fas fa-globe-americas mr-3"></i>
+                        地缘政治与供应链风险
+                    </h3>
+                    <div class="noble-text mb-4">
+                        <strong>风险等级：</strong> <span class="text-yellow-400 font-bold">中等可能性，高影响</span>
+                    </div>
+                    <div class="noble-text">
+                        能源转型将引发新的地缘政治风险。核心在于对清洁能源技术所需的关键矿产资源（锂、钴、镍、稀土等）的控制权争夺。贸易保护主义抬头、地缘冲突等因素，都可能导致这些关键原材料的供应链中断或价格飙升。
+                    </div>
+                </div>
+            </div>
+
+            <div class="authority-card">
+                <h3 class="sovereign-heading text-xl mb-6">
+                    <i class="fas fa-lightbulb mr-3"></i>
+                    核心机遇：新价值池的涌现
+                </h3>
+                <div class="noble-text mb-8">
+                    在结构性趋势的驱动下，三大核心机遇领域正在涌现：
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="authority-card">
+                        <h4 class="sovereign-heading text-lg mb-4">能源转型中的供应链重塑</h4>
+                        <div class="noble-text">
+                            废旧物资的回收，特别是废旧电池的回收，其战略意义被空前提升。它不仅是一项环保业务，更是保障本国战略资源供应、降低对外部依赖的关键环节。
+                        </div>
+                    </div>
+                    <div class="authority-card">
+                        <h4 class="sovereign-heading text-lg mb-4">新兴脱碳技术的商业化</h4>
+                        <div class="noble-text">
+                            碳捕获、利用与封存（CCUS）、清洁氢、可持续航空燃料（SAF）等新兴技术，根据麦肯锡的测算，到2030年可能创造超过12万亿美元的年销售额。
+                        </div>
+                    </div>
+                    <div class="authority-card">
+                        <h4 class="sovereign-heading text-lg mb-4">环境权益的市场化与金融化</h4>
+                        <div class="noble-text">
+                            环境效益正在从一种抽象的社会价值，转变为可以被量化、定价和交易的金融资产。碳资产管理、碳核算与认证、绿色金融产品创新等领域需求将迎来爆发式增长。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 免责声明 -->
+    <section id="disclaimer" class="imperial-section" data-title="免责声明">
+        <div class="sovereign-container">
+            <div class="disclaimer-card text-center">
+                <h2 class="sovereign-heading text-2xl mb-8">免责声明</h2>
+                <div class="disclaimer-text max-w-4xl mx-auto">
+                    本报告所载信息、观点和预测仅供参考，不构成投资建议或推荐。投资者应基于自身判断做出投资决策，并承担相应风险。本报告所引用的数据来源于公开资料，我们力求准确可靠，但不保证其完整性和准确性。市场情况可能发生变化，过往表现不代表未来结果。任何基于本报告的投资决策，投资者须自行承担责任。本报告版权归发布机构所有，未经授权不得转载或引用。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 引用文献 -->
+    <section id="references" class="imperial-section bg-gradient-to-b from-transparent to-black bg-opacity-30" data-title="引用文献">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl mb-12 text-center">引用文献</h2>
+            
+            <!-- 固定4列布局网格 -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl mx-auto">
+                <div class="citation-item">
+                    <a href="https://www.fortunebusinessinsights.com/water-and-wastewater-treatment-market-102632" target="_blank">
+                        1. Water and Wastewater Treatment Market Size, Report [2032] - Fortune Business Insights
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.grandviewresearch.com/industry-analysis/global-waste-management-market" target="_blank">
+                        2. Waste Management Market Size | Industry Report, 2033 - Grand View Research
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.marketsandmarkets.com/Market-Reports/air-quality-control-systems-market-863.html" target="_blank">
+                        3. Air Quality Control Systems Market Size Share Outlook - 2029 - MarketsandMarkets
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="http://www.news.cn/finance/20250812/d4a0d3b8be4e475fb3003bb8514ddcb0/c.html" target="_blank">
+                        4. "十四五"环保产业：政策引领下的成就与经验总结 - 新华网
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.jabil.com/blog/energy-and-industrial-market-drivers.html" target="_blank">
+                        5. The Industrial and Energy Market: Drivers, Trends and COVID Impact - Jabil.com
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="http://www.prcee.org/yjcg/yjbg/202403/W020240313623895148361.pdf" target="_blank">
+                        6. China's Policies and Actions on Carbon Peaking and Carbon Neutrality
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.ndrc.gov.cn/fggz/hjyzy/jnhnx/202201/t20220127_1313522.html" target="_blank">
+                        7. 国务院印发《"十四五"节能减排综合工作方案》
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/european-green-deal_en" target="_blank">
+                        8. The European Green Deal - European Commission
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.europarl.europa.eu/RegData/etudes/BRIE/2022/733513/EPRS_BRI(2022)733513_EN.pdf" target="_blank">
+                        9. Fit for 55 package - European Parliament
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.wri.org/us-climate-policy-implementation/tax-credits-rebates" target="_blank">
+                        10. Inflation Reduction Act Tax Credits and Rebates - World Resources Institute
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.epa.gov/green-power-markets/summary-inflation-reduction-act-provisions-related-renewable-energy" target="_blank">
+                        11. Summary of Inflation Reduction Act provisions related to renewable energy | US EPA
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://gxt.fujian.gov.cn/jdhy/zxzcfg/sjzcfg/202107/t20210707_5641856.htm" target="_blank">
+                        12. 福建省人民政府关于印发福建省"十四五"制造业高质量发展专项规划的通知
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://research.hktdc.com/sc/article/Nzk3NTY5NzUx" target="_blank">
+                        13. 浅析十四五规划：科研及产业政策 - HKTDC Research
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://pdf.dfcfw.com/pdf/H3_AP202011051426807314_1.pdf" target="_blank">
+                        14. 十四五规划详解
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://tjj.sh.gov.cn/cmsres/c5/c5c59580b59a4e1fbf2fad850bdc170d/e0fd915714ec6b7815ed3f7600143912.pdf" target="_blank">
+                        15. 节能环保清洁产业统计分类（2021）
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.lseg.com/content/dam/ftse-russell/en_us/documents/research/green-revenues-eu-taxonomy.pdf" target="_blank">
+                        16. Sizing the green economy: Green Revenues and the EU taxonomy | LSEG
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.eurovent.eu/wp-content/uploads/publications-files/eurovent-recommendation-on-interpreting-the-eu-taxonomy-for-sustainable-activities.pdf" target="_blank">
+                        17. Interpreting the EU Taxonomy for Sustainable Activities | Eurovent
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.debevoise.com/insights/publications/2025/02/the-eu-taxonomy-regulation-key-issues-and-state" target="_blank">
+                        18. The EU Taxonomy Regulation: Key Issues and State of Play - Debevoise & Plimpton LLP
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en" target="_blank">
+                        19. EU taxonomy for sustainable activities - Finance - European Commission
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.ehpa.org/wp-content/uploads/2022/12/20210510-Note-on-Taxonomy-and-heat-pumps.pdf" target="_blank">
+                        20. Note on heat pumps in the EU Taxonomy
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.ropesgray.com/en/insights/viewpoints/102icog/eu-taxonomy-ec-consults-on-technical-screening-criteria-for-remaining-four-envir" target="_blank">
+                        21. EU Taxonomy: EC consults on technical screening criteria - Ropes & Gray LLP
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://finance.ec.europa.eu/system/files/2023-06/taxonomy-regulation-delegated-act-2022-environmental_en_0.pdf" target="_blank">
+                        22. Taxonomy Regulation Delegated Act 2022 Environmental - European Commission
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.researchgate.net/publication/354897386_Green_EU_trade_marks" target="_blank">
+                        23. Green EU trade marks - ResearchGate
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://faolex.fao.org/docs/pdf/cro212384.pdf" target="_blank">
+                        24. Integrated National Energy and Climate Plan for the Republic of Croatia
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.sheppardmullin.com/assets/htmldocuments/EEAG%20Evaluation%20-%20Final%20Report%20-%20May%202020.pdf" target="_blank">
+                        25. Rules for environmental support study on State aid protection and energy - Sheppard Mullin
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.endangered.org/assets/uploads/2020/06/BenDor-and-Lester-Exploring-and-Understanding-the-Restoration-Economy.pdf" target="_blank">
+                        26. Exploring and Understanding the Restoration Economy - Endangered Species Coalition
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.enviroscienceinc.com/fox-creek-restoration/" target="_blank">
+                        27. The Ecological Restoration of Fox Creek - EnviroScience, Inc.
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.littlerock.gov/!userfiles/editor/docs/Finance/adfadirectory.pdf" target="_blank">
+                        28. Arkansas Unified Disadvantaged Business Enterprise Directory - City of Little Rock
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://downloads.regulations.gov/EPA-HQ-OLEM-2019-0341-0201/content.pdf" target="_blank">
+                        29. 2019 Remediation Market Study - Regulations.gov
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.policyinnovation.org/insights/2025-05-esa-public-comment-m5yd5" target="_blank">
+                        30. Comments on NAICS Revisions for 2027 - Proposing New Codes for Ecological Restoration
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://critfc.org/wp-content/uploads/2022/07/2022-E-V-Prepub-Final.pdf" target="_blank">
+                        31. Energy Vision Columbia River Basin
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.jica.go.jp/english/our_work/climate_change/pdf/mitigation_1-4.pdf" target="_blank">
+                        32. JICA Climate-FIT (Mitigation)
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.efchina.org/Attachments/Report/report-efchina-20070630-zh/中国工业节能管理体系改革和创新研究报告.pdf" target="_blank">
+                        33. 中国工业节能管理体系改革和创新研究报告
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.21jingji.com/article/20240428/herald/d01d7a899e08927a865f97acb013fa4d.html" target="_blank">
+                        34. 2024年中国固废处理行业研究报告 - 21财经
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://pdf.dfcfw.com/pdf/H3_AP202308311597010818_1.pdf" target="_blank">
+                        35. 固体废物处理头豹词条报告系列
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.bewg.net/ywfz/shjzhzl/" target="_blank">
+                        36. 水环境综合治理- 北控水务集团官网
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://unfccc.int/process-and-meetings/the-paris-agreement" target="_blank">
+                        37. The Paris Agreement | UNFCCC
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://unfccc.int/most-requested/key-aspects-of-the-paris-agreement" target="_blank">
+                        38. Key aspects of the Paris Agreement | UNFCCC
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://en.wikipedia.org/wiki/Paris_Agreement" target="_blank">
+                        39. Paris Agreement - Wikipedia
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://climate.mit.edu/explainers/paris-agreement" target="_blank">
+                        40. The Paris Agreement | MIT Climate Portal
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 结尾致谢 -->
+    <section class="imperial-section">
+        <div class="sovereign-container text-center">
+            <div class="golden-glass-card inline-block">
+                <div class="text-xs uppercase tracking-[0.2em] opacity-50 mb-4 font-light">
+                    报告完成时间 · Report Completion Date
+                </div>
+                <div class="sovereign-heading text-base">
+                    <span class="exclusive-number">2025年7月15日</span>
+                    <span class="mx-4 text-sovereign-gold opacity-40">◆</span>
+                    <span class="exclusive-number">July 15, 2025</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript功能 -->
+    <script>
+        // 精美垂直进度条系统（支持悬停显示标题 + 点击跳转）
+        const progressBar = document.querySelector('.reading-progress');
+        const progressFill = document.querySelector('.reading-progress-fill');
+        const progressTooltip = document.getElementById('progress-tooltip');
+        const sections = document.querySelectorAll('section[id], header[id]');
+
+        let currentSectionTitle = '';
+        let sectionsData = [];
+
+        // 初始化章节数据
+        function initSections() {
+            sectionsData = Array.from(sections).map(section => ({
+                id: section.getAttribute('id'),
+                title: section.getAttribute('data-title') || section.querySelector('h1, h2')?.textContent || '未知章节',
+                offsetTop: section.offsetTop,
+                offsetHeight: section.offsetHeight
+            }));
+        }
+
+        function updateProgress() {
+            const scrolled = window.pageYOffset;
+            const maxHeight = document.body.scrollHeight - window.innerHeight;
+            const progress = (scrolled / maxHeight) * 100;
+            
+            // 更新垂直进度条填充高度
+            progressFill.style.height = `${progress}%`;
+            
+            // 获取当前章节
+            let currentSection = '';
+            sectionsData.forEach(section => {
+                if (scrolled >= section.offsetTop - 300) {
+                    currentSection = section.id;
+                    currentSectionTitle = section.title;
+                }
+            });
+        }
+
+        // 点击进度条跳转到对应位置
+        progressBar.addEventListener('click', (e) => {
+            const rect = progressBar.getBoundingClientRect();
+            const clickY = e.clientY - rect.top;
+            const progressHeight = rect.height;
+            const clickPercent = clickY / progressHeight;
+            
+            const maxHeight = document.body.scrollHeight - window.innerHeight;
+            const targetScroll = maxHeight * clickPercent;
+            
+            window.scrollTo({
+                top: targetScroll,
+                behavior: 'smooth'
+            });
+        });
+
+        // 鼠标悬停显示当前章节标题
+        progressBar.addEventListener('mouseenter', () => {
+            if (currentSectionTitle) {
+                progressTooltip.textContent = currentSectionTitle;
+                progressTooltip.classList.add('show');
+            }
+        });
+
+        progressBar.addEventListener('mouseleave', () => {
+            progressTooltip.classList.remove('show');
+        });
+
+        // 提示框悬停保持显示
+        progressTooltip.addEventListener('mouseenter', () => {
+            progressTooltip.classList.add('show');
+        });
+
+        progressTooltip.addEventListener('mouseleave', () => {
+            progressTooltip.classList.remove('show');
+        });
+
+        // 窗口大小改变时重新计算章节位置
+        window.addEventListener('resize', () => {
+            setTimeout(initSections, 100);
+        });
+
+        window.addEventListener('scroll', updateProgress);
+
+        // 页面加载完成后初始化
+        window.addEventListener('load', () => {
+            initSections();
+            updateProgress();
+        });
+
+        // 优雅的页面加载动画
+        document.addEventListener('DOMContentLoaded', () => {
+            document.body.style.opacity = '0';
+            document.body.style.transition = 'opacity 1s ease';
+            
+            setTimeout(() => {
+                document.body.style.opacity = '1';
+            }, 100);
+        });
+        
+        // 数字动画
+        function animateNumbers() {
+            const numbers = document.querySelectorAll('.exclusive-number');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && entry.target.textContent.match(/\d/)) {
+                        const element = entry.target;
+                        const finalText = element.textContent;
+                        const numericValue = parseFloat(finalText.replace(/[^\d.-]/g, ''));
+                        
+                        if (!isNaN(numericValue) && numericValue > 0) {
+                            animateValue(element, 0, numericValue, finalText, 2000);
+                            observer.unobserve(element);
+                        }
+                    }
+                });
+            }, { threshold: 0.5 });
+            
+            numbers.forEach(number => observer.observe(number));
+        }
+        
+        function animateValue(element, start, end, finalText, duration) {
+            const startTime = performance.now();
+            
+            function updateValue(currentTime) {
+                const elapsed = currentTime - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                const current = start + (end - start) * easeOutQuart(progress);
+                
+                element.textContent = finalText.replace(/\d+/, Math.round(current).toLocaleString());
+                
+                if (progress < 1) {
+                    requestAnimationFrame(updateValue);
+                } else {
+                    element.textContent = finalText;
+                }
+            }
+            
+            requestAnimationFrame(updateValue);
+        }
+        
+        function easeOutQuart(t) {
+            return 1 - (--t) * t * t * t;
+        }
+        
+        animateNumbers();
+        
+        // Tailwind配置
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'sovereign-gold': '#B8860B',
+                        'imperial-gold': '#DAA520',
+                        'aureate-whisper': '#F4E4BC',
+                        'golden-shadow': '#8B6914',
+                        'obsidian-black': '#0A0A0A',
+                        'midnight-black': '#151515',
+                        'shadow-black': '#1F1F1F',
+                        'charcoal-deep': '#2A2A2A',
+                        'platinum-mist': '#E5E5E5',
+                        'sterling-silver': '#C0C0C0',
+                        'graphite-steel': '#696969',
+                        'charcoal-whisper': '#808080'
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

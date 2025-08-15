@@ -1,0 +1,1763 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全球建筑产品行业深度分析：驾驭分化的格局 | 2025年Q3</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@200;300;400;500;600;700;800;900&family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <style>
+        :root {
+            /* 深邃黑金权力色系 */
+            --obsidian-black: #0A0A0A;
+            --midnight-black: #151515;
+            --shadow-black: #1F1F1F;
+            --charcoal-deep: #2A2A2A;
+            
+            /* 稀缺金色层次 */
+            --sovereign-gold: #B8860B;
+            --imperial-gold: #DAA520;
+            --aureate-whisper: #F4E4BC;
+            --golden-shadow: #8B6914;
+            
+            /* 权力灰度 */
+            --platinum-mist: #E5E5E5;
+            --sterling-silver: #C0C0C0;
+            --graphite-steel: #696969;
+            --charcoal-whisper: #808080;
+            
+            /* 稀缺强调色 */
+            --ruby-accent: #8B0000;
+            --emerald-depth: #006400;
+            --sapphire-authority: #1e3a8a;
+        }
+
+        body {
+            background: var(--obsidian-black);
+            color: var(--platinum-mist);
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* 帝王级标题 */
+        .imperial-title {
+            font-family: 'Playfair Display', serif;
+            font-weight: 200;
+            letter-spacing: 0.12em;
+            line-height: 1.05;
+            color: var(--aureate-whisper);
+            text-shadow: 0 3px 12px rgba(184, 134, 11, 0.4);
+        }
+
+        /* 君主级副标题 */
+        .imperial-subtitle {
+            font-family: 'Playfair Display', serif;
+            font-weight: 300;
+            letter-spacing: 0.08em;
+            line-height: 1.15;
+            color: var(--imperial-gold);
+            text-shadow: 0 2px 8px rgba(218, 165, 32, 0.3);
+        }
+
+        /* 英文斜体标签 */
+        .imperial-tagline {
+            font-family: 'Inter', sans-serif;
+            font-weight: 200;
+            letter-spacing: 0.06em;
+            line-height: 1.4;
+            color: var(--sterling-silver);
+            font-style: italic;
+        }
+
+        /* 致敬样式 */
+        .imperial-dedication {
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+            letter-spacing: 0.04em;
+            line-height: 1.3;
+            color: var(--imperial-gold);
+        }
+
+        .imperial-dedication-sub {
+            font-family: 'Inter', sans-serif;
+            font-weight: 200;
+            letter-spacing: 0.05em;
+            line-height: 1.3;
+            color: var(--sterling-silver);
+            font-style: italic;
+        }
+
+        /* 权威标题 */
+        .sovereign-heading {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            color: var(--imperial-gold);
+            text-shadow: 0 1px 4px rgba(218, 165, 32, 0.4);
+        }
+
+        /* 贵族正文 */
+        .noble-text {
+            font-weight: 300;
+            letter-spacing: 0.03em;
+            line-height: 2.2;
+            color: var(--platinum-mist);
+        }
+
+        /* 引用文字 */
+        .executive-quote {
+            font-weight: 300;
+            letter-spacing: 0.02em;
+            line-height: 1.8;
+            color: var(--sterling-silver);
+            font-size: 0.95rem;
+            font-style: italic;
+            position: relative;
+            padding: 0 2rem;
+            margin: 2rem 0;
+        }
+
+        .executive-quote::before {
+            content: '"';
+            position: absolute;
+            left: 0;
+            top: -0.5rem;
+            font-size: 3rem;
+            color: var(--sovereign-gold);
+            opacity: 0.3;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .executive-quote::after {
+            content: '"';
+            position: absolute;
+            right: 0;
+            bottom: -0.5rem;
+            font-size: 3rem;
+            color: var(--sovereign-gold);
+            opacity: 0.3;
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* 专属数字 */
+        .exclusive-number {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: var(--sovereign-gold);
+            text-shadow: 0 1px 3px rgba(184, 134, 11, 0.5);
+        }
+
+        /* 君主容器 */
+        .sovereign-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 5rem;
+        }
+
+        /* 帝王区块 */
+        .imperial-section {
+            margin: 12rem 0;
+            position: relative;
+        }
+
+        /* 权威卡片 */
+        .authority-card {
+            background: linear-gradient(145deg, 
+                rgba(21, 21, 21, 0.9) 0%, 
+                rgba(31, 31, 31, 0.8) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.15);
+            border-radius: 2px;
+            padding: 3rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            box-shadow: 
+                0 8px 32px rgba(0, 0, 0, 0.6),
+                inset 0 1px 1px rgba(244, 228, 188, 0.05);
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .authority-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(184, 134, 11, 0.3);
+            box-shadow: 
+                0 16px 48px rgba(0, 0, 0, 0.8),
+                0 0 24px rgba(184, 134, 11, 0.1),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08);
+        }
+
+        .authority-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(90deg, var(--sovereign-gold), transparent);
+            opacity: 0.6;
+        }
+
+        .authority-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(270deg, var(--sovereign-gold), transparent);
+            opacity: 0.6;
+        }
+
+        /* 金色琉璃卡片 */
+        .golden-glass-card {
+            background: 
+                radial-gradient(circle at 30% 30%, rgba(218, 165, 32, 0.12) 0%, transparent 50%),
+                radial-gradient(circle at 70% 70%, rgba(184, 134, 11, 0.08) 0%, transparent 50%),
+                linear-gradient(135deg, 
+                    rgba(244, 228, 188, 0.06) 0%, 
+                    rgba(218, 165, 32, 0.04) 30%,
+                    rgba(184, 134, 11, 0.03) 70%,
+                    rgba(139, 105, 20, 0.02) 100%);
+            border: 1px solid rgba(218, 165, 32, 0.15);
+            border-radius: 4px;
+            padding: 2.5rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            box-shadow: 
+                0 8px 32px rgba(0, 0, 0, 0.6),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08),
+                inset 0 0 30px rgba(218, 165, 32, 0.03);
+            transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .golden-glass-card::before {
+            content: '';
+            position: absolute;
+            inset: -1px;
+            background: linear-gradient(45deg, 
+                rgba(218, 165, 32, 0.2) 0%, 
+                rgba(184, 134, 11, 0.1) 25%,
+                transparent 50%,
+                rgba(244, 228, 188, 0.1) 75%,
+                rgba(218, 165, 32, 0.15) 100%);
+            border-radius: 4px;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.8s ease;
+        }
+
+        .golden-glass-card:hover {
+            transform: translateY(-3px);
+            border-color: rgba(218, 165, 32, 0.3);
+            box-shadow: 
+                0 16px 48px rgba(0, 0, 0, 0.8),
+                0 0 40px rgba(218, 165, 32, 0.1),
+                inset 0 1px 1px rgba(244, 228, 188, 0.12),
+                inset 0 0 40px rgba(218, 165, 32, 0.05);
+        }
+
+        .golden-glass-card:hover::before {
+            opacity: 1;
+        }
+
+        /* 表格 */
+        .imperial-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            background: rgba(15, 15, 15, 0.8);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(184, 134, 11, 0.2);
+            border-radius: 2px;
+        }
+
+        .imperial-table th {
+            background: rgba(184, 134, 11, 0.08);
+            padding: 2rem 1.5rem;
+            text-align: left;
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--imperial-gold);
+            border-bottom: 1px solid rgba(184, 134, 11, 0.2);
+        }
+
+        .imperial-table td {
+            padding: 1.8rem 1.5rem;
+            border-bottom: 1px solid rgba(184, 134, 11, 0.05);
+            font-weight: 300;
+        }
+
+        .imperial-table tbody tr:hover {
+            background: rgba(184, 134, 11, 0.03);
+        }
+
+        /* 分隔线 */
+        .sovereign-divider {
+            height: 1px;
+            background: linear-gradient(90deg, 
+                transparent 0%, 
+                rgba(184, 134, 11, 0.3) 30%, 
+                rgba(184, 134, 11, 0.6) 50%, 
+                rgba(184, 134, 11, 0.3) 70%, 
+                transparent 100%);
+            margin: 8rem 0;
+            position: relative;
+        }
+
+        .sovereign-divider::before {
+            content: '◆';
+            position: absolute;
+            top: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--sovereign-gold);
+            font-size: 16px;
+            background: var(--obsidian-black);
+            padding: 0 1rem;
+        }
+
+        /* 垂直进度条 */
+        .reading-progress {
+            position: fixed;
+            top: 50%;
+            right: 2rem;
+            width: 4px;
+            height: 200px;
+            transform: translateY(-50%);
+            background: linear-gradient(180deg, 
+                rgba(184, 134, 11, 0.2) 0%, 
+                rgba(218, 165, 32, 0.3) 30%,
+                rgba(244, 228, 188, 0.4) 60%,
+                rgba(218, 165, 32, 0.3) 85%,
+                rgba(139, 105, 20, 0.2) 100%);
+            z-index: 1001;
+            box-shadow: 
+                0 0 12px rgba(184, 134, 11, 0.6),
+                2px 0 8px rgba(184, 134, 11, 0.3),
+                inset 1px 0 2px rgba(244, 228, 188, 0.4);
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+        .reading-progress::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(180deg,
+                rgba(244, 228, 188, 0.1) 0%,
+                rgba(218, 165, 32, 0.15) 50%,
+                rgba(244, 228, 188, 0.1) 100%);
+            border-radius: 2px;
+            animation: progressShimmer 3s ease-in-out infinite;
+        }
+
+        .reading-progress-fill {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(180deg,
+                var(--golden-shadow) 0%,
+                var(--sovereign-gold) 50%,
+                var(--imperial-gold) 100%);
+            border-radius: 2px;
+            transition: height 0.1s ease;
+            box-shadow: 
+                inset 0 1px 2px rgba(244, 228, 188, 0.3),
+                0 0 8px rgba(184, 134, 11, 0.4);
+        }
+
+        @keyframes progressShimmer {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.8; }
+        }
+
+        /* 进度标题提示器 */
+        .progress-tooltip {
+            position: fixed;
+            top: 50%;
+            right: 7rem;
+            transform: translateY(-50%);
+            background: linear-gradient(135deg, 
+                rgba(15, 15, 15, 0.95) 0%, 
+                rgba(31, 31, 31, 0.9) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.25);
+            border-radius: 8px;
+            padding: 0.8rem 2rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 0.85rem;
+            font-weight: 300;
+            color: var(--imperial-gold);
+            backdrop-filter: blur(20px);
+            box-shadow: 
+                0 8px 32px rgba(0, 0, 0, 0.7),
+                0 0 20px rgba(184, 134, 11, 0.1),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+            z-index: 1002;
+            white-space: nowrap;
+            letter-spacing: 0.03em;
+        }
+
+        .progress-tooltip.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(-50%) translateX(-8px);
+        }
+
+        .progress-tooltip::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -8px;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-left: 8px solid rgba(184, 134, 11, 0.25);
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+        }
+
+        .progress-tooltip::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -7px;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-left: 7px solid rgba(15, 15, 15, 0.95);
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+        }
+
+        /* 引用文献 */
+        .citation-item {
+            padding: 1.5rem 2rem;
+            margin: 0.8rem 0;
+            background: linear-gradient(135deg, 
+                rgba(21, 21, 21, 0.8) 0%, 
+                rgba(31, 31, 31, 0.6) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.15);
+            border-radius: 3px;
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .citation-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--sovereign-gold), var(--golden-shadow));
+            opacity: 0.6;
+            transition: opacity 0.3s ease;
+        }
+
+        .citation-item:hover {
+            border-color: rgba(184, 134, 11, 0.4);
+            background: linear-gradient(135deg, 
+                rgba(31, 31, 31, 0.9) 0%, 
+                rgba(42, 42, 42, 0.7) 100%);
+            transform: translateX(6px) translateY(-1px);
+            box-shadow: 
+                0 8px 25px rgba(0, 0, 0, 0.5),
+                0 0 20px rgba(184, 134, 11, 0.08);
+        }
+
+        .citation-item:hover::before {
+            opacity: 1;
+        }
+
+        .citation-item a {
+            color: var(--platinum-mist);
+            text-decoration: none;
+            font-size: 0.85rem;
+            line-height: 1.7;
+            font-weight: 300;
+            transition: color 0.4s ease;
+            display: block;
+            position: relative;
+        }
+
+        .citation-item a::before {
+            content: '';
+            position: absolute;
+            left: -0.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 4px;
+            background: var(--sovereign-gold);
+            border-radius: 50%;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .citation-item:hover a {
+            color: var(--aureate-whisper);
+            padding-left: 1rem;
+        }
+
+        .citation-item:hover a::before {
+            opacity: 0.8;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 1024px) {
+            .sovereign-container {
+                padding: 0 2.5rem;
+            }
+            .imperial-section {
+                margin: 8rem 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .sovereign-container {
+                padding: 0 1.5rem;
+            }
+            .imperial-section {
+                margin: 6rem 0;
+            }
+            .authority-card {
+                padding: 2rem;
+            }
+            .reading-progress {
+                right: 1rem;
+                height: 150px;
+                width: 3px;
+            }
+            .progress-tooltip {
+                right: 5rem;
+                padding: 0.6rem 1.5rem;
+                font-size: 0.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 垂直进度条 -->
+    <div class="reading-progress">
+        <div class="reading-progress-fill"></div>
+    </div>
+    
+    <!-- 进度标题提示器 -->
+    <div class="progress-tooltip" id="progress-tooltip"></div>
+
+    <!-- 首屏标题 -->
+    <header id="header" class="min-h-screen flex items-center justify-center relative" data-title="全球建筑产品行业深度分析：驾驭分化的格局">
+        <div class="sovereign-container text-center relative z-10">
+            <!-- 主标题区域 -->
+            <div class="mb-16">
+                <h1 class="imperial-title text-4xl md:text-6xl mb-6">
+                    全球建筑产品行业深度分析：驾驭分化的格局
+                </h1>
+                
+                <h2 class="imperial-subtitle text-2xl md:text-4xl mb-12 opacity-90">
+                    建筑产品行业研究报告 2025年Q3
+                </h2>
+            </div>
+            
+            <!-- 英文副标题 -->
+            <div class="mb-12">
+                <div class="imperial-tagline text-sm md:text-base opacity-75 max-w-4xl mx-auto">
+                    Global Building Products Industry In-Depth Analysis: Navigating the Divergent Landscape<br class="md:hidden">
+                    Building Products Industry Research Report Q3 2025
+                </div>
+            </div>
+            
+            <!-- 致敬区域 -->
+            <div class="mb-16">
+                <div class="imperial-dedication text-sm md:text-base">
+                    致：机构投资者与高净值客户
+                </div>
+                <div class="imperial-dedication-sub text-xs md:text-sm opacity-60 mt-2">
+                    For: Institutional Investors and High Net Worth Clients
+                </div>
+            </div>
+            
+            <!-- 发布日期卡片 -->
+            <div class="golden-glass-card inline-block">
+                <div class="text-xs uppercase tracking-[0.2em] opacity-50 mb-4 font-light">
+                    本报告发布于 · Published on
+                </div>
+                <div class="sovereign-heading text-base">
+                    <span id="date-cn" class="exclusive-number">2025年7月</span> 
+                    <span class="mx-4 text-sovereign-gold opacity-40">◆</span> 
+                    <span id="date-en" class="exclusive-number">July 2025</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 背景装饰 -->
+        <div class="absolute inset-0 pointer-events-none opacity-8">
+            <div class="absolute top-20 left-20 w-px h-32 bg-gradient-to-b from-sovereign-gold to-transparent"></div>
+            <div class="absolute bottom-20 right-20 w-px h-32 bg-gradient-to-t from-sovereign-gold to-transparent"></div>
+            <div class="absolute top-1/2 left-1/4 w-24 h-px bg-gradient-to-r from-sovereign-gold to-transparent"></div>
+            <div class="absolute top-1/3 right-1/4 w-24 h-px bg-gradient-to-l from-sovereign-gold to-transparent"></div>
+        </div>
+    </header>
+
+    <!-- 执行摘要 -->
+    <section id="executive-summary" class="imperial-section" data-title="执行摘要：驾驭分化的格局">
+        <div class="sovereign-container">
+            <div class="authority-card">
+                <h2 class="sovereign-heading text-3xl mb-8 text-center">
+                    <i class="material-icons mr-4" style="vertical-align: middle;">business_center</i>
+                    执行摘要：驾驭分化的格局
+                </h2>
+                
+                <div class="executive-quote max-w-4xl mx-auto text-center mb-12">
+                    本报告旨在为机构投资者和高净值客户提供一个系统性的认知框架，以深度解析全球建筑产品行业。我们的核心论点是：当前全球建筑产品行业正处在一个显著的分化格局之中。
+                </div>
+
+                <div class="noble-text space-y-8">
+                    <div>
+                        <h3 class="sovereign-heading text-xl mb-4">
+                            <i class="material-icons mr-3" style="vertical-align: middle;">analytics</i>
+                            核心论点
+                        </h3>
+                        <p>一方面，受制于高利率环境和购买力挑战，全球住宅建筑市场持续面临压力；另一方面，得益于各国政府大规模的基础设施投资计划和非住宅建设的韧性，相关领域的需求保持强劲。这种终端市场的二元性是理解当前行业动态和未来机遇的关键。</p>
+                    </div>
+                    
+                    <div>
+                        <h3 class="sovereign-heading text-xl mb-4">
+                            <i class="material-icons mr-3" style="vertical-align: middle;">category</i>
+                            行业分类界定
+                        </h3>
+                        <p>报告首先通过全球行业分类标准（GICS）精确界定了"建筑产品"（轻质产品）与"建筑材料"（重质产品）的投资范畴，揭示了两者在商业模式、周期性及利润结构上的本质区别。我们预测，全球建筑产品市场规模在2025年将达到约<strong class="exclusive-number">1.41万亿美元</strong>，并以约<strong class="exclusive-number">4.0%</strong>的复合年增长率（CAGR）稳步扩张，但增长动力在各区域和各子行业间将呈现显著差异。</p>
+                    </div>
+                    
+                    <div>
+                        <h3 class="sovereign-heading text-xl mb-4">
+                            <i class="material-icons mr-3" style="vertical-align: middle;">public</i>
+                            宏观经济环境
+                        </h3>
+                        <p>宏观层面，主要经济体货币政策的分歧——美国联邦储备委员会的谨慎观望、欧洲中央银行的宽松周期以及中国人民银行为稳定经济而采取的降息措施——共同塑造了一个复杂且不同步的全球需求图景。与此同时，美国《基础设施投资和就业法案》（IIJA）和欧盟"下一代欧盟"（NextGenerationEU）复苏计划等财政刺激政策，为非住宅和基础设施领域注入了确定性较高的长期需求。</p>
+                    </div>
+                    
+                    <div>
+                        <h3 class="sovereign-heading text-xl mb-4">
+                            <i class="material-icons mr-3" style="vertical-align: middle;">link</i>
+                            价值链动态
+                        </h3>
+                        <p>在价值链层面，原材料成本的剧烈波动（尤其是在钢材、铜和能源领域）持续对制造商的利润率构成压力，这使得拥有强大定价能力和敏捷成本管理能力的企业脱颖而出。此外，分销渠道的战略重要性愈发凸显，以弗格森（Ferguson）和家得宝（The Home Depot）为代表的增值分销商和大型零售商，凭借其规模、服务和数字化能力，在行业中扮演着"王者"角色，其商业模式展现出比纯制造商更强的韧性。</p>
+                    </div>
+                    
+                    <div>
+                        <h3 class="sovereign-heading text-xl mb-4">
+                            <i class="material-icons mr-3" style="vertical-align: middle;">rocket_launch</i>
+                            结构性趋势
+                        </h3>
+                        <p>最后，本报告深入剖析了正在重塑行业的四大结构性趋势：<strong>可持续性</strong>（绿色建筑认证和循环经济成为核心竞争力）、<strong>数字化</strong>（建筑信息模型BIM重构采购流程）、<strong>工业化</strong>（模块化和预制建筑改变需求模式）以及<strong>智能化</strong>（智能家居集成创造新价值）。</p>
+                    </div>
+                    
+                    <div>
+                        <h3 class="sovereign-heading text-xl mb-4">
+                            <i class="material-icons mr-3" style="vertical-align: middle;">trending_up</i>
+                            投资论点
+                        </h3>
+                        <p>综上所述，我们的投资论点倾向于那些能够有效驾驭此分化格局的企业。我们看好那些在<strong>维修与改造（R&R）及基础设施终端市场</strong>占有较高份额、具备卓越定价能力、并积极拥抱上述结构性增长趋势的<strong>增值分销商</strong>和<strong>差异化的"轻质产品"制造商</strong>。相对于高度依赖住宅新开工和中国房地产市场的"重质产品"生产商，前者有望在2025-2026年的预测期内实现超越市场的表现。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 界定可投资领域 -->
+    <section id="investment-scope" class="imperial-section" data-title="界定可投资领域——范围、规模与细分">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-4xl mb-16 text-center">
+                <i class="material-icons mr-4" style="vertical-align: middle;">category</i>
+                界定可投资领域——范围、规模与细分
+            </h2>
+
+            <div class="authority-card mb-12">
+                <h3 class="sovereign-heading text-2xl mb-8">
+                    <i class="material-icons mr-3" style="vertical-align: middle;">account_tree</i>
+                    GICS框架："轻质产品"与"重质产品"的关键区别
+                </h3>
+                
+                <div class="noble-text mb-8">
+                    为了构建一个严谨的行业分析框架，首先必须精确界定"建筑产品"行业的范围。在全球金融界，全球行业分类标准（GICS）是由MSCI和标准普尔共同开发并广泛采用的行业分类法，是进行跨国、跨行业比较的基石。本报告的研究核心将严格遵循GICS的定义。
+                </div>
+
+                <!-- GICS分类对比表格 -->
+                <div class="overflow-x-auto">
+                    <table class="imperial-table">
+                        <thead>
+                            <tr>
+                                <th>GICS代码</th>
+                                <th>GICS子行业名称</th>
+                                <th>所属板块</th>
+                                <th>关键产品</th>
+                                <th>主要需求驱动力</th>
+                                <th>代表性公司</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-semibold exclusive-number">20102010</td>
+                                <td class="font-semibold">建筑产品 (Building Products)</td>
+                                <td>工业 (Industrials)</td>
+                                <td>HVAC系统、门窗、管道卫浴、电气、屋顶、保温材料、内外墙装饰</td>
+                                <td>维修与改造 (R&R)、住宅新开工、非住宅建设、消费者偏好、品牌</td>
+                                <td>Fortune Brands Innovations, Saint-Gobain</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold exclusive-number">15102010</td>
+                                <td class="font-semibold">建筑材料 (Construction Materials)</td>
+                                <td>材料 (Materials)</td>
+                                <td>水泥、骨料、混凝土、沥青、砖块</td>
+                                <td>住宅新开工、基础设施建设、大型非住宅项目、区域经济活动</td>
+                                <td>CRH, Holcim</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="noble-text mt-8">
+                    这种基于GICS的划分揭示了价值链和商业模式的根本性差异。"轻质产品"通常技术含量更高，更依赖品牌差异化，并且其需求与更为稳定的维修与改造（R&R）周期紧密相关。相比之下，"重质产品"更具大宗商品属性，物流密集，其需求与波动性更大的新建筑开工活动直接挂钩。这一"轻"与"重"的区分对于理解行业的周期性、利润结构、资本密集度和估值逻辑至关重要。
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8 mb-16">
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="material-icons mr-3" style="vertical-align: middle;">pie_chart</i>
+                        市场规模与增长预测
+                    </h3>
+                    <div class="noble-text">
+                        综合多家市场研究机构的数据，全球建筑产品及材料市场的规模庞大且保持稳定增长。2024至2025年间，全球市场总值估计在<strong class="exclusive-number">1.35万亿至1.41万亿美元</strong>之间。展望未来，预计到2034年，该市场规模将增长至约<strong class="exclusive-number">2万亿美元</strong>，这意味着从2025年到2034年的复合年增长率（CAGR）约为<strong class="exclusive-number">4.0%</strong>。
+                    </div>
+                </div>
+
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="material-icons mr-3" style="vertical-align: middle;">public</i>
+                        地理分布与区域格局
+                    </h3>
+                    <div class="noble-text">
+                        从地理分布来看，亚太地区是全球最大的市场，2025年市场规模预计为<strong class="exclusive-number">5360亿美元</strong>，占据全球约<strong class="exclusive-number">38%</strong>的份额。该地区的增长主要由中国和印度等国家快速的城市化进程和庞大的基础设施建设活动所驱动。
+                    </div>
+                </div>
+            </div>
+
+            <div class="authority-card">
+                <h3 class="sovereign-heading text-2xl mb-8">
+                    <i class="material-icons mr-3" style="vertical-align: middle;">build</i>
+                    关键子行业：产品层面概览
+                </h3>
+                
+                <div class="grid lg:grid-cols-3 gap-6">
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">暖通空调系统（HVAC）</h4>
+                        <div class="noble-text text-sm">
+                            包括供暖、通风和空调设备，是维持室内环境舒适度和空气质量的关键系统。2025年市场规模预计为<strong class="exclusive-number">2957亿美元</strong>。
+                        </div>
+                    </div>
+
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">门窗系统</h4>
+                        <div class="noble-text text-sm">
+                            包括门窗框架、玻璃、五金件等，对建筑的能效、安全和美学至关重要。2025年市场规模达到<strong class="exclusive-number">2160.4亿美元</strong>。
+                        </div>
+                    </div>
+
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">管道与卫浴装置</h4>
+                        <div class="noble-text text-sm">
+                            包括管道、阀门、配件、水龙头、水槽、马桶等，是建筑给排水系统的核心组成部分。
+                        </div>
+                    </div>
+
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">电气产品</h4>
+                        <div class="noble-text text-sm">
+                            包括电线、照明设备、断路器等，是建筑电气系统的基础。
+                        </div>
+                    </div>
+
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">装饰与内部材料</h4>
+                        <div class="noble-text text-sm">
+                            包括保温材料、屋顶材料、壁板、地板、墙板、油漆和涂料等，用于建筑的最终装修和保护。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 宏观与终端市场需求环境 -->
+    <section id="macro-environment" class="imperial-section" data-title="宏观与终端市场需求环境">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-4xl mb-16 text-center">
+                <i class="material-icons mr-4" style="vertical-align: middle;">public</i>
+                宏观与终端市场需求环境
+            </h2>
+
+            <div class="authority-card mb-12">
+                <h3 class="sovereign-heading text-2xl mb-8">
+                    <i class="material-icons mr-3" style="vertical-align: middle;">timeline</i>
+                    全球经济展望（2025-2026）：分化的世界
+                </h3>
+                
+                <div class="noble-text mb-8">
+                    全球宏观经济环境是决定建筑产品需求的首要变量。根据国际货币基金组织（IMF）和世界银行的预测，全球经济在2025-2026年将呈现"稳定但缓慢"的增长态势，预计增速在<strong class="exclusive-number">3.0%至3.3%</strong>之间，低于历史平均水平。全球通胀预计将稳步回落，但仍是各国央行关注的焦点，尤其是在美国。
+                </div>
+
+                <div class="grid lg:grid-cols-3 gap-6">
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">美国联邦储备委员会</h4>
+                        <div class="noble-text text-sm">
+                            在2025年中期将联邦基金利率目标区间维持在<strong class="exclusive-number">4.25%-4.50%</strong>，采取数据依赖的观望态度。市场普遍预期，如果劳动力市场出现疲软迹象，年底前可能进行1-2次降息。
+                        </div>
+                    </div>
+
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">欧洲中央银行（ECB）</h4>
+                        <div class="noble-text text-sm">
+                            已经进入一个积极的宽松周期。到2025年中期，其主要再融资利率已下调至约<strong class="exclusive-number">2.15%</strong>。市场预计ECB可能在年内进一步降息，为欧洲疲软的住宅市场提供支撑。
+                        </div>
+                    </div>
+
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">中国人民银行（PBoC）</h4>
+                        <div class="noble-text text-sm">
+                            为应对国内经济挑战，特别是房地产行业的深度调整，持续采取宽松的货币政策。2025年中期，1年期贷款市场报价利率（LPR）维持在<strong class="exclusive-number">3.0%</strong>的历史低位。
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8 mb-12">
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="material-icons mr-3" style="vertical-align: middle;">home</i>
+                        住宅市场：可负担性的逆风
+                    </h3>
+                    <div class="noble-text">
+                        全球住宅建筑市场普遍受到高利率环境下抵押贷款成本上升和购房者负担能力下降的挑战。北美方面，截至2025年中期，美国私人住宅新开工量经季节性调整后的年化率为约<strong class="exclusive-number">132.1万套</strong>，低于前几年的水平。欧洲建筑许可指数在2023年出现了急剧下滑（按建筑面积计下降<strong class="exclusive-number">14.6%</strong>），并在2024年继续小幅下滑。
+                    </div>
+                </div>
+
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="material-icons mr-3" style="vertical-align: middle;">account_balance</i>
+                        非住宅与基础设施：财政刺激的顺风
+                    </h3>
+                    <div class="noble-text">
+                        与疲软的住宅市场形成鲜明对比的是，非住宅和基础设施建设领域的需求得到了各国政府大规模财政刺激计划的有力支撑。美国《基础设施投资和就业法案》（IIJA）授权了<strong class="exclusive-number">1.2万亿美元</strong>的支出，其中<strong class="exclusive-number">5500亿美元</strong>是新增投资。欧洲"下一代欧盟"（NGEU）复苏计划提供了高达<strong class="exclusive-number">8000亿欧元</strong>的资金。
+                    </div>
+                </div>
+            </div>
+
+            <div class="authority-card">
+                <h3 class="sovereign-heading text-2xl mb-8">
+                    <i class="material-icons mr-3" style="vertical-align: middle;">flag</i>
+                    中国因素：全球需求的结构性拖累
+                </h3>
+                
+                <div class="noble-text">
+                    中国房地产市场的深度调整是影响全球建筑产品需求的一个关键结构性因素。根据中国国家统计局的数据，截至2025年中期，房地产开发投资同比下降了<strong class="exclusive-number">11.2%</strong>，显示出严重的持续收缩。这并非周期性下滑，而是由开发商债务危机和政府推动经济增长模式转型共同导致的结构性调整。中国住宅建设的崩溃对全球市场产生了双重影响。首先，它直接减少了对高端进口建筑产品的需求。其次，也是更重要的一个传导机制是，国内需求的疲软导致了中国本土生产的商品化建材（如钢材和铝材）出现严重产能过剩。2024年，中国钢材出口量达到了创纪录的<strong class="exclusive-number">1.18亿吨</strong>。这种低价出口浪潮增加了全球供应，对全球其他地区的生产商构成了巨大的价格压力和利润挤压。
+                </div>
+            </div>
+
+            <!-- 全球宏观经济预测摘要表 -->
+            <div class="authority-card mt-12">
+                <h3 class="sovereign-heading text-2xl mb-8 text-center">全球宏观经济与建筑活动预测摘要</h3>
+                
+                <div class="overflow-x-auto">
+                    <table class="imperial-table">
+                        <thead>
+                            <tr>
+                                <th>区域</th>
+                                <th>GDP增长预测 (2025E/2026E)</th>
+                                <th>关键政策利率 (当前/2025E)</th>
+                                <th>住宅市场展望</th>
+                                <th>非住宅/基础设施展望</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-semibold">北美</td>
+                                <td class="exclusive-number">1.7% / 1.8%</td>
+                                <td class="exclusive-number">4.25-4.50% / 4.00-4.25%</td>
+                                <td>疲软，受高利率抑制，新开工量低于历史水平</td>
+                                <td class="text-green-400 font-bold">强劲，受益于IIJA法案的多年期投资</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">欧洲</td>
+                                <td class="exclusive-number">1.1% / 1.4%</td>
+                                <td class="exclusive-number">2.15% / 1.75-2.00%</td>
+                                <td>挑战重重，但ECB降息有望提供底部支撑</td>
+                                <td class="text-green-400 font-bold">稳定，受益于NGEU复苏基金的绿色和数字化项目</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">中国</td>
+                                <td class="exclusive-number">4.2% / 4.2%</td>
+                                <td class="exclusive-number">3.00% / 维持宽松</td>
+                                <td class="text-red-400 font-bold">严重收缩，结构性调整持续，风险巨大</td>
+                                <td>稳定，由政府主导的基础设施投资支撑</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">其他地区</td>
+                                <td class="exclusive-number">4.2% / 4.2%</td>
+                                <td>混合</td>
+                                <td>增长依赖于本地经济和利率环境</td>
+                                <td>增长与大宗商品周期和"一带一路"投资相关</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 价值链分析 -->
+    <section id="value-chain" class="imperial-section" data-title="价值链分析——从原材料到终端用户">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-4xl mb-16 text-center">
+                <i class="material-icons mr-4" style="vertical-align: middle;">link</i>
+                价值链分析——从原材料到终端用户
+            </h2>
+
+            <div class="authority-card mb-12">
+                <h3 class="sovereign-heading text-2xl mb-8">
+                    <i class="material-icons mr-3" style="vertical-align: middle;">local_fire_department</i>
+                    投入成本的熔炉：驾驭波动性
+                </h3>
+                
+                <div class="noble-text mb-8">
+                    原材料价格的波动是影响建筑产品制造商毛利率的最直接、最关键的因素。对成本趋势的精准把握是评估企业盈利能力的前提。以下是对2023-2025年主要原材料价格趋势的分析：
+                </div>
+
+                <!-- 关键原材料价格趋势表格 -->
+                <div class="overflow-x-auto">
+                    <table class="imperial-table">
+                        <thead>
+                            <tr>
+                                <th>原材料</th>
+                                <th>价格指标/单位</th>
+                                <th>2025年Q2水平</th>
+                                <th>年初至今变化</th>
+                                <th>同比变化</th>
+                                <th>2025年展望</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-semibold">钢材</td>
+                                <td>热轧卷价格 ($/吨)</td>
+                                <td>稳定回升</td>
+                                <td class="text-green-400 font-bold">+3.15% (QoQ)</td>
+                                <td class="text-red-400 font-bold">-10.5%</td>
+                                <td>趋于稳定，可能因关税和供应调整而小幅上涨</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">铜</td>
+                                <td>COMEX铜价 ($/磅)</td>
+                                <td class="exclusive-number">~$4.50 - $4.80</td>
+                                <td class="text-red-400 font-bold">波动剧烈</td>
+                                <td class="text-green-400 font-bold">+13.75% (线缆)</td>
+                                <td>长期看涨，受绿色能源需求驱动，供应受限</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">铝</td>
+                                <td>LME铝价 ($/吨)</td>
+                                <td class="exclusive-number">~$2,600</td>
+                                <td class="text-green-400 font-bold">上涨</td>
+                                <td>稳定</td>
+                                <td>市场转向小幅过剩，但高成本将提供价格支撑</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">木材</td>
+                                <td>框架木材价格 ($/mbf)</td>
+                                <td class="exclusive-number">~$580</td>
+                                <td class="text-green-400 font-bold">+11.7% (YoY)</td>
+                                <td class="text-green-400 font-bold">+10%</td>
+                                <td>因供应削减而看涨</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">原油</td>
+                                <td>布伦特原油 ($/桶)</td>
+                                <td class="exclusive-number">~$66</td>
+                                <td>稳定</td>
+                                <td>波动</td>
+                                <td>维持在$66-76区间，地缘政治风险是主要变量</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8 mb-12">
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="material-icons mr-3" style="vertical-align: middle;">trending_down</i>
+                        利润动态：挤压与应对
+                    </h3>
+                    <div class="noble-text">
+                        原材料成本的上涨直接转化为制造商销售成本（COGS）的增加，从而对利润率构成挤压。在这种环境下，企业能否成功地将成本上涨转嫁给下游客户，成为其盈利能力的关键决定因素。这种定价能力取决于多种因素，包括市场竞争格局、品牌实力、产品差异化程度以及终端市场的需求弹性。一个重要的发现是，企业的内部管理流程在应对外部成本波动时扮演着至关重要的角色。
+                    </div>
+                </div>
+
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="material-icons mr-3" style="vertical-align: middle;">settings</i>
+                        敏捷利润管理的重要性
+                    </h3>
+                    <div class="noble-text">
+                        那些签订了长期固定价格合同，并且销售部门与采购部门之间沟通不畅的公司，在成本上涨周期中极易遭受严重的利润侵蚀。采购部门看到成本飙升，但销售部门却无法及时调整合同价格，这之间的脱节直接导致了利润流失。因此，建立灵活的定价机制、加强内部信息流通和实施敏捷的利润管理，已成为企业在动荡市场中保护利润、建立竞争优势的核心能力。
+                    </div>
+                </div>
+            </div>
+
+            <div class="authority-card">
+                <h3 class="sovereign-heading text-2xl mb-8">
+                    <i class="material-icons mr-3" style="vertical-align: middle;">storefront</i>
+                    渠道为王：分销的战略角色
+                </h3>
+                
+                <div class="noble-text mb-8">
+                    在建筑产品行业，制造商高度分散，而终端客户（承包商、建筑商）同样在地理上高度分散，这使得分销渠道成为连接供需两端的关键环节，其战略重要性不言而喻。
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-8">
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">增值分销商（案例：弗格森 Ferguson）</h4>
+                        <div class="noble-text text-sm">
+                            弗格森的商业模式是增值分销的典范。它服务于超过<strong class="exclusive-number">100万客户</strong>，并与约<strong class="exclusive-number">36,000家</strong>供应商合作，提供的不仅仅是产品，更是一整套解决方案，包括全球采购、项目管理、定制化配送和技术咨询等。其遍布北美的约<strong class="exclusive-number">1,700个</strong>网点、庞大的自有车队和先进的数字化工具，共同构成了其核心竞争力。
+                        </div>
+                    </div>
+
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">大型零售商（案例：家得宝 The Home Depot）</h4>
+                        <div class="noble-text text-sm">
+                            家得宝的定位是为专业承包商（Pro）和自己动手（DIY）的消费者提供一站式服务。其广阔的门店网络、强大的品牌认知度和成熟的线上平台，使其成为触达终端用户的最主要渠道之一。分销渠道并非简单的商品"搬运工"，而是价值创造和竞争优势的源泉。
+                        </div>
+                    </div>
+                </div>
+
+                <div class="noble-text mt-8">
+                    制造商的成功在很大程度上依赖于这些强大的中间商。像弗格森这样的公司通过管理供应链的复杂性来创造价值，这赋予了它们强大的议价能力。更重要的是，由于其业务很大一部分与更稳定的维修与改造（R&M）市场相关，其商业模式的周期性波动远小于纯粹的制造商，从而成为更具韧性的投资标的。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 竞争格局与战略定位 -->
+    <section id="competitive-landscape" class="imperial-section" data-title="竞争格局与战略定位">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-4xl mb-16 text-center">
+                <i class="material-icons mr-4" style="vertical-align: middle;">emoji_events</i>
+                竞争格局与战略定位
+            </h2>
+
+            <div class="authority-card mb-12">
+                <h3 class="sovereign-heading text-2xl mb-8">
+                    <i class="material-icons mr-3" style="vertical-align: middle;">donut_large</i>
+                    市场结构：集中度与竞争
+                </h3>
+                
+                <div class="noble-text mb-8">
+                    建筑产品行业的市场集中度因细分领域的不同而差异巨大，这直接影响了竞争的激烈程度和企业的定价能力。
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-8">
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">高集中度细分市场</h4>
+                        <div class="noble-text text-sm">
+                            <strong>水泥：</strong>全球市场高度集中。CRH、豪瑞（Holcim）和中国建材（CNBM）等少数几家巨头占据了主导地位，形成了寡头竞争的格局。<br><br>
+                            <strong>暖通空调（北美）：</strong>市场相对集中。前十大制造商，包括特灵（Trane）、雷诺士（Lennox）和开利（Carrier），合计占据了约<strong class="exclusive-number">85%</strong>的市场份额。
+                        </div>
+                    </div>
+
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">分散化细分市场</h4>
+                        <div class="noble-text text-sm">
+                            <strong>门业（欧洲）：</strong>市场呈现中度分散。Jeld-Wen、Masonite和亚萨合莱（Assa Abloy）等主要参与者合计约占<strong class="exclusive-number">30%</strong>的市场份额，仍有大量中小型企业参与竞争。<br><br>
+                            <strong>管道卫浴：</strong>全球市场更为分散，由少数几家大型跨国公司和众多强大的区域性供应商共同构成。
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="authority-card mb-12">
+                <h3 class="sovereign-heading text-2xl mb-8">
+                    <i class="material-icons mr-3" style="vertical-align: middle;">stars</i>
+                    领导者剖析：战略案例研究
+                </h3>
+                
+                <div class="grid lg:grid-cols-2 gap-8">
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">CRH："重质产品"收购增长策略</h4>
+                        <div class="noble-text text-sm">
+                            作为"重质产品"领域的领导者，CRH的战略核心是<strong>通过收购实现增长</strong>。仅在2024年，公司就投资<strong class="exclusive-number">50亿美元</strong>完成了<strong class="exclusive-number">40项</strong>收购，持续扩大其在水泥和骨料等核心业务的版图。公司2025年第二季度的强劲业绩，得益于有利的定价环境和基础设施市场的旺盛需求。
+                        </div>
+                    </div>
+
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">豪瑞（Holcim）：可持续发展转型</h4>
+                        <div class="noble-text text-sm">
+                            另一家"重质产品"巨头，其战略重心则转向<strong>可持续发展和高附加值解决方案</strong>。公司积极推动脱碳和循环经济（2024年回收了<strong class="exclusive-number">1020万吨</strong>建筑废料），并计划在2025年将其高利润的北美业务分拆上市，这是一项重大的战略转型。
+                        </div>
+                    </div>
+
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">圣戈班（Saint-Gobain）：全球化布局</h4>
+                        <div class="noble-text text-sm">
+                            作为多元化的"轻质产品"领导者，圣戈班专注于<strong>轻型和可持续建筑解决方案</strong>。其战略是通过收购（如收购澳大利亚CSR公司）向高增长地区扩张，并大力发展建筑化学品业务。目前，公司超过<strong class="exclusive-number">三分之二</strong>的营业利润来自西欧以外地区，显示出其成功的全球化布局。
+                        </div>
+                    </div>
+
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">富俊品牌创新（Fortune Brands）：品牌领导力</h4>
+                        <div class="noble-text text-sm">
+                            一家纯粹的"轻质产品"公司，专注于在水处理、户外和安防产品领域的<strong>品牌、创新和渠道领导力</strong>。其战略是通过内生增长和补强型收购，在所谓的"超充能"（supercharged）细分市场中占据领先地位。
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="authority-card">
+                <h3 class="sovereign-heading text-2xl mb-8">
+                    <i class="material-icons mr-3" style="vertical-align: middle;">psychology</i>
+                    影响力的争夺：谁决定产品的选择？
+                </h3>
+                
+                <div class="noble-text mb-8">
+                    在建筑产品的价值链中，最终产品的选择权并不总是在直接购买者手中，而是由多个"影响者"共同决定的。
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-8">
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">商业/公共建筑项目</h4>
+                        <div class="noble-text text-sm">
+                            在这类项目中，<strong>建筑师和工程师</strong>拥有最大的话语权。他们在设计阶段就指定了产品的品牌和规格，其决策标准通常是产品性能、技术参数、风险规避，以及日益重要的可持续性认证（如LEED或BREEAM）。
+                        </div>
+                    </div>
+
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">住宅项目</h4>
+                        <div class="noble-text text-sm">
+                            在住宅建设中，<strong>建筑商和承包商</strong>是关键的决策者。他们的选择更侧重于成本效益、安装便利性、供应链可靠性以及品牌在消费者中的声誉。
+                        </div>
+                    </div>
+                </div>
+
+                <div class="noble-text mt-8">
+                    这一决策机制意味着，成功的建筑产品制造商必须采取多管齐下的渠道营销策略。仅仅与分销商或经销商建立良好关系是远远不够的，还必须投入资源去影响价值链上游的建筑师和下游的承包商。这需要提供详尽的技术文档、BIM模型、安装培训视频和专业的销售支持团队，以满足不同影响者的特定需求。那些只关注直接客户（分销商）而忽视了这些关键影响者的制造商，将在规格指定环节的竞争中败下阵来。
+                </div>
+            </div>
+
+            <!-- 竞争格局对比表 -->
+            <div class="authority-card mt-12">
+                <h3 class="sovereign-heading text-2xl mb-8 text-center">各子行业市场领导者竞争格局</h3>
+                
+                <div class="overflow-x-auto">
+                    <table class="imperial-table">
+                        <thead>
+                            <tr>
+                                <th>子行业</th>
+                                <th>主要参与者</th>
+                                <th>市场份额估计（如有）</th>
+                                <th>关键竞争因素</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-semibold">水泥</td>
+                                <td>CRH, Holcim, CNBM, Heidelberg Materials</td>
+                                <td>全球高度集中</td>
+                                <td>规模经济、物流网络、垂直整合、成本控制</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">HVAC (北美)</td>
+                                <td>Trane, Lennox, Carrier, Rheem</td>
+                                <td class="exclusive-number">Top 10 约占 85%</td>
+                                <td>技术创新（能效）、品牌声誉、分销网络、服务能力</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">门窗 (欧洲)</td>
+                                <td>Jeld-Wen, Masonite, Assa Abloy, Hörmann</td>
+                                <td class="exclusive-number">主要参与者约占 30%</td>
+                                <td>设计、材料创新、品牌、渠道覆盖</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">管道卫浴</td>
+                                <td>Ferguson (分销), Mueller Industries, Reliance Worldwide</td>
+                                <td>市场相对分散</td>
+                                <td>品牌、产品广度、渠道关系、供应链效率</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 重塑行业的四大结构性转变 -->
+    <section id="structural-changes" class="imperial-section" data-title="重塑行业的四大结构性转变">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-4xl mb-16 text-center">
+                <i class="material-icons mr-4" style="vertical-align: middle;">rocket_launch</i>
+                重塑行业的四大结构性转变
+            </h2>
+
+            <div class="grid lg:grid-cols-2 gap-8 mb-16">
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="material-icons mr-3" style="vertical-align: middle;">eco</i>
+                        绿色使命：可持续性成为核心竞争力
+                    </h3>
+                    <div class="noble-text">
+                        可持续性正从一个边缘话题转变为建筑产品行业的核心商业驱动力。以北美的LEED和欧洲的BREEAM为代表的绿色建筑认证体系，正在从"加分项"变为市场准入的"必需品"。这些体系通过评分机制，直接激励开发商和建筑师选择和使用可持续的、可回收的、低排放的建筑产品。行业正在从传统的"开采-制造-废弃"线性模式，转向注重"再利用、再制造、再循环"的循环模式。豪瑞集团设定的回收超过<strong class="exclusive-number">2000万吨</strong>建筑废料的目标，正是这一趋势的有力证明。
+                    </div>
+                </div>
+
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="material-icons mr-3" style="vertical-align: middle;">computer</i>
+                        数字蓝图：建筑信息模型（BIM）
+                    </h3>
+                    <div class="noble-text">
+                        建筑信息模型（BIM）是一种革命性的数字化流程，它通过创建一个包含所有项目数据的三维模型，极大地改善了建筑项目的协作效率、成本控制和质量。BIM对建筑产品行业的影响是深远的。它改变了材料采购的方式，通过精确的模型计算，可以实现材料用量的精准预算，从而大幅减少浪费。对于制造商而言，提供与BIM软件兼容的产品数字模型（即BIM对象）已成为一项新的竞争要求。
+                    </div>
+                </div>
+
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="material-icons mr-3" style="vertical-align: middle;">precision_manufacturing</i>
+                        工厂建造的未来：模块化与预制建筑
+                    </h3>
+                    <div class="noble-text">
+                        场外施工，即模块化和预制建筑，是建筑行业的另一大颠覆性趋势。通过将建筑构件在工厂内制造，然后在现场进行组装，这种方法可以将项目工期缩短高达<strong class="exclusive-number">50%</strong>，同时显著提升质量控制水平并减少现场废弃物。模块化建筑的兴起正在从根本上改变对建筑产品的需求性质。它将需求从运往混乱施工现场的散装、半成品材料，转向运往受控工厂环境的高度标准化、规格化、甚至预组装的构件。
+                    </div>
+                </div>
+
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="material-icons mr-3" style="vertical-align: middle;">smart_toy</i>
+                        互联建筑：智能家居集成
+                    </h3>
+                    <div class="noble-text">
+                        物联网（IoT）、人工智能（AI）和无线连接技术正在与传统的建筑产品深度融合，催生了一个快速增长的智能家居市场。据估计，全球智能家居和智能建筑市场在2023年的价值约为<strong class="exclusive-number">800亿美元</strong>，并预计将以<strong class="exclusive-number">12%</strong>的复合年增长率增长。这一趋势正在将HVAC系统、门锁、照明、窗帘等传统产品转变为能够提供更高便利性、安全性、舒适度和能源效率的智能互联设备。
+                    </div>
+                </div>
+            </div>
+
+            <div class="authority-card">
+                <h3 class="sovereign-heading text-2xl mb-8 text-center">
+                    <i class="material-icons mr-3" style="vertical-align: middle;">insights</i>
+                    结构性转变的协同效应
+                </h3>
+                
+                <div class="noble-text">
+                    这四大结构性转变并非孤立存在，而是相互关联、相互促进的。BIM技术为建筑创建了一个标准化的"数字孪生"模型，这是实现精准预制化的数据基础。预制化则将建筑构件（如浴室模块）转变为可在工厂生产的标准化产品。而智能家居集成则进一步提升了这些标准化产品的附加值和技术含量。可持续性要求则贯穿于整个过程，从材料选择到能源效率，再到循环利用，都成为了新的价值创造点。这些趋势的融合共同指向了<strong>建筑业的"工业化"未来</strong>。在这个未来中，建筑不再是独一无二、现场手工艺的产物，而是由一系列性能签约、可预测生命周期成本的子系统，通过一个中央数字平台集成起来的标准化资产。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 财务分析、估值与投资论点 -->
+    <section id="financial-analysis" class="imperial-section" data-title="财务分析、估值与投资论点">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-4xl mb-16 text-center">
+                <i class="material-icons mr-4" style="vertical-align: middle;">assessment</i>
+                财务分析、估值与投资论点
+            </h2>
+
+            <div class="authority-card mb-12">
+                <h3 class="sovereign-heading text-2xl mb-8">
+                    <i class="material-icons mr-3" style="vertical-align: middle;">account_balance_wallet</i>
+                    行业财务基准：盈利能力与资本效率
+                </h3>
+                
+                <div class="noble-text mb-8">
+                    建筑产品行业的财务特征反映了其资本密集和周期性的本质。从广义的建筑行业来看，毛利率通常在<strong class="exclusive-number">26%</strong>左右，但净利率则要低得多，一般在<strong class="exclusive-number">3%至8%</strong>的区间内，这凸显了行业高昂的运营成本和激烈的竞争。
+                </div>
+
+                <div class="golden-glass-card mb-8">
+                    <h4 class="sovereign-heading text-lg mb-4">投入资本回报率（ROIC）的重要性</h4>
+                    <div class="noble-text text-sm">
+                        为了更深入地评估企业的价值创造能力，我们引入<strong>投入资本回报率（ROIC）</strong>作为衡量资本效率的核心指标。通过将公司的ROIC与其<strong>加权平均资本成本（WACC）</strong>进行比较，可以判断该公司是否在为其股东创造价值。一个健康的、可持续增长的公司，其ROIC应持续高于其WACC。
+                    </div>
+                </div>
+
+                <div class="noble-text">
+                    在行业内部，"重质产品"（建筑材料）和"轻质产品"（建筑产品）公司的财务状况存在显著差异。重质产品公司通常资本密集度更高（拥有大量工厂、矿山等固定资产），且其盈利与新建筑周期高度相关，导致其ROIC较低且波动性较大。相比之下，轻质产品公司更依赖品牌和创新，资本密集度相对较低，且其收入中有更大部分来自更为稳定的维修与改造市场，这使得它们有潜力实现更高且更稳定的ROIC和利润率。
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8 mb-12">
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="material-icons mr-3" style="vertical-align: middle;">calculate</i>
+                        估值框架：周期性行业中的倍数
+                    </h3>
+                    <div class="noble-text">
+                        对于建筑产品这样的周期性行业，企业价值倍数（EV/EBITDA）和市盈率（P/E）是常用的估值工具。历史数据显示，由于其周期性、非经常性收入的特点以及较高的资本支出需求，广义的"建筑"行业通常享有较低的EV/EBITDA估值倍数（例如，在<strong class="exclusive-number">1.8倍至3.9倍</strong>之间）。相比之下，业务模式更稳定、更贴近消费者的家居装修零售商则能获得更高的估值（约<strong class="exclusive-number">7.8倍</strong>）。
+                    </div>
+                </div>
+
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="material-icons mr-3" style="vertical-align: middle;">trending_up</i>
+                        投资论点：青睐敏捷性、韧性与长期增长
+                    </h3>
+                    <div class="noble-text">
+                        综合本报告的全面分析，我们构建了核心投资论点：在当前住宅市场疲软与非住宅/基础设施市场强劲并存的分化格局下，投资者应优先考虑具备以下特征的公司：<strong>终端市场风险分散</strong>、<strong>卓越的商业执行力</strong>、<strong>拥抱长期结构性趋势</strong>以及<strong>高效的资本配置</strong>。基于此论点，我们明确表示，相对于那些高度依赖中国房地产市场和商品化产品的纯"重质产品"生产商，我们更看好<strong>增值分销商</strong>和<strong>具备差异化优势的"轻质产品"制造商</strong>。
+                    </div>
+                </div>
+            </div>
+
+            <div class="authority-card mb-12">
+                <h3 class="sovereign-heading text-2xl mb-8">
+                    <i class="material-icons mr-3" style="vertical-align: middle;">warning</i>
+                    论点面临的主要风险
+                </h3>
+                
+                <div class="grid lg:grid-cols-2 gap-6">
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">周期性风险</h4>
+                        <div class="noble-text text-sm">
+                            全球经济陷入比预期更深、更广的衰退；美国经济出现"硬着陆"；持续的通货膨胀迫使各国央行在更长时间内维持紧缩的货币政策。
+                        </div>
+                    </div>
+
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">成本与供应链风险</h4>
+                        <div class="noble-text text-sm">
+                            能源或关键原材料价格再次飙升；地缘政治冲突导致全球供应链出现严重中断。
+                        </div>
+                    </div>
+
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">监管与ESG风险</h4>
+                        <div class="noble-text text-sm">
+                            更严格的气候法规导致企业合规成本大幅增加；未能达到可持续发展目标而引发的声誉损害。
+                        </div>
+                    </div>
+
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">技术风险</h4>
+                        <div class="noble-text text-sm">
+                            未能跟上BIM、智能家居等技术变革的步伐而被市场淘汰；日益严峻的网络安全威胁。
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 建筑产品行业财务基准与估值倍数表 -->
+            <div class="authority-card">
+                <h3 class="sovereign-heading text-2xl mb-8 text-center">建筑产品行业财务基准与估值倍数</h3>
+                
+                <div class="overflow-x-auto">
+                    <table class="imperial-table">
+                        <thead>
+                            <tr>
+                                <th>公司</th>
+                                <th>股票代码</th>
+                                <th>市值 (十亿美元)</th>
+                                <th>LTM 收入</th>
+                                <th>LTM EBITDA</th>
+                                <th>EV/LTM EBITDA</th>
+                                <th>LTM P/E</th>
+                                <th>毛利率</th>
+                                <th>营业利润率</th>
+                                <th>ROIC</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-semibold">CRH</td>
+                                <td class="exclusive-number">CRH</td>
+                                <td class="exclusive-number">72.2</td>
+                                <td class="exclusive-number">35.6</td>
+                                <td class="exclusive-number">6.9</td>
+                                <td>-</td>
+                                <td class="exclusive-number">21.2</td>
+                                <td>-</td>
+                                <td class="exclusive-number">9.9%</td>
+                                <td class="exclusive-number">15.5% (RONA)</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">Holcim</td>
+                                <td class="exclusive-number">HOLN.SW</td>
+                                <td class="exclusive-number">45.7</td>
+                                <td class="exclusive-number">26.4 (CHF)</td>
+                                <td class="exclusive-number">5.0 (CHF)</td>
+                                <td>-</td>
+                                <td class="exclusive-number">8.7</td>
+                                <td>-</td>
+                                <td class="exclusive-number">19.1% (Rec. EBIT)</td>
+                                <td class="exclusive-number">11.6%</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">Saint-Gobain</td>
+                                <td class="exclusive-number">SGO.PA</td>
+                                <td>-</td>
+                                <td class="exclusive-number">46.6 (€)</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td class="exclusive-number">11.4%</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">Ferguson</td>
+                                <td class="exclusive-number">FERG</td>
+                                <td>-</td>
+                                <td class="exclusive-number">22.8 (2021)</td>
+                                <td>-</td>
+                                <td class="exclusive-number">12.5</td>
+                                <td class="exclusive-number">19.3</td>
+                                <td class="exclusive-number">28.4%</td>
+                                <td class="exclusive-number">8.9%</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">Fortune Brands</td>
+                                <td class="exclusive-number">FBIN</td>
+                                <td>-</td>
+                                <td class="exclusive-number">4.6 (2024)</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td class="exclusive-number">15.1%</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">Home Depot</td>
+                                <td class="exclusive-number">HD</td>
+                                <td>-</td>
+                                <td class="exclusive-number">159.5 (2024)</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td class="exclusive-number">13.8%</td>
+                                <td class="exclusive-number">31.9%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="noble-text mt-4 text-sm opacity-75">
+                    注：数据截至2024财年或最新可用财报。部分数据（如EV, ROIC）的计算方法因公司和数据源而异，仅供参考。LTM = 最近十二个月。RONA = 净资产回报率。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 结论 -->
+    <section id="conclusion" class="imperial-section" data-title="结论">
+        <div class="sovereign-container">
+            <div class="authority-card text-center">
+                <h2 class="sovereign-heading text-3xl mb-8">
+                    <i class="material-icons mr-4" style="vertical-align: middle;">emoji_events</i>
+                    结论
+                </h2>
+                
+                <div class="executive-quote max-w-4xl mx-auto mb-12">
+                    在当前全球建筑产品行业的分化格局中，投资机遇与挑战并存。
+                </div>
+
+                <div class="noble-text max-w-5xl mx-auto">
+                    本报告的深度分析表明，那些能够有效驾驭终端市场二元性、具备卓越定价能力、积极拥抱结构性增长趋势的企业，将在未来的市场竞争中脱颖而出。特别是那些在维修与改造（R&R）及基础设施终端市场占有较高份额的增值分销商和差异化的"轻质产品"制造商，有望在2025-2026年的预测期内实现超越市场的表现。对于投资者而言，理解"轻质产品"与"重质产品"的本质差异、把握四大结构性转变的投资机遇、识别具备持续价值创造能力的优质企业，将是在这一庞大且复杂的行业中获得成功的关键。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 引用文献 -->
+    <section id="references" class="imperial-section bg-gradient-to-b from-transparent to-black bg-opacity-30" data-title="引用文献">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl mb-12 text-center">引用文献</h2>
+            
+            <!-- 固定4列布局网格 -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl mx-auto">
+                <div class="citation-item">
+                    <a href="https://www.precedenceresearch.com/building-materials-market" target="_blank">
+                        1. Building Materials Market Size to Hit USD 2 Trillion By 2034 - Precedence Research
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://tradingeconomics.com/united-states/interest-rate" target="_blank">
+                        2. United States Interest Rate - Trading Economics
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://global.morningstar.com/en-gb/economy/will-ecb-cut-interest-rates-again-2025" target="_blank">
+                        3. Will the ECB Cut Interest Rates Again in 2025? - Morningstar
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://tradingeconomics.com/china/interest-rate" target="_blank">
+                        4. China Loan Prime Rate - Trading Economics
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://en.wikipedia.org/wiki/Infrastructure_Investment_and_Jobs_Act" target="_blank">
+                        5. Infrastructure Investment and Jobs Act - Wikipedia
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://commission.europa.eu/strategy-and-policy/eu-budget/eu-borrower-investor-relations/nextgenerationeu_en" target="_blank">
+                        6. NextGenerationEU - European Commission
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.gordian.com/resources/steel-price-updates/" target="_blank">
+                        7. What the Data Says: Steel Price Updates - Gordian
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.gordian.com/resources/copper-price-updates/" target="_blank">
+                        8. What the Data Says: Copper Price Updates - Gordian
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.mckinsey.com/industries/engineering-construction-and-building-materials/our-insights/how-much-is-a-brick-that-depends" target="_blank">
+                        9. The building-materials market: Managing the margins | McKinsey
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.corporate.ferguson.com/about-us/business-model-and-core-strengths/default.aspx" target="_blank">
+                        10. About Us - Business Model and Core Strengths - Ferguson
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://quartr.com/companies/the-home-depot-inc_5653" target="_blank">
+                        11. The Home Depot (HD) Investor Relations Material - Quartr
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://en.wikipedia.org/wiki/Global_Industry_Classification_Standard" target="_blank">
+                        12. Global Industry Classification Standard - Wikipedia
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.silverlightresearch.com/uploads/1/0/2/7/102798756/msci_global_industry_classification_standard_1.pdf" target="_blank">
+                        13. GLOBAL INDUSTRY CLASSIFICATION STANDARD (GICS®) METHODOLOGY
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.spglobal.com/spdji/en/documents/index-policies/sp-global-csa-industry-gics-sub-industry-mapping.pdf" target="_blank">
+                        14. S&P Global CSA Industry-GICS Sub-Industry Mapping
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.grandviewresearch.com/industry-analysis/building-materials-market-report" target="_blank">
+                        15. Building Materials Market Size, Share & Trends Report, 2030 - Grand View Research
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.marketsandmarkets.com/Market-Reports/hvac-system-market-202111288.html" target="_blank">
+                        16. HVAC System Market Size, Share, Industry, Latest Trends, 2024-2029
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.mordorintelligence.com/industry-reports/windows-and-doors-market" target="_blank">
+                        17. Windows And Doors Market Size, Industry Share, Growth Analysis - 2030
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://buildops.com/resources/north-american-hvac-equipment-market-chart/" target="_blank">
+                        18. North American HVAC Equipment Market, by Manufacturer, and by Market Share
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.arizton.com/market-reports/plumbing-parts-market" target="_blank">
+                        19. Plumbing Parts Market - Global Outlook & Forecast 2024-2029
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.gminsights.com/industry-analysis/european-doors-market" target="_blank">
+                        20. European Doors Market Size, Share, Trends & Forecast - 2032
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.crh.com/media/5846/crh-q2-2025-results-announcement.pdf" target="_blank">
+                        21. Q2 Results Announcement 2025 - CRH
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.crh.com/media/5659/crh-2024-annual-report-1.pdf" target="_blank">
+                        22. 2024 Annual Report | CRH
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.holcim.com/sites/holcim/files/docs/holcim-investor-day-2025-nextgen-growth-2030-strategy.pdf" target="_blank">
+                        23. Holcim Investor Day 2025 - NextGen Growth 2030 Strategy
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.fbin.com/app/uploads/2023/05/Fortune-Brands-May-2023-Investor-Presentation.pdf" target="_blank">
+                        24. Fortune Brands May 2023 Investor Presentation
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.imf.org/en/Publications/WEO" target="_blank">
+                        25. World Economic Outlook - International Monetary Fund (IMF)
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.census.gov/construction/nrc/pdf/newresconst.pdf" target="_blank">
+                        26. MONTHLY NEW RESIDENTIAL CONSTRUCTION, JUNE 2025 - U.S. Census Bureau
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://fred.stlouisfed.org/series/UNDCONTSA" target="_blank">
+                        27. New Privately-Owned Housing Units Under Construction | FRED
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Building_permit_index_overview" target="_blank">
+                        28. Building permit index overview - Statistics Explained - Eurostat
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript 垂直进度条功能 -->
+    <script>
+        // 精美垂直进度条系统（支持悬停显示标题 + 点击跳转）
+        const progressBar = document.querySelector('.reading-progress');
+        const progressFill = document.querySelector('.reading-progress-fill');
+        const progressTooltip = document.getElementById('progress-tooltip');
+        const sections = document.querySelectorAll('section[id], header[id]');
+
+        let currentSectionTitle = '';
+        let sectionsData = [];
+
+        // 初始化章节数据
+        function initSections() {
+            sectionsData = Array.from(sections).map(section => ({
+                id: section.getAttribute('id'),
+                title: section.getAttribute('data-title') || section.querySelector('h1, h2')?.textContent || '未知章节',
+                offsetTop: section.offsetTop,
+                offsetHeight: section.offsetHeight
+            }));
+        }
+
+        function updateProgress() {
+            const scrolled = window.pageYOffset;
+            const maxHeight = document.body.scrollHeight - window.innerHeight;
+            const progress = (scrolled / maxHeight) * 100;
+            
+            // 更新垂直进度条填充高度
+            progressFill.style.height = `${progress}%`;
+            
+            // 获取当前章节
+            let currentSection = '';
+            sectionsData.forEach(section => {
+                if (scrolled >= section.offsetTop - 300) {
+                    currentSection = section.id;
+                    currentSectionTitle = section.title;
+                }
+            });
+        }
+
+        // 点击进度条跳转到对应位置
+        progressBar.addEventListener('click', (e) => {
+            const rect = progressBar.getBoundingClientRect();
+            const clickY = e.clientY - rect.top;
+            const progressHeight = rect.height;
+            const clickPercent = clickY / progressHeight;
+            
+            const maxHeight = document.body.scrollHeight - window.innerHeight;
+            const targetScroll = maxHeight * clickPercent;
+            
+            window.scrollTo({
+                top: targetScroll,
+                behavior: 'smooth'
+            });
+        });
+
+        // 鼠标悬停显示当前章节标题
+        progressBar.addEventListener('mouseenter', () => {
+            if (currentSectionTitle) {
+                progressTooltip.textContent = currentSectionTitle;
+                progressTooltip.classList.add('show');
+            }
+        });
+
+        progressBar.addEventListener('mouseleave', () => {
+            progressTooltip.classList.remove('show');
+        });
+
+        // 提示框悬停保持显示
+        progressTooltip.addEventListener('mouseenter', () => {
+            progressTooltip.classList.add('show');
+        });
+
+        progressTooltip.addEventListener('mouseleave', () => {
+            progressTooltip.classList.remove('show');
+        });
+
+        // 窗口大小改变时重新计算章节位置
+        window.addEventListener('resize', () => {
+            setTimeout(initSections, 100);
+        });
+
+        window.addEventListener('scroll', updateProgress);
+
+        // 页面加载完成后初始化
+        window.addEventListener('load', () => {
+            initSections();
+            updateProgress();
+        });
+    </script>
+</body>
+</html>

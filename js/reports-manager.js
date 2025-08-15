@@ -123,6 +123,381 @@ const reportsDatabase = [
             thirdLevel: '橡胶',
             fourthLevel: ''
         }
+    },
+    // 新增投研报告
+    {
+        id: 'biological-pharmaceuticals-2025',
+        title: '创新驱动：驾驭全球生物制药行业的结构性变革与价值解锁',
+        publishDate: '2025-07-02',
+        tags: ['生物制药', '创新驱动', '价值解锁'],
+        preview: '深度解析全球生物制药行业的创新驱动模式，剖析结构性变革对产业格局的重塑，识别价值投资机会与风险因素。',
+        viewCount: 4200,
+        downloadCount: 920,
+        rating: 4.9,
+        filePath: 'industry-reports/352010生物药品行业研究报告_20250702.html',
+        classification: {
+            industry: '医药卫生',
+            subIndustry: '医药',
+            thirdLevel: '生物药品',
+            fourthLevel: ''
+        }
+    },
+    {
+        id: 'industrial-metals-2025',
+        title: '全球工业金属行业深度分析报告',
+        publishDate: '2025-07-03',
+        tags: ['工业金属', '供需分析', '价格预测'],
+        preview: '全面分析全球工业金属市场供需格局，深入探讨铜、铝、锌等核心品种的基本面变化，为投资决策提供专业指导。',
+        viewCount: 3800,
+        downloadCount: 820,
+        rating: 4.8,
+        filePath: 'industry-reports/152010工业金属行业研究报告_20250703.html',
+        classification: {
+            industry: '原材料',
+            subIndustry: '有色金属',
+            thirdLevel: '工业金属',
+            fourthLevel: ''
+        }
+    },
+    {
+        id: 'rare-metals-2025',
+        title: '稀有金属行业深度研究报告',
+        publishDate: '2025-07-04',
+        tags: ['稀有金属', '战略资源', '供应链'],
+        preview: '深度研究稀土、钨、锂等稀有金属的战略价值，分析全球供应链格局与产业政策影响，把握新能源时代的投资机遇。',
+        viewCount: 3600,
+        downloadCount: 780,
+        rating: 4.8,
+        filePath: 'industry-reports/152030稀有金属行业研究报告_20250704.html',
+        classification: {
+            industry: '原材料',
+            subIndustry: '有色金属',
+            thirdLevel: '稀有金属',
+            fourthLevel: ''
+        }
+    },
+    {
+        id: 'precious-metals-2025',
+        title: '贵金属行业深度研究报告',
+        publishDate: '2025-07-05',
+        tags: ['贵金属', '避险属性', '投资价值'],
+        preview: '系统分析黄金、白银、铂族金属的投资价值与避险属性，解读货币政策对贵金属价格的影响机制。',
+        viewCount: 4100,
+        downloadCount: 950,
+        rating: 4.9,
+        filePath: 'industry-reports/152020贵金属行业研究报告_20250705.html',
+        classification: {
+            industry: '原材料',
+            subIndustry: '有色金属',
+            thirdLevel: '贵金属',
+            fourthLevel: ''
+        }
+    },
+    {
+        id: 'steel-industry-2025',
+        title: '钢铁行业深度研究报告',
+        publishDate: '2025-07-06',
+        tags: ['钢铁', '产能优化', '绿色转型'],
+        preview: '全面解析钢铁行业产能优化与绿色转型趋势，评估供给侧改革成效，预测行业盈利能力变化。',
+        viewCount: 3200,
+        downloadCount: 680,
+        rating: 4.7,
+        filePath: 'industry-reports/153010钢铁行业研究报告_20250706.html',
+        classification: {
+            industry: '原材料',
+            subIndustry: '钢铁',
+            thirdLevel: '钢铁',
+            fourthLevel: ''
+        }
+    },
+    {
+        id: 'construction-materials-2025',
+        title: '建筑材料行业深度研究报告',
+        publishDate: '2025-07-08',
+        tags: ['建筑材料', '基建投资', '绿色建筑'],
+        preview: '深入研究水泥、玻璃、建筑钢材等核心建筑材料的市场前景，分析基建投资与绿色建筑发展对行业的推动作用。',
+        viewCount: 2900,
+        downloadCount: 620,
+        rating: 4.6,
+        filePath: 'industry-reports/154010建筑材料行业研究报告_20250708.html',
+        classification: {
+            industry: '原材料',
+            subIndustry: '非金属材料',
+            thirdLevel: '建筑材料',
+            fourthLevel: ''
+        }
+    },
+    {
+        id: 'paper-forestry-2025',
+        title: '纸类与林业产品行业研究报告',
+        publishDate: '2025-07-14',
+        tags: ['纸类产品', '林业资源', '环保政策'],
+        preview: '分析纸类产品与林业资源的可持续发展模式，探讨环保政策对行业结构的重塑作用。',
+        viewCount: 2200,
+        downloadCount: 480,
+        rating: 4.5,
+        filePath: 'industry-reports/155020纸类与林业产品行业研究报告_20250714.html',
+        classification: {
+            industry: '原材料',
+            subIndustry: '造纸与包装',
+            thirdLevel: '纸类与林业产品',
+            fourthLevel: ''
+        }
+    },
+    {
+        id: 'aerospace-2025',
+        title: '航空航天行业研究报告',
+        publishDate: '2025-07-13',
+        tags: ['航空航天', '技术创新', '国防军工'],
+        preview: '深度剖析航空航天产业的技术创新路径，评估军民融合发展机遇，前瞻产业投资价值。',
+        viewCount: 3500,
+        downloadCount: 750,
+        rating: 4.8,
+        filePath: 'industry-reports/201010航空航天行业研究报告_20250713.html',
+        classification: {
+            industry: '工业',
+            subIndustry: '航空航天与国防',
+            thirdLevel: '航空航天',
+            fourthLevel: ''
+        }
+    },
+    {
+        id: 'defense-equipment-2025',
+        title: '国防装备行业研究报告',
+        publishDate: '2025-07-12',
+        tags: ['国防装备', '军工产业', '技术升级'],
+        preview: '系统研究国防装备现代化进程，分析军工产业链投资机会与技术升级趋势。',
+        viewCount: 3300,
+        downloadCount: 720,
+        rating: 4.7,
+        filePath: 'industry-reports/201020国防装备行业研究报告_20250712.html',
+        classification: {
+            industry: '工业',
+            subIndustry: '航空航天与国防',
+            thirdLevel: '国防装备',
+            fourthLevel: ''
+        }
+    },
+    {
+        id: 'construction-engineering-2025',
+        title: '建筑与工程行业研究报告',
+        publishDate: '2025-07-09',
+        tags: ['建筑工程', '基础设施', '智慧建造'],
+        preview: '全面分析建筑与工程行业发展态势，探讨基础设施建设与智慧建造技术的投资前景。',
+        viewCount: 2800,
+        downloadCount: 580,
+        rating: 4.6,
+        filePath: 'industry-reports/202010建筑与工程行业研究报告_20250709.html',
+        classification: {
+            industry: '工业',
+            subIndustry: '建筑装饰',
+            thirdLevel: '建筑与工程',
+            fourthLevel: ''
+        }
+    },
+    {
+        id: 'building-decoration-2025',
+        title: '建筑装修行业研究报告',
+        publishDate: '2025-07-11',
+        tags: ['建筑装修', '消费升级', '智能家居'],
+        preview: '深入研究建筑装修行业消费升级趋势，分析智能家居与绿色装修的市场机遇。',
+        viewCount: 2500,
+        downloadCount: 520,
+        rating: 4.5,
+        filePath: 'industry-reports/202020建筑装修行业研究报告_20250711.html',
+        classification: {
+            industry: '工业',
+            subIndustry: '建筑装饰',
+            thirdLevel: '建筑装修',
+            fourthLevel: ''
+        }
+    },
+    {
+        id: 'building-products-2025',
+        title: '建筑产品行业研究报告',
+        publishDate: '2025-07-10',
+        tags: ['建筑产品', '标准化', '产业链'],
+        preview: '系统分析建筑产品标准化趋势，解读产业链整合对行业格局的影响。',
+        viewCount: 2400,
+        downloadCount: 500,
+        rating: 4.4,
+        filePath: 'industry-reports/202030建筑产品行业研究报告_20250710.html',
+        classification: {
+            industry: '工业',
+            subIndustry: '建筑装饰',
+            thirdLevel: '建筑产品',
+            fourthLevel: ''
+        }
+    },
+    {
+        id: 'power-generation-equipment-2025',
+        title: '发电设备行业研究报告',
+        publishDate: '2025-07-17',
+        tags: ['发电设备', '清洁能源', '技术升级'],
+        preview: '深度分析传统发电设备向清洁能源转型，评估风电、光伏等新能源设备的投资价值。',
+        viewCount: 3400,
+        downloadCount: 740,
+        rating: 4.8,
+        filePath: 'industry-reports/203010发电设备行业研究报告_20250717.html',
+        classification: {
+            industry: '工业',
+            subIndustry: '电力设备',
+            thirdLevel: '发电设备',
+            fourthLevel: ''
+        }
+    },
+    {
+        id: 'grid-equipment-2025',
+        title: '电网设备行业研究报告',
+        publishDate: '2025-07-18',
+        tags: ['电网设备', '智能电网', '特高压'],
+        preview: '全面研究智能电网建设对设备需求的拉动作用，分析特高压技术的产业化前景。',
+        viewCount: 3100,
+        downloadCount: 680,
+        rating: 4.7,
+        filePath: 'industry-reports/203020电网设备行业研究报告_20250718.html',
+        classification: {
+            industry: '工业',
+            subIndustry: '电力设备',
+            thirdLevel: '电网设备',
+            fourthLevel: ''
+        }
+    },
+    {
+        id: 'energy-storage-equipment-2025',
+        title: '储能设备行业研究报告',
+        publishDate: '2025-07-16',
+        tags: ['储能设备', '电化学储能', '产业爆发'],
+        preview: '深入分析储能设备产业爆发式增长动力，解读电化学储能技术路线与投资机遇。',
+        viewCount: 4000,
+        downloadCount: 890,
+        rating: 4.9,
+        filePath: 'industry-reports/203030储能设备行业研究报告_20250716.html',
+        classification: {
+            industry: '工业',
+            subIndustry: '电力设备',
+            thirdLevel: '储能设备',
+            fourthLevel: ''
+        }
+    },
+    {
+        id: 'general-machinery-2025',
+        title: '通用机械行业研究报告',
+        publishDate: '2025-07-19',
+        tags: ['通用机械', '制造升级', '自动化'],
+        preview: '系统研究通用机械行业制造升级趋势，分析自动化技术对产业结构的重塑作用。',
+        viewCount: 2700,
+        downloadCount: 560,
+        rating: 4.6,
+        filePath: 'industry-reports/204010通用机械行业研究报告_20250719.html',
+        classification: {
+            industry: '工业',
+            subIndustry: '机械制造',
+            thirdLevel: '通用机械',
+            fourthLevel: ''
+        }
+    },
+    {
+        id: 'specialized-machinery-2025',
+        title: '专用机械行业研究报告',
+        publishDate: '2025-07-22',
+        tags: ['专用机械', '定制化', '技术壁垒'],
+        preview: '深度分析专用机械的定制化发展模式，评估技术壁垒构建的竞争优势。',
+        viewCount: 2600,
+        downloadCount: 540,
+        rating: 4.5,
+        filePath: 'industry-reports/204020专用机械行业研究报告_20250722.html',
+        classification: {
+            industry: '工业',
+            subIndustry: '机械制造',
+            thirdLevel: '专用机械',
+            fourthLevel: ''
+        }
+    },
+    {
+        id: 'transportation-equipment-2025',
+        title: '交通运输设备行业研究报告',
+        publishDate: '2025-07-23',
+        tags: ['交通运输设备', '新能源汽车', '智能交通'],
+        preview: '全面解析交通运输设备电动化、智能化发展趋势，前瞻新能源汽车产业链投资价值。',
+        viewCount: 3600,
+        downloadCount: 790,
+        rating: 4.8,
+        filePath: 'industry-reports/204030交通运输设备行业研究报告_20250723.html',
+        classification: {
+            industry: '工业',
+            subIndustry: '机械制造',
+            thirdLevel: '交通运输设备',
+            fourthLevel: ''
+        }
+    },
+    {
+        id: 'industrial-conglomerates-2025',
+        title: '工业集团企业行业研究报告',
+        publishDate: '2025-07-24',
+        tags: ['工业集团', '多元化', '协同效应'],
+        preview: '深入研究工业集团企业多元化经营模式，分析业务协同效应与价值创造路径。',
+        viewCount: 2300,
+        downloadCount: 480,
+        rating: 4.4,
+        filePath: 'industry-reports/204040工业集团企业行业研究报告_20250724.html',
+        classification: {
+            industry: '工业',
+            subIndustry: '机械制造',
+            thirdLevel: '工业集团企业',
+            fourthLevel: ''
+        }
+    },
+    {
+        id: 'pollution-control-2025',
+        title: '污染治理行业研究报告',
+        publishDate: '2025-07-25',
+        tags: ['污染治理', '环保政策', '绿色发展'],
+        preview: '系统分析污染治理行业政策驱动与市场化发展，评估环保产业投资机遇。',
+        viewCount: 3000,
+        downloadCount: 640,
+        rating: 4.7,
+        filePath: 'industry-reports/205010污染治理行业研究报告_20250725.html',
+        classification: {
+            industry: '工业',
+            subIndustry: '环保',
+            thirdLevel: '污染治理',
+            fourthLevel: ''
+        }
+    },
+    {
+        id: 'energy-conservation-ecological-restoration-2025',
+        title: '节能与生态修复行业研究报告',
+        publishDate: '2025-07-15',
+        tags: ['节能', '生态修复', '可持续发展'],
+        preview: '深度研究节能技术与生态修复产业的协同发展，分析可持续发展理念下的投资价值。',
+        viewCount: 2800,
+        downloadCount: 600,
+        rating: 4.6,
+        filePath: 'industry-reports/205020节能与生态修复行业研究报告_20250715.html',
+        classification: {
+            industry: '工业',
+            subIndustry: '环保',
+            thirdLevel: '节能与生态修复',
+            fourthLevel: ''
+        }
+    },
+    {
+        id: 'commercial-services-supplies-2025',
+        title: '商业服务与用品行业研究报告',
+        publishDate: '2025-07-20',
+        tags: ['商业服务', '用品供应', '数字化转型'],
+        preview: '全面分析商业服务与用品行业数字化转型趋势，探讨服务模式创新带来的投资机会。',
+        viewCount: 2500,
+        downloadCount: 520,
+        rating: 4.5,
+        filePath: 'industry-reports/206010商业服务与用品行业研究报告_20250720.html',
+        classification: {
+            industry: '工业',
+            subIndustry: '商业服务与用品',
+            thirdLevel: '商业服务与用品',
+            fourthLevel: ''
+        }
     }
 ];
 
@@ -207,16 +582,63 @@ function generateReportCard(report) {
 }
 
 /**
+ * 报告排序函数
+ */
+function sortReports(reports, sortBy = 'date', order = 'desc') {
+    const sortedReports = [...reports];
+    
+    sortedReports.sort((a, b) => {
+        let valueA, valueB;
+        
+        switch (sortBy) {
+            case 'date':
+                valueA = new Date(a.publishDate);
+                valueB = new Date(b.publishDate);
+                break;
+            case 'title':
+                valueA = a.title.toLowerCase();
+                valueB = b.title.toLowerCase();
+                break;
+            case 'views':
+                valueA = a.viewCount || 0;
+                valueB = b.viewCount || 0;
+                break;
+            case 'downloads':
+                valueA = a.downloadCount || 0;
+                valueB = b.downloadCount || 0;
+                break;
+            case 'rating':
+                valueA = a.rating || 0;
+                valueB = b.rating || 0;
+                break;
+            default:
+                valueA = new Date(a.publishDate);
+                valueB = new Date(b.publishDate);
+        }
+        
+        if (order === 'desc') {
+            return valueB > valueA ? 1 : valueB < valueA ? -1 : 0;
+        } else {
+            return valueA > valueB ? 1 : valueA < valueB ? -1 : 0;
+        }
+    });
+    
+    return sortedReports;
+}
+
+/**
  * 渲染所有报告到指定容器
  */
-function renderReports(containerId = 'reports-container') {
+function renderReports(containerId = 'reports-container', sortBy = 'date', order = 'desc') {
     const container = document.getElementById(containerId);
     if (!container) {
         console.error(`Container with id '${containerId}' not found`);
         return;
     }
     
-    const reportsHTML = reportsDatabase.map(report => generateReportCard(report)).join('');
+    // 按日期倒序排序报告
+    const sortedReports = sortReports(reportsDatabase, sortBy, order);
+    const reportsHTML = sortedReports.map(report => generateReportCard(report)).join('');
     container.innerHTML = reportsHTML;
 }
 
@@ -229,7 +651,7 @@ function filterReports(industry, subIndustry = '', thirdLevel = '', fourthLevel 
         
         const { classification } = report;
         
-        // 使用之前的通用匹配逻辑
+        // 使用通用匹配逻辑
         return isReportMatchCategory(
             classification.industry, 
             classification.subIndustry, 
@@ -241,16 +663,50 @@ function filterReports(industry, subIndustry = '', thirdLevel = '', fourthLevel 
 }
 
 /**
+ * 通用分类匹配函数：检查报告是否匹配选择的分类路径
+ */
+function isReportMatchCategory(cardIndustry, cardSubIndustry, cardThirdLevel, cardFourthLevel, 
+                              selectedIndustry, selectedSubIndustry, selectedThirdLevel, selectedFourthLevel) {
+    // 构建报告的完整分类路径
+    const reportPath = [cardIndustry, cardSubIndustry, cardThirdLevel, cardFourthLevel].filter(item => item && item !== '');
+    
+    // 构建选择的分类路径（去除"全部"）
+    const selectedPath = [];
+    if (selectedIndustry && selectedIndustry !== '全部') selectedPath.push(selectedIndustry);
+    if (selectedSubIndustry && selectedSubIndustry !== '全部') selectedPath.push(selectedSubIndustry);
+    if (selectedThirdLevel && selectedThirdLevel !== '全部') selectedPath.push(selectedThirdLevel);
+    if (selectedFourthLevel && selectedFourthLevel !== '全部') selectedPath.push(selectedFourthLevel);
+    
+    // 如果没有选择任何具体分类，显示所有报告
+    if (selectedPath.length === 0) return true;
+    
+    // 检查报告路径是否包含选择的路径
+    // 报告路径必须以选择的路径开头（或完全匹配）
+    if (selectedPath.length > reportPath.length) return false;
+    
+    for (let i = 0; i < selectedPath.length; i++) {
+        if (reportPath[i] !== selectedPath[i]) {
+            return false;
+        }
+    }
+    
+    return true;
+}
+
+/**
  * 渲染筛选后的报告
  */
-function renderFilteredReports(containerId, industry, subIndustry = '', thirdLevel = '', fourthLevel = '') {
+function renderFilteredReports(containerId, industry, subIndustry = '', thirdLevel = '', fourthLevel = '', sortBy = 'date', order = 'desc') {
     const container = document.getElementById(containerId);
     if (!container) return;
     
     const filteredReports = filterReports(industry, subIndustry, thirdLevel, fourthLevel);
-    const reportsHTML = filteredReports.map(report => generateReportCard(report)).join('');
     
-    if (filteredReports.length === 0) {
+    // 按指定方式排序
+    const sortedReports = sortReports(filteredReports, sortBy, order);
+    const reportsHTML = sortedReports.map(report => generateReportCard(report)).join('');
+    
+    if (sortedReports.length === 0) {
         container.innerHTML = `
             <div class="no-reports-message">
                 <i class="fas fa-search text-4xl text-gray-500 mb-4"></i>
@@ -262,7 +718,7 @@ function renderFilteredReports(containerId, industry, subIndustry = '', thirdLev
         container.innerHTML = reportsHTML;
     }
     
-    return filteredReports.length;
+    return sortedReports.length;
 }
 
 /**
@@ -319,6 +775,7 @@ if (typeof window !== 'undefined') {
         renderReports,
         renderFilteredReports,
         filterReports,
+        sortReports,
         addReport,
         getAllReports,
         getReportById,

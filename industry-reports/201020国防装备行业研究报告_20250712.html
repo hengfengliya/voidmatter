@@ -1,0 +1,1292 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>国防新范式：在重整军备的世界中驾驭增长与制约 | 2025年Q3</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@200;300;400;500;600;700;800;900&family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <style>
+        :root {
+            /* 深邃黑金权力色系 */
+            --obsidian-black: #0A0A0A;
+            --midnight-black: #151515;
+            --shadow-black: #1F1F1F;
+            --charcoal-deep: #2A2A2A;
+            
+            /* 稀缺金色层次 */
+            --sovereign-gold: #B8860B;
+            --imperial-gold: #DAA520;
+            --aureate-whisper: #F4E4BC;
+            --golden-shadow: #8B6914;
+            
+            /* 权力灰度 */
+            --platinum-mist: #E5E5E5;
+            --sterling-silver: #C0C0C0;
+            --graphite-steel: #696969;
+            --charcoal-whisper: #808080;
+            
+            /* 稀缺强调色 */
+            --ruby-accent: #8B0000;
+            --emerald-depth: #006400;
+            --sapphire-authority: #1e3a8a;
+        }
+
+        body {
+            background: var(--obsidian-black);
+            color: var(--platinum-mist);
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* 帝王级标题 */
+        .imperial-title {
+            font-family: 'Playfair Display', serif;
+            font-weight: 200;
+            letter-spacing: 0.12em;
+            line-height: 1.05;
+            color: var(--aureate-whisper);
+            text-shadow: 0 3px 12px rgba(184, 134, 11, 0.4);
+        }
+
+        /* 君主级副标题 */
+        .imperial-subtitle {
+            font-family: 'Playfair Display', serif;
+            font-weight: 300;
+            letter-spacing: 0.08em;
+            line-height: 1.15;
+            color: var(--imperial-gold);
+            text-shadow: 0 2px 8px rgba(218, 165, 32, 0.3);
+        }
+
+        /* 英文斜体标签 */
+        .imperial-tagline {
+            font-family: 'Inter', sans-serif;
+            font-weight: 200;
+            letter-spacing: 0.06em;
+            line-height: 1.4;
+            color: var(--sterling-silver);
+            font-style: italic;
+        }
+
+        /* 致敬样式 */
+        .imperial-dedication {
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+            letter-spacing: 0.04em;
+            line-height: 1.3;
+            color: var(--imperial-gold);
+        }
+
+        .imperial-dedication-sub {
+            font-family: 'Inter', sans-serif;
+            font-weight: 200;
+            letter-spacing: 0.05em;
+            line-height: 1.3;
+            color: var(--sterling-silver);
+            font-style: italic;
+        }
+
+        /* 权威标题 */
+        .sovereign-heading {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            color: var(--imperial-gold);
+            text-shadow: 0 1px 4px rgba(218, 165, 32, 0.4);
+        }
+
+        /* 贵族正文 */
+        .noble-text {
+            font-weight: 300;
+            letter-spacing: 0.03em;
+            line-height: 2.2;
+            color: var(--platinum-mist);
+        }
+
+        /* 引用文字 */
+        .executive-quote {
+            font-weight: 300;
+            letter-spacing: 0.02em;
+            line-height: 1.8;
+            color: var(--sterling-silver);
+            font-size: 0.95rem;
+            font-style: italic;
+            position: relative;
+            padding: 0 2rem;
+            margin: 2rem 0;
+        }
+
+        .executive-quote::before {
+            content: '"';
+            position: absolute;
+            left: 0;
+            top: -0.5rem;
+            font-size: 3rem;
+            color: var(--sovereign-gold);
+            opacity: 0.3;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .executive-quote::after {
+            content: '"';
+            position: absolute;
+            right: 0;
+            bottom: -0.5rem;
+            font-size: 3rem;
+            color: var(--sovereign-gold);
+            opacity: 0.3;
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* 专属数字 */
+        .exclusive-number {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: var(--sovereign-gold);
+            text-shadow: 0 1px 3px rgba(184, 134, 11, 0.5);
+        }
+
+        /* 君主容器 */
+        .sovereign-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 5rem;
+        }
+
+        /* 帝王区块 */
+        .imperial-section {
+            margin: 12rem 0;
+            position: relative;
+        }
+
+        /* 权威卡片 */
+        .authority-card {
+            background: linear-gradient(145deg, 
+                rgba(21, 21, 21, 0.9) 0%, 
+                rgba(31, 31, 31, 0.8) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.15);
+            border-radius: 2px;
+            padding: 3rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            box-shadow: 
+                0 8px 32px rgba(0, 0, 0, 0.6),
+                inset 0 1px 1px rgba(244, 228, 188, 0.05);
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .authority-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(184, 134, 11, 0.3);
+            box-shadow: 
+                0 16px 48px rgba(0, 0, 0, 0.8),
+                0 0 24px rgba(184, 134, 11, 0.1),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08);
+        }
+
+        .authority-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(90deg, var(--sovereign-gold), transparent);
+            opacity: 0.6;
+        }
+
+        .authority-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(270deg, var(--sovereign-gold), transparent);
+            opacity: 0.6;
+        }
+
+        /* 金色琉璃卡片 */
+        .golden-glass-card {
+            background: 
+                radial-gradient(circle at 30% 30%, rgba(218, 165, 32, 0.12) 0%, transparent 50%),
+                radial-gradient(circle at 70% 70%, rgba(184, 134, 11, 0.08) 0%, transparent 50%),
+                linear-gradient(135deg, 
+                    rgba(244, 228, 188, 0.06) 0%, 
+                    rgba(218, 165, 32, 0.04) 30%,
+                    rgba(184, 134, 11, 0.03) 70%,
+                    rgba(139, 105, 20, 0.02) 100%);
+            border: 1px solid rgba(218, 165, 32, 0.15);
+            border-radius: 4px;
+            padding: 2.5rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            box-shadow: 
+                0 8px 32px rgba(0, 0, 0, 0.6),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08),
+                inset 0 0 30px rgba(218, 165, 32, 0.03);
+            transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .golden-glass-card::before {
+            content: '';
+            position: absolute;
+            inset: -1px;
+            background: linear-gradient(45deg, 
+                rgba(218, 165, 32, 0.2) 0%, 
+                rgba(184, 134, 11, 0.1) 25%,
+                transparent 50%,
+                rgba(244, 228, 188, 0.1) 75%,
+                rgba(218, 165, 32, 0.15) 100%);
+            border-radius: 4px;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.8s ease;
+        }
+
+        .golden-glass-card:hover {
+            transform: translateY(-3px);
+            border-color: rgba(218, 165, 32, 0.3);
+            box-shadow: 
+                0 16px 48px rgba(0, 0, 0, 0.8),
+                0 0 40px rgba(218, 165, 32, 0.1),
+                inset 0 1px 1px rgba(244, 228, 188, 0.12),
+                inset 0 0 40px rgba(218, 165, 32, 0.05);
+        }
+
+        .golden-glass-card:hover::before {
+            opacity: 1;
+        }
+
+        /* 表格 */
+        .imperial-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            background: rgba(15, 15, 15, 0.8);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(184, 134, 11, 0.2);
+            border-radius: 2px;
+        }
+
+        .imperial-table th {
+            background: rgba(184, 134, 11, 0.08);
+            padding: 2rem 1.5rem;
+            text-align: left;
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--imperial-gold);
+            border-bottom: 1px solid rgba(184, 134, 11, 0.2);
+        }
+
+        .imperial-table td {
+            padding: 1.8rem 1.5rem;
+            border-bottom: 1px solid rgba(184, 134, 11, 0.05);
+            font-weight: 300;
+        }
+
+        .imperial-table tbody tr:hover {
+            background: rgba(184, 134, 11, 0.03);
+        }
+
+        /* 分隔线 */
+        .sovereign-divider {
+            height: 1px;
+            background: linear-gradient(90deg, 
+                transparent 0%, 
+                rgba(184, 134, 11, 0.3) 30%, 
+                rgba(184, 134, 11, 0.6) 50%, 
+                rgba(184, 134, 11, 0.3) 70%, 
+                transparent 100%);
+            margin: 8rem 0;
+            position: relative;
+        }
+
+        .sovereign-divider::before {
+            content: '◆';
+            position: absolute;
+            top: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--sovereign-gold);
+            font-size: 16px;
+            background: var(--obsidian-black);
+            padding: 0 1rem;
+        }
+
+        /* 垂直进度条 */
+        .reading-progress {
+            position: fixed;
+            top: 50%;
+            right: 2rem;
+            width: 4px;
+            height: 200px;
+            transform: translateY(-50%);
+            background: linear-gradient(180deg, 
+                rgba(184, 134, 11, 0.2) 0%, 
+                rgba(218, 165, 32, 0.3) 30%,
+                rgba(244, 228, 188, 0.4) 60%,
+                rgba(218, 165, 32, 0.3) 85%,
+                rgba(139, 105, 20, 0.2) 100%);
+            z-index: 1001;
+            box-shadow: 
+                0 0 12px rgba(184, 134, 11, 0.6),
+                2px 0 8px rgba(184, 134, 11, 0.3),
+                inset 1px 0 2px rgba(244, 228, 188, 0.4);
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+        .reading-progress::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(180deg,
+                rgba(244, 228, 188, 0.1) 0%,
+                rgba(218, 165, 32, 0.15) 50%,
+                rgba(244, 228, 188, 0.1) 100%);
+            border-radius: 2px;
+            animation: progressShimmer 3s ease-in-out infinite;
+        }
+
+        .reading-progress-fill {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(180deg,
+                var(--golden-shadow) 0%,
+                var(--sovereign-gold) 50%,
+                var(--imperial-gold) 100%);
+            border-radius: 2px;
+            transition: height 0.1s ease;
+            box-shadow: 
+                inset 0 1px 2px rgba(244, 228, 188, 0.3),
+                0 0 8px rgba(184, 134, 11, 0.4);
+        }
+
+        @keyframes progressShimmer {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.8; }
+        }
+
+        /* 进度标题提示器 */
+        .progress-tooltip {
+            position: fixed;
+            top: 50%;
+            right: 7rem;
+            transform: translateY(-50%);
+            background: linear-gradient(135deg, 
+                rgba(15, 15, 15, 0.95) 0%, 
+                rgba(31, 31, 31, 0.9) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.25);
+            border-radius: 8px;
+            padding: 0.8rem 2rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 0.85rem;
+            font-weight: 300;
+            color: var(--imperial-gold);
+            backdrop-filter: blur(20px);
+            box-shadow: 
+                0 8px 32px rgba(0, 0, 0, 0.7),
+                0 0 20px rgba(184, 134, 11, 0.1),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+            z-index: 1002;
+            white-space: nowrap;
+            letter-spacing: 0.03em;
+        }
+
+        .progress-tooltip.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(-50%) translateX(-8px);
+        }
+
+        .progress-tooltip::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -8px;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-left: 8px solid rgba(184, 134, 11, 0.25);
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+        }
+
+        .progress-tooltip::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -7px;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-left: 7px solid rgba(15, 15, 15, 0.95);
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+        }
+
+        /* 引用文献 */
+        .citation-item {
+            padding: 1.5rem 2rem;
+            margin: 0.8rem 0;
+            background: linear-gradient(135deg, 
+                rgba(21, 21, 21, 0.8) 0%, 
+                rgba(31, 31, 31, 0.6) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.15);
+            border-radius: 3px;
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .citation-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--sovereign-gold), var(--golden-shadow));
+            opacity: 0.6;
+            transition: opacity 0.3s ease;
+        }
+
+        .citation-item:hover {
+            border-color: rgba(184, 134, 11, 0.4);
+            background: linear-gradient(135deg, 
+                rgba(31, 31, 31, 0.9) 0%, 
+                rgba(42, 42, 42, 0.7) 100%);
+            transform: translateX(6px) translateY(-1px);
+            box-shadow: 
+                0 8px 25px rgba(0, 0, 0, 0.5),
+                0 0 20px rgba(184, 134, 11, 0.08);
+        }
+
+        .citation-item:hover::before {
+            opacity: 1;
+        }
+
+        .citation-item a {
+            color: var(--platinum-mist);
+            text-decoration: none;
+            font-size: 0.85rem;
+            line-height: 1.7;
+            font-weight: 300;
+            transition: color 0.4s ease;
+            display: block;
+            position: relative;
+        }
+
+        .citation-item a::before {
+            content: '';
+            position: absolute;
+            left: -0.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 4px;
+            background: var(--sovereign-gold);
+            border-radius: 50%;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .citation-item:hover a {
+            color: var(--aureate-whisper);
+            padding-left: 1rem;
+        }
+
+        .citation-item:hover a::before {
+            opacity: 0.8;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 1024px) {
+            .sovereign-container {
+                padding: 0 2.5rem;
+            }
+            .imperial-section {
+                margin: 8rem 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .sovereign-container {
+                padding: 0 1.5rem;
+            }
+            .imperial-section {
+                margin: 6rem 0;
+            }
+            .authority-card {
+                padding: 2rem;
+            }
+            .reading-progress {
+                right: 1rem;
+                height: 150px;
+                width: 3px;
+            }
+            .progress-tooltip {
+                right: 5rem;
+                padding: 0.6rem 1.5rem;
+                font-size: 0.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 垂直进度条 -->
+    <div class="reading-progress">
+        <div class="reading-progress-fill"></div>
+    </div>
+    
+    <!-- 进度标题提示器 -->
+    <div class="progress-tooltip" id="progress-tooltip"></div>
+
+    <!-- 首屏标题 -->
+    <header id="header" class="min-h-screen flex items-center justify-center relative" data-title="国防新范式：在重整军备的世界中驾驭增长与制约">
+        <div class="sovereign-container text-center relative z-10">
+            <!-- 主标题区域 -->
+            <div class="mb-16">
+                <h1 class="imperial-title text-5xl md:text-7xl mb-6">
+                    国防新范式：在重整军备的世界中驾驭增长与制约
+                </h1>
+                
+                <h2 class="imperial-subtitle text-2xl md:text-4xl mb-12 opacity-90">
+                    国防装备行业研究报告 2025年Q3
+                </h2>
+            </div>
+            
+            <!-- 英文副标题 -->
+            <div class="mb-12">
+                <div class="imperial-tagline text-sm md:text-base opacity-75 max-w-4xl mx-auto">
+                    Defense New Paradigm: Navigating Growth and Constraints in a Rearming World<br class="md:hidden">
+                    Defense Equipment Industry Research Report Q3 2025
+                </div>
+            </div>
+            
+            <!-- 致敬区域 -->
+            <div class="mb-16">
+                <div class="imperial-dedication text-sm md:text-base">
+                    致：机构投资者与高净值客户
+                </div>
+                <div class="imperial-dedication-sub text-xs md:text-sm opacity-60 mt-2">
+                    For: Institutional Investors and High Net Worth Clients
+                </div>
+            </div>
+            
+            <!-- 发布日期卡片 -->
+            <div class="golden-glass-card inline-block">
+                <div class="text-xs uppercase tracking-[0.2em] opacity-50 mb-4 font-light">
+                    本报告发布于 · Published on
+                </div>
+                <div class="sovereign-heading text-base">
+                    <span id="date-cn" class="exclusive-number">2025年7月</span> 
+                    <span class="mx-4 text-sovereign-gold opacity-40">◆</span> 
+                    <span id="date-en" class="exclusive-number">July 2025</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 背景装饰 -->
+        <div class="absolute inset-0 pointer-events-none opacity-8">
+            <div class="absolute top-20 left-20 w-px h-32 bg-gradient-to-b from-sovereign-gold to-transparent"></div>
+            <div class="absolute bottom-20 right-20 w-px h-32 bg-gradient-to-t from-sovereign-gold to-transparent"></div>
+            <div class="absolute top-1/2 left-1/4 w-24 h-px bg-gradient-to-r from-sovereign-gold to-transparent"></div>
+            <div class="absolute top-1/3 right-1/4 w-24 h-px bg-gradient-to-l from-sovereign-gold to-transparent"></div>
+        </div>
+    </header>
+
+    <!-- 投资摘要 -->
+    <section id="investment-summary" class="imperial-section" data-title="投资摘要">
+        <div class="sovereign-container">
+            <div class="authority-card">
+                <h2 class="sovereign-heading text-3xl mb-8 text-center">
+                    <i class="material-icons mr-4" style="vertical-align: middle;">trending_up</i>
+                    投资摘要
+                </h2>
+                
+                <div class="executive-quote max-w-4xl mx-auto text-center mb-12">
+                    本报告旨在为机构投资者与高净值客户构建一个关于全球国防装备行业的系统性认知框架。当前，全球地缘政治格局正经历自冷战结束以来最深刻的结构性重塑，驱动国防工业进入一个前所未有的长期增长超级周期。
+                </div>
+
+                <div class="noble-text space-y-8">
+                    <p>我们的核心研究结论如下：</p>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <strong class="sovereign-heading text-lg">进入结构性增长的"地缘政治超级周期"：</strong>
+                            <span class="noble-text">全球国防开支已连续十年增长，在2024年达到创纪录的2.718万亿美元，同比增长9.4%，是自1988年以来最陡峭的增幅。与以往聚焦于反恐和非对称作战不同，本轮周期的核心驱动力已转向应对大国竞争（尤其是美中竞争）和高强度常规战争（以乌克兰战争为代表）的需求，这要求对海、陆、空、天、网等全域作战能力进行全面且资本密集的现代化升级。</span>
+                        </div>
+                        
+                        <div>
+                            <strong class="sovereign-heading text-lg">市场规模与可触达机遇的辨析：</strong>
+                            <span class="noble-text">尽管全球军费总额庞大，但投资者的可触达市场（Total Addressable Market, TAM）主要集中在"装备采购"（Procurement）和"研发测试与评估"（RDT&E）两大领域。以全球最大的国防市场美国为例，其2025财年8498亿美元的国防部预算中，直接面向国防承包商的采购与研发预算合计超过3100亿美元。我们预测，全球国防装备市场的规模在2024年约为5000亿至6000亿美元，并将在未来数年保持强劲增长。</span>
+                        </div>
+                        
+                        <div>
+                            <strong class="sovereign-heading text-lg">关键增长领域：从平台到网络的价值迁移：</strong>
+                            <span class="noble-text">行业的价值重心正从独立的硬件平台（如战机、舰船）向一体化的作战网络迁移。"网络中心战"和"全域联合作战"已成为现代军事理论的核心。因此，<strong>C4ISR（指挥、控制、通信、计算机、情报、监视与侦察）</strong>、<strong>太空作战能力</strong>、以及<strong>无人化/自主化系统</strong>成为增长最快、战略价值最高的赛道。全球C4ISR市场规模在2024年已超过1200亿美元，并以高于行业平均的速度增长。</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 全球国防格局 -->
+    <section id="global-defense" class="imperial-section" data-title="全球国防格局：结构性增长新纪元">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-4xl mb-16 text-center">
+                <i class="material-icons mr-4" style="vertical-align: middle;">public</i>
+                全球国防格局：结构性增长新纪元
+            </h2>
+
+            <div class="grid lg:grid-cols-2 gap-8 mb-16">
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="material-icons mr-3" style="vertical-align: middle;">timeline</i>
+                        地缘政治超级周期
+                    </h3>
+                    <div class="noble-text">
+                        全球国防工业正处在一个历史性的拐点。过去二十年的行业发展逻辑主要由两大主题定义：冷战结束后的"和平红利"时期，以及"9·11"事件后以反恐和非对称作战为主导的时期。然而，当前我们所面临的，是一个根本性的范式转移——全球进入了一个由大国战略竞争驱动的、长期的、结构性的国防开支增长周期。
+                    </div>
+                </div>
+
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="material-icons mr-3" style="vertical-align: middle;">analytics</i>
+                        量化浪潮分析
+                    </h3>
+                    <div class="noble-text">
+                        根据SIPRI的最新数据，2024年全球军事总支出达到了一个前所未有的水平——<strong class="exclusive-number">2.718万亿美元</strong>。这一数字不仅是历史新高，其增长速度更令人瞩目。与2023年相比，2024年的军费实现了<strong class="exclusive-number">9.4%</strong>的实际增长，这是自1988年以来全球军费最迅猛的年度增幅。
+                    </div>
+                </div>
+            </div>
+
+            <!-- 全球军费数据表格 -->
+            <div class="authority-card">
+                <h3 class="sovereign-heading text-2xl mb-8 text-center">全球及主要国家军事支出（2015-2024）</h3>
+                <p class="text-center text-sterling-silver mb-8">基于2023年不变价美元，单位：十亿美元</p>
+                
+                <div class="overflow-x-auto">
+                    <table class="imperial-table">
+                        <thead>
+                            <tr>
+                                <th>年份</th>
+                                <th>美国</th>
+                                <th>中国 (SIPRI估算)</th>
+                                <th>俄罗斯</th>
+                                <th>德国</th>
+                                <th>英国</th>
+                                <th>法国</th>
+                                <th>全球总计</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-semibold">2015</td>
+                                <td class="exclusive-number">838</td>
+                                <td class="exclusive-number">198</td>
+                                <td class="exclusive-number">75</td>
+                                <td class="exclusive-number">48</td>
+                                <td class="exclusive-number">66</td>
+                                <td class="exclusive-number">58</td>
+                                <td class="exclusive-number text-green-400 font-bold">1,984</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">2020</td>
+                                <td class="exclusive-number">934</td>
+                                <td class="exclusive-number">253</td>
+                                <td class="exclusive-number">75</td>
+                                <td class="exclusive-number">62</td>
+                                <td class="exclusive-number">67</td>
+                                <td class="exclusive-number">62</td>
+                                <td class="exclusive-number text-green-400 font-bold">2,212</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">2024</td>
+                                <td class="exclusive-number">997</td>
+                                <td class="exclusive-number">314</td>
+                                <td class="exclusive-number">149</td>
+                                <td class="exclusive-number">89</td>
+                                <td class="exclusive-number">82</td>
+                                <td class="exclusive-number">65</td>
+                                <td class="exclusive-number text-green-400 font-bold">2,718</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <p class="text-xs text-sterling-silver mt-4 text-center">
+                    数据来源：基于SIPRI军事支出数据库的综合分析。注：SIPRI数据为估算值，尤其是中国数据，且每年可能进行修订。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 现代国防工业剖析 -->
+    <section id="industry-analysis" class="imperial-section" data-title="现代国防工业剖析">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-4xl mb-16 text-center">
+                <i class="material-icons mr-4" style="vertical-align: middle;">precision_manufacturing</i>
+                现代国防工业剖析
+            </h2>
+
+            <div class="authority-card mb-12">
+                <h3 class="sovereign-heading text-2xl mb-8">
+                    <i class="material-icons mr-3" style="vertical-align: middle;">category</i>
+                    界定产业宇宙：GICS框架
+                </h3>
+                <div class="noble-text">
+                    为确保分析的严谨性和可比性，我们首先需要一个标准化的行业定义。全球行业分类标准（Global Industry Classification Standard, GICS）为我们提供了这样一个权威框架。根据GICS，<strong>"航空航天与国防"（Aerospace & Defense）</strong>行业是更广泛的<strong>"工业"（Industrials）</strong>板块下的一个子行业。
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8">
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="material-icons mr-3" style="vertical-align: middle;">flight_takeoff</i>
+                        航空航天系统
+                    </h3>
+                    <div class="noble-text">
+                        该领域历来是国防工业的支柱，当前正处于更新换代和技术升级的关键时期。其驱动力主要源于替换日益老化的机队，以及采购能够应对大国竞争的下一代作战平台。美国空军2025财年预算请求高达1881亿美元，采购重点项目包括F-35A"闪电II"战斗机、F-15EX"鹰II"战斗机等。
+                    </div>
+                </div>
+
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="material-icons mr-3" style="vertical-align: middle;">directions_boat</i>
+                        海军系统
+                    </h3>
+                    <div class="noble-text">
+                        在大国海上博弈日益激烈的背景下，海军系统的战略价值愈发凸显。维护海上航行自由、在南海等关键水域形成威慑，是驱动各国海军装备现代化的主要动力。美国在2025财年计划为海军力量投入481亿美元，其中包括新建6艘主力战舰。
+                    </div>
+                </div>
+
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="material-icons mr-3" style="vertical-align: middle;">rocket_launch</i>
+                        太空作战域
+                    </h3>
+                    <div class="noble-text">
+                        太空正迅速从一个提供支援服务的领域，演变为一个独立、关键且充满对抗的作战域。其战略重要性已与海、陆、空并列。美国太空军2025财年的预算请求为294亿美元，而整个国防部为关键太空能力的总投资更是高达337亿美元。
+                    </div>
+                </div>
+
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="material-icons mr-3" style="vertical-align: middle;">hub</i>
+                        C4ISR与网络中心战
+                    </h3>
+                    <div class="noble-text">
+                        如果说海、陆、空、天平台是作战的"肌肉和骨骼"，那么C4ISR系统就是连接这一切的"中枢神经系统"。这是一个技术密集且增长迅速的市场，2024年全球市场规模已达到<strong class="exclusive-number">1160亿至1315亿美元</strong>，预计未来数年的复合年增长率在4.2%至7.2%之间。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 区域深度剖析 -->
+    <section id="regional-analysis" class="imperial-section" data-title="区域深度剖析：投资与作战的核心战场">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-4xl mb-16 text-center">
+                <i class="material-icons mr-4" style="vertical-align: middle;">map</i>
+                区域深度剖析：投资与作战的核心战场
+            </h2>
+
+            <!-- 北美市场 -->
+            <div class="authority-card mb-12">
+                <h3 class="sovereign-heading text-2xl mb-8">
+                    <i class="material-icons mr-3" style="vertical-align: middle;">flag</i>
+                    北美：不可或缺的力量与引领投资的引擎
+                </h3>
+                
+                <div class="noble-text mb-8">
+                    美国作为全球唯一的超级大国，其国防开支和战略方向在全球范围内具有无可替代的引领作用。其国防支出占全球总额的37%，是全球国防工业技术、标准和战略思想的策源地。据估计，2024年美国国防市场规模约为3100亿美元，并预计将以约3.6%的复合年增长率稳步增长。
+                </div>
+
+                <!-- 美国国防预算表格 -->
+                <div class="overflow-x-auto mb-8">
+                    <table class="imperial-table">
+                        <thead>
+                            <tr>
+                                <th>预算类别</th>
+                                <th>2024财年批准额</th>
+                                <th>2025财年请求额</th>
+                                <th>金额变化</th>
+                                <th>变化率</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-semibold">装备采购</td>
+                                <td class="exclusive-number">172.3</td>
+                                <td class="exclusive-number">167.5</td>
+                                <td class="text-red-400">-4.8</td>
+                                <td class="text-red-400">-2.8%</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">研发测试与评估</td>
+                                <td class="exclusive-number">145.0</td>
+                                <td class="exclusive-number">143.2</td>
+                                <td class="text-red-400">-1.8</td>
+                                <td class="text-red-400">-1.2%</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">总计</td>
+                                <td class="exclusive-number">842.3</td>
+                                <td class="exclusive-number">849.8</td>
+                                <td class="text-green-400">+7.5</td>
+                                <td class="text-green-400">+0.9%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <p class="text-xs text-sterling-silver text-center">
+                    数据来源：美国国防部及国会研究服务处文件。单位：十亿美元
+                </p>
+            </div>
+
+            <!-- 亚太和欧洲市场 -->
+            <div class="grid lg:grid-cols-2 gap-8">
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="material-icons mr-3" style="vertical-align: middle;">landscape</i>
+                        亚太地区：步调挑战与预算的"透明度问题"
+                    </h3>
+                    <div class="noble-text">
+                        亚太地区已成为2024年全球最大的国防市场。这一增长的核心驱动力，源于中国持续、快速的军事现代化，以及由此引发的周边国家和地区的深刻安全忧虑和连锁反应式的军备增强。中国2024年的可比国防支出约为<strong class="exclusive-number">4710亿美元</strong>，远超其官方公布的2310亿美元。
+                    </div>
+                </div>
+
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="material-icons mr-3" style="vertical-align: middle;">euro_symbol</i>
+                        欧洲（北约）：一个正在重新武装的大陆
+                    </h3>
+                    <div class="noble-text">
+                        欧洲的国防格局正在经历一场自冷战结束以来最为深刻的变革。俄乌战争如同一声惊雷，彻底唤醒了沉睡已久的欧洲大陆。2024年，预计将有<strong class="exclusive-number">23个</strong>北约成员国达到或超过GDP的2%国防支出门槛，而在2021年，这个数字仅为6个。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 技术前沿 -->
+    <section id="technology-trends" class="imperial-section" data-title="技术前沿：现代战争的颠覆者">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-4xl mb-16 text-center">
+                <i class="material-icons mr-4" style="vertical-align: middle;">science</i>
+                技术前沿：现代战争的颠覆者
+            </h2>
+
+            <div class="executive-quote max-w-4xl mx-auto text-center mb-16">
+                国防工业正经历一场深刻的技术革命，其核心是从以硬件为中心向以软件为定义的根本性转变。未来战争的胜负，将越来越少地取决于平台的物理性能，而更多地取决于其搭载的软件、数据处理能力以及融入整个作战网络的能力。
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8">
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="material-icons mr-3" style="vertical-align: middle;">psychology</i>
+                        数据的首要地位：AI、机器学习与JADC2
+                    </h3>
+                    <div class="noble-text">
+                        数据已成为现代战场上最具价值的战略资源。为了在未来的冲突中获得"信息优势"，美国国防部正以前所未有的力度投资于人工智能（AI）和"联合全域指挥控制"（JADC2）系统。其2025财年预算请求中，明确为AI应用申请了18亿美元，为JADC2申请了14亿美元。
+                    </div>
+                </div>
+
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="material-icons mr-3" style="vertical-align: middle;">smart_toy</i>
+                        无人系统的崛起：军队结构的范式转移
+                    </h3>
+                    <div class="noble-text">
+                        无人系统，包括无人机（UAVs）、无人水下航行器（UUVs）和无人地面车辆（UGVs），正在从根本上重塑战场形态和军队的兵力结构。它们以其低成本、零人员伤亡风险、高续航以及执行"枯燥、肮脏、危险"任务的能力，带来了全新的战术可能性。
+                    </div>
+                </div>
+
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="material-icons mr-3" style="vertical-align: middle;">security</i>
+                        网络与电子战：非动能战场
+                    </h3>
+                    <div class="noble-text">
+                        随着国防系统日益网络化，它们也变得前所未有地脆弱，极易受到网络攻击和电子干扰。网络空间已成为与海陆空天并列的"第五作战域"。因此，网络安全和电子战能力不再是附加选项，而已成为每一个武器平台和指挥系统必须具备的内生能力。
+                    </div>
+                </div>
+
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="material-icons mr-3" style="vertical-align: middle;">biotech</i>
+                        先进材料与制造：物理基础的赋能者
+                    </h3>
+                    <div class="noble-text">
+                        下一代武器平台（如高超音速导弹、隐形战机、深海潜航器）的实现，离不开先进材料和制造技术的突破。航空航天与国防材料本身就是一个规模庞大的子市场，2024年其市场价值已超过200亿美元。其中，复合材料以其优异的性能，占据了超过40%的市场份额。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 行业制约与风险 -->
+    <section id="constraints-risks" class="imperial-section" data-title="驾驭逆风：行业制约与风险">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-4xl mb-16 text-center">
+                <i class="material-icons mr-4" style="vertical-align: middle;">warning</i>
+                驾驭逆风：行业制约与风险
+            </h2>
+
+            <div class="executive-quote max-w-4xl mx-auto text-center mb-16">
+                尽管全球国防工业正迎来一个前所未有的增长周期，但其光鲜的前景之下，也潜藏着深刻的结构性制约和风险。对于投资者而言，清醒地认识这些逆风，是做出审慎决策的必要前提。
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="material-icons mr-3" style="vertical-align: middle;">link_off</i>
+                        供应链瓶颈
+                    </h3>
+                    <div class="noble-text">
+                        当前行业面临的最严峻、最普遍的挑战是，激增的需求与严重受限的生产能力之间存在巨大鸿沟。尽管各大防务公司的财报显示收入创下历史新高，但其产出却严重滞后，导致订单积压规模空前庞大，部分产品的交付周期已排到数年之后。
+                    </div>
+                </div>
+
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="material-icons mr-3" style="vertical-align: middle;">groups</i>
+                        人才争夺战
+                    </h3>
+                    <div class="noble-text">
+                        国防工业正面临一场深刻的人才危机。从生产一线的熟练技师、焊工，到设计前端的系统工程师、软件开发者，行业在各个层面都面临着严重的人才短缺。现有劳动力队伍正在快速老龄化，约有26%的员工年龄在55岁以上，未来几年将迎来退休高峰。
+                    </div>
+                </div>
+
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="material-icons mr-3" style="vertical-align: middle;">trending_down</i>
+                        通胀与成本压力
+                    </h3>
+                    <div class="noble-text">
+                        在宏观层面，持续的通货膨胀对行业构成了显著压力。劳动力成本和原材料价格的上涨，不断侵蚀着企业的利润空间。对于那些与政府签订了长期固定价格合同的公司而言，这种成本压力尤为致命，任何未预料到的成本上涨都必须由企业自行消化。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 投资论点与战略建议 -->
+    <section id="investment-strategy" class="imperial-section" data-title="投资论点与战略建议">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-4xl mb-16 text-center">
+                <i class="material-icons mr-4" style="vertical-align: middle;">insights</i>
+                投资论点与战略建议
+            </h2>
+
+            <div class="authority-card mb-12">
+                <h3 class="sovereign-heading text-2xl mb-8">
+                    <i class="material-icons mr-3" style="vertical-align: middle;">trending_up</i>
+                    识别长期结构性增长主题
+                </h3>
+                <div class="noble-text mb-8">
+                    投资者应将本轮国防开支增长视为一个结构性的长期趋势，而非短暂的周期性反弹。因此，投资策略应着眼于那些能够受益于长期、确定性需求的领域。我们识别出以下三大结构性增长主题：
+                </div>
+
+                <div class="grid lg:grid-cols-3 gap-6">
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">全域网络化</h4>
+                        <div class="noble-text text-sm">
+                            价值正从孤立的平台向连接万物的网络迁移。所有能够增强数据获取、传输、处理和安全性的技术和产品，都将拥有广阔的成长空间。
+                        </div>
+                    </div>
+
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">无人化与自主化</h4>
+                        <div class="noble-text text-sm">
+                            无人系统正在从辅助角色转变为主要作战力量。无论是空中、水面还是水下，无人化都将是未来十年军队发展的重点方向。
+                        </div>
+                    </div>
+
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">战略威慑与高端对抗</h4>
+                        <div class="noble-text text-sm">
+                            大国竞争的回归，意味着对战略核力量、高超音速武器、先进导弹防御系统、隐形平台等高端、非对称作战能力的持续投入。
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="authority-card">
+                <h3 class="sovereign-heading text-2xl mb-8">
+                    <i class="material-icons mr-3" style="vertical-align: middle;">assessment</i>
+                    投资者需关注的关键指标与风险
+                </h3>
+                <div class="noble-text space-y-6">
+                    <div>
+                        <strong class="sovereign-heading text-lg">订单执行能力：</strong>
+                        在当前环境下，<strong>积压订单转化为收入的效率（Book-to-Bill Ratio的质量）</strong>比订单规模本身更重要。应深入分析企业的供应链管理水平、产能利用率、以及劳动力招聘和保留情况。
+                    </div>
+                    
+                    <div>
+                        <strong class="sovereign-heading text-lg">研发投入与技术领先性：</strong>
+                        研发支出占收入的比重，以及在关键技术领域（如AI、自主系统）的专利布局和合同斩获情况，是衡量企业未来竞争力的核心指标。
+                    </div>
+                    
+                    <div>
+                        <strong class="sovereign-heading text-lg">合同类型组合：</strong>
+                        分析企业合同中成本加成合同（Cost-Plus）与固定价格合同（Fixed-Price）的比例。在通胀环境下，成本加成合同能更好地传导成本压力，利润更具保障。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 结论性展望 -->
+    <section id="conclusion" class="imperial-section" data-title="结论性展望">
+        <div class="sovereign-container">
+            <div class="authority-card text-center">
+                <h2 class="sovereign-heading text-3xl mb-8">
+                    <i class="material-icons mr-4" style="vertical-align: middle;">visibility</i>
+                    结论性展望
+                </h2>
+                
+                <div class="executive-quote max-w-4xl mx-auto mb-12">
+                    全球国防工业已踏上了一条深刻变革与强劲增长并存的道路。在未来5到10年，地缘政治的紧张态势将为行业提供持续的需求动力。
+                </div>
+
+                <div class="noble-text max-w-5xl mx-auto">
+                    然而，增长的果实并不会被平均分配。那些能够驾驭供应链挑战、赢得人才争夺战、并成功实现从传统硬件制造商向软件驱动的技术公司转型的企业，将成为本轮超级周期的最终赢家。对于投资者而言，这是一个需要深度研究和审慎选择的时代。理解从宏观地缘政治到微观企业运营的全链条逻辑，识别出真正具备核心竞争力、能够穿越周期迷雾的优质企业，将是在这个充满机遇与挑战的"国防新范式"中获取超额回报的关键。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 引用文献 -->
+    <section id="references" class="imperial-section bg-gradient-to-b from-transparent to-black bg-opacity-30" data-title="引用文献">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl mb-12 text-center">引用文献</h2>
+            
+            <!-- 固定4列布局网格 -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl mx-auto">
+                <div class="citation-item">
+                    <a href="https://www.sipri.org/sites/default/files/2025-04/2504_fs_milex_2024.pdf" target="_blank">
+                        1. Trends in World Military Expenditure, 2024 - SIPRI
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.sipri.org/publications/2025/sipri-fact-sheets/trends-world-military-expenditure-2024" target="_blank">
+                        2. Trends in World Military Expenditure, 2024 - SIPRI
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://digital-commons.usnwc.edu/cgi/viewcontent.cgi?article=1017&context=newport-papers" target="_blank">
+                        3. Military Transformation and the Defense Industry after Next - U.S. Naval War College
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://dsm.forecastinternational.com/2025/06/13/a-new-era-of-global-defense-spending-key-trends-and-whats-ahead/" target="_blank">
+                        4. A New Era of Global Defense Spending: Key Trends and What's Ahead
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.defense.gov/News/Releases/Release/Article/3703410/department-of-defense-releases-the-presidents-fiscal-year-2025-defense-budget/" target="_blank">
+                        5. Department of Defense Releases the President's Fiscal Year 2025 Defense Budget
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.researchandmarkets.com/reports/5939633/defense-global-market-report" target="_blank">
+                        6. Defense Global Market Report 2025 - Research and Markets
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://straitsresearch.com/report/defence-equipment-market" target="_blank">
+                        7. Defense Equipment Market Size, Trends & Growth Report by 2033
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.grandviewresearch.com/industry-analysis/c4isr-market" target="_blank">
+                        8. C4ISR Market Size, Share & Trends | Industry Report, 2030
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.gminsights.com/industry-analysis/c4isr-market" target="_blank">
+                        9. C4ISR Market Size, Share & Growth Forecast Report, 2025-2034
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://tnsr.org/wp-content/uploads/2024/06/TNSR-Journal-Vol-7-Issue-3-FRAVEL-2.pdf" target="_blank">
+                        10. ESTIMATING CHINA'S DEFENSE SPENDING - Texas National Security Review
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.atlanticcouncil.org/commentary/trackers-and-data-visualizations/nato-defense-spending-tracker/" target="_blank">
+                        11. NATO Defense Spending Tracker - Atlantic Council
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.pwc.com/us/en/industries/industrial-products/library/aerospace-defense-review-and-forecast.html" target="_blank">
+                        12. Aerospace and defense industry performance and outlook - PwC
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www2.deloitte.com/us/en/insights/industry/aerospace-defense/aerospace-and-defense-industry-outlook-2024.html" target="_blank">
+                        13. 2024 aerospace and defense industry outlook | Deloitte Insights
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.sipri.org/media/press-release/2025/unprecedented-rise-global-military-expenditure-european-and-middle-east-spending-surges" target="_blank">
+                        14. Unprecedented rise in global military expenditure - SIPRI
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.grandviewresearch.com/industry-analysis/aerospace-defense-materials-market" target="_blank">
+                        15. Aerospace And Defense Materials Market Size Report, 2030
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.verifiedmarketresearch.com/product/russia-defense-market/" target="_blank">
+                        16. Russia Defense Market Size, Scope, Growth, Trends And Forecast
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript 垂直进度条功能 -->
+    <script>
+        // 精美垂直进度条系统（支持悬停显示标题 + 点击跳转）
+        const progressBar = document.querySelector('.reading-progress');
+        const progressFill = document.querySelector('.reading-progress-fill');
+        const progressTooltip = document.getElementById('progress-tooltip');
+        const sections = document.querySelectorAll('section[id], header[id]');
+
+        let currentSectionTitle = '';
+        let sectionsData = [];
+
+        // 初始化章节数据
+        function initSections() {
+            sectionsData = Array.from(sections).map(section => ({
+                id: section.getAttribute('id'),
+                title: section.getAttribute('data-title') || section.querySelector('h1, h2')?.textContent || '未知章节',
+                offsetTop: section.offsetTop,
+                offsetHeight: section.offsetHeight
+            }));
+        }
+
+        function updateProgress() {
+            const scrolled = window.pageYOffset;
+            const maxHeight = document.body.scrollHeight - window.innerHeight;
+            const progress = (scrolled / maxHeight) * 100;
+            
+            // 更新垂直进度条填充高度
+            progressFill.style.height = `${progress}%`;
+            
+            // 获取当前章节
+            let currentSection = '';
+            sectionsData.forEach(section => {
+                if (scrolled >= section.offsetTop - 300) {
+                    currentSection = section.id;
+                    currentSectionTitle = section.title;
+                }
+            });
+        }
+
+        // 点击进度条跳转到对应位置
+        progressBar.addEventListener('click', (e) => {
+            const rect = progressBar.getBoundingClientRect();
+            const clickY = e.clientY - rect.top;
+            const progressHeight = rect.height;
+            const clickPercent = clickY / progressHeight;
+            
+            const maxHeight = document.body.scrollHeight - window.innerHeight;
+            const targetScroll = maxHeight * clickPercent;
+            
+            window.scrollTo({
+                top: targetScroll,
+                behavior: 'smooth'
+            });
+        });
+
+        // 鼠标悬停显示当前章节标题
+        progressBar.addEventListener('mouseenter', () => {
+            if (currentSectionTitle) {
+                progressTooltip.textContent = currentSectionTitle;
+                progressTooltip.classList.add('show');
+            }
+        });
+
+        progressBar.addEventListener('mouseleave', () => {
+            progressTooltip.classList.remove('show');
+        });
+
+        // 提示框悬停保持显示
+        progressTooltip.addEventListener('mouseenter', () => {
+            progressTooltip.classList.add('show');
+        });
+
+        progressTooltip.addEventListener('mouseleave', () => {
+            progressTooltip.classList.remove('show');
+        });
+
+        // 窗口大小改变时重新计算章节位置
+        window.addEventListener('resize', () => {
+            setTimeout(initSections, 100);
+        });
+
+        window.addEventListener('scroll', updateProgress);
+
+        // 页面加载完成后初始化
+        window.addEventListener('load', () => {
+            initSections();
+            updateProgress();
+        });
+    </script>
+</body>
+</html>

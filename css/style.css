@@ -1,6 +1,60 @@
 /* VM · 虚空有物 - 补充样式文件 */
 /* 用于扩展和补充主要样式 */
 
+/* 性能优化 - 懒加载图片样式 */
+img[data-src] {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+img.loading {
+    opacity: 0.5;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading-shimmer 1.5s infinite;
+}
+
+img.loaded {
+    opacity: 1;
+}
+
+img.error {
+    opacity: 0.3;
+    filter: grayscale(100%);
+}
+
+@keyframes loading-shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+/* 预加载提示 */
+.preload-indicator {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: rgba(212, 175, 55, 0.1);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    color: #D4AF37;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    z-index: 10000;
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.3s ease;
+}
+
+.preload-indicator.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 /* 自定义动画 */
 @keyframes vm-pulse {
     0% {
