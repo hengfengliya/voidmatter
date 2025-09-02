@@ -1,0 +1,23 @@
+{
+    "name": "虚空有物 | Void Something",
+    "short_name": "虚空有物",
+    "description": "于未知处，见未来值",
+    "icons": [
+        {
+            "src": "favicon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "favicon.ico",
+            "sizes": "16x16 32x32",
+            "type": "image/x-icon"
+        }
+    ],
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#D4AF37",
+    "background_color": "#0f0f0f",
+    "orientation": "portrait-primary"
+}
