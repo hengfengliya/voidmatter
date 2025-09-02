@@ -1,0 +1,1699 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中国动物蛋白产业：驾驭周期性浪潮与结构性变革 - 2025年Q3行业研究报告</title>
+    
+    <!-- Preload fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- Font Awesome (optional for additional icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'display': ['Playfair Display', 'serif'],
+                        'sans': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        :root {
+            /* 深邃黑金权力色系 */
+            --obsidian-black: #0a0a0a;
+            --charcoal-night: #1a1a1a;
+            --slate-shadow: #2a2a2a;
+            --gunmetal-gray: #3a3a3a;
+            
+            /* 稀缺金色层次 */
+            --sovereign-gold: #d4af37;
+            --imperial-gold: #ffd700;
+            --amber-luxury: #ffbf00;
+            --bronze-accent: #cd7f32;
+            
+            /* 权威蓝调 */
+            --midnight-navy: #1e3a8a;
+            --royal-sapphire: #1e40af;
+            --steel-blue: #475569;
+            
+            /* 精英白与灰阶 */
+            --platinum-white: #f8fafc;
+            --pearl-gray: #f1f5f9;
+            --silver-mist: #e2e8f0;
+            --graphite-text: #64748b;
+        }
+
+        /* 帝王级标题 - 最高层级 */
+        .imperial-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 800;
+            line-height: 1.1;
+            color: var(--sovereign-gold);
+            text-shadow: 0 0 30px rgba(212, 175, 55, 0.3);
+            background: linear-gradient(135deg, var(--sovereign-gold) 0%, var(--imperial-gold) 50%, var(--amber-luxury) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -0.025em;
+        }
+
+        /* 君主级副标题 */
+        .imperial-subtitle {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.25rem, 3vw, 1.75rem);
+            font-weight: 600;
+            color: var(--silver-mist);
+            margin-top: 1rem;
+            letter-spacing: 0.01em;
+        }
+
+        /* 至尊级章节标题 */
+        .sovereign-heading {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.875rem, 4vw, 2.5rem);
+            font-weight: 700;
+            color: var(--imperial-gold);
+            margin: 2.5rem 0 1.5rem 0;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .sovereign-heading::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 6px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--sovereign-gold), var(--amber-luxury));
+            border-radius: 3px;
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+        }
+
+        /* 贵族级子标题 */
+        .noble-heading {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            font-weight: 600;
+            color: var(--silver-mist);
+            margin: 2rem 0 1rem 0;
+            border-bottom: 2px solid var(--gunmetal-gray);
+            padding-bottom: 0.5rem;
+        }
+
+        /* 精英级段落标题 */
+        .elite-heading {
+            font-family: 'Inter', sans-serif;
+            font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+            font-weight: 700;
+            color: var(--amber-luxury);
+            margin: 1.5rem 0 0.75rem 0;
+        }
+
+        /* 权威正文 */
+        .noble-text {
+            font-family: 'Inter', sans-serif;
+            font-size: clamp(1rem, 2vw, 1.125rem);
+            line-height: 1.8;
+            color: var(--silver-mist);
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        /* 专业级小字 */
+        .professional-text {
+            font-family: 'Inter', sans-serif;
+            font-size: clamp(0.875rem, 1.5vw, 1rem);
+            line-height: 1.6;
+            color: var(--graphite-text);
+            margin-bottom: 1rem;
+        }
+
+        /* 顶级容器样式 */
+        .imperial-container {
+            background: linear-gradient(135deg, var(--obsidian-black) 0%, var(--charcoal-night) 100%);
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* 贵族级内容区域 */
+        .noble-content {
+            background: rgba(26, 26, 26, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 1rem;
+            padding: 3rem;
+            margin: 2rem 0;
+            border: 1px solid rgba(212, 175, 55, 0.1);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8);
+        }
+
+        /* 顶级装饰背景 */
+        .imperial-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.03;
+            background-image: 
+                radial-gradient(circle at 25% 25%, var(--sovereign-gold) 0%, transparent 50%),
+                radial-gradient(circle at 75% 75%, var(--imperial-gold) 0%, transparent 50%),
+                linear-gradient(45deg, transparent 40%, rgba(212, 175, 55, 0.1) 50%, transparent 60%);
+        }
+
+        /* 章节容器样式 */
+        .imperial-section {
+            margin: 4rem 0;
+            scroll-margin-top: 100px;
+        }
+
+        /* 垂直进度条系统 */
+        .progress-container {
+            position: fixed;
+            right: 2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .progress-bar {
+            width: 4px;
+            height: 300px;
+            background: rgba(58, 58, 58, 0.6);
+            border-radius: 2px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            width: 100%;
+            background: linear-gradient(180deg, var(--sovereign-gold), var(--amber-luxury));
+            border-radius: 2px;
+            transition: height 0.3s ease;
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.6);
+        }
+
+        .progress-tooltip {
+            position: absolute;
+            right: 1.5rem;
+            background: var(--charcoal-night);
+            color: var(--silver-mist);
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            border: 1px solid var(--sovereign-gold);
+            font-size: 0.875rem;
+            font-weight: 500;
+            white-space: nowrap;
+            opacity: 0;
+            transform: translateX(10px);
+            transition: all 0.3s ease;
+            pointer-events: none;
+            z-index: 1001;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+        }
+
+        .progress-tooltip.show {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .progress-tooltip::after {
+            content: '';
+            position: absolute;
+            left: -8px;
+            top: 50%;
+            transform: translateY(-50%);
+            border: 4px solid transparent;
+            border-right-color: var(--sovereign-gold);
+        }
+
+        /* 卡片系统 */
+        .authority-card {
+            background: linear-gradient(135deg, rgba(26, 26, 26, 0.95) 0%, rgba(42, 42, 42, 0.9) 100%);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 1rem;
+            padding: 2rem;
+            margin: 1.5rem 0;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+            transition: all 0.3s ease;
+        }
+
+        .authority-card:hover {
+            border-color: rgba(212, 175, 55, 0.4);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.8);
+            transform: translateY(-2px);
+        }
+
+        .golden-glass-card {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(255, 215, 0, 0.05) 100%);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 1rem;
+            padding: 2rem;
+            margin: 1.5rem 0;
+            backdrop-filter: blur(15px);
+            box-shadow: 0 20px 40px rgba(212, 175, 55, 0.1);
+        }
+
+        .investment-logic-card {
+            background: linear-gradient(135deg, rgba(30, 58, 138, 0.1) 0%, rgba(30, 64, 175, 0.05) 100%);
+            border: 1px solid rgba(30, 58, 138, 0.3);
+            border-radius: 1rem;
+            padding: 2rem;
+            margin: 1.5rem 0;
+            backdrop-filter: blur(15px);
+        }
+
+        .disclaimer-card {
+            background: linear-gradient(135deg, rgba(58, 58, 58, 0.4) 0%, rgba(42, 42, 42, 0.6) 100%);
+            border: 1px solid var(--gunmetal-gray);
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        /* 表格样式 */
+        .imperial-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background: rgba(26, 26, 26, 0.8);
+            border-radius: 0.75rem;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+        }
+
+        .imperial-table th {
+            background: linear-gradient(135deg, var(--sovereign-gold) 0%, var(--amber-luxury) 100%);
+            color: var(--obsidian-black);
+            font-weight: 700;
+            padding: 1rem;
+            text-align: left;
+            font-size: 0.95rem;
+        }
+
+        .imperial-table td {
+            padding: 0.875rem 1rem;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+            color: var(--silver-mist);
+            font-size: 0.9rem;
+        }
+
+        .imperial-table tr:hover {
+            background: rgba(212, 175, 55, 0.05);
+        }
+
+        /* 引用链接样式 */
+        .reference-link {
+            color: var(--amber-luxury);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid transparent;
+        }
+
+        .reference-link:hover {
+            color: var(--imperial-gold);
+            border-bottom-color: var(--imperial-gold);
+            text-shadow: 0 0 8px rgba(255, 215, 0, 0.4);
+        }
+
+        /* 列表样式 */
+        .noble-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .noble-list li {
+            position: relative;
+            padding-left: 2rem;
+            margin-bottom: 1rem;
+            color: var(--silver-mist);
+            line-height: 1.7;
+        }
+
+        .noble-list li::before {
+            content: '▶';
+            position: absolute;
+            left: 0;
+            color: var(--sovereign-gold);
+            font-weight: bold;
+        }
+
+        /* 响应式调整 */
+        @media (max-width: 1024px) {
+            .progress-container {
+                right: 1rem;
+            }
+            
+            .noble-content {
+                padding: 2rem;
+                margin: 1rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .progress-container {
+                display: none;
+            }
+            
+            .noble-content {
+                padding: 1.5rem;
+                margin: 0.5rem;
+            }
+            
+            .imperial-table {
+                font-size: 0.8rem;
+            }
+            
+            .imperial-table th,
+            .imperial-table td {
+                padding: 0.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body class="imperial-container">
+    <!-- 装饰背景 -->
+    <div class="imperial-background"></div>
+    
+    <!-- 垂直进度条系统 -->
+    <div class="progress-container">
+        <div class="progress-bar">
+            <div class="progress-fill" style="height: 0%"></div>
+        </div>
+        <div class="progress-tooltip" id="progressTooltip">
+            开始阅读
+        </div>
+    </div>
+
+    <!-- 主要内容区域 -->
+    <div class="max-w-6xl mx-auto px-4 py-8">
+        
+        <!-- 报告头部 -->
+        <header class="text-center py-16">
+            <h1 class="imperial-title mb-6">
+                中国动物蛋白产业：驾驭周期性浪潮与结构性变革
+            </h1>
+            <p class="imperial-subtitle mb-4">
+                2025年Q3行业研究报告
+            </p>
+            <div class="professional-text mt-8">
+                <p>发布时间：2025年8月25日</p>
+            </div>
+        </header>
+
+        <!-- 报告摘要 -->
+        <section id="executive-summary" class="imperial-section" data-title="报告摘要">
+            <div class="noble-content">
+                <h2 class="sovereign-heading">报告摘要</h2>
+                
+                <div class="golden-glass-card">
+                    <p class="noble-text">
+                        本报告旨在为机构投资者与高净值客户提供一份关于中国动物蛋白产业的深度分析，构建一个系统性的行业认知框架。我们的核心论点是：中国动物蛋白产业正经历一场深刻的结构性变革，从一个分散的、纯粹由周期驱动的行业，演变为一个由技术、政策和资本共同塑造的整合型产业。尽管周期性仍是其关键特征，但其性质正在演变。长期价值创造的核心驱动力，正从捕捉周期性价格波动转向卓越运营、技术领先和供应链整合。
+                    </p>
+                </div>
+
+                <h3 class="noble-heading">核心发现：</h3>
+                <ul class="noble-list">
+                    <li><strong>需求端：从"吃饱"到"吃好"的结构性升级。</strong> 中国蛋白质消费总量增长趋于成熟，但内部结构正发生剧烈变化。猪肉的主导地位虽稳固但持续被侵蚀，禽肉因其健康属性和成本优势成为最主要的替代品。消费升级、健康意识和食品安全成为塑造未来需求格局的关键变量。</li>
+                    <li><strong>生猪产业：非洲猪瘟（ASF）重塑产业格局，整合加速改变周期属性。</strong> ASF作为一次性的巨大外部冲击，永久性地改变了行业结构，淘汰了大量缺乏资本和生物安全能力的中小散户，为大型集团的崛起创造了历史性机遇。行业集中度（CR10）在短短数年内提升了三倍以上。这种结构性变化正在改变传统"猪周期"的动态，大型企业的资本密集型投资和市场份额导向，可能导致未来周期的下行阶段更长、亏损更深，从而对企业的成本控制能力和资产负债表健康提出了前所未有的考验。</li>
+                    <li><strong>禽肉产业：工业化典范，可预测性凸显投资价值。</strong> 与猪肉产业相比，白羽肉鸡产业链的工业化、标准化和整合程度更高。其金字塔式的繁育体系为供给端提供了高度可预测的领先指标（祖代种鸡更新量），显著降低了投资不确定性。国产白羽肉鸡品种的突破，正在降低对海外引种的依赖，进一步增强了产业链的稳定性和安全性，使其成为一个结构性优于猪肉的投资领域。</li>
+                    <li><strong>水产养殖：蓝色革命浪潮，价值链升级空间广阔。</strong> 2022年，全球水产养殖产量首次超越捕捞渔业，标志着水产蛋白供给范式的根本性转变。中国作为全球水产养殖的绝对领导者，其未来增长动力将从量的扩张转向质的提升和价值链的延伸。以挪威三文鱼产业为标杆，中国水产养殖业在品种优化、品牌建设、精深加工和可持续发展（ESG）方面存在巨大的价值创造潜力。</li>
+                    <li><strong>产业生态：全链条"优胜劣汰"，赋能者价值凸显。</strong> 养殖端的规模化和现代化，正在向上游（育种、疫苗、饲料）和下游（屠宰、冷链物流）传导"质量革命"的压力，推动整个生态系统的整合。动物疫苗等高技术壁垒环节，因其需求刚性、弱周期性而具备防御性增长价值。冷链物流则受益于"运猪"向"运肉"的结构性转变，迎来了长期增长风口。</li>
+                </ul>
+
+                <h3 class="noble-heading">投资展望：</h3>
+                <div class="investment-logic-card">
+                    <p class="noble-text">
+                        未来的行业领导者将不再是单纯的周期赌徒，而是具备以下特征的产业整合者：<strong>规模化的成本优势、技术驱动的效率护城河、一体化的供应链掌控力、雄厚的资本实力以及将ESG融入核心战略的可持续发展能力。</strong> 基于此，我们提出三大核心投资主线：1）<strong>核心持有</strong>：在猪、禽领域具备最低成本和最强整合能力的龙头企业；2）<strong>防御性增长</strong>：动物疫苗和高端育种领域的领先者；3）<strong>核心赋能者</strong>：受益于产业结构变迁的冷链物流和屠宰加工环节的头部公司。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第一章 -->
+        <section id="macro-background" class="imperial-section" data-title="第一章 宏观背景：解码中国蛋白质需求的结构性变迁">
+            <div class="noble-content">
+                <h2 class="sovereign-heading">第一章 宏观背景：解码中国蛋白质需求的结构性变迁</h2>
+                
+                <p class="noble-text">
+                    本章旨在构建理解中国动物蛋白产业的宏观需求框架。核心观点认为，尽管中国蛋白质消费在"量"的增长上已步入成熟期，但在"质"的提升和"结构"的变迁上正加速演进，由此催生出一个全新的需求格局。这一变迁不仅是理解行业未来走向的基石，也是发掘长期投资价值的逻辑起点。
+                </p>
+
+                <h3 class="elite-heading">1.1 全球需求引擎：双速世界下的增长分化</h3>
+                <p class="noble-text">
+                    从全球视角审视，农业商品的消费增长呈现出显著的"双速世界"特征。未来的增量需求主要由中低收入国家驱动，这些国家正处于快速的城镇化和人均收入提升阶段，膳食结构随之向消耗更多畜产品和水产品的模式转变。联合国粮食及农业组织（FAO）与经济合作与发展组织（OECD）的联合展望报告明确指出，新兴经济体将成为塑造全球农业格局的关键力量。
+                </p>
+                
+                <p class="noble-text">
+                    与之形成鲜明对比的是，高收入国家的人均肉类消费已趋于饱和甚至停滞。在这些市场，消费者对动物福利、环境影响和健康问题的关注度日益提高，正引导消费需求从单纯的动物蛋白摄入转向更加多元化和可持续的选择。
+                </p>
+                
+                <div class="authority-card">
+                    <p class="noble-text">
+                        这一全球背景对理解中国市场至关重要，因为它揭示了全球粮食需求重心的战略性转移。在过去十年中，中国是全球农产品需求增长的最主要驱动力，贡献了全球消费增量的28%。然而，展望未来十年，随着中国自身饮食结构的成熟和人口增长的放缓，其在全球增量需求中的份额预计将下降至11%。与此同时，以印度和东南亚为代表的印太地区，凭借其庞大的人口基数和持续增长的购买力，正接棒成为全球粮食需求增长的新引擎，预计将贡献未来十年全球消费增量的31%。这一宏观趋势意味着，中国国内的动物蛋白市场将更多地由内部结构调整而非外部需求拉动来定义其未来。
+                    </p>
+                </div>
+
+                <h3 class="elite-heading">1.2 中国膳食结构的伟大转型：从"吃饱"到"吃好"</h3>
+                <p class="noble-text">
+                    中国的经济腾飞引发了一场深刻的、经典的膳食结构转型。衡量居民生活水平的关键指标——恩格尔系数（即食品支出占个人消费支出的比重）的持续下降，是这一转型的最有力证明。根据国家统计局数据，全国居民恩格尔系数已从2012年的33%稳步下降至2021年的29.8%。这一降幅标志着中国居民的消费能力已跨越温饱阶段，进入追求更高生活品质的时期，可自由支配的开支显著增加，为消费升级奠定了坚实基础。
+                </p>
+                
+                <p class="noble-text">
+                    这场转型的核心特征，是从以谷物等主食为主的膳食模式，向消费更多肉、禽、蛋、奶等高价值动物蛋白的结构性转变。历史数据清晰地勾勒出这一轨迹：自改革开放以来，特别是上世纪90年代后，人均肉类消费量实现了跨越式增长。
+                </p>
+                
+                <p class="noble-text">
+                    收入增长是驱动这一变迁的最根本动力。大量的实证研究证实，人均GDP与人均肉类消费量之间存在着牢固的正相关关系。当一个国家进入中等收入发展阶段时，其肉类消费往往会呈现加速增长的态势。城镇化进程则扮演了"放大器"的角色，它不仅改变了人们的生活方式和节奏，也重塑了食品营销体系和消费场景，从而极大地推动了膳食结构的现代化转型。
+                </p>
+
+                <h3 class="elite-heading">1.3 新的蛋白质版图：猪肉主导地位的松动与替代品的崛起</h3>
+                <p class="noble-text">
+                    尽管猪肉在中国人的餐桌上仍占据着无可争议的核心地位，但其长达数十年的绝对主导权正面临结构性的侵蚀。数据显示，从1990年到2020年的三十年间，以猪肉为主的红肉在中国肉类总消费中的占比从86%下降至74%。麦肯锡公司的一份报告进一步指出，在2017年至2021年这短短五年间，猪肉消费占比就从63%降至59%，而同期禽肉和牛肉的占比则分别从22%和9%上升至26%和10%。
+                </p>
+                
+                <p class="noble-text">
+                    这一深刻的结构性转变由多种因素共同驱动，反映了中国消费者日益成熟和多元化的需求偏好：
+                </p>
+                
+                <ul class="noble-list">
+                    <li><strong>健康意识的觉醒</strong>：随着生活水平的提高，健康已成为消费者选择食品时的首要考量因素之一。普遍的消费认知将禽肉等白肉和牛肉视为比猪肉更健康的蛋白质来源。针对中国消费者的调查显示，植物基饮食与更低的身体质量指数（BMI）和肥胖率相关联，这一观念获得了超过56%受访者的认同。这种健康导向的消费趋势，正持续引导需求从猪肉向其他蛋白质来源分流。</li>
+                    <li><strong>价格的替代效应</strong>：禽肉，特别是白羽肉鸡，凭借其高效的工业化生产带来的成本优势，成为了猪肉最直接和最重要的替代品。历史数据表明，当猪肉价格处于周期性高位时，禽肉消费量会受到明显提振，替代效应显著。猪肉与鸡肉之间的价差，是影响短期肉类消费结构变化的关键变量。</li>
+                    <li><strong>膳食结构多元化</strong>：一个值得关注的现象是，根据联合国粮农组织（FAO）的食物平衡表数据，2021年中国的人均每日蛋白质供应量已达到124.61克，首次超过美国的124.33克。然而，两国蛋白质的来源结构截然不同。在美国，约69%的蛋白质供应来自肉、鱼、蛋、奶等动物源；而在中国，这一比例要低得多，蔬菜、谷物、豆类等植物源蛋白质占据了主导地位，占比高达60.5%。这表明，中国消费者的蛋白质摄入结构本身就更加多元和均衡，为未来动物蛋白内部的结构调整（例如，增加禽肉和水产品比例）预留了广阔空间。</li>
+                </ul>
+                
+                <div class="golden-glass-card">
+                    <p class="noble-text">
+                        中国的蛋白质消费市场正从一个单纯追求"量"的增长阶段，过渡到一个以"价值提升"和"结构优化"为核心的新阶段。OECD-FAO的报告预测，全球农业商品消费增速将因人口和收入增长放缓而减速。同时，中国恩格尔系数已降至30%以下，这通常被视为一个成熟食品市场的标志，消费者在此阶段更注重品质、健康和多样性，而非仅仅增加消费量。
+                    </p>
+                </div>
+                
+                <p class="noble-text">
+                    关于肉类消费"天花板"的讨论需要更加辩证地看待。尽管有研究指出，当人均GDP达到约4万美元时，肉类消费可能趋于平稳，但中国的独特膳食结构决定了其"动物蛋白天花板"可能与西方国家存在显著差异。关键变量并非蛋白质总摄入量——中国在这一点上已不逊于美国——而是动物蛋白在总蛋白质摄入中的占比。目前中国以植物蛋白为主的结构意味着，即便蛋白质总需求稳定，动物蛋白的消费占比仍有巨大的提升空间。这意味着，随着饮食习惯持续"西化"（即提高动物蛋白份额），中国动物蛋白市场的长期增长跑道依然宽阔，这为行业提供了超越宏观经济增速的结构性成长动力。
+                </p>
+                
+                <div class="overflow-x-auto mb-8">
+                    <table class="imperial-table">
+                        <caption class="professional-text mb-4">
+                            <strong>表1.1：中国蛋白质消费结构的演变与展望 (2012-2024E)</strong>
+                        </caption>
+                        <thead>
+                            <tr>
+                                <th>年度</th>
+                                <th>人均可支配收入 (元)</th>
+                                <th>恩格尔系数 (%)</th>
+                                <th>人均肉类消费量 (公斤)</th>
+                                <th>猪肉消费量 (公斤)</th>
+                                <th>猪肉占比 (%)</th>
+                                <th>禽肉消费量 (公斤)</th>
+                                <th>禽肉占比 (%)</th>
+                                <th>牛羊肉消费量 (公斤)</th>
+                                <th>水产品消费量 (公斤)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2012</td>
+                                <td>24,565 (城镇)</td>
+                                <td>33.0</td>
+                                <td>63.8</td>
+                                <td>40.4</td>
+                                <td>63.3</td>
+                                <td>14.1</td>
+                                <td>22.1</td>
+                                <td>4.9</td>
+                                <td>14.3</td>
+                            </tr>
+                            <tr>
+                                <td>2014</td>
+                                <td>28,844 (城镇)</td>
+                                <td>30.0</td>
+                                <td>63.7</td>
+                                <td>40.0</td>
+                                <td>62.8</td>
+                                <td>14.6</td>
+                                <td>22.9</td>
+                                <td>5.0</td>
+                                <td>14.1</td>
+                            </tr>
+                            <tr>
+                                <td>2016</td>
+                                <td>33,616 (城镇)</td>
+                                <td>30.1</td>
+                                <td>63.6</td>
+                                <td>39.7</td>
+                                <td>62.4</td>
+                                <td>14.9</td>
+                                <td>23.4</td>
+                                <td>5.1</td>
+                                <td>13.9</td>
+                            </tr>
+                            <tr>
+                                <td>2018</td>
+                                <td>39,251 (城镇)</td>
+                                <td>28.4</td>
+                                <td>63.0</td>
+                                <td>38.8</td>
+                                <td>61.6</td>
+                                <td>15.6</td>
+                                <td>24.8</td>
+                                <td>5.4</td>
+                                <td>13.2</td>
+                            </tr>
+                            <tr>
+                                <td>2020</td>
+                                <td>43,834 (城镇)</td>
+                                <td>30.2</td>
+                                <td>61.3</td>
+                                <td>35.8</td>
+                                <td>58.4</td>
+                                <td>16.8</td>
+                                <td>27.4</td>
+                                <td>5.7</td>
+                                <td>13.0</td>
+                            </tr>
+                            <tr>
+                                <td>2022</td>
+                                <td>49,283 (城镇)</td>
+                                <td>29.5</td>
+                                <td>64.1</td>
+                                <td>37.1</td>
+                                <td>57.9</td>
+                                <td>18.2</td>
+                                <td>28.4</td>
+                                <td>6.0</td>
+                                <td>12.8</td>
+                            </tr>
+                            <tr>
+                                <td>2024(E)</td>
+                                <td>51,821 (全国)</td>
+                                <td>29.0</td>
+                                <td>65.0</td>
+                                <td>37.5</td>
+                                <td>57.7</td>
+                                <td>19.0</td>
+                                <td>29.2</td>
+                                <td>6.2</td>
+                                <td>12.3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="professional-text text-center">
+                        数据来源：国家统计局、OECD-FAO及行业报告综合整理。注：部分历史数据口径存在差异，此处为综合估算值，旨在展示趋势。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第二章 -->
+        <section id="pig-industry" class="imperial-section" data-title="第二章 猪肉巨擘：解构猪周期与整合之路">
+            <div class="noble-content">
+                <h2 class="sovereign-heading">第二章 猪肉巨擘：解构猪周期与整合之路</h2>
+                
+                <p class="noble-text">
+                    本章将深入剖析中国最大且波动性最强的蛋白质板块——生猪产业。我们的核心论点是，2018年爆发的非洲猪瘟（ASF）扮演了一个强大的、一次性的催化剂角色，它极大地加速了行业原已存在的整合趋势，从而根本性地改变了产业结构以及著名的"猪周期"的内在动态。理解这一结构性断裂，是把握未来行业投资机会与风险的关键。
+                </p>
+
+                <h3 class="elite-heading">2.1 "猪周期"的解剖学</h3>
+                
+                <h4 class="noble-heading">核心机制：供给滞后的经典循环</h4>
+                <p class="noble-text">
+                    "猪周期"是商品市场中一个典型的由供给端时滞驱动的周期性波动。其约3-4年的周期长度，与母猪的繁殖生物学规律和生猪的生长周期紧密相连。整个循环的逻辑链条清晰而经典：高猪价 → 高利润 → 养殖户补栏能繁母猪、扩大产能 → 约10-12个月的滞后期（母猪怀孕、仔猪育肥） → 生猪供给大量增加 → 市场供过于求，猪价暴跌 → 养殖户深度亏损 → 大量淘汰母猪，产能去化 → 市场供给减少 → 供不应求，猪价回升，开启新一轮上涨。
+                </p>
+
+                <h4 class="noble-heading">关键领先指标：能繁母猪存栏量</h4>
+                <p class="noble-text">
+                    在这一循环中，能繁母猪（能够参与繁殖的母猪）的存栏量，是预测未来生猪供给和价格走势最核心、最关键的领先指标。从母猪补栏到其后代形成商品猪出栏，存在约10个月的生理滞后期，这使得能繁母猪存栏量的变动成为预判未来市场供给的"水晶球"。为此，农业农村部每月公布的能繁母猪存栏数据受到全行业的高度关注。政府为平抑周期波动，设定了全国能繁母猪正常保有量目标（目前为3900万头），并建立了三级产能调控区间，以颜色进行预警：存栏量在正常保有量92%-105%之间为<strong>绿色区域</strong>（正常波动），85%-92%或105%-110%为<strong>黄色区域</strong>（大幅波动），低于85%或高于110%则为<strong>红色区域</strong>（过度波动），并以此作为启动储备肉收储或投放等调控措施的依据。
+                </p>
+
+                <h4 class="noble-heading">非洲猪瘟（ASF）的颠覆性冲击 (2018-2021)</h4>
+                <div class="authority-card">
+                    <p class="noble-text">
+                        2018年爆发的非洲猪瘟疫情，是全球养猪业百年未有之大变局，对中国生猪产业造成了前所未有的毁灭性打击。这场疫情导致全国能繁母猪存栏量断崖式下跌，生猪供给出现巨大缺口，猪价被推升至历史最高点，养殖利润也达到了空前水平。在这轮由疫情驱动的"超级猪周期"中，猪肉价格一度成为影响中国居民消费价格指数（CPI）的最主要因素，其对CPI的月度贡献率在2020年7月甚至高达85.9%。然而，空前的利润和政策激励吸引了巨量资本涌入，特别是大型养殖集团利用资本优势疯狂扩张产能。随着产能的快速恢复和释放，市场迅速从极度短缺转向严重过剩，导致2021年下半年开始猪价持续暴跌，行业在2022-2023年陷入了历史上最漫长、最深度的亏损期。
+                    </p>
+                </div>
+
+                <h3 class="elite-heading">2.2 生猪养殖的经济学：成本驱动的产业</h3>
+
+                <h4 class="noble-heading">成本结构：饲料是决定性因素</h4>
+                <p class="noble-text">
+                    生猪养殖是一个典型的成本驱动型产业。在总成本构成中，饲料成本占据绝对主导地位，通常占到总成本的57%至60%以上。饲料的主要原料是玉米（约占65%）和豆粕（约占25%）。因此，国内外粮食市场的价格波动，尤其是玉米和豆粕价格的变动，会直接且显著地影响养殖企业的盈利空间。除饲料外，对于非自繁自养的育肥户而言，仔猪成本是第二大可变成本，约占26%；而人工成本等固定开支约占12%。
+                </p>
+
+                <h4 class="noble-heading">盈利能力指标：猪粮比价</h4>
+                <p class="noble-text">
+                    "猪粮比价"，即生猪出场价格与作为主要饲料原料的玉米批发价格的比值，是衡量行业盈利状况最直观、最通用的实时指标。国家发改委设定了猪粮比价的盈亏平衡点（约为7:1）和相应的预警区间，当比价持续低于5:1时，即进入过度下跌一级预警，通常会触发国家收储等托市政策。养殖利润的波动，本质上是猪价与饲料成本之间"剪刀差"的变动。
+                </p>
+
+                <h4 class="noble-heading">规模经济效应</h4>
+                <p class="noble-text">
+                    大型一体化养殖企业在成本控制上拥有天然优势。它们能够通过集中采购获得更低的饲料原料价格，通过现代化的生物安全体系降低疫病损失率，通过优良的遗传育种体系提高生产效率（如PSY，即每头母猪每年所能提供的断奶仔猪数量），并通过标准化的运营管理降低单位人工成本。
+                </p>
+
+                <h3 class="elite-heading">2.3 大整合时代：从"千家万户"到"产业巨头"</h3>
+                <p class="noble-text">
+                    中国生猪养殖业正经历一场深刻且不可逆转的结构性变革，即从以散养户为主的传统模式，向集约化、规模化、现代化的工业体系快速转型。
+                </p>
+
+                <h4 class="noble-heading">量化证据：集中度飞跃式提升</h4>
+                <p class="noble-text">
+                    这一趋势在数据上表现得尤为明显。以出栏量计算，行业前十大企业（CR10）的市场份额从2018年底的仅6.87%，飙升至2022年底的20.40%。到2023年，CR10已进一步提升至23%。同期，全国生猪养殖的规模化率（年出栏500头以上）也从不足50%提升至2023年的超过68%。尽管进步显著，但与美国等发达市场高达99%的规模化率相比，中国生猪产业的集中度仍有巨大的提升空间，预示着整合的趋势远未结束。
+                </p>
+
+                <h4 class="noble-heading">整合的核心驱动力</h4>
+                <ul class="noble-list">
+                    <li><strong>非洲猪瘟的"清场效应"</strong>：ASF是本轮整合最直接、最猛烈的催化剂。疫情对缺乏资本投入和现代生物安全管理能力的中小散养户造成了毁灭性打击，使其大量永久性退出市场。这为资金雄厚、管理先进的大型集团提供了前所未有的市场份额扩张机会。</li>
+                    <li><strong>资本密集度的提升</strong>：现代养猪业已成为一个资本密集型行业。建设符合高标准生物安全和环保要求的猪场需要巨额的资本投入，这构成了中小养殖户难以逾越的进入壁垒。</li>
+                    <li><strong>政策的倒逼机制</strong>：日益严格的环保法规，如"禁养区"的划定、粪污资源化处理的强制要求等，以及不断提升的食品安全标准，显著增加了中小散养户的合规成本，加速了其被市场淘汰的进程。</li>
+                </ul>
+
+                <h3 class="elite-heading">2.4 两种模式的对决：牧原股份 vs. 温氏股份</h3>
+                <p class="noble-text">
+                    在行业整合的大潮中，涌现出两种截然不同但均取得巨大成功的商业模式，其代表分别是牧原股份和温氏股份。
+                </p>
+
+                <div class="golden-glass-card">
+                    <h4 class="noble-heading">牧原股份："自繁自养"的全产业链重资产模式</h4>
+                    <p class="noble-text">
+                        牧原股份是"自繁自养"模式的极致代表。该模式下，公司拥有并运营从饲料加工、种猪选育、扩繁、商品猪饲养到屠宰加工的完整产业链。这种重资产、全一体化的模式，赋予了公司对生物安全、种源、生产流程和成本控制的最大掌控力。虽然资本开支巨大，但在理论上能够实现最低的单位生产成本，并攫取产业链的全部利润。非洲猪瘟疫情凸显了该模式在生物安全上的巨大优势，助力牧原股份实现了爆炸式增长，市场份额迅速跃居全国第一，2024年生猪出栏量已历史性地突破7000万头。
+                    </p>
+                </div>
+
+                <div class="authority-card">
+                    <h4 class="noble-heading">温氏股份："公司+农户"的轻资产合作模式</h4>
+                    <p class="noble-text">
+                        温氏股份则是"公司+农户"模式的开创者和领导者。这是一种相对轻资产的运营模式，公司主要负责产业链中技术和资本最密集的环节，如育种、饲料生产和技术服务，而将育肥环节委托给合作农户完成。公司向农户提供猪苗、饲料、疫苗和技术指导，农户负责提供场地和劳动力进行饲养，最终公司以合同价回收育成的商品猪。该模式使得公司能够以较低的资本开支实现快速的规模扩张，但对生产过程的控制力相对较弱，且需要与农户分享养殖利润。温氏股份凭借此模式稳居行业第二，2024年出栏量也首次突破3000万头。
+                    </p>
+                </div>
+
+                <div class="investment-logic-card">
+                    <p class="noble-text">
+                        <strong>产业结构的变迁正在深刻地改变猪周期的内在"基因"。</strong> 过去，由数千万散养户构成的市场，其供给弹性非常大，对价格信号反应迅速，从而形成了"快涨快跌"的经典周期。然而，随着产业结构向大型企业集中，供给端的行为模式发生了根本性变化。大型上市公司拥有巨额的固定资产投资，承担着维持和扩大市场份额的战略任务，并且能够通过资本市场融资来抵御亏损。与可以"说不养就不养"的散养户不同，大型企业无法轻易让耗资数十亿的现代化猪场闲置。因此，在猪价下跌周期中，大型企业的产能去化意愿更弱、速度更慢，供给端的调整变得更具"粘性"。这种供给弹性的下降，意味着未来猪周期的下行阶段可能会被拉长，行业或将经历更长时间、更深度的普遍性亏损。在新的产业格局下，企业的生存与发展，将前所未有地依赖于其成本控制能力和资产负债表的稳健性。
+                    </p>
+                </div>
+
+                <div class="golden-glass-card">
+                    <p class="noble-text">
+                        <strong>生物安全已从运营要素上升为第一核心竞争力。</strong> 在ASF爆发前，成本竞争主要围绕饲料转化效率展开。ASF之后，防止灾难性疫病爆发的能力成为企业生死存亡的关键。这不仅仅是制定操作规程的问题，更是涉及猪场选址、建筑设计、空气过滤系统、供应链管控和智能化技术投入的系统工程。牧原股份的全一体化模式之所以能在ASF后异军突起，核心就在于其实现了端到端的生物安全闭环管理。在有效疫苗问世之前，物理隔离和严格的生物安全管理是唯一的防线。这一现实，为那些有能力进行巨额资本投入以构建顶级生物安全体系的大型企业，创造了一道对抗中小竞争者的、持久的竞争护城河。
+                    </p>
+                </div>
+
+                <div class="overflow-x-auto mb-8">
+                    <table class="imperial-table">
+                        <caption class="professional-text mb-4">
+                            <strong>表2.1：中国生猪周期历史复盘 (2002-2024)</strong>
+                        </caption>
+                        <thead>
+                            <tr>
+                                <th>周期序号</th>
+                                <th>上行起点</th>
+                                <th>价格顶点</th>
+                                <th>下行终点</th>
+                                <th>周期时长 (月)</th>
+                                <th>价格振幅 (谷-峰)</th>
+                                <th>核心催化剂</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>第一轮</td>
+                                <td>2003年5月</td>
+                                <td>2004年9月</td>
+                                <td>2006年5月</td>
+                                <td>36</td>
+                                <td>105%</td>
+                                <td>"非典"疫情压制消费后产能去化，禽流感、饲料涨价</td>
+                            </tr>
+                            <tr>
+                                <td>第二轮</td>
+                                <td>2006年6月</td>
+                                <td>2008年4月</td>
+                                <td>2009年5月</td>
+                                <td>35</td>
+                                <td>190%</td>
+                                <td>高致病性猪蓝耳病疫情导致产能严重受损</td>
+                            </tr>
+                            <tr>
+                                <td>第三轮</td>
+                                <td>2009年6月</td>
+                                <td>2011年9月</td>
+                                <td>2013年4月</td>
+                                <td>46</td>
+                                <td>120%</td>
+                                <td>疫病叠加通胀预期，养殖户补栏积极性高</td>
+                            </tr>
+                            <tr>
+                                <td>第四轮</td>
+                                <td>2014年5月</td>
+                                <td>2016年6月</td>
+                                <td>2018年5月</td>
+                                <td>48</td>
+                                <td>100%</td>
+                                <td>环保政策趋严，大量散养户退出，产能去化</td>
+                            </tr>
+                            <tr>
+                                <td>第五轮</td>
+                                <td>2018年6月</td>
+                                <td>2021年1月</td>
+                                <td>2022年4月</td>
+                                <td>46</td>
+                                <td>260%</td>
+                                <td>非洲猪瘟（ASF）导致供给断崖式下跌，形成"超级周期"</td>
+                            </tr>
+                            <tr>
+                                <td>第六轮</td>
+                                <td>2022年5月</td>
+                                <td>2022年10月</td>
+                                <td>2024年4月</td>
+                                <td>23</td>
+                                <td>90%</td>
+                                <td>产能恢复性过剩，叠加消费疲软，形成短促周期</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="professional-text text-center">
+                        数据来源：券商研报综合整理。
+                    </p>
+                </div>
+
+                <div class="overflow-x-auto mb-8">
+                    <table class="imperial-table">
+                        <caption class="professional-text mb-4">
+                            <strong>表2.2：头部生猪养殖企业商业模式与关键指标对比 (2024年数据)</strong>
+                        </caption>
+                        <thead>
+                            <tr>
+                                <th>指标</th>
+                                <th>牧原股份 (002714.SZ)</th>
+                                <th>温氏股份 (300498.SZ)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>商业模式</strong></td>
+                                <td>"自繁自养"全产业链一体化</td>
+                                <td>"公司+农户"轻资产合作</td>
+                            </tr>
+                            <tr>
+                                <td><strong>生猪出栏量 (万头)</strong></td>
+                                <td>> 7,000</td>
+                                <td>> 3,000</td>
+                            </tr>
+                            <tr>
+                                <td><strong>市场份额 (%)</strong></td>
+                                <td>约 10%</td>
+                                <td>约 4.5%</td>
+                            </tr>
+                            <tr>
+                                <td><strong>营业收入 (亿元)</strong></td>
+                                <td>1,108.61</td>
+                                <td>1,049.24</td>
+                            </tr>
+                            <tr>
+                                <td><strong>归母净利润 (亿元)</strong></td>
+                                <td>67.9 (2021年)</td>
+                                <td>96.11</td>
+                            </tr>
+                            <tr>
+                                <td><strong>销售毛利率 (%)</strong></td>
+                                <td>12.5% (2022年)</td>
+                                <td>15.0%</td>
+                            </tr>
+                            <tr>
+                                <td><strong>完全成本 (元/公斤)</strong></td>
+                                <td>约 14.6</td>
+                                <td>约 15.5</td>
+                            </tr>
+                            <tr>
+                                <td><strong>资产负债率 (%)</strong></td>
+                                <td>61.5%</td>
+                                <td>53.1%</td>
+                            </tr>
+                            <tr>
+                                <td><strong>研发投入 (亿元)</strong></td>
+                                <td>17.47</td>
+                                <td>15.89</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="professional-text text-center">
+                        数据来源：公司年报、券商研报。注：部分数据为2023或更早年份，旨在对比，最新数据请参考公司公告。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第三章 -->
+        <section id="poultry-industry" class="imperial-section" data-title="第三章 禽肉的崛起：工业化效率与替代逻辑的典范">
+            <div class="noble-content">
+                <h2 class="sovereign-heading">第三章 禽肉的崛起：工业化效率与替代逻辑的典范</h2>
+                
+                <p class="noble-text">
+                    本章将白羽肉鸡产业定位为一个结构性优于猪肉的投资板块。其核心逻辑在于，该产业更高的工业化程度、更短的生产周期、以及更清晰透明的供给侧领先指标，共同构成了一个可预测性更强、周期性波动更温和的商业模型。
+                </p>
+
+                <h3 class="elite-heading">3.1 白羽肉鸡价值链：高度工业化的生产体系</h3>
+                <p class="noble-text">
+                    与生猪养殖业相对分散的育种体系不同，全球白羽肉鸡产业的上游被少数几家跨国育种公司高度垄断。整个产业链呈现出一个清晰的、金字塔式的繁育结构：顶端是<strong>曾祖代（GGP）</strong>，往下依次是<strong>祖代（GP）</strong>、<strong>父母代（PS）</strong>，最底层是面向消费市场的<strong>商品代肉鸡（Commercial Broilers）</strong>。历史上，中国白羽肉鸡产业高度依赖从国外进口祖代种鸡进行繁殖，因此，每年的引种量成为决定整个行业未来供给的关键变量。
+                </p>
+                
+                <p class="noble-text">
+                    相较于生猪，白羽肉鸡的生产周期极短且高度标准化。从引进祖代种鸡到其后代商品代肉鸡出栏上市，整个繁育传导周期约为60周（约14个月）。而一只商品代肉鸡从鸡苗到出栏仅需40-42天左右，体重即可达到2.5公斤以上，料肉比低至1.5-1.6。这种"速生"特性，极大地缩短了资金周转周期，降低了资本占用，并使得行业能够对市场需求变化做出更快速的供给调整。
+                </p>
+                
+                <p class="noble-text">
+                    得益于其标准化、可复制的生产模式，白羽肉鸡产业的工业化和规模化程度远超生猪产业。行业由少数大型一体化龙头企业主导，这些企业通常掌控着从育种、孵化、饲料、养殖到屠宰加工的全产业链环节。数据显示，2021年，仅屠宰环节的行业前六大企业（CR6）集中度就已接近40%，产业整合已进入较高阶段。
+                </p>
+
+                <h3 class="elite-heading">3.2 供给侧的先见之明：基因数据的预测能力</h3>
+                
+                <h4 class="noble-heading">核心领先指标：祖代种鸡更新量</h4>
+                <p class="noble-text">
+                    白羽肉鸡产业最吸引投资者的特质之一，在于其供给端的高度可预测性。<strong>祖代种鸡的年更新量（包括国外引种和国内自繁）</strong>是预判行业中长期供给趋势最核心、最可靠的领先指标。由于从祖代到商品代存在约14个月的固定传导周期，祖代种鸡更新量的变化，将直接决定约1-2年后商品代肉鸡的出栏量。例如，根据中国畜牧业协会的数据，2022年全国祖代种鸡更新量为91万套，同比大幅下降了28.35%。这一明确的供给收缩信号，为投资者预判2023年底至2024年上半年市场将出现供不应求的局面，提供了极具价值的决策依据。
+                </p>
+                
+                <h4 class="noble-heading">国产替代的战略转折</h4>
+                <div class="golden-glass-card">
+                    <p class="noble-text">
+                        长期以来，对进口种源的依赖是中国白羽肉鸡产业的"阿喀琉斯之踵"，海外主要引种国（如美国、法国）的禽流感疫情时常导致中国封关禁运，造成国内种源短缺和价格剧烈波动。近年来，这一局面正发生历史性改变。以圣农发展为代表的国内龙头企业在白羽肉鸡育种领域取得重大突破，成功培育出具有自主知识产权的"圣泽901"等新品种。国产种源的性能指标已接近国际主流品种，其在国内祖代更新量中的市场份额正迅速提升，2022年已达到25%。这一战略性突破，不仅保障了国家种源安全，也为产业链的长期稳定发展消除了一个重大的外部不确定性因素，降低了行业的周期性波动风险。
+                    </p>
+                </div>
+
+                <h3 class="elite-heading">3.3 竞争格局：一体化是制胜之道</h3>
+                <p class="noble-text">
+                    白羽肉鸡产业的竞争格局清晰地围绕着产业链整合能力展开。
+                </p>
+                
+                <ul class="noble-list">
+                    <li><strong>上游育种龙头</strong>：以益生股份为代表的企业，专注于产业链的上游环节。其核心业务是从海外引进祖代种鸡，在国内进行扩繁后，向下游销售父母代雏鸡。凭借其先发优势和专业能力，益生股份在国内祖代白羽肉种鸡引种市场的占有率高达约30%。</li>
+                    <li><strong>一体化全能冠军</strong>：圣农发展是中国白羽肉鸡产业一体化模式的标杆。公司不仅拥有自主知识产权的种源"圣泽901"，更打通了从育种、饲料、养殖、屠宰到食品精深加工的全产业链。这种全产业链模式不仅带来了显著的成本优势和抗风险能力，更重要的是，通过向下游高附加值的食品加工领域延伸（如为肯德基、麦当劳等快餐巨头提供定制化产品），公司能够平滑上游养殖环节的周期性波动，实现更稳定的盈利。</li>
+                    <li><strong>消费渠道特征</strong>：与猪肉主要在农贸市场等零售渠道销售不同，白羽肉鸡的大部分产品通过B2B渠道进行销售，主要流向快餐连锁、食品加工企业和团餐食堂等。这使得白羽肉鸡成为近年来快速增长的预制菜产业的核心原料之一，深度受益于餐饮工业化和家庭烹饪便捷化的消费趋势。</li>
+                </ul>
+                
+                <div class="investment-logic-card">
+                    <p class="noble-text">
+                        白羽肉鸡产业为投资者提供了一个比生猪产业更为清晰和可预测的投资标的。其核心优势在于，高度集中的金字塔式繁育结构，提供了一个硬性的、可量化的供给领先指标——祖代种鸡更新量。生猪周期的驱动因素复杂，能繁母猪存栏数据虽是核心，但常受到养殖户情绪、二次育肥行为等"噪音"的干扰，预测难度大。而白羽肉鸡的供给传导路径则像一条精确的工业流水线，祖代种鸡的投入量由少数头部企业控制，其到商品代的扩繁系数相对稳定。投资者只需跟踪中国畜牧业协会发布的权威数据，即可构建一个相当可靠的、领先12-18个月的供给预测模型，从而有效预判行业景气度的拐点，这在波动剧烈的生猪市场是难以实现的。这种可预测性，极大地降低了投资的不确定性和风险。
+                    </p>
+                </div>
+                
+                <div class="overflow-x-auto mb-8">
+                    <table class="imperial-table">
+                        <caption class="professional-text mb-4">
+                            <strong>表3.1：中国白羽肉鸡产业链关键领先指标 (2018-2024)</strong>
+                        </caption>
+                        <thead>
+                            <tr>
+                                <th>年度</th>
+                                <th>祖代种鸡总更新量 (万套)</th>
+                                <th>国产/引进比例 (%)</th>
+                                <th>在产父母代存栏 (万套)</th>
+                                <th>商品代鸡苗价格 (元/羽)</th>
+                                <th>毛鸡价格 (元/公斤)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2018</td>
+                                <td>75.0</td>
+                                <td>5 / 95</td>
+                                <td>4,500</td>
+                                <td>4.5</td>
+                                <td>8.5</td>
+                            </tr>
+                            <tr>
+                                <td>2019</td>
+                                <td>122.3</td>
+                                <td>8 / 92</td>
+                                <td>5,800</td>
+                                <td>6.2</td>
+                                <td>9.8</td>
+                            </tr>
+                            <tr>
+                                <td>2020</td>
+                                <td>119.0</td>
+                                <td>15 / 85</td>
+                                <td>6,500</td>
+                                <td>3.1</td>
+                                <td>7.5</td>
+                            </tr>
+                            <tr>
+                                <td>2021</td>
+                                <td>127.0</td>
+                                <td>18 / 82</td>
+                                <td>6,200</td>
+                                <td>3.5</td>
+                                <td>8.2</td>
+                            </tr>
+                            <tr>
+                                <td>2022</td>
+                                <td>91.0</td>
+                                <td>25 / 75</td>
+                                <td>5,500</td>
+                                <td>2.8</td>
+                                <td>8.8</td>
+                            </tr>
+                            <tr>
+                                <td>2023</td>
+                                <td>110.0</td>
+                                <td>30 / 70</td>
+                                <td>5,300</td>
+                                <td>3.8</td>
+                                <td>9.1</td>
+                            </tr>
+                            <tr>
+                                <td>2024(E)</td>
+                                <td>115.0</td>
+                                <td>35 / 65</td>
+                                <td>5,400</td>
+                                <td>3.2</td>
+                                <td>8.6</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="professional-text text-center">
+                        数据来源：中国畜牧业协会、美国农业部GAIN报告、行业数据库综合整理。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第四章 -->
+        <section id="aquaculture-industry" class="imperial-section" data-title="第四章 蓝色革命：水产养殖的全球崛起">
+            <div class="noble-content">
+                <h2 class="sovereign-heading">第四章 蓝色革命：水产养殖的全球崛起</h2>
+                
+                <p class="noble-text">
+                    本章旨在阐明全球水产食品供给正发生一场结构性的"蓝色革命"，即水产养殖正全面超越传统捕捞渔业，成为满足人类需求的主导力量。我们将分析中国在这一浪潮中的绝对领导地位，并以全球化程度最高、价值链最成熟的三文鱼产业为例，探讨中国水产养殖业未来的升级路径与投资机遇。
+                </p>
+
+                <h3 class="elite-heading">4.1 全球转折点：养殖首次超越捕捞</h3>
+                <div class="golden-glass-card">
+                    <p class="noble-text">
+                        2022年是全球水产食品供给史上一个具有里程碑意义的年份。根据联合国粮农组织（FAO）发布的权威报告《世界渔业和水产养殖状况》（SOFIA），该年度全球水产养殖的动物产量达到9440万吨，历史上首次超过了捕捞渔业的9100万吨。这一历史性的超越，标志着人类获取水生蛋白质的方式发生了根本性的范式转移，从依赖自然资源的捕捞，转向了可控、可规划的养殖生产。
+                    </p>
+                </div>
+                
+                <p class="noble-text">
+                    这一转变的背后，是两条截然不同的增长曲线。自上世纪80年代末以来，受限于海洋资源的可持续性，全球捕捞渔业的产量基本陷入停滞。而水产养殖业则以惊人的速度持续增长，自2000年以来年均复合增长率超过5%。正是水产养殖的蓬勃发展，有力地支撑了全球日益增长的水产品需求。数据显示，全球人均年水产品表观消费量已从1961年的9.1公斤，翻倍增长至2022年的20.7公斤。
+                </p>
+                
+                <p class="noble-text">
+                    水产养殖业的经济体量也日益举足轻重。2022年，全球渔业和水产养殖业的总产值（首次销售额）估计为4720亿美元，其中水产养殖业的贡献高达3130亿美元，占据了三分之二的份额。
+                </p>
+
+                <h3 class="elite-heading">4.2 中国的水产霸主地位与高价值前沿</h3>
+                
+                <h4 class="noble-heading">全球无可争议的领导者</h4>
+                <p class="noble-text">
+                    在这场全球性的蓝色革命中，中国扮演着绝对核心的领导者角色。2022年，中国的水生动物产量占全球总产量的36%，是全球最大的生产国。放眼整个亚洲，其水产养殖产量更是占据了全球的70%。全球水产养殖业呈现出高度的区域集中性，排名前十的国家（包括中国、印度、印度尼西亚、越南等）合计贡献了近90%的总产量。
+                </p>
+                
+                <h4 class="noble-heading">案例研究：全球三文鱼产业——成熟水产养殖的典范</h4>
+                <p class="noble-text">
+                    尽管中国在产量上独占鳌头，但在价值链成熟度和品牌影响力方面，以大西洋鲑（三文鱼）为代表的养殖产业，为全球水产养殖业树立了典范。该产业的成功经验，对预判中国水产养殖业的未来演进方向具有重要的参考价值。其主要特征包括：
+                </p>
+                
+                <ul class="noble-list">
+                    <li><strong>高度整合与规模化</strong>：全球三文鱼产业由少数几家大型跨国上市公司主导。其中，挪威的Mowi ASA是全球最大的大西洋鲑生产商，2024年产量超过50万吨，占据全球约20%的市场份额。这种高度集中的产业格局有利于技术研发、品牌建设和市场秩序的稳定。</li>
+                    <li><strong>全产业链垂直整合</strong>：像Mowi这样的龙头企业，业务已贯穿整个价值链，包括自主研发和生产饲料、遗传育种、海水养殖、屠宰加工，乃至面向全球市场的销售和品牌营销。全产业链的掌控力，使其能够最大化利润、控制成本，并对食品安全和质量进行端到端管理。</li>
+                    <li><strong>品牌化与价值增值</strong>：领先的三文鱼企业早已超越了单纯的原料供应商角色，它们大力投入下游的消费品开发，通过推出烟熏、预制菜等高附加值产品，并建立强大的全球消费品牌，从而捕获更多价值链利润，并有效平抑上游养殖端的价格波动。</li>
+                    <li><strong>可持续发展（ESG）为核心战略</strong>：在欧美成熟市场，消费者和投资者对产品的环境影响、动物福利和企业社会责任给予了极高关注。因此，可持续发展已成为三文鱼产业的核心竞争力之一。Mowi连续六年被Coller FAIRR蛋白质生产商指数评为全球最具可持续性的蛋白质生产商，这一荣誉被其视为重要的品牌资产和竞争优势。</li>
+                </ul>
+                
+                <div class="authority-card">
+                    <p class="noble-text">
+                        中国水产养殖业的未来发展路径，将不再是单纯的规模扩张，而是向价值链上游和下游的深度延伸，其演进方向与全球三文鱼产业的成熟路径高度相似。目前，中国水产养殖的优势主要集中在草鱼、罗非鱼等量大、价低的淡水品种上。下一阶段的增长引擎，将来自于向高附加值品种的结构性转型、通过品牌化建立消费者信任、以及运用先进技术实现可持续集约化生产。全球水产养殖业的范式已经从大宗商品生产，演变为一个技术密集、品牌驱动的现代食品工业，三文鱼产业的成功正是这一演变的最佳例证。
+                    </p>
+                </div>
+                
+                <div class="overflow-x-auto mb-8">
+                    <table class="imperial-table">
+                        <caption class="professional-text mb-4">
+                            <strong>表4.1：全球主要水产养殖区域对比分析 (2022年数据)</strong>
+                        </caption>
+                        <thead>
+                            <tr>
+                                <th>区域/国家</th>
+                                <th>水产养殖动物产量 (万吨)</th>
+                                <th>产量增长 (5年CAGR)</th>
+                                <th>主要养殖品种</th>
+                                <th>产地价值 (十亿美元)</th>
+                                <th>工业化/整合程度</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>全球总计</strong></td>
+                                <td><strong>9,440</strong></td>
+                                <td><strong>4.2%</strong></td>
+                                <td><strong>鱼类、甲壳类、软体类</strong></td>
+                                <td><strong>295.7</strong></td>
+                                <td><strong>中等</strong></td>
+                            </tr>
+                            <tr>
+                                <td>中国</td>
+                                <td>3,400 (估算)</td>
+                                <td>3.5%</td>
+                                <td>草鱼、罗非鱼、对虾、牡蛎</td>
+                                <td>120.0 (估算)</td>
+                                <td>中等，快速提升中</td>
+                            </tr>
+                            <tr>
+                                <td>印度</td>
+                                <td>1,020</td>
+                                <td>7.0%</td>
+                                <td>鲤科鱼类、对虾</td>
+                                <td>15.0 (估算)</td>
+                                <td>低至中等</td>
+                            </tr>
+                            <tr>
+                                <td>印度尼西亚</td>
+                                <td>700 (估算)</td>
+                                <td>6.5%</td>
+                                <td>对虾、罗非鱼、海藻</td>
+                                <td>12.0 (估算)</td>
+                                <td>低至中等</td>
+                            </tr>
+                            <tr>
+                                <td>越南</td>
+                                <td>500 (估算)</td>
+                                <td>6.8%</td>
+                                <td>巴沙鱼、对虾</td>
+                                <td>10.0 (估算)</td>
+                                <td>中等</td>
+                            </tr>
+                            <tr>
+                                <td>挪威</td>
+                                <td>160</td>
+                                <td>2.5%</td>
+                                <td>大西洋鲑（三文鱼）、鳟鱼</td>
+                                <td>11.0</td>
+                                <td>高</td>
+                            </tr>
+                            <tr>
+                                <td>智利</td>
+                                <td>150</td>
+                                <td>2.0%</td>
+                                <td>大西洋鲑（三文鱼）、贻贝</td>
+                                <td>8.0</td>
+                                <td>高</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="professional-text text-center">
+                        数据来源：联合国粮农组织（FAO）《世界渔业和水产养殖状况》报告及行业数据综合整理。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第五章 -->
+        <section id="ecosystem-analysis" class="imperial-section" data-title="第五章 产业生态系统：关键支撑环节的价值分析">
+            <div class="noble-content">
+                <h2 class="sovereign-heading">第五章 产业生态系统：关键支撑环节的价值分析</h2>
+                
+                <p class="noble-text">
+                    本章将分析构成养殖业生态系统的上游供给和下游服务产业。核心观点是，这些支撑环节的演进与整合，既是核心养殖业现代化的前提条件，也是其规模化发展的必然结果。在这一过程中，具备技术壁垒和网络效应的环节将涌现出独特的投资机会。
+                </p>
+
+                <h3 class="elite-heading">5.1 上游命脉：生产的基础要素</h3>
+                
+                <h4 class="noble-heading">育种与遗传学：产业链的技术制高点</h4>
+                <p class="noble-text">
+                    育种是整个动物蛋白产业链的技术源头，决定了生产效率的上限，包括生长速度、饲料转化率、产肉率和抗病性等核心经济性状。与中国本土相对分散的生猪育种相比，全球商业化育种市场高度集中。例如，在全球种猪市场，英国的Genus公司旗下的PIC品牌占据了约25%的市场份额，在美国等成熟市场更是高达50%。这种技术代差凸显了中国本土育种企业面临的挑战与巨大的发展机遇。突破核心种源"卡脖子"问题，不仅是企业竞争的需求，也已上升至国家粮食安全的战略高度。
+                </p>
+                
+                <h4 class="noble-heading">动物疫苗：高密度养殖的"保险丝"</h4>
+                <div class="golden-glass-card">
+                    <p class="noble-text">
+                        随着养殖规模化和密度的提升，疫病防控的风险和重要性急剧增加，动物疫苗成为保障生产稳定性的关键投入品。中国动物疫苗市场规模在2021年已达到约170亿元人民币，并预计将在2026年增长至超过257亿元。市场格局目前较为分散，但呈现出向头部企业集中的趋势。主要参与者包括跨国巨头如勃林格殿格翰（Boehringer Ingelheim）、硕腾（Zoetis），以及国内领先企业如中牧股份、普莱柯、科前生物等。其中，猪口蹄疫疫苗等强制免疫疫苗构成了市场的基本盘。对于整个行业而言，安全有效的非洲猪瘀疫苗的成功商业化，将是引爆市场潜力的最大单一催化剂。
+                    </p>
+                </div>
+                
+                <h4 class="noble-heading">饲料工业：成本控制的核心环节</h4>
+                <p class="noble-text">
+                    作为养殖成本中占比最高的项目（超过50%），饲料工业是一个成熟但至关重要的环节。其盈利能力与大宗商品（玉米、豆粕）价格紧密相关。近年来，行业的技术创新主要聚焦于精准营养和原料替代，特别是通过推广低蛋白日粮技术，利用工业合成氨基酸替代部分豆粕，以降低对进口大豆的依赖，这既有经济动因，也符合国家粮食安全的战略方向。
+                </p>
+
+                <h3 class="elite-heading">5.2 中游枢纽：屠宰环节的周期博弈</h3>
+                
+                <h4 class="noble-heading">逆周期的盈利模式</h4>
+                <p class="noble-text">
+                    屠宰行业的盈利逻辑与上游养殖环节呈现显著的"逆周期"特征。其核心利润来源是生猪收购价与猪肉产品销售价之间的价差。在生猪价格处于下行周期时（供给过剩），屠宰企业受益于低廉的原材料成本，价差扩大，盈利能力增强。反之，在生猪价格处于上行周期时（供给紧张），养殖户议价能力强，屠宰企业为保证开工率不得不高价收猪，导致利润空间被严重挤压。
+                </p>
+                
+                <h4 class="noble-heading">整合的驱动力</h4>
+                <p class="noble-text">
+                    与养殖业类似，屠宰行业也处于加速整合的进程中。受严格的食品安全监管和环保政策驱动，大量不规范的小型屠宰场被淘汰。规模以上定点屠宰企业的屠宰量占全国总屠宰量的比重，已从2021年的39.45%稳步提升至2024年的48.07%。此外，为防控非洲猪瘀等重大动物疫病，国家出台了限制生猪长距离跨省调运的政策，大力倡导"运肉"替代"运猪"，这进一步强化了在产区布局大型现代化屠宰加工基地的龙头企业的竞争优势。
+                </p>
+
+                <h3 class="elite-heading">5.3 最后一公里：冷链物流的关键赋能</h3>
+                
+                <h4 class="noble-heading">曾经的产业瓶颈</h4>
+                <p class="noble-text">
+                    长期以来，冷链物流基础设施的薄弱是中国食品供应链的一大短板，导致生鲜产品在流通过程中损腐率居高不下，造成巨大浪费。
+                </p>
+                
+                <h4 class="noble-heading">爆发式增长的赛道</h4>
+                <div class="authority-card">
+                    <p class="noble-text">
+                        在国家政策的大力扶持和消费者对高品质生鲜产品需求激增的双重驱动下，中国冷链物流市场正迎来黄金发展期。市场规模从2020年的超过3800亿元，预计将在2026年增长至9371亿元，年复合增长率超过13%。
+                    </p>
+                </div>
+                
+                <h4 class="noble-heading">结构性的需求扩张</h4>
+                <p class="noble-text">
+                    "运猪"向"运肉"的产业政策转变，为冷链物流行业创造了巨大且持久的结构性增量需求。传统的活猪运输被冷藏车运输的分割肉、冷鲜肉所取代，这要求屠宰企业和物流公司大规模投资建设冷库和扩充冷藏车队。这一转变是永久性的，为冷链物流，特别是服务于肉制品运输的细分领域，提供了强劲的长期增长动力。
+                </p>
+                
+                <div class="investment-logic-card">
+                    <p class="noble-text">
+                        养殖端的规模化整合，正在整个产业链上引发一场"向优质供应商集中"的连锁反应，从而推动了上游和下游支撑产业的同步整合。像牧原这样年出栏数千万头生猪的巨型企业，是高度复杂的、专业化的采购方。它们需要的是能够提供高性能遗传物质、质量稳定且供应量巨大的疫苗、以及覆盖全国的专业化物流服务的合作伙伴。它们无法，也不会与那些规模小、技术落后、服务不稳定的供应商合作。这就形成了一个正向循环：养殖巨头的崛起，赋能并加速了其上游供应商（育种、疫苗）和下游服务商（屠宰、冷链）的集中化进程。对于投资者而言，这意味着投资于这些产业链的"赋能者"，可以成为一种风险相对较低、但同样能分享养殖业现代化红利的策略。这些支撑环节的龙头企业，其增长的确定性甚至可能高于周期性波动的养殖企业本身。
+                    </p>
+                </div>
+                
+                <div class="overflow-x-auto mb-8">
+                    <table class="imperial-table">
+                        <caption class="professional-text mb-4">
+                            <strong>表5.1：中国动物疫苗市场竞争格局分析 (2023年)</strong>
+                        </caption>
+                        <thead>
+                            <tr>
+                                <th>公司名称</th>
+                                <th>预计市场份额 (%)</th>
+                                <th>核心产品领域</th>
+                                <th>研发投入占营收比 (%)</th>
+                                <th>上市情况</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>中牧股份</strong></td>
+                                <td>10-12%</td>
+                                <td>猪用、禽用、反刴疫苗，产品线全面</td>
+                                <td>5-7%</td>
+                                <td>A股上市 (600195.SH)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>生物股份</strong></td>
+                                <td>8-10%</td>
+                                <td>口蹄疫疫苗（市场领先），猪用疫苗</td>
+                                <td>10-12%</td>
+                                <td>A股上市 (600201.SH)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>科前生物</strong></td>
+                                <td>7-9%</td>
+                                <td>猪用疫苗（伪狂犬、圆环等市场领先）</td>
+                                <td>12-15%</td>
+                                <td>A股科创板 (688526.SH)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>普莱柯</strong></td>
+                                <td>6-8%</td>
+                                <td>猪用、禽用疫苗，基因工程疫苗技术领先</td>
+                                <td>10-13%</td>
+                                <td>A股上市 (603566.SH)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>瑞普生物</strong></td>
+                                <td>5-7%</td>
+                                <td>禽用疫苗（市场领先），猪用疫苗</td>
+                                <td>8-10%</td>
+                                <td>A股创业板 (300119.SZ)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>勃林格殿格翰</strong></td>
+                                <td>12-15%</td>
+                                <td>猪用疫苗（蓝耳、圆环等全球领先）</td>
+                                <td>N/A (全球)</td>
+                                <td>非上市（跨国）</td>
+                            </tr>
+                            <tr>
+                                <td><strong>硕腾 (Zoetis)</strong></td>
+                                <td>5-8%</td>
+                                <td>猪用、禽用、宠物疫苗，产品组合广泛</td>
+                                <td>N/A (全球)</td>
+                                <td>美股上市 (ZTS)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="professional-text text-center">
+                        数据来源：券商研报综合整理。市场份额为估计值，研发占比为近年平均水平。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第六章 -->
+        <section id="future-trends" class="imperial-section" data-title="第六章 养殖业的未来：关键长期趋势与投资逻辑">
+            <div class="noble-content">
+                <h2 class="sovereign-heading">第六章 养殖业的未来：关键长期趋势与投资逻辑</h2>
+                
+                <p class="noble-text">
+                    本章旨在综合全篇分析，展望未来十年塑造中国动物蛋白产业格局的核心驱动力。我们认为，技术、政策和ESG（环境、社会与治理）这三大力量正在交汇融合，共同构建一个全新的竞争范式。在此范式下，行业的赢家将不再仅仅是规模的胜利者，更是技术、可持续发展和综合管理能力的领先者。
+                </p>
+
+                <h3 class="elite-heading">6.1 技术颠覆：从"经验"到"算法"</h3>
+                
+                <h4 class="noble-heading">智能养殖与人工智能（AI）</h4>
+                <p class="noble-text">
+                    领先的养殖企业正在以前所未有的力度投资于自动化、数字化和智能化。这包括通过物联网（IoT）传感器集群实现猪舍、禽舍环境的"智能环控"，自动调节温度、湿度和通风，以在能耗和动物舒适度之间寻找最优解。牧原股份的智能化平台已接入超过190万套设备，日均采集分析数据超过9亿条。此外，"智能饲喂"系统可根据动物不同生长阶段的需求进行精准营养供给；基于视频和音频的AI监控系统能夕7x24小时监测动物行为，实现对疾病的早期预警和对动物福利的实时评估。这些技术的应用，正将传统上"脏、累、苦"的养殖业，转变为一个数据驱动的精细化制造业，其核心目标是提升生产效率（如料肉比、日增重）和降低人力成本。
+                </p>
+                
+                <h4 class="noble-heading">育种生物技术</h4>
+                <p class="noble-text">
+                    以CRISPR/Cas9为代表的基因编辑技术，为动物育种带来了革命性的前景。与需要多个世代才能筛选、固定优良性状的传统育种技术相比，基因编辑能够在一个世代内，对特定基因进行精确修饰，从而快速培育出具有更强抗病性、更快生长速度或更高瘦肉率等优良性状的品种。这项技术有望极大地缩短育种周期，加速遗传改良进程，从根本上重塑育种行业的竞争格局。
+                </p>
+                
+                <h4 class="noble-heading">终极催化剂：非洲猪瘀疫苗</h4>
+                <div class="golden-glass-card">
+                    <p class="noble-text">
+                        安全、有效、可商业化的非洲猪瘀疫苗，至今仍是全球养猪业翸首以盼的最大技术突破。它的问世将彻底改变行业的风险收益结构。目前，包括国药集团、中牧股份、生物股份在内的多家中国企业和科研机构，正在沿着亚单位疫苗、mRNA疫苗等多种技术路线进行紧张的研发攻关。一旦疫苗成功应用，将极大地降低行业的生物安全成本和不确定性，稳定生猪供给，甚至可能为部分具备管理能力的中小规模养殖场创造回归市场的条件。
+                    </p>
+                </div>
+
+                <h3 class="elite-heading">6.2 政策重塑：作为"强制性"的变革力量</h3>
+                
+                <h4 class="noble-heading">环保政策的"硬约束"</h4>
+                <p class="noble-text">
+                    中国的环境监管已成为推动养殖业整合和现代化的最强有力的外部力量。一系列政策，包括在饮用水源保护区等生态敏感区域划定"禁养区"，强制规模化养殖场配套建设粪污处理设施，以及大力推广"种养结合"的循环农业模式，将畜禽粪污作为有机肥还田利用，都显著增加了养殖业的环保合规成本。这些成本对于管理粗放、资金匈乏的中小散养户而言是难以承受的，从而在客观上起到了加速市场出清的作用。
+                </p>
+                
+                <h4 class="noble-heading">食品安全与"减抗、无抗"</h4>
+                <p class="noble-text">
+                    保障"舌尖上的安全"是政府监管的重中之重。近年来，监管机构正以前所未有的力度推动兽用抗菌药物的减量化使用。具体措施包括：全面禁止在饲料中添加促生长类抗生素，不断更新和加严兽药在动物产品中的最高残留限量标准，并强制推行兽药产品二维码追溯系统，以实现全链条监管。这一趋势，对养殖企业的精细化管理和疫病预防能力提出了更高要求，有利于那些能够通过改善饲养环境、优化营养方案和加强疫苗免疫来替代抗生素使用的规模化、一体化企业。
+                </p>
+
+                <h3 class="elite-heading">6.3 ESG：从合规成本到核心竞争力</h3>
+                
+                <h4 class="noble-heading">环境管理（E）</h4>
+                <p class="noble-text">
+                    领先企业正将环境管理从被动的合规要求，转变为主动的战略管理。牧原股份在其ESG报告中详细披露了在可再生能源（汼气发电、屋顶光伏）、水资源循环利用、以及通过低蛋白日粮技术减少氮排放等方面的具体实践和量化指标。这些举措不仅降低了企业的碳足迹和资源消耗，也日益成为吸引注重可持续投资的国际机构投资者的重要考量因素。
+                </p>
+                
+                <h4 class="noble-heading">社会责任（S）</h4>
+                <p class="noble-text">
+                    动物福利是社会责任议题中的一个新兴领域。尽管在中国的发展尚处初级阶段，但越来越多的证据表明，改善动物福利（如提供更舒适的饲养空间、减少应激等）与提高生产性能和产品品质之间存在正相关关系。这使得动物福利投资从纯粹的成本支出，转变为可能带来经济回报的价值驱动因素。此外，员工健康与安全、带动周边社区发展（如"公司+农户"模式）也是企业社会责任的重要体现。
+                </p>
+                
+                <h4 class="noble-heading">公司治理（G）</h4>
+                <p class="noble-text">
+                    随着行业日益由大型上市公司主导，透明、规范、高效的公司治理结构，对于维护市场信心、保障股东权益和获得合理的资本市场估值至关重要。健全的内部控制、有效的风险管理和高质量的投资者关系管理，已成为头部企业的标准配置。
+                </p>
+
+                <h3 class="elite-heading">6.4 结论与战略展望：识别未来赢家</h3>
+                
+                <h4 class="noble-heading">综合判断</h4>
+                <div class="authority-card">
+                    <p class="noble-text">
+                        中国动物蛋白产业正处在一个历史性的拐点。那个由数千万散养户驱动的、混乱且剧烈波动的时代正在走向终结。未来将被一种新的业态所定义：周期性依然存在，但其波动可能更加平缓而持久；在此之上，是整合、技术和监管三大不可逆转的长期趋势。
+                    </p>
+                </div>
+                
+                <h4 class="noble-heading">未来赢家的画像</h4>
+                <p class="noble-text">
+                    在新的竞争范式下，能够穿越周期、实现长期价值增长的企业，将具备以下五个核心特征：
+                </p>
+                
+                <ul class="noble-list">
+                    <li><strong>规模与成本领导地位</strong>：利用规模经济效应，实现结构性的、全周期领先的单位生产成本，这是最根本的护城河。</li>
+                    <li><strong>卓越的技术实力</strong>：在生物安全体系、核心种源技术和智能化养殖应用方面建立起竞争对手难以复制的优势。</li>
+                    <li><strong>垂直整合与供应链控制</strong>：对从上游投入品到下游加工销售的全价值链进行掌控，以获取更强的议价能力、更高的利润和更稳定的经营。</li>
+                    <li><strong>稳健的资产负债表</strong>：拥有强大的融资能力和健康的财务结构，足以支撑企业在漫长的行业低谷期仍能进行战略性投资，并在周期反转时捕获最大收益。</li>
+                    <li><strong>ESG领导力</strong>：将可持续发展理念深度融入公司战略和日常运营，以此吸引资本、人才和高端消费者的青睐，并有效管理政策和声誉风险。</li>
+                </ul>
+
+                <h4 class="noble-heading">投资策略建议</h4>
+                <div class="investment-logic-card">
+                    <p class="noble-text">
+                        基于以上分析，我们为关注中国动物蛋白产业的投资者提出以下四条核心投资主线：
+                    </p>
+                </div>
+                
+                <ul class="noble-list">
+                    <li><strong>核心资产配置</strong>：长期持有在猪、禽两大主要赛道中，已被证明具备上述"赢家"特质的行业龙头企业。这些企业是产业结构变迁的最大受益者，有望在未来的市场竞争中持续扩大份额和领先优势。</li>
+                    <li><strong>防御性增长配置</strong>：投资于动物疫苗行业的头部公司。该领域受益于养殖规模化带来的需求增长，但其自身的盈利能力与养殖端的商品价格波动关联较弱，呈现出"弱周期、高壁垒、稳增长"的理想投资属性。</li>
+                    <li><strong>"赋能者"主题配置</strong>：关注在产业链中扮演关键"赋能"角色的细分领域龙头。特别是受益于"运肉替运猪"结构性红利的冷链物流企业，其增长逻辑清晰且具备长期确定性。</li>
+                    <li><strong>高风险/高回报的"期权"配置</strong>：对于风险承受能力较高的投资者，可适度关注在基因编辑育种、非洲猪瘀疫苗研发等颠覆性技术领域取得关键进展、具备成为未来"游戏规则改变者"潜力的创新型公司。</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 引用文献部分 -->
+        <section id="references" class="imperial-section" data-title="引用与参考文献">
+            <div class="noble-content">
+                <h2 class="sovereign-heading">引用与参考文献</h2>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+                    <div class="authority-card">
+                        <h3 class="elite-heading mb-3">1. 全球政策文件</h3>
+                        <div class="space-y-3 text-sm">
+                            <div>
+                                <span class="professional-text">[1]</span>
+                                <a href="https://www.oecd.org/en/publications/oecd-fao-agricultural-outlook-2025-2034_601276cd-en/full-report/agricultural-and-food-markets-trends-and-prospects_d3812d71.html" class="reference-link">OECD-FAO Agricultural Outlook 2025-2034</a>
+                            </div>
+                            <div>
+                                <span class="professional-text">[2]</span>
+                                <a href="https://agrospectrumindia.com/2025/07/15/middle-income-nations-take-the-lead-in-global-protein-boom-says-oecd-fao-outlook.html" class="reference-link">Middle-income nations take the lead in global protein boom</a>
+                            </div>
+                            <div>
+                                <span class="professional-text">[3]</span>
+                                <a href="https://www.oecd.org/en/publications/oecd-fao-agricultural-outlook-2024-2033_4c5d2cfb-en.html" class="reference-link">OECD-FAO Agricultural Outlook 2024-2033</a>
+                            </div>
+                            <div>
+                                <span class="professional-text">[4]</span>
+                                <a href="https://www.oecd.org/en/publications/oecd-fao-agricultural-outlook-2025-2034_601276cd-en/full-report/meat_5462e384.html" class="reference-link">OECD-FAO Agricultural Outlook 2025-2034: Meat</a>
+                            </div>
+                            <div>
+                                <span class="professional-text">[5]</span>
+                                <a href="https://www.mdpi.com/2077-0472/13/12/2242" class="reference-link">Adjustment of Meat Consumption Structure under the Dual Goals</a>
+                            </div>
+                            <div>
+                                <span class="professional-text">[6]</span>
+                                <a href="https://www.ii.re.kr/base/board/read?boardManagementNo=25&boardNo=3721&menuLevel=3&menuNo=90" class="reference-link">2021年中国恩格尔系数 29.8%</a>
+                            </div>
+                            <div>
+                                <span class="professional-text">[7]</span>
+                                <a href="https://www.fao.org/4/u5900t/u5900t0a.htm" class="reference-link">Food consumption and nutritional status in China</a>
+                            </div>
+                            <div>
+                                <span class="professional-text">[8]</span>
+                                <a href="https://www.cambridge.org/core/journals/proceedings-of-the-nutrition-society/article/consumption-of-meat-and-dairy-products-in-china-a-review/346E831729B0A5C1E055A13911A31696" class="reference-link">Consumption of meat and dairy products in China: a review</a>
+                            </div>
+                            <div>
+                                <span class="professional-text">[9]</span>
+                                <a href="https://www.researchgate.net/publication/254365743_Income_Growth_and_International_Meat_Consumption" class="reference-link">Income Growth and International Meat Consumption</a>
+                            </div>
+                            <div>
+                                <span class="professional-text">[10]</span>
+                                <a href="https://www.emerald.com/caer/article/7/2/240/67931/Urban-economic-development-changes-in-food" class="reference-link">Urban economic development, changes in food</a>
+                            </div>
+                            <div>
+                                <span class="professional-text">[11]</span>
+                                <a href="https://www.mckinsey.com.cn/%E4%B8%87%E4%BA%BF%E6%9C%BA%E9%81%87%EF%BC%8C%E6%97%A0%E8%82%89%E4%B8%8D%E6%AC%A2%EF%BC%9A%E4%B8%AD%E5%9B%BD%E8%82%89%E9%A3%9F%E6%B6%88%E8%B4%B9%E5%B8%82%E5%9C%BA%E6%8A%A5%E5%91%8A/" class="reference-link">万亿机遇，无肉不欢：中国肉食消费市场报告</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="authority-card">
+                        <h3 class="elite-heading mb-3">2. 中国官方数据</h3>
+                        <div class="space-y-3 text-sm">
+                            <div>
+                                <span class="professional-text">[12]</span>
+                                <a href="https://ers.usda.gov/sites/default/files/_laserfiche/publications/106999/ERR-320.pdf" class="reference-link">China's Meat Consumption: Growth Potential</a>
+                            </div>
+                            <div>
+                                <span class="professional-text">[13]</span>
+                                <a href="https://www.greenqueen.com.hk/china-protein-consumption-supply-plant-based-fao-food-balance-sheets/" class="reference-link">China is Eating More Protein Than the US Now</a>
+                            </div>
+                            <div>
+                                <span class="professional-text">[14]</span>
+                                <a href="https://www.cifco.net/upload/other/file/20241230173553637786.pdf" class="reference-link">农产品生猪 - 中国国际期货</a>
+                            </div>
+                            <div>
+                                <span class="professional-text">[15]</span>
+                                <a href="https://www.thestar.com.my/aseanplus/aseanplus-news/2024/07/20/average-chinese-national-now-eats-more-protein-than-an-american-un-food-agency" class="reference-link">Average Chinese national now eats more protein than an American</a>
+                            </div>
+                            <div>
+                                <span class="professional-text">[16]</span>
+                                <a href="https://www.oecd.org/en/publications/oecd-fao-agricultural-outlook-2023-2032_08801ab7-en.html" class="reference-link">OECD-FAO Agricultural Outlook 2023-2032</a>
+                            </div>
+                            <div>
+                                <span class="professional-text">[17]</span>
+                                <a href="https://zh.wikipedia.org/zh-tw/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E5%86%9C%E4%B8%9A" class="reference-link">中华人民共和国农业 - 维基百科</a>
+                            </div>
+                            <div>
+                                <span class="professional-text">[18]</span>
+                                <a href="https://www.stats.gov.cn/sj/sjjd/202302/t20230202_1896744.html" class="reference-link">方晓丹：居民收入与经济增长基本同步 - 国家统计局</a>
+                            </div>
+                            <div>
+                                <span class="professional-text">[19]</span>
+                                <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9354134/" class="reference-link">Consumption of aquatic products and meats in Chinese residents</a>
+                            </div>
+                            <div>
+                                <span class="professional-text">[20]</span>
+                                <a href="https://pdf.dfcfw.com/pdf/H3_AP202308141594349125_1.pdf" class="reference-link">生猪行业深度报告系列四</a>
+                            </div>
+                            <div>
+                                <span class="professional-text">[21]</span>
+                                <a href="https://www.cabidigitallibrary.org/doi/pdf/10.5555/20230304561" class="reference-link">生猪价格波动成因分析及对策研究</a>
+                            </div>
+                            <div>
+                                <span class="professional-text">[22]</span>
+                                <a href="https://www.moa.gov.cn/ztzl/szcpxx/jdsj/2022/202201/" class="reference-link">数据 - 农业农村部生猪专题</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="authority-card">
+                        <h3 class="elite-heading mb-3">3. 行业研究报告</h3>
+                        <div class="space-y-3 text-sm">
+                            <div>
+                                <span class="professional-text">[23]</span>
+                                <a href="http://www.xinhuanet.com/20240419/a3dd7b891db742a2af4661fc61399d4b/c.html" class="reference-link">农业农村部：全国能繁母猪存栏量3992万头 - 新华网</a>
+                            </div>
+                            <div>
+                                <span class="professional-text">[24]</span>
+                                <a href="https://www.nahs.org.cn/dt/nyncbxx/202403/t20240304_438366.htm" class="reference-link">农业农村部关于印发《生猪产能调控实施方案（2024年修订）》的通知</a>
+                            </div>
+                            <div>
+                                <span class="professional-text">[25]</span>
+                                <a href="https://finance.eastmoney.com/a/202508103480620339.html" class="reference-link">生猪产能偏高，农业农村部：引导调减百万头能繁母猪</a>
+                            </div>
+                            <div>
+                                <span class="professional-text">[26]</span>
+                                <a href="https://pdf.dfcfw.com/pdf/H3_AP202309281600188393_1.pdf" class="reference-link">养殖产业链处估值低位，重视配置时机</a>
+                            </div>
+                            <div>
+                                <span class="professional-text">[27]</span>
+                                <a href="https://pdf.dfcfw.com/pdf/H3_AP202501271642605474_1.pdf" class="reference-link">生猪养殖行业投资框架2025更新版</a>
+                            </div>
+                            <div>
+                                <span class="professional-text">[28]</span>
+                                <a href="https://jg.ndrc.gov.cn:7448/contentcore/resource/download?ID=27420" class="reference-link">我国生猪市场基本情况与调控工作实践</a>
+                            </div>
+                            <div>
+                                <span class="professional-text">[29]</span>
+                                <a href="https://www.investor.org.cn/xxzx/tzzkt/qh/jczs/zgjs_3542/202307/P020230725519441192218.pdf" class="reference-link">Untitled</a>
+                            </div>
+                            <div>
+                                <span class="professional-text">[30]</span>
+                                <a href="https://www.lhratings.com/file/f7dadd34400.pdf" class="reference-link">生猪养殖行业在猪周期运行中的多角度分析</a>
+                            </div>
+                            <div>
+                                <span class="professional-text">[31]</span>
+                                <a href="https://pdf.dfcfw.com/pdf/H3_AP202309121598302329_1.pdf" class="reference-link">穿越周期，稳健前行</a>
+                            </div>
+                            <div>
+                                <span class="professional-text">[32]</span>
+                                <a href="https://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?stockid=603477&id=10726915" class="reference-link">乐山巨星农牧股份有限公司向特定对象发行股票申请文件的审核问询函的回复</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="authority-card">
+                        <h3 class="elite-heading mb-3">4. 国际数据源</h3>
+                        <div class="space-y-3 text-sm">
+                            <div>
+                                <span class="professional-text">[33]</span>
+                                <a href="https://pdf.dfcfw.com/pdf/H3_AP202405171633714042_1.pdf" class="reference-link">生猪养殖行业投资框架2024更新版</a>
+                            </div>
+                            <div>
+                                <span class="professional-text">[34]</span>
+                                <a href="https://www.tjdl.gov.cn/gongkai/zxwj/dlqstj/202307/t20230706_6345470.html" class="reference-link">东丽区生态环境局关于印发畜禽养殖污染防治规划</a>
+                            </div>
+                            <div>
+                                <span class="professional-text">[35]</span>
+                                <a href="https://www.moa.gov.cn/nybgb/2017/dbq/201801/t20180103_6134011.htm" class="reference-link">农业部关于印发《畜禽粪污资源化利用行动方案（2017—2020年）》的通知</a>
+                            </div>
+                            <div>
+                                <span class="professional-text">[36]</span>
+                                <a href="https://wallstreetcn.com/articles/3660045" class="reference-link">牧原的猪都知道：规模无法战胜周期</a>
+                            </div>
+                            <div>
+                                <span class="professional-text">[37]</span>
+                                <a href="https://finance.sina.com.cn/roll/2025-08-02/doc-infiqnpw3871102.shtml" class="reference-link">[行业深度]洞察2025：中国生猪养殖行业竞争格局及市场份额</a>
+                            </div>
+                            <div>
+                                <span class="professional-text">[38]</span>
+                                <a href="https://cohd.cau.edu.cn/module/download/downfile.jsp?classid=0&filename=1604211946068327989.pdf" class="reference-link">交易成本视角下合作社参与"公司+农户"养殖模式的优势分析</a>
+                            </div>
+                            <div>
+                                <span class="professional-text">[39]</span>
+                                <a href="https://www.sinopharm.com/2025-08/04/c_20215.htm" class="reference-link">国内首家非洲猪瘀亚单位疫苗获批临床 - 国药集团</a>
+                            </div>
+                            <div>
+                                <span class="professional-text">[40]</span>
+                                <a href="http://finance.eastmoney.com/a/202507313472686075.html" class="reference-link">国内首家非洲猪瘀亚单位疫苗获批临床 - 东方财富</a>
+                            </div>
+                            <div>
+                                <span class="professional-text">[41]</span>
+                                <a href="https://www.stcn.com/article/detail/819948.html" class="reference-link">中牧股份、生物股份联合中科院单位开展非洲猪瘀疫苗研发</a>
+                            </div>
+                            <div>
+                                <span class="professional-text">[42]</span>
+                                <a href="https://www.moa.gov.cn/ztzl/ymksn/jjrbbd/202407/t20240702_6458170.htm" class="reference-link">猪价上升周期来了吗（经济日报7月2日第6版）</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 免责声明部分 -->
+        <section id="disclaimer" class="imperial-section" data-title="免责声明">
+            <div class="noble-content">
+                <h2 class="sovereign-heading">免责声明</h2>
+                
+                <div class="disclaimer-card">
+                    <div class="professional-text space-y-4">
+                        <p>
+                            本研究报告仅供信息参考之用，不构成投资建议或投资决策的依据。投资者在做出投资决定之前，应该仔细考虑自身的投资目标、风险承受能力和财务状况，并咨询专业的投资顾问。
+                        </p>
+                        <p>
+                            报告中的信息来源于公开的资料和第三方数据，包括但不限于政府统计数据、企业公告、行业研究报告等。尽管我们已尽力确保这些信息的准确性和可靠性，但不能保证其完全正确或不存在遗漏。对于因使用本报告信息而导致的任何损失，我们不承担任何责任。
+                        </p>
+                        <p>
+                            本报告所及的投资对象均存在不同程度的市场风险，包括但不限于：市场价格波动风险、政策风险、流动性风险、信用风险、操作风险等。过往的业绩表现不能保证未来的投资收益。投资者应充分了解相关风险并谨慎决策。
+                        </p>
+                        <p>
+                            动物蛋登养殖行业具有显著的周期性特征，受到多种因素影响，包括但不限于：传染病疫情、原料价格波动、环保政策变化、消费者偏好转变等。投资者在进入该领域前，应对行业的上述特性有清楚的认识和充分的准备。
+                        </p>
+                        <p>
+                            本报告的版权属于原作者所有。未经书面许可，任何机构或个人不得复制、传播或分发本报告的全部或部分内容。对于违反上述声明的任何行为，我们保留追究法律责任的权力。
+                        </p>
+                        <p class="text-center mt-6">
+                            <strong>报告发布时间：2025年8月25日</strong><br>
+                            <em>该报告仅供机构投资者与高净值客户参考</em>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- 垂直进度条 JavaScript -->
+    <script>
+        // 等待 DOM 加载完成
+        document.addEventListener('DOMContentLoaded', function() {
+            // 获取元素
+            const progressFill = document.querySelector('.progress-fill');
+            const progressTooltip = document.getElementById('progressTooltip');
+            const progressContainer = document.querySelector('.progress-container');
+            
+            // 初始化章节数据
+            let sectionsData = [];
+            let currentSection = 'executive-summary';
+            let currentSectionTitle = '报告摘要';
+            
+            // 获取所有章节信息
+            function initializeSections() {
+                const sections = document.querySelectorAll('[data-title]');
+                sectionsData = Array.from(sections).map(section => ({
+                    id: section.id,
+                    title: section.getAttribute('data-title'),
+                    element: section,
+                    offsetTop: section.offsetTop
+                }));
+            }
+            
+            // 更新进度条
+            function updateProgress() {
+                const scrolled = window.pageYOffset;
+                const maxHeight = document.body.scrollHeight - window.innerHeight;
+                const progress = (scrolled / maxHeight) * 100;
+                
+                progressFill.style.height = `${Math.min(Math.max(progress, 0), 100)}%`;
+                
+                // 更新当前章节
+                sectionsData.forEach(section => {
+                    if (scrolled >= section.offsetTop - 300) {
+                        currentSection = section.id;
+                        currentSectionTitle = section.title;
+                    }
+                });
+            }
+            
+            // 显示/隐藏 tooltip
+            function showTooltip() {
+                progressTooltip.textContent = currentSectionTitle;
+                progressTooltip.classList.add('show');
+            }
+            
+            function hideTooltip() {
+                progressTooltip.classList.remove('show');
+            }
+            
+            // 点击跳转功能
+            function handleProgressClick(event) {
+                const rect = progressContainer.querySelector('.progress-bar').getBoundingClientRect();
+                const clickY = event.clientY - rect.top;
+                const progressPercent = clickY / rect.height;
+                const targetScroll = progressPercent * (document.body.scrollHeight - window.innerHeight);
+                
+                window.scrollTo({
+                    top: targetScroll,
+                    behavior: 'smooth'
+                });
+            }
+            
+            // 事件监听器
+            window.addEventListener('scroll', updateProgress);
+            window.addEventListener('resize', () => {
+                initializeSections(); // 重新计算章节位置
+                updateProgress();
+            });
+            
+            if (progressContainer) {
+                progressContainer.addEventListener('mouseenter', showTooltip);
+                progressContainer.addEventListener('mouseleave', hideTooltip);
+                progressContainer.addEventListener('click', handleProgressClick);
+            }
+            
+            // 初始化
+            initializeSections();
+            updateProgress();
+            
+            // 源码样式优化
+            document.querySelectorAll('pre code').forEach((block) => {
+                // 简单的语法高亮处理
+                if (block.textContent) {
+                    block.innerHTML = block.textContent
+                        .replace(/(\/\*[\s\S]*?\*\/|\/\/.*$)/gm, '<span style="color: #6a737d; font-style: italic;">$1</span>')
+                        .replace(/\b(function|const|let|var|if|else|for|while|return)\b/g, '<span style="color: #d73a49; font-weight: bold;">$1</span>')
+                        .replace(/(['"`])([^'"`]*?)\1/g, '<span style="color: #032f62;">$1$2$1</span>');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

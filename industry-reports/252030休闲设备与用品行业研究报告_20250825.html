@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>休闲设备与用品行业研究报告 2025年Q3</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@200;300;400;500;600;700;800;900&family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <style>
+        :root {
+            /* 深邃黑金权力色系 */
+            --obsidian-black: #0A0A0A;
+            --midnight-black: #151515;
+            --shadow-black: #1F1F1F;
+            --charcoal-deep: #2A2A2A;
+            
+            /* 稀缺金色层次 */
+            --sovereign-gold: #B8860B;
+            --imperial-gold: #DAA520;
+            --aureate-whisper: #F4E4BC;
+            --golden-shadow: #8B6914;
+            
+            /* 权力灰度 */
+            --platinum-mist: #E5E5E5;
+            --sterling-silver: #C0C0C0;
+            --graphite-steel: #696969;
+            --charcoal-whisper: #808080;
+            
+            /* 稀缺强调色 */
+            --ruby-accent: #8B0000;
+            --emerald-depth: #006400;
+            --sapphire-authority: #1e3a8a;
+        }
+
+        body {
+            background: linear-gradient(180deg, var(--obsidian-black) 0%, var(--midnight-black) 100%);
+            color: var(--platinum-mist);
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* 帝王级标题 */
+        .imperial-title {
+            font-family: 'Playfair Display', serif;
+            font-weight: 200;
+            letter-spacing: 0.12em;
+            line-height: 1.05;
+            color: var(--aureate-whisper);
+            text-shadow: 0 3px 12px rgba(184, 134, 11, 0.4);
+        }
+
+        /* 君主级副标题 */
+        .imperial-subtitle {
+            font-family: 'Playfair Display', serif;
+            font-weight: 300;
+            letter-spacing: 0.08em;
+            line-height: 1.15;
+            color: var(--imperial-gold);
+            text-shadow: 0 2px 8px rgba(218, 165, 32, 0.3);
+        }
+
+        /* 英文斜体标签 */
+        .imperial-tagline {
+            font-family: 'Inter', sans-serif;
+            font-weight: 200;
+            letter-spacing: 0.06em;
+            line-height: 1.4;
+            color: var(--sterling-silver);
+            font-style: italic;
+        }
+
+        /* 致敬样式 */
+        .imperial-dedication {
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+            letter-spacing: 0.04em;
+            line-height: 1.3;
+            color: var(--imperial-gold);
+        }
+
+        .imperial-dedication-sub {
+            font-family: 'Inter', sans-serif;
+            font-weight: 200;
+            letter-spacing: 0.05em;
+            line-height: 1.3;
+            color: var(--sterling-silver);
+            font-style: italic;
+        }
+
+        /* 权威标题 */
+        .sovereign-heading {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            color: var(--imperial-gold);
+            text-shadow: 0 1px 4px rgba(218, 165, 32, 0.4);
+        }
+
+        /* 贵族正文 */
+        .noble-text {
+            font-weight: 300;
+            letter-spacing: 0.03em;
+            line-height: 2.2;
+            color: var(--platinum-mist);
+        }
+
+        /* 引用文字 */
+        .executive-quote {
+            font-weight: 300;
+            letter-spacing: 0.02em;
+            line-height: 1.8;
+            color: var(--sterling-silver);
+            font-size: 0.95rem;
+            font-style: italic;
+            position: relative;
+            padding: 0 2rem;
+            margin: 2rem 0;
+        }
+
+        .executive-quote::before {
+            content: '"';
+            position: absolute;
+            left: 0;
+            top: -0.5rem;
+            font-size: 3rem;
+            color: var(--sovereign-gold);
+            opacity: 0.3;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .executive-quote::after {
+            content: '"';
+            position: absolute;
+            right: 0;
+            bottom: -0.5rem;
+            font-size: 3rem;
+            color: var(--sovereign-gold);
+            opacity: 0.3;
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* 专属数字 */
+        .exclusive-number {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: var(--sovereign-gold);
+            text-shadow: 0 1px 3px rgba(184, 134, 11, 0.5);
+        }
+
+        /* 君主容器 */
+        .sovereign-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 5rem;
+        }
+
+        /* 帝王区块 */
+        .imperial-section {
+            margin: 12rem 0;
+            position: relative;
+        }
+
+        /* 权威卡片 */
+        .authority-card {
+            background: linear-gradient(145deg, 
+                rgba(21, 21, 21, 0.9) 0%, 
+                rgba(31, 31, 31, 0.8) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.15);
+            border-radius: 2px;
+            padding: 3rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            box-shadow: 
+                0 8px 32px rgba(0, 0, 0, 0.6),
+                inset 0 1px 1px rgba(244, 228, 188, 0.05);
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .authority-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(184, 134, 11, 0.3);
+            box-shadow: 
+                0 16px 48px rgba(0, 0, 0, 0.8),
+                0 0 24px rgba(184, 134, 11, 0.1),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08);
+        }
+
+        .authority-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(90deg, var(--sovereign-gold), transparent);
+            opacity: 0.6;
+        }
+
+        .authority-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(270deg, var(--sovereign-gold), transparent);
+            opacity: 0.6;
+        }
+
+        /* 金色琉璃卡片 */
+        .golden-glass-card {
+            background: 
+                radial-gradient(circle at 30% 30%, rgba(218, 165, 32, 0.12) 0%, transparent 50%),
+                radial-gradient(circle at 70% 70%, rgba(184, 134, 11, 0.08) 0%, transparent 50%),
+                linear-gradient(135deg, 
+                    rgba(244, 228, 188, 0.06) 0%, 
+                    rgba(218, 165, 32, 0.04) 30%,
+                    rgba(184, 134, 11, 0.03) 70%,
+                    rgba(139, 105, 20, 0.02) 100%);
+            border: 1px solid rgba(218, 165, 32, 0.15);
+            border-radius: 4px;
+            padding: 2.5rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            box-shadow: 
+                0 8px 32px rgba(0, 0, 0, 0.6),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08),
+                inset 0 0 30px rgba(218, 165, 32, 0.03);
+            transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .golden-glass-card::before {
+            content: '';
+            position: absolute;
+            inset: -1px;
+            background: linear-gradient(45deg, 
+                rgba(218, 165, 32, 0.2) 0%, 
+                rgba(184, 134, 11, 0.1) 25%,
+                transparent 50%,
+                rgba(244, 228, 188, 0.1) 75%,
+                rgba(218, 165, 32, 0.15) 100%);
+            border-radius: 4px;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.8s ease;
+        }
+
+        .golden-glass-card:hover {
+            transform: translateY(-3px);
+            border-color: rgba(218, 165, 32, 0.3);
+            box-shadow: 
+                0 16px 48px rgba(0, 0, 0, 0.8),
+                0 0 40px rgba(218, 165, 32, 0.1),
+                inset 0 1px 1px rgba(244, 228, 188, 0.12),
+                inset 0 0 40px rgba(218, 165, 32, 0.05);
+        }
+
+        .golden-glass-card:hover::before {
+            opacity: 1;
+        }
+
+        /* 权威表格 */
+        .imperial-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            background: rgba(15, 15, 15, 0.8);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(184, 134, 11, 0.2);
+            border-radius: 2px;
+        }
+
+        .imperial-table th {
+            background: rgba(184, 134, 11, 0.08);
+            padding: 2rem 1.5rem;
+            text-align: left;
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--imperial-gold);
+            border-bottom: 1px solid rgba(184, 134, 11, 0.2);
+        }
+
+        .imperial-table td {
+            padding: 1.8rem 1.5rem;
+            border-bottom: 1px solid rgba(184, 134, 11, 0.05);
+            font-weight: 300;
+        }
+
+        .imperial-table tbody tr:hover {
+            background: rgba(184, 134, 11, 0.03);
+        }
+
+        /* 垂直进度条系统 */
+        .reading-progress {
+            position: fixed;
+            top: 50%;
+            right: 2rem;
+            width: 4px;
+            height: 200px;
+            transform: translateY(-50%);
+            background: linear-gradient(180deg, 
+                rgba(184, 134, 11, 0.2) 0%, 
+                rgba(218, 165, 32, 0.3) 30%,
+                rgba(244, 228, 188, 0.4) 60%,
+                rgba(218, 165, 32, 0.3) 85%,
+                rgba(139, 105, 20, 0.2) 100%);
+            z-index: 1001;
+            box-shadow: 
+                0 0 12px rgba(184, 134, 11, 0.6),
+                2px 0 8px rgba(184, 134, 11, 0.3),
+                inset 1px 0 2px rgba(244, 228, 188, 0.4);
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+        .reading-progress::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(180deg,
+                rgba(244, 228, 188, 0.1) 0%,
+                rgba(218, 165, 32, 0.15) 50%,
+                rgba(244, 228, 188, 0.1) 100%);
+            border-radius: 2px;
+            animation: progressShimmer 3s ease-in-out infinite;
+        }
+
+        .reading-progress-fill {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(180deg,
+                var(--golden-shadow) 0%,
+                var(--sovereign-gold) 50%,
+                var(--imperial-gold) 100%);
+            border-radius: 2px;
+            transition: height 0.1s ease;
+            box-shadow: 
+                inset 0 1px 2px rgba(244, 228, 188, 0.3),
+                0 0 8px rgba(184, 134, 11, 0.4);
+        }
+
+        @keyframes progressShimmer {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.8; }
+        }
+
+        /* 进度标题提示器 */
+        .progress-tooltip {
+            position: fixed;
+            top: 50%;
+            right: 7rem;
+            transform: translateY(-50%);
+            background: linear-gradient(135deg, 
+                rgba(15, 15, 15, 0.95) 0%, 
+                rgba(31, 31, 31, 0.9) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.25);
+            border-radius: 8px;
+            padding: 0.8rem 2rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 0.85rem;
+            font-weight: 300;
+            color: var(--imperial-gold);
+            backdrop-filter: blur(20px);
+            box-shadow: 
+                0 8px 32px rgba(0, 0, 0, 0.7),
+                0 0 20px rgba(184, 134, 11, 0.1),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+            z-index: 1002;
+            white-space: nowrap;
+            letter-spacing: 0.03em;
+        }
+
+        .progress-tooltip.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(-50%) translateX(-8px);
+        }
+
+        .progress-tooltip::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -8px;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-left: 8px solid rgba(184, 134, 11, 0.25);
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+        }
+
+        .progress-tooltip::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -7px;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-left: 7px solid rgba(15, 15, 15, 0.95);
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+        }
+
+        /* 分隔线 */
+        .sovereign-divider {
+            height: 1px;
+            background: linear-gradient(90deg, 
+                transparent 0%, 
+                rgba(184, 134, 11, 0.3) 30%, 
+                rgba(184, 134, 11, 0.6) 50%, 
+                rgba(184, 134, 11, 0.3) 70%, 
+                transparent 100%);
+            margin: 8rem 0;
+            position: relative;
+        }
+
+        .sovereign-divider::before {
+            content: '◆';
+            position: absolute;
+            top: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--sovereign-gold);
+            font-size: 16px;
+            background: var(--obsidian-black);
+            padding: 0 1rem;
+        }
+
+        /* 引用条目 */
+        .citation-item {
+            padding: 1.5rem 2rem;
+            margin: 0.8rem 0;
+            background: linear-gradient(135deg, 
+                rgba(21, 21, 21, 0.8) 0%, 
+                rgba(31, 31, 31, 0.6) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.15);
+            border-radius: 3px;
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .citation-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--sovereign-gold), var(--golden-shadow));
+            opacity: 0.6;
+            transition: opacity 0.3s ease;
+        }
+
+        .citation-item:hover {
+            border-color: rgba(184, 134, 11, 0.4);
+            background: linear-gradient(135deg, 
+                rgba(31, 31, 31, 0.9) 0%, 
+                rgba(42, 42, 42, 0.7) 100%);
+            transform: translateX(6px) translateY(-1px);
+            box-shadow: 
+                0 8px 25px rgba(0, 0, 0, 0.5),
+                0 0 20px rgba(184, 134, 11, 0.08);
+        }
+
+        .citation-item:hover::before {
+            opacity: 1;
+        }
+
+        .citation-item a {
+            color: var(--platinum-mist);
+            text-decoration: none;
+            font-size: 0.85rem;
+            line-height: 1.7;
+            font-weight: 300;
+            transition: color 0.4s ease;
+            display: block;
+            position: relative;
+        }
+
+        .citation-item a::before {
+            content: '';
+            position: absolute;
+            left: -0.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 4px;
+            background: var(--sovereign-gold);
+            border-radius: 50%;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .citation-item:hover a {
+            color: var(--aureate-whisper);
+            padding-left: 1rem;
+        }
+
+        .citation-item:hover a::before {
+            opacity: 0.8;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 1024px) {
+            .sovereign-container {
+                padding: 0 2.5rem;
+            }
+            .imperial-section {
+                margin: 8rem 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .sovereign-container {
+                padding: 0 1.5rem;
+            }
+            .imperial-section {
+                margin: 6rem 0;
+            }
+            .authority-card {
+                padding: 2rem;
+            }
+            .reading-progress {
+                right: 1rem;
+                height: 150px;
+                width: 3px;
+            }
+            .progress-tooltip {
+                right: 5rem;
+                padding: 0.6rem 1.5rem;
+                font-size: 0.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 垂直进度条 -->
+    <div class="reading-progress">
+        <div class="reading-progress-fill"></div>
+    </div>
+    
+    <!-- 进度标题提示器 -->
+    <div class="progress-tooltip" id="progress-tooltip"></div>
+    
+    <!-- 首屏标题 -->
+    <header id="header" class="min-h-screen flex items-center justify-center relative" data-title="休闲设备与用品行业研究报告">
+        <div class="sovereign-container text-center relative z-10">
+            <!-- 主标题区域 -->
+            <div class="mb-16">
+                <h1 class="imperial-title text-5xl md:text-7xl mb-6">
+                    休闲设备与用品行业研究报告
+                </h1>
+                
+                <h2 class="imperial-subtitle text-2xl md:text-4xl mb-12 opacity-90">
+                    2025年Q3
+                </h2>
+            </div>
+            
+            <!-- 英文副标题 -->
+            <div class="mb-12">
+                <div class="imperial-tagline text-sm md:text-base opacity-75 max-w-4xl mx-auto">
+                    China's Green Revolution:<br class="md:hidden">
+                    Investment Framework for Environmental Protection and Energy Conservation Industries
+                </div>
+            </div>
+            
+            <!-- 致敬区域 -->
+            <div class="mb-16">
+                <div class="imperial-dedication text-sm md:text-base">
+                    致：机构投资者与高净值客户
+                </div>
+                <div class="imperial-dedication-sub text-xs md:text-sm opacity-60 mt-2">
+                    For: Institutional Investors and High Net Worth Clients
+                </div>
+            </div>
+            
+            <!-- 发布日期卡片 -->
+            <div class="golden-glass-card inline-block">
+                <div class="text-xs uppercase tracking-[0.2em] opacity-50 mb-4 font-light">
+                    本报告发布于 · Published on
+                </div>
+                <div class="sovereign-heading text-base">
+                    <span id="date-cn" class="exclusive-number">2025年8月</span> 
+                    <span class="mx-4 text-sovereign-gold opacity-40">◆</span> 
+                    <span id="date-en" class="exclusive-number">August 2025</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 背景装饰 -->
+        <div class="absolute inset-0 pointer-events-none opacity-8">
+            <div class="absolute top-20 left-20 w-px h-32 bg-gradient-to-b from-sovereign-gold to-transparent"></div>
+            <div class="absolute bottom-20 right-20 w-px h-32 bg-gradient-to-t from-sovereign-gold to-transparent"></div>
+            <div class="absolute top-1/2 left-1/4 w-24 h-px bg-gradient-to-r from-sovereign-gold to-transparent"></div>
+            <div class="absolute top-1/3 right-1/4 w-24 h-px bg-gradient-to-l from-sovereign-gold to-transparent"></div>
+        </div>
+    </header>
+
+    <!-- 执行摘要 -->
+    <section id="executive-summary" class="imperial-section" data-title="执行摘要">
+        <div class="sovereign-container">
+            <div class="authority-card">
+                <div class="flex items-center mb-8">
+                    <i class="fas fa-chart-line text-2xl text-sovereign-gold mr-4"></i>
+                    <i class="material-icons text-2xl text-imperial-gold mr-4">analytics</i>
+                    <h2 class="sovereign-heading text-3xl">执行摘要</h2>
+                </div>
+                
+                <div class="executive-quote max-w-4xl mx-auto text-center mb-12">
+                    中国的"双碳"目标与"十四五"规划等顶层战略，已启动了环保与节能领域长达数十年的、由政策驱动的超级周期。
+                </div>
+
+                <div class="noble-text mb-8">
+                    <strong class="text-imperial-gold">核心论点：</strong> 中国的"双碳"目标与"十四五"规划等顶层战略，已启动了环保与节能领域长达数十年的、由政策驱动的超级周期。这并非一次周期性机遇，而是世界第二大经济体的结构性转型，为绿色技术与服务创造了非周期性的、由国家强制力保障的巨大需求。
+                </div>
+
+                <div class="noble-text mb-8">
+                    <strong class="text-imperial-gold">核心发现：</strong> 本报告将该产业划分为两大垂直领域：<strong>环境保护（环保）与能源节约（节能）</strong>。在环保领域，<strong>固废处理</strong>子行业因其汇集了快速城市化、政策紧迫性（如"无废城市"倡议）以及清晰且亟待技术升级与整合的价值链，呈现出最具吸引力的中短期投资机遇。在节能领域，由效率提升指令和碳成本上升驱动的<strong>工业与交通节能</strong>，则提供了具备长期、高利润潜力的投资方向。
+                </div>
+
+                <div class="noble-text mb-8">
+                    <strong class="text-imperial-gold">战略展望：</strong> 当前的竞争格局明显有利于那些拥有强大政府关系、成熟技术实力以及能支持项目制模式（PPP、BOT、EPC）融资能力的企业。我们预计，市场将从提供基础合规服务的模式，转向利润率更高的技术赋能型解决方案，例如数字化环境监测、先进环保材料以及"变废为宝"的资源化利用技术。
+                </div>
+
+                <div class="noble-text">
+                    <strong class="text-imperial-gold">投资建议：</strong> 我们建议客户构建对这一长期主题的投资敞口，重点关注在固废处理（特别是垃圾焚烧发电 WTE）和工业节能等高增长子行业中已占据领先地位的上市公司。同时，密切关注生态修复、碳捕集等新兴领域的龙头企业，以捕捉未来增长潜力。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 政策超级周期 -->
+    <section id="policy-super-cycle" class="imperial-section" data-title="政策超级周期——解构中国的绿色指令">
+        <div class="sovereign-container">
+            <div class="authority-card">
+                <div class="flex items-center mb-8">
+                    <i class="fas fa-landmark text-2xl text-sovereign-gold mr-4"></i>
+                    <i class="material-icons text-2xl text-imperial-gold mr-4">gavel</i>
+                    <h2 class="sovereign-heading text-3xl">政策超级周期——解构中国的绿色指令</h2>
+                </div>
+                
+                <div class="executive-quote max-w-4xl mx-auto text-center mb-12">
+                    本章节旨在论证，中国环保与节能产业的增长并非单纯由市场自发驱动，而是由强有力的、长期的国家战略政策所托底。
+                </div>
+
+                <h3 class="sovereign-heading text-2xl mb-6">"双碳"目标：顶层设计的战略必然性</h3>
+                <div class="noble-text mb-8">
+                    2020年9月，中国国家主席习近平在联合国大会上正式宣布，中国将力争于2030年前实现碳达峰，努力争取2060年前实现碳中和。这一"双碳"承诺不仅是中国应对全球气候变化的积极姿态，更被官方定义为推动高质量发展的"内在要求"。这标志着环保与节能已从过去的补充性政策，上升为国家的核心经济与地缘政治战略。
+                </div>
+
+                <div class="noble-text mb-8">
+                    为确保这一宏伟目标的实现，中国构建了"1+N"的政策体系框架。其中，"1"代表顶层设计文件，如《关于完整准确全面贯彻新发展理念做好碳达峰碳中和工作的意见》和《2030年前碳达峰行动方案》；"N"则代表能源、工业、交通、城乡建设等关键领域和重点行业的具体实施方案与配套措施。
+                </div>
+
+                <div class="noble-text mb-8">
+                    这一政策架构的深远意义在于，它将宏观的战略愿景转化为具体、可执行、可考核的部门级行动计划。从投资角度看，"1+N"体系的建立，实质上为环保与节能产业创造了一个可预测的、持续滚动的需求管道。每一个"N"政策（即行业具体方案）的出台和落地执行，都意味着一个特定领域内新一轮资本开支和运营支出的启动。
+                </div>
+
+                <h3 class="sovereign-heading text-2xl mb-6 mt-12">"十四五"规划：近期增长的量化路线图</h3>
+                <div class="noble-text mb-8">
+                    如果说"双碳"目标确立了长期方向，那么"十四五"规划（2021-2025年）则为近期发展提供了具体的、具有法律约束力的量化路线图。
+                </div>
+
+                <div class="noble-text mb-8">
+                    规划明确提出，到2025年，全国单位国内生产总值能源消耗比2020年下降13.5%，同时，化学需氧量、氨氮、氮氧化物、挥发性有机物（VOCs）等主要污染物排放总量也需大幅下降。这些目标被分解到各省市，并与地方政府的政绩考核直接挂钩。历史数据显示，中国政府对此类约束性指标的执行力极强，例如2021年确定的8项生态环境领域约束性指标均顺利完成，实现了"十四五"的良好开局。
+                </div>
+
+                <div class="noble-text">
+                    这种系统性的治理思路，意味着市场需求正从单一设备或服务的采购，转向更为复杂和综合的整体解决方案。这一转变将不可避免地推动行业内的整合与分化。过去依赖单一技术或产品、项目管理能力薄弱的小型企业，将难以在这些大型综合性项目的招投标中胜出。相反，那些具备多元化技术储备、强大项目融资与管理能力、并能提供覆盖全生命周期运营服务的龙头企业，将能够获取更大的市场份额。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 绿色经济图谱 -->
+    <section id="green-economy-map" class="imperial-section" data-title="绘制绿色经济图谱——系统性的行业解构">
+        <div class="sovereign-container">
+            <div class="authority-card">
+                <div class="flex items-center mb-8">
+                    <i class="fas fa-sitemap text-2xl text-sovereign-gold mr-4"></i>
+                    <i class="material-icons text-2xl text-imperial-gold mr-4">account_tree</i>
+                    <h2 class="sovereign-heading text-3xl">绘制绿色经济图谱——系统性的行业解构</h2>
+                </div>
+                
+                <div class="executive-quote max-w-4xl mx-auto text-center mb-12">
+                    为精准定位投资机会，必须对庞杂的环保与节能产业进行系统性的解构。
+                </div>
+
+                <h3 class="sovereign-heading text-2xl mb-6">两大支柱：节能产业与环保产业</h3>
+                <div class="noble-text mb-8">
+                    根据官方统计分类，中国的绿色经济核心可归纳为两大支柱：<strong>节能产业</strong>与<strong>环保产业</strong>。在国家发布的《节能环保清洁产业统计分类》中，"节能环保产业"被进一步细分为四大领域：高效节能产业、先进环保产业、资源循环利用产业和绿色交通。这一分类为我们自上而下地分析行业结构提供了权威框架。
+                </div>
+
+                <h3 class="sovereign-heading text-2xl mb-6">深度剖析：节能产业链与核心商业模式</h3>
+                <div class="noble-text mb-8">
+                    节能产业的核心目标是提高能源利用效率，降低单位产出的能源消耗。其产业链可按应用场景划分为三大板块：
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6 mb-8">
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">工业节能</h4>
+                        <div class="noble-text text-sm">
+                            这是节能产业中规模最大、需求最迫切的领域。政策文件明确将钢铁、有色、建材、石化化工等高耗能行业作为节能改造的重点。
+                        </div>
+                    </div>
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">建筑节能</h4>
+                        <div class="noble-text text-sm">
+                            随着城镇化进程和绿色建筑标准的全面推行，建筑节能市场潜力巨大。主要业务包括为新建建筑提供节能设计与材料。
+                        </div>
+                    </div>
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">交通节能</h4>
+                        <div class="noble-text text-sm">
+                            在"交通强国"战略背景下，交通物流领域的节能减排备受关注。业务涵盖推广新能源交通工具、优化物流运输效率等。
+                        </div>
+                    </div>
+                </div>
+
+                <div class="noble-text mb-8">
+                    在这些领域中，一种关键的商业模式正在成为主导，即<strong>能源服务公司（ESCO）</strong>模式，及其核心合同形式——<strong>能源管理合同（EPC）</strong>。
+                </div>
+
+                <div class="noble-text">
+                    EPC模式的精髓在于，由ESCO为客户提供包括能源审计、方案设计、项目融资、设备采购、工程施工、节能量确认和保证等一整套的节能服务。其核心特征是，ESCO的收入直接与项目实现的节能效益挂钩。换言之，客户的节能改造项目前期无需投入或只需投入少量资金，项目成本由未来的节能收益分期支付。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 环保产业分析 -->
+    <section id="environmental-industry" class="imperial-section" data-title="深度剖析：环保产业链与价值分布">
+        <div class="sovereign-container">
+            <div class="authority-card">
+                <div class="flex items-center mb-8">
+                    <i class="fas fa-recycle text-2xl text-sovereign-gold mr-4"></i>
+                    <i class="material-icons text-2xl text-imperial-gold mr-4">eco</i>
+                    <h2 class="sovereign-heading text-3xl">深度剖析：环保产业链与价值分布</h2>
+                </div>
+                
+                <div class="noble-text mb-8">
+                    环保产业旨在防治污染、修复生态、实现资源循环利用。其产业链条更加多元化，可划分为四大核心板块：
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6 mb-8">
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">
+                            <i class="fas fa-tint mr-2"></i>水环境治理
+                        </h4>
+                        <div class="noble-text text-sm">
+                            包括市政污水处理、工业废水处理、流域水环境综合治理（如城市黑臭水体治理、湖泊生态修复）以及饮用水安全保障等。
+                        </div>
+                    </div>
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">
+                            <i class="fas fa-trash-alt mr-2"></i>固废处理
+                        </h4>
+                        <div class="noble-text text-sm">
+                            覆盖生活垃圾、工业固废、建筑垃圾、危险废物等的收集、转运、处理与处置，以及资源化利用（如垃圾焚烧发电、再生资源回收）的全价值链。
+                        </div>
+                    </div>
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">
+                            <i class="fas fa-smog mr-2"></i>大气污染治理
+                        </h4>
+                        <div class="noble-text text-sm">
+                            主要针对工业烟气（脱硫、脱硝、除尘）和挥发性有机物（VOCs）的治理。
+                        </div>
+                    </div>
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">
+                            <i class="fas fa-seedling mr-2"></i>生态修复
+                        </h4>
+                        <div class="noble-text text-sm">
+                            包括污染土壤修复、矿山生态恢复、湿地与生物多样性保护等。
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="sovereign-heading text-2xl mb-6">环保各子行业横向比较</h3>
+                <div class="authority-card">
+                    <div class="overflow-x-auto">
+                        <table class="imperial-table">
+                            <thead>
+                                <tr>
+                                    <th>子行业</th>
+                                    <th>预计市场规模<br>(人民币 十亿)</th>
+                                    <th>预计年均复合增长率<br>(CAGR, 2025-2030)</th>
+                                    <th>核心政策驱动</th>
+                                    <th>技术成熟度</th>
+                                    <th>竞争激烈程度</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="font-semibold">水环境治理</td>
+                                    <td class="exclusive-number">较大</td>
+                                    <td class="text-green-400 font-bold">稳健 (5-7%)</td>
+                                    <td>《水污染防治行动计划》、流域治理规划</td>
+                                    <td>成熟</td>
+                                    <td class="text-red-400">高</td>
+                                </tr>
+                                <tr>
+                                    <td class="font-semibold">固废处理</td>
+                                    <td class="exclusive-number">巨大</td>
+                                    <td class="text-green-400 font-bold">高 (6.5-7.8%)</td>
+                                    <td>"无废城市"建设、垃圾分类、双碳目标</td>
+                                    <td>快速发展中 (WTE)</td>
+                                    <td class="text-yellow-400">中高</td>
+                                </tr>
+                                <tr>
+                                    <td class="font-semibold">大气治理</td>
+                                    <td class="exclusive-number">中等</td>
+                                    <td class="text-green-400 font-bold">中等 (4-6%)</td>
+                                    <td>《大气污染防治行动计划》、超低排放标准</td>
+                                    <td>成熟 (除尘脱硫脱硝)</td>
+                                    <td class="text-red-400">高</td>
+                                </tr>
+                                <tr>
+                                    <td class="font-semibold">生态修复</td>
+                                    <td class="exclusive-number">快速增长</td>
+                                    <td class="text-green-400 font-bold">较高 (7-9%)</td>
+                                    <td>"山水林田湖草沙"一体化保护和修复</td>
+                                    <td>发展中</td>
+                                    <td class="text-yellow-400">中</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="noble-text mt-8">
+                    <strong class="text-imperial-gold">分析与结论：</strong>
+                    通过上表对比可以清晰地看出，尽管水处理和大气治理市场体量庞大，但已进入相对成熟的阶段，竞争激烈，增长趋于平稳。生态修复作为一个新兴领域，增长潜力巨大，但其商业模式和技术路径仍在探索中，存在一定的不确定性。相比之下，<strong>固废处理</strong>行业展现出最优的投资性价比。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 固废处理赛道 -->
+    <section id="solid-waste-treatment" class="imperial-section" data-title="赛道聚焦——固废处理的"城市矿山"机遇">
+        <div class="sovereign-container">
+            <div class="authority-card">
+                <div class="flex items-center mb-8">
+                    <i class="fas fa-industry text-2xl text-sovereign-gold mr-4"></i>
+                    <i class="material-icons text-2xl text-imperial-gold mr-4">factory</i>
+                    <h2 class="sovereign-heading text-3xl">赛道聚焦——固废处理的"城市矿山"机遇</h2>
+                </div>
+                
+                <div class="executive-quote max-w-4xl mx-auto text-center mb-12">
+                    该行业正从传统的"邻避"产业，转变为兼具环保、资源、能源多重属性的"城市矿山"产业，其价值正在被重估。
+                </div>
+
+                <h3 class="sovereign-heading text-2xl mb-6">市场动态：城市化与政策驱动的双引擎</h3>
+                <div class="noble-text mb-8">
+                    中国固废处理市场的增长动力来源清晰且强劲。首先是<strong>城市化</strong>这一长期且不可逆转的宏观趋势。截至2023年，中国的城镇化率已达到66.6%，庞大的城市人口每日产生巨量的生活垃圾。根据数据，2022年中国城市生活垃圾产生量超过2.45亿吨，工业固废更是高达13.8亿吨。
+                </div>
+
+                <div class="noble-text mb-8">
+                    其次是<strong>政策的强力催化</strong>。近年来，中国政府以前所未有的力度推动固废管理体系的变革。从2019年开始在全国重点城市强制推行垃圾分类，到"十四五"规划中明确提出建设"无废城市"，再到将垃圾焚烧发电作为实现"双碳"目标、减少化石能源依赖的重要路径，一系列政策组合拳为行业发展注入了强大动能。
+                </div>
+
+                <div class="noble-text mb-8">
+                    综合来看，固废处理行业的需求增长由"量"（城市化带来的垃圾总量增加）和"质"（政策驱动的处理标准提升和资源化率要求）共同驱动，形成了戴维斯双击的有利局面。市场规模预计将从2024年的约770亿美元增长至2032年的超过1220亿美元，年均复合增长率（CAGR）稳定在6.5%左右。
+                </div>
+
+                <h3 class="sovereign-heading text-2xl mb-6">价值链详解：利润向下游迁移</h3>
+                <div class="noble-text mb-8">
+                    固废处理的价值链主要包括上、中、下游三个环节：
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6 mb-8">
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">
+                            <i class="fas fa-cogs mr-2"></i>上游：装备制造
+                        </h4>
+                        <div class="noble-text text-sm">
+                            主要包括环卫车辆、垃圾转运设备、分选设备、焚烧炉、烟气净化系统等专用装备的生产。常规装备的技术趋于成熟，市场竞争激烈。
+                        </div>
+                    </div>
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">
+                            <i class="fas fa-truck mr-2"></i>中游：环卫与处理服务
+                        </h4>
+                        <div class="noble-text text-sm">
+                            这是产业链的核心，主要由项目运营企业构成，业务模式通常为与地方政府签订长达20-30年的特许经营协议，具有公用事业属性。
+                        </div>
+                    </div>
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">
+                            <i class="fas fa-bolt mr-2"></i>下游：资源化利用
+                        </h4>
+                        <div class="noble-text text-sm">
+                            这是价值链中附加值最高、增长潜力最大的环节。主要包括垃圾焚烧发电（WTE）和再生资源回收两种模式。
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="sovereign-heading text-2xl mb-6">竞争格局：国资主导与民企创新并存</h3>
+                <div class="noble-text mb-8">
+                    中国的固废处理市场呈现出多元化的竞争格局，主要参与者可分为三类：
+                </div>
+
+                <div class="authority-card mt-8">
+                    <div class="overflow-x-auto">
+                        <table class="imperial-table">
+                            <thead>
+                                <tr>
+                                    <th>公司名称</th>
+                                    <th>所有制</th>
+                                    <th>市值 (美元 十亿)</th>
+                                    <th>主营业务重心</th>
+                                    <th>核心竞争优势</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="font-semibold">中国光大环境</td>
+                                    <td>央企背景</td>
+                                    <td class="exclusive-number">约 3.39</td>
+                                    <td>垃圾焚烧发电 (WTE)、水务</td>
+                                    <td>强大的融资能力、政府关系、项目获取与运营规模</td>
+                                </tr>
+                                <tr>
+                                    <td class="font-semibold">北京控股环境</td>
+                                    <td>地方国企</td>
+                                    <td class="text-gray-400">N/A</td>
+                                    <td>固废处理、水务、环卫</td>
+                                    <td>依托母公司资源，区域性项目优势</td>
+                                </tr>
+                                <tr>
+                                    <td class="font-semibold">威明环保</td>
+                                    <td>民营</td>
+                                    <td class="exclusive-number">约 4.50</td>
+                                    <td>垃圾焚烧发电 (WTE)</td>
+                                    <td>技术研发、精细化运营效率</td>
+                                </tr>
+                                <tr>
+                                    <td class="font-semibold">中国天楹</td>
+                                    <td>民营</td>
+                                    <td class="exclusive-number">约 1.45</td>
+                                    <td>环卫一体化、WTE、装备制造</td>
+                                    <td>全产业链布局、国际化并购整合能力</td>
+                                </tr>
+                                <tr>
+                                    <td class="font-semibold">格林美</td>
+                                    <td>民营</td>
+                                    <td class="exclusive-number">约 4.76</td>
+                                    <td>电子废弃物、动力电池回收</td>
+                                    <td>"城市矿山"资源回收技术壁垒、循环产业链闭环</td>
+                                </tr>
+                                <tr>
+                                    <td class="font-semibold">威立雅</td>
+                                    <td>外资</td>
+                                    <td class="exclusive-number">约 25.19</td>
+                                    <td>综合环境服务 (水、固废、能源)</td>
+                                    <td>全球技术领先、危废处理经验、品牌优势</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 投资论点与展望 -->
+    <section id="investment-thesis" class="imperial-section" data-title="投资论点与战略展望">
+        <div class="sovereign-container">
+            <div class="authority-card">
+                <div class="flex items-center mb-8">
+                    <i class="fas fa-chart-pie text-2xl text-sovereign-gold mr-4"></i>
+                    <i class="material-icons text-2xl text-imperial-gold mr-4">trending_up</i>
+                    <h2 class="sovereign-heading text-3xl">投资论点与战略展望</h2>
+                </div>
+                
+                <div class="executive-quote max-w-4xl mx-auto text-center mb-12">
+                    本报告的分析旨在将宏观政策、产业结构与微观企业动态相结合，为投资者构建一个清晰、可执行的投资决策框架。
+                </div>
+
+                <h3 class="sovereign-heading text-2xl mb-6">识别结构性赢家：我们的投资标准</h3>
+                <div class="noble-text mb-8">
+                    基于以上分析，我们提出筛选本领域结构性赢家的四大核心标准：
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6 mb-8">
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">
+                            <i class="fas fa-handshake mr-2"></i>政策高度契合与政府资源获取能力
+                        </h4>
+                        <div class="noble-text text-sm">
+                            企业的主营业务必须精准契合"十四五"规划和"双碳"目标等国家战略的重点方向。同时，必须具备强大的项目获取能力，尤其是在PPP/BOT模式下赢得政府特许经营合同的成功记录。
+                        </div>
+                    </div>
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">
+                            <i class="fas fa-atom mr-2"></i>技术领先与差异化
+                        </h4>
+                        <div class="noble-text text-sm">
+                            在垃圾焚烧发电效率、烟气处理、资源回收率等关键技术指标上具备明显优势，或在特定高增长细分领域拥有专利技术壁垒。
+                        </div>
+                    </div>
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">
+                            <i class="fas fa-link mr-2"></i>一体化商业模式
+                        </h4>
+                        <div class="noble-text text-sm">
+                            业务覆盖产业链的关键环节，特别是能够在中游运营和下游资源化利用环节实现协同效应，最大化"城市矿山"的价值。
+                        </div>
+                    </div>
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">
+                            <i class="fas fa-piggy-bank mr-2"></i>稳健的财务状况与融资能力
+                        </h4>
+                        <div class="noble-text text-sm">
+                            拥有强大的资产负债表和多元化的融资渠道，能够以较低成本获取长期资本，支撑资本密集型的项目扩张。
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="sovereign-heading text-2xl mb-6">下一个前沿：新兴机遇展望</h3>
+                <div class="noble-text mb-8">
+                    在核心赛道之外，若干新兴领域正孕育着未来的增长机会：
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6 mb-8">
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">
+                            <i class="fas fa-cloud-upload-alt mr-2"></i>碳捕集、利用与封存（CCUS）
+                        </h4>
+                        <div class="noble-text text-sm">
+                            随着中国脱碳进程的深化，CCUS将成为钢铁、水泥等难减排行业实现碳中和的关键技术。目前尚处起步阶段，但远期市场空间极为广阔。
+                        </div>
+                    </div>
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">
+                            <i class="fas fa-hydrogen mr-2"></i>氢能产业协同
+                        </h4>
+                        <div class="noble-text text-sm">
+                            氢能经济的发展将催生新的环保需求，例如电解水制氢所需的高纯度水处理，以及工业副产氢的提纯与利用。
+                        </div>
+                    </div>
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">
+                            <i class="fas fa-robot mr-2"></i>数字化环境服务
+                        </h4>
+                        <div class="noble-text text-sm">
+                            运用人工智能、物联网（IoT）和大数据技术，对污染源进行实时监测、对环保设施进行预测性维护，代表了一个高利润、轻资产的全新增长方向。
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="sovereign-heading text-2xl mb-6">投资组合配置建议</h3>
+                <div class="noble-text">
+                    综合以上分析，我们为关注中国绿色革命主题的投资者提出以下配置建议：
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6 mt-8">
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">
+                            <i class="fas fa-crown mr-2"></i>核心持仓
+                        </h4>
+                        <div class="noble-text text-sm">
+                            在固废处理（特别是垃圾焚烧发电）和工业节能（ESCO模式）这两个核心赛道中，选择具有一体化商业模式、强大项目获取能力和稳健财务状况的行业龙头。
+                        </div>
+                    </div>
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">
+                            <i class="fas fa-rocket mr-2"></i>增长配置
+                        </h4>
+                        <div class="noble-text text-sm">
+                            将一部分资金配置于技术壁垒高、成长性更强的细分领域，如先进水处理膜材料、污染土壤修复等领域的专业化龙头企业。
+                        </div>
+                    </div>
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">
+                            <i class="fas fa-binoculars mr-2"></i>观察名单
+                        </h4>
+                        <div class="noble-text text-sm">
+                            将CCUS和数字化环境服务领域的早期领先企业纳入长期观察名单，密切跟踪相关政策进展和技术商业化突破。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 引用文献 -->
+    <section id="references" class="imperial-section bg-gradient-to-b from-transparent to-black bg-opacity-30" data-title="引用文献">
+        <div class="sovereign-container">
+            <div class="text-center mb-12">
+                <div class="flex items-center justify-center mb-4">
+                    <i class="fas fa-book-open text-2xl text-sovereign-gold mr-4"></i>
+                    <i class="material-icons text-2xl text-imperial-gold mr-4">library_books</i>
+                </div>
+                <h2 class="sovereign-heading text-3xl">引用文献</h2>
+            </div>
+            
+            <!-- 固定4列布局网格 -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl mx-auto">
+                <div class="citation-item">
+                    <a href="http://www.prcee.org/yjcg/yjbg/202403/W020240313623895148361.pdf" target="_blank">
+                        1. China's Policies and Actions on Carbon Peaking and Carbon Neutrality
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.efchina.org/Attachments/Report/report-lceg-20221104/Synthesis-Report-2022-Electrification-in-Chinas-Carbon-Neutrality-Pathway.pdf" target="_blank">
+                        2. ELECTRIFICATION IN CHINA'S CARBON NEUTRALITY PATHWAYS
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://library.fes.de/pdf-files/bueros/china/20324.pdf" target="_blank">
+                        3. Pathways Towards a Just Transition to Carbon Neutrality in China
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.gov.cn/zhengce/content/2022-01/24/content_5670202.htm" target="_blank">
+                        4. 国务院关于印发"十四五"节能减排综合工作方案的通知
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.ndrc.gov.cn/fggz/hjyzy/jnhnx/202201/t20220127_1313554.html" target="_blank">
+                        5. "十四五"节能减排综合工作方案》专家解读文章之一
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.ndrc.gov.cn/fggz/hjyzy/jnhnx/202201/t20220127_1313522.html" target="_blank">
+                        6. 国务院印发《"十四五"节能减排综合工作方案》
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://fzggw.zj.gov.cn/attach/0/0162bb49c56742edb8ff37cbe7fbfbe7.docx" target="_blank">
+                        7. 关于《浙江省"十四五"节能减排综合
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.gov.cn/xinwen/2022-02/24/content_5675312.htm" target="_blank">
+                        8. "十四五"生态环境保护开局良好
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.ndrc.gov.cn/fggz/fzzlgh/gjfzgh/202112/t20211225_1309714.html" target="_blank">
+                        9. "十四五"规划《纲要》解读文章之26|持续改善环境质量
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://tjj.sh.gov.cn/cmsres/c5/c5c59580b59a4e1fbf2fad850bdc170d/e0fd915714ec6b7815ed3f7600143912.pdf" target="_blank">
+                        10. 节能环保清洁产业统计分类（2021）
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://zjw.beijing.gov.cn/bjjs/xxgk/xwfb/543357260/index.shtml" target="_blank">
+                        11. 建筑节能，从能效分级开始
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.mot.gov.cn/jiaotongyaowen/202409/t20240912_4152119.html" target="_blank">
+                        12. 深入学习贯彻习近平总书记关于交通强国的重要论述
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="http://www.qstheory.cn/dukan/qs/2020-02/01/c_1125497430.htm" target="_blank">
+                        13. 加快建设交通强国 - 求是
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.gov.cn/xinwen/2021-02/24/content_5588654.htm" target="_blank">
+                        14. 中共中央国务院印发国家综合立体交通网规划纲要
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.efchina.org/Attachments/Report/report-efchina-20070630-zh/中国工业节能管理体系改革和创新研究报告.pdf" target="_blank">
+                        15. 中国工业节能管理体系改革和创新研究报告
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://de.andersen.com/fileadmin/user_upload/Andersen_insight_-_European_Energy_Industry_Group_-_EPC_Contracts_-_07.2025.pdf" target="_blank">
+                        16. Energy Performance Contracts
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://betterbuildingssolutioncenter.energy.gov/financing-navigator/option/espc-financing" target="_blank">
+                        17. Energy Savings Performance Contract | Better Buildings Initiative
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="http://www.news.cn/finance/20250812/d4a0d3b8be4e475fb3003bb8514ddcb0/c.html" target="_blank">
+                        18. "十四五"环保产业：政策引领下的成就与经验总结
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.h2o-china.com/news/313200.html" target="_blank">
+                        19. 曲久辉：水环境治理面临哪些挑战
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.bewg.net/ywfz/shjzhzl/" target="_blank">
+                        20. 水环境综合治理- 北控水务集团官网
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://pdf.dfcfw.com/pdf/H3_AP202308311597010818_1.pdf" target="_blank">
+                        21. 固体废物处理头豹词条报告系列
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.hanspub.org/journal/paperinformation?paperid=32486" target="_blank">
+                        22. 我国城市固体废弃物现状及处理技术研究进展
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.21jingji.com/article/20240428/herald/d01d7a899e08927a865f97acb013fa4d.html" target="_blank">
+                        23. 2024年中国固废处理行业研究报告
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://energyandcleanair.org/publication/chinas-air-pollution-shifts-west-industrial-relocation-outpaces-clean-energy-transition/" target="_blank">
+                        24. China's air pollution shifts west
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://9542865.s21i.faiusr.com/61/ABUIABA9GAAg5qChlQYoxvX6wwY.pdf" target="_blank">
+                        25. 《国土空间生态保护修复工程验收规范》
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://cdn.ymaws.com/www.ser.org/resource/resmgr/custompages/publications/ser_standards/standard_pdfs/international_standards__chi.pdf" target="_blank">
+                        26. INTERNATIONAL PRINCIPLES AND STANDARDS
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://most.gov.cn/tztg/201801/W020180102341906712501.pdf" target="_blank">
+                        27. 土壤污染防治先进技术装备目录
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://sthjj.wenzhou.gov.cn/art/2020/3/5/art_1317648_42097500.html" target="_blank">
+                        28. 土壤环保小百科（7）｜土壤修复的方法有哪些？
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.verifiedmarketresearch.com/product/china-waste-management-market/" target="_blank">
+                        29. China Waste Management Market Size, Trends, Scope & Forecast
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.nextmsc.com/report/china-waste-management-market" target="_blank">
+                        30. China Waste Management Market Analysis – 2030
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.grandviewresearch.com/horizon/outlook/environmental-remediation-market/china" target="_blank">
+                        31. China Environmental Remediation Market Size & Outlook, 2030
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://companiesmarketcap.com/waste-recycling/largest-waste-and-recycling-companies-by-market-cap/" target="_blank">
+                        32. Largest waste and recycling companies by market cap
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.mordorintelligence.com/industry-reports/china-waste-management-market/companies" target="_blank">
+                        33. China Waste Management Company List
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://bullfincher.io/ranking/largest-waste-disposal-companies-in-china-by-market-cap" target="_blank">
+                        34. Largest Waste Disposal Companies in China by Market Cap
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.mdpi.com/2071-1050/14/13/8205" target="_blank">
+                        35. Risk Analysis of Public–Private Partnership Waste-to-Energy
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://indiancementreview.com/2020/01/07/boom-boot-boo-epc-ppp-lstk/" target="_blank">
+                        36. BOOM, BOOT, BOO, EPC, PPP, LSTK...
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        // 精美垂直进度条系统（支持悬停显示标题 + 点击跳转）
+        const progressBar = document.querySelector('.reading-progress');
+        const progressFill = document.querySelector('.reading-progress-fill');
+        const progressTooltip = document.getElementById('progress-tooltip');
+        const sections = document.querySelectorAll('section[id], header[id]');
+
+        let currentSectionTitle = '';
+        let sectionsData = [];
+
+        // 初始化章节数据
+        function initSections() {
+            sectionsData = Array.from(sections).map(section => ({
+                id: section.getAttribute('id'),
+                title: section.getAttribute('data-title') || section.querySelector('h1, h2')?.textContent || '未知章节',
+                offsetTop: section.offsetTop,
+                offsetHeight: section.offsetHeight
+            }));
+        }
+
+        function updateProgress() {
+            const scrolled = window.pageYOffset;
+            const maxHeight = document.body.scrollHeight - window.innerHeight;
+            const progress = (scrolled / maxHeight) * 100;
+            
+            // 更新垂直进度条填充高度
+            progressFill.style.height = `${progress}%`;
+            
+            // 获取当前章节
+            let currentSection = '';
+            sectionsData.forEach(section => {
+                if (scrolled >= section.offsetTop - 300) {
+                    currentSection = section.id;
+                    currentSectionTitle = section.title;
+                }
+            });
+        }
+
+        // 点击进度条跳转到对应位置
+        progressBar.addEventListener('click', (e) => {
+            const rect = progressBar.getBoundingClientRect();
+            const clickY = e.clientY - rect.top;
+            const progressHeight = rect.height;
+            const clickPercent = clickY / progressHeight;
+            
+            const maxHeight = document.body.scrollHeight - window.innerHeight;
+            const targetScroll = maxHeight * clickPercent;
+            
+            window.scrollTo({
+                top: targetScroll,
+                behavior: 'smooth'
+            });
+        });
+
+        // 鼠标悬停显示当前章节标题
+        progressBar.addEventListener('mouseenter', () => {
+            if (currentSectionTitle) {
+                progressTooltip.textContent = currentSectionTitle;
+                progressTooltip.classList.add('show');
+            }
+        });
+
+        progressBar.addEventListener('mouseleave', () => {
+            progressTooltip.classList.remove('show');
+        });
+
+        // 提示框悬停保持显示
+        progressTooltip.addEventListener('mouseenter', () => {
+            progressTooltip.classList.add('show');
+        });
+
+        progressTooltip.addEventListener('mouseleave', () => {
+            progressTooltip.classList.remove('show');
+        });
+
+        // 窗口大小改变时重新计算章节位置
+        window.addEventListener('resize', () => {
+            setTimeout(initSections, 100);
+        });
+
+        window.addEventListener('scroll', updateProgress);
+
+        // 页面加载完成后初始化
+        window.addEventListener('load', () => {
+            initSections();
+            updateProgress();
+        });
+    </script>
+</body>
+</html>

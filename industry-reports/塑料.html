@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全球塑料产业的结构、周期与未来 | 深度行业分析报告 | 2025年7月3日</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.0/dist/echarts.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+    
+    <style>
+        :root {
+            --bg-primary: #0a0a0a;
+            --text-gold: #b8860b;
+            --text-bright-gold: #daa520;
+            --text-amber: #ffbf00;
+            --bg-card: #1a1a1a;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-gold);
+            line-height: 1.8;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            color: var(--text-bright-gold);
+        }
+        
+        .content-section {
+            background: linear-gradient(135deg, rgba(26, 26, 26, 0.9) 0%, rgba(16, 16, 16, 0.95) 100%);
+            backdrop-filter: blur(10px);
+        }
+        
+        .highlight-number {
+            color: var(--text-amber);
+            font-weight: 600;
+            text-shadow: 0 0 10px rgba(255, 191, 0, 0.3);
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        
+        .chart-container {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+    </style>
+</head>
+
+<body class="overflow-x-hidden">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-md border-b border-amber-600/20">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <i class="fas fa-recycle text-amber-400 text-2xl"></i>
+                    <h1 class="text-xl font-bold text-amber-400">Plastic Industry Analysis</h1>
+                </div>
+                <div class="hidden md:flex items-center space-x-6">
+                    <nav class="flex space-x-6">
+                        <a href="#market-overview" class="text-amber-300 hover:text-amber-400 transition-colors">Market Overview</a>
+                        <a href="#value-chain" class="text-amber-300 hover:text-amber-400 transition-colors">Value Chain</a>
+                        <a href="#applications" class="text-amber-300 hover:text-amber-400 transition-colors">Applications</a>
+                        <a href="#sustainability" class="text-amber-300 hover:text-amber-400 transition-colors">Sustainability</a>
+                    </nav>
+                </div>
+                <div class="text-amber-400 text-sm">
+                    <i class="fas fa-calendar-alt mr-2"></i>
+                    July 3, 2025
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="min-h-screen flex items-center justify-center relative">
+        <div class="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-black"></div>
+        <div class="relative z-10 text-center max-w-6xl mx-auto px-6">
+            <div class="fade-in mb-8">
+                <div class="inline-flex items-center px-6 py-3 bg-amber-600/20 rounded-full border border-amber-600/30 mb-6">
+                    <i class="fas fa-chart-line text-amber-400 mr-3"></i>
+                    <span class="text-amber-300 text-sm font-medium">Industry Research Report</span>
+                </div>
+            </div>
+            
+            <h1 class="text-6xl md:text-7xl font-bold mb-8 fade-in">
+                <span class="bg-gradient-to-r from-amber-400 via-yellow-500 to-amber-600 bg-clip-text text-transparent">
+                    全球塑料产业
+                </span>
+            </h1>
+            
+            <h2 class="text-2xl md:text-4xl text-amber-300 mb-12 fade-in font-light">
+                结构、周期与未来
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="fade-in content-section p-6 rounded-lg border border-amber-600/20">
+                    <div class="text-3xl font-bold text-amber-400 mb-2">6000亿+</div>
+                    <div class="text-amber-300">美元全球市场规模（2024）</div>
+                </div>
+                <div class="fade-in content-section p-6 rounded-lg border border-amber-600/20">
+                    <div class="text-3xl font-bold text-amber-400 mb-2">3-5%</div>
+                    <div class="text-amber-300">预期年均复合增长率</div>
+                </div>
+                <div class="fade-in content-section p-6 rounded-lg border border-amber-600/20">
+                    <div class="text-3xl font-bold text-amber-400 mb-2">35-45%</div>
+                    <div class="text-amber-300">包装行业需求占比</div>
+                </div>
+            </div>
+            
+            <div class="fade-in">
+                <a href="#market-overview" class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-amber-600 to-yellow-600 text-black font-semibold rounded-lg hover:from-amber-500 hover:to-yellow-500 transition-all duration-300 transform hover:scale-105">
+                    <span>开始阅读分析</span>
+                    <i class="fas fa-arrow-down ml-3"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="market-overview" class="py-20 content-section">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16 fade-in">
+                    <h2 class="text-4xl font-bold text-amber-400 mb-6">全球塑料产业宏观格局</h2>
+                    <div class="h-1 w-24 bg-gradient-to-r from-amber-500 to-yellow-500 mx-auto"></div>
+                </div>
+                
+                <div class="space-y-8 text-lg leading-relaxed">
+                    <div class="fade-in">
+                        <p class="mb-6">
+                            本报告旨在为机构投资者及高净值客户提供一份关于全球塑料产业的全面、深入、系统的分析。报告的核心论点是：全球塑料产业正处在一个结构性的拐点，其未来发展将由两大核心力量共同塑造——一是原料端经济学的根本性分化，二是可持续发展范式的全面兴起。
+                        </p>
+                    </div>
+                    
+                    <div class="chart-container p-8 rounded-xl">
+                        <h3 class="text-2xl font-semibold text-amber-400 mb-6">全球塑料市场规模与增长预测</h3>
+                        <div id="marketSizeChart" style="width: 100%; height: 400px;"></div>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-8 my-12">
+                        <div class="fade-in content-section p-6 rounded-lg border border-amber-600/20">
+                            <h3 class="text-xl font-semibold text-amber-400 mb-4">
+                                <i class="fas fa-chart-bar mr-3"></i>市场规模
+                            </h3>
+                            <p class="mb-4">全球塑料市场规模在2024年已超过 <span class="highlight-number">6000亿美元</span>，并预计在未来十年内以3%-5%的复合年增长率持续增长。</p>
+                            <div class="space-y-2 text-sm text-amber-200">
+                                <div class="flex justify-between">
+                                    <span>Fortune Business Insights:</span>
+                                    <span class="highlight-number">5,244.8亿美元</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>Straits Research:</span>
+                                    <span class="highlight-number">6,640.8亿美元</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="fade-in content-section p-6 rounded-lg border border-amber-600/20">
+                            <h3 class="text-xl font-semibold text-amber-400 mb-4">
+                                <i class="fas fa-globe-asia mr-3"></i>地区分布
+                            </h3>
+                            <p class="mb-4">亚太地区是全球最大的塑料市场，占据超过 <span class="highlight-number">52%</span> 的市场份额，其中中国是核心引擎。</p>
+                            <div class="space-y-2 text-sm text-amber-200">
+                                <div class="flex justify-between">
+                                    <span>亚太地区:</span>
+                                    <span class="highlight-number">52%+</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>北美:</span>
+                                    <span class="highlight-number">21%</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>欧洲:</span>
+                                    <span class="highlight-number">26%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="value-chain" class="py-20 bg-gray-900/50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16 fade-in">
+                    <h2 class="text-4xl font-bold text-amber-400 mb-6">塑料产业链结构性分析</h2>
+                    <div class="h-1 w-24 bg-gradient-to-r from-amber-500 to-yellow-500 mx-auto"></div>
+                </div>
+                
+                <div class="space-y-12">
+                    <div class="fade-in">
+                        <h3 class="text-2xl font-semibold text-amber-400 mb-6">价值链全景：从原料到终端</h3>
+                        <div class="content-section p-8 rounded-lg border border-amber-600/20">
+                            <div class="grid md:grid-cols-3 gap-8">
+                                <div class="text-center">
+                                    <div class="bg-amber-600/20 p-6 rounded-lg mb-4">
+                                        <i class="fas fa-oil-can text-amber-400 text-3xl mb-4"></i>
+                                        <h4 class="text-lg font-semibold text-amber-400">上游：原料</h4>
+                                    </div>
+                                    <ul class="text-sm text-amber-200 space-y-1">
+                                        <li>原油 → 石脑油</li>
+                                        <li>天然气 → 乙烷</li>
+                                        <li>基础单体生产</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="text-center">
+                                    <div class="bg-amber-600/20 p-6 rounded-lg mb-4">
+                                        <i class="fas fa-industry text-amber-400 text-3xl mb-4"></i>
+                                        <h4 class="text-lg font-semibold text-amber-400">中游：聚合</h4>
+                                    </div>
+                                    <ul class="text-sm text-amber-200 space-y-1">
+                                        <li>聚合反应</li>
+                                        <li>树脂生产</li>
+                                        <li>共混改性</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="text-center">
+                                    <div class="bg-amber-600/20 p-6 rounded-lg mb-4">
+                                        <i class="fas fa-boxes text-amber-400 text-3xl mb-4"></i>
+                                        <h4 class="text-lg font-semibold text-amber-400">下游：加工</h4>
+                                    </div>
+                                    <ul class="text-sm text-amber-200 space-y-1">
+                                        <li>注塑成型</li>
+                                        <li>挤出成型</li>
+                                        <li>终端制品</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="fade-in">
+                        <h3 class="text-2xl font-semibold text-amber-400 mb-6">美国页岩气革命的影响</h3>
+                        <div class="bg-gradient-to-r from-amber-600/10 to-yellow-600/10 border-l-4 border-amber-500 p-6 rounded-r-lg">
+                            <p class="text-lg leading-relaxed mb-4">
+                                美国页岩气革命带来的廉价乙烷，使得北美地区的乙烯生产商获得了相较于亚洲和欧洲依赖石脑油的生产商而言巨大的、结构性的成本优势。这一优势不仅重塑了全球成本曲线，也导致了全球贸易流向和区域盈利能力的显著分化。
+                            </p>
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div class="text-center">
+                                    <div class="text-2xl font-bold text-amber-400">低成本</div>
+                                    <div class="text-sm text-amber-300">北美乙烷路线</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-2xl font-bold text-amber-400">高成本</div>
+                                    <div class="text-sm text-amber-300">亚洲石脑油路线</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="applications" class="py-20 content-section">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16 fade-in">
+                    <h2 class="text-4xl font-bold text-amber-400 mb-6">核心终端市场需求剖析</h2>
+                    <div class="h-1 w-24 bg-gradient-to-r from-amber-500 to-yellow-500 mx-auto"></div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                    <div class="fade-in content-section p-6 rounded-lg border border-amber-600/20 text-center">
+                        <i class="fas fa-box text-amber-400 text-3xl mb-4"></i>
+                        <h3 class="text-lg font-semibold text-amber-400 mb-2">包装行业</h3>
+                        <div class="text-2xl font-bold text-amber-400 mb-2">35-45%</div>
+                        <div class="text-sm text-amber-300">最大终端市场</div>
+                    </div>
+                    
+                    <div class="fade-in content-section p-6 rounded-lg border border-amber-600/20 text-center">
+                        <i class="fas fa-building text-amber-400 text-3xl mb-4"></i>
+                        <h3 class="text-lg font-semibold text-amber-400 mb-2">建筑行业</h3>
+                        <div class="text-2xl font-bold text-amber-400 mb-2">第二大</div>
+                        <div class="text-sm text-amber-300">应用市场</div>
+                    </div>
+                    
+                    <div class="fade-in content-section p-6 rounded-lg border border-amber-600/20 text-center">
+                        <i class="fas fa-car text-amber-400 text-3xl mb-4"></i>
+                        <h3 class="text-lg font-semibold text-amber-400 mb-2">汽车行业</h3>
+                        <div class="text-2xl font-bold text-amber-400 mb-2">轻量化</div>
+                        <div class="text-sm text-amber-300">结构性机遇</div>
+                    </div>
+                    
+                    <div class="fade-in content-section p-6 rounded-lg border border-amber-600/20 text-center">
+                        <i class="fas fa-microchip text-amber-400 text-3xl mb-4"></i>
+                        <h3 class="text-lg font-semibold text-amber-400 mb-2">电子医疗</h3>
+                        <div class="text-2xl font-bold text-amber-400 mb-2">高性能</div>
+                        <div class="text-sm text-amber-300">材料需求</div>
+                    </div>
+                </div>
+                
+                <div class="space-y-8">
+                    <div class="fade-in">
+                        <h3 class="text-2xl font-semibold text-amber-400 mb-6">包装：稳定需求与可持续性转型</h3>
+                        <div class="content-section p-6 rounded-lg border border-amber-600/20">
+                            <p class="text-lg leading-relaxed mb-6">
+                                包装行业是塑料最重要且最稳定的需求来源，占据全球塑料消费总量的35%至45%。其核心价值在于保护商品、延长货架期和提供便利性，特别是在食品与饮料领域。然而，包装领域正处在一场深刻的结构性变革之中。
+                            </p>
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <h4 class="text-lg font-semibold text-amber-400 mb-3">创新方向</h4>
+                                    <ul class="space-y-2 text-amber-200">
+                                        <li>• 向单一材料（Mono-material）转型</li>
+                                        <li>• 生物基与可降解塑料发展</li>
+                                        <li>• 回收友好设计</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-amber-400 mb-3">市场驱动力</h4>
+                                    <ul class="space-y-2 text-amber-200">
+                                        <li>• 电子商务增长</li>
+                                        <li>• 食品安全要求</li>
+                                        <li>• 环保法规压力</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="fade-in">
+                        <h3 class="text-2xl font-semibold text-amber-400 mb-6">汽车：轻量化与电动化带来的结构性机遇</h3>
+                        <div class="bg-gradient-to-r from-amber-600/10 to-yellow-600/10 border-l-4 border-amber-500 p-6 rounded-r-lg">
+                            <p class="text-lg leading-relaxed mb-4">
+                                汽车行业是工程塑料和高性能聚合物需求增长最快的领域之一。轻量化是应对全球日益严格的燃油经济性和碳排放法规的核心策略。研究表明，汽车重量每减少10%，燃油效率可提升5%-7%。
+                            </p>
+                            <div class="grid md:grid-cols-3 gap-4">
+                                <div class="text-center">
+                                    <div class="text-xl font-bold text-amber-400">50%</div>
+                                    <div class="text-sm text-amber-300">体积占比</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-xl font-bold text-amber-400">10%</div>
+                                    <div class="text-sm text-amber-300">重量占比</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-xl font-bold text-amber-400">+120kg</div>
+                                    <div class="text-sm text-amber-300">EV单车塑料增量</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sustainability" class="py-20 bg-gray-900/50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16 fade-in">
+                    <h2 class="text-4xl font-bold text-amber-400 mb-6">监管与ESG范式重塑</h2>
+                    <div class="h-1 w-24 bg-gradient-to-r from-amber-500 to-yellow-500 mx-auto"></div>
+                </div>
+                
+                <div class="space-y-8">
+                    <div class="fade-in">
+                        <h3 class="text-2xl font-semibold text-amber-400 mb-6">全球塑料公约与政策演变</h3>
+                        <div class="content-section p-6 rounded-lg border border-amber-600/20">
+                            <p class="text-lg leading-relaxed mb-6">
+                                最具深远影响的监管动向是正在谈判中的联合国《全球塑料公约》。2022年3月，联合国环境大会（UNEA）通过历史性决议，授权制定一项具有法律约束力的国际文书，以终结塑料污染。
+                            </p>
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <h4 class="text-lg font-semibold text-amber-400 mb-3">核心议题</h4>
+                                    <ul class="space-y-2 text-amber-200 text-sm">
+                                        <li>• 限制或淘汰有问题的塑料制品</li>
+                                        <li>• 设定全球回收和再生成分目标</li>
+                                        <li>• 推动产品设计的可持续性</li>
+                                        <li>• 建立透明的报告和监测机制</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-amber-400 mb-3">时间节点</h4>
+                                    <div class="space-y-3">
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-amber-200">谈判启动</span>
+                                            <span class="highlight-number">2022年3月</span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-amber-200">最终谈判</span>
+                                            <span class="highlight-number">2025年8月</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="fade-in">
+                        <h3 class="text-2xl font-semibold text-amber-400 mb-6">生产者责任延伸（EPR）制度</h3>
+                        <div class="bg-gradient-to-r from-amber-600/10 to-yellow-600/10 border-l-4 border-amber-500 p-6 rounded-r-lg">
+                            <p class="text-lg leading-relaxed mb-6">
+                                EPR是一种先进的环境政策工具，其核心是将产品废弃后的管理责任，从市政当局和纳税人转移给生产者。目前，全球已有超过60个国家和地区实施了针对包装的EPR制度。
+                            </p>
+                            <div class="grid md:grid-cols-3 gap-4">
+                                <div class="text-center">
+                                    <div class="text-xl font-bold text-amber-400">60+</div>
+                                    <div class="text-sm text-amber-300">实施EPR的国家/地区</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-xl font-bold text-amber-400">7个州</div>
+                                    <div class="text-sm text-amber-300">美国通过EPR法律</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-xl font-bold text-amber-400">成本内部化</div>
+                                    <div class="text-sm text-amber-300">环境成本承担</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="fade-in">
+                        <h3 class="text-2xl font-semibold text-amber-400 mb-6">一次性塑料禁令的全球趋势</h3>
+                        <div class="content-section p-6 rounded-lg border border-amber-600/20">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <h4 class="text-lg font-semibold text-amber-400 mb-3">主要禁令区域</h4>
+                                    <ul class="space-y-2 text-amber-200 text-sm">
+                                        <li>• 欧盟：一次性塑料餐具、吸管等</li>
+                                        <li>• 印度：塑料餐具、包装盒</li>
+                                        <li>• 阿联酋、埃及：食品容器</li>
+                                        <li>• 加州等美国州：EPS食品容器</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-amber-400 mb-3">替代材料趋势</h4>
+                                    <ul class="space-y-2 text-amber-200 text-sm">
+                                        <li>• 纸制品</li>
+                                        <li>• 竹制品</li>
+                                        <li>• 甘蔗渣可堆肥餐具</li>
+                                        <li>• 生物基可降解材料</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 区域竞争格局分析 -->
+    <section class="py-20 content-section">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-amber-400 mb-12 text-center fade-in">区域竞争格局：东西方的战略分化</h2>
+                
+                <div class="space-y-12">
+                    <div class="fade-in">
+                        <h3 class="text-2xl font-semibold text-amber-400 mb-6">北美：原料成本优势驱动的出口导向</h3>
+                        
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div class="content-section p-6 rounded-lg border border-amber-600/20">
+                                <h4 class="text-lg font-semibold text-amber-400 mb-4">
+                                    <i class="fas fa-chart-line mr-2"></i>
+                                    市场特征
+                                </h4>
+                                <ul class="space-y-3 text-amber-200">
+                                    <li>• <strong>市场规模</strong>：2024年美国塑料市场约914亿美元</li>
+                                    <li>• <strong>增长率</strong>：预计以3.5%的CAGR稳步增长</li>
+                                    <li>• <strong>出口导向</strong>：年出口额高达683亿美元</li>
+                                    <li>• <strong>产业集群</strong>：集中在墨西哥湾沿岸地区</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="content-section p-6 rounded-lg border border-amber-600/20">
+                                <h4 class="text-lg font-semibold text-amber-400 mb-4">
+                                    <i class="fas fa-fire mr-2"></i>
+                                    页岩气优势
+                                </h4>
+                                <ul class="space-y-3 text-amber-200">
+                                    <li>• <strong>结构性成本优势</strong>：廉价乙烷和丙烷资源</li>
+                                    <li>• <strong>全球最低成本</strong>：乙烯生产现金成本全球领先</li>
+                                    <li>• <strong>与油价脱钩</strong>：摆脱国际油价波动影响</li>
+                                    <li>• <strong>长期可持续</strong>：优势将持续数十年</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-gradient-to-r from-blue-600/10 to-amber-600/10 border-l-4 border-blue-500 p-6 rounded-r-lg mt-6">
+                            <h4 class="text-xl font-semibold text-amber-400 mb-4">战略影响分析</h4>
+                            <p class="text-amber-200 leading-relaxed">
+                                页岩气革命为北美塑料工业带来了根本性的竞争优势重构。美国生产商凭借廉价乙烷原料，
+                                在全球乙烯成本曲线中长期处于最低端，形成了对亚洲和欧洲依赖石脑油生产商的颠覆性冲击。
+                                这种优势不是周期性的，而是结构性的，将重塑全球塑料贸易格局。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="fade-in">
+                        <h3 class="text-2xl font-semibold text-amber-400 mb-6">中国：需求驱动与产能扩张的二元性</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="content-section p-6 rounded-lg border border-amber-600/20">
+                                <h4 class="text-lg font-semibold text-amber-400 mb-4">市场规模与增长</h4>
+                                <div class="grid md:grid-cols-3 gap-6">
+                                    <div class="text-center">
+                                        <div class="text-2xl font-bold text-amber-400">734.8亿</div>
+                                        <div class="text-sm text-amber-300">2021年市场规模（美元）</div>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="text-2xl font-bold text-amber-400">3.7%</div>
+                                        <div class="text-sm text-amber-300">预计复合增长率</div>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="text-2xl font-bold text-amber-400">1.3亿吨</div>
+                                        <div class="text-sm text-amber-300">2025年预计年产量</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div class="content-section p-6 rounded-lg border border-green-600/20">
+                                    <h4 class="text-lg font-semibold text-green-400 mb-3">
+                                        <i class="fas fa-plus mr-2"></i>
+                                        核心优势
+                                    </h4>
+                                    <ul class="space-y-2 text-amber-200 text-sm">
+                                        <li>• 庞大内需市场，持续城市化进程</li>
+                                        <li>• 制造业中心地位，产业链完整</li>
+                                        <li>• 史无前例的产能建设规模</li>
+                                        <li>• 强大的政策支持和资本投入</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="content-section p-6 rounded-lg border border-red-600/20">
+                                    <h4 class="text-lg font-semibold text-red-400 mb-3">
+                                        <i class="fas fa-minus mr-2"></i>
+                                        结构性挑战
+                                    </h4>
+                                    <ul class="space-y-2 text-amber-200 text-sm">
+                                        <li>• 原料高度依赖进口，成本劣势明显</li>
+                                        <li>• 产能扩张速度超过需求增长</li>
+                                        <li>• 环保政策日趋严格，合规成本上升</li>
+                                        <li>• 与国际油价高度相关的成本结构</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 主要参与者分析 -->
+    <section class="py-20 bg-gradient-to-br from-gray-900 to-black">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-amber-400 mb-12 text-center fade-in">全球领导者战略画像</h2>
+                
+                <div class="space-y-12">
+                    <div class="fade-in">
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div class="content-section p-6 rounded-lg border border-amber-600/20">
+                                <div class="flex items-center mb-4">
+                                    <div class="text-3xl mr-4">🇺🇸</div>
+                                    <h3 class="text-xl font-semibold text-amber-400">陶氏化学（Dow）</h3>
+                                </div>
+                                
+                                <div class="space-y-4">
+                                    <div>
+                                        <h4 class="text-lg font-semibold text-blue-400 mb-2">战略定位</h4>
+                                        <p class="text-amber-200 text-sm">
+                                            全球领先材料科学公司，充分利用美洲低成本原料优势。
+                                            包装与特种塑料板块2024年销售额约218亿美元。
+                                        </p>
+                                    </div>
+                                    
+                                    <div>
+                                        <h4 class="text-lg font-semibold text-green-400 mb-2">核心优势</h4>
+                                        <ul class="text-amber-200 text-xs space-y-1">
+                                            <li>• 全球最大聚乙烯生产商之一</li>
+                                            <li>• 结构性原料成本优势</li>
+                                            <li>• 技术领先，产品组合广泛</li>
+                                            <li>• 积极推进脱碳和循环经济</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="content-section p-6 rounded-lg border border-amber-600/20">
+                                <div class="flex items-center mb-4">
+                                    <div class="text-3xl mr-4">🇩🇪</div>
+                                    <h3 class="text-xl font-semibold text-amber-400">巴斯夫（BASF）</h3>
+                                </div>
+                                
+                                <div class="space-y-4">
+                                    <div>
+                                        <h4 class="text-lg font-semibold text-blue-400 mb-2">战略定位</h4>
+                                        <p class="text-amber-200 text-sm">
+                                            全球最大综合性化工公司。材料板块包含单体和功能材料两个部门，
+                                            2024年销售额135亿欧元。
+                                        </p>
+                                    </div>
+                                    
+                                    <div>
+                                        <h4 class="text-lg font-semibold text-green-400 mb-2">核心优势</h4>
+                                        <ul class="text-amber-200 text-xs space-y-1">
+                                            <li>• 一体化（Verbund）生产体系</li>
+                                            <li>• 强大研发能力和技术创新</li>
+                                            <li>• 工程塑料领域全球领先</li>
+                                            <li>• 积极投资中国等高增长市场</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="fade-in">
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div class="content-section p-6 rounded-lg border border-amber-600/20">
+                                <div class="flex items-center mb-4">
+                                    <div class="text-3xl mr-4">🇺🇸</div>
+                                    <h3 class="text-xl font-semibold text-amber-400">利安德巴塞尔（LYB）</h3>
+                                </div>
+                                
+                                <div class="space-y-4">
+                                    <div>
+                                        <h4 class="text-lg font-semibold text-blue-400 mb-2">战略定位</h4>
+                                        <p class="text-amber-200 text-sm">
+                                            全球最大聚丙烯生产商，聚乙烯主要生产商。
+                                            业务盈利呈现显著区域分化特征。
+                                        </p>
+                                    </div>
+                                    
+                                    <div class="grid grid-cols-2 gap-3 text-xs">
+                                        <div>
+                                            <h5 class="text-green-400 font-semibold mb-1">美洲业务</h5>
+                                            <p class="text-amber-200">EBITDA: 24.45亿美元</p>
+                                        </div>
+                                        <div>
+                                            <h5 class="text-red-400 font-semibold mb-1">欧亚业务</h5>
+                                            <p class="text-amber-200">EBITDA: -9.91亿美元</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="content-section p-6 rounded-lg border border-amber-600/20">
+                                <div class="flex items-center mb-4">
+                                    <div class="text-3xl mr-4">🇨🇳</div>
+                                    <h3 class="text-xl font-semibold text-amber-400">中国石化（Sinopec）</h3>
+                                </div>
+                                
+                                <div class="space-y-4">
+                                    <div>
+                                        <h4 class="text-lg font-semibold text-blue-400 mb-2">战略定位</h4>
+                                        <p class="text-amber-200 text-sm">
+                                            中国最大综合性能源化工公司，炼化一体化布局。
+                                            2024年合成树脂产量约2009万吨。
+                                        </p>
+                                    </div>
+                                    
+                                    <div>
+                                        <h4 class="text-lg font-semibold text-red-400 mb-2">当前挑战</h4>
+                                        <ul class="text-amber-200 text-xs space-y-1">
+                                            <li>• 2024年化工板块经营亏损近100亿元</li>
+                                            <li>• 新增产能冲击和原料成本高企</li>
+                                            <li>• 向高附加值新材料转型压力</li>
+                                            <li>• 环保要求与合规成本上升</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="fade-in">
+                        <div class="content-section p-6 rounded-lg border border-amber-600/20">
+                            <h3 class="text-xl font-semibold text-amber-400 mb-4">竞争格局对比矩阵</h3>
+                            
+                            <div class="overflow-x-auto">
+                                <table class="w-full text-sm">
+                                    <thead>
+                                        <tr class="border-b border-amber-600/30">
+                                            <th class="text-left p-3 text-amber-400">指标</th>
+                                            <th class="text-left p-3 text-amber-400">陶氏化学</th>
+                                            <th class="text-left p-3 text-amber-400">巴斯夫</th>
+                                            <th class="text-left p-3 text-amber-400">利安德巴塞尔</th>
+                                            <th class="text-left p-3 text-amber-400">中国石化</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="text-amber-200">
+                                        <tr class="border-b border-amber-600/20">
+                                            <td class="p-3 font-semibold">2024年总收入</td>
+                                            <td class="p-3">~430亿美元</td>
+                                            <td class="p-3">~653亿欧元</td>
+                                            <td class="p-3">~403亿美元</td>
+                                            <td class="p-3">~3.07万亿元人民币</td>
+                                        </tr>
+                                        <tr class="border-b border-amber-600/20">
+                                            <td class="p-3 font-semibold">主要原料敞口</td>
+                                            <td class="p-3">气体为主 (乙烷)</td>
+                                            <td class="p-3">液体为主 (石脑油)</td>
+                                            <td class="p-3">混合型</td>
+                                            <td class="p-3">液体为主 (石脑油)</td>
+                                        </tr>
+                                        <tr class="border-b border-amber-600/20">
+                                            <td class="p-3 font-semibold">核心战略</td>
+                                            <td class="p-3">成本领先, 出口导向</td>
+                                            <td class="p-3">创新驱动, 投资亚洲</td>
+                                            <td class="p-3">优化投资组合</td>
+                                            <td class="p-3">规模扩张, 产业升级</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 风险分析与展望 -->
+    <section class="py-20 content-section">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-amber-400 mb-12 text-center fade-in">风险识别与结构性展望</h2>
+                
+                <div class="space-y-12">
+                    <div class="fade-in">
+                        <h3 class="text-2xl font-semibold text-amber-400 mb-6">关键风险框架</h3>
+                        
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div class="space-y-6">
+                                <div class="content-section p-6 rounded-lg border border-yellow-600/20">
+                                    <h4 class="text-lg font-semibold text-yellow-400 mb-3">
+                                        <i class="fas fa-oil-well mr-2"></i>
+                                        原料价格风险
+                                    </h4>
+                                    <ul class="space-y-2 text-amber-200 text-sm">
+                                        <li>• <strong>油价波动</strong>：地缘政治冲突、OPEC+政策影响</li>
+                                        <li>• <strong>气价上涨</strong>：美国LNG出口需求推高天然气价格</li>
+                                        <li>• <strong>价差收窄</strong>：乙烷-石脑油价差优势减弱风险</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="content-section p-6 rounded-lg border border-red-600/20">
+                                    <h4 class="text-lg font-semibold text-red-400 mb-3">
+                                        <i class="fas fa-chart-line mr-2"></i>
+                                        宏观周期性风险
+                                    </h4>
+                                    <ul class="space-y-2 text-amber-200 text-sm">
+                                        <li>• <strong>经济衰退</strong>：全球或主要经济体增长放缓</li>
+                                        <li>• <strong>需求萎缩</strong>：建筑、汽车、消费品需求下降</li>
+                                        <li>• <strong>价格下跌</strong>：行业性减产和价格竞争加剧</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="space-y-6">
+                                <div class="content-section p-6 rounded-lg border border-blue-600/20">
+                                    <h4 class="text-lg font-semibold text-blue-400 mb-3">
+                                        <i class="fas fa-gavel mr-2"></i>
+                                        监管政策风险
+                                    </h4>
+                                    <ul class="space-y-2 text-amber-200 text-sm">
+                                        <li>• <strong>塑料公约</strong>：比预期更严厉的全球限制措施</li>
+                                        <li>• <strong>EPR制度</strong>：合规成本大幅提高</li>
+                                        <li>• <strong>禁塑令扩大</strong>：影响范围超出市场预期</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="content-section p-6 rounded-lg border border-purple-600/20">
+                                    <h4 class="text-lg font-semibold text-purple-400 mb-3">
+                                        <i class="fas fa-globe mr-2"></i>
+                                        地缘政治风险
+                                    </h4>
+                                    <ul class="space-y-2 text-amber-200 text-sm">
+                                        <li>• <strong>贸易摩擦</strong>：中美贸易关系恶化</li>
+                                        <li>• <strong>关税壁垒</strong>：阻碍全球化供应链</li>
+                                        <li>• <strong>航运中断</strong>：关键通道封锁推高物流成本</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="fade-in">
+                        <h3 class="text-2xl font-semibold text-amber-400 mb-6">核心产业逻辑与投资框架</h3>
+                        
+                        <div class="bg-gradient-to-r from-amber-600/10 to-purple-600/10 border-l-4 border-amber-500 p-6 rounded-r-lg">
+                            <div class="space-y-6">
+                                <div>
+                                    <h4 class="text-lg font-semibold text-blue-400 mb-3">第一性原理：原料成本决定竞争力</h4>
+                                    <p class="text-amber-200 text-sm">
+                                        塑料产业的根基在于将廉价碳氢化合物转化为高价值聚合物。
+                                        获取低成本原料的能力是决定企业和区域竞争力的最根本因素。
+                                        美国页岩气优势是结构性、长期的力量，将持续重塑全球竞争格局。
+                                    </p>
+                                </div>
+                                
+                                <div>
+                                    <h4 class="text-lg font-semibold text-green-400 mb-3">需求增长的结构性分化</h4>
+                                    <p class="text-amber-200 text-sm">
+                                        大宗包装塑料受环保法规压制，增长将与GDP脱钩。
+                                        高性能工程塑料受益于汽车电动化、可再生能源等技术升级，进入加速增长通道。
+                                        企业的终端市场敞口成为评估增长潜力的关键变量。
+                                    </p>
+                                </div>
+                                
+                                <div>
+                                    <h4 class="text-lg font-semibold text-purple-400 mb-3">可持续性从"加分项"到"生存门槛"</h4>
+                                    <p class="text-amber-200 text-sm">
+                                        循环经济和ESG已成为决定企业长期生存能力的硬约束。
+                                        企业在循环经济中的能力将直接影响市场准入、品牌声誉和盈利能力。
+                                        一个并行的"绿色塑料"市场正在形成。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-red-900/20 border-t border-red-600/30">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h3 class="text-2xl font-bold text-red-400 mb-6">
+                    <i class="fas fa-exclamation-triangle mr-3"></i>
+                    重要免责声明
+                </h3>
+                <div class="text-red-300 leading-relaxed space-y-4">
+                    <p>
+                        本报告仅为行业研究分析，旨在提供信息和构建分析框架，<strong>不构成任何形式的投资建议、买卖推荐或操作指导</strong>。
+                    </p>
+                    <p>
+                        塑料产业涉及复杂的技术、环境、经济和政策因素，投资者在做出投资决策前应充分了解相关风险，并咨询专业的投资顾问。
+                    </p>
+                    <p>
+                        报告中的市场数据和预测基于公开资料整理，具体投资决策应以最新的官方数据和专业分析为准。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8 bg-black border-t border-amber-600/20">
+        <div class="container mx-auto px-6 text-center">
+            <div class="text-amber-400 text-sm">
+                <p>&copy; 2025 全球塑料产业深度研究分析报告. 本报告发布于2025年7月3日.</p>
+                <p class="mt-2 text-amber-500">仅供行业研究与学术交流使用，不构成投资意见或操作依据</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Fade in animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                        entry.target.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in').forEach(el => {
+                observer.observe(el);
+            });
+
+            // Market Size Chart
+            const chartDom = document.getElementById('marketSizeChart');
+            if (chartDom) {
+                const myChart = echarts.init(chartDom);
+                const option = {
+                    backgroundColor: 'transparent',
+                    title: {
+                        text: '全球塑料市场规模预测',
+                        textStyle: {
+                            color: '#daa520',
+                            fontSize: 16
+                        }
+                    },
+                    tooltip: {
+                        trigger: 'axis',
+                        backgroundColor: 'rgba(26, 26, 26, 0.9)',
+                        textStyle: {
+                            color: '#daa520'
+                        }
+                    },
+                    legend: {
+                        data: ['市场规模'],
+                        textStyle: {
+                            color: '#b8860b'
+                        }
+                    },
+                    xAxis: {
+                        type: 'category',
+                        data: ['2024', '2025', '2026', '2027', '2028', '2029', '2030', '2031', '2032'],
+                        axisLine: {
+                            lineStyle: {
+                                color: '#b8860b'
+                            }
+                        },
+                        axisLabel: {
+                            color: '#b8860b'
+                        }
+                    },
+                    yAxis: {
+                        type: 'value',
+                        name: '十亿美元',
+                        nameTextStyle: {
+                            color: '#b8860b'
+                        },
+                        axisLine: {
+                            lineStyle: {
+                                color: '#b8860b'
+                            }
+                        },
+                        axisLabel: {
+                            color: '#b8860b'
+                        },
+                        splitLine: {
+                            lineStyle: {
+                                color: 'rgba(184, 134, 11, 0.2)'
+                            }
+                        }
+                    },
+                    series: [{
+                        name: '市场规模',
+                        type: 'line',
+                        data: [620, 650, 680, 710, 745, 780, 820, 860, 900],
+                        lineStyle: {
+                            color: '#ffbf00',
+                            width: 3
+                        },
+                        itemStyle: {
+                            color: '#ffbf00'
+                        },
+                        areaStyle: {
+                            color: {
+                                type: 'linear',
+                                x: 0,
+                                y: 0,
+                                x2: 0,
+                                y2: 1,
+                                colorStops: [{
+                                    offset: 0, color: 'rgba(255, 191, 0, 0.3)'
+                                }, {
+                                    offset: 1, color: 'rgba(255, 191, 0, 0.05)'
+                                }]
+                            }
+                        }
+                    }]
+                };
+                myChart.setOption(option);
+                
+                // Make chart responsive
+                window.addEventListener('resize', function() {
+                    myChart.resize();
+                });
+            }
+
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

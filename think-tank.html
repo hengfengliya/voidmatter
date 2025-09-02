@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>质点智库 | 虚空有物 - 从纷繁金融世界中，提炼构成市场真相的"质点"</title>
+    <meta name="description" content="质点智库 - 为投资者、创业者、从业者提供可操作的产业逻辑与市场洞察。比券商研报更自由，比财经媒体更深度，比自媒体更可信。">
+    <meta name="keywords" content="质点智库,金融研究,行业报告,投资分析,市场洞察,产业逻辑">
+    <meta name="version" content="2025.01.16">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PNS6CHMQZ3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-PNS6CHMQZ3');
+    </script>
+    
+    <!-- 性能优化脚本 - 首先加载 -->
+    <script src="js/resource-bundler.js"></script>
+    <script src="js/sw-manager.js"></script>
+    <script src="js/performance.js"></script>
+    
+    <!-- 外部资源 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- 全局导航栏组件 -->
+    <script src="js/navigation.js"></script>
+    
+    <!-- 自定义字体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- 自定义样式 -->
+    <link rel="stylesheet" href="css/think-tank.css">
+    <link rel="stylesheet" href="css/reports-style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="tk-nav fixed top-0 w-full z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <!-- 左侧：品牌标识 -->
+                <div class="flex items-center space-x-6">
+                    <div class="relative group">
+                        <!-- 品牌背景光晕 -->
+                        <div class="absolute -inset-2 bg-gradient-to-r from-yellow-400/20 to-yellow-600/20 rounded-lg blur-lg opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
+                        <div class="tk-gradient-text text-3xl font-bold relative z-10 transform group-hover:scale-110 transition-all duration-300">VM</div>
+                    </div>
+                    <div class="h-8 w-px bg-gradient-to-b from-transparent via-yellow-400/30 to-transparent"></div>
+                    <div class="text-gray-300 text-sm font-light tracking-wider hover:text-yellow-300 transition-colors duration-300">质点智库</div>
+                </div>
+                
+                <!-- 右侧：导航菜单 -->
+                <div class="hidden md:flex space-x-10 items-center">
+                    <a href="index.html" class="relative group text-gray-300 hover:text-yellow-400 transition-colors duration-300 font-light tracking-wide">
+                        <span class="relative z-10">首页</span>
+                        <div class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-yellow-400 to-yellow-600 group-hover:w-full transition-all duration-300"></div>
+                    </a>
+                    <a href="think-tank.html" class="relative group text-yellow-400 font-light tracking-wide">
+                        <span class="relative z-10">质点智库</span>
+                        <div class="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-yellow-400 to-yellow-600"></div>
+                    </a>
+                    <a href="updates.html" class="relative group text-gray-300 hover:text-yellow-400 transition-colors duration-300 font-light tracking-wide">
+                        <span class="relative z-10">更新日志</span>
+                        <div class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-yellow-400 to-yellow-600 group-hover:w-full transition-all duration-300"></div>
+                    </a>
+                    <a href="#" class="relative group text-gray-300 hover:text-yellow-400 transition-colors duration-300 font-light tracking-wide">
+                        <span class="relative z-10">行业趋势</span>
+                        <div class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-yellow-400 to-yellow-600 group-hover:w-full transition-all duration-300"></div>
+                    </a>
+                    <!-- 会员区域将由JS动态插入这里 -->
+                </div>
+                
+                <!-- 移动端菜单按钮和会员区域 -->
+                <div class="md:hidden flex items-center space-x-4">
+                    <!-- 移动端会员区域 -->
+                    <div class="mobile-member-area" id="mobile-member-area"></div>
+                    
+                    <!-- 移动端菜单按钮 -->
+                    <button class="text-yellow-400 hover:text-yellow-300 transition-colors duration-300 transform hover:scale-110" id="mobile-menu-btn">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 移动端菜单 -->
+        <div class="mobile-menu hidden md:hidden" id="mobile-menu">
+            <div class="absolute top-full left-0 right-0 bg-gradient-to-b from-black/95 to-gray-900/95 backdrop-blur-lg border-t border-yellow-400/20">
+                <div class="max-w-7xl mx-auto px-6 py-6">
+                    <div class="flex flex-col space-y-4">
+                        <a href="index.html" class="flex items-center space-x-3 text-gray-300 hover:text-yellow-400 transition-colors duration-300 py-3 border-b border-gray-800">
+                            <i class="fas fa-home w-5"></i>
+                            <span>首页</span>
+                        </a>
+                        <a href="think-tank.html" class="flex items-center space-x-3 text-yellow-400 py-3 border-b border-gray-800">
+                            <i class="fas fa-brain w-5"></i>
+                            <span>质点智库</span>
+                        </a>
+                        <a href="updates.html" class="flex items-center space-x-3 text-gray-300 hover:text-yellow-400 transition-colors duration-300 py-3 border-b border-gray-800">
+                            <i class="fas fa-clock w-5"></i>
+                            <span>更新日志</span>
+                        </a>
+                        <a href="#" class="flex items-center space-x-3 text-gray-300 hover:text-yellow-400 transition-colors duration-300 py-3 border-b border-gray-800">
+                            <i class="fas fa-chart-line w-5"></i>
+                            <span>行业趋势</span>
+                        </a>
+                        
+                        <!-- 移动端会员信息区域 -->
+                        <div class="mobile-member-info pt-4" id="mobile-member-info">
+                            <!-- 会员信息将由JS动态插入 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero区域 -->
+    <section class="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
+        <!-- 背景装饰 -->
+        <div class="absolute inset-0">
+            <div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-800"></div>
+            <!-- 粒子效果 -->
+            <div class="absolute inset-0 opacity-20">
+                <div class="absolute top-1/4 left-1/6 w-2 h-2 bg-yellow-400 rounded-full animate-pulse"></div>
+                <div class="absolute top-1/3 right-1/4 w-1 h-1 bg-yellow-300 rounded-full animate-ping"></div>
+                <div class="absolute bottom-1/4 left-1/3 w-3 h-3 bg-yellow-500 rounded-full animate-pulse" style="animation-delay: 1s;"></div>
+                <div class="absolute bottom-1/3 right-1/5 w-1.5 h-1.5 bg-yellow-400 rounded-full animate-ping" style="animation-delay: 2s;"></div>
+            </div>
+            <!-- 光晕效果 -->
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-radial from-yellow-400/5 to-transparent rounded-full blur-3xl"></div>
+        </div>
+        
+        <div class="max-w-6xl mx-auto px-8 text-center relative z-10">
+            <!-- 主标题 -->
+            <div class="mb-16 tk-fade-up">
+                <div class="relative inline-block mb-12">
+                    <!-- 装饰框架 -->
+                    <div class="absolute -inset-6">
+                        <div class="absolute top-0 left-0 w-8 h-8 border-l-2 border-t-2 border-yellow-400/30"></div>
+                        <div class="absolute top-0 right-0 w-8 h-8 border-r-2 border-t-2 border-yellow-400/30"></div>
+                        <div class="absolute bottom-0 left-0 w-8 h-8 border-l-2 border-b-2 border-yellow-400/30"></div>
+                        <div class="absolute bottom-0 right-0 w-8 h-8 border-r-2 border-b-2 border-yellow-400/30"></div>
+                    </div>
+                    <h1 class="text-6xl md:text-8xl font-extralight mb-8 tracking-[0.2em] tk-gradient-text px-8 py-4">
+                        质点智库
+                    </h1>
+                </div>
+                
+                <div class="w-32 h-px bg-gradient-to-r from-transparent via-yellow-400 to-transparent mx-auto mb-8"></div>
+                <p class="text-xl tk-gradient-text mb-12 font-extralight tracking-wider" style="font-family: 'Playfair Display', serif;">Point Mass Think Tank</p>
+            </div>
+            
+            <!-- 核心定位 -->
+            <div class="space-y-12 tk-fade-up mb-20">
+                <!-- 品牌主张 -->
+                <div class="relative">
+                    <div class="absolute -left-12 top-1/2 transform -translate-y-1/2 text-6xl tk-gradient-text opacity-20">"</div>
+                    <div class="absolute -right-12 top-1/2 transform -translate-y-1/2 text-6xl tk-gradient-text opacity-20">"</div>
+                    <h2 class="text-3xl md:text-5xl font-extralight text-gray-200 leading-tight px-16">
+                        从纷繁金融世界中<br>
+                        提炼构成市场真相的<span class="tk-gradient-text font-semibold">"质点"</span>
+                    </h2>
+                </div>
+                
+                <!-- 三句话定位 -->
+                <div class="grid md:grid-cols-3 gap-8 mt-16">
+                    <!-- 核心使命 -->
+                    <div class="tk-card p-8 rounded-xl group">
+                        <div class="relative mb-6">
+                            <div class="absolute inset-0 bg-gradient-radial from-yellow-400/20 to-transparent rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
+                            <div class="w-16 h-16 bg-gradient-to-br from-yellow-400/20 to-yellow-600/20 rounded-xl mx-auto flex items-center justify-center border border-yellow-400/30 group-hover:scale-110 transition-all duration-500 relative z-10">
+                                <i class="fas fa-bullseye text-2xl" style="color: var(--tk-gold);"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold tk-gradient-text mb-4">核心使命</h3>
+                        <div class="w-12 h-px bg-gradient-to-r from-yellow-400 to-yellow-600 mx-auto mb-4"></div>
+                        <p class="text-gray-300 leading-relaxed font-light">
+                            为投资者、创业者、从业者提供可操作的产业逻辑与市场洞察
+                        </p>
+                    </div>
+                    
+                    <!-- 用户价值 -->
+                    <div class="tk-card p-8 rounded-xl group">
+                        <div class="relative mb-6">
+                            <div class="absolute inset-0 bg-gradient-radial from-yellow-400/20 to-transparent rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
+                            <div class="w-16 h-16 bg-gradient-to-br from-yellow-400/20 to-yellow-600/20 rounded-xl mx-auto flex items-center justify-center border border-yellow-400/30 group-hover:scale-110 transition-all duration-500 relative z-10">
+                                <i class="fas fa-gem text-2xl" style="color: var(--tk-gold);"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold tk-gradient-text mb-4">用户价值</h3>
+                        <div class="w-12 h-px bg-gradient-to-r from-yellow-400 to-yellow-600 mx-auto mb-4"></div>
+                        <p class="text-gray-300 leading-relaxed font-light">
+                            比券商研报更自由<br>比财经媒体更深度<br>比自媒体更可信
+                        </p>
+                    </div>
+                    
+                    <!-- 专业标准 -->
+                    <div class="tk-card p-8 rounded-xl group">
+                        <div class="relative mb-6">
+                            <div class="absolute inset-0 bg-gradient-radial from-yellow-400/20 to-transparent rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
+                            <div class="w-16 h-16 bg-gradient-to-br from-yellow-400/20 to-yellow-600/20 rounded-xl mx-auto flex items-center justify-center border border-yellow-400/30 group-hover:scale-110 transition-all duration-500 relative z-10">
+                                <i class="fas fa-shield-alt text-2xl" style="color: var(--tk-gold);"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold tk-gradient-text mb-4">专业标准</h3>
+                        <div class="w-12 h-px bg-gradient-to-r from-yellow-400 to-yellow-600 mx-auto mb-4"></div>
+                        <p class="text-gray-300 leading-relaxed font-light">
+                            基于实证数据的深度分析<br>独立客观的研究立场<br>前瞻性的投资视角
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 滚动提示 -->
+            <div class="tk-fade-up">
+                <div class="animate-bounce">
+                    <div class="w-6 h-10 border-2 border-yellow-400/50 rounded-full flex justify-center mx-auto">
+                        <div class="w-1 h-3 bg-yellow-400 rounded-full mt-2 animate-pulse"></div>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-400 mt-4">探索更多研究内容</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 智库内容区域 -->
+    <section class="min-h-screen py-20 relative">
+        <!-- 背景装饰 -->
+        <div class="absolute inset-0">
+            <div class="absolute inset-0 bg-gradient-to-tr from-black via-gray-900 to-black"></div>
+            <!-- 网格装饰 -->
+            <div class="absolute inset-0 opacity-5">
+                <div style="background-image: radial-gradient(circle at 2px 2px, #D4AF37 1px, transparent 0); background-size: 40px 40px;"></div>
+            </div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <!-- 搜索区域 -->
+            <div class="text-center mb-16 tk-fade-up">
+                <div class="max-w-2xl mx-auto">
+                    <div class="relative">
+                        <input 
+                            type="text" 
+                            id="searchInput" 
+                            placeholder="搜索研究报告、公司分析..."
+                            class="w-full px-6 py-4 pr-20 bg-black/30 border border-yellow-400/20 rounded-xl text-gray-200 placeholder-gray-400 focus:border-yellow-400/50 focus:outline-none backdrop-blur-sm transition-all duration-300"
+                        >
+                        <div class="absolute right-2 top-1/2 transform -translate-y-1/2 flex items-center space-x-2">
+                            <button 
+                                id="clearSearchBtn" 
+                                class="hidden px-3 py-2 text-gray-400 hover:text-yellow-400 transition-colors duration-300 rounded-lg hover:bg-yellow-400/10"
+                                title="清空搜索"
+                            >
+                                <i class="fas fa-times text-sm"></i>
+                            </button>
+                            <i class="fas fa-search text-yellow-400/60"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 主要Tab导航 -->
+            <div class="flex justify-center mb-12 tk-fade-up">
+                <div class="flex space-x-2 bg-black/20 p-2 rounded-xl backdrop-blur-sm border border-yellow-400/10">
+                    <button class="tk-tab active" data-tab="industry-reports" id="industry-tab">
+                        <i class="fas fa-chart-line mr-2"></i>
+                        行业研究
+                    </button>
+                    <button class="tk-tab" data-tab="company-research" id="company-tab">
+                        <i class="fas fa-building mr-2"></i>
+                        公司研究
+                    </button>
+                </div>
+            </div>
+
+            <!-- 分类导航区域 -->
+            <div class="mb-16 tk-fade-up" id="classification-area">
+                <!-- 一级分类Tab导航 -->
+                <div class="mb-6 px-4">
+                    <div class="flex flex-wrap gap-3" id="industry-tabs">
+                        <!-- 动态生成的一级分类tab将插入这里 -->
+                    </div>
+                </div>
+
+                <!-- 二级分类Tab导航 -->
+                <div class="mb-6 px-4" id="sub-industry-container" style="display: none;">
+                    <div class="flex flex-wrap gap-3" id="sub-industry-tabs">
+                        <!-- 动态生成的二级分类tab将插入这里 -->
+                    </div>
+                </div>
+
+                <!-- 三级分类Tab导航 -->
+                <div class="mb-6 px-4" id="third-level-container" style="display: none;">
+                    <div class="flex flex-wrap gap-3" id="third-level-tabs">
+                        <!-- 动态生成的三级分类tab将插入这里 -->
+                    </div>
+                </div>
+
+                <!-- 四级分类Tab导航 -->
+                <div class="mb-6 px-4" id="fourth-level-container" style="display: none;">
+                    <div class="flex flex-wrap gap-3" id="fourth-level-tabs">
+                        <!-- 动态生成的四级分类tab将插入这里 -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- 标签页内容 -->
+            
+            <!-- 行业报告 -->
+            <div id="industry-reports" class="tk-tab-content">
+
+                <!-- 行业报告内容容器 -->
+                <div class="space-y-12" id="industry-content">
+                    <!-- 全部显示 -->
+                    <div class="tk-fade-up" data-industry="全部">
+                        <div class="reports-grid" id="reports-container">
+                            <!-- 报告卡片将通过JavaScript动态生成 -->
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                </div>
+            </div>
+
+            <!-- 公司研究 -->
+            <div id="company-research" class="tk-tab-content" style="display: none;">
+                <div class="mb-12">
+                    <h2 class="text-4xl font-bold tk-gradient-text text-center mb-8">公司深度分析</h2>
+                    <div class="w-24 h-px bg-gradient-to-r from-transparent via-yellow-400 to-transparent mx-auto mb-8"></div>
+                </div>
+
+                <div class="tk-fade-up">
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="tk-report-card opacity-50">
+                            <div class="text-center py-16">
+                                <i class="fas fa-building text-4xl text-gray-600 mb-4"></i>
+                                <p class="text-gray-500 text-lg mb-2">公司深度研究</p>
+                                <p class="text-sm text-gray-600">专业的企业价值分析</p>
+                                <p class="text-xs text-gray-700 mt-4">即将推出</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="relative overflow-hidden border-t border-gray-800">
+        <div class="absolute inset-0">
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-gray-950 to-gray-900"></div>
+            <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-96 h-1 bg-gradient-to-r from-transparent via-yellow-400/30 to-transparent"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-6 py-16 relative z-10">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <!-- 左侧：品牌信息 -->
+                <div class="mb-8 md:mb-0 text-center md:text-left">
+                    <div class="tk-gradient-text text-3xl font-bold mb-3">VM · 质点智库</div>
+                    <p class="text-gray-300 text-lg font-light">上海虚空有物科技有限公司</p>
+                    <p class="text-gray-500 text-sm mt-2">从纷繁金融世界中，提炼构成市场真相的"质点"</p>
+                </div>
+                
+                <!-- 右侧：版权信息 -->
+                <div class="text-center md:text-right">
+                    <div class="text-gray-400 text-sm font-light">© 2024 VoidMatter.cn</div>
+                    <div class="text-gray-500 text-xs mt-2">Powered by Point Mass Think Tank</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/auth-credentials.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/reports-manager.js"></script>
+    <script src="js/think-tank.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" defer></script>
+</body>
+</html> 

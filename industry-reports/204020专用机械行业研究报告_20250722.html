@@ -1,0 +1,1502 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>专用机械的双速世界：驾驭基础设施周期与技术变革浪潮 | 2025年Q3</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@200;300;400;500;600;700;800;900&family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <style>
+        :root {
+            /* 深邃黑金权力色系 */
+            --obsidian-black: #0A0A0A;
+            --midnight-black: #151515;
+            --shadow-black: #1F1F1F;
+            --charcoal-deep: #2A2A2A;
+            
+            /* 稀缺金色层次 */
+            --sovereign-gold: #B8860B;
+            --imperial-gold: #DAA520;
+            --aureate-whisper: #F4E4BC;
+            --golden-shadow: #8B6914;
+            
+            /* 权力灰度 */
+            --platinum-mist: #E5E5E5;
+            --sterling-silver: #C0C0C0;
+            --graphite-steel: #696969;
+            --charcoal-whisper: #808080;
+            
+            /* 稀缺强调色 */
+            --ruby-accent: #8B0000;
+            --emerald-depth: #006400;
+            --sapphire-authority: #1e3a8a;
+        }
+
+        body {
+            background: var(--obsidian-black);
+            color: var(--platinum-mist);
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* 帝王级标题 */
+        .imperial-title {
+            font-family: 'Playfair Display', serif;
+            font-weight: 200;
+            letter-spacing: 0.12em;
+            line-height: 1.05;
+            color: var(--aureate-whisper);
+            text-shadow: 0 3px 12px rgba(184, 134, 11, 0.4);
+        }
+
+        /* 君主级副标题 */
+        .imperial-subtitle {
+            font-family: 'Playfair Display', serif;
+            font-weight: 300;
+            letter-spacing: 0.08em;
+            line-height: 1.15;
+            color: var(--imperial-gold);
+            text-shadow: 0 2px 8px rgba(218, 165, 32, 0.3);
+        }
+
+        /* 英文斜体标签 */
+        .imperial-tagline {
+            font-family: 'Inter', sans-serif;
+            font-weight: 200;
+            letter-spacing: 0.06em;
+            line-height: 1.4;
+            color: var(--sterling-silver);
+            font-style: italic;
+        }
+
+        /* 致敬样式 */
+        .imperial-dedication {
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+            letter-spacing: 0.04em;
+            line-height: 1.3;
+            color: var(--imperial-gold);
+        }
+
+        .imperial-dedication-sub {
+            font-family: 'Inter', sans-serif;
+            font-weight: 200;
+            letter-spacing: 0.05em;
+            line-height: 1.3;
+            color: var(--sterling-silver);
+            font-style: italic;
+        }
+
+        /* 权威标题 */
+        .sovereign-heading {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            color: var(--imperial-gold);
+            text-shadow: 0 1px 4px rgba(218, 165, 32, 0.4);
+        }
+
+        /* 贵族正文 */
+        .noble-text {
+            font-weight: 300;
+            letter-spacing: 0.03em;
+            line-height: 2.2;
+            color: var(--platinum-mist);
+        }
+
+        /* 引用文字 */
+        .executive-quote {
+            font-weight: 300;
+            letter-spacing: 0.02em;
+            line-height: 1.8;
+            color: var(--sterling-silver);
+            font-size: 0.95rem;
+            font-style: italic;
+            position: relative;
+            padding: 0 2rem;
+            margin: 2rem 0;
+        }
+
+        .executive-quote::before {
+            content: '"';
+            position: absolute;
+            left: 0;
+            top: -0.5rem;
+            font-size: 3rem;
+            color: var(--sovereign-gold);
+            opacity: 0.3;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .executive-quote::after {
+            content: '"';
+            position: absolute;
+            right: 0;
+            bottom: -0.5rem;
+            font-size: 3rem;
+            color: var(--sovereign-gold);
+            opacity: 0.3;
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* 专属数字 */
+        .exclusive-number {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: var(--sovereign-gold);
+            text-shadow: 0 1px 3px rgba(184, 134, 11, 0.5);
+        }
+
+        /* 君主容器 */
+        .sovereign-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 5rem;
+        }
+
+        /* 帝王区块 */
+        .imperial-section {
+            margin: 12rem 0;
+            position: relative;
+        }
+
+        /* 权威卡片 */
+        .authority-card {
+            background: linear-gradient(145deg, 
+                rgba(21, 21, 21, 0.9) 0%, 
+                rgba(31, 31, 31, 0.8) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.15);
+            border-radius: 2px;
+            padding: 3rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            box-shadow: 
+                0 8px 32px rgba(0, 0, 0, 0.6),
+                inset 0 1px 1px rgba(244, 228, 188, 0.05);
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .authority-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(184, 134, 11, 0.3);
+            box-shadow: 
+                0 16px 48px rgba(0, 0, 0, 0.8),
+                0 0 24px rgba(184, 134, 11, 0.1),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08);
+        }
+
+        .authority-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(90deg, var(--sovereign-gold), transparent);
+            opacity: 0.6;
+        }
+
+        .authority-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(270deg, var(--sovereign-gold), transparent);
+            opacity: 0.6;
+        }
+
+        /* 金色琉璃卡片 */
+        .golden-glass-card {
+            background: 
+                radial-gradient(circle at 30% 30%, rgba(218, 165, 32, 0.12) 0%, transparent 50%),
+                radial-gradient(circle at 70% 70%, rgba(184, 134, 11, 0.08) 0%, transparent 50%),
+                linear-gradient(135deg, 
+                    rgba(244, 228, 188, 0.06) 0%, 
+                    rgba(218, 165, 32, 0.04) 30%,
+                    rgba(184, 134, 11, 0.03) 70%,
+                    rgba(139, 105, 20, 0.02) 100%);
+            border: 1px solid rgba(218, 165, 32, 0.15);
+            border-radius: 4px;
+            padding: 2.5rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            box-shadow: 
+                0 8px 32px rgba(0, 0, 0, 0.6),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08),
+                inset 0 0 30px rgba(218, 165, 32, 0.03);
+            transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .golden-glass-card::before {
+            content: '';
+            position: absolute;
+            inset: -1px;
+            background: linear-gradient(45deg, 
+                rgba(218, 165, 32, 0.2) 0%, 
+                rgba(184, 134, 11, 0.1) 25%,
+                transparent 50%,
+                rgba(244, 228, 188, 0.1) 75%,
+                rgba(218, 165, 32, 0.15) 100%);
+            border-radius: 4px;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.8s ease;
+        }
+
+        .golden-glass-card:hover {
+            transform: translateY(-3px);
+            border-color: rgba(218, 165, 32, 0.3);
+            box-shadow: 
+                0 16px 48px rgba(0, 0, 0, 0.8),
+                0 0 40px rgba(218, 165, 32, 0.1),
+                inset 0 1px 1px rgba(244, 228, 188, 0.12),
+                inset 0 0 40px rgba(218, 165, 32, 0.05);
+        }
+
+        .golden-glass-card:hover::before {
+            opacity: 1;
+        }
+
+        /* 表格 */
+        .imperial-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            background: rgba(15, 15, 15, 0.8);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(184, 134, 11, 0.2);
+            border-radius: 2px;
+        }
+
+        .imperial-table th {
+            background: rgba(184, 134, 11, 0.08);
+            padding: 2rem 1.5rem;
+            text-align: left;
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--imperial-gold);
+            border-bottom: 1px solid rgba(184, 134, 11, 0.2);
+        }
+
+        .imperial-table td {
+            padding: 1.8rem 1.5rem;
+            border-bottom: 1px solid rgba(184, 134, 11, 0.05);
+            font-weight: 300;
+        }
+
+        .imperial-table tbody tr:hover {
+            background: rgba(184, 134, 11, 0.03);
+        }
+
+        /* 分隔线 */
+        .sovereign-divider {
+            height: 1px;
+            background: linear-gradient(90deg, 
+                transparent 0%, 
+                rgba(184, 134, 11, 0.3) 30%, 
+                rgba(184, 134, 11, 0.6) 50%, 
+                rgba(184, 134, 11, 0.3) 70%, 
+                transparent 100%);
+            margin: 8rem 0;
+            position: relative;
+        }
+
+        .sovereign-divider::before {
+            content: '◆';
+            position: absolute;
+            top: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--sovereign-gold);
+            font-size: 16px;
+            background: var(--obsidian-black);
+            padding: 0 1rem;
+        }
+
+        /* 垂直进度条 */
+        .reading-progress {
+            position: fixed;
+            top: 50%;
+            right: 2rem;
+            width: 4px;
+            height: 200px;
+            transform: translateY(-50%);
+            background: linear-gradient(180deg, 
+                rgba(184, 134, 11, 0.2) 0%, 
+                rgba(218, 165, 32, 0.3) 30%,
+                rgba(244, 228, 188, 0.4) 60%,
+                rgba(218, 165, 32, 0.3) 85%,
+                rgba(139, 105, 20, 0.2) 100%);
+            z-index: 1001;
+            box-shadow: 
+                0 0 12px rgba(184, 134, 11, 0.6),
+                2px 0 8px rgba(184, 134, 11, 0.3),
+                inset 1px 0 2px rgba(244, 228, 188, 0.4);
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+        .reading-progress::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(180deg,
+                rgba(244, 228, 188, 0.1) 0%,
+                rgba(218, 165, 32, 0.15) 50%,
+                rgba(244, 228, 188, 0.1) 100%);
+            border-radius: 2px;
+            animation: progressShimmer 3s ease-in-out infinite;
+        }
+
+        .reading-progress-fill {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(180deg,
+                var(--golden-shadow) 0%,
+                var(--sovereign-gold) 50%,
+                var(--imperial-gold) 100%);
+            border-radius: 2px;
+            transition: height 0.1s ease;
+            box-shadow: 
+                inset 0 1px 2px rgba(244, 228, 188, 0.3),
+                0 0 8px rgba(184, 134, 11, 0.4);
+        }
+
+        @keyframes progressShimmer {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.8; }
+        }
+
+        /* 进度标题提示器 */
+        .progress-tooltip {
+            position: fixed;
+            top: 50%;
+            right: 7rem;
+            transform: translateY(-50%);
+            background: linear-gradient(135deg, 
+                rgba(15, 15, 15, 0.95) 0%, 
+                rgba(31, 31, 31, 0.9) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.25);
+            border-radius: 8px;
+            padding: 0.8rem 2rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 0.85rem;
+            font-weight: 300;
+            color: var(--imperial-gold);
+            backdrop-filter: blur(20px);
+            box-shadow: 
+                0 8px 32px rgba(0, 0, 0, 0.7),
+                0 0 20px rgba(184, 134, 11, 0.1),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+            z-index: 1002;
+            white-space: nowrap;
+            letter-spacing: 0.03em;
+        }
+
+        .progress-tooltip.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(-50%) translateX(-8px);
+        }
+
+        .progress-tooltip::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -8px;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-left: 8px solid rgba(184, 134, 11, 0.25);
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+        }
+
+        .progress-tooltip::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -7px;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-left: 7px solid rgba(15, 15, 15, 0.95);
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+        }
+
+        /* 引用文献 */
+        .citation-item {
+            padding: 1.5rem 2rem;
+            margin: 0.8rem 0;
+            background: linear-gradient(135deg, 
+                rgba(21, 21, 21, 0.8) 0%, 
+                rgba(31, 31, 31, 0.6) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.15);
+            border-radius: 3px;
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .citation-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--sovereign-gold), var(--golden-shadow));
+            opacity: 0.6;
+            transition: opacity 0.3s ease;
+        }
+
+        .citation-item:hover {
+            border-color: rgba(184, 134, 11, 0.4);
+            background: linear-gradient(135deg, 
+                rgba(31, 31, 31, 0.9) 0%, 
+                rgba(42, 42, 42, 0.7) 100%);
+            transform: translateX(6px) translateY(-1px);
+            box-shadow: 
+                0 8px 25px rgba(0, 0, 0, 0.5),
+                0 0 20px rgba(184, 134, 11, 0.08);
+        }
+
+        .citation-item:hover::before {
+            opacity: 1;
+        }
+
+        .citation-item a {
+            color: var(--platinum-mist);
+            text-decoration: none;
+            font-size: 0.85rem;
+            line-height: 1.7;
+            font-weight: 300;
+            transition: color 0.4s ease;
+            display: block;
+            position: relative;
+        }
+
+        .citation-item a::before {
+            content: '';
+            position: absolute;
+            left: -0.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 4px;
+            background: var(--sovereign-gold);
+            border-radius: 50%;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .citation-item:hover a {
+            color: var(--aureate-whisper);
+            padding-left: 1rem;
+        }
+
+        .citation-item:hover a::before {
+            opacity: 0.8;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 1024px) {
+            .sovereign-container {
+                padding: 0 2.5rem;
+            }
+            .imperial-section {
+                margin: 8rem 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .sovereign-container {
+                padding: 0 1.5rem;
+            }
+            .imperial-section {
+                margin: 6rem 0;
+            }
+            .authority-card {
+                padding: 2rem;
+            }
+            .reading-progress {
+                right: 1rem;
+                height: 150px;
+                width: 3px;
+            }
+            .progress-tooltip {
+                right: 5rem;
+                padding: 0.6rem 1.5rem;
+                font-size: 0.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 垂直进度条 -->
+    <div class="reading-progress">
+        <div class="reading-progress-fill"></div>
+    </div>
+    
+    <!-- 进度标题提示器 -->
+    <div class="progress-tooltip" id="progress-tooltip"></div>
+
+    <!-- 首屏标题 -->
+    <header id="header" class="min-h-screen flex items-center justify-center relative" data-title="专用机械的双速世界：驾驭基础设施周期与技术变革浪潮">
+        <div class="sovereign-container text-center relative z-10">
+            <!-- 主标题区域 -->
+            <div class="mb-16">
+                <h1 class="imperial-title text-4xl md:text-6xl mb-6">
+                    专用机械的双速世界：驾驭基础设施周期与技术变革浪潮
+                </h1>
+                
+                <h2 class="imperial-subtitle text-2xl md:text-4xl mb-12 opacity-90">
+                    专用机械行业研究报告 2025年Q3
+                </h2>
+            </div>
+            
+            <!-- 英文副标题 -->
+            <div class="mb-12">
+                <div class="imperial-tagline text-sm md:text-base opacity-75 max-w-4xl mx-auto">
+                    The Dual-Speed World of Specialized Machinery: Navigating Infrastructure Cycles and Technology Transformation<br class="md:hidden">
+                    Specialized Machinery Industry Research Report Q3 2025
+                </div>
+            </div>
+            
+            <!-- 致敬区域 -->
+            <div class="mb-16">
+                <div class="imperial-dedication text-sm md:text-base">
+                    致：机构投资者与高净值客户
+                </div>
+                <div class="imperial-dedication-sub text-xs md:text-sm opacity-60 mt-2">
+                    For: Institutional Investors and High Net Worth Clients
+                </div>
+            </div>
+            
+            <!-- 发布日期卡片 -->
+            <div class="golden-glass-card inline-block">
+                <div class="text-xs uppercase tracking-[0.2em] opacity-50 mb-4 font-light">
+                    本报告发布于 · Published on
+                </div>
+                <div class="sovereign-heading text-base">
+                    <span id="date-cn" class="exclusive-number">2025年7月</span> 
+                    <span class="mx-4 text-sovereign-gold opacity-40">◆</span> 
+                    <span id="date-en" class="exclusive-number">July 2025</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 背景装饰 -->
+        <div class="absolute inset-0 pointer-events-none opacity-8">
+            <div class="absolute top-20 left-20 w-px h-32 bg-gradient-to-b from-sovereign-gold to-transparent"></div>
+            <div class="absolute bottom-20 right-20 w-px h-32 bg-gradient-to-t from-sovereign-gold to-transparent"></div>
+            <div class="absolute top-1/2 left-1/4 w-24 h-px bg-gradient-to-r from-sovereign-gold to-transparent"></div>
+            <div class="absolute top-1/3 right-1/4 w-24 h-px bg-gradient-to-l from-sovereign-gold to-transparent"></div>
+        </div>
+    </header>
+
+    <!-- 摘要 -->
+    <section id="executive-summary" class="imperial-section" data-title="摘要">
+        <div class="sovereign-container">
+            <div class="authority-card">
+                <h2 class="sovereign-heading text-3xl mb-8 text-center">
+                    <i class="material-icons mr-4" style="vertical-align: middle;">analytics</i>
+                    摘要
+                </h2>
+                
+                <div class="executive-quote max-w-4xl mx-auto text-center mb-12">
+                    本报告旨在为机构投资者与高净值客户构建一个关于专用机械行业的系统性认知框架。我们将"专用机械"这一宽泛概念解构为两大核心且迥异的子行业：工程与矿山机械和半导体制造设备。全球专用机械行业正进入一个由宏观经济、地缘政治和技术变革共同驱动的"双速"发展阶段。
+                </div>
+
+                <div class="noble-text space-y-8">
+                    <div>
+                        <h3 class="sovereign-heading text-xl mb-4">
+                            <i class="material-icons mr-3" style="vertical-align: middle;">build</i>
+                            工程与矿山机械
+                        </h3>
+                        <p>作为一个成熟的周期性行业，其增长逻辑正在被两大结构性力量重塑。首先，以美国《基础设施投资和就业法案》（IIJA）为代表的发达经济体基础设施更新换代，以及新兴市场的持续城镇化进程，正在形成一个长周期的需求支撑。其次，以中国"国四"排放标准为代表的全球性环保法规趋严，正在强制催生一轮技术升级和设备替换周期，为具备技术优势的头部企业创造了提升利润率的结构性机遇。</p>
+                    </div>
+                    
+                    <div>
+                        <h3 class="sovereign-heading text-xl mb-4">
+                            <i class="material-icons mr-3" style="vertical-align: middle;">memory</i>
+                            半导体制造设备
+                        </h3>
+                        <p>则处于一个由技术迭代和地缘政治博弈共同定义的"超级周期"之中。人工智能（AI）和高性能计算（HPC）的爆发式需求，驱动了对先进制程芯片（小于7纳米）的指数级需求，直接转化为对半导体设备的巨额资本开支。同时，以美国《芯片与科学法案》及相关出口管制为核心的地缘政治战略，正深刻地重塑全球半导体产业链。</p>
+                    </div>
+                    
+                    <div>
+                        <h3 class="sovereign-heading text-xl mb-4">
+                            <i class="material-icons mr-3" style="vertical-align: middle;">insights</i>
+                            投资启示
+                        </h3>
+                        <div class="grid lg:grid-cols-2 gap-6">
+                            <div class="golden-glass-card">
+                                <h4 class="sovereign-heading text-lg mb-4">工程机械投资逻辑</h4>
+                                <div class="noble-text text-sm">
+                                    投资逻辑在于"伟大复兴"和"绿色强制替换"。投资者应关注那些在全球基础设施更新浪潮中占据有利地位、并在电动化和自动化技术上领先的头部企业。
+                                </div>
+                            </div>
+                            
+                            <div class="golden-glass-card">
+                                <h4 class="sovereign-heading text-lg mb-4">半导体设备投资逻辑</h4>
+                                <div class="noble-text text-sm">
+                                    投资逻辑在于"AI淘金热的卖铲人"和"地缘政治的必然选择"。投资该领域的头部企业，相当于在不押注单一芯片设计公司的前提下，直接投资于整个AI革命的基础设施。
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 宏观与政策的超级周期 -->
+    <section id="macro-policy-cycle" class="imperial-section" data-title="宏观与政策的超级周期：奠定全球舞台">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-4xl mb-16 text-center">
+                <i class="material-icons mr-4" style="vertical-align: middle;">public</i>
+                宏观与政策的超级周期：奠定全球舞台
+            </h2>
+
+            <div class="authority-card mb-12">
+                <h3 class="sovereign-heading text-2xl mb-8">
+                    <i class="material-icons mr-3" style="vertical-align: middle;">trending_up</i>
+                    全球经济背景：脆弱的韧性与分化的路径
+                </h3>
+                
+                <div class="noble-text mb-8">
+                    全球经济正展现出一种"低速但稳定"的增长态势，但这平稳的表象之下，隐藏着深刻的区域分化。根据国际货币基金组织（IMF）和世界银行的预测，2025年和2026年全球经济增长率预计将维持在<strong class="exclusive-number">3.0%至3.3%</strong>的平缓区间。然而，发达经济体预计增长<strong class="exclusive-number">1.4%至1.8%</strong>，而新兴市场和发展中经济体的增速则在<strong class="exclusive-number">3.7%至4.2%</strong>之间。
+                </div>
+
+                <div class="overflow-x-auto">
+                    <table class="imperial-table">
+                        <thead>
+                            <tr>
+                                <th>区域/国家</th>
+                                <th>指标</th>
+                                <th>2024年实际/预测值</th>
+                                <th>2025年预测值</th>
+                                <th>2026年预测值</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-semibold">全球</td>
+                                <td>实际GDP增长率 (%)</td>
+                                <td class="exclusive-number">3.2</td>
+                                <td class="exclusive-number">3.2</td>
+                                <td class="exclusive-number">3.3</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">美国</td>
+                                <td>实际GDP增长率 (%)</td>
+                                <td class="exclusive-number">1.7</td>
+                                <td class="exclusive-number">1.8</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">中国</td>
+                                <td>固定资产投资增速 (YTD, %)</td>
+                                <td class="exclusive-number">2.8 (H1 2025)</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">德国</td>
+                                <td>工业生产指数 (月度同比, %)</td>
+                                <td class="text-red-400">-3.53 (Jun 2025)</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">新兴市场</td>
+                                <td>实际GDP增长率 (%)</td>
+                                <td class="exclusive-number">4.2</td>
+                                <td class="exclusive-number">4.2</td>
+                                <td>-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="material-icons mr-3" style="vertical-align: middle;">flag</i>
+                        美国：政策驱动的基础设施复兴
+                    </h3>
+                    <div class="noble-text">
+                        美国市场是当前全球工程机械需求最强劲的增长引擎。《基础设施投资和就业法案》（IIJA）计划总投资约<strong class="exclusive-number">1.2万亿美元</strong>，其中包含约<strong class="exclusive-number">5500亿美元</strong>的新增资金，将在未来五年内专项用于道路、桥梁、公共交通、电网和水利设施的现代化改造。
+                    </div>
+                </div>
+
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="material-icons mr-3" style="vertical-align: middle;">trending_up</i>
+                        中国：从"房地产驱动"到"先进制造驱动"
+                    </h3>
+                    <div class="noble-text">
+                        中国的固定资产投资数据揭示了一场深刻的国家级经济结构转型。2025年上半年全国固定资产投资同比增长<strong class="exclusive-number">2.8%</strong>。房地产开发投资同比大幅下滑<strong class="exclusive-number">9.9%至11.2%</strong>，而制造业投资呈现蓬勃增长，增速高达<strong class="exclusive-number">7.5%至9.1%</strong>。
+                    </div>
+                </div>
+
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="material-icons mr-3" style="vertical-align: middle;">trending_down</i>
+                        欧洲与日本：传统工业强国的挣扎
+                    </h3>
+                    <div class="noble-text">
+                        与中美两国由政策驱动的特定领域强劲需求形成鲜明对比，欧洲和日本的工业部门正面临显著的逆风。德国的工业生产指数持续收缩，2025年6月同比下降<strong class="exclusive-number">3.53%</strong>。日本经济同样在寻找增长动力方面步履维艰。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 政策的铁腕 -->
+    <section id="policy-drivers" class="imperial-section" data-title="政策的铁腕：脱碳与地缘政治成为结构性驱动力">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-4xl mb-16 text-center">
+                <i class="material-icons mr-4" style="vertical-align: middle;">policy</i>
+                政策的铁腕：脱碳与地缘政治成为结构性驱动力
+            </h2>
+
+            <div class="authority-card mb-12">
+                <h3 class="sovereign-heading text-2xl mb-8">
+                    <i class="material-icons mr-3" style="vertical-align: middle;">eco</i>
+                    脱碳议程：强制性的设备更新周期
+                </h3>
+                
+                <div class="noble-text mb-6">
+                    环保法规不再是企业的可选项，而是决定其市场准入的硬性门槛。中国于2022年12月全面实施的非道路移动机械"国四"（NR IV）排放标准，是理解这一趋势的典型案例。该标准的技术要求与欧盟Stage IIIB/V阶段对标，相比"国三"标准，要求颗粒物（PM）排放量减少约<strong class="exclusive-number">90%</strong>，氮氧化物（NOx）排放量减少高达<strong class="exclusive-number">50%</strong>。
+                </div>
+
+                <div class="golden-glass-card">
+                    <h4 class="sovereign-heading text-lg mb-4">强制性设备替换的深远影响</h4>
+                    <div class="noble-text text-sm">
+                        这一政策实质上启动了一个强制性的设备替换周期。大量存量的"国三"及以下标准的设备将因不合规而无法在市场上销售或在特定区域使用，从而被迫提前淘汰。满足"国四"标准需要更先进的发动机技术和复杂的后处理系统，如柴油颗粒捕集器（DPF）和选择性催化还原（SCR）系统。
+                    </div>
+                </div>
+            </div>
+
+            <div class="authority-card">
+                <h3 class="sovereign-heading text-2xl mb-8">
+                    <i class="material-icons mr-3" style="vertical-align: middle;">language</i>
+                    地缘政治：重塑全球半导体设备版图
+                </h3>
+                
+                <div class="grid lg:grid-cols-2 gap-6">
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">《芯片与科学法案》：地缘政治驱动的需求"看跌期权"</h4>
+                        <div class="noble-text text-sm">
+                            美国《芯片与科学法案》提供<strong class="exclusive-number">527亿美元</strong>的政府补贴和投资税收抵免，激励半导体制造环节回流美国。自法案提出以来，已吸引了行业内公司宣布在美国投资近<strong class="exclusive-number">4500亿美元</strong>的新项目。
+                        </div>
+                    </div>
+                    
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">出口管制：全球SME市场的强制分割</h4>
+                        <div class="noble-text text-sm">
+                            美国商务部的出口管制新规正在深刻地割裂全球SME市场，催生出两个平行的生态系统："全球市场"（美国及其盟友主导，聚焦7纳米及以下尖端制程）和"中国市场"（中国投资于不受限制的成熟制程28纳米及以上）。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 工程与矿山机械深度剖析 -->
+    <section id="construction-mining-analysis" class="imperial-section" data-title="工程与矿山机械深度剖析">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-4xl mb-16 text-center">
+                <i class="material-icons mr-4" style="vertical-align: middle;">construction</i>
+                工程与矿山机械深度剖析
+            </h2>
+
+            <div class="authority-card mb-12">
+                <h3 class="sovereign-heading text-2xl mb-8">
+                    <i class="material-icons mr-3" style="vertical-align: middle;">assessment</i>
+                    市场动态与展望：构建于基础设施超级周期之上
+                </h3>
+                
+                <div class="noble-text mb-8">
+                    全球工程机械市场是一个年销售额高达数千亿美元的庞大产业。根据不同市场研究机构的统计，2024年全球市场规模在<strong class="exclusive-number">1610亿至2500亿美元</strong>之间，并预计在未来十年内，将以<strong class="exclusive-number">3.4%至8.4%</strong>的复合年增长率（CAGR）持续扩张。
+                </div>
+
+                <div class="overflow-x-auto">
+                    <table class="imperial-table">
+                        <thead>
+                            <tr>
+                                <th>细分类型</th>
+                                <th>子类别</th>
+                                <th>市场份额 (%)</th>
+                                <th>核心驱动力</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-semibold">按区域</td>
+                                <td>亚太地区</td>
+                                <td class="exclusive-number">> 43.8</td>
+                                <td>城镇化、基础设施投资（中国、印度）</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>北美</td>
+                                <td class="exclusive-number">~21-29</td>
+                                <td>基础设施更新（美国IIJA法案）</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>欧洲</td>
+                                <td class="exclusive-number">~18-29</td>
+                                <td>经济复苏、环保法规</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">按设备类型</td>
+                                <td>土方设备</td>
+                                <td class="exclusive-number">~39</td>
+                                <td>道路建设、房地产开发、矿业</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>物料搬运设备</td>
+                                <td class="exclusive-number">~38.5</td>
+                                <td>工业化、自动化、高层建筑</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="authority-card">
+                <h3 class="sovereign-heading text-2xl mb-8">
+                    <i class="material-icons mr-3" style="vertical-align: middle;">emoji_events</i>
+                    竞争格局：巨头之战与挑战者的崛起
+                </h3>
+                
+                <div class="noble-text mb-8">
+                    工程机械行业呈现出典型的寡头垄断格局，但近年来，随着中国制造商的强势崛起，全球竞争态势正发生深刻变化。行业权威排名"KHL黄榜"（Yellow Table）显示，全球前50大工程机械制造商的总销售额达到了创纪录的<strong class="exclusive-number">2434亿美元</strong>。
+                </div>
+
+                <div class="overflow-x-auto">
+                    <table class="imperial-table">
+                        <thead>
+                            <tr>
+                                <th>排名</th>
+                                <th>公司</th>
+                                <th>总部所在国</th>
+                                <th>2023年销售额（亿美元）</th>
+                                <th>市场份额 (%)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="exclusive-number">1</td>
+                                <td class="font-semibold">卡特彼勒 (Caterpillar)</td>
+                                <td>美国</td>
+                                <td class="exclusive-number">410</td>
+                                <td class="exclusive-number">16.8</td>
+                            </tr>
+                            <tr>
+                                <td class="exclusive-number">2</td>
+                                <td class="font-semibold">小松 (Komatsu)</td>
+                                <td>日本</td>
+                                <td class="exclusive-number">253</td>
+                                <td class="exclusive-number">10.4</td>
+                            </tr>
+                            <tr>
+                                <td class="exclusive-number">3</td>
+                                <td class="font-semibold">约翰迪尔 (John Deere)</td>
+                                <td>美国</td>
+                                <td class="exclusive-number">148</td>
+                                <td class="exclusive-number">6.1</td>
+                            </tr>
+                            <tr>
+                                <td class="exclusive-number">4</td>
+                                <td class="font-semibold">徐工集团 (XCMG)</td>
+                                <td>中国</td>
+                                <td class="exclusive-number">130</td>
+                                <td class="exclusive-number">5.3</td>
+                            </tr>
+                            <tr>
+                                <td class="exclusive-number">5</td>
+                                <td class="font-semibold">利勃海尔 (Liebherr)</td>
+                                <td>德国/瑞士</td>
+                                <td class="exclusive-number">103</td>
+                                <td class="exclusive-number">4.2</td>
+                            </tr>
+                            <tr>
+                                <td class="exclusive-number">6</td>
+                                <td class="font-semibold">三一重工 (Sany)</td>
+                                <td>中国</td>
+                                <td class="exclusive-number">102</td>
+                                <td class="exclusive-number">4.2</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 半导体制造设备深度剖析 -->
+    <section id="semiconductor-equipment-analysis" class="imperial-section" data-title="半导体制造设备深度剖析">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-4xl mb-16 text-center">
+                <i class="material-icons mr-4" style="vertical-align: middle;">memory</i>
+                半导体制造设备深度剖析
+            </h2>
+
+            <div class="authority-card mb-12">
+                <h3 class="sovereign-heading text-2xl mb-8">
+                    <i class="material-icons mr-3" style="vertical-align: middle;">rocket_launch</i>
+                    市场动态与展望：铸造AI与先进计算的未来
+                </h3>
+                
+                <div class="noble-text mb-8">
+                    全球SME市场正经历一轮强劲的增长周期。根据SEMI等行业机构的预测，2024至2025年，全球SME市场规模约为<strong class="exclusive-number">1100亿至1255亿美元</strong>，并预计将以<strong class="exclusive-number">7%至9.5%</strong>的复合年增长率（CAGR）高速增长，到2030年市场规模有望达到<strong class="exclusive-number">1750亿至2000亿美元</strong>以上。
+                </div>
+
+                <div class="overflow-x-auto">
+                    <table class="imperial-table">
+                        <thead>
+                            <tr>
+                                <th>细分领域</th>
+                                <th>2024年销售额（亿美元）</th>
+                                <th>2025年预测值（亿美元）</th>
+                                <th>2026年预测值（亿美元）</th>
+                                <th>核心驱动力</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-semibold">设备总销售额</td>
+                                <td class="exclusive-number">1,171 (实际)</td>
+                                <td class="exclusive-number">1,255</td>
+                                <td class="exclusive-number">1,381</td>
+                                <td>AI、HPC、存储器复苏、地缘政治</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">晶圆制造设备 (WFE)</td>
+                                <td class="exclusive-number">1,043</td>
+                                <td class="exclusive-number">1,108</td>
+                                <td class="exclusive-number">1,221</td>
+                                <td>先进制程竞赛、产能扩张</td>
+                            </tr>
+                            <tr>
+                                <td>WFE - 晶圆代工/逻辑</td>
+                                <td>-</td>
+                                <td class="exclusive-number">648</td>
+                                <td class="exclusive-number">690</td>
+                                <td>AI芯片、HPC</td>
+                            </tr>
+                            <tr>
+                                <td>WFE - DRAM</td>
+                                <td class="exclusive-number">195</td>
+                                <td class="exclusive-number">207</td>
+                                <td class="exclusive-number">232</td>
+                                <td>高带宽存储器 (HBM) for AI</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="authority-card">
+                <h3 class="sovereign-heading text-2xl mb-8">
+                    <i class="material-icons mr-3" style="vertical-align: middle;">security</i>
+                    竞争格局：一个由技术"咽喉"和垄断壁垒构成的世界
+                </h3>
+                
+                <div class="overflow-x-auto mb-8">
+                    <table class="imperial-table">
+                        <thead>
+                            <tr>
+                                <th>工艺环节</th>
+                                <th>市场领导者</th>
+                                <th>市场份额 (%)</th>
+                                <th>主要竞争者</th>
+                                <th>核心壁垒</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-semibold">EUV光刻</td>
+                                <td class="font-semibold">ASML (荷兰)</td>
+                                <td class="exclusive-number">~100</td>
+                                <td>无</td>
+                                <td>独家EUV光源与光学技术</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">DUV光刻</td>
+                                <td class="font-semibold">ASML (荷兰)</td>
+                                <td class="exclusive-number">> 60</td>
+                                <td>Nikon, Canon (日本)</td>
+                                <td>沉浸式光刻技术、精度控制</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">导体刻蚀</td>
+                                <td class="font-semibold">Lam Research (美国)</td>
+                                <td class="exclusive-number">~44-50</td>
+                                <td>Applied Materials, Tokyo Electron</td>
+                                <td>等离子体物理、高深宽比刻蚀</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">CVD/PVD沉积</td>
+                                <td class="font-semibold">Applied Materials (美国)</td>
+                                <td class="exclusive-number">> 50</td>
+                                <td>Lam Research, Tokyo Electron</td>
+                                <td>材料工程、薄膜均匀性</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="golden-glass-card">
+                    <h4 class="sovereign-heading text-lg mb-4">ASML的绝对统治</h4>
+                    <div class="noble-text text-sm">
+                        光刻是芯片制造中最核心、最昂贵、技术难度最高的环节。在生产7纳米及以下最先进制程芯片所必需的极紫外光（EUV）光刻技术上，ASML是全球唯一的供应商。一台先进的EUV光刻机售价高达<strong class="exclusive-number">2亿美元</strong>。2024年，ASML实现净销售额<strong class="exclusive-number">283亿欧元</strong>，毛利率高达<strong class="exclusive-number">51.3%</strong>。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 综合分析与投资论点 -->
+    <section id="investment-thesis" class="imperial-section" data-title="综合分析与投资论点">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-4xl mb-16 text-center">
+                <i class="material-icons mr-4" style="vertical-align: middle;">insights</i>
+                综合分析与投资论点
+            </h2>
+
+            <div class="authority-card mb-12">
+                <h3 class="sovereign-heading text-2xl mb-8">
+                    <i class="material-icons mr-3" style="vertical-align: middle;">compare</i>
+                    比较分析与结构性展望
+                </h3>
+                
+                <div class="grid lg:grid-cols-2 gap-6">
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">工程机械特征</h4>
+                        <div class="noble-text text-sm space-y-3">
+                            <div><strong>周期性：</strong>与宏观经济、固定资产投资和基础设施建设周期高度相关，但当前有长周期确定性</div>
+                            <div><strong>增长概况：</strong>作为成熟行业，属于典型的"GDP+"型增长</div>
+                            <div><strong>利润水平：</strong>头部企业营业利润率通常在15-20%的区间</div>
+                            <div><strong>研发强度：</strong>研发投入占销售额比例相对温和，通常在3-5%之间</div>
+                        </div>
+                    </div>
+                    
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">半导体设备特征</h4>
+                        <div class="noble-text text-sm space-y-3">
+                            <div><strong>周期性：</strong>由技术迭代周期和地缘政治周期驱动，呈现"超级周期"特征</div>
+                            <div><strong>增长概况：</strong>处于高增长赛道，是典型的技术驱动型增长</div>
+                            <div><strong>利润水平：</strong>由于极高的技术壁垒，毛利率普遍在50%以上</div>
+                            <div><strong>研发强度：</strong>研发是生存的命脉，投入强度极高，ASML超过16%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="authority-card mb-12">
+                <h3 class="sovereign-heading text-2xl mb-8">
+                    <i class="material-icons mr-3" style="vertical-align: middle;">lightbulb</i>
+                    核心投资论点
+                </h3>
+                
+                <div class="grid lg:grid-cols-2 gap-6">
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">"AI淘金热的卖铲人"</h4>
+                        <div class="noble-text text-sm">
+                            投资于SME行业的头部企业，如ASML、应用材料、泛林集团等，是参与这场由AI引领的技术革命最直接、风险最分散的方式之一。无论最终哪家芯片设计公司或AI应用公司能胜出，它们都离不开这些设备供应商提供的"镐和铲"。
+                        </div>
+                    </div>
+                    
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">"伟大复兴与建设浪潮"</h4>
+                        <div class="noble-text text-sm">
+                            投资于工程机械行业的领导者，如卡特彼勒和小松，是押注于全球基础设施建设这一宏大叙事。无论是发达国家老旧基础设施的更新换代，还是新兴市场持续的城镇化进程，都将为这些公司提供长期的需求支撑。
+                        </div>
+                    </div>
+                    
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">"脱碳进程中的赋能者"</h4>
+                        <div class="noble-text text-sm">
+                            在全球脱碳的大趋势下，那些在电动化、氢能等新能源技术以及高效节能发动机领域布局领先的OEMs和核心零部件供应商，将能更好地抓住由环保法规驱动的强制替换周期。
+                        </div>
+                    </div>
+                    
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">"地缘政治的套利者"</h4>
+                        <div class="noble-text text-sm">
+                            地缘政治导致的全球供应链重构，为特定企业创造了独特的增长机会。投资者应关注那些能够从这种"脱钩"或"多元化"中受益的公司，包括非中国区的关键设备供应商和中国本土供应链的关键环节。
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="authority-card">
+                <h3 class="sovereign-heading text-2xl mb-8">
+                    <i class="material-icons mr-3" style="vertical-align: middle;">calculate</i>
+                    估值框架建议
+                </h3>
+                
+                <div class="grid lg:grid-cols-2 gap-6">
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">工程机械OEMs估值方法</h4>
+                        <div class="noble-text text-sm">
+                            建议采用<strong>周期调整后的市盈率（CAPE或Normalized P/E）</strong>、<strong>企业价值/EBITDA（EV/EBITDA）</strong>和<strong>现金流折现（DCF）</strong>相结合的方法。由于其强周期性，使用单一时点的P/E进行估值具有误导性。
+                        </div>
+                    </div>
+                    
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">半导体设备领导者估值方法</h4>
+                        <div class="noble-text text-sm">
+                            建议以<strong>EV/EBITDA</strong>为主，辅以<strong>市销率（P/S）和DCF</strong>进行估值。对于这类拥有技术垄断地位、处于高增长阶段且研发投入巨大的公司，传统的P/E估值法可能无法完全体现其价值。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 结论 -->
+    <section id="conclusion" class="imperial-section" data-title="结论">
+        <div class="sovereign-container">
+            <div class="authority-card text-center">
+                <h2 class="sovereign-heading text-3xl mb-8">
+                    <i class="material-icons mr-4" style="vertical-align: middle;">emoji_events</i>
+                    结论
+                </h2>
+                
+                <div class="executive-quote max-w-4xl mx-auto mb-12">
+                    专用机械行业正站在一个新的历史十字路口。它不再是一个单一、同质化的市场，而是分化为两个逻辑迥异、节奏不同的赛道。
+                </div>
+
+                <div class="noble-text max-w-5xl mx-auto space-y-8">
+                    <div>
+                        <strong class="sovereign-heading text-lg">工程与矿山机械</strong>正在经历一场由"建设"到"更新与升级"的深刻转型。其未来的增长将更多地依赖于对现有基础设施的智能化、绿色化改造，以及满足新兴市场更高生活标准的建设需求。这是一个关于"存量优化"和"高质量增量"的故事，其投资价值在于头部企业穿越周期的韧性、技术升级带来的利润提升以及稳定增长的服务业务。
+                    </div>
+                    
+                    <div>
+                        <strong class="sovereign-heading text-lg">半导体制造设备</strong>则在引领一场关于"智能"与"算力"的指数级革命。其增长故事的核心是技术前沿的不断拓展和地缘政治格局下的战略重构。这是一个关于"创造未来"和"保障安全"的故事，其投资价值在于其在现代科技体系中不可替代的、如同"神经中枢"般的战略地位和由此带来的超额利润。
+                    </div>
+                    
+                    <div>
+                        对于投资者而言，理解这种"双速"结构是构建成功投资组合的关键。通过在周期性与成长性、物理世界与数字世界、成熟技术与前沿科技之间进行合理配置，投资者将能更好地驾驭专用机械行业未来十年的结构性机遇，分享由基础设施更新和技术革命浪潮共同带来的时代红利。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 引用文献 -->
+    <section id="references" class="imperial-section bg-gradient-to-b from-transparent to-black bg-opacity-30" data-title="引用文献">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl mb-12 text-center">引用文献</h2>
+            
+            <!-- 固定4列布局网格 -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl mx-auto">
+                <div class="citation-item">
+                    <a href="https://www.imf.org/en/Publications/WEO" target="_blank">
+                        1. World Economic Outlook - All Issues - International Monetary Fund (IMF)
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.worldbank.org/en/publication/global-economic-prospects" target="_blank">
+                        2. Global Economic Prospects - World Bank
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://english.www.gov.cn/archive/statistics/202507/15/content_WS6875be7ec6d0868f4e8f428d.html" target="_blank">
+                        3. China's fixed-asset investment sees stable growth in H1
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://ycharts.com/indicators/germany_industrial_production" target="_blank">
+                        4. Germany Industrial Production Index - Real-Time & Historical - YCharts
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.imarcgroup.com/construction-equipment-market" target="_blank">
+                        5. Construction Equipment Market Size, Share & Outlook 2033 - IMARC
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.cantwell.senate.gov/imo/media/doc/Infrastructure%20Investment%20and%20Jobs%20Act%20-%20Section%20by%20Section%20Summary.pdf" target="_blank">
+                        6. Bipartisan Infrastructure Investment and Jobs Act Summary
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://dieselnet.com/standards/cn/nonroad.php" target="_blank">
+                        7. China: Nonroad Diesel Engines - Emission Standards - DieselNet
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.semiconductors.org/wp-content/uploads/2024/09/SIA_State-of-Industry-Report_2024_final_091124.pdf" target="_blank">
+                        8. STATE OF THE U.S. SEMICONDUCTOR INDUSTRY
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.semi.org/en/semi-press-release/global-semiconductor-equipment-billings-surged-to-117-billion-dollars-in-2024-semi-reports" target="_blank">
+                        9. Global Semiconductor Equipment Billings Surged to $117 Billion in 2024
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://digimag.international-construction.com/articles/264505?article=21-1" target="_blank">
+                        10. RECORD-BREAKER | Pocketmags.com - International Construction
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.caterpillar.com/en/news/corporate-press-releases/h/4q24-results-caterpillar-inc.html" target="_blank">
+                        11. Caterpillar Reports Fourth-Quarter And Full-Year 2024 Results
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.komatsu.jp/en/-/media/home/ir/library/financial/en/2503q4_e.pdf" target="_blank">
+                        12. Komatsu Ltd. Consolidated Business Results for the Fiscal Year
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.sanyglobal.com/press_releases/4584/" target="_blank">
+                        13. SANY 2024 Annual Report: Net Profit Up 31.98%
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.semi.org/en/semi-press-release/semi-reports-global-total-semiconductor-equipment-sales-forecast-to-reach-125.5-billion-dollars-in-2025" target="_blank">
+                        14. SEMI Reports Global Total Semiconductor Equipment Sales Forecast
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.grandviewresearch.com/industry-analysis/semiconductor-manufacturing-equipment-market-report" target="_blank">
+                        15. Semiconductor Manufacturing Equipment Market Report, 2030
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.asml.com/en/news/press-releases/2025/q4-2024-financial-results" target="_blank">
+                        16. ASML reports €28.3 billion total net sales and €7.6 billion net income in 2024
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.macrotrends.net/stocks/charts/ASML/asml-holding/research-development-expenses" target="_blank">
+                        17. ASML Holding Research and Development Expenses 2010-2025
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.asml.com/en/company/about-asml/history" target="_blank">
+                        18. Our history | ASML - Supplying the semiconductor industry
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://patentpc.com/blog/top-chip-making-equipment-companies-asml-applied-materials-and-lam-research-market-data" target="_blank">
+                        19. Top Chip-Making Equipment Companies: ASML, Applied Materials, and Lam Research
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.chinadieselgen.com/en/the-ultimate-ranking-of-the-worlds-top-10-diesel-engine-brands.html" target="_blank">
+                        20. The Ultimate Ranking Of The World's Top 10 Diesel Engine Brands
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.skyquestt.com/report/construction-equipment-aftermarket" target="_blank">
+                        21. Construction Equipment Aftermarket Size, Share, Growth Analysis
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.marketsandmarkets.com/Market-Reports/construction-mining-equipment-market-179948937.html" target="_blank">
+                        22. Construction Equipment Market Size, Share, Growth, Trends & Analysis Report
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.fortunebusinessinsights.com/industry-reports/construction-equipment-market-100521" target="_blank">
+                        23. Construction Equipment Market Size, Share | Report [2032]
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.grandviewresearch.com/industry-analysis/heavy-construction-equipment-market" target="_blank">
+                        24. Heavy Construction Equipment Market Size Report, 2030
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.my-equipment.com/blog/2025/07/sales-of-top-oems-have-revealed-yellow-table-data-2024/" target="_blank">
+                        25. Sales Of Top OEMS Have Revealed: Yellow Table Data 2024
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.macrotrends.net/stocks/charts/CAT/caterpillar/research-development-expenses" target="_blank">
+                        26. Caterpillar Research and Development Expenses 2010-2025
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.macrotrends.net/stocks/charts/CAT/caterpillar/pe-ratio" target="_blank">
+                        27. Caterpillar PE Ratio 2010-2025 | CAT
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://researchinchina.com/Htmls/Report/2021/71732.html" target="_blank">
+                        28. Global and China Hydraulic Industry Report, 2021-2026
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.mordorintelligence.com/industry-reports/semiconductor-etch-equipment-market" target="_blank">
+                        29. Semiconductor Etch Equipment Market Size & Share Analysis
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.zeiss.com/semiconductor-manufacturing-technology/products/markets-and-partners.html" target="_blank">
+                        30. Markets and Partners | ZEISS SMT
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://uk.investing.com/pro/OTCPK:ASML.F/explorer/ev_to_ebitda_ltm" target="_blank">
+                        31. ASML Holding NV (ASML.F) EV/EBITDA
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.macrotrends.net/stocks/charts/AMAT/applied-materials/research-development-expenses" target="_blank">
+                        32. Applied Materials Research and Development Expenses 2010-2025
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript 垂直进度条功能 -->
+    <script>
+        // 精美垂直进度条系统（支持悬停显示标题 + 点击跳转）
+        const progressBar = document.querySelector('.reading-progress');
+        const progressFill = document.querySelector('.reading-progress-fill');
+        const progressTooltip = document.getElementById('progress-tooltip');
+        const sections = document.querySelectorAll('section[id], header[id]');
+
+        let currentSectionTitle = '';
+        let sectionsData = [];
+
+        // 初始化章节数据
+        function initSections() {
+            sectionsData = Array.from(sections).map(section => ({
+                id: section.getAttribute('id'),
+                title: section.getAttribute('data-title') || section.querySelector('h1, h2')?.textContent || '未知章节',
+                offsetTop: section.offsetTop,
+                offsetHeight: section.offsetHeight
+            }));
+        }
+
+        function updateProgress() {
+            const scrolled = window.pageYOffset;
+            const maxHeight = document.body.scrollHeight - window.innerHeight;
+            const progress = (scrolled / maxHeight) * 100;
+            
+            // 更新垂直进度条填充高度
+            progressFill.style.height = `${progress}%`;
+            
+            // 获取当前章节
+            let currentSection = '';
+            sectionsData.forEach(section => {
+                if (scrolled >= section.offsetTop - 300) {
+                    currentSection = section.id;
+                    currentSectionTitle = section.title;
+                }
+            });
+        }
+
+        // 点击进度条跳转到对应位置
+        progressBar.addEventListener('click', (e) => {
+            const rect = progressBar.getBoundingClientRect();
+            const clickY = e.clientY - rect.top;
+            const progressHeight = rect.height;
+            const clickPercent = clickY / progressHeight;
+            
+            const maxHeight = document.body.scrollHeight - window.innerHeight;
+            const targetScroll = maxHeight * clickPercent;
+            
+            window.scrollTo({
+                top: targetScroll,
+                behavior: 'smooth'
+            });
+        });
+
+        // 鼠标悬停显示当前章节标题
+        progressBar.addEventListener('mouseenter', () => {
+            if (currentSectionTitle) {
+                progressTooltip.textContent = currentSectionTitle;
+                progressTooltip.classList.add('show');
+            }
+        });
+
+        progressBar.addEventListener('mouseleave', () => {
+            progressTooltip.classList.remove('show');
+        });
+
+        // 提示框悬停保持显示
+        progressTooltip.addEventListener('mouseenter', () => {
+            progressTooltip.classList.add('show');
+        });
+
+        progressTooltip.addEventListener('mouseleave', () => {
+            progressTooltip.classList.remove('show');
+        });
+
+        // 窗口大小改变时重新计算章节位置
+        window.addEventListener('resize', () => {
+            setTimeout(initSections, 100);
+        });
+
+        window.addEventListener('scroll', updateProgress);
+
+        // 页面加载完成后初始化
+        window.addEventListener('load', () => {
+            initSections();
+            updateProgress();
+        });
+    </script>
+</body>
+</html>

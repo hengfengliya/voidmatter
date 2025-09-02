@@ -1,0 +1,1868 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>乘用车行业研究报告 2025年Q3 | 电动化与智能化的双重变革</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700;800;900&family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <style>
+        :root {
+            /* 深邃黑金权力色系 */
+            --obsidian-black: #0A0A0A;
+            --midnight-black: #151515;
+            --shadow-black: #1F1F1F;
+            --charcoal-deep: #2A2A2A;
+            
+            /* 稀缺金色层次 */
+            --sovereign-gold: #B8860B;
+            --imperial-gold: #DAA520;
+            --aureate-whisper: #F4E4BC;
+            --golden-shadow: #8B6914;
+            
+            /* 权力灰度 */
+            --platinum-mist: #E5E5E5;
+            --sterling-silver: #C0C0C0;
+            --graphite-steel: #696969;
+            --charcoal-whisper: #808080;
+            
+            /* 稀缺强调色 */
+            --ruby-accent: #8B0000;
+            --emerald-depth: #006400;
+            --sapphire-authority: #1e3a8a;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, 
+                var(--obsidian-black) 0%, 
+                var(--midnight-black) 40%, 
+                var(--shadow-black) 100%);
+            color: var(--platinum-mist);
+            line-height: 1.8;
+            letter-spacing: 0.02em;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+        
+        /* 权威性排版系统 */
+        .imperial-title {
+            font-family: 'Playfair Display', serif;
+            font-weight: 200;
+            letter-spacing: 0.12em;
+            line-height: 1.05;
+            color: var(--aureate-whisper);
+            text-shadow: 0 3px 12px rgba(184, 134, 11, 0.4);
+        }
+        
+        .imperial-subtitle {
+            font-family: 'Playfair Display', serif;
+            font-weight: 300;
+            letter-spacing: 0.08em;
+            line-height: 1.15;
+            color: var(--imperial-gold);
+            text-shadow: 0 2px 8px rgba(218, 165, 32, 0.3);
+        }
+        
+        .imperial-tagline {
+            font-family: 'Inter', sans-serif;
+            font-weight: 200;
+            letter-spacing: 0.06em;
+            line-height: 1.4;
+            color: var(--sterling-silver);
+            font-style: italic;
+        }
+        
+        .imperial-dedication {
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+            letter-spacing: 0.04em;
+            line-height: 1.3;
+            color: var(--imperial-gold);
+        }
+        
+        .imperial-dedication-sub {
+            font-family: 'Inter', sans-serif;
+            font-weight: 200;
+            letter-spacing: 0.05em;
+            line-height: 1.3;
+            color: var(--sterling-silver);
+            font-style: italic;
+        }
+        
+        .sovereign-heading {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            color: var(--imperial-gold);
+            text-shadow: 0 1px 4px rgba(218, 165, 32, 0.4);
+        }
+        
+        .noble-text {
+            font-weight: 300;
+            letter-spacing: 0.03em;
+            line-height: 2.2;
+            color: var(--platinum-mist);
+        }
+        
+        .executive-quote {
+            font-weight: 300;
+            letter-spacing: 0.02em;
+            line-height: 1.8;
+            color: var(--sterling-silver);
+            font-size: 0.95rem;
+            font-style: italic;
+            position: relative;
+            padding: 0 2rem;
+            margin: 2rem 0;
+        }
+        
+        .executive-quote::before {
+            content: '"';
+            position: absolute;
+            left: 0;
+            top: -0.5rem;
+            font-size: 3rem;
+            color: var(--sovereign-gold);
+            opacity: 0.3;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .executive-quote::after {
+            content: '"';
+            position: absolute;
+            right: 0;
+            bottom: -0.5rem;
+            font-size: 3rem;
+            color: var(--sovereign-gold);
+            opacity: 0.3;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .exclusive-number {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: var(--sovereign-gold);
+            text-shadow: 0 1px 3px rgba(184, 134, 11, 0.5);
+        }
+        
+        /* 极简奢华容器 */
+        .sovereign-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 5rem;
+        }
+        
+        .imperial-section {
+            margin: 12rem 0;
+            position: relative;
+        }
+        
+        /* 金色琉璃卡片 */
+        .golden-glass-card {
+            background: 
+                radial-gradient(circle at 30% 30%, rgba(218, 165, 32, 0.12) 0%, transparent 50%),
+                radial-gradient(circle at 70% 70%, rgba(184, 134, 11, 0.08) 0%, transparent 50%),
+                linear-gradient(135deg, 
+                    rgba(244, 228, 188, 0.06) 0%, 
+                    rgba(218, 165, 32, 0.04) 30%,
+                    rgba(184, 134, 11, 0.03) 70%,
+                    rgba(139, 105, 20, 0.02) 100%);
+            border: 1px solid rgba(218, 165, 32, 0.15);
+            border-radius: 4px;
+            padding: 2.5rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            box-shadow: 
+                0 8px 32px rgba(0, 0, 0, 0.6),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08),
+                inset 0 0 30px rgba(218, 165, 32, 0.03);
+            transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        
+        .golden-glass-card::before {
+            content: '';
+            position: absolute;
+            inset: -1px;
+            background: linear-gradient(45deg, 
+                rgba(218, 165, 32, 0.2) 0%, 
+                rgba(184, 134, 11, 0.1) 25%,
+                transparent 50%,
+                rgba(244, 228, 188, 0.1) 75%,
+                rgba(218, 165, 32, 0.15) 100%);
+            border-radius: 4px;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.8s ease;
+        }
+        
+        .golden-glass-card:hover {
+            transform: translateY(-3px);
+            border-color: rgba(218, 165, 32, 0.3);
+            box-shadow: 
+                0 16px 48px rgba(0, 0, 0, 0.8),
+                0 0 40px rgba(218, 165, 32, 0.1),
+                inset 0 1px 1px rgba(244, 228, 188, 0.12),
+                inset 0 0 40px rgba(218, 165, 32, 0.05);
+        }
+        
+        .golden-glass-card:hover::before {
+            opacity: 1;
+        }
+        
+        /* 权力卡片系统 */
+        .authority-card {
+            background: linear-gradient(145deg, 
+                rgba(21, 21, 21, 0.9) 0%, 
+                rgba(31, 31, 31, 0.8) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.15);
+            border-radius: 2px;
+            padding: 3rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            box-shadow: 
+                0 8px 32px rgba(0, 0, 0, 0.6),
+                inset 0 1px 1px rgba(244, 228, 188, 0.05);
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        
+        .authority-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(184, 134, 11, 0.3);
+            box-shadow: 
+                0 16px 48px rgba(0, 0, 0, 0.8),
+                0 0 24px rgba(184, 134, 11, 0.1),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08);
+        }
+        
+        .authority-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(90deg, var(--sovereign-gold), transparent);
+            opacity: 0.6;
+        }
+        
+        .authority-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(270deg, var(--sovereign-gold), transparent);
+            opacity: 0.6;
+        }
+        
+        /* 权威表格 */
+        .imperial-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            background: rgba(15, 15, 15, 0.8);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(184, 134, 11, 0.2);
+            border-radius: 2px;
+        }
+        
+        .imperial-table th {
+            background: rgba(184, 134, 11, 0.08);
+            padding: 2rem 1.5rem;
+            text-align: left;
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--imperial-gold);
+            border-bottom: 1px solid rgba(184, 134, 11, 0.2);
+        }
+        
+        .imperial-table td {
+            padding: 1.8rem 1.5rem;
+            border-bottom: 1px solid rgba(184, 134, 11, 0.05);
+            font-weight: 300;
+        }
+        
+        .imperial-table tbody tr:hover {
+            background: rgba(184, 134, 11, 0.03);
+        }
+        
+        /* 分隔线艺术 */
+        .sovereign-divider {
+            height: 1px;
+            background: linear-gradient(90deg, 
+                transparent 0%, 
+                rgba(184, 134, 11, 0.3) 30%, 
+                rgba(184, 134, 11, 0.6) 50%, 
+                rgba(184, 134, 11, 0.3) 70%, 
+                transparent 100%);
+            margin: 8rem 0;
+            position: relative;
+        }
+        
+        .sovereign-divider::before {
+            content: '◆';
+            position: absolute;
+            top: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--sovereign-gold);
+            font-size: 16px;
+            background: var(--obsidian-black);
+            padding: 0 1rem;
+        }
+        
+        /* 精美垂直进度条系统 */
+        .reading-progress {
+            position: fixed;
+            top: 50%;
+            right: 2rem;
+            width: 4px;
+            height: 200px;
+            transform: translateY(-50%);
+            background: linear-gradient(180deg, 
+                rgba(184, 134, 11, 0.2) 0%, 
+                rgba(218, 165, 32, 0.3) 30%,
+                rgba(244, 228, 188, 0.4) 60%,
+                rgba(218, 165, 32, 0.3) 85%,
+                rgba(139, 105, 20, 0.2) 100%);
+            z-index: 1001;
+            box-shadow: 
+                0 0 12px rgba(184, 134, 11, 0.6),
+                2px 0 8px rgba(184, 134, 11, 0.3),
+                inset 1px 0 2px rgba(244, 228, 188, 0.4);
+            border-radius: 2px;
+            cursor: pointer;
+        }
+        
+        .reading-progress::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(180deg,
+                rgba(244, 228, 188, 0.1) 0%,
+                rgba(218, 165, 32, 0.15) 50%,
+                rgba(244, 228, 188, 0.1) 100%);
+            border-radius: 2px;
+            animation: progressShimmer 3s ease-in-out infinite;
+        }
+        
+        .reading-progress-fill {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(180deg,
+                var(--golden-shadow) 0%,
+                var(--sovereign-gold) 50%,
+                var(--imperial-gold) 100%);
+            border-radius: 2px;
+            transition: height 0.1s ease;
+            box-shadow: 
+                inset 0 1px 2px rgba(244, 228, 188, 0.3),
+                0 0 8px rgba(184, 134, 11, 0.4);
+        }
+        
+        @keyframes progressShimmer {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.8; }
+        }
+        
+        /* 进度标题提示器 */
+        .progress-tooltip {
+            position: fixed;
+            top: 50%;
+            right: 7rem;
+            transform: translateY(-50%);
+            background: linear-gradient(135deg, 
+                rgba(15, 15, 15, 0.95) 0%, 
+                rgba(31, 31, 31, 0.9) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.25);
+            border-radius: 8px;
+            padding: 0.8rem 2rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 0.85rem;
+            font-weight: 300;
+            color: var(--imperial-gold);
+            backdrop-filter: blur(20px);
+            box-shadow: 
+                0 8px 32px rgba(0, 0, 0, 0.7),
+                0 0 20px rgba(184, 134, 11, 0.1),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+            z-index: 1002;
+            white-space: nowrap;
+            letter-spacing: 0.03em;
+        }
+        
+        .progress-tooltip.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(-50%) translateX(-8px);
+        }
+        
+        .progress-tooltip::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -8px;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-left: 8px solid rgba(184, 134, 11, 0.25);
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+        }
+        
+        .progress-tooltip::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -7px;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-left: 7px solid rgba(15, 15, 15, 0.95);
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+        }
+        
+        /* 引用文献奢华样式 */
+        .citation-item {
+            padding: 1.5rem 2rem;
+            margin: 0.8rem 0;
+            background: linear-gradient(135deg, 
+                rgba(21, 21, 21, 0.8) 0%, 
+                rgba(31, 31, 31, 0.6) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.15);
+            border-radius: 3px;
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .citation-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--sovereign-gold), var(--golden-shadow));
+            opacity: 0.6;
+            transition: opacity 0.3s ease;
+        }
+        
+        .citation-item:hover {
+            border-color: rgba(184, 134, 11, 0.4);
+            background: linear-gradient(135deg, 
+                rgba(31, 31, 31, 0.9) 0%, 
+                rgba(42, 42, 42, 0.7) 100%);
+            transform: translateX(6px) translateY(-1px);
+            box-shadow: 
+                0 8px 25px rgba(0, 0, 0, 0.5),
+                0 0 20px rgba(184, 134, 11, 0.08);
+        }
+        
+        .citation-item:hover::before {
+            opacity: 1;
+        }
+        
+        .citation-item a {
+            color: var(--platinum-mist);
+            text-decoration: none;
+            font-size: 0.85rem;
+            line-height: 1.7;
+            font-weight: 300;
+            transition: color 0.4s ease;
+            display: block;
+            position: relative;
+        }
+        
+        .citation-item a::before {
+            content: '';
+            position: absolute;
+            left: -0.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 4px;
+            background: var(--sovereign-gold);
+            border-radius: 50%;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .citation-item:hover a {
+            color: var(--aureate-whisper);
+            padding-left: 1rem;
+        }
+        
+        .citation-item:hover a::before {
+            opacity: 0.8;
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 1024px) {
+            .sovereign-container {
+                padding: 0 2.5rem;
+            }
+            .imperial-section {
+                margin: 8rem 0;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .sovereign-container {
+                padding: 0 1.5rem;
+            }
+            .imperial-section {
+                margin: 6rem 0;
+            }
+            .authority-card {
+                padding: 2rem;
+            }
+            .reading-progress {
+                right: 1rem;
+                height: 150px;
+                width: 3px;
+            }
+            .progress-tooltip {
+                right: 5rem;
+                padding: 0.6rem 1.5rem;
+                font-size: 0.75rem;
+            }
+        }
+        
+        /* 选择高亮 */
+        ::selection {
+            background: rgba(184, 134, 11, 0.2);
+            color: var(--aureate-whisper);
+        }
+        
+        /* 滚动条 */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: var(--obsidian-black);
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: var(--sovereign-gold);
+            border-radius: 3px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--imperial-gold);
+        }
+    </style>
+</head>
+<body>
+    <!-- 垂直进度条 -->
+    <div class="reading-progress">
+        <div class="reading-progress-fill"></div>
+    </div>
+    
+    <!-- 进度标题提示器 -->
+    <div class="progress-tooltip" id="progress-tooltip"></div>
+    
+    <!-- 首屏标题 -->
+    <header id="header" class="min-h-screen flex items-center justify-center relative" data-title="乘用车行业研究报告">
+        <div class="sovereign-container text-center relative z-10">
+            <!-- 主标题区域 -->
+            <div class="mb-16">
+                <h1 class="imperial-title text-5xl md:text-7xl mb-6">
+                    乘用车行业研究报告 2025年Q3
+                </h1>
+                
+                <h2 class="imperial-subtitle text-2xl md:text-4xl mb-12 opacity-90">
+                    电动化与智能化的双重变革
+                </h2>
+            </div>
+            
+            <!-- 英文副标题 -->
+            <div class="mb-12">
+                <div class="imperial-tagline text-sm md:text-base opacity-75 max-w-4xl mx-auto">
+                    Global Passenger Vehicle Industry Research Report:<br class="md:hidden">
+                    The Dual Transformation of Electrification and Intelligence
+                </div>
+            </div>
+            
+            <!-- 致敬区域 -->
+            <div class="mb-16">
+                <div class="imperial-dedication text-sm md:text-base">
+                    致：机构投资者与高净值客户
+                </div>
+                <div class="imperial-dedication-sub text-xs md:text-sm opacity-60 mt-2">
+                    For: Institutional Investors and High Net Worth Clients
+                </div>
+            </div>
+            
+            <!-- 发布日期卡片 -->
+            <div class="golden-glass-card inline-block">
+                <div class="text-xs uppercase tracking-[0.2em] opacity-50 mb-4 font-light">
+                    本报告发布于 · Published on
+                </div>
+                <div class="sovereign-heading text-base">
+                    <span class="exclusive-number">2025年8月</span> 
+                    <span class="mx-4 text-sovereign-gold opacity-40">◆</span> 
+                    <span class="exclusive-number">August 2025</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 背景装饰 -->
+        <div class="absolute inset-0 pointer-events-none opacity-8">
+            <div class="absolute top-20 left-20 w-px h-32 bg-gradient-to-b from-sovereign-gold to-transparent">
+                <i class="material-icons text-xs text-sovereign-gold opacity-40 absolute -left-2 -top-2">drive_eta</i>
+            </div>
+            <div class="absolute bottom-20 right-20 w-px h-32 bg-gradient-to-t from-sovereign-gold to-transparent">
+                <i class="fas fa-charging-station text-xs text-sovereign-gold opacity-40 absolute -right-2 -bottom-2"></i>
+            </div>
+            <div class="absolute top-1/2 left-1/4 w-24 h-px bg-gradient-to-r from-sovereign-gold to-transparent">
+                <i class="material-icons text-xs text-sovereign-gold opacity-40 absolute -left-4 -top-2">electric_car</i>
+            </div>
+            <div class="absolute top-1/3 right-1/4 w-24 h-px bg-gradient-to-l from-sovereign-gold to-transparent">
+                <i class="fas fa-microchip text-xs text-sovereign-gold opacity-40 absolute -right-4 -top-2"></i>
+            </div>
+        </div>
+    </header>
+    
+    <div class="sovereign-divider"></div>
+    
+    <!-- 执行摘要 -->
+    <section id="executive-summary" class="imperial-section" data-title="执行摘要">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-5xl mb-16 text-center">执行摘要</h2>
+            
+            <div class="executive-quote max-w-4xl mx-auto text-center">
+                全球乘用车行业正处在一个世纪以来最深刻、最不可逆的结构性重塑之中。本次变革并非传统意义上的周期性波动或技术迭代，而是由电动化与智能化双重引擎驱动的，一场颠覆产业根基的范式转移。
+            </div>
+            
+            <!-- 核心研究结论 -->
+            <div class="authority-card mb-16">
+                <h3 class="sovereign-heading text-2xl mb-8">核心研究结论</h3>
+                <div class="noble-text space-y-6">
+                    <p><strong class="text-imperial-gold">1. 全球市场格局三分化，中国成为独立演进的"新大陆"</strong>：全球乘用车市场已分裂为三个动态迥异的生态系统。中国市场在强有力的产业政策驱动下，新能源汽车（NEV）渗透率已跨越临界点，成为全球最大、竞争最激烈、创新最活跃的市场，本土品牌凭借在电动化与智能化领域的先发优势，正迅速取代传统国际巨头的主导地位。</p>
+                    
+                    <p><strong class="text-imperial-gold">2. 价值链重构，利润池正从硬件向软件和服务大规模迁移</strong>：传统汽车价值链的核心——发动机、变速箱等精密机械部件——的价值正在迅速萎缩。新的价值创造中心正向产业链上游的动力电池，以及中游的软件和电子电气（E/E）架构转移。到2030年，由"软件定义汽车"（SDV）创造的价值潜力将超过6500亿美元。</p>
+                    
+                    <p><strong class="text-imperial-gold">3. 新竞争层级形成，垂直整合与技术生态主导权成为胜负手</strong>：一个全新的竞争金字塔正在形成。以特斯拉和比亚迪为代表的新领导者，通过在软件、三电系统、甚至上游原材料等关键环节的深度垂直整合，建立了强大的成本和技术壁垒。</p>
+                    
+                    <p><strong class="text-imperial-gold">4. 估值逻辑重塑，汽车股正在分化为"传统制造"与"科技成长"</strong>：资本市场对汽车公司的估值体系已经出现根本性分化。传统OEMs仍被视为周期性制造业，而电动车新势力则更多地被参照科技股的估值逻辑，市场对其高估值反映了对其在自动驾驶、软件服务和人工智能领域长期增长潜力的预期。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="sovereign-divider"></div>
+    
+    <!-- 全球市场格局 -->
+    <section id="global-market" class="imperial-section" data-title="全球市场格局与关键区域动态">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-5xl mb-16 text-center">全球市场格局与关键区域动态</h2>
+            
+            <div class="executive-quote max-w-4xl mx-auto text-center">
+                本章旨在构建对全球乘用车行业的宏观认知，通过自上而下的数据分析，从全球市场的总体表现入手，逐步深入到美国、欧盟和中国这三大核心市场。
+            </div>
+            
+            <!-- 全球销量概览 -->
+            <div class="authority-card mb-16">
+                <h3 class="sovereign-heading text-2xl mb-8">全球销量与生产概览</h3>
+                <div class="noble-text space-y-4">
+                    <p>2024年全球乘用车销量达到7460万辆，较2023年增长2.5%。全球轻型车销量在2024年总计为8900万辆，同比增长2%。在生产端，2024年全球乘用车总产量为7550万辆。</p>
+                    
+                    <p>这些宏观数据揭示了几个初步结论：</p>
+                    
+                    <ul class="list-disc list-inside space-y-2 ml-4">
+                        <li><strong class="text-imperial-gold">增长乏力</strong>：全球市场总体上进入了一个低速增长阶段</li>
+                        <li><strong class="text-imperial-gold">结构性偏好</strong>：消费者对SUV和皮卡等车型的持续青睐</li>
+                        <li><strong class="text-imperial-gold">供需基本平衡</strong>：行业生产秩序已逐步恢复正常</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- 三大市场对比 -->
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <div class="authority-card text-center">
+                    <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-br from-red-600 to-red-800 flex items-center justify-center">
+                        <i class="material-icons text-2xl text-red-200">star_border</i>
+                    </div>
+                    <h4 class="sovereign-heading text-lg mb-4">美国市场</h4>
+                    <div class="noble-text text-sm">
+                        <div class="exclusive-number text-2xl mb-2">1600万辆</div>
+                        <div>2024年轻型车销量</div>
+                        <div class="mt-2 text-xs opacity-70">传统与变革的二元结构</div>
+                    </div>
+                </div>
+                
+                <div class="authority-card text-center">
+                    <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center">
+                        <i class="fas fa-flag-europe text-2xl text-blue-200"></i>
+                    </div>
+                    <h4 class="sovereign-heading text-lg mb-4">欧盟市场</h4>
+                    <div class="noble-text text-sm">
+                        <div class="exclusive-number text-2xl mb-2">1060万辆</div>
+                        <div>2024年新车注册量</div>
+                        <div class="mt-2 text-xs opacity-70">政策驱动下的转型"气穴"</div>
+                    </div>
+                </div>
+                
+                <div class="authority-card text-center">
+                    <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-br from-yellow-600 to-yellow-800 flex items-center justify-center">
+                        <i class="material-icons text-2xl text-yellow-200">trending_up</i>
+                    </div>
+                    <h4 class="sovereign-heading text-lg mb-4">中国市场</h4>
+                    <div class="noble-text text-sm">
+                        <div class="exclusive-number text-2xl mb-2">2300万辆</div>
+                        <div>2024年乘用车销量</div>
+                        <div class="mt-2 text-xs opacity-70">新时代的全球中心与策源地</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 市场仪表盘 -->
+            <div class="authority-card">
+                <h3 class="sovereign-heading text-2xl mb-8">全球乘用车市场仪表盘（2023-2024年）</h3>
+                <div class="overflow-x-auto">
+                    <table class="imperial-table">
+                        <thead>
+                            <tr>
+                                <th>区域</th>
+                                <th>2024年总销量</th>
+                                <th>同比增长</th>
+                                <th>EV市场份额</th>
+                                <th>核心叙事</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-semibold">全球</td>
+                                <td class="exclusive-number">7460万辆</td>
+                                <td class="text-green-400 font-bold">+2.5%</td>
+                                <td class="exclusive-number">>20%</td>
+                                <td>整体温和增长，内部结构剧烈分化</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">中国</td>
+                                <td class="exclusive-number">2300万辆</td>
+                                <td class="text-green-400 font-bold">-</td>
+                                <td class="exclusive-number">>40%</td>
+                                <td>NEV主导市场，自主品牌崛起</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">美国</td>
+                                <td class="exclusive-number">1600万辆</td>
+                                <td class="text-green-400 font-bold">+2.6%</td>
+                                <td class="exclusive-number">>10%</td>
+                                <td>二元结构，EV渗透稳步推进</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">欧盟</td>
+                                <td class="exclusive-number">1060万辆</td>
+                                <td class="text-green-400 font-bold">+0.8%</td>
+                                <td class="exclusive-number">13.6%</td>
+                                <td>补贴退坡，HEV崛起成重要过渡</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="sovereign-divider"></div>
+    
+    <!-- 电动化演进轨迹 -->
+    <section id="electrification" class="imperial-section" data-title="结构性巨变：电动化的演进轨迹">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-5xl mb-16 text-center">结构性巨变：电动化的演进轨迹</h2>
+            
+            <div class="executive-quote max-w-4xl mx-auto text-center">
+                电动化不仅是动力系统的更替，更是一场遵循技术采纳"S型曲线"规律的产业革命。本章将超越简单的销量统计，深入分析电动化转型的内在动力学。
+            </div>
+            
+            <!-- 技术采纳S曲线 -->
+            <div class="authority-card mb-16">
+                <h3 class="sovereign-heading text-2xl mb-8">技术采纳的S曲线：BEV、PHEV与HEV的竞逐</h3>
+                <div class="noble-text space-y-4">
+                    <p>全球汽车电动化并非一条单一奔向纯电动（BEV）的直线路径，而是呈现出多种技术路线并存的复杂局面。</p>
+                    
+                    <p>2024年，全球新售出汽车中超过20%是电动汽车（主要指BEV和PHEV），全球电动汽车保有量已接近5800万辆。这一数据表明，全球市场整体已越过S曲线的初始启动期，进入了加速爬升阶段。</p>
+                </div>
+                
+                <!-- 不同市场分化 -->
+                <div class="grid md:grid-cols-3 gap-6 mt-8">
+                    <div class="bg-gradient-to-br from-red-900/20 to-red-800/10 p-6 rounded border border-red-500/20">
+                        <h4 class="sovereign-heading text-base mb-3">
+                            <i class="material-icons text-sm mr-2">trending_up</i>
+                            中国：PHEV异军突起
+                        </h4>
+                        <div class="noble-text text-sm">
+                            PHEV增速远超BEV，2024年前8个月同比增长高达86%，比亚迪PHEV销量同比增长72%。
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-blue-900/20 to-blue-800/10 p-6 rounded border border-blue-500/20">
+                        <h4 class="sovereign-heading text-base mb-3">
+                            <i class="fas fa-leaf text-sm mr-2"></i>
+                            欧盟：HEV文艺复兴
+                        </h4>
+                        <div class="noble-text text-sm">
+                            HEV市场份额达30.9%，超越BEV（13.6%）成为消费者的第二大选择。
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-green-900/20 to-green-800/10 p-6 rounded border border-green-500/20">
+                        <h4 class="sovereign-heading text-base mb-3">
+                            <i class="fas fa-chart-line text-sm mr-2"></i>
+                            美国：混合动力回潮
+                        </h4>
+                        <div class="noble-text text-sm">
+                            丰田混合动力车型销量同比增长53%，福特增长27%，显示混合动力需求回暖。
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 需求侧驱动因素 -->
+            <div class="authority-card">
+                <h3 class="sovereign-heading text-2xl mb-8">需求侧的驱动与制约因素</h3>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="sovereign-heading text-lg mb-4 text-green-400">
+                            <i class="material-icons text-sm mr-2">trending_up</i>
+                            核心驱动力
+                        </h4>
+                        <div class="noble-text text-sm space-y-3">
+                            <div><strong>政策激励</strong>：中国NEV购置税减免延续至2027年，美国IRA法案提供最高7500美元税收抵免</div>
+                            <div><strong>TCO优势</strong>：2024年全球BEV电池包平均价格首次降至100美元/kWh以下</div>
+                            <div><strong>产品丰富</strong>：仅美国2024年就有24款全新电动车型上市</div>
+                            <div><strong>性能体验</strong>：瞬时扭矩输出、静谧平顺驾驶、智能化座舱</div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="sovereign-heading text-lg mb-4 text-red-400">
+                            <i class="material-icons text-sm mr-2">trending_down</i>
+                            主要制约因素
+                        </h4>
+                        <div class="noble-text text-sm space-y-3">
+                            <div><strong>充电基础设施</strong>：公共充电桩的数量、分布合理性、快充可靠性仍是主要障碍</div>
+                            <div><strong>前期购置成本</strong>：BEV初始售价通常仍高于同级别燃油车</div>
+                            <div><strong>残值不确定性</strong>：技术迭代快导致的贬值顾虑</div>
+                            <div><strong>使用局限性</strong>：公寓用户、寒冷地区、长途驾驶需求的便利性不及燃油车</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="sovereign-divider"></div>
+    
+    <!-- 价值链重构 -->
+    <section id="value-chain" class="imperial-section" data-title="价值链重构与利润池迁移">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-5xl mb-16 text-center">价值链重构与利润池迁移</h2>
+            
+            <div class="executive-quote max-w-4xl mx-auto text-center">
+                传统的、以机械工程为主导的价值链正在被一个以电池化学、电力电子和软件工程为核心的新链条所取代。理解价值在何处产生、被谁捕获，是投资分析的关键。
+            </div>
+            
+            <!-- 价值链对比 -->
+            <div class="grid md:grid-cols-2 gap-8 mb-16">
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="material-icons text-base mr-2">settings</i>
+                        传统价值链的式微
+                    </h3>
+                    <div class="noble-text space-y-3 text-sm">
+                        <div><strong>核心组件</strong>：发动机、变速箱、排气系统、燃油系统</div>
+                        <div><strong>价值创造</strong>：机械精度、热效率、可靠性和NVH控制</div>
+                        <div><strong>供应商体系</strong>：博世、大陆、采埃孚、电装等传统Tier 1巨头</div>
+                    </div>
+                </div>
+                
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="material-icons text-base mr-2">electric_bolt</i>
+                        新兴价值链的崛起
+                    </h3>
+                    <div class="noble-text space-y-3 text-sm">
+                        <div><strong>核心组件</strong>：动力电池包、电驱动系统、车载操作系统、智能座舱芯片</div>
+                        <div><strong>价值创造</strong>：电池能量密度与成本、软件算法、芯片算力、数据应用</div>
+                        <div><strong>新进入者</strong>：宁德时代、英伟达、高通、华为等成为关键节点</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 动力电池供应链 -->
+            <div class="authority-card mb-16">
+                <h3 class="sovereign-heading text-2xl mb-8">动力电池供应链：新的产业重心</h3>
+                
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-gradient-to-br from-amber-900/20 to-amber-800/10 p-6 rounded border border-amber-500/20">
+                        <h4 class="sovereign-heading text-base mb-3">
+                            <i class="material-icons text-sm mr-2">terrain</i>
+                            上游：矿产资源
+                        </h4>
+                        <div class="noble-text text-sm">
+                            锂、钴、镍、锰、石墨等关键矿产的开采，以及将其加工成电池级高纯度化学品的精炼环节。
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-blue-900/20 to-blue-800/10 p-6 rounded border border-blue-500/20">
+                        <h4 class="sovereign-heading text-base mb-3">
+                            <i class="material-icons text-sm mr-2">precision_manufacturing</i>
+                            中游：电池制造
+                        </h4>
+                        <div class="noble-text text-sm">
+                            正极材料、负极材料、隔膜和电解液四大关键材料的生产，以及电池单体制造过程。
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-green-900/20 to-green-800/10 p-6 rounded border border-green-500/20">
+                        <h4 class="sovereign-heading text-base mb-3">
+                            <i class="material-icons text-sm mr-2">build_circle</i>
+                            下游：电池包组装
+                        </h4>
+                        <div class="noble-text text-sm">
+                            将数百甚至数千个电芯与BMS、热管理系统封装成完整的动力电池包。
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-8 noble-text">
+                    <p><strong class="text-imperial-gold">地理集中度与地缘政治风险</strong>：中国生产了全球约75%的锂离子电池，拥有全球70%的正极材料产能和85%的负极材料产能。这种高度集中性意味着，欧美车企的电动化转型在很大程度上依赖于中国的供应链。</p>
+                </div>
+            </div>
+            
+            <!-- 利润池迁移 -->
+            <div class="authority-card">
+                <h3 class="sovereign-heading text-2xl mb-8">利润池的迁移：量化未来的价值所在</h3>
+                
+                <div class="bg-gradient-to-r from-gold-900/20 via-gold-800/10 to-transparent p-8 rounded-lg border border-gold-500/20">
+                    <div class="text-center mb-6">
+                        <div class="exclusive-number text-4xl mb-2">6500亿美元</div>
+                        <div class="sovereign-heading">2030年SDV价值潜力</div>
+                        <div class="noble-text text-sm mt-2 opacity-70">占整个汽车产业价值的15%-20%</div>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-8 mt-8">
+                        <div>
+                            <h4 class="sovereign-heading text-lg mb-3">OEM软件与电子收入</h4>
+                            <div class="exclusive-number text-2xl mb-2">2480亿美元</div>
+                            <div class="noble-text text-sm">从当前的870亿美元增长近两倍</div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="sovereign-heading text-lg mb-3">供应商软件与电子市场</h4>
+                            <div class="exclusive-number text-2xl mb-2">4110亿美元</div>
+                            <div class="noble-text text-sm">从当前的2360亿美元增长近一倍</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-8 noble-text space-y-4">
+                    <p>这一数据的背后，是商业模式的根本性变革。传统汽车的商业模式是"一锤子买卖"，而在SDV时代，商业模式转变为"持续的价值交换"：</p>
+                    
+                    <ul class="list-disc list-inside space-y-2 ml-4">
+                        <li><strong class="text-imperial-gold">一次性软件付费</strong>：解锁特定功能如高级驾驶辅助、性能提升包</li>
+                        <li><strong class="text-imperial-gold">订阅服务</strong>：按月/年收取订阅费，创造稳定的经常性收入</li>
+                        <li><strong class="text-imperial-gold">数据服务与生态系统</strong>：车联网数据在保险、交通管理、零售等方面的商业价值</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="sovereign-divider"></div>
+    
+    <!-- 软件定义汽车 -->
+    <section id="software-defined" class="imperial-section" data-title="汽车的新DNA：软件定义汽车与自动驾驶">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-5xl mb-16 text-center">汽车的新DNA：软件定义汽车与自动驾驶</h2>
+            
+            <div class="executive-quote max-w-4xl mx-auto text-center">
+                如果说电动化重塑了汽车的"心脏"，那么智能化，特别是"软件定义汽车"和自动驾驶，则正在重塑汽车的"大脑"和"神经系统"。
+            </div>
+            
+            <!-- SDV革命 -->
+            <div class="authority-card mb-16">
+                <h3 class="sovereign-heading text-2xl mb-8">SDV革命：解耦硬件与软件</h3>
+                
+                <div class="noble-text space-y-4 mb-8">
+                    <p>软件定义汽车（SDV）的核心思想是，汽车的功能和体验不再主要由其物理硬件决定，而是由其上运行的软件来定义和驱动。其关键的技术实现，是将软件的功能迭代周期与硬件的开发制造周期进行"解耦"。</p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-gradient-to-br from-purple-900/20 to-purple-800/10 p-6 rounded border border-purple-500/20">
+                        <h4 class="sovereign-heading text-base mb-3">
+                            <i class="material-icons text-sm mr-2">update</i>
+                            产品生命周期延长
+                        </h4>
+                        <div class="noble-text text-sm">
+                            汽车不再是出厂即固化的产品，而是一个可以持续进化、"常用常新"的服务平台。
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-orange-900/20 to-orange-800/10 p-6 rounded border border-orange-500/20">
+                        <h4 class="sovereign-heading text-base mb-3">
+                            <i class="material-icons text-sm mr-2">person_outline</i>
+                            用户体验个性化
+                        </h4>
+                        <div class="noble-text text-sm">
+                            车企可以根据用户需求，通过软件推送不同的功能组合，实现高度个性化的驾乘体验。
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-green-900/20 to-green-800/10 p-6 rounded border border-green-500/20">
+                        <h4 class="sovereign-heading text-base mb-3">
+                            <i class="material-icons text-sm mr-2">attach_money</i>
+                            商业模式创新
+                        </h4>
+                        <div class="noble-text text-sm">
+                            实现订阅服务、按需付费等新型商业模式，为车企开辟售后持续创收空间。
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- E/E架构演进 -->
+            <div class="authority-card mb-16">
+                <h3 class="sovereign-heading text-2xl mb-8">电子电气（E/E）架构：看不见的战场</h3>
+                
+                <div class="space-y-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="text-center p-6 bg-gradient-to-b from-red-900/20 to-transparent rounded border border-red-500/20">
+                            <div class="w-12 h-12 mx-auto mb-4 rounded-full bg-red-600 flex items-center justify-center">
+                                <span class="text-white font-bold">1</span>
+                            </div>
+                            <h4 class="sovereign-heading text-base mb-2">分布式架构</h4>
+                            <div class="noble-text text-xs">
+                                过去几十年主流。每个功能由专属ECU控制，一辆车可能有超过100个ECU。
+                            </div>
+                        </div>
+                        
+                        <div class="text-center p-6 bg-gradient-to-b from-yellow-900/20 to-transparent rounded border border-yellow-500/20">
+                            <div class="w-12 h-12 mx-auto mb-4 rounded-full bg-yellow-600 flex items-center justify-center">
+                                <span class="text-white font-bold">2</span>
+                            </div>
+                            <h4 class="sovereign-heading text-base mb-2">域控制器架构</h4>
+                            <div class="noble-text text-xs">
+                                当前过渡方案。按功能域划分，每个域由域控制器统一管理该域内的多个ECU。
+                            </div>
+                        </div>
+                        
+                        <div class="text-center p-6 bg-gradient-to-b from-green-900/20 to-transparent rounded border border-green-500/20">
+                            <div class="w-12 h-12 mx-auto mb-4 rounded-full bg-green-600 flex items-center justify-center">
+                                <span class="text-white font-bold">3</span>
+                            </div>
+                            <h4 class="sovereign-heading text-base mb-2">中央计算+区域架构</h4>
+                            <div class="noble-text text-xs">
+                                理想目标架构。中央计算单元处理所有核心运算，区域控制器作为I/O集线器。
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="noble-text">
+                        <p><strong class="text-imperial-gold">架构演进的战略意义</strong>：这种架构将复杂的"功能逻辑"集中到中央计算机，而将简单的"物理执行"下放到区域控制器，实现了软硬件的彻底解耦。这使得线束长度和ECU数量大幅减少（可减少40%的线束和超过50%的ECU），为整车级OTA更新提供了平台。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 自动驾驶技术路线 -->
+            <div class="authority-card">
+                <h3 class="sovereign-heading text-2xl mb-8">通往自动驾驶之路：两种哲学的较量</h3>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-gradient-to-br from-red-900/10 via-red-800/5 to-transparent p-6 rounded border border-red-500/20">
+                        <h4 class="sovereign-heading text-lg mb-4">
+                            <i class="material-icons text-base mr-2">visibility</i>
+                            特斯拉："视觉+神经网络"路线
+                        </h4>
+                        
+                        <div class="noble-text text-sm space-y-3">
+                            <div><strong>核心理念</strong>：人类仅靠双眼就能驾驶，视觉系统+神经网络就足以解决自动驾驶</div>
+                            <div><strong>技术栈</strong>：纯视觉方案，不依赖高精地图和激光雷达，利用量产车队收集海量数据</div>
+                            <div><strong>优势</strong>：硬件成本低，易于规模化部署，一旦算法突破可迅速推广</div>
+                            <div><strong>挑战</strong>：对软件算法要求极高，纯视觉在极端场景下的可靠性问题</div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-blue-900/10 via-blue-800/5 to-transparent p-6 rounded border border-blue-500/20">
+                        <h4 class="sovereign-heading text-lg mb-4">
+                            <i class="material-icons text-base mr-2">radar</i>
+                            Waymo/Cruise："多传感器+高精地图"
+                        </h4>
+                        
+                        <div class="noble-text text-sm space-y-3">
+                            <div><strong>核心理念</strong>：通过传感器冗余和环境先验信息，最大限度保证系统安全性</div>
+                            <div><strong>技术栈</strong>：摄像头、激光雷达、毫米波雷达多传感器融合+高精度地图</div>
+                            <div><strong>优势</strong>：多传感器冗余设计安全性更高，高精地图提供强大环境先验</div>
+                            <div><strong>挑战</strong>：硬件成本高昂，运营范围受限于高精地图覆盖区域</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-8 noble-text">
+                    <p><strong class="text-imperial-gold">商业模式的差异</strong>：特斯拉当前FSD本质上是L2级高级驾驶辅助系统，商业模式是"卖软件/订阅"+"数据众包"；Waymo/Cruise从一开始就瞄准L4级自动驾驶，商业模式是作为出行服务提供商运营Robotaxi车队。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="sovereign-divider"></div>
+    
+    <!-- 动力电池技术 -->
+    <section id="battery-technology" class="imperial-section" data-title="核心技术前沿：动力电池及未来展望">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-5xl mb-16 text-center">核心技术前沿：动力电池及未来展望</h2>
+            
+            <div class="executive-quote max-w-4xl mx-auto text-center">
+                动力电池是电动汽车的心脏，其成本、性能和安全性直接决定了电动汽车的竞争力。本章将深入探讨动力电池领域的核心技术路线、成本下降的驱动力。
+            </div>
+            
+            <!-- 电池化学体系对比 -->
+            <div class="authority-card mb-16">
+                <h3 class="sovereign-heading text-2xl mb-8">电池化学体系深度剖析：LFP vs. NMC</h3>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-gradient-to-br from-blue-900/20 to-blue-800/10 p-6 rounded border border-blue-500/20">
+                        <h4 class="sovereign-heading text-lg mb-4">
+                            <i class="material-icons text-base mr-2">battery_full</i>
+                            三元锂电池（NMC/NCA）
+                        </h4>
+                        
+                        <div class="noble-text text-sm space-y-3">
+                            <div><strong>构成</strong>：镍、锰、钴或镍、钴、铝的氧化物组成</div>
+                            <div class="text-green-400"><strong>优势</strong>：能量密度高、低温性能好、续航里程长</div>
+                            <div class="text-red-400"><strong>劣势</strong>：成本高（含贵金属）、安全性相对较低、循环寿命短</div>
+                            <div class="text-amber-400"><strong>适用</strong>：长续航、高性能的高端和豪华车型</div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-orange-900/20 to-orange-800/10 p-6 rounded border border-orange-500/20">
+                        <h4 class="sovereign-heading text-lg mb-4">
+                            <i class="material-icons text-base mr-2">security</i>
+                            磷酸铁锂电池（LFP）
+                        </h4>
+                        
+                        <div class="noble-text text-sm space-y-3">
+                            <div><strong>构成</strong>：磷酸铁锂（LiFePO4）正极材料</div>
+                            <div class="text-green-400"><strong>优势</strong>：成本低、安全性高、寿命长、原材料储量丰富</div>
+                            <div class="text-red-400"><strong>劣势</strong>：能量密度较低、低温性能衰减严重</div>
+                            <div class="text-amber-400"><strong>适用</strong>：中低续航、注重性价比的大众市场车型和储能应用</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-8 noble-text">
+                    <p><strong class="text-imperial-gold">市场分化趋势</strong>：行业正形成一个清晰的市场分层格局。LFP电池凭借其成本和安全优势，正成为中低续航、注重性价比的大众市场车型和储能应用的首选。而NMC电池则凭借其能量密度优势，继续在长续航、高性能的高端和豪华车型市场占据主导地位。</p>
+                </div>
+            </div>
+            
+            <!-- 成本曲线 -->
+            <div class="authority-card mb-16">
+                <h3 class="sovereign-heading text-2xl mb-8">$/kWh成本曲线：驱动普及的核心引擎</h3>
+                
+                <div class="bg-gradient-to-r from-gold-900/20 via-gold-800/10 to-transparent p-8 rounded-lg border border-gold-500/20 text-center mb-8">
+                    <div class="exclusive-number text-5xl mb-4">97美元/kWh</div>
+                    <div class="sovereign-heading text-xl mb-2">2024年BEV电池包平均价格</div>
+                    <div class="noble-text text-sm opacity-70">历史上首次跌破100美元/kWh关键阈值</div>
+                </div>
+                
+                <div class="noble-text space-y-4">
+                    <p>100美元/kWh被行业普遍认为是电动汽车与同级别燃油车实现"购置成本平价"的临界点。一旦越过此线，电动汽车在不依赖政府补贴的情况下，也能在初始售价上与燃油车展开直接竞争。</p>
+                    
+                    <p><strong class="text-imperial-gold">区域差异</strong>：中国凭借其巨大的生产规模、高度整合的供应链和激烈的市场竞争，拥有全球最低的电池价格。2024年，中国的电池包平均价格仅为94美元/kWh，而美国和欧洲的价格则分别比中国高出31%和48%。</p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-6 mt-8">
+                    <div class="text-center p-4 bg-gradient-to-b from-green-900/20 to-transparent rounded border border-green-500/20">
+                        <div class="exclusive-number text-2xl mb-2">113美元</div>
+                        <div class="sovereign-heading text-sm">2025年预测</div>
+                    </div>
+                    
+                    <div class="text-center p-4 bg-gradient-to-b from-blue-900/20 to-transparent rounded border border-blue-500/20">
+                        <div class="exclusive-number text-2xl mb-2">80美元</div>
+                        <div class="sovereign-heading text-sm">2030年预测</div>
+                    </div>
+                    
+                    <div class="text-center p-4 bg-gradient-to-b from-purple-900/20 to-transparent rounded border border-purple-500/20">
+                        <div class="exclusive-number text-2xl mb-2">58美元</div>
+                        <div class="sovereign-heading text-sm">激进预测</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 固态电池 -->
+            <div class="authority-card">
+                <h3 class="sovereign-heading text-2xl mb-8">下一代技术：固态电池的地平线</h3>
+                
+                <div class="noble-text mb-8">
+                    <p>尽管液态锂离子电池仍在不断进步，但行业已将目光投向了被认为是终极解决方案的<strong class="text-imperial-gold">固态电池（Solid-State Batteries, SSB）</strong>。</p>
+                </div>
+                
+                <!-- 固态电池价值主张 -->
+                <div class="grid md:grid-cols-2 gap-6 mb-8">
+                    <div>
+                        <h4 class="sovereign-heading text-lg mb-4">核心价值主张</h4>
+                        <div class="space-y-3">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center">
+                                    <i class="material-icons text-xs text-white">security</i>
+                                </div>
+                                <div class="noble-text text-sm">
+                                    <strong>极致安全</strong>：固态电解质不可燃，杜绝热失控风险
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center">
+                                    <i class="material-icons text-xs text-white">battery_charging_full</i>
+                                </div>
+                                <div class="noble-text text-sm">
+                                    <strong>更高能量密度</strong>：有望提升50%-100%，实现更长续航
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
+                                    <i class="material-icons text-xs text-white">flash_on</i>
+                                </div>
+                                <div class="noble-text text-sm">
+                                    <strong>更快充电</strong>：有望将充电时间缩短至10-15分钟
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center">
+                                    <i class="material-icons text-xs text-white">access_time</i>
+                                </div>
+                                <div class="noble-text text-sm">
+                                    <strong>更长寿命</strong>：更稳定结构，更长循环寿命和更宽工作温度
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="sovereign-heading text-lg mb-4">主要参与者</h4>
+                        <div class="space-y-4">
+                            <div class="p-4 bg-gradient-to-r from-red-900/20 to-transparent rounded border border-red-500/20">
+                                <div class="font-semibold text-red-400 mb-2">丰田（Toyota）</div>
+                                <div class="noble-text text-xs">硫化物基固态电池专利领导者，计划2025年左右市场化应用</div>
+                            </div>
+                            
+                            <div class="p-4 bg-gradient-to-r from-green-900/20 to-transparent rounded border border-green-500/20">
+                                <div class="font-semibold text-green-400 mb-2">宁德时代（CATL）</div>
+                                <div class="noble-text text-xs">全球最大电池制造商，目标2025年推出可市场化固态电池</div>
+                            </div>
+                            
+                            <div class="p-4 bg-gradient-to-r from-blue-900/20 to-transparent rounded border border-blue-500/20">
+                                <div class="font-semibold text-blue-400 mb-2">QuantumScape</div>
+                                <div class="noble-text text-xs">美国初创公司，陶瓷固态电解质隔膜技术，计划2025年底B1样品交付</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="noble-text">
+                    <p><strong class="text-imperial-gold">挑战与展望</strong>：2025-2027年将是固态电池从实验室走向小规模量产验证的关键时期。主要挑战集中在材料与界面问题、制造工艺与成本、以及规模化验证三个方面。一旦技术和制造成熟度取得突破，固态电池将有可能从根本上改变电动汽车乃至整个储能行业的竞争格局。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="sovereign-divider"></div>
+    
+    <!-- 竞争格局 -->
+    <section id="competitive-landscape" class="imperial-section" data-title="竞争格局：守成者、新王与颠覆者">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-5xl mb-16 text-center">竞争格局：守成者、新王与颠覆者</h2>
+            
+            <div class="executive-quote max-w-4xl mx-auto text-center">
+                在电动化与智能化的双重冲击下，全球乘用车行业的百年竞争格局正在被彻底改写。本章将聚焦于行业内的主要参与者，评估它们在新的竞争维度下的战略定位与核心能力。
+            </div>
+            
+            <!-- 主要竞争者战略记分卡 -->
+            <div class="authority-card">
+                <h3 class="sovereign-heading text-2xl mb-8">主要竞争者战略与能力记分卡</h3>
+                <div class="overflow-x-auto">
+                    <table class="imperial-table">
+                        <thead>
+                            <tr>
+                                <th>公司</th>
+                                <th>商业模式</th>
+                                <th>2024年EV销量</th>
+                                <th>核心战略</th>
+                                <th>核心竞争力</th>
+                                <th>主要挑战</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-semibold">特斯拉 (Tesla)</td>
+                                <td class="noble-text text-sm">硬件+软件/服务</td>
+                                <td class="exclusive-number">180万辆</td>
+                                <td class="text-sm">技术领先，垂直整合</td>
+                                <td class="text-green-400 font-bold text-sm">软件，E/E架构，FSD愿景</td>
+                                <td class="text-red-400 text-sm">制造成本控制，中国市场竞争</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">比亚迪 (BYD)</td>
+                                <td class="noble-text text-sm">极致垂直整合</td>
+                                <td class="exclusive-number">427万辆</td>
+                                <td class="text-sm">成本领先，规模扩张</td>
+                                <td class="text-green-400 font-bold text-sm">电池与三电全产业链成本控制</td>
+                                <td class="text-red-400 text-sm">品牌高端化，海外市场开拓</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">大众集团 (VW)</td>
+                                <td class="noble-text text-sm">平台化，自研转型</td>
+                                <td class="exclusive-number">77万辆</td>
+                                <td class="text-sm">全力电动化，自建电池/软件体系</td>
+                                <td class="text-green-400 font-bold text-sm">规模，品牌矩阵，工程能力</td>
+                                <td class="text-red-400 text-sm">软件开发滞后，中国市场份额流失</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">蔚来 (NIO)</td>
+                                <td class="noble-text text-sm">高端品牌+服务</td>
+                                <td class="exclusive-number">22.2万辆</td>
+                                <td class="text-sm">用户企业，换电+BaaS</td>
+                                <td class="text-green-400 font-bold text-sm">用户服务，品牌社区，换电网络</td>
+                                <td class="text-red-400 text-sm">持续亏损，规模化盈利路径不明</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">华为/AITO</td>
+                                <td class="noble-text text-sm">技术赋能，智选车</td>
+                                <td class="exclusive-number">30万辆</td>
+                                <td class="text-sm">全栈技术输出，不造车</td>
+                                <td class="text-green-400 font-bold text-sm">智能座舱(鸿蒙)，ADS智驾</td>
+                                <td class="text-red-400 text-sm">依赖合作伙伴制造能力</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="sovereign-divider"></div>
+    
+    <!-- 投资框架 -->
+    <section id="investment-framework" class="imperial-section" data-title="投资框架与估值逻辑">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-5xl mb-16 text-center">投资框架与估值逻辑</h2>
+            
+            <div class="executive-quote max-w-4xl mx-auto text-center">
+                在产业基本面发生颠覆性变革的背景下，沿用传统的投资分析框架和估值方法来评估当今的汽车公司，无异于刻舟求剑。
+            </div>
+            
+            <!-- SOTP估值法 -->
+            <div class="authority-card mb-16">
+                <h3 class="sovereign-heading text-2xl mb-8">评估分化的行业：SOTP与成长性指标</h3>
+                
+                <div class="noble-text mb-8">
+                    <p>对于正在转型中的传统车企，<strong class="text-imperial-gold">分部估值法（Sum-of-the-Parts, SOTP）</strong>是目前最合理、最能反映其复杂业务构成的估值框架。</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="sovereign-heading text-lg mb-4">传统OEMs → SOTP估值</h4>
+                        <div class="space-y-4">
+                            <div class="p-4 bg-gradient-to-r from-gray-800/20 to-transparent rounded border border-gray-500/20">
+                                <div class="font-semibold text-gray-400 mb-2">燃油车（ICE）业务</div>
+                                <div class="noble-text text-xs">视为"现金牛"业务，采用低EV/EBITDA倍数（3-5倍）估值</div>
+                            </div>
+                            
+                            <div class="p-4 bg-gradient-to-r from-green-800/20 to-transparent rounded border border-green-500/20">
+                                <div class="font-semibold text-green-400 mb-2">电动车（EV）业务</div>
+                                <div class="noble-text text-xs">视为"高成长"业务，采用远期EV/销售额倍数或DCF模型</div>
+                            </div>
+                            
+                            <div class="p-4 bg-gradient-to-r from-blue-800/20 to-transparent rounded border border-blue-500/20">
+                                <div class="font-semibold text-blue-400 mb-2">汽车金融业务</div>
+                                <div class="noble-text text-xs">采用P/B或P/E倍数，对标金融服务公司</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="sovereign-heading text-lg mb-4">EV纯电动公司 → 成长性估值</h4>
+                        <div class="space-y-4">
+                            <div class="p-4 bg-gradient-to-r from-purple-800/20 to-transparent rounded border border-purple-500/20">
+                                <div class="font-semibold text-purple-400 mb-2">长期DCF模型</div>
+                                <div class="noble-text text-xs">对未来10年销量、毛利率、资本开支等假设进行测算</div>
+                            </div>
+                            
+                            <div class="p-4 bg-gradient-to-r from-orange-800/20 to-transparent rounded border border-orange-500/20">
+                                <div class="font-semibold text-orange-400 mb-2">EV/销售额倍数</div>
+                                <div class="noble-text text-xs">与高增长科技公司对标，给予远高于传统行业的倍数</div>
+                            </div>
+                            
+                            <div class="p-4 bg-gradient-to-r from-gold-800/20 to-transparent rounded border border-gold-500/20">
+                                <div class="font-semibold text-gold-400 mb-2">叙事驱动估值</div>
+                                <div class="noble-text text-xs">基于自动驾驶、AI公司、能源公司等多重预期</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 关键KPIs -->
+            <div class="authority-card">
+                <h3 class="sovereign-heading text-2xl mb-8">新时代的关键绩效指标（KPIs）</h3>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="authority-card bg-gradient-to-br from-amber-900/10 to-transparent">
+                        <div class="text-center mb-4">
+                            <i class="material-icons text-3xl text-amber-400 mb-2">battery_charging_full</i>
+                            <h4 class="sovereign-heading text-base">电池成本</h4>
+                        </div>
+                        <div class="noble-text text-xs">
+                            追踪$/kWh成本，决定EV盈利能力的最核心指标
+                        </div>
+                    </div>
+                    
+                    <div class="authority-card bg-gradient-to-br from-green-900/10 to-transparent">
+                        <div class="text-center mb-4">
+                            <i class="material-icons text-3xl text-green-400 mb-2">trending_up</i>
+                            <h4 class="sovereign-heading text-base">EV业务毛利率</h4>
+                        </div>
+                        <div class="noble-text text-xs">
+                            衡量规模化生产同时实现盈利的关键指标
+                        </div>
+                    </div>
+                    
+                    <div class="authority-card bg-gradient-to-br from-blue-900/10 to-transparent">
+                        <div class="text-center mb-4">
+                            <i class="material-icons text-3xl text-blue-400 mb-2">subscriptions</i>
+                            <h4 class="sovereign-heading text-base">软件付费率</h4>
+                        </div>
+                        <div class="noble-text text-xs">
+                            高级软件功能的付费/订阅比例，软件变现能力体现
+                        </div>
+                    </div>
+                    
+                    <div class="authority-card bg-gradient-to-br from-purple-900/10 to-transparent">
+                        <div class="text-center mb-4">
+                            <i class="material-icons text-3xl text-purple-400 mb-2">science</i>
+                            <h4 class="sovereign-heading text-base">研发投向</h4>
+                        </div>
+                        <div class="noble-text text-xs">
+                            研发费用在软件、电池、三电系统的投入比例
+                        </div>
+                    </div>
+                    
+                    <div class="authority-card bg-gradient-to-br from-red-900/10 to-transparent">
+                        <div class="text-center mb-4">
+                            <i class="material-icons text-3xl text-red-400 mb-2">drive_eta</i>
+                            <h4 class="sovereign-heading text-base">自动驾驶数据</h4>
+                        </div>
+                        <div class="noble-text text-xs">
+                            真实道路自动驾驶里程数，数据规模和算法迭代速度
+                        </div>
+                    </div>
+                    
+                    <div class="authority-card bg-gradient-to-br from-orange-900/10 to-transparent">
+                        <div class="text-center mb-4">
+                            <i class="material-icons text-3xl text-orange-400 mb-2">person</i>
+                            <h4 class="sovereign-heading text-base">单车平均收入</h4>
+                        </div>
+                        <div class="noble-text text-xs">
+                            从"单车销售收入"向"单车全生命周期收入"转型
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="sovereign-divider"></div>
+    
+    <!-- 关键风险 -->
+    <section id="key-risks" class="imperial-section" data-title="关键风险与结构性矛盾">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-5xl mb-16 text-center">关键风险与结构性矛盾</h2>
+            
+            <div class="executive-quote max-w-4xl mx-auto text-center">
+                尽管电动化与智能化的未来方向清晰可见，但通往未来的道路并非坦途。本章系统性地梳理全球乘用车行业在当前转型阶段所面临的核心风险。
+            </div>
+            
+            <!-- 三大风险类别 -->
+            <div class="space-y-16">
+                <!-- 宏观经济风险 -->
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-2xl mb-8">
+                        <i class="material-icons text-2xl mr-3">public</i>
+                        宏观经济与地缘政治风险
+                    </h3>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="sovereign-heading text-lg mb-4 text-red-400">供应链脆弱性</h4>
+                            <div class="noble-text text-sm space-y-2">
+                                <div><strong>对中国的过度依赖</strong>：全球电动汽车供应链高度集中于中国，任何贸易争端都可能导致关键零部件供应中断</div>
+                                <div><strong>资源民族主义</strong>：锂、钴、镍等关键电池金属的资源国可能通过提高税收、限制出口等方式寻求更大利益</div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="sovereign-heading text-lg mb-4 text-red-400">资本成本压力</h4>
+                            <div class="noble-text text-sm space-y-2">
+                                <div><strong>高利率环境</strong>：持续的高利率将显著提高车企融资成本，可能迫使部分企业放缓投资</div>
+                                <div><strong>需求周期性</strong>：汽车属于大宗耐用消费品，经济衰退将直接抑制购车需求</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 技术执行风险 -->
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-2xl mb-8">
+                        <i class="material-icons text-2xl mr-3">memory</i>
+                        技术与执行风险
+                    </h3>
+                    
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="bg-gradient-to-br from-red-900/20 to-transparent p-6 rounded border border-red-500/20">
+                            <h4 class="sovereign-heading text-base mb-3">电池技术不确定性</h4>
+                            <div class="noble-text text-xs">
+                                固态电池商业化路径仍面临材料科学、制造工艺和成本控制多重瓶颈
+                            </div>
+                        </div>
+                        
+                        <div class="bg-gradient-to-br from-orange-900/20 to-transparent p-6 rounded border border-orange-500/20">
+                            <h4 class="sovereign-heading text-base mb-3">软件开发困境</h4>
+                            <div class="noble-text text-xs">
+                                传统车企建立高效软件开发团队是巨大组织文化挑战，大众CARIAD困境是典型案例
+                            </div>
+                        </div>
+                        
+                        <div class="bg-gradient-to-br from-blue-900/20 to-transparent p-6 rounded border border-blue-500/20">
+                            <h4 class="sovereign-heading text-base mb-3">网络安全风险</h4>
+                            <div class="noble-text text-xs">
+                                汽车成为联网智能终端，被黑客攻击风险急剧增加，任何重大安全漏洞都可能毁灭品牌
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 市场竞争风险 -->
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-2xl mb-8">
+                        <i class="material-icons text-2xl mr-3">trending_down</i>
+                        市场与竞争风险
+                    </h3>
+                    
+                    <div class="space-y-6">
+                        <div class="grid md:grid-cols-3 gap-6">
+                            <div class="text-center p-6 bg-gradient-to-b from-red-900/20 to-transparent rounded border border-red-500/20">
+                                <div class="w-12 h-12 mx-auto mb-4 rounded-full bg-red-600 flex items-center justify-center">
+                                    <i class="material-icons text-sm text-white">trending_down</i>
+                                </div>
+                                <h4 class="sovereign-heading text-base mb-2">全球价格战威胁</h4>
+                                <div class="noble-text text-xs">
+                                    产能过剩导致激烈价格战，严重侵蚀行业利润率
+                                </div>
+                            </div>
+                            
+                            <div class="text-center p-6 bg-gradient-to-b from-orange-900/20 to-transparent rounded border border-orange-500/20">
+                                <div class="w-12 h-12 mx-auto mb-4 rounded-full bg-orange-600 flex items-center justify-center">
+                                    <i class="material-icons text-sm text-white">swap_horiz</i>
+                                </div>
+                                <h4 class="sovereign-heading text-base mb-2">消费者偏好摇摆</h4>
+                                <div class="noble-text text-xs">
+                                    混合动力复兴表明消费者对纯电动接纳并非直线
+                                </div>
+                            </div>
+                            
+                            <div class="text-center p-6 bg-gradient-to-b from-purple-900/20 to-transparent rounded border border-purple-500/20">
+                                <div class="w-12 h-12 mx-auto mb-4 rounded-full bg-purple-600 flex items-center justify-center">
+                                    <i class="material-icons text-sm text-white">warning</i>
+                                </div>
+                                <h4 class="sovereign-heading text-base mb-2">新势力生存危机</h4>
+                                <div class="noble-text text-xs">
+                                    巨额亏损和持续"烧钱"，面临现金流断裂风险
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="noble-text">
+                            <p><strong class="text-imperial-gold">综合风险评估</strong>：全球乘用车行业正航行在一片充满机遇但又暗礁密布的未知水域。投资者在评估这一领域的机遇时，必须对上述风险有清醒的认识，并将其纳入决策框架，以应对未来可能出现的各种复杂局面。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="sovereign-divider"></div>
+    
+    <!-- 引用文献 -->
+    <section class="imperial-section bg-gradient-to-b from-transparent to-black bg-opacity-30">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl mb-12 text-center">引用文献</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl mx-auto">
+                <div class="citation-item">
+                    <a href="https://www.bcg.com/press/7september2023-software-defined-vehicles-create-650-billion-value-potential" target="_blank">
+                        1. Software-Defined Vehicles Will Create a More Than $650 Billion Value Potential - BCG
+                    </a>
+                </div>
+                
+                <div class="citation-item">
+                    <a href="https://www.acea.auto/publication/economic-and-market-report-global-and-eu-auto-industry-full-year-2024/" target="_blank">
+                        2. Economic and Market Report: Global and EU auto industry – ACEA
+                    </a>
+                </div>
+                
+                <div class="citation-item">
+                    <a href="https://www.just-auto.com/industry-data/global-light-vehicle-sales-up-2-in-2024-globaldata/" target="_blank">
+                        3. Global light vehicle sales up 2% in 2024 - GlobalData - Just Auto
+                    </a>
+                </div>
+                
+                <div class="citation-item">
+                    <a href="https://www.iea.org/reports/global-ev-outlook-2025/trends-in-electric-car-markets-2" target="_blank">
+                        4. Trends in electric car markets – Global EV Outlook 2025 – IEA
+                    </a>
+                </div>
+                
+                <div class="citation-item">
+                    <a href="https://www.nerdwallet.com/article/taxes/ev-tax-credit-electric-vehicle-tax-credit" target="_blank">
+                        5. EV Tax Credit 2025: How It Works, Eligible Cars - NerdWallet
+                    </a>
+                </div>
+                
+                <div class="citation-item">
+                    <a href="https://www.energy-storage.news/lithium-ion-battery-pack-prices-fall-20-in-2024-amidst-fight-for-market-share/" target="_blank">
+                        6. Lithium-ion battery pack prices fall 20% in 2024 - Energy Storage News
+                    </a>
+                </div>
+                
+                <div class="citation-item">
+                    <a href="https://www.deloitte.com/global/en/Industries/automotive/analysis/software-defined-vehicles.html" target="_blank">
+                        7. Software defined vehicles: Global manufacturer readiness study - Deloitte
+                    </a>
+                </div>
+                
+                <div class="citation-item">
+                    <a href="https://www.mckinsey.com/industries/semiconductors/our-insights/getting-ready-for-next-generation-ee-architecture-with-zonal-compute" target="_blank">
+                        8. Getting ready for next-generation E/E architecture with zonal compute - McKinsey
+                    </a>
+                </div>
+                
+                <div class="citation-item">
+                    <a href="https://www.idtechex.com/tw/research-report/li-ion-battery-market-2025/1027" target="_blank">
+                        9. Li-ion Battery Market 2025-2035: Technologies, Players - IDTechEx
+                    </a>
+                </div>
+                
+                <div class="citation-item">
+                    <a href="https://ir.tesla.com/" target="_blank">
+                        10. Tesla Investor Relations
+                    </a>
+                </div>
+                
+                <div class="citation-item">
+                    <a href="https://bydukmedia.com/en/news-articles/byd-reports-its-financial-results-in-2024-revenue-hits-777.1-billion-yuan,-up-23-year-on-year.html" target="_blank">
+                        11. BYD reports its financial results in 2024 - BYD UK Media
+                    </a>
+                </div>
+                
+                <div class="citation-item">
+                    <a href="https://ir.nio.com/news-events/news-releases/" target="_blank">
+                        12. News Releases - Investor Relations | NIO Inc.
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- JavaScript -->
+    <script>
+        // 精美垂直进度条系统（支持悬停显示标题 + 点击跳转）
+        const progressBar = document.querySelector('.reading-progress');
+        const progressFill = document.querySelector('.reading-progress-fill');
+        const progressTooltip = document.getElementById('progress-tooltip');
+        const sections = document.querySelectorAll('section[id], header[id]');
+        
+        let currentSectionTitle = '';
+        let sectionsData = [];
+        
+        // 初始化章节数据
+        function initSections() {
+            sectionsData = Array.from(sections).map(section => ({
+                id: section.getAttribute('id'),
+                title: section.getAttribute('data-title') || section.querySelector('h1, h2')?.textContent || '未知章节',
+                offsetTop: section.offsetTop,
+                offsetHeight: section.offsetHeight
+            }));
+        }
+        
+        function updateProgress() {
+            const scrolled = window.pageYOffset;
+            const maxHeight = document.body.scrollHeight - window.innerHeight;
+            const progress = (scrolled / maxHeight) * 100;
+            
+            // 更新垂直进度条填充高度
+            progressFill.style.height = `${progress}%`;
+            
+            // 获取当前章节
+            let currentSection = '';
+            sectionsData.forEach(section => {
+                if (scrolled >= section.offsetTop - 300) {
+                    currentSection = section.id;
+                    currentSectionTitle = section.title;
+                }
+            });
+        }
+        
+        // 点击进度条跳转到对应位置
+        progressBar.addEventListener('click', (e) => {
+            const rect = progressBar.getBoundingClientRect();
+            const clickY = e.clientY - rect.top;
+            const progressHeight = rect.height;
+            const clickPercent = clickY / progressHeight;
+            
+            const maxHeight = document.body.scrollHeight - window.innerHeight;
+            const targetScroll = maxHeight * clickPercent;
+            
+            window.scrollTo({
+                top: targetScroll,
+                behavior: 'smooth'
+            });
+        });
+        
+        // 鼠标悬停显示当前章节标题
+        progressBar.addEventListener('mouseenter', () => {
+            if (currentSectionTitle) {
+                progressTooltip.textContent = currentSectionTitle;
+                progressTooltip.classList.add('show');
+            }
+        });
+        
+        progressBar.addEventListener('mouseleave', () => {
+            progressTooltip.classList.remove('show');
+        });
+        
+        // 提示框悬停保持显示
+        progressTooltip.addEventListener('mouseenter', () => {
+            progressTooltip.classList.add('show');
+        });
+        
+        progressTooltip.addEventListener('mouseleave', () => {
+            progressTooltip.classList.remove('show');
+        });
+        
+        // 窗口大小改变时重新计算章节位置
+        window.addEventListener('resize', () => {
+            setTimeout(initSections, 100);
+        });
+        
+        window.addEventListener('scroll', updateProgress);
+        
+        // 页面加载完成后初始化
+        window.addEventListener('load', () => {
+            initSections();
+            updateProgress();
+        });
+        
+        // 优雅的页面加载动画
+        document.addEventListener('DOMContentLoaded', () => {
+            document.body.style.opacity = '0';
+            document.body.style.transition = 'opacity 1s ease';
+            
+            setTimeout(() => {
+                document.body.style.opacity = '1';
+            }, 100);
+        });
+        
+        // 数字动画
+        function animateNumbers() {
+            const numbers = document.querySelectorAll('.exclusive-number');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && entry.target.textContent.match(/\d/)) {
+                        const element = entry.target;
+                        const finalText = element.textContent;
+                        const numericValue = parseFloat(finalText.replace(/[^\d.-]/g, ''));
+                        
+                        if (!isNaN(numericValue) && numericValue > 0 && numericValue < 10000) {
+                            animateValue(element, 0, numericValue, finalText, 2000);
+                            observer.unobserve(element);
+                        }
+                    }
+                });
+            }, { threshold: 0.5 });
+            
+            numbers.forEach(number => observer.observe(number));
+        }
+        
+        function animateValue(element, start, end, finalText, duration) {
+            const startTime = performance.now();
+            
+            function updateValue(currentTime) {
+                const elapsed = currentTime - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                const current = start + (end - start) * easeOutQuart(progress);
+                
+                element.textContent = finalText.replace(/\d+/, Math.round(current));
+                
+                if (progress < 1) {
+                    requestAnimationFrame(updateValue);
+                } else {
+                    element.textContent = finalText;
+                }
+            }
+            
+            requestAnimationFrame(updateValue);
+        }
+        
+        function easeOutQuart(t) {
+            return 1 - (--t) * t * t * t;
+        }
+        
+        // 启动动画
+        setTimeout(() => {
+            animateNumbers();
+        }, 1000);
+    </script>
+</body>
+</html>
