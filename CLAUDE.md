@@ -10,6 +10,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 2. **行业研究报告系统** - 专业投研内容管理（行业投研报告/目录）
 3. **智库系统** - 思想领导力内容平台（think-tank.html及相关文件）
 4. **更新日志系统** - Linear风格的时间线展示系统（updates.html及相关文件）
+5. **有物AI系统** - 智能投研助手平台（youwo-ai.html及相关文件）- **🆕 2025年新增**
 
 ## 技术架构
 
@@ -35,6 +36,15 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **数据管理**: 基于reports-manager.js的数据自动聚合
 - **统计算法**: 最小级行业分类统计（第三级/第四级分类）
 
+### 有物AI系统架构 - **🆕 2025年新增**
+- **前端技术栈**: HTML5 + TailwindCSS + JavaScript ES6+
+- **设计风格**: 夸克AI风格简洁界面 + Dark Matter深邃黑金设计
+- **AI模式系统**: 6大专业投研模式（全部、行业分析、公司研究、股票分析、投资建议、数据解读）
+- **API集成**: 火山引擎DeepSeek API非流式调用
+- **交互体验**: 精美思考中间态、打字机效果、实时计时器
+- **配置管理**: 模块化API配置和参数管理
+- **响应式设计**: 完整移动端适配，统一导航组件集成
+
 ## 核心文件结构
 
 ```
@@ -42,6 +52,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ├── index.html              # 主网站首页
 ├── think-tank.html         # 智库页面
 ├── updates.html            # 更新日志页面
+├── youwo-ai.html           # 有物AI智能投研助手页面 🆕
+├── youwo-ai-config.html    # 有物AI配置管理页面 🆕
 ├── CLAUDE.md               # 项目开发指南文档
 ├── README.md               # 项目说明文档
 ├── package.json            # 项目配置文件
@@ -62,6 +74,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 │   ├── updates.js         # 更新日志页面逻辑
 │   ├── updates-manager.js # 更新日志数据管理器
 │   ├── reports-manager.js # 报告管理逻辑
+│   ├── youwo-ai.js        # 有物AI核心功能实现 🆕
+│   ├── youwo-ai-config.js # 有物AI配置管理 🆕
 │   ├── auth.js            # 认证系统
 │   ├── auth-credentials.js # 认证凭据
 │   ├── performance.js     # 性能优化脚本
@@ -274,6 +288,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 4. **报告生成**: 遵循严格的HTML生成规范
 5. **导航维护**: 新页面需在navigation.js中添加页面映射
 6. **更新日志**: 新报告会自动显示在updates.html时间线中
+7. **有物AI维护**: 模型配置更新、系统提示词优化、API参数调整 🆕
 
 ### 新页面集成导航指南
 ```html
@@ -301,3 +316,97 @@ document.addEventListener('DOMContentLoaded', function() {
 - 验证统一导航在所有页面正确显示和激活
 - 更新日志时间线必须保持完全倒序排列
 - 统计数据计算准确性（使用最小级行业分类）
+- 有物AI系统提示词专业性和准确性验证 🆕
+- API调用稳定性和错误处理完整性测试 🆕
+
+## 有物AI智能投研助手系统详解 - **🆕 2025年新增**
+
+### 系统概述
+有物AI是VM公司推出的专业智能投研助手系统，采用夸克AI风格的简洁界面设计，集成火山引擎DeepSeek API，为用户提供机构级专业投研分析服务。
+
+### 核心功能特性
+
+#### 1. **6大专业投研模式**
+- **全部模式**: 顶级全能投研分析师，华尔街顶级投行+私募基金专业背景
+- **行业分析**: 资深行业研究专家，McKinsey、BCG咨询+投行背景
+- **公司研究**: 首席股票分析师，高盛、摩根士丹利+Berkshire Hathaway背景
+- **股票分析**: 资深交易分析师，Goldman Sachs量化+Two Sigma对冲基金背景
+- **投资建议**: 首席投资官(CIO)，BlackRock、Vanguard+高瓴资本背景
+- **数据解读**: 首席数据科学家，MIT/Stanford+Renaissance Technologies背景
+
+#### 2. **精美交互体验**
+- **思考中间态**: 多步骤分析展示，实时计时器，动态动画效果
+- **打字机效果**: 逐字输出AI回复，支持后台运行，自然停顿节奏
+- **响应式设计**: 完美适配桌面端和移动端，统一导航集成
+- **专业提示**: 针对不同模式的个性化输入建议和示例
+
+#### 3. **技术架构优势**
+- **非流式API**: 稳定可靠的火山引擎DeepSeek API集成
+- **模块化设计**: 配置文件独立管理，易于维护和扩展
+- **错误处理**: 完整的API错误处理和用户友好反馈
+- **性能优化**: 后台运行优化，页面可见性检测
+
+### 系统提示词设计理念
+
+#### **机构级专业背景**
+每个模式都配备顶级金融机构的专业背景：
+- 投行：Goldman Sachs、Morgan Stanley、中金、中信建投
+- 咨询：McKinsey、BCG、Bain
+- 资管：BlackRock、Vanguard、高瓴资本、景林资产
+- 量化：Renaissance Technologies、Two Sigma、DE Shaw
+- 学术：MIT、Stanford、Harvard商学院
+
+#### **系统化分析框架**
+- **行业分析**: Porter五力模型、PEST分析、产业链分析、TAM/SAM/SOM
+- **公司研究**: DCF估值、杜邦分析、护城河评估、财务质量分析
+- **股票分析**: 技术分析、量化建模、资金流分析、风险管理
+- **投资建议**: 现代投资组合理论、资产配置、风险预算模型
+- **数据解读**: 统计建模、机器学习、时间序列分析、数据可视化
+
+#### **输出质量标准**
+- 基于最新2024-2025年数据和市场信息
+- 提供定量分析和定性判断的完整论证链条
+- 明确标注关键假设条件和风险因素
+- 给出具体可执行的投资建议和风险控制措施
+- 强制性专业风险提示和合规声明
+
+### 配置和维护指南
+
+#### **API配置管理** (`js/youwo-ai-config.js`)
+```javascript
+window.YOUWO_AI_CONFIG = {
+    volcano: {
+        apiKey: 'your-api-key',
+        baseURL: 'https://ark.cn-beijing.volces.com/api/v3',
+        model: 'bot-20250915112813-kx2qr',
+        maxTokens: 4096,
+        temperature: 0.7,
+        topP: 0.9
+    }
+};
+```
+
+#### **模式配置更新**
+在`js/youwo-ai.js`中的`this.modes`对象中：
+- 更新`placeholder`字段修改搜索框提示
+- 更新`systemPrompt`字段优化系统提示词
+- 保持专业背景和分析框架的完整性
+
+#### **性能优化要点**
+- 打字机效果在后台运行时自动加速
+- 思考计时器支持页面可见性检测
+- API请求失败时提供详细错误信息和解决建议
+- 所有定时器和事件监听器都有完整的清理机制
+
+### 访问和部署
+- **生产环境**: https://voidmatter.cn/youwo-ai.html
+- **配置管理**: https://voidmatter.cn/youwo-ai-config.html
+- **GitHub仓库**: 已集成到主项目仓库，自动部署到GitHub Pages
+- **CDN资源**: 使用TailwindCSS、Font Awesome等外部CDN资源
+
+### 未来扩展计划
+- **联网搜索**: 集成实时市场数据和新闻资讯
+- **文档上传**: 支持财报、研究报告等文档分析
+- **图表生成**: 自动生成专业投研图表和可视化
+- **语音交互**: 语音输入和语音播报功能
+- **多语言支持**: 英文等多语言界面和分析
