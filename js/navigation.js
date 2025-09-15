@@ -10,6 +10,7 @@ class VMNavigation {
         this.navItems = [
             { id: 'home', text: '首页', href: 'index.html' },
             { id: 'think-tank', text: '质点智库', href: 'think-tank.html' },
+            { id: 'youwo-ai', text: '有物AI', href: 'youwo-ai.html' },
             { id: 'updates', text: '更新日志', href: 'updates.html' },
             { id: 'trends', text: '行业趋势', href: '#' }
         ];
@@ -28,6 +29,7 @@ class VMNavigation {
             'index.html': 'home',
             '': 'home',
             'think-tank.html': 'think-tank',
+            'youwo-ai.html': 'youwo-ai',
             'updates.html': 'updates'
         };
         

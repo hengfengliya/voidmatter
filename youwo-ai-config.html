@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>有物AI配置管理</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #0a0a0a 0%, #050505 100%);
+            color: #E5E4E2;
+            font-family: 'Inter', sans-serif;
+        }
+        .config-card {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            border-radius: 12px;
+            backdrop-filter: blur(15px);
+        }
+    </style>
+</head>
+<body class="min-h-screen p-8">
+    <div class="max-w-4xl mx-auto">
+        <!-- 标题 -->
+        <div class="text-center mb-8">
+            <h1 class="text-4xl font-bold bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-500 bg-clip-text text-transparent mb-4">
+                有物AI配置管理
+            </h1>
+            <p class="text-gray-400">管理API密钥、端点和其他配置项</p>
+        </div>
+
+        <!-- 配置表单 -->
+        <div class="config-card p-6 mb-6">
+            <h2 class="text-xl font-semibold text-yellow-400 mb-4 flex items-center">
+                <i class="fas fa-cog mr-2"></i>
+                API 配置
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                <div>
+                    <label class="block text-sm font-medium mb-2">API 密钥</label>
+                    <input
+                        type="password"
+                        id="apiKey"
+                        class="w-full p-3 bg-black/30 border border-gray-600 rounded-lg focus:border-yellow-400 focus:outline-none"
+                        placeholder="请输入API密钥"
+                    >
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium mb-2">基础URL</label>
+                    <input
+                        type="text"
+                        id="baseURL"
+                        class="w-full p-3 bg-black/30 border border-gray-600 rounded-lg focus:border-yellow-400 focus:outline-none"
+                        placeholder="https://ark.cn-beijing.volces.com/api/v3"
+                    >
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium mb-2">模型ID</label>
+                    <input
+                        type="text"
+                        id="model"
+                        class="w-full p-3 bg-black/30 border border-gray-600 rounded-lg focus:border-yellow-400 focus:outline-none"
+                        placeholder="bot-xxxxxxxxxxxx"
+                    >
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium mb-2">最大Token</label>
+                    <input
+                        type="number"
+                        id="maxTokens"
+                        class="w-full p-3 bg-black/30 border border-gray-600 rounded-lg focus:border-yellow-400 focus:outline-none"
+                        placeholder="4096"
+                    >
+                </div>
+            </div>
+
+            <div class="flex gap-4">
+                <button
+                    onclick="loadConfig()"
+                    class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors"
+                >
+                    <i class="fas fa-download mr-2"></i>加载当前配置
+                </button>
+
+                <button
+                    onclick="saveConfig()"
+                    class="px-4 py-2 bg-yellow-600 hover:bg-yellow-700 rounded-lg transition-colors"
+                >
+                    <i class="fas fa-save mr-2"></i>保存配置
+                </button>
+
+                <button
+                    onclick="testConnection()"
+                    class="px-4 py-2 bg-green-600 hover:bg-green-700 rounded-lg transition-colors"
+                >
+                    <i class="fas fa-plug mr-2"></i>测试连接
+                </button>
+            </div>
+        </div>
+
+        <!-- 状态显示 -->
+        <div class="config-card p-6">
+            <h2 class="text-xl font-semibold text-yellow-400 mb-4 flex items-center">
+                <i class="fas fa-info-circle mr-2"></i>
+                状态信息
+            </h2>
+            <div id="statusDisplay" class="bg-black/30 p-4 rounded-lg font-mono text-sm min-h-[200px] overflow-y-auto">
+                准备就绪...
+            </div>
+        </div>
+
+        <!-- 快速链接 -->
+        <div class="text-center mt-6">
+            <a href="youwo-ai.html" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-yellow-600 to-yellow-500 rounded-lg hover:from-yellow-700 hover:to-yellow-600 transition-all">
+                <i class="fas fa-arrow-left mr-2"></i>
+                返回有物AI
+            </a>
+        </div>
+    </div>
+
+    <!-- 配置文件 -->
+    <script src="js/youwo-ai-config.js"></script>
+
+    <script>
+        // 添加日志到状态显示
+        function addLog(message, type = 'info') {
+            const statusDisplay = document.getElementById('statusDisplay');
+            const timestamp = new Date().toLocaleTimeString();
+            const colors = {
+                info: 'text-blue-400',
+                success: 'text-green-400',
+                error: 'text-red-400',
+                warning: 'text-yellow-400'
+            };
+
+            const logEntry = document.createElement('div');
+            logEntry.className = colors[type];
+            logEntry.innerHTML = `[${timestamp}] ${message}`;
+
+            statusDisplay.appendChild(logEntry);
+            statusDisplay.scrollTop = statusDisplay.scrollHeight;
+        }
+
+        // 加载当前配置
+        function loadConfig() {
+            try {
+                const config = window.YouwoAIConfig.get();
+
+                document.getElementById('apiKey').value = config.apiKey || '';
+                document.getElementById('baseURL').value = config.baseURL || '';
+                document.getElementById('model').value = config.model || '';
+                document.getElementById('maxTokens').value = config.maxTokens || 4096;
+
+                addLog('✅ 配置加载成功', 'success');
+                addLog(`API密钥: ${config.apiKey ? config.apiKey.substring(0, 10) + '...' : '未设置'}`, 'info');
+                addLog(`基础URL: ${config.baseURL}`, 'info');
+                addLog(`模型ID: ${config.model}`, 'info');
+            } catch (error) {
+                addLog(`❌ 配置加载失败: ${error.message}`, 'error');
+            }
+        }
+
+        // 保存配置
+        function saveConfig() {
+            try {
+                const newConfig = {
+                    apiKey: document.getElementById('apiKey').value.trim(),
+                    baseURL: document.getElementById('baseURL').value.trim(),
+                    model: document.getElementById('model').value.trim(),
+                    maxTokens: parseInt(document.getElementById('maxTokens').value) || 4096,
+                    temperature: 0.7,
+                    topP: 0.9
+                };
+
+                window.YouwoAIConfig.update(newConfig);
+
+                addLog('✅ 配置保存成功', 'success');
+                addLog('⚠️ 注意：配置仅在当前浏览器会话中有效', 'warning');
+                addLog('💡 建议在js/youwo-ai-config.js文件中永久更新配置', 'info');
+            } catch (error) {
+                addLog(`❌ 配置保存失败: ${error.message}`, 'error');
+            }
+        }
+
+        // 测试连接
+        async function testConnection() {
+            addLog('🔍 开始测试API连接...', 'info');
+
+            try {
+                const config = window.YouwoAIConfig.get();
+
+                addLog(`正在连接: ${config.baseURL}`, 'info');
+                addLog(`使用模型: ${config.model}`, 'info');
+
+                const requestData = {
+                    model: config.model,
+                    messages: [
+                        { role: "system", content: "You are a helpful assistant." },
+                        { role: "user", content: "Hello!" }
+                    ],
+                    stream: false
+                };
+
+                const response = await fetch(`${config.baseURL}/bots/chat/completions`, {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': `Bearer ${config.apiKey}`,
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(requestData)
+                });
+
+                addLog(`响应状态: ${response.status} ${response.statusText}`, response.ok ? 'success' : 'error');
+
+                if (response.ok) {
+                    const data = await response.json();
+                    addLog('✅ API连接测试成功！', 'success');
+                    addLog(`响应数据: ${JSON.stringify(data, null, 2)}`, 'info');
+                } else {
+                    let errorData;
+                    try {
+                        errorData = await response.json();
+                    } catch (e) {
+                        errorData = { message: '无法解析错误响应' };
+                    }
+                    addLog(`❌ API连接失败: ${errorData.message || errorData.error?.message || '未知错误'}`, 'error');
+                }
+            } catch (error) {
+                addLog(`❌ 连接测试出错: ${error.message}`, 'error');
+
+                if (error.message.includes('fetch')) {
+                    addLog('💡 可能的原因:', 'warning');
+                    addLog('  - 网络连接问题', 'warning');
+                    addLog('  - API服务器不可达', 'warning');
+                    addLog('  - CORS策略限制', 'warning');
+                }
+            }
+        }
+
+        // 页面加载完成后自动加载配置
+        window.addEventListener('load', function() {
+            addLog('🚀 配置管理器已启动', 'success');
+            loadConfig();
+        });
+    </script>
+</body>
+</html>

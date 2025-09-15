@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>有物AI | 虚空有物 - 智能投研助手</title>
+    <meta name="description" content="有物AI - VM专业AI投研助手。简洁界面，强大功能。">
+    <meta name="keywords" content="有物AI,AI投研,人工智能,投资分析">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico?v=2025090201">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png?v=2025090201">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v=2025090201">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=2025090201">
+    
+    <!-- 外部资源 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- 全局导航栏组件 -->
+    <script src="js/navigation.js"></script>
+
+    <!-- 有物AI配置文件 -->
+    <script src="js/youwo-ai-config.js"></script>
+    
+    <!-- 字体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- 精简版AI样式系统 -->
+    <style>
+        :root {
+            --vm-black: #0a0a0a;
+            --vm-deep-black: #050505;
+            --vm-gold: #D4AF37;
+            --vm-gold-light: #F5E6A8;
+            --vm-gold-dark: #B8860B;
+            --vm-platinum: #E5E4E2;
+            --vm-gray-50: #f9fafb;
+            --vm-gray-100: #f3f4f6;
+            --vm-gray-200: #e5e7eb;
+            --vm-gray-300: #d1d5db;
+            --vm-gray-400: #9ca3af;
+            --vm-gray-500: #6b7280;
+            --vm-gray-600: #4b5563;
+            --vm-gray-700: #374151;
+            --vm-gray-800: #1f2937;
+            --vm-gray-900: #111827;
+        }
+        
+        * {
+            font-family: 'Poppins', 'Noto Sans SC', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, var(--vm-deep-black) 0%, var(--vm-black) 100%);
+            color: var(--vm-platinum);
+            min-height: 100vh;
+        }
+        
+        /* 主容器 - 优化间距和宽度 */
+        .vm-ai-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px 24px 40px 24px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        /* 品牌标题 - 富豪风格 */
+        .vm-brand-title {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 28px;
+            background: linear-gradient(135deg, var(--vm-gold), #FFD700, var(--vm-gold-light), #C9AA71);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            background-size: 200% 200%;
+            animation: vm-glass-shimmer 4s ease-in-out infinite;
+            text-align: center;
+            font-family: 'Poppins', 'Noto Sans SC', sans-serif;
+            text-shadow: 0 0 30px rgba(212, 175, 55, 0.2);
+        }
+
+        @keyframes vm-glass-shimmer {
+            0%, 100% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+        
+        /* 功能模式按钮 - 单行布局 */
+        .vm-modes-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 28px;
+            width: 100%;
+            max-width: 900px;
+        }
+        
+        .vm-mode-chip {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            border-radius: 10px;
+            padding: 8px 14px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(15px);
+            position: relative;
+            overflow: hidden;
+            min-width: 100px;
+            width: 108px;
+            flex: 0 0 108px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+        
+        .vm-mode-chip:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(212, 175, 55, 0.35);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.15);
+        }
+        
+        .vm-mode-chip.active {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.2), rgba(212, 175, 55, 0.1));
+            border-color: var(--vm-gold);
+            color: var(--vm-gold);
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+        }
+        
+        .vm-mode-icon {
+            font-size: 14px;
+            margin-bottom: 0;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        .vm-mode-chip:hover .vm-mode-icon {
+            transform: scale(1.1);
+        }
+
+        .vm-mode-text {
+            font-size: 12px;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.9);
+            white-space: nowrap;
+        }
+        
+        /* 主输入区域 - 富豪精致设计 */
+        .vm-input-container {
+            width: 100%;
+            max-width: 900px;
+            position: relative;
+            margin-bottom: 28px;
+        }
+
+        .vm-main-input {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(212, 175, 55, 0.25);
+            border-radius: 18px;
+            padding: 18px 55px 18px 24px;
+            color: var(--vm-platinum);
+            font-size: 16px;
+            outline: none;
+            transition: all 0.4s ease;
+            backdrop-filter: blur(20px);
+            resize: none;
+            min-height: 56px;
+            max-height: 140px;
+            font-family: 'Poppins', 'Noto Sans SC', sans-serif;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            overflow-y: hidden;
+            line-height: 1.4;
+        }
+
+        .vm-main-input.multiline {
+            overflow-y: auto;
+        }
+
+        .vm-main-input:focus {
+            border-color: var(--vm-gold);
+            box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.15), 0 8px 25px rgba(0, 0, 0, 0.15);
+            background: rgba(255, 255, 255, 0.06);
+        }
+        
+        .vm-main-input::placeholder {
+            color: rgba(255, 255, 255, 0.4);
+            font-weight: 400;
+        }
+
+        .vm-send-button {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: linear-gradient(135deg, var(--vm-gold), #FFD700, var(--vm-gold-light));
+            border: none;
+            border-radius: 12px;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: var(--vm-deep-black);
+            font-weight: 600;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+        }
+
+        .vm-send-button:hover {
+            transform: translateY(-50%) scale(1.05);
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+            background: linear-gradient(135deg, #FFD700, var(--vm-gold-bright), var(--vm-gold));
+        }
+        
+        .vm-send-button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: translateY(-50%);
+        }
+        
+        
+        /* 对话区域 - 扩大宽度 */
+        .vm-chat-area {
+            width: 100%;
+            max-width: 900px;
+            max-height: 400px;
+            overflow-y: auto;
+            padding: 0;
+            margin-top: 24px;
+        }
+
+        .vm-message {
+            margin-bottom: 16px;
+            animation: vm-fade-in 0.3s ease-out;
+            width: 100%;
+            max-width: 900px;
+        }
+
+        @keyframes vm-fade-in {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .vm-message-content {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 16px;
+            backdrop-filter: blur(10px);
+            position: relative;
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+
+        .vm-message.user .vm-message-content {
+            background: rgba(212, 175, 55, 0.1);
+            border-color: rgba(212, 175, 55, 0.2);
+        }
+
+        .vm-message.ai .vm-message-content {
+            background: rgba(37, 99, 235, 0.08);
+            border-color: rgba(37, 99, 235, 0.15);
+        }
+        
+        .vm-message-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 8px;
+            font-size: 12px;
+            color: var(--vm-gray-400);
+        }
+        
+        .vm-message-avatar {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+        }
+        
+        .vm-message.user .vm-message-avatar {
+            background: linear-gradient(135deg, var(--vm-gold), #FFD700);
+            color: var(--vm-deep-black);
+        }
+        
+        .vm-message.ai .vm-message-avatar {
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            color: white;
+        }
+        
+        .vm-message-text {
+            color: var(--vm-platinum);
+            line-height: 1.5;
+            font-size: 14px;
+        }
+        
+        /* 当前模式指示器 - 精致样式 */
+        .vm-current-mode {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            background: rgba(0, 0, 0, 0.85);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 12px;
+            padding: 10px 16px;
+            backdrop-filter: blur(20px);
+            font-size: 13px;
+            color: var(--vm-gold);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* 真实思维链样式 */
+        .vm-thinking-section {
+            margin: 12px 0;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .vm-thinking-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 12px;
+            background: rgba(212, 175, 55, 0.1);
+            border-radius: 8px 8px 0 0;
+            cursor: pointer;
+        }
+
+        .vm-thinking-header i {
+            color: var(--vm-gold);
+            font-size: 14px;
+        }
+
+        .vm-thinking-header span {
+            color: var(--vm-gold);
+            font-size: 13px;
+            font-weight: 500;
+            flex: 1;
+        }
+
+        .vm-thinking-toggle {
+            background: none;
+            border: none;
+            color: var(--vm-gold);
+            cursor: pointer;
+            padding: 4px;
+            border-radius: 4px;
+            transition: background 0.2s ease;
+        }
+
+        .vm-thinking-toggle:hover {
+            background: rgba(212, 175, 55, 0.2);
+        }
+
+        .vm-thinking-content {
+            padding: 12px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            line-height: 1.4;
+            color: rgba(255, 255, 255, 0.7);
+            white-space: pre-wrap;
+            max-height: 300px;
+            overflow-y: auto;
+            border-top: 1px solid rgba(212, 175, 55, 0.1);
+        }
+
+        /* 打字机光标样式 */
+        .vm-typing-cursor {
+            color: var(--vm-gold);
+            font-weight: 100;
+            animation: vm-cursor-blink 1s infinite;
+        }
+
+        @keyframes vm-cursor-blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+        
+        .vm-thinking-dots {
+            display: flex;
+            gap: 2px;
+        }
+        
+        .vm-thinking-dot {
+            width: 4px;
+            height: 4px;
+            background: #7c3aed;
+            border-radius: 50%;
+            animation: vm-pulse 1.4s infinite ease-in-out;
+        }
+        
+        .vm-thinking-dot:nth-child(2) { animation-delay: 0.2s; }
+        .vm-thinking-dot:nth-child(3) { animation-delay: 0.4s; }
+        
+        @keyframes vm-pulse {
+            0%, 60%, 100% { transform: scale(1); opacity: 1; }
+            30% { transform: scale(1.2); opacity: 0.7; }
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .vm-ai-container {
+                padding: 16px 16px 30px 16px;
+            }
+
+            .vm-brand-title {
+                font-size: 36px;
+                margin-bottom: 20px;
+            }
+
+            .vm-modes-grid {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 6px;
+                margin-bottom: 20px;
+                max-width: 100%;
+            }
+
+            .vm-mode-chip {
+                padding: 6px 10px;
+                min-width: 70px;
+                width: auto;
+                flex: 0 0 auto;
+                gap: 4px;
+            }
+
+            .vm-mode-icon {
+                font-size: 12px;
+            }
+
+            .vm-mode-text {
+                font-size: 10px;
+            }
+
+            .vm-input-container {
+                margin-bottom: 20px;
+                max-width: 100%;
+            }
+
+            .vm-chat-area {
+                max-width: 100%;
+                padding: 0;
+            }
+
+            .vm-message {
+                max-width: 100%;
+            }
+
+            .vm-message-content {
+                max-width: 100%;
+                margin: 0;
+            }
+
+            .vm-current-mode {
+                bottom: 18px;
+                right: 18px;
+                padding: 8px 12px;
+                font-size: 12px;
+            }
+        }
+        
+        /* 滚动条美化 */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 3px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: rgba(212, 175, 55, 0.3);
+            border-radius: 3px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(212, 175, 55, 0.5);
+        }
+        
+        /* 隐藏状态 */
+        .hidden {
+            display: none !important;
+        }
+        
+        /* 欢迎状态 */
+        .vm-welcome {
+            text-align: center;
+            opacity: 0.8;
+        }
+        
+        .vm-welcome.hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 统一导航 -->
+    <div id="vm-navigation"></div>
+    
+    <!-- 主容器 -->
+    <div class="vm-ai-container">
+        
+        <!-- 品牌标题 -->
+        <h1 class="vm-brand-title">有物 AI</h1>
+        
+        <!-- 功能模式选择 -->
+        <div class="vm-modes-grid">
+            <div class="vm-mode-chip active" data-mode="all">
+                <i class="vm-mode-icon fas fa-layer-group"></i>
+                <span class="vm-mode-text">全部</span>
+            </div>
+            <div class="vm-mode-chip" data-mode="industry">
+                <i class="vm-mode-icon fas fa-industry"></i>
+                <span class="vm-mode-text">行业分析</span>
+            </div>
+            <div class="vm-mode-chip" data-mode="company">
+                <i class="vm-mode-icon fas fa-building"></i>
+                <span class="vm-mode-text">公司研究</span>
+            </div>
+            <div class="vm-mode-chip" data-mode="stock">
+                <i class="vm-mode-icon fas fa-chart-line"></i>
+                <span class="vm-mode-text">股票分析</span>
+            </div>
+            <div class="vm-mode-chip" data-mode="advice">
+                <i class="vm-mode-icon fas fa-lightbulb"></i>
+                <span class="vm-mode-text">投资建议</span>
+            </div>
+            <div class="vm-mode-chip" data-mode="data">
+                <i class="vm-mode-icon fas fa-chart-bar"></i>
+                <span class="vm-mode-text">数据解读</span>
+            </div>
+        </div>
+        
+        <!-- 主输入区域 -->
+        <div class="vm-input-container">
+            <textarea 
+                id="messageInput" 
+                class="vm-main-input" 
+                placeholder="搜索资料，提问题，找答案..."
+                rows="1"
+            ></textarea>
+            <button id="sendBtn" class="vm-send-button">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+        
+        
+        <!-- 欢迎信息 -->
+        <div id="welcomeArea" class="vm-welcome">
+            <p style="color: var(--vm-gray-400); font-size: 14px; margin-bottom: 16px;">
+                您的专业AI投研助手，提供深度分析和投资洞察
+            </p>
+        </div>
+        
+        <!-- 对话区域 -->
+        <div id="chatArea" class="vm-chat-area hidden"></div>
+        
+    </div>
+    
+    <!-- 当前模式指示器 -->
+    <div class="vm-current-mode">
+        <i id="currentModeIcon" class="fas fa-industry"></i>
+        <span id="currentModeName">行业分析</span>
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="js/youwo-ai.js"></script>
+</body>
+</html>
