@@ -421,7 +421,68 @@
             0%, 60%, 100% { transform: scale(1); opacity: 1; }
             30% { transform: scale(1.2); opacity: 0.7; }
         }
-        
+
+        /* 猜你想问区域样式 */
+        .vm-suggested-container {
+            width: 100%;
+            max-width: 900px;
+            margin-bottom: 20px;
+        }
+
+        .vm-suggested-title {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 12px;
+            font-size: 14px;
+            color: var(--vm-gold);
+            font-weight: 500;
+        }
+
+        .vm-suggested-title i {
+            font-size: 13px;
+            opacity: 0.9;
+        }
+
+        .vm-suggested-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+        }
+
+        .vm-suggested-tag {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 20px;
+            padding: 8px 16px;
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.8);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            white-space: nowrap;
+            font-weight: 400;
+            opacity: 0;
+            transform: translateY(10px);
+            animation: vm-tag-fade-in 0.4s ease-out forwards;
+        }
+
+        .vm-suggested-tag:hover {
+            background: rgba(212, 175, 55, 0.08);
+            border-color: rgba(212, 175, 55, 0.4);
+            color: var(--vm-gold);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.15);
+        }
+
+        @keyframes vm-tag-fade-in {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
         /* 响应式设计 */
         @media (max-width: 768px) {
             .vm-ai-container {
@@ -481,6 +542,25 @@
                 bottom: 18px;
                 right: 18px;
                 padding: 8px 12px;
+                font-size: 12px;
+            }
+
+            /* 猜你想问移动端样式 */
+            .vm-suggested-container {
+                margin-bottom: 16px;
+            }
+
+            .vm-suggested-title {
+                font-size: 13px;
+                margin-bottom: 10px;
+            }
+
+            .vm-suggested-tags {
+                gap: 6px;
+            }
+
+            .vm-suggested-tag {
+                padding: 6px 12px;
                 font-size: 12px;
             }
         }
@@ -547,11 +627,11 @@
             </div>
             <div class="vm-mode-chip" data-mode="stock">
                 <i class="vm-mode-icon fas fa-chart-line"></i>
-                <span class="vm-mode-text">股票分析</span>
+                <span class="vm-mode-text">量化分析</span>
             </div>
             <div class="vm-mode-chip" data-mode="advice">
                 <i class="vm-mode-icon fas fa-lightbulb"></i>
-                <span class="vm-mode-text">投资建议</span>
+                <span class="vm-mode-text">研究建议</span>
             </div>
             <div class="vm-mode-chip" data-mode="data">
                 <i class="vm-mode-icon fas fa-chart-bar"></i>
@@ -571,8 +651,13 @@
                 <i class="fas fa-paper-plane"></i>
             </button>
         </div>
-        
-        
+
+        <!-- 猜你想问区域 -->
+        <div id="suggestedQuestions" class="vm-suggested-container" style="display: none;">
+            <!-- 内容将由JavaScript动态生成 -->
+        </div>
+
+
         <!-- 欢迎信息 -->
         <div id="welcomeArea" class="vm-welcome">
             <p style="color: var(--vm-gray-400); font-size: 14px; margin-bottom: 16px;">

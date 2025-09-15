@@ -36,6 +36,12 @@ class YouwoAI {
                 name: '行业分析',
                 icon: 'fas fa-industry',
                 placeholder: '输入行业名称或关键词，如"新能源汽车"、"半导体"、"消费电子"...',
+                suggestedQuestions: [
+                    '新能源汽车行业未来3年前景如何？',
+                    '人工智能行业的投资机会在哪里？',
+                    '医药行业的政策风险怎么规避？',
+                    '消费行业哪些细分领域值得关注？'
+                ],
                 systemPrompt: `你是VM的资深行业研究专家，具备McKinsey、BCG等顶级咨询公司和中金、中信建投等头部投行的行业研究背景。专注于提供深度、前瞻性的行业分析：
 
 **核心分析框架**：
@@ -87,6 +93,12 @@ class YouwoAI {
                 name: '公司研究',
                 icon: 'fas fa-building',
                 placeholder: '输入公司名称或股票代码，如"比亚迪"、"000858"、"宁德时代"...',
+                suggestedQuestions: [
+                    '比亚迪的护城河主要体现在哪里？',
+                    '宁德时代的估值是否合理？',
+                    '如何评估一家公司的财务健康度？',
+                    '茅台的长期投资价值如何分析？'
+                ],
                 systemPrompt: `你是VM的首席股票分析师，具备高盛、摩根士丹利等顶级投行卖方研究部门和Berkshire Hathaway等价值投资机构的专业背景。专注于提供深度、全面的上市公司基本面研究：
 
 **核心研究框架**：
@@ -139,9 +151,15 @@ class YouwoAI {
             },
 
             stock: {
-                name: '股票分析',
+                name: '量化分析',
                 icon: 'fas fa-chart-line',
                 placeholder: '输入股票代码或技术分析需求，如"000001技术面"、"上证指数走势"...',
+                suggestedQuestions: [
+                    '茅台股票现在的技术面如何？',
+                    '如何判断大盘趋势转向？',
+                    'MACD和KDJ指标怎么结合使用？',
+                    '当前市场适合什么交易策略？'
+                ],
                 systemPrompt: `你是VM的资深股票交易分析师，具备Goldman Sachs量化交易部门、Two Sigma对冲基金和国内顶级私募基金的专业背景。专精于多维度股票分析和精准交易策略制定：
 
 **核心分析体系**：
@@ -193,9 +211,15 @@ class YouwoAI {
             },
 
             advice: {
-                name: '投资建议',
+                name: '研究建议',
                 icon: 'fas fa-lightbulb',
                 placeholder: '描述您的投资需求，如"10万元如何配置"、"价值投资策略"...',
+                suggestedQuestions: [
+                    '10万元资金应该如何配置？',
+                    '当前市场环境下的防守策略？',
+                    '如何构建长期投资组合？',
+                    '价值投资在A股的实战方法？'
+                ],
                 systemPrompt: `你是VM的首席投资官(CIO)，拥有BlackRock、Vanguard等全球顶级资产管理公司和高瓴资本、景林资产等知名私募基金的专业背景。专注于为投资者提供个性化、专业化的投资组合管理和财富增值服务：
 
 **核心投资框架**：
@@ -257,6 +281,12 @@ class YouwoAI {
                 name: '数据解读',
                 icon: 'fas fa-chart-bar',
                 placeholder: '输入财报数据或经济指标，如"CPI数据分析"、"茅台财报解读"...',
+                suggestedQuestions: [
+                    '最新CPI数据对股市有什么影响？',
+                    '如何从财报中判断公司真实盈利？',
+                    'PMI指数透露了什么经济信号？',
+                    '央行货币政策数据怎么解读？'
+                ],
                 systemPrompt: `你是VM的首席数据科学家，具备MIT、Stanford等顶尖院校统计学/数据科学博士背景，以及Renaissance Technologies、Two Sigma等顶级量化基金和McKinsey Analytics等咨询公司的专业经验。专精于金融数据深度挖掘和商业洞察提取：
 
 **核心数据科学框架**：
@@ -318,6 +348,12 @@ class YouwoAI {
                 name: '全部',
                 icon: 'fas fa-layer-group',
                 placeholder: '请输入任何投研相关问题，AI将智能匹配最合适的分析角度...',
+                suggestedQuestions: [
+                    '现在是买入还是观望的时机？',
+                    '如何在震荡市中获得稳定收益？',
+                    '价值股和成长股怎么选择？',
+                    '2025年投资主线是什么？'
+                ],
                 systemPrompt: `你是VM(虚空有物科技)的顶级全能AI投研分析师，拥有华尔街顶级投行和私募基金的专业背景。你能够：
 
 **智能分析判断**：
@@ -444,6 +480,9 @@ class YouwoAI {
 
         // 更新搜索框的placeholder
         this.updateInputPlaceholder();
+
+        // 更新猜你想问标签
+        this.updateSuggestedQuestions();
     }
 
     // 更新输入框placeholder
@@ -452,6 +491,66 @@ class YouwoAI {
         const modeInfo = this.modes[this.currentMode];
         if (messageInput && modeInfo.placeholder) {
             messageInput.placeholder = modeInfo.placeholder;
+        }
+    }
+
+    // 更新猜你想问标签
+    updateSuggestedQuestions() {
+        const suggestedContainer = document.getElementById('suggestedQuestions');
+        if (!suggestedContainer) return;
+
+        const modeInfo = this.modes[this.currentMode];
+        const questions = modeInfo.suggestedQuestions || [];
+
+        // 清空现有内容
+        suggestedContainer.innerHTML = '';
+
+        if (questions.length === 0) {
+            suggestedContainer.style.display = 'none';
+            return;
+        }
+
+        // 显示猜你想问区域
+        suggestedContainer.style.display = 'block';
+
+        // 添加标题
+        const titleDiv = document.createElement('div');
+        titleDiv.className = 'vm-suggested-title';
+        titleDiv.innerHTML = '<i class="fas fa-lightbulb"></i> 猜你想问';
+        suggestedContainer.appendChild(titleDiv);
+
+        // 添加问题标签容器
+        const tagsContainer = document.createElement('div');
+        tagsContainer.className = 'vm-suggested-tags';
+
+        questions.forEach((question, index) => {
+            const tag = document.createElement('button');
+            tag.className = 'vm-suggested-tag';
+            tag.textContent = question;
+            tag.onclick = () => this.selectSuggestedQuestion(question);
+
+            // 添加悬停动画延迟
+            tag.style.animationDelay = `${index * 0.1}s`;
+
+            tagsContainer.appendChild(tag);
+        });
+
+        suggestedContainer.appendChild(tagsContainer);
+    }
+
+    // 选择猜你想问的问题
+    selectSuggestedQuestion(question) {
+        const messageInput = document.getElementById('messageInput');
+        if (messageInput) {
+            messageInput.value = question;
+            messageInput.focus();
+            this.autoResizeTextarea();
+
+            // 添加视觉反馈
+            messageInput.style.background = 'rgba(212, 175, 55, 0.1)';
+            setTimeout(() => {
+                messageInput.style.background = '';
+            }, 800);
         }
     }
     
