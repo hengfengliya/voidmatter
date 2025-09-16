@@ -224,7 +224,7 @@
         .vm-send-button:hover {
             transform: translateY(-50%) scale(1.05);
             box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
-            background: linear-gradient(135deg, #FFD700, var(--vm-gold-bright), var(--vm-gold));
+            background: linear-gradient(135deg, #FFD700, #F5E6A8, var(--vm-gold));
         }
         
         .vm-send-button:disabled {
@@ -448,7 +448,7 @@
             display: flex;
             flex-wrap: wrap;
             gap: 8px;
-            justify-content: center;
+            justify-content: flex-start;
         }
 
         .vm-suggested-tag {
@@ -589,12 +589,67 @@
             display: none !important;
         }
         
+        /* 导出按钮样式 */
+        .vm-export-buttons {
+            display: flex;
+            gap: 8px;
+            margin-top: 12px;
+            justify-content: flex-end;
+            opacity: 0;
+            animation: vm-fade-in-delay 0.6s ease-out 0.5s forwards;
+        }
+
+        .vm-export-btn {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 6px;
+            padding: 6px 12px;
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.7);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            white-space: nowrap;
+            font-weight: 400;
+        }
+
+        .vm-export-btn:hover {
+            background: rgba(212, 175, 55, 0.08);
+            border-color: rgba(212, 175, 55, 0.4);
+            color: var(--vm-gold);
+            transform: translateY(-1px);
+            box-shadow: 0 2px 8px rgba(212, 175, 55, 0.15);
+        }
+
+        .vm-export-btn i {
+            font-size: 10px;
+            opacity: 0.8;
+        }
+
+        .vm-export-btn:hover i {
+            opacity: 1;
+        }
+
+        @keyframes vm-fade-in-delay {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
         /* 欢迎状态 */
         .vm-welcome {
             text-align: center;
             opacity: 0.8;
         }
-        
+
         .vm-welcome.hidden {
             display: none;
         }
@@ -663,6 +718,7 @@
             <p style="color: var(--vm-gray-400); font-size: 14px; margin-bottom: 16px;">
                 您的专业AI投研助手，提供深度分析和投资洞察
             </p>
+
         </div>
         
         <!-- 对话区域 -->
