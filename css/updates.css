@@ -1,0 +1,1556 @@
+/* ===================================================================
+   虚空有物质点智库 - 更新日志页面奢华样式系统
+   超越以往的顶级富豪专属视觉体验
+   Version: 2025.09.02
+=================================================================== */
+
+/* 根变量 - 奢华色彩体系 */
+:root {
+    /* 深邃奢华黑色层次 */
+    --luxury-obsidian: #000000;
+    --luxury-void-black: #0A0A0A;
+    --luxury-midnight: #111111;
+    --luxury-shadow-deep: #1A1A1A;
+    --luxury-charcoal: #222222;
+    --luxury-graphite: #2A2A2A;
+    
+    /* 稀缺奢华金色系统 */
+    --luxury-gold-sovereign: #FFD700;
+    --luxury-gold-royal: #F5E050;
+    --luxury-gold-champagne: #F7E7CE;
+    --luxury-gold-whisper: #FAFAF0;
+    --luxury-gold-shadow: #B8860B;
+    --luxury-gold-deep: #8B6914;
+    
+    /* 奢华白色层次 */
+    --luxury-platinum: #F8F8FF;
+    --luxury-pearl: #F5F5F5;
+    --luxury-silver: #E8E8E8;
+    --luxury-mercury: #CCCCCC;
+    
+    /* 权力强调色 */
+    --luxury-ruby: #8B0000;
+    --luxury-emerald: #006400;
+    --luxury-sapphire: #0F1B54;
+    --luxury-amethyst: #663399;
+    
+    /* 奢华阴影系统 */
+    --luxury-glow-gold: 0 0 30px rgba(255, 215, 0, 0.3);
+    --luxury-glow-deep: 0 0 60px rgba(255, 215, 0, 0.1);
+    --luxury-shadow-luxury: 0 20px 60px rgba(0, 0, 0, 0.8);
+    --luxury-shadow-elegant: 0 10px 30px rgba(0, 0, 0, 0.6);
+    --luxury-shadow-subtle: 0 5px 15px rgba(0, 0, 0, 0.4);
+    
+    /* 奢华字体系统 */
+    --font-luxury-title: 'Playfair Display', serif;
+    --font-luxury-body: 'Inter', sans-serif;
+    --font-luxury-script: 'Crimson Text', serif;
+    
+    /* 奢华动画时间 */
+    --luxury-transition-swift: 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+    --luxury-transition-elegant: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --luxury-transition-graceful: 0.8s cubic-bezier(0.23, 1, 0.320, 1);
+    --luxury-transition-dramatic: 1.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* 基础样式重置 - 奢华版 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.updates-body {
+    background: linear-gradient(145deg, var(--luxury-obsidian) 0%, var(--luxury-void-black) 25%, var(--luxury-midnight) 50%, var(--luxury-shadow-deep) 75%, var(--luxury-obsidian) 100%);
+    color: var(--luxury-platinum);
+    font-family: var(--font-luxury-body);
+    line-height: 1.6;
+    overflow-x: hidden;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* 奢华粒子背景系统 */
+.luxury-particles-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.particles-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.luxury-gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(circle at 20% 30%, rgba(255, 215, 0, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 80% 70%, rgba(255, 215, 0, 0.06) 0%, transparent 35%),
+        radial-gradient(circle at 40% 90%, rgba(255, 215, 0, 0.04) 0%, transparent 30%);
+    animation: luxuryGlow 15s ease-in-out infinite alternate;
+}
+
+@keyframes luxuryGlow {
+    0% { opacity: 0.3; }
+    50% { opacity: 0.6; }
+    100% { opacity: 0.8; }
+}
+
+/* 顶级导航栏系统 */
+.luxury-nav {
+    background: linear-gradient(135deg, 
+        rgba(0, 0, 0, 0.95) 0%, 
+        rgba(17, 17, 17, 0.98) 50%, 
+        rgba(0, 0, 0, 0.95) 100%);
+    backdrop-filter: blur(20px) saturate(1.8);
+    border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+    box-shadow: var(--luxury-shadow-elegant);
+    transition: var(--luxury-transition-elegant);
+}
+
+.luxury-nav::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        var(--luxury-gold-royal) 20%, 
+        var(--luxury-gold-sovereign) 50%, 
+        var(--luxury-gold-royal) 80%, 
+        transparent 100%);
+    opacity: 0.6;
+}
+
+/* 品牌标识奢华升级 */
+.luxury-brand-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: var(--luxury-transition-elegant);
+}
+
+.luxury-brand-container:hover {
+    transform: scale(1.05);
+}
+
+.luxury-brand-glow {
+    position: absolute;
+    inset: -4px;
+    background: linear-gradient(45deg, var(--luxury-gold-sovereign), var(--luxury-gold-royal));
+    border-radius: 10px;
+    opacity: 0;
+    blur: 8px;
+    transition: var(--luxury-transition-elegant);
+    z-index: -1;
+}
+
+.luxury-brand-container:hover .luxury-brand-glow {
+    opacity: 0.3;
+    animation: luxuryPulse 2s ease-in-out infinite;
+}
+
+@keyframes luxuryPulse {
+    0%, 100% { transform: scale(1); opacity: 0.3; }
+    50% { transform: scale(1.05); opacity: 0.5; }
+}
+
+.luxury-brand-text {
+    font-family: var(--font-luxury-title);
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, 
+        var(--luxury-gold-sovereign) 0%, 
+        var(--luxury-gold-royal) 50%, 
+        var(--luxury-gold-champagne) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-right: 12px;
+    text-shadow: 0 2px 4px rgba(255, 215, 0, 0.3);
+}
+
+.luxury-brand-subtitle {
+    font-family: var(--font-luxury-script);
+    font-size: 0.9rem;
+    color: var(--luxury-gold-champagne);
+    letter-spacing: 2px;
+    opacity: 0.9;
+}
+
+.luxury-divider {
+    width: 1px;
+    height: 40px;
+    background: linear-gradient(to bottom, 
+        transparent 0%, 
+        var(--luxury-gold-royal) 20%, 
+        var(--luxury-gold-sovereign) 50%, 
+        var(--luxury-gold-royal) 80%, 
+        transparent 100%);
+    margin: 0 24px;
+}
+
+.luxury-page-title {
+    display: flex;
+    align-items: center;
+    font-family: var(--font-luxury-title);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--luxury-platinum);
+    letter-spacing: 1px;
+}
+
+.luxury-crown {
+    margin-right: 12px;
+    font-size: 1.2rem;
+    color: var(--luxury-gold-sovereign);
+    animation: luxuryCrownFloat 3s ease-in-out infinite;
+}
+
+@keyframes luxuryCrownFloat {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-2px) rotate(1deg); }
+}
+
+/* 导航链接奢华样式 */
+.luxury-nav-link {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--luxury-silver);
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    position: relative;
+    transition: var(--luxury-transition-swift);
+    overflow: hidden;
+}
+
+.luxury-nav-link::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, 
+        rgba(255, 215, 0, 0.1) 0%, 
+        rgba(255, 215, 0, 0.05) 100%);
+    opacity: 0;
+    transition: var(--luxury-transition-swift);
+}
+
+.luxury-nav-link:hover::before,
+.luxury-nav-link.active::before {
+    opacity: 1;
+}
+
+.luxury-nav-link:hover,
+.luxury-nav-link.active {
+    color: var(--luxury-gold-sovereign);
+    transform: translateY(-1px);
+    box-shadow: var(--luxury-shadow-subtle);
+}
+
+.luxury-nav-link i {
+    margin-right: 8px;
+    font-size: 1.1rem;
+    transition: var(--luxury-transition-swift);
+}
+
+.luxury-nav-link:hover i {
+    transform: scale(1.1);
+}
+
+/* 精致简洁的头部区域 */
+.luxury-header-section {
+    padding: 0;
+    position: relative;
+    z-index: 3;
+    background: linear-gradient(135deg, 
+        var(--luxury-obsidian) 0%, 
+        var(--luxury-void-black) 50%, 
+        var(--luxury-midnight) 100%);
+}
+
+.luxury-header-content {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+/* 精致的皇冠图标 */
+.luxury-crown-icon {
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(135deg, 
+        rgba(247, 231, 206, 0.1) 0%, /* 使用浅黄色 */
+        rgba(247, 231, 206, 0.05) 100%); /* 使用浅黄色 */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border: 1px solid rgba(247, 231, 206, 0.2); /* 使用浅黄色 */
+    backdrop-filter: blur(10px);
+}
+
+.luxury-crown-icon i {
+    font-size: 1.8rem;
+    color: var(--luxury-gold-champagne); /* 使用浅黄色 */
+    animation: luxuryCrownFloat 3s ease-in-out infinite;
+}
+
+/* 主标题样式 */
+.luxury-main-title {
+    font-family: var(--font-luxury-title);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 300;
+    color: var(--luxury-platinum);
+    margin-bottom: 1rem;
+    letter-spacing: 3px;
+    background: linear-gradient(135deg, 
+        var(--luxury-platinum) 0%, 
+        var(--luxury-gold-champagne) 50%, 
+        var(--luxury-platinum) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.luxury-main-subtitle {
+    font-family: var(--font-luxury-body);
+    font-size: 1.1rem;
+    color: var(--luxury-silver);
+    margin-bottom: 3rem;
+    opacity: 0.9;
+    letter-spacing: 1px;
+}
+
+/* 精简统计信息 */
+.luxury-mini-stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.luxury-mini-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background: rgba(247, 231, 206, 0.03); /* 使用浅黄色 */
+    border-radius: 8px;
+    border: 1px solid rgba(247, 231, 206, 0.1); /* 使用浅黄色 */
+    backdrop-filter: blur(5px);
+    transition: var(--luxury-transition-swift);
+    min-width: 100px;
+}
+
+.luxury-mini-stat:hover {
+    background: rgba(247, 231, 206, 0.08); /* 使用浅黄色 */
+    border-color: rgba(247, 231, 206, 0.2); /* 使用浅黄色 */
+    transform: translateY(-2px);
+}
+
+.luxury-mini-stat .luxury-stat-number {
+    font-family: var(--font-luxury-title);
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--luxury-gold-champagne); /* 使用浅黄色 */
+    line-height: 1;
+    margin-bottom: 0.3rem;
+}
+
+.luxury-mini-stat .luxury-stat-text {
+    font-size: 0.8rem;
+    color: var(--luxury-silver);
+    letter-spacing: 0.5px;
+    opacity: 0.8;
+}
+
+.luxury-mini-divider {
+    width: 1px;
+    height: 40px;
+    background: linear-gradient(to bottom, 
+        transparent 0%, 
+        var(--luxury-gold-champagne) 50%, /* 使用浅黄色 */
+        transparent 100%);
+    opacity: 0.6;
+}
+
+/* 移动端适配 - Linear 风格 */
+@media (max-width: 768px) {
+    .luxury-sidebar {
+        display: none; /* 移动端隐藏侧边栏 */
+    }
+    
+    .luxury-content {
+        margin-left: 0; /* 移动端取消左边距 */
+        padding-right: 0;
+        width: 100%;
+    }
+    
+    .luxury-timeline-section .flex {
+        flex-direction: column;
+    }
+    
+    .luxury-mini-stats {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .luxury-mini-divider {
+        width: 60px;
+        height: 1px;
+        background: linear-gradient(to right, 
+            transparent 0%, 
+            var(--luxury-gold-champagne) 50%, /* 使用浅黄色 */
+            transparent 100%);
+    }
+    
+    .luxury-main-title {
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+    }
+    
+    .luxury-main-subtitle {
+        font-size: 1rem;
+    }
+    
+    .luxury-timeline-content {
+        margin-left: 2rem;
+    }
+    
+    .luxury-timeline-content::before {
+        left: -1.5rem;
+    }
+    
+    .luxury-text-date {
+        border-left-width: 1px;
+        padding-left: 1rem;
+        margin-left: 0.5rem;
+    }
+    
+    .luxury-text-date-dot {
+        left: -1.1rem;
+        width: 8px;
+        height: 8px;
+    }
+    
+    .luxury-text-date-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .luxury-text-date-title {
+        font-size: 1.1rem;
+    }
+    
+    .luxury-text-reports {
+        margin-left: 0;
+    }
+    
+    .luxury-text-report {
+        padding: 1rem;
+    }
+    
+    .luxury-text-report-title {
+        font-size: 1rem;
+    }
+    
+    .luxury-month-title {
+        font-size: 2rem;
+    }
+    
+    .luxury-month-header {
+        margin-bottom: 2rem;
+    }
+    
+    .luxury-footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .luxury-footer-copyright {
+        text-align: center;
+    }
+}
+
+/* 控制面板区域 - 紧凑版 */
+.luxury-controls-section {
+    padding: 2rem 0 3rem;
+    background: linear-gradient(180deg, 
+        rgba(0, 0, 0, 0.2) 0%, 
+        rgba(17, 17, 17, 0.3) 50%, 
+        rgba(0, 0, 0, 0.2) 100%);
+    backdrop-filter: blur(5px);
+    border-top: 1px solid rgba(255, 215, 0, 0.05);
+    border-bottom: 1px solid rgba(255, 215, 0, 0.05);
+    position: relative;
+    z-index: 5;
+}
+
+.luxury-controls-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    align-items: end;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.luxury-filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    min-width: 160px;
+}
+
+.luxury-filter-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--luxury-gold-champagne);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.luxury-select {
+    background: linear-gradient(135deg, 
+        rgba(0, 0, 0, 0.8) 0%, 
+        rgba(17, 17, 17, 0.9) 100%);
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    border-radius: 8px;
+    padding: 12px 16px;
+    color: var(--luxury-platinum);
+    font-size: 0.9rem;
+    transition: var(--luxury-transition-swift);
+    cursor: pointer;
+}
+
+.luxury-select:focus {
+    outline: none;
+    border-color: var(--luxury-gold-sovereign);
+    box-shadow: var(--luxury-glow-gold);
+}
+
+.luxury-select:hover {
+    border-color: var(--luxury-gold-royal);
+    transform: translateY(-1px);
+}
+
+/* 视图切换按钮 */
+.luxury-view-toggle {
+    display: flex;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.luxury-view-btn {
+    padding: 12px 20px;
+    background: transparent;
+    border: none;
+    color: var(--luxury-silver);
+    cursor: pointer;
+    transition: var(--luxury-transition-swift);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+.luxury-view-btn:hover {
+    color: var(--luxury-gold-royal);
+    background: rgba(255, 215, 0, 0.1);
+}
+
+.luxury-view-btn.active {
+    background: linear-gradient(135deg, var(--luxury-gold-sovereign), var(--luxury-gold-royal));
+    color: var(--luxury-obsidian);
+    font-weight: 600;
+    box-shadow: var(--luxury-glow-gold);
+}
+
+/* 搜索框奢华样式 */
+.luxury-search-container {
+    flex: 1;
+    max-width: 400px;
+    min-width: 280px;
+}
+
+.luxury-search-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.luxury-search-input {
+    width: 100%;
+    padding: 14px 50px 14px 45px;
+    background: linear-gradient(135deg, 
+        rgba(0, 0, 0, 0.8) 0%, 
+        rgba(17, 17, 17, 0.9) 100%);
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    border-radius: 25px;
+    color: var(--luxury-platinum);
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    transition: var(--luxury-transition-elegant);
+    backdrop-filter: blur(10px);
+}
+
+.luxury-search-input::placeholder {
+    color: var(--luxury-mercury);
+    opacity: 0.7;
+}
+
+.luxury-search-input:focus {
+    outline: none;
+    border-color: var(--luxury-gold-sovereign);
+    box-shadow: var(--luxury-glow-gold);
+    background: linear-gradient(135deg, 
+        rgba(0, 0, 0, 0.9) 0%, 
+        rgba(17, 17, 17, 0.95) 100%);
+}
+
+.luxury-search-icon {
+    position: absolute;
+    left: 16px;
+    color: var(--luxury-gold-royal);
+    font-size: 1.1rem;
+    pointer-events: none;
+}
+
+.luxury-search-clear {
+    position: absolute;
+    right: 12px;
+    background: rgba(255, 215, 0, 0.1);
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    color: var(--luxury-gold-royal);
+    cursor: pointer;
+    transition: var(--luxury-transition-swift);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.luxury-search-clear:hover {
+    background: rgba(255, 215, 0, 0.2);
+    transform: scale(1.1);
+}
+
+/* Linear 风格左侧导航栏 */
+.luxury-sidebar {
+    background: rgba(247, 231, 206, 0.02);
+    border: 1px solid rgba(247, 231, 206, 0.1);
+    border-radius: 12px;
+    padding: 1.5rem;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 120px;
+    left: 2rem;
+    width: 240px;
+    height: calc(100vh - 160px);
+    overflow-y: auto;
+    z-index: 10;
+}
+
+.luxury-sidebar-title {
+    font-family: var(--font-luxury-title);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--luxury-gold-champagne);
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid rgba(247, 231, 206, 0.1);
+    padding-bottom: 0.8rem;
+}
+
+.luxury-nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.luxury-nav-item {
+    display: block;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    color: var(--luxury-silver);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: var(--luxury-transition-swift);
+    border-left: 2px solid transparent;
+    cursor: pointer;
+}
+
+.luxury-nav-item:hover {
+    background: rgba(247, 231, 206, 0.08);
+    color: var(--luxury-gold-champagne);
+    border-left-color: var(--luxury-gold-champagne);
+    transform: translateX(2px);
+}
+
+.luxury-nav-item.active {
+    background: rgba(247, 231, 206, 0.12);
+    color: var(--luxury-gold-champagne);
+    border-left-color: var(--luxury-gold-champagne);
+    font-weight: 600;
+}
+
+.luxury-nav-month {
+    font-family: var(--font-luxury-title);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.luxury-nav-month:first-child {
+    margin-top: 0;
+}
+
+.luxury-nav-date {
+    padding-left: 1.5rem;
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+
+.luxury-nav-date::before {
+    content: '•';
+    margin-right: 0.5rem;
+    color: var(--luxury-gold-champagne);
+    opacity: 0.5;
+}
+
+/* 时间线内容区域布局调整 */
+.luxury-timeline-section {
+    padding: 6rem 0;
+    position: relative;
+    z-index: 3;
+}
+
+.luxury-timeline-section .flex {
+    display: block; /* 改为块级布局 */
+}
+
+.luxury-content {
+    margin-left: 280px; /* 为固定侧边栏留出空间 */
+    padding-right: 2rem;
+}
+
+.luxury-timeline-container {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* 加载状态 */
+.luxury-loading-container {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.luxury-loading-spinner {
+    width: 60px;
+    height: 60px;
+    border: 3px solid rgba(255, 215, 0, 0.2);
+    border-top: 3px solid var(--luxury-gold-sovereign);
+    border-radius: 50%;
+    animation: luxurySpinnerRotate 1s linear infinite;
+    margin: 0 auto 2rem;
+}
+
+@keyframes luxurySpinnerRotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.luxury-loading-text {
+    color: var(--luxury-silver);
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    animation: luxuryLoadingPulse 2s ease-in-out infinite;
+}
+
+@keyframes luxuryLoadingPulse {
+    0%, 100% { opacity: 0.7; }
+    50% { opacity: 1; }
+}
+
+/* 奢华页脚 */
+.luxury-footer {
+    margin-top: 8rem;
+    background: linear-gradient(180deg, 
+        rgba(0, 0, 0, 0.8) 0%, 
+        rgba(17, 17, 17, 0.95) 50%, 
+        var(--luxury-obsidian) 100%);
+    border-top: 1px solid rgba(255, 215, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.luxury-footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.luxury-footer-brand {
+    text-align: left;
+}
+
+.luxury-footer-logo {
+    font-family: var(--font-luxury-title);
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, 
+        var(--luxury-gold-sovereign) 0%, 
+        var(--luxury-gold-royal) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.5rem;
+}
+
+.luxury-footer-tagline {
+    color: var(--luxury-silver);
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+.luxury-footer-desc {
+    color: var(--luxury-mercury);
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+.luxury-footer-copyright {
+    text-align: right;
+}
+
+.luxury-footer-year {
+    color: var(--luxury-silver);
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+
+.luxury-footer-powered {
+    color: var(--luxury-mercury);
+    font-size: 0.75rem;
+    opacity: 0.7;
+}
+
+.luxury-footer-decoration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        var(--luxury-gold-royal) 20%, 
+        var(--luxury-gold-sovereign) 50%, 
+        var(--luxury-gold-royal) 80%, 
+        transparent 100%);
+    opacity: 0.6;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .luxury-controls-container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1.5rem;
+    }
+    
+    .luxury-filter-group {
+        min-width: auto;
+    }
+    
+    .luxury-stats-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .luxury-stat-divider {
+        display: none;
+    }
+    
+    .luxury-footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .luxury-footer-copyright {
+        text-align: center;
+    }
+}
+
+/* 可访问性增强 */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* 高对比度支持 */
+@media (prefers-contrast: high) {
+    :root {
+        --luxury-platinum: #ffffff;
+        --luxury-obsidian: #000000;
+        --luxury-gold-sovereign: #ffff00;
+    }
+}
+
+/* 隐藏类 */
+.hidden {
+    display: none !important;
+}
+
+/* 平滑过渡类 */
+.smooth-transition {
+    transition: var(--luxury-transition-elegant);
+}
+
+/* 时间线奢华样式系统 */
+.luxury-timeline-month {
+    margin-bottom: 6rem;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: var(--luxury-transition-graceful);
+}
+
+.luxury-timeline-month.luxury-fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 月份头部 */
+.luxury-month-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.luxury-month-indicator {
+    position: relative;
+    margin-right: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.luxury-month-dot {
+    width: 20px;
+    height: 20px;
+    background: var(--luxury-gold-champagne); /* 使用浅黄色 */
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 0 8px rgba(247, 231, 206, 0.5); /* 使用浅黄色阴影 */
+}
+
+.luxury-month-dot::before {
+    content: '';
+    position: absolute;
+    inset: -8px;
+    border: 2px solid rgba(247, 231, 206, 0.3); /* 使用浅黄色 */
+    border-radius: 50%;
+    animation: luxuryMonthPulse 3s infinite;
+}
+
+@keyframes luxuryMonthPulse {
+    0%, 100% { transform: scale(1); opacity: 0.3; }
+    50% { transform: scale(1.2); opacity: 0.1; }
+}
+
+.luxury-month-line {
+    width: 2px;
+    height: 80px;
+    background: linear-gradient(to bottom, 
+        var(--luxury-gold-champagne) 0%, /* 使用浅黄色 */
+        rgba(247, 231, 206, 0.3) 50%, /* 使用浅黄色 */
+        rgba(247, 231, 206, 0.1) 100%); /* 使用浅黄色 */
+    margin-top: 1rem;
+}
+
+.luxury-month-info {
+    flex: 1;
+}
+
+.luxury-month-title {
+    font-family: var(--font-luxury-title);
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, 
+        var(--luxury-gold-champagne) 0%, /* 使用浅黄色 */
+        var(--luxury-gold-champagne) 100%); /* 使用浅黄色 */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.8rem;
+    letter-spacing: 2px;
+}
+
+.luxury-month-stats {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--luxury-silver);
+    font-size: 1.1rem;
+}
+
+.luxury-month-count {
+    font-weight: 600;
+    color: var(--luxury-gold-champagne); /* 保持浅黄色 */
+}
+
+.luxury-month-divider {
+    color: var(--luxury-gold-champagne); /* 使用浅黄色 */
+    opacity: 0.6;
+}
+
+.luxury-month-range {
+    opacity: 0.8;
+}
+
+/* 时间线内容 */
+.luxury-timeline-content {
+    margin-left: 5rem;
+    position: relative;
+}
+
+.luxury-timeline-content::before {
+    content: '';
+    position: absolute;
+    left: -3rem;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, 
+        rgba(247, 231, 206, 0.3) 0%, /* 使用浅黄色 */
+        rgba(247, 231, 206, 0.1) 50%, /* 使用浅黄色 */
+        transparent 100%);
+}
+
+/* 文字版时间线样式 */
+.luxury-text-date {
+    margin-bottom: 3rem;
+    opacity: 0;
+    transform: translateX(30px);
+    transition: var(--luxury-transition-elegant);
+    border-left: 2px solid rgba(247, 231, 206, 0.3); /* 使用浅黄色 */
+    padding-left: 2rem;
+    margin-left: 1rem;
+}
+
+.luxury-text-date.luxury-fade-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* 文字版日期头部 */
+.luxury-text-date-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.luxury-text-date-dot {
+    width: 12px;
+    height: 12px;
+    background: var(--luxury-gold-champagne); /* 使用浅黄色 */
+    border-radius: 50%;
+    position: absolute;
+    left: -2.6rem;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 0 8px rgba(247, 231, 206, 0.5); /* 使用浅黄色 */
+}
+
+.luxury-text-date-title {
+    font-family: var(--font-luxury-title);
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--luxury-platinum);
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+.luxury-text-date-count {
+    color: var(--luxury-gold-champagne); /* 使用浅黄色 */
+    font-size: 0.9rem;
+    opacity: 0.8;
+    background: rgba(247, 231, 206, 0.1); /* 使用浅黄色 */
+    padding: 0.3rem 0.8rem;
+    border-radius: 12px;
+    border: 1px solid rgba(247, 231, 206, 0.2); /* 使用浅黄色 */
+}
+
+/* 文字版报告列表 */
+.luxury-text-reports {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: 1rem;
+}
+
+.luxury-text-report {
+    padding: 1.2rem;
+    background: rgba(247, 231, 206, 0.02); /* 使用浅黄色 */
+    border: 1px solid rgba(247, 231, 206, 0.1); /* 使用浅黄色 */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: var(--luxury-transition-swift);
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.luxury-text-report.luxury-fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.luxury-text-report:hover {
+    background: rgba(247, 231, 206, 0.05); /* 使用浅黄色 */
+    border-color: rgba(247, 231, 206, 0.2); /* 使用浅黄色 */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(247, 231, 206, 0.1); /* 使用浅黄色 */
+}
+
+.luxury-text-report-category {
+    display: inline-block;
+    background: rgba(247, 231, 206, 0.1); /* 使用浅黄色 */
+    color: var(--luxury-gold-champagne); /* 使用浅黄色 */
+    padding: 0.3rem 0.8rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.8rem;
+    border: 1px solid rgba(247, 231, 206, 0.15); /* 使用浅黄色 */
+}
+
+.luxury-text-report-title {
+    font-family: var(--font-luxury-title);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--luxury-platinum);
+    margin-bottom: 0.8rem;
+    line-height: 1.4;
+    letter-spacing: 0.3px;
+}
+
+.luxury-text-report-summary {
+    color: var(--luxury-silver);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    opacity: 0.9;
+}
+
+/* 移动端优化 */
+@media (max-width: 768px) {
+    .luxury-text-date {
+        border-left-width: 1px;
+        padding-left: 1rem;
+        margin-left: 0.5rem;
+    }
+    
+    .luxury-text-date-dot {
+        left: -1.1rem;
+        width: 8px;
+        height: 8px;
+    }
+    
+    .luxury-text-date-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .luxury-text-date-title {
+        font-size: 1.1rem;
+    }
+    
+    .luxury-text-reports {
+        margin-left: 0;
+    }
+    
+    .luxury-text-report {
+        padding: 1rem;
+    }
+    
+    .luxury-text-report-title {
+        font-size: 1rem;
+    }
+}
+
+/* 奢华报告卡片 */
+.luxury-report-card {
+    background: linear-gradient(145deg, 
+        rgba(0, 0, 0, 0.6) 0%, 
+        rgba(17, 17, 17, 0.8) 50%, 
+        rgba(0, 0, 0, 0.9) 100%);
+    border: 1px solid rgba(255, 215, 0, 0.15);
+    border-radius: 16px;
+    padding: 2rem;
+    cursor: pointer;
+    transition: var(--luxury-transition-elegant);
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+}
+
+.luxury-report-card.luxury-fade-in {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+.luxury-report-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, 
+        rgba(255, 215, 0, 0.05) 0%, 
+        transparent 50%);
+    opacity: 0;
+    transition: var(--luxury-transition-swift);
+}
+
+.luxury-report-card:hover::before {
+    opacity: 1;
+}
+
+.luxury-card-glow {
+    position: absolute;
+    inset: -2px;
+    background: linear-gradient(135deg, 
+        var(--luxury-gold-sovereign) 0%, 
+        var(--luxury-gold-royal) 100%);
+    border-radius: 18px;
+    opacity: 0;
+    transition: var(--luxury-transition-elegant);
+    z-index: -1;
+    filter: blur(8px);
+}
+
+/* 卡片头部 */
+.luxury-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.luxury-card-category {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.6rem 1.2rem;
+    background: rgba(255, 215, 0, 0.1);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.luxury-category-icon {
+    color: var(--luxury-gold-sovereign);
+    font-size: 0.9rem;
+}
+
+.luxury-category-text {
+    color: var(--luxury-gold-champagne);
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.luxury-card-stats {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.luxury-stat {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--luxury-gold-royal);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.luxury-stat i {
+    font-size: 0.8rem;
+}
+
+/* 卡片内容 */
+.luxury-card-content {
+    margin-bottom: 2rem;
+}
+
+.luxury-report-title {
+    font-family: var(--font-luxury-title);
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--luxury-platinum);
+    line-height: 1.4;
+    margin-bottom: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.luxury-report-summary {
+    color: var(--luxury-silver);
+    line-height: 1.6;
+    opacity: 0.9;
+    margin-bottom: 1.5rem;
+}
+
+.luxury-report-tags {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+}
+
+.luxury-report-tag {
+    padding: 0.4rem 0.8rem;
+    background: rgba(255, 215, 0, 0.08);
+    border: 1px solid rgba(255, 215, 0, 0.15);
+    border-radius: 12px;
+    color: var(--luxury-gold-champagne);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    transition: var(--luxury-transition-swift);
+}
+
+.luxury-report-tag:hover {
+    background: rgba(255, 215, 0, 0.15);
+    border-color: rgba(255, 215, 0, 0.3);
+}
+
+/* 卡片底部 */
+.luxury-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 215, 0, 0.1);
+}
+
+.luxury-card-metrics {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.luxury-metric {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--luxury-mercury);
+    font-size: 0.8rem;
+}
+
+.luxury-metric i {
+    color: var(--luxury-gold-royal);
+    opacity: 0.7;
+}
+
+.luxury-card-action {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: var(--luxury-gold-royal);
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: var(--luxury-transition-swift);
+}
+
+.luxury-action-icon {
+    transition: var(--luxury-transition-swift);
+}
+
+.luxury-report-card:hover .luxury-card-action {
+    color: var(--luxury-gold-sovereign);
+}
+
+/* 空状态样式 */
+.luxury-empty-state {
+    text-align: center;
+    padding: 6rem 2rem;
+    color: var(--luxury-silver);
+}
+
+.luxury-empty-icon {
+    font-size: 4rem;
+    color: var(--luxury-gold-royal);
+    margin-bottom: 2rem;
+    opacity: 0.6;
+}
+
+.luxury-empty-title {
+    font-family: var(--font-luxury-title);
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--luxury-platinum);
+    margin-bottom: 1rem;
+}
+
+.luxury-empty-desc {
+    font-size: 1.1rem;
+    opacity: 0.8;
+    margin-bottom: 3rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.luxury-empty-action {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, var(--luxury-gold-sovereign), var(--luxury-gold-royal));
+    color: var(--luxury-obsidian);
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: var(--luxury-transition-swift);
+    box-shadow: var(--luxury-glow-gold);
+}
+
+.luxury-empty-action:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--luxury-shadow-elegant), var(--luxury-glow-gold);
+}
+
+/* 日历视图样式 */
+.luxury-calendar-view {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.luxury-calendar-header h3 {
+    font-family: var(--font-luxury-title);
+    font-size: 2rem;
+    color: var(--luxury-gold-sovereign);
+    margin-bottom: 1rem;
+}
+
+.luxury-calendar-header p {
+    color: var(--luxury-silver);
+    font-size: 1.1rem;
+    opacity: 0.8;
+}
+
+/* 移动端优化 */
+@media (max-width: 768px) {
+    .luxury-timeline-content {
+        margin-left: 2rem;
+    }
+    
+    .luxury-timeline-content::before {
+        left: -1.5rem;
+    }
+    
+    .luxury-reports-grid {
+        grid-template-columns: 1fr;
+        margin-left: 0;
+    }
+    
+    .luxury-report-card {
+        padding: 1.5rem;
+    }
+    
+    .luxury-month-title {
+        font-size: 2rem;
+    }
+    
+    .luxury-month-header {
+        margin-bottom: 2rem;
+    }
+    
+    .luxury-timeline-date {
+        margin-bottom: 3rem;
+    }
+}
+
+/* 淡入动画 */
+@keyframes luxuryFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.luxury-fade-in {
+    animation: luxuryFadeIn var(--luxury-transition-graceful) ease-out;
+}
+
+/* 滑动动画 */
+@keyframes luxurySlideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.luxury-slideDown {
+    animation: luxurySlideDown var(--luxury-transition-swift) ease-out;
+}

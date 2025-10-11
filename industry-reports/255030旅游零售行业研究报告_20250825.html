@@ -1,0 +1,1629 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全球旅游零售行业深度分析报告：构建系统性认知框架 - 2025年Q3深度投研分析</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@200;300;400;500;600;700;800;900&family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            /* 深邃黑金权力色系 */
+            --obsidian-black: #0A0A0A;
+            --midnight-black: #151515;
+            --shadow-black: #1F1F1F;
+            --charcoal-deep: #2A2A2A;
+            
+            /* 稀缺金色层次 */
+            --sovereign-gold: #B8860B;
+            --imperial-gold: #DAA520;
+            --aureate-whisper: #F4E4BC;
+            --golden-shadow: #8B6914;
+            
+            /* 权力灰度 */
+            --platinum-mist: #E5E5E5;
+            --sterling-silver: #C0C0C0;
+            --graphite-steel: #696969;
+            --charcoal-whisper: #808080;
+            
+            /* 稀缺强调色 */
+            --ruby-accent: #8B0000;
+            --emerald-depth: #006400;
+            --sapphire-authority: #1e3a8a;
+        }
+
+        body {
+            background: var(--obsidian-black);
+            color: var(--platinum-mist);
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* 帝王级标题 */
+        .imperial-title {
+            font-family: 'Playfair Display', serif;
+            font-weight: 200;
+            letter-spacing: 0.12em;
+            line-height: 1.05;
+            color: var(--aureate-whisper);
+            text-shadow: 0 3px 12px rgba(184, 134, 11, 0.4);
+        }
+
+        /* 君主级副标题 */
+        .imperial-subtitle {
+            font-family: 'Playfair Display', serif;
+            font-weight: 300;
+            letter-spacing: 0.08em;
+            line-height: 1.15;
+            color: var(--imperial-gold);
+            text-shadow: 0 2px 8px rgba(218, 165, 32, 0.3);
+        }
+
+        /* 英文斜体标签 */
+        .imperial-tagline {
+            font-family: 'Inter', sans-serif;
+            font-weight: 200;
+            letter-spacing: 0.06em;
+            line-height: 1.4;
+            color: var(--sterling-silver);
+            font-style: italic;
+        }
+
+        /* 致敬样式 */
+        .imperial-dedication {
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+            letter-spacing: 0.04em;
+            line-height: 1.3;
+            color: var(--imperial-gold);
+        }
+
+        .imperial-dedication-sub {
+            font-family: 'Inter', sans-serif;
+            font-weight: 200;
+            letter-spacing: 0.05em;
+            line-height: 1.3;
+            color: var(--sterling-silver);
+            font-style: italic;
+        }
+
+        /* 权威标题 */
+        .sovereign-heading {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            color: var(--imperial-gold);
+            text-shadow: 0 1px 4px rgba(218, 165, 32, 0.4);
+        }
+
+        /* 贵族正文 */
+        .noble-text {
+            font-weight: 300;
+            letter-spacing: 0.03em;
+            line-height: 2.2;
+            color: var(--platinum-mist);
+        }
+
+        /* 引用文字 */
+        .executive-quote {
+            font-weight: 300;
+            letter-spacing: 0.02em;
+            line-height: 1.8;
+            color: var(--sterling-silver);
+            font-size: 0.95rem;
+            font-style: italic;
+            position: relative;
+            padding: 0 2rem;
+            margin: 2rem 0;
+        }
+
+        .executive-quote::before {
+            content: '"';
+            position: absolute;
+            left: 0;
+            top: -0.5rem;
+            font-size: 3rem;
+            color: var(--sovereign-gold);
+            opacity: 0.3;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .executive-quote::after {
+            content: '"';
+            position: absolute;
+            right: 0;
+            bottom: -0.5rem;
+            font-size: 3rem;
+            color: var(--sovereign-gold);
+            opacity: 0.3;
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* 专属数字 */
+        .exclusive-number {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: var(--sovereign-gold);
+            text-shadow: 0 1px 3px rgba(184, 134, 11, 0.5);
+        }
+
+        /* 君主容器 */
+        .sovereign-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 5rem;
+        }
+
+        /* 帝王区块 */
+        .imperial-section {
+            margin: 12rem 0;
+            position: relative;
+        }
+
+        /* 权威卡片 */
+        .authority-card {
+            background: linear-gradient(145deg, 
+                rgba(21, 21, 21, 0.9) 0%, 
+                rgba(31, 31, 31, 0.8) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.15);
+            border-radius: 2px;
+            padding: 3rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            box-shadow: 
+                0 8px 32px rgba(0, 0, 0, 0.6),
+                inset 0 1px 1px rgba(244, 228, 188, 0.05);
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .authority-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(184, 134, 11, 0.3);
+            box-shadow: 
+                0 16px 48px rgba(0, 0, 0, 0.8),
+                0 0 24px rgba(184, 134, 11, 0.1),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08);
+        }
+
+        .authority-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(90deg, var(--sovereign-gold), transparent);
+            opacity: 0.6;
+        }
+
+        .authority-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(270deg, var(--sovereign-gold), transparent);
+            opacity: 0.6;
+        }
+
+        /* 金色琉璃卡片 */
+        .golden-glass-card {
+            background: 
+                radial-gradient(circle at 30% 30%, rgba(218, 165, 32, 0.12) 0%, transparent 50%),
+                radial-gradient(circle at 70% 70%, rgba(184, 134, 11, 0.08) 0%, transparent 50%),
+                linear-gradient(135deg, 
+                    rgba(244, 228, 188, 0.06) 0%, 
+                    rgba(218, 165, 32, 0.04) 30%,
+                    rgba(184, 134, 11, 0.03) 70%,
+                    rgba(139, 105, 20, 0.02) 100%);
+            border: 1px solid rgba(218, 165, 32, 0.15);
+            border-radius: 4px;
+            padding: 2.5rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            box-shadow: 
+                0 8px 32px rgba(0, 0, 0, 0.6),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08),
+                inset 0 0 30px rgba(218, 165, 32, 0.03);
+            transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .golden-glass-card::before {
+            content: '';
+            position: absolute;
+            inset: -1px;
+            background: linear-gradient(45deg, 
+                rgba(218, 165, 32, 0.2) 0%, 
+                rgba(184, 134, 11, 0.1) 25%,
+                transparent 50%,
+                rgba(244, 228, 188, 0.1) 75%,
+                rgba(218, 165, 32, 0.15) 100%);
+            border-radius: 4px;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.8s ease;
+        }
+
+        .golden-glass-card:hover {
+            transform: translateY(-3px);
+            border-color: rgba(218, 165, 32, 0.3);
+            box-shadow: 
+                0 16px 48px rgba(0, 0, 0, 0.8),
+                0 0 40px rgba(218, 165, 32, 0.1),
+                inset 0 1px 1px rgba(244, 228, 188, 0.12),
+                inset 0 0 40px rgba(218, 165, 32, 0.05);
+        }
+
+        .golden-glass-card:hover::before {
+            opacity: 1;
+        }
+
+        /* 投资逻辑卡片 */
+        .investment-logic-card {
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(218, 165, 32, 0.08) 0%, transparent 60%),
+                radial-gradient(circle at 80% 20%, rgba(244, 228, 188, 0.05) 0%, transparent 60%),
+                linear-gradient(135deg, 
+                    rgba(184, 134, 11, 0.06) 0%, 
+                    rgba(139, 105, 20, 0.04) 50%,
+                    rgba(218, 165, 32, 0.02) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.12);
+            border-radius: 2px;
+            padding: 3rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            box-shadow: 
+                0 8px 32px rgba(0, 0, 0, 0.6),
+                inset 0 1px 1px rgba(244, 228, 188, 0.06),
+                inset 0 0 25px rgba(184, 134, 11, 0.02);
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .investment-logic-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, 
+                transparent 0%,
+                rgba(218, 165, 32, 0.4) 25%,
+                rgba(244, 228, 188, 0.6) 50%,
+                rgba(218, 165, 32, 0.4) 75%,
+                transparent 100%);
+            opacity: 0;
+            transition: opacity 0.6s ease;
+        }
+
+        .investment-logic-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(184, 134, 11, 0.25);
+            box-shadow: 
+                0 16px 48px rgba(0, 0, 0, 0.8),
+                0 0 30px rgba(218, 165, 32, 0.08),
+                inset 0 1px 1px rgba(244, 228, 188, 0.1),
+                inset 0 0 35px rgba(184, 134, 11, 0.04);
+        }
+
+        .investment-logic-card:hover::after {
+            opacity: 1;
+        }
+
+        /* 权威表格 */
+        .imperial-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            background: rgba(15, 15, 15, 0.8);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(184, 134, 11, 0.2);
+            border-radius: 2px;
+        }
+
+        .imperial-table th {
+            background: rgba(184, 134, 11, 0.08);
+            padding: 2rem 1.5rem;
+            text-align: left;
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--imperial-gold);
+            border-bottom: 1px solid rgba(184, 134, 11, 0.2);
+        }
+
+        .imperial-table td {
+            padding: 1.8rem 1.5rem;
+            border-bottom: 1px solid rgba(184, 134, 11, 0.05);
+            font-weight: 300;
+        }
+
+        .imperial-table tbody tr:hover {
+            background: rgba(184, 134, 11, 0.03);
+        }
+
+        /* 垂直进度条 */
+        .reading-progress {
+            position: fixed;
+            top: 50%;
+            right: 2rem;
+            width: 4px;
+            height: 200px;
+            transform: translateY(-50%);
+            background: linear-gradient(180deg, 
+                rgba(184, 134, 11, 0.2) 0%, 
+                rgba(218, 165, 32, 0.3) 30%,
+                rgba(244, 228, 188, 0.4) 60%,
+                rgba(218, 165, 32, 0.3) 85%,
+                rgba(139, 105, 20, 0.2) 100%);
+            z-index: 1001;
+            box-shadow: 
+                0 0 12px rgba(184, 134, 11, 0.6),
+                2px 0 8px rgba(184, 134, 11, 0.3),
+                inset 1px 0 2px rgba(244, 228, 188, 0.4);
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+        .reading-progress::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(180deg,
+                rgba(244, 228, 188, 0.1) 0%,
+                rgba(218, 165, 32, 0.15) 50%,
+                rgba(244, 228, 188, 0.1) 100%);
+            border-radius: 2px;
+            animation: progressShimmer 3s ease-in-out infinite;
+        }
+
+        .reading-progress-fill {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(180deg,
+                var(--golden-shadow) 0%,
+                var(--sovereign-gold) 50%,
+                var(--imperial-gold) 100%);
+            border-radius: 2px;
+            transition: height 0.1s ease;
+            box-shadow: 
+                inset 0 1px 2px rgba(244, 228, 188, 0.3),
+                0 0 8px rgba(184, 134, 11, 0.4);
+        }
+
+        @keyframes progressShimmer {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.8; }
+        }
+
+        /* 进度标题提示器 */
+        .progress-tooltip {
+            position: fixed;
+            top: 50%;
+            right: 7rem;
+            transform: translateY(-50%);
+            background: linear-gradient(135deg, 
+                rgba(15, 15, 15, 0.95) 0%, 
+                rgba(31, 31, 31, 0.9) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.25);
+            border-radius: 8px;
+            padding: 0.8rem 2rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 0.85rem;
+            font-weight: 300;
+            color: var(--imperial-gold);
+            backdrop-filter: blur(20px);
+            box-shadow: 
+                0 8px 32px rgba(0, 0, 0, 0.7),
+                0 0 20px rgba(184, 134, 11, 0.1),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+            z-index: 1002;
+            white-space: nowrap;
+            letter-spacing: 0.03em;
+        }
+
+        .progress-tooltip.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(-50%) translateX(-8px);
+        }
+
+        .progress-tooltip::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -8px;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-left: 8px solid rgba(184, 134, 11, 0.25);
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+        }
+
+        .progress-tooltip::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -7px;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-left: 7px solid rgba(15, 15, 15, 0.95);
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+        }
+
+        /* 分隔线 */
+        .sovereign-divider {
+            height: 1px;
+            background: linear-gradient(90deg, 
+                transparent 0%, 
+                rgba(184, 134, 11, 0.3) 30%, 
+                rgba(184, 134, 11, 0.6) 50%, 
+                rgba(184, 134, 11, 0.3) 70%, 
+                transparent 100%);
+            margin: 8rem 0;
+            position: relative;
+        }
+
+        .sovereign-divider::before {
+            content: '◆';
+            position: absolute;
+            top: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--sovereign-gold);
+            font-size: 16px;
+            background: var(--obsidian-black);
+            padding: 0 1rem;
+        }
+
+        /* 引用条目 */
+        .citation-item {
+            padding: 1.5rem 2rem;
+            margin: 0.8rem 0;
+            background: linear-gradient(135deg, 
+                rgba(21, 21, 21, 0.8) 0%, 
+                rgba(31, 31, 31, 0.6) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.15);
+            border-radius: 3px;
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .citation-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--sovereign-gold), var(--golden-shadow));
+            opacity: 0.6;
+            transition: opacity 0.3s ease;
+        }
+
+        .citation-item:hover {
+            border-color: rgba(184, 134, 11, 0.4);
+            background: linear-gradient(135deg, 
+                rgba(31, 31, 31, 0.9) 0%, 
+                rgba(42, 42, 42, 0.7) 100%);
+            transform: translateX(6px) translateY(-1px);
+            box-shadow: 
+                0 8px 25px rgba(0, 0, 0, 0.5),
+                0 0 20px rgba(184, 134, 11, 0.08);
+        }
+
+        .citation-item:hover::before {
+            opacity: 1;
+        }
+
+        .citation-item a {
+            color: var(--platinum-mist);
+            text-decoration: none;
+            font-size: 0.85rem;
+            line-height: 1.7;
+            font-weight: 300;
+            transition: color 0.4s ease;
+            display: block;
+            position: relative;
+        }
+
+        .citation-item a::before {
+            content: '';
+            position: absolute;
+            left: -0.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 4px;
+            background: var(--sovereign-gold);
+            border-radius: 50%;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .citation-item:hover a {
+            color: var(--aureate-whisper);
+            padding-left: 1rem;
+        }
+
+        .citation-item:hover a::before {
+            opacity: 0.8;
+        }
+
+        /* 免责声明卡片 */
+        .disclaimer-card {
+            background: linear-gradient(145deg, 
+                rgba(31, 31, 31, 0.95) 0%, 
+                rgba(42, 42, 42, 0.9) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.18);
+            border-radius: 3px;
+            padding: 4rem;
+            position: relative;
+            backdrop-filter: blur(25px);
+            box-shadow: 
+                0 12px 40px rgba(0, 0, 0, 0.7),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08),
+                inset 0 0 30px rgba(184, 134, 11, 0.02);
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .disclaimer-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 2px;
+            background: linear-gradient(90deg, 
+                transparent, 
+                var(--sovereign-gold), 
+                transparent);
+            opacity: 0.6;
+        }
+
+        .disclaimer-card:hover {
+            border-color: rgba(184, 134, 11, 0.25);
+            box-shadow: 
+                0 16px 50px rgba(0, 0, 0, 0.8),
+                0 0 25px rgba(184, 134, 11, 0.08),
+                inset 0 1px 1px rgba(244, 228, 188, 0.12);
+        }
+
+        .disclaimer-text {
+            font-weight: 300;
+            letter-spacing: 0.02em;
+            line-height: 2;
+            color: var(--platinum-mist);
+            font-size: 1rem;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 1024px) {
+            .sovereign-container {
+                padding: 0 2.5rem;
+            }
+            .imperial-section {
+                margin: 8rem 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .sovereign-container {
+                padding: 0 1.5rem;
+            }
+            .imperial-section {
+                margin: 6rem 0;
+            }
+            .authority-card {
+                padding: 2rem;
+            }
+            .reading-progress {
+                right: 1rem;
+                height: 150px;
+                width: 3px;
+            }
+            .progress-tooltip {
+                right: 5rem;
+                padding: 0.6rem 1.5rem;
+                font-size: 0.75rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 垂直进度条 -->
+    <div class="reading-progress">
+        <div class="reading-progress-fill"></div>
+    </div>
+    
+    <!-- 进度标题提示器 -->
+    <div class="progress-tooltip" id="progress-tooltip"></div>
+    
+    <!-- 首屏标题 -->
+    <header id="header" class="min-h-screen flex items-center justify-center relative" data-title="全球旅游零售行业深度分析">
+        <div class="sovereign-container text-center relative z-10">
+            <!-- 主标题区域 -->
+            <div class="mb-16">
+                <h1 class="imperial-title text-5xl md:text-7xl mb-6">
+                    全球旅游零售行业深度分析报告：构建系统性认知框架
+                </h1>
+                
+                <h2 class="imperial-subtitle text-2xl md:text-4xl mb-12 opacity-90">
+                    2025年Q3深度投研分析
+                </h2>
+            </div>
+            
+            <!-- 英文副标题 -->
+            <div class="mb-12">
+                <div class="imperial-tagline text-sm md:text-base opacity-75 max-w-4xl mx-auto">
+                    Global Travel Retail Industry In-depth Analysis Report:<br class="md:hidden">
+                    Building a Systematic Cognitive Framework — Q3 2025
+                </div>
+            </div>
+            
+            <!-- 致敬区域 -->
+            <div class="mb-16">
+                <div class="imperial-dedication text-sm md:text-base">
+                    致：机构投资者与决策者
+                </div>
+                <div class="imperial-dedication-sub text-xs md:text-sm opacity-60 mt-2">
+                    For: Institutional Investors and Decision Makers
+                </div>
+            </div>
+            
+            <!-- 发布日期卡片 -->
+            <div class="golden-glass-card inline-block">
+                <div class="text-xs uppercase tracking-[0.2em] opacity-50 mb-4 font-light">
+                    本报告发布于 · Published on
+                </div>
+                <div class="sovereign-heading text-base">
+                    <span id="date-cn" class="exclusive-number">2025年8月</span> 
+                    <span class="mx-4 text-sovereign-gold opacity-40">◆</span> 
+                    <span id="date-en" class="exclusive-number">August 2025</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 背景装饰 -->
+        <div class="absolute inset-0 pointer-events-none opacity-8">
+            <div class="absolute top-20 left-20 w-px h-32 bg-gradient-to-b from-sovereign-gold to-transparent"></div>
+            <div class="absolute bottom-20 right-20 w-px h-32 bg-gradient-to-t from-sovereign-gold to-transparent"></div>
+            <div class="absolute top-1/2 left-1/4 w-24 h-px bg-gradient-to-r from-sovereign-gold to-transparent"></div>
+            <div class="absolute top-1/3 right-1/4 w-24 h-px bg-gradient-to-l from-sovereign-gold to-transparent"></div>
+        </div>
+    </header>
+
+    <!-- 全球旅游零售生态系统 -->
+    <section id="ecosystem" class="imperial-section" data-title="全球旅游零售生态系统：市场格局与宏观基础">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl text-center mb-12">全球旅游零售生态系统：市场格局与宏观基础</h2>
+            
+            <div class="authority-card">
+                <div class="noble-text">
+                    <p>本部分旨在为旅游零售行业建立一个坚实的认知基础。首先，报告将界定该行业的范畴及其细分市场；其次，通过量化分析，揭示其市场规模与增长轨迹；最后，深入剖析驱动行业发展的宏观经济及产业特有的核心因素。</p>
+                    
+                    <h4 class="sovereign-heading text-lg mb-4 mt-8">界定旅游零售渠道</h4>
+                    
+                    <p>旅游零售（Travel Retail）是一个独特的零售业态，其核心定义是面向国际旅客，在特定的旅行环境中提供商品的零售渠道。进入这些商业区域通常需要消费者出示旅行证明，如登机牌或船票。该渠道的特殊性在于其销售的商品形态，它既包括"免税"（Duty-Free）商品，即免除消费税和增值税等间接税的商品，也涵盖"完税"（Duty-Paid）商品，即已经缴纳了相关税费的商品。</p>
+                    
+                    <p>从范畴上看，旅游零售的经营场所远不止于机场。它是一个多元化的生态系统，覆盖了旅客行程的多个触点，具体包括：</p>
+                    
+                    <div class="space-y-3 mt-4">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-2 h-2 bg-sovereign-gold rounded-full mt-2 flex-shrink-0"></div>
+                            <div><strong>机场 (Airports)</strong>：全球旅游零售最核心、规模最大的渠道。</div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-2 h-2 bg-sovereign-gold rounded-full mt-2 flex-shrink-0"></div>
+                            <div><strong>航空公司 (Airlines)</strong>：主要指机上零售，包括餐饮服务和商品销售。</div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-2 h-2 bg-sovereign-gold rounded-full mt-2 flex-shrink-0"></div>
+                            <div><strong>邮轮与渡轮 (Cruise Lines & Ferries)</strong>：在海上交通工具内设立的零售店。</div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-2 h-2 bg-sovereign-gold rounded-full mt-2 flex-shrink-0"></div>
+                            <div><strong>边境店 (Border Stores)</strong>：位于陆路边境口岸，服务于过境旅客。</div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-2 h-2 bg-sovereign-gold rounded-full mt-2 flex-shrink-0"></div>
+                            <div><strong>市中心免税店 (Downtown Duty-Free Stores)</strong>：设立在城市中心，国际旅客购物后在离境口岸提货。</div>
+                        </div>
+                    </div>
+                    
+                    <h4 class="sovereign-heading text-lg mb-4 mt-8">市场细分：产品品类与分销渠道</h4>
+                    
+                    <p><strong>按产品品类划分：</strong></p>
+                    
+                    <div class="space-y-4 mt-6">
+                        <div class="bg-shadow-black p-4 rounded">
+                            <h5 class="text-imperial-gold font-semibold mb-2">香水与化妆品 (Fragrances & Cosmetics)</h5>
+                            <p class="text-sm">这是旅游零售中长期占据主导地位的核心品类。无论是在北美、欧洲还是全球市场，其销售额占比均稳居首位，通常占据市场总额的三分之一左右。该品类的强势地位源于其高毛利、高冲动性购买倾向、适合作为礼品以及品牌方乐于推出旅游零售专供套装等特性。</p>
+                        </div>
+                        
+                        <div class="bg-shadow-black p-4 rounded">
+                            <h5 class="text-imperial-gold font-semibold mb-2">酒水 (Wine & Spirits)</h5>
+                            <p class="text-sm">作为一个极具韧性的增长板块，酒水品类的发展受益于全球消费升级趋势下的高端化（Premiumization）浪潮、鸡尾酒文化的兴起以及消费者对精酿和高端烈酒品牌的追捧。</p>
+                        </div>
+                        
+                        <div class="bg-shadow-black p-4 rounded">
+                            <h5 class="text-imperial-gold font-semibold mb-2">时装、配饰与奢侈品 (Fashion & Accessories / Luxury Goods)</h5>
+                            <p class="text-sm">这是增长最快的品类之一，其主要驱动力来自于千禧一代（Millennials）和Z世代（Gen Z）消费者。这些年轻客群将旅行视为生活方式的延伸和个人品味的展现。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 全球市场规模与增长轨迹 -->
+    <section id="market-size" class="imperial-section" data-title="全球市场规模与增长轨迹">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl text-center mb-12">全球市场规模与增长轨迹：历史数据与未来预测（2020-2032）</h2>
+            
+            <div class="golden-glass-card">
+                <div class="noble-text">
+                    <p>全球旅游零售市场的规模估算因统计口径和研究方法的不同而存在差异。综合多家权威机构的数据，可以构建一个相对全面的市场规模认知。</p>
+                    
+                    <h4 class="sovereign-heading text-lg mb-4 mt-8">市场规模与预测的综合视图</h4>
+                    
+                    <p>由于各研究机构对"旅游零售"的定义范畴（是仅包含免税业务，还是涵盖所有旅游场景下的零售活动）存在差异，其发布的市场规模数据呈现出较大的区间范围。例如，将旅游零售定义为更广泛概念的研究机构，其估算的市场规模通常更高。</p>
+                    
+                    <div class="mt-8">
+                        <table class="imperial-table">
+                            <thead>
+                                <tr>
+                                    <th>数据来源</th>
+                                    <th>基准年份</th>
+                                    <th>基准年销售额（十亿美元）</th>
+                                    <th>预测年份</th>
+                                    <th>预测销售额（十亿美元）</th>
+                                    <th>复合年增长率（CAGR）</th>
+                                    <th>备注/统计口径</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Verified Market Research</td>
+                                    <td>2023</td>
+                                    <td class="exclusive-number">135.25</td>
+                                    <td>2031</td>
+                                    <td class="exclusive-number">259.81</td>
+                                    <td class="exclusive-number">9.38%</td>
+                                    <td>广义旅游零售</td>
+                                </tr>
+                                <tr>
+                                    <td>Data Bridge Market Research</td>
+                                    <td>2024</td>
+                                    <td class="exclusive-number">79.93</td>
+                                    <td>2032</td>
+                                    <td class="exclusive-number">229.45</td>
+                                    <td class="exclusive-number">14.09%</td>
+                                    <td>包含免税及完税</td>
+                                </tr>
+                                <tr>
+                                    <td>Mordor Intelligence</td>
+                                    <td>2025</td>
+                                    <td class="exclusive-number">94.20</td>
+                                    <td>2030</td>
+                                    <td class="exclusive-number">144.00</td>
+                                    <td class="exclusive-number">8.80%</td>
+                                    <td>免税及旅游零售</td>
+                                </tr>
+                                <tr>
+                                    <td>Fortune Business Insights</td>
+                                    <td>2024</td>
+                                    <td class="exclusive-number">66.30</td>
+                                    <td>2032</td>
+                                    <td class="exclusive-number">145.46</td>
+                                    <td class="exclusive-number">10.46%</td>
+                                    <td>侧重免税业务</td>
+                                </tr>
+                                <tr>
+                                    <td>Kearney / TFWA</td>
+                                    <td>2023</td>
+                                    <td class="exclusive-number">72.00</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <h4 class="sovereign-heading text-lg mb-4 mt-8">区域格局与结构性变化</h4>
+                    
+                    <p>从地理分布来看，亚太地区（APAC）是全球旅游零售市场中规模最大且增长最快的区域，占据了全球超过50%的市场份额。这一领先地位的形成，主要得益于中国市场的强劲驱动，特别是海南离岛免税政策的巨大成功，以及活跃的亚洲区域内旅游活动。</p>
+                    
+                    <p>回顾历史，COVID-19疫情对行业造成了前所未有的冲击，全球范围内的旅行限制导致客流量锐减，市场规模大幅萎缩。然而，后疫情时代的复苏势头同样强劲。根据世界旅游组织（UNWTO）的数据，全球国际旅客数量预计在2024年全面恢复至疫情前水平。</p>
+                    
+                    <p>这种客流增长与销售增长的"脱钩"现象，是行业进入成熟期后面临的关键挑战。行业的核心指标——人均消费额出现了下滑，2023年全球旅客人均消费额（16美元）已低于疫情前水平。这意味着，旅游零售行业未来的增长不能再单纯依赖于客流量的自然增长，而必须转向提升存量旅客的"转化率"和"客单价"。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 核心宏观与产业驱动力 -->
+    <section id="macro-drivers" class="imperial-section" data-title="核心宏观与产业驱动力">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl text-center mb-12">核心宏观与产业驱动力</h2>
+            
+            <div class="authority-card">
+                <div class="noble-text">
+                    <h4 class="sovereign-heading text-lg mb-4">与全球旅游业的共生关系：UNWTO与IATA客流数据分析</h4>
+                    
+                    <p>旅游零售的本质是依附于"人"的流动而存在的商业形态，因此，全球旅游业的景气度是其最根本的驱动力。国际旅客的数量、流向和消费能力，直接决定了行业的市场容量和增长天花板。</p>
+                    
+                    <div class="space-y-4 mt-6">
+                        <div class=\"bg-shadow-black p-4 rounded\">
+                            <h5 class=\"text-imperial-gold font-semibold mb-2\">世界旅游组织（UNWTO）数据</h5>
+                            <p class=\"text-sm\">全球国际旅游业在后疫情时代展现出强大的韧性。据统计，2024年全球国际游客总数达到14亿人次，恢复至2019年疫情前水平的99%，较2023年增长11%。其中，中东地区表现最为强劲，游客数量较2019年增长32%；欧洲也实现了1%的正增长；而亚太地区虽然恢复速度稍慢（恢复至2019年的87%），但追赶势头明显。</p>
+                        </div>
+                        
+                        <div class=\"bg-shadow-black p-4 rounded\">
+                            <h5 class=\"text-imperial-gold font-semibold mb-2\">国际航空运输协会（IATA）数据</h5>
+                            <p class=\"text-sm\">作为国际旅行的主要载体，航空客运的数据同样印证了复苏趋势。以收入客公里（RPK）计算，2024年全球航空客运需求创下历史新高，同比增长10.4%，并已超过2019年水平3.8%。其中，国际客运量首次恢复并超越2019年同期水平（+0.5%）。</p>
+                        </div>
+                    </div>
+                    
+                    <h4 class="sovereign-heading text-lg mb-4 mt-8">经济决定因素：GDP增长、可支配收入与汇率波动的影响</h4>
+                    
+                    <p>在客流量之外，宏观经济变量对旅游零售消费的"质"与"量"起着决定性作用。</p>
+                    
+                    <div class="space-y-3 mt-4">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-2 h-2 bg-sovereign-gold rounded-full mt-2 flex-shrink-0"></div>
+                            <div><strong>可支配收入与中产阶级崛起</strong>：旅客的消费能力是决定其在旅途中是否购物、购买何种商品的关键。全球范围内，尤其是在中国、印度等新兴经济体，中产阶级群体的壮大和人均可支配收入的持续增长，是驱动旅游零售市场，特别是奢侈品和高端消费品类长期增长的核心引擎。</div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-2 h-2 bg-sovereign-gold rounded-full mt-2 flex-shrink-0"></div>
+                            <div><strong>GDP增长的同步性</strong>：旅游零售行业的景气度与全球及区域GDP增长高度相关。国际机场协会（ACI）预测，在2023至2042年间，新兴和发展中经济体的旅客吞吐量年均复合增长率将达到5.4%，远高于发达经济体的3.2%，这背后正是由更快的经济增长所驱动。</div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-2 h-2 bg-sovereign-gold rounded-full mt-2 flex-shrink-0"></div>
+                            <div><strong>汇率波动的双重影响</strong>：有利的汇率会极大刺激消费者的购买欲望，使其产生"更划算"的心理预期，从而增加消费。中国旅客在全球奢侈品市场的强大购买力，在很大程度上就受益于人民币在特定时期对主要货币的汇率优势。对运营商而言，汇率波动是重大系统性风险，剧烈的汇率波动会严重侵蚀其利润空间。</div>
+                        </div>
+                    </div>
+                    
+                    <h4 class="sovereign-heading text-lg mb-4 mt-8">基础设施的角色：机场投资与非航收入的扩张</h4>
+                    
+                    <p>旅游零售的物理载体——交通枢纽的基础设施建设，是行业增长的直接催化剂。</p>
+                    
+                    <p>全球范围内机场的现代化改造和扩建工程，为旅游零售创造了更多、更好、更具吸引力的商业空间。数据显示，2023年全球机场资本性支出高达1722亿美元，全球有数百个新机场项目正在建设中。</p>
+                    
+                    <p>全球机场的商业模式正在发生深刻的变革，从过去严重依赖于向航空公司收取的起降费、停机费等航空性收入，转向大力发展零售、餐饮、广告、停车等非航空性收入。这一战略转型将旅游零售提升到了机场运营的核心地位。目前，商业服务收入在全球机场总收入中的占比已达到约50%。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 旅游零售价值链与权力动态 -->
+    <section id="value-chain" class="imperial-section" data-title="旅游零售价值链与权力动态">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl text-center mb-12">旅游零售价值链与权力动态</h2>
+            
+            <div class="investment-logic-card">
+                <div class="noble-text">
+                    <h4 class="sovereign-heading text-lg mb-4">从品牌到旅客：商品与价值的流动图谱</h4>
+                    
+                    <p>旅游零售的价值链条由四个核心环节构成，它们共同决定了商品如何从生产端流向消费端，以及价值如何在链条中分配。</p>
+                    
+                    <div class="space-y-4 mt-6">
+                        <div class="bg-shadow-black p-4 rounded">
+                            <h5 class="text-imperial-gold font-semibold mb-2">上游：品牌方/供应商 (Principals/Brands)</h5>
+                            <p class="text-sm">这是价值链的源头，包括各类商品的生产商，如LVMH、保乐力加（Pernod Ricard）、雅诗兰黛（Estée Lauder）等奢侈品、酒水和美妆集团。它们不仅提供产品，其品牌自身的吸引力也是吸引消费者进入零售店的关键因素。</p>
+                        </div>
+                        
+                        <div class="bg-shadow-black p-4 rounded">
+                            <h5 class="text-imperial-gold font-semibold mb-2">中游：批发商/集成商 (Wholesalers/Aggregators)</h5>
+                            <p class="text-sm">在广义的旅游产业中，这一环节包括打包旅游产品的旅行社（Tour Operators）、机票分销的全球分销系统（GDS）等。在旅游零售的商品流通过程中，大型零售运营商通常会直接与品牌方进行采购，因此传统批发商的角色相对弱化。</p>
+                        </div>
+                        
+                        <div class="bg-shadow-black p-4 rounded">
+                            <h5 class="text-imperial-gold font-semibold mb-2">下游：零售商/运营商 (Retailers/Operators)</h5>
+                            <p class="text-sm">这是价值链的核心枢纽，指的是像奥华（Avolta）、中国中免（CDFG）这样的专业旅游零售公司。它们通过竞标获得在机场、港口等场所的零售特许经营权，负责店铺的投资建设、日常运营、商品采购、库存管理以及直接面向消费者的销售服务。</p>
+                        </div>
+                        
+                        <div class="bg-shadow-black p-4 rounded">
+                            <h5 class="text-imperial-gold font-semibold mb-2">终端：消费者/旅客 (Consumers/Travelers)</h5>
+                            <p class="text-sm">作为价值链的最终环节，旅客的消费行为、偏好和支付能力，是驱动整个链条运转的根本动力。</p>
+                        </div>
+                    </div>
+                    
+                    <h4 class="sovereign-heading text-lg mb-4 mt-8">"三位一体"关系：机场、零售运营商与品牌方的相互依存分析</h4>
+                    
+                    <p>旅游零售行业的生态系统由一个经典且复杂的"三位一体"（Trinity）关系所定义，即<strong>机场（地主）、运营商（零售商）和品牌方（供应商）</strong>。三方的核心利益在于共同最大化旅客消费，但在价值分配上则存在着持续的博弈。</p>
+                    
+                    <div class="space-y-3 mt-4">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-2 h-2 bg-sovereign-gold rounded-full mt-2 flex-shrink-0"></div>
+                            <div><strong>机场的角色</strong>：作为场地方，机场提供最宝贵的资源——物理空间和封闭环境下的高价值客流。其主要收入来源是向运营商收取的特许经营费，这笔费用通常采用"保底抽成"模式，即按销售额的一定比例收取，同时设定一个无论销售业绩如何都必须支付的"最低保证年金"（Minimum Annual Guarantee, MAG）。</div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-2 h-2 bg-sovereign-gold rounded-full mt-2 flex-shrink-0"></div>
+                            <div><strong>运营商的角色</strong>：运营商是连接机场和品牌的桥梁。它们需要向机场支付高昂的租金，同时投入巨额资金进行店铺装修和维护；另一方面，它们需要与数百个品牌方进行采购谈判，管理复杂的供应链和库存，并承担最终的销售任务。其盈利空间被机场和品牌方双向挤压。</div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-2 h-2 bg-sovereign-gold rounded-full mt-2 flex-shrink-0"></div>
+                            <div><strong>品牌方的角色</strong>：品牌方是商品和品牌价值的提供者。它们不仅向运营商供货，还常常通过派遣品牌大使、提供市场营销支持等方式深度参与店铺运营。旅游零售渠道是它们展示全球形象、发布新品的重要窗口。</div>
+                        </div>
+                    </div>
+                    
+                    <h4 class="sovereign-heading text-lg mb-4 mt-8">供应商议价能力：奢侈品集团与关键品牌的影响力</h4>
+                    
+                    <p>在上游供应端，旅游零售市场呈现出高度集中的权力格局，少数几家大型奢侈品、美妆和酒水集团掌握着强大的议价能力。</p>
+                    
+                    <div class="space-y-4 mt-6">
+                        <div class="bg-shadow-black p-4 rounded">
+                            <h5 class="text-imperial-gold font-semibold mb-2">LVMH集团</h5>
+                            <p class="text-sm">作为全球最大的奢侈品集团，其业绩与旅游零售渠道深度绑定。其旗下的精品零售部门（Selective Retailing），包括旅游零售商DFS集团，在2023年实现了25%的强劲有机增长。同时，其时装与皮具（+14%）、香水与化妆品（+11%）等核心业务部门的增长，也为旅游零售渠道提供了源源不断的高价值商品。</p>
+                        </div>
+                        
+                        <div class="bg-shadow-black p-4 rounded">
+                            <h5 class="text-imperial-gold font-semibold mb-2">开云集团（Kering）</h5>
+                            <p class="text-sm">尽管该集团在2023年面临挑战，整体收入下滑4%，但其旗下的Gucci、Saint Laurent等核心品牌依然是旅游零售渠道不可或缺的组成部分，是吸引高消费客群的关键。</p>
+                        </div>
+                    </div>
+                    
+                    <p>这种由供应商主导的权力结构，意味着零售运营商的盈利能力不仅取决于其运营效率，更在很大程度上取决于其采购和谈判能力。与关键品牌建立稳固的长期合作关系，以获取独家产品、有利的采购价格和市场支持，是运营商构筑其核心竞争力的关键。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 机场特许经营模式深度剖析 -->
+    <section id="concession-model" class="imperial-section" data-title="机场特许经营模式：深度剖析">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl text-center mb-12">机场特许经营模式：深度剖析</h2>
+            
+            <div class="authority-card">
+                <div class="noble-text">
+                    <p>机场特许经营模式是旅游零售行业运作的基石，它定义了机场与零售运营商之间的权利、义务和风险分配。理解这一模式的内在逻辑及其在后疫情时代的演变，是把握行业未来走向的关键。</p>
+                    
+                    <h4 class="sovereign-heading text-lg mb-4 mt-8">特许经营协议剖析：费用、最低保证年金与风险分配</h4>
+                    
+                    <p>一份典型的机场零售特许经营协议，其核心财务条款围绕着运营商向机场支付的特许经营费展开。这种费用通常采用"两者取其高"的结构：</p>
+                    
+                    <div class="space-y-3 mt-4">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-2 h-2 bg-sovereign-gold rounded-full mt-2 flex-shrink-0"></div>
+                            <div><strong>销售额抽成 (Percentage of Gross Revenue)</strong>：运营商需将其总销售收入的一定比例支付给机场。这一比例因品类、机场地理位置和市场竞争激烈程度而异。</div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-2 h-2 bg-sovereign-gold rounded-full mt-2 flex-shrink-0"></div>
+                            <div><strong>最低保证年金 (Minimum Annual Guarantee, MAG)</strong>：无论运营商的实际销售业绩如何，都必须向机场支付一笔固定的最低租金。MAG为机场提供了稳定、可预测的收入来源，是机场方规避商业风险的重要工具。</div>
+                        </div>
+                    </div>
+                    
+                    <p>这种传统的、以固定MAG为核心的模式，其内在的风险分配机制是极不均衡的。它将几乎所有的市场需求下行风险都转移给了运营商。在客流量稳定增长的常态年份，该模式尚能平稳运行；然而，一旦遭遇"黑天鹅"事件导致客流量断崖式下跌（如COVID-19疫情期间），运营商将面临销售收入锐减但仍需支付巨额固定租金的困境，极易陷入财务危机。</p>
+                    
+                    <h4 class="sovereign-heading text-lg mb-4 mt-8">后疫情时代的演变：从固定MAG向可变及混合模式的转变</h4>
+                    
+                    <p>COVID-19疫情的爆发，成为了压垮传统MAG模式的最后一根稻草。它暴露了该模式在极端市场波动面前的脆弱性，使其被行业内称为存在"根本性缺陷"的模式。面对客流归零的绝境，全球范围内的运营商纷纷要求机场方提供租金减免和MAG豁免，行业协会也积极呼吁对现有合同模式进行改革。</p>
+                    
+                    <p>在巨大的现实压力下，监管机构（如美国的联邦航空管理局FAA）和行业组织（如国际机场协会ACI）开始松动立场，允许机场根据实际情况对租金进行减免，并鼓励探索更具弹性的新模式。这一转变并非权宜之计，而是引发了行业风险分担机制的永久性结构重塑。</p>
+                    
+                    <div class="space-y-4 mt-6">
+                        <div class="bg-shadow-black p-4 rounded">
+                            <h5 class="text-imperial-gold font-semibold mb-2">可变MAG (Variable MAG)</h5>
+                            <p class="text-sm">将MAG与机场的实际旅客吞吐量挂钩，当客流量下降时，MAG也相应调低。</p>
+                        </div>
+                        
+                        <div class="bg-shadow-black p-4 rounded">
+                            <h5 class="text-imperial-gold font-semibold mb-2">MAG暂停条款 (Suspension Clause)</h5>
+                            <p class="text-sm">在合同中设定一个客流量下降的"熔断"阈值（例如，连续两个月客流量同比下降超过20%），一旦触发，则暂停支付MAG。</p>
+                        </div>
+                        
+                        <div class="bg-shadow-black p-4 rounded">
+                            <h5 class="text-imperial-gold font-semibold mb-2">取消MAG下限 (No MAG Floors)</h5>
+                            <p class="text-sm">在可变MAG模式中不设最低支付额，使其成为一个真正与业绩联动的纯可变租金模式。</p>
+                        </div>
+                    </div>
+                    
+                    <h4 class="sovereign-heading text-lg mb-4 mt-8">机场运营商视角：零售战略与盈利能力案例研究</h4>
+                    
+                    <p>部分领先的机场运营商已经不再被动地出租空间，而是主动地进行零售战略规划和品牌建设，并取得了显著成效。</p>
+                    
+                    <div class="space-y-4 mt-6">
+                        <div class="bg-shadow-black p-4 rounded">
+                            <h5 class="text-imperial-gold font-semibold mb-2">巴黎机场集团 (Aéroports de Paris, ADP)</h5>
+                            <p class="text-sm">ADP的案例完美诠释了主动型零售战略的成功。其2024年的财务报告显示，尽管巴黎两大机场的客流量仅增长了3.7%，但其零售与服务部门的收入却大幅增长了9.3%，达到19.3亿欧元。这一"超额增长"的核心驱动力，是其全力打造的统一零售与服务品牌"Extime"。通过提升购物环境、优化品牌组合和改善服务体验，ADP成功将旅客人均消费额（Spend per Pax）同比提升4.9%，达到了创纪录的32.10欧元。</p>
+                        </div>
+                        
+                        <div class="bg-shadow-black p-4 rounded">
+                            <h5 class="text-imperial-gold font-semibold mb-2">法兰克福机场集团 (Fraport AG)</h5>
+                            <p class="text-sm">作为另一大欧洲枢纽，法兰克福机场集团同样将机场零售和地产开发视为其核心竞争力。其财务报告显示，在客流复苏的带动下，集团收入和EBITDA均实现了稳健增长。这再次证明，一个成功的非航业务板块，对于大型机场集团的整体财务健康至关重要。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 全球竞技场：市场份额与竞争定位 -->
+    <section id="competitive-landscape" class="imperial-section" data-title="全球竞技场：市场份额与竞争定位">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl text-center mb-12">全球竞技场：市场份额与竞争定位</h2>
+            
+            <div class="golden-glass-card">
+                <div class="noble-text">
+                    <h4 class="sovereign-heading text-lg mb-4">巨头排名：全球顶级旅游零售运营商分析</h4>
+                    
+                    <p>行业权威媒体《穆迪达维特报告》（The Moodie Davitt Report）每年发布的全球顶级旅游零售商排名，是衡量行业市场份额和竞争格局的黄金标准。根据其发布的2023年销售额数据，全球竞争格局呈现出高度集中的态势。</p>
+                    
+                    <div class="mt-8">
+                        <table class="imperial-table">
+                            <thead>
+                                <tr>
+                                    <th>2023年排名</th>
+                                    <th>公司名称</th>
+                                    <th>总部所在国</th>
+                                    <th>2023年预估销售额（亿欧元）</th>
+                                    <th>核心战略定位</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="exclusive-number">1</td>
+                                    <td>奥华 (Avolta, 原Dufry)</td>
+                                    <td>瑞士</td>
+                                    <td>-</td>
+                                    <td>全球多元化、规模领先的旅游体验服务商</td>
+                                </tr>
+                                <tr>
+                                    <td class="exclusive-number">2</td>
+                                    <td>中国中免 (CDFG)</td>
+                                    <td>中国</td>
+                                    <td class="exclusive-number">86.4</td>
+                                    <td>政策驱动、主导中国/海南市场</td>
+                                </tr>
+                                <tr>
+                                    <td class="exclusive-number">3</td>
+                                    <td>拉格代尔旅游零售 (Lagardère)</td>
+                                    <td>法国</td>
+                                    <td>-</td>
+                                    <td>全球布局，免税与旅游必需品并重</td>
+                                </tr>
+                                <tr>
+                                    <td class="exclusive-number">4</td>
+                                    <td>乐天免税店 (Lotte Duty Free)</td>
+                                    <td>韩国</td>
+                                    <td>-</td>
+                                    <td>韩国市场领导者，积极进行海外扩张</td>
+                                </tr>
+                                <tr>
+                                    <td class="exclusive-number">5</td>
+                                    <td>DFS集团 (隶属LVMH)</td>
+                                    <td>中国香港</td>
+                                    <td>-</td>
+                                    <td>专注于全球奢侈品旅游零售</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <h4 class="sovereign-heading text-lg mb-4 mt-8">战略集群与竞争护城河</h4>
+                    
+                    <p>根据其商业模式和核心竞争力，全球顶级运营商可以被划分为几个不同的战略集群：</p>
+                    
+                    <div class="space-y-4 mt-6">
+                        <div class="bg-shadow-black p-4 rounded">
+                            <h5 class="text-imperial-gold font-semibold mb-2">全球多元化巨头 (Global Diversified Giants)</h5>
+                            <p class="text-sm">以<strong>奥华（Avolta）</strong>和<strong>拉格代尔（Lagardère）</strong>为代表。它们的竞争护城河在于无与伦比的全球运营网络、覆盖免税、完税、餐饮等多个业态的多元化业务组合，以及强大的资本实力和丰富的国际招投标经验。这种规模优势使它们能够承接最大型、最复杂的全球性枢纽机场的特许经营合同。</p>
+                        </div>
+                        
+                        <div class="bg-shadow-black p-4 rounded">
+                            <h5 class="text-imperial-gold font-semibold mb-2">国家政策支持的冠军 (State-Backed National Champions)</h5>
+                            <p class="text-sm"><strong>中国中免（CDFG）</strong>是这一模式的典范。其护城河并非来自全球化运营，而是源于在中国这一全球最大、增长最快的单一市场内，由国家政策赋予的受保护的、具有高度优势的经营地位，特别是对海南离岛免税市场的绝对主导权。</p>
+                        </div>
+                        
+                        <div class="bg-shadow-black p-4 rounded">
+                            <h5 class="text-imperial-gold font-semibold mb-2">区域市场霸主 (Regional Powerhouses)</h5>
+                            <p class="text-sm">以韩国的<strong>乐天（Lotte）</strong>、<strong>新罗（The Shilla）</strong>和泰国的<strong>王权（King Power）</strong>为代表。它们的护城河建立在对本土市场的深度渗透、对本国消费者需求的深刻理解，以及与品牌方针对本地市场建立的牢固关系之上。</p>
+                        </div>
+                        
+                        <div class="bg-shadow-black p-4 rounded">
+                            <h5 class="text-imperial-gold font-semibold mb-2">奢侈品专家 (Luxury Specialists)</h5>
+                            <p class="text-sm">以<strong>DFS集团</strong>为代表。背靠母公司LVMH集团的强大品牌资源，DFS构建了以顶级奢侈品为核心的差异化竞争优势。其护城河在于提供一种其他运营商难以复制的、极致奢华的购物体验和无与伦比的品牌组合。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 数字化转型与消费者行为演变 -->
+    <section id="digital-transformation" class="imperial-section" data-title="数字化转型与消费者行为演变">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl text-center mb-12">数字化转型与消费者行为演变</h2>
+            
+            <div class="investment-logic-card">
+                <div class="noble-text">
+                    <h4 class="sovereign-heading text-lg mb-4">全渠道的兴起：整合预订、电商与店内体验</h4>
+                    
+                    <p>数字化转型已成为旅游零售行业不可逆转的趋势。数据显示，到2023年，已有93%的主要旅游零售商实施了全渠道（Omnichannel）战略。其核心目标是打破线上与线下的壁垒，为旅客创造一个无缝、连贯的购物旅程。</p>
+                    
+                    <div class="space-y-4 mt-6">
+                        <div class="bg-shadow-black p-4 rounded">
+                            <h5 class="text-imperial-gold font-semibold mb-2">线上预订，机场提货 (Click and Collect)</h5>
+                            <p class="text-sm">这是近年来增长最为迅猛的模式，自2019年以来增长了156%。旅客可以在出行前通过网站或手机应用浏览和购买商品，然后在离境时于机场指定柜台快速提货。这种模式既满足了旅客计划性购物的需求，也为运营商提前锁定了销售。</p>
+                        </div>
+                        
+                        <div class="bg-shadow-black p-4 rounded">
+                            <h5 class="text-imperial-gold font-semibold mb-2">移动购物与电子商务</h5>
+                            <p class="text-sm">机场内的移动端购物在2023年同比增长了65%。一些运营商甚至与航空公司合作，推出了纯线上的免税品销售平台，提供机上配送或邮寄到家服务，进一步拓宽了销售场景。</p>
+                        </div>
+                        
+                        <div class="bg-shadow-black p-4 rounded">
+                            <h5 class="text-imperial-gold font-semibold mb-2">店内科技赋能</h5>
+                            <p class="text-sm">实体店的体验也在通过科技手段进行升级。例如，利用增强现实（AR）或虚拟现实（VR）技术进行虚拟试妆或试戴；普及非接触式支付系统以提升购物效率；以及引入数字化工具提供个性化的产品推荐，如迪奥（Dior）在门店内提供的皮肤分析服务等。</p>
+                        </div>
+                    </div>
+                    
+                    <h4 class="sovereign-heading text-lg mb-4 mt-8">Z世代与千禧一代的崛起：从价格驱动到体验主导</h4>
+                    
+                    <p>旅游零售的核心客群正在发生代际更迭，Z世代（1997-2012年出生）和千禧一代正迅速成为旅客中的主体。预计到2028年，Z世代将超越千禧一代，成为全球最大的旅客群体，总数可达12亿。</p>
+                    
+                    <div class="space-y-4 mt-6">
+                        <div class="bg-shadow-black p-4 rounded">
+                            <h5 class="text-imperial-gold font-semibold mb-2">价值观的转变</h5>
+                            <p class="text-sm">与他们的前辈不同，年轻一代消费者不再将"价格优势"作为购物的首要驱动力，他们更看重购物过程中的"体验感"。m1nd-set的调研数据显示，认为"价格便宜"是购物主要原因的旅客比例从2019年的30%骤降至13%，而看重"体验"的比例则从12%翻倍增长至27%。</p>
+                        </div>
+                        
+                        <div class="bg-shadow-black p-4 rounded">
+                            <h5 class="text-imperial-gold font-semibold mb-2">数字原住民特征</h5>
+                            <p class="text-sm">Z世代成长于智能手机和社交媒体时代，其消费决策深受社交平台（特别是TikTok和Instagram）和网络意见领袖（Influencers）的影响。他们通过社交广告发现新品牌，对病毒式传播的潮流趋势反应迅速。</p>
+                        </div>
+                        
+                        <div class="bg-shadow-black p-4 rounded">
+                            <h5 class="text-imperial-gold font-semibold mb-2">低消费，高潜力</h5>
+                            <p class="text-sm">尽管Z世代当前的客单价相对较低（一项研究中为44美元，而全年龄段平均为101美元），但他们的消费潜力巨大。据预测，到2030年，Z世代在旅游零售中的消费份额将增长三倍以上，是行业未来最重要的增长引擎。</p>
+                        </div>
+                    </div>
+                    
+                    <h4 class="sovereign-heading text-lg mb-4 mt-8">可持续性与道德消费的日益重要</h4>
+                    
+                    <p>越来越多的旅客，特别是年轻消费者，在购物时会考虑产品的可持续性和品牌的社会责任。他们愿意为符合其价值观的环保、道德产品支付溢价。为了迎合这一趋势，领先的零售商和品牌开始推出可持续概念店，并积极扩充环保产品线。对于年轻消费者而言，一个品牌如果在环保和社会责任方面表现不佳，很可能会在社交媒体上遭到抵制。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 区域深度聚焦：亚太市场的地壳运动 -->
+    <section id="regional-focus" class="imperial-section" data-title="区域深度聚焦：亚太市场的地壳运动">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl text-center mb-12">区域深度聚焦：亚太市场的地壳运动</h2>
+            
+            <div class="authority-card">
+                <div class="noble-text">
+                    <h4 class="sovereign-heading text-lg mb-4">海南现象：政策、影响与中国国内免税市场的未来</h4>
+                    
+                    <p>海南离岛免税政策的实施，是近年来全球旅游零售行业最重大的结构性事件，它深刻地改变了行业的地理版图和力量平衡。</p>
+                    
+                    <div class="space-y-3 mt-4">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-2 h-2 bg-sovereign-gold rounded-full mt-2 flex-shrink-0"></div>
+                            <div><strong>政策驱动的国家战略</strong>：海南自由贸易港的建设是中国国家层面的重大战略部署，其核心目标之一就是通过创造一个具有全球竞争力的境内免税购物天堂，来吸引和承接原本流向海外的中国消费者购买力。</div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-2 h-2 bg-sovereign-gold rounded-full mt-2 flex-shrink-0"></div>
+                            <div><strong>全球最宽松的免税额度</strong>：该政策为每位旅客提供了每年高达<strong>10万元人民币（约合1.4万美元）</strong>的免税购物额度，这是目前全球范围内最为宽松的个人免税额度政策。</div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-2 h-2 bg-sovereign-gold rounded-full mt-2 flex-shrink-0"></div>
+                            <div><strong>爆发式增长</strong>：在强力政策的推动下，海南免税市场实现了爆炸性增长。2023年，海南离岛免税销售额达到<strong>437.6亿元人民币（约合61.3亿美元）</strong>，同比增长<strong>25.4%</strong>。</div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <table class="imperial-table">
+                            <thead>
+                                <tr>
+                                    <th>年份</th>
+                                    <th>离岛免税销售总额（亿元人民币）</th>
+                                    <th>同比增长率 (%)</th>
+                                    <th>购物人次（百万人次）</th>
+                                    <th>人均消费（元人民币）</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2019</td>
+                                    <td class="exclusive-number">~136</td>
+                                    <td>-</td>
+                                    <td class="exclusive-number">~4.5</td>
+                                    <td class="exclusive-number">~3,022</td>
+                                </tr>
+                                <tr>
+                                    <td>2020</td>
+                                    <td class="exclusive-number">~275</td>
+                                    <td class="exclusive-number">~102%</td>
+                                    <td class="exclusive-number">~4.5</td>
+                                    <td class="exclusive-number">~6,111</td>
+                                </tr>
+                                <tr>
+                                    <td>2021</td>
+                                    <td class="exclusive-number">~495</td>
+                                    <td class="exclusive-number">~80%</td>
+                                    <td class="exclusive-number">~6.7</td>
+                                    <td class="exclusive-number">~7,388</td>
+                                </tr>
+                                <tr>
+                                    <td>2022</td>
+                                    <td class="exclusive-number">349</td>
+                                    <td class="exclusive-number">-29.5%</td>
+                                    <td class="exclusive-number">4.22</td>
+                                    <td class="exclusive-number">8,262</td>
+                                </tr>
+                                <tr>
+                                    <td>2023</td>
+                                    <td class="exclusive-number">437.6</td>
+                                    <td class="exclusive-number">+25.4%</td>
+                                    <td class="exclusive-number">6.76</td>
+                                    <td class="exclusive-number">6,478</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <h4 class="sovereign-heading text-lg mb-4 mt-8">韩国的"新常态"：代购监管后的结构性变革</h4>
+                    
+                    <p>海南的崛起，对邻近的韩国免税市场造成了"降维打击"，直接催化了后者的结构性崩溃与重塑。</p>
+                    
+                    <p>在很长一段时间里，韩国是全球最大的免税市场。其惊人的销售额，很大程度上并非由真正的游客贡献，而是来自于利用韩国免税品与中国境内完税品之间巨大价差进行套利的"代购"群体。零售商为了争夺这部分"批发"业务，不惜向代购支付高达30-50%的返点，导致行业陷入"高流水、低利润"的畸形繁荣。</p>
+                    
+                    <p>海南的出现，从根本上削弱了代购模式存在的经济基础——价差。当中国消费者可以在境内以免税价格购买到同样商品时，通过代购渠道购买的吸引力便大大降低。与此同时，韩国海关（KCS）为了规范市场秩序，从2024年初开始实施严格的新规，对代购行为进行限制，包括对个人购买数量设限、禁止B2C模式下的货物运输等。</p>
+                    
+                    <p>双重打击之下，韩国免税市场应声而落。新规实施后，全国免税销售额，特别是作为代购大本营的市中心店销售额，出现了近50%的月度环比暴跌。整个行业被迫进入痛苦的转型期，即所谓的"新常态"。其核心特征是：业务重心从服务代购转向服务真正的游客；消费者偏好从奢侈品转向更具性价比的韩国本土美妆和食品；游客结构从团体游转向自由行。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 行业展望与战略要务 -->
+    <section id="industry-outlook" class="imperial-section" data-title="行业展望与战略要务">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl text-center mb-12">行业展望与战略要务</h2>
+            
+            <div class="investment-logic-card">
+                <div class="noble-text">
+                    <h4 class="sovereign-heading text-lg mb-4">关键趋势与结构性变化的综合研判</h4>
+                    
+                    <p>综合本报告的分析，全球旅游零售行业正处在一个深刻的转型期，其未来发展将由以下几个核心的结构性力量所塑造：</p>
+                    
+                    <div class="space-y-4 mt-6">
+                        <div class="bg-shadow-black p-4 rounded">
+                            <h5 class="text-imperial-gold font-semibold mb-2">1. 地缘中心的东移</h5>
+                            <p class="text-sm">全球市场的增长引擎已毫无悬念地转向亚太地区，特别是中国。海南的崛起不仅是一个区域性事件，它正在重塑全球奢侈品和美妆品牌的渠道战略和资源配置。</p>
+                        </div>
+                        
+                        <div class="bg-shadow-black p-4 rounded">
+                            <h5 class="text-imperial-gold font-semibold mb-2">2. 增长动力的切换</h5>
+                            <p class="text-sm">行业已告别单纯依赖客流量增长的"红利期"。人均消费额的停滞甚至下滑，迫使所有参与者必须将战略重心从"做大蛋糕"转向"切好蛋糕"，即通过提升体验、服务和个性化来争夺存量旅客的钱包份额。</p>
+                        </div>
+                        
+                        <div class="bg-shadow-black p-4 rounded">
+                            <h5 class="text-imperial-gold font-semibold mb-2">3. 商业模式的重构</h5>
+                            <p class="text-sm">以固定租金为核心的传统机场商业模式已被证明其脆弱性，风险共担的合作模式将成为主流。同时，领先运营商正通过整合餐饮等业态，向"大消费"领域拓展，以对冲纯零售业务的风险。</p>
+                        </div>
+                        
+                        <div class="bg-shadow-black p-4 rounded">
+                            <h5 class="text-imperial-gold font-semibold mb-2">4. 消费主权的更迭</h5>
+                            <p class="text-sm">Z世代和千禧一代正成为消费主体。他们对体验、可持续性和数字化互动的偏好，正在颠覆行业的传统营销和运营范式。</p>
+                        </div>
+                        
+                        <div class="bg-shadow-black p-4 rounded">
+                            <h5 class="text-imperial-gold font-semibold mb-2">5. 数字化的全面渗透</h5>
+                            <p class="text-sm">全渠道融合不再是选项，而是生存的必需。数据分析和个性化服务的能力，将成为区分赢家和输家的关键。</p>
+                        </div>
+                        
+                        <div class="bg-shadow-black p-4 rounded">
+                            <h5 class="text-imperial-gold font-semibold mb-2">6. 政策的高度敏感性</h5>
+                            <p class="text-sm">从海南的离岛免税政策到韩国的代购监管，政策的变动可以直接决定一个区域市场的兴衰，这使得地缘政治和产业政策分析成为行业战略研判中不可或缺的一环。</p>
+                        </div>
+                    </div>
+                    
+                    <h4 class="sovereign-heading text-lg mb-4 mt-8">未来增长领域与潜在颠覆因素</h4>
+                    
+                    <div class="space-y-4 mt-6">
+                        <div class="bg-shadow-black p-4 rounded">
+                            <h5 class="text-imperial-gold font-semibold mb-2">潜在增长领域</h5>
+                            <div class="space-y-2 text-sm">
+                                <p>• 新兴市场的持续渗透：印度、东南亚和中东等地区，拥有庞大的人口基数和快速增长的中产阶级</p>
+                                <p>• 邮轮零售的蓝海：随着全球邮轮旅游的复苏和扩张，封闭环境下的邮轮零售渠道拥有巨大的增长潜力</p>
+                                <p>• 业态融合的价值创造：零售与餐饮、娱乐、文化等业态的深度融合，将创造出新的消费场景和收入来源</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-shadow-black p-4 rounded">
+                            <h5 class="text-imperial-gold font-semibold mb-2">潜在颠覆因素</h5>
+                            <div class="space-y-2 text-sm">
+                                <p>• 监管政策的突变：各国对免税额度、商品品类、销售渠道的监管政策变化，都可能对市场造成重大冲击</p>
+                                <p>• 地缘政治风险：国际关系紧张、地区冲突等因素会直接影响国际旅行线路和客流，对行业构成系统性风险</p>
+                                <p>• 品牌直销（D2C）的加速：尽管目前存在壁垒，但如果品牌方找到绕过运营商直接触达机场旅客的有效模式，将对现有行业格局构成颠覆性挑战</p>
+                                <p>• 新技术的应用：人工智能、虚拟现实等新技术可能催生全新的购物模式，改变消费者的决策路径</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h4 class="sovereign-heading text-lg mb-4 mt-8">用于战略评估的结论性洞察</h4>
+                    
+                    <p>本报告旨在提供一个认知框架，而非直接的投资建议。基于以上分析，机构投资者和企业决策者在进行战略研判时，应重点思考以下几个核心问题：</p>
+                    
+                    <div class="space-y-3 mt-4">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-2 h-2 bg-sovereign-gold rounded-full mt-2 flex-shrink-0"></div>
+                            <div><strong>对于零售运营商</strong>：如何构建一个更具韧性的商业模式，以降低对单一国籍客源或单一风险模式（如固定MAG）的依赖？应进行何种程度的技术和体验投资，才能赢得下一代消费者的青睐？</div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-2 h-2 bg-sovereign-gold rounded-full mt-2 flex-shrink-0"></div>
+                            <div><strong>对于品牌方</strong>：如何在全球范围内平衡不同渠道的战略定位和资源投入？如何应对旅游零售渠道日益增长的数字化和个性化需求？</div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-2 h-2 bg-sovereign-gold rounded-full mt-2 flex-shrink-0"></div>
+                            <div><strong>对于机场管理方</strong>：在后疫情时代，何种商业合作模式能最好地平衡风险、收益与旅客的整体体验？如何从一个"收租者"转变为一个积极的"价值创造者"？</div>
+                        </div>
+                    </div>
+                    
+                    <p>对这些问题的深入思考和解答，将是决定未来十年在全球旅游零售这个复杂而又充满活力的市场中，谁能最终胜出的关键。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 引用的著作 -->
+    <section id="references" class="imperial-section" data-title="引用的著作">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl text-center mb-12">引用的著作</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="citation-item">
+                    <a href="https://www.mordorintelligence.com/industry-reports/travel-retail-market-in-north-america" target="_blank">
+                        1. North America Travel Retail Market Size & Share Analysis - Industry Research Report, 访问时间为 八月 19, 2025
+                    </a>
+                </div>
+                
+                <div class="citation-item">
+                    <a href="https://drinks-intel.com/intel/the-ins-and-outs-of-the-global-travel-retail-channel-consumer-intel/" target="_blank">
+                        2. The ins and outs of the Global Travel Retail channel - Consumer Intel, 访问时间为 八月 19, 2025
+                    </a>
+                </div>
+                
+                <div class="citation-item">
+                    <a href="https://www.databridgemarketresearch.com/reports/global-travel-retail-market" target="_blank">
+                        3. Global Travel Retail Market Size, Share, and Trends Analysis Report – Industry Overview and Forecast to 2032, 访问时间为 八月 19, 2025
+                    </a>
+                </div>
+                
+                <div class="citation-item">
+                    <a href="https://www.fortunebusinessinsights.com/travel-retail-market-104620" target="_blank">
+                        4. Travel Retail Market Size, Share, Forecast, Growth Report [2032], 访问时间为 八月 19, 2025
+                    </a>
+                </div>
+                
+                <div class="citation-item">
+                    <a href="https://dataintelo.com/report/duty-free-and-travel-retail-market" target="_blank">
+                        5. Duty-Free and Travel Retail Market Report | Global Forecast From 2025 To 2033, 访问时间为 八月 19, 2025
+                    </a>
+                </div>
+                
+                <div class="citation-item">
+                    <a href="https://www.verifiedmarketresearch.com/product/travel-retail-market/" target="_blank">
+                        12. Travel Retail Market Size, Share, Trends & Forecast, 访问时间为 八月 19, 2025
+                    </a>
+                </div>
+                
+                <div class="citation-item">
+                    <a href="https://moodiedavittreport.com/kearney-tfwa-report-calls-for-bold-travel-retail-innovation-in-face-of-market-turbulence/" target="_blank">
+                        13. Kearney TFWA report calls for bold travel retail innovation in face of market turbulence, 访问时间为 八月 19, 2025
+                    </a>
+                </div>
+                
+                <div class="citation-item">
+                    <a href="https://assets.kpmg.com/content/dam/kpmg/cn/pdf/en/2024/04/2024-hainan-travel-retail-market-whitepaper.pdf" target="_blank">
+                        17. 2024 Hainan Travel Retail Whitepaper - KPMG China, 访问时间为 八月 19, 2025
+                    </a>
+                </div>
+                
+                <div class="citation-item">
+                    <a href="https://www.unwto.org/node/14904" target="_blank">
+                        18. World Tourism Barometer, 访问时间为 八月 19, 2025
+                    </a>
+                </div>
+                
+                <div class="citation-item">
+                    <a href="https://www.iata.org/en/pressroom/2025-releases/2025-01-30-01/" target="_blank">
+                        24. Global Air Passenger Demand Reaches Record High in 2024 - IATA, 访问时间为 八月 19, 2025
+                    </a>
+                </div>
+                
+                <div class="citation-item">
+                    <a href="https://moodiedavittreport.com/lvmh-delivers-record-performance-in-2023-dfs-maintains-recovery-but-remains-behind-2019-levels/" target="_blank">
+                        36. LVMH delivers record performance in 2023; DFS maintains recovery but remains behind 2019 levels, 访问时间为 八月 19, 2025
+                    </a>
+                </div>
+                
+                <div class="citation-item">
+                    <a href="https://moodiedavittreport.com/retail-performance-outstrips-passenger-traffic-growth-at-paris-airports-in-2024/" target="_blank">
+                        64. Retail performance outstrips passenger traffic growth for Groupe ADP in 2024, 访问时间为 八月 19, 2025
+                    </a>
+                </div>
+                
+                <div class="citation-item">
+                    <a href="https://moodiedavittreport.com/the-moodie-davitt-magazine-avolta-returns-to-number-one-ranking-as-worlds-top-travel-retailers-are-revealed/" target="_blank">
+                        77. The Moodie Davitt Magazine: Avolta returns to number one ranking as world's top travel retailers are revealed, 访问时间为 八月 19, 2025
+                    </a>
+                </div>
+                
+                <div class="citation-item">
+                    <a href="https://moodiedavittreport.com/korean-travel-retail-struggles-continue-as-big-four-see-profits-tumble-lotte-duty-free-posts-us34-6-million-h1-loss/" target="_blank">
+                        26. Korean travel retail struggles continue as 'big four' see profits tumble; Lotte Duty Free posts US$34.6 million H1 loss - Moodie Davitt Report, 访问时间为 八月 19, 2025
+                    </a>
+                </div>
+                
+                <div class="citation-item">
+                    <a href="https://www.gtrmag.com/assets/pdf/business-news/industry-news/gen-zs-represent-the-opportunity-of-a-lifetime-reveals-m1nd-set-in-new-report.pdf" target="_blank">
+                        94. Gen Zs represent the "opportunity of a lifetime," reveals m1nd-set in new report - Global Travel Retail Magazine, 访问时间为 八月 19, 2025
+                    </a>
+                </div>
+                
+                <div class="citation-item">
+                    <a href="https://www.airportxnews.com/m1nd-set-spotlights-generational-differences/" target="_blank">
+                        96. M1nd-Set Spotlights Generational Differences - Airport X, 访问时间为 八月 19, 2025
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 免责声明 -->
+    <section id="disclaimer" class="imperial-section" data-title="免责声明">
+        <div class="sovereign-container">
+            <div class="disclaimer-card">
+                <h3 class="sovereign-heading text-xl text-center mb-8">免责声明</h3>
+                
+                <div class="disclaimer-text">
+                    <p>本报告由上海虚空有物科技有限公司（以下简称"本公司"）制作。本报告中的信息均来源于已公开的资料，本公司对这些信息的准确性及完整性不作任何保证。报告中的信息、意见等均仅供投资者参考之用，不构成对买卖任何证券或其他金融工具的投资建议。</p>
+                    
+                    <p class="mt-4">投资者不应单纯依靠本报告而取代个人的独立判断。本公司不对因使用本报告的材料而导致的任何直接或间接损失负任何责任。本报告的版权归本公司所有，未经书面许可，任何机构和个人不得以任何形式翻版、复制和发布。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // 精美垂直进度条系统（支持悬停显示标题 + 点击跳转）
+        const progressBar = document.querySelector('.reading-progress');
+        const progressFill = document.querySelector('.reading-progress-fill');
+        const progressTooltip = document.getElementById('progress-tooltip');
+        const sections = document.querySelectorAll('section[id], header[id]');
+
+        let currentSectionTitle = '';
+        let sectionsData = [];
+
+        // 初始化章节数据
+        function initSections() {
+            sectionsData = Array.from(sections).map(section => ({
+                id: section.getAttribute('id'),
+                title: section.getAttribute('data-title') || section.querySelector('h1, h2')?.textContent || '未知章节',
+                offsetTop: section.offsetTop,
+                offsetHeight: section.offsetHeight
+            }));
+        }
+
+        function updateProgress() {
+            const scrolled = window.pageYOffset;
+            const maxHeight = document.body.scrollHeight - window.innerHeight;
+            const progress = (scrolled / maxHeight) * 100;
+            
+            // 更新垂直进度条填充高度
+            progressFill.style.height = `${progress}%`;
+            
+            // 获取当前章节
+            let currentSection = '';
+            sectionsData.forEach(section => {
+                if (scrolled >= section.offsetTop - 300) {
+                    currentSection = section.id;
+                    currentSectionTitle = section.title;
+                }
+            });
+        }
+
+        // 点击进度条跳转到对应位置
+        progressBar.addEventListener('click', (e) => {
+            const rect = progressBar.getBoundingClientRect();
+            const clickY = e.clientY - rect.top;
+            const progressHeight = rect.height;
+            const clickPercent = clickY / progressHeight;
+            
+            const maxHeight = document.body.scrollHeight - window.innerHeight;
+            const targetScroll = maxHeight * clickPercent;
+            
+            window.scrollTo({
+                top: targetScroll,
+                behavior: 'smooth'
+            });
+        });
+
+        // 鼠标悬停显示当前章节标题
+        progressBar.addEventListener('mouseenter', () => {
+            if (currentSectionTitle) {
+                progressTooltip.textContent = currentSectionTitle;
+                progressTooltip.classList.add('show');
+            }
+        });
+
+        progressBar.addEventListener('mouseleave', () => {
+            progressTooltip.classList.remove('show');
+        });
+
+        // 提示框悬停保持显示
+        progressTooltip.addEventListener('mouseenter', () => {
+            progressTooltip.classList.add('show');
+        });
+
+        progressTooltip.addEventListener('mouseleave', () => {
+            progressTooltip.classList.remove('show');
+        });
+
+        // 窗口大小改变时重新计算章节位置
+        window.addEventListener('resize', () => {
+            setTimeout(initSections, 100);
+        });
+
+        window.addEventListener('scroll', updateProgress);
+
+        // 页面加载完成后初始化
+        window.addEventListener('load', () => {
+            initSections();
+            updateProgress();
+        });
+    </script>
+</body>
+</html>

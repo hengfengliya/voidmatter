@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# 站点地图位置
+Sitemap: https://www.voidmatter.cn/sitemap.xml
+
+# 禁止访问敏感文件
+Disallow: /.git/
+Disallow: /*.md$
+Disallow: /google4a25190833dfb388.html
+
+# 抓取延迟（可选）
+Crawl-delay: 1 

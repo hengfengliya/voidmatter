@@ -1,0 +1,2595 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>转型中的贵金属市场：驾驭结构性转变与宏观经济暗流 | Precious Metals Market in Transition</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Anime.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    
+    <!-- ECharts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.4.3/echarts.min.js"></script>
+    
+    <style>
+        :root {
+            --primary-gold: #C9A96E;
+            --secondary-gold: #B8860B;
+            --accent-gold: #8B7355;
+            --deep-black: #000000;
+            --matte-black: #0A0A0A;
+            --soft-black: #1A1A1A;
+            --bg-deep-1: #000000;
+            --bg-deep-2: #0A0A0A;
+            --bg-deep-3: #0F0F0F;
+            --bg-deep-4: #1A1A1A;
+            --neon-cyan: #00FFFF;
+            --neon-blue: #0099FF;
+            --neon-purple: #9966FF;
+            --neon-pink: #FF0099;
+            --neon-electric: #00FF99;
+            --gold-soft: #A67C5A;
+            --gold-luxury: #8B6914;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background:
+                radial-gradient(1800px 1200px at 90% -5%, rgba(0,255,255,0.03), transparent 70%),
+                radial-gradient(1600px 1000px at 10% 30%, rgba(153,102,255,0.04), transparent 65%),
+                radial-gradient(1400px 800px at 80% 80%, rgba(255,0,153,0.02), transparent 60%),
+                radial-gradient(1200px 600px at -5% 90%, rgba(0,255,153,0.03), transparent 55%),
+                linear-gradient(135deg, var(--bg-deep-1) 0%, var(--bg-deep-2) 25%, var(--bg-deep-3) 50%, var(--bg-deep-4) 75%, var(--deep-black) 100%);
+            color: var(--primary-gold);
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            background:
+                radial-gradient(circle at 15% 15%, rgba(0,255,255,0.08) 0 1px, transparent 2px) 0 0/100px 100px,
+                radial-gradient(circle at 50% 80%, rgba(153,102,255,0.06) 0 1px, transparent 2px) 0 0/150px 150px,
+                radial-gradient(circle at 85% 25%, rgba(255,0,153,0.04) 0 1px, transparent 2px) 0 0/120px 120px,
+                linear-gradient(90deg, transparent 0%, rgba(0,255,255,0.02) 1px, transparent 2px),
+                linear-gradient(0deg, transparent 0%, rgba(153,102,255,0.01) 1px, transparent 2px);
+            background-size: 100px 100px, 150px 150px, 120px 120px, 200px 1px, 1px 200px;
+            opacity: 0.3;
+            z-index: 0;
+            animation: techPattern 60s linear infinite;
+        }
+        
+        @keyframes techPattern {
+            0% { background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px; }
+            100% { background-position: 100px 100px, -150px 150px, 120px -120px, 200px 0px, 0px 200px; }
+        }
+
+        .playfair {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        ::selection {
+            background: rgba(255,215,0,0.25);
+            color: #ffffff;
+        }
+        
+        /* —— 优化的文字金色化：更低调奢华 —— */
+        .text-gradient {
+            background: none !important;
+            -webkit-background-clip: initial !important;
+            background-clip: initial !important;
+            -webkit-text-fill-color: currentColor !important;
+            color: var(--primary-gold) !important;
+            text-shadow: 
+                0 0 15px rgba(201,169,110,0.3), 
+                0 0 30px rgba(0,255,255,0.1),
+                0 0 45px rgba(153,102,255,0.05);
+        }
+        .number-highlight {
+            background: none !important;
+            -webkit-background-clip: initial !important;
+            background-clip: initial !important;
+            -webkit-text-fill-color: currentColor !important;
+            color: var(--primary-gold) !important;
+            font-weight: 800;
+            text-shadow: 
+                0 0 12px rgba(201,169,110,0.4),
+                0 0 24px rgba(0,255,255,0.15),
+                0 0 36px rgba(255,0,153,0.08);
+        }
+        
+        /* 强化霓虹边框：科技风格 */
+        .border-gradient {
+            background: linear-gradient(var(--matte-black), var(--matte-black)) padding-box,
+                        linear-gradient(135deg, 
+                            rgba(0,255,255,0.4) 0%, 
+                            rgba(153,102,255,0.3) 25%,
+                            rgba(255,0,153,0.3) 50%,
+                            rgba(0,255,153,0.3) 75%,
+                            rgba(201,169,110,0.5) 100%) border-box;
+            border: 1px solid transparent;
+            box-shadow: 
+                0 0 20px rgba(0,255,255,0.15),
+                0 0 40px rgba(153,102,255,0.1),
+                0 0 60px rgba(0,0,0,0.5),
+                inset 0 0 20px rgba(0,255,255,0.05);
+        }
+        .glass-effect {
+            border: 1px solid rgba(0,255,255,0.2);
+            backdrop-filter: blur(10px);
+            background: rgba(10,10,10,0.4);
+            box-shadow: 
+                0 0 30px rgba(0,255,255,0.1),
+                0 0 60px rgba(153,102,255,0.08),
+                inset 0 1px 1px rgba(0,255,255,0.1),
+                inset 0 0 30px rgba(0,0,0,0.3);
+        }
+        
+        .neon-glow {
+            border: 1px solid rgba(0,255,255,0.4);
+            box-shadow: 
+                0 0 5px rgba(0,255,255,0.4),
+                0 0 10px rgba(0,255,255,0.3),
+                0 0 20px rgba(0,255,255,0.2),
+                0 0 40px rgba(153,102,255,0.15),
+                0 0 80px rgba(255,0,153,0.1),
+                inset 0 0 20px rgba(0,255,255,0.05);
+            animation: neonPulse 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes neonPulse {
+            0% {
+                box-shadow: 
+                    0 0 5px rgba(0,255,255,0.4),
+                    0 0 10px rgba(0,255,255,0.3),
+                    0 0 20px rgba(0,255,255,0.2),
+                    0 0 40px rgba(153,102,255,0.15),
+                    0 0 80px rgba(255,0,153,0.1);
+            }
+            100% {
+                box-shadow: 
+                    0 0 8px rgba(0,255,255,0.6),
+                    0 0 16px rgba(0,255,255,0.4),
+                    0 0 32px rgba(0,255,255,0.3),
+                    0 0 64px rgba(153,102,255,0.2),
+                    0 0 120px rgba(255,0,153,0.15);
+            }
+        }
+        
+        .scroll-indicator {
+            height: 3px;
+            background: linear-gradient(90deg, var(--neon-cyan) 0%, var(--neon-electric) 30%, var(--primary-gold) 60%, var(--neon-purple) 100%);
+            box-shadow: 
+                0 0 10px rgba(0,255,255,0.6),
+                0 0 20px rgba(0,255,153,0.4),
+                0 0 30px rgba(201,169,110,0.3);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            transform-origin: left;
+        }
+        
+        .floating-nav {
+            position: fixed;
+            top: 50%;
+            right: 2rem;
+            transform: translateY(-50%);
+            z-index: 100;
+        }
+        
+        .floating-nav a {
+            display: block;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: rgba(0,255,255,0.2);
+            margin: 1.5rem 0;
+            transition: all 0.4s ease;
+            border: 1px solid rgba(0,255,255,0.3);
+            box-shadow: 
+                0 0 8px rgba(0,255,255,0.3),
+                0 0 16px rgba(153,102,255,0.2),
+                inset 0 0 8px rgba(0,255,255,0.1);
+        }
+        
+        .floating-nav a:hover {
+            background: rgba(0,255,255,0.4);
+            transform: scale(1.3);
+            box-shadow: 
+                0 0 15px rgba(0,255,255,0.5),
+                0 0 30px rgba(153,102,255,0.3),
+                0 0 45px rgba(255,0,153,0.2);
+        }
+        
+        .floating-nav a.active {
+            background: var(--primary-gold);
+            transform: scale(1.6);
+            border: 1px solid rgba(201,169,110,0.6);
+            box-shadow: 
+                0 0 12px rgba(201,169,110,0.6),
+                0 0 24px rgba(0,255,255,0.4),
+                0 0 36px rgba(153,102,255,0.3);
+        }
+        
+        @media (max-width: 768px) {
+            .floating-nav {
+                display: none;
+            }
+        }
+
+        /* 科技风格装饰元素 */
+        .tech-corner {
+            position: relative;
+        }
+        .tech-corner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            border-top: 2px solid var(--neon-cyan);
+            border-left: 2px solid var(--neon-cyan);
+            box-shadow: 0 0 10px rgba(0,255,255,0.5);
+            opacity: 0.7;
+        }
+        .tech-corner::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 20px;
+            height: 20px;
+            border-bottom: 2px solid var(--neon-purple);
+            border-right: 2px solid var(--neon-purple);
+            box-shadow: 0 0 10px rgba(153,102,255,0.5);
+            opacity: 0.7;
+        }
+
+        /* 数据流动画 */
+        .data-stream {
+            position: relative;
+            overflow: hidden;
+        }
+        .data-stream::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--neon-cyan), transparent);
+            animation: dataFlow 3s linear infinite;
+        }
+
+        @keyframes dataFlow {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+
+        /* 六边形科技装饰 */
+        .hex-tech {
+            position: relative;
+        }
+        .hex-tech::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 12px;
+            height: 12px;
+            background: none;
+            border: 1px solid var(--neon-electric);
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            animation: hexSpin 8s linear infinite;
+            opacity: 0.6;
+        }
+
+        @keyframes hexSpin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* 扫描线效果 */
+        .scan-line {
+            position: relative;
+            overflow: hidden;
+        }
+        .scan-line::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--neon-cyan), transparent);
+            animation: scanMove 4s ease-in-out infinite;
+            opacity: 0.4;
+        }
+
+        @keyframes scanMove {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(300px); }
+        }
+
+        /* 悬浮效果增强 */
+        .hover-glow {
+            transition: all 0.4s ease;
+        }
+        .hover-glow:hover {
+            transform: translateY(-5px);
+            box-shadow: 
+                0 10px 30px rgba(0,255,255,0.2),
+                0 0 50px rgba(153,102,255,0.15),
+                0 0 80px rgba(0,0,0,0.3);
+        }
+
+        /* 高端排版优化 */
+        .luxury-spacing {
+            letter-spacing: 0.02em;
+            line-height: 1.8;
+        }
+
+        .luxury-title {
+            letter-spacing: 0.05em;
+            line-height: 1.2;
+            font-weight: 300;
+        }
+
+        .section-spacing {
+            margin-top: 8rem;
+            margin-bottom: 8rem;
+        }
+
+        /* 现代容器样式 */
+        .modern-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* 高级表格样式 */
+        .luxury-table {
+            border-collapse: separate;
+            border-spacing: 0;
+            background: rgba(10,10,10,0.6);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(0,255,255,0.2);
+        }
+
+        .luxury-table th,
+        .luxury-table td {
+            padding: 1.5rem 1rem;
+            border-bottom: 1px solid rgba(0,255,255,0.1);
+            position: relative;
+        }
+
+        .luxury-table th {
+            background: rgba(0,255,255,0.05);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 0.75rem;
+        }
+
+        .luxury-table tbody tr:hover {
+            background: rgba(0,255,255,0.03);
+        }
+
+        /* 分割线现代化 */
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(90deg, 
+                transparent 0%, 
+                rgba(0,255,255,0.3) 20%, 
+                rgba(153,102,255,0.4) 50%, 
+                rgba(255,0,153,0.3) 80%, 
+                transparent 100%);
+            margin: 6rem 0;
+            position: relative;
+        }
+
+        .section-divider::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 5px;
+            background: linear-gradient(90deg, var(--neon-cyan), var(--neon-purple));
+            border-radius: 3px;
+            box-shadow: 0 0 20px rgba(0,255,255,0.5);
+        }
+
+        /* 引用文献高级样式 */
+        .citation-link {
+            transition: all 0.3s ease;
+            padding: 0.5rem;
+            border-radius: 0.25rem;
+            display: block;
+            background: rgba(10,10,10,0.3);
+            border: 1px solid rgba(0,255,255,0.1);
+        }
+
+        .citation-link:hover {
+            background: rgba(0,255,255,0.05);
+            border-color: rgba(0,255,255,0.3);
+            transform: translateX(5px);
+            box-shadow: 0 0 15px rgba(0,255,255,0.2);
+        }
+
+        /* 响应式优化 */
+        @media (max-width: 1024px) {
+            .modern-container {
+                padding: 0 1.5rem;
+            }
+            .section-spacing {
+                margin-top: 6rem;
+                margin-bottom: 6rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .modern-container {
+                padding: 0 1rem;
+            }
+            .section-spacing {
+                margin-top: 4rem;
+                margin-bottom: 4rem;
+            }
+            .luxury-title {
+                font-size: clamp(2rem, 8vw, 4rem);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 滚动进度指示器 -->
+    <div class="scroll-indicator"></div>
+    
+    <!-- 浮动导航 -->
+    <nav class="floating-nav">
+        <a href="#executive-summary" data-section="executive-summary"></a>
+        <a href="#market-structure" data-section="market-structure"></a>
+        <a href="#supply-analysis" data-section="supply-analysis"></a>
+        <a href="#demand-analysis" data-section="demand-analysis"></a>
+        <a href="#macro-drivers" data-section="macro-drivers"></a>
+        <a href="#competition" data-section="competition"></a>
+        <a href="#esg-regulation" data-section="esg-regulation"></a>
+        <a href="#investment-outlook" data-section="investment-outlook"></a>
+    </nav>
+    
+    <!-- 页面头部 -->
+    <header class="min-h-screen flex items-center justify-center relative overflow-hidden header-hero">
+        <div class="parallax-container w-full h-full">
+            <!-- 背景动画效果 -->
+            <div class="absolute inset-0 opacity-10">
+                <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-full blur-3xl"></div>
+                <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gradient-to-r from-orange-400 to-yellow-500 rounded-full blur-3xl"></div>
+            </div>
+            
+            <div class="modern-container text-center relative z-10">
+                <!-- 报告标题 -->
+                <h1 class="playfair text-5xl md:text-7xl font-bold mb-8 text-gradient leading-tight luxury-title">
+                    转型中的贵金属市场
+                    <br>
+                    驾驭结构性转变与宏观经济暗流
+                </h1>
+                
+                <div class="text-xl md:text-2xl font-light mb-4 opacity-80 luxury-spacing">
+                    Precious Metals Market in Transition: Navigating Structural Shifts and Macroeconomic Undercurrents
+                </div>
+                
+                <div class="text-lg md:text-xl mb-12 opacity-60 luxury-spacing">
+                    致：机构投资者与高净值客户
+                    <br>
+                    To: Institutional Investors and High Net Worth Clients
+                </div>
+                
+                <!-- 发布日期 -->
+                <div class="glass-effect rounded-lg p-6 mb-12 inline-block tech-corner data-stream">
+                    <div class="text-sm uppercase tracking-wider opacity-60 mb-2">本报告发布于 / Published on</div>
+                    <div class="text-xl font-semibold">
+                        <span id="date-cn" class="number-highlight"></span> / <span id="date-en" class="number-highlight"></span>
+                    </div>
+                </div>
+                
+                <!-- 下滑提示 -->
+                <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+                    <div class="animate-bounce">
+                        <i class="fas fa-chevron-down text-2xl opacity-60"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+                <!-- 免责声明 -->
+    <section class="py-16 border-gradient rounded-lg mx-6 mb-16 neon-glow tech-corner">
+        <div class="container mx-auto px-6">
+            <div class="glass-effect rounded-lg p-8 data-stream">
+                <h2 class="playfair text-2xl font-bold mb-6 text-center text-gradient">免责声明</h2>
+                <div class="text-sm leading-relaxed opacity-80 max-w-4xl mx-auto">
+                    本报告由资深行业分析师贵金属研究部编制，旨在为机构投资者与高净值客户提供关于贵金属行业的系统性认知框架。报告中的信息和数据均来源于公开可查的资料，我们力求报告内容的客观、准确，但不对其完整性或准确性做出任何保证。本报告中的分析、结论和观点仅为研究目的，不构成任何形式的投资建议。投资者应基于自身的独立判断进行投资决策，并自行承担相关风险。
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 内容分割线 -->
+    <div class="section-divider"></div>
+    
+    <!-- 执行摘要 -->
+    <section id="executive-summary" class="py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="playfair text-5xl font-bold mb-16 text-center text-gradient">执行摘要</h2>
+            
+            <div class="max-w-6xl mx-auto">
+                <div class="text-lg leading-relaxed mb-12 opacity-90">
+                    本报告旨在为机构投资者与高净值客户提供一个关于贵金属行业的系统性认知框架，揭示其内在的结构性转变与核心驱动力。我们的核心论点是：贵金属市场正在经历一场深刻的结构性分化。
+                </div>
+                
+                <!-- 核心观点卡片 -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                    <div class="glass-effect rounded-lg p-6 hover-glow tech-corner hex-tech">
+                        <div class="text-3xl font-bold text-gradient mb-2">黄金</div>
+                        <div class="text-sm opacity-60 mb-2">货币属性的回归</div>
+                        <div class="text-xs opacity-40">央行购金、去美元化趋势</div>
+                    </div>
+                    
+                    <div class="glass-effect rounded-lg p-6 hover-glow tech-corner data-stream">
+                        <div class="text-3xl font-bold text-gradient mb-2">白银</div>
+                        <div class="text-sm opacity-60 mb-2">工业革命新基石</div>
+                        <div class="text-xs opacity-40">光伏、电动汽车应用</div>
+                    </div>
+                    
+                    <div class="glass-effect rounded-lg p-6 hover-glow tech-corner hex-tech">
+                        <div class="text-3xl font-bold text-gradient mb-2">铂金</div>
+                        <div class="text-sm opacity-60 mb-2">氢能经济催化剂</div>
+                        <div class="text-xs opacity-40">燃料电池、电解槽</div>
+                    </div>
+                    
+                    <div class="glass-effect rounded-lg p-6 hover-glow tech-corner scan-line">
+                        <div class="text-3xl font-bold text-gradient mb-2">钯金</div>
+                        <div class="text-sm opacity-60 mb-2">结构性萎缩</div>
+                        <div class="text-xs opacity-40">电动车替代、铂金替代</div>
+                    </div>
+                </div>
+                
+                <!-- 核心观点详细说明 -->
+                <div class="mb-16">
+                    <h3 class="playfair text-2xl font-bold mb-6 text-gradient">核心观点</h3>
+                    <div class="leading-relaxed opacity-90 space-y-4">
+                        <p><strong>黄金：货币属性的回归。</strong>强劲且持续的央行购金行为已成为市场新的结构性支撑，其背后是全球性的"去美元化"趋势和对宏观经济不确定性的深层忧虑。</p>
+                        
+                        <p><strong>白银与铂金：工业革命的新基石。</strong>白银和铂金的需求结构正在发生根本性转变。白银在光伏和电动汽车领域的应用正驱动其工业需求达到历史新高，导致市场连续多年出现结构性供给短缺。</p>
+                        
+                        <p><strong>供给瓶颈日益凸显。</strong>全球贵金属供应端面临着矿山产量增长停滞、全方位维持成本（AISC）因通胀而持续攀升，以及勘探投资不足导致储量接续困难等多重挑战。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 内容分割线 -->
+    <div class="section-divider"></div>
+    
+    <!-- 第一部分：贵金属全景——市场结构剖析 -->
+    <section id="market-structure" class="py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="playfair text-5xl font-bold mb-16 text-center text-gradient">贵金属全景——市场结构剖析</h2>
+            
+            <div class="max-w-6xl mx-auto">
+                <div class="text-lg leading-relaxed mb-16 opacity-90">
+                    本基础章节旨在界定贵金属市场的范围与结构，确保在深入分析之前，所有读者对价值链和治理格局有一个共同的理解。
+                </div>
+                
+                <!-- 定义资产类别 -->
+                <div class="glass-effect rounded-lg p-8 mb-16">
+                    <h3 class="playfair text-2xl font-bold mb-8 text-gradient">定义资产类别：黄金、白银与铂族金属（PGMs）</h3>
+                    
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-coins text-xl text-black"></i>
+                            </div>
+                            <h4 class="font-bold text-lg mb-2">黄金 (Gold)</h4>
+                            <div class="text-sm opacity-80 leading-relaxed">
+                                终极的货币金属和长期价值储存工具。自古以来，黄金就因其稀有性、持久性和美学价值而被珍视。在现代金融体系中，尽管金本位已不复存在，但黄金依然是各国央行储备的核心组成部分。
+                            </div>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-gradient-to-r from-gray-400 to-gray-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-microchip text-xl text-white"></i>
+                            </div>
+                            <h4 class="font-bold text-lg mb-2">白银 (Silver)</h4>
+                            <div class="text-sm opacity-80 leading-relaxed">
+                                混合型金属，兼具悠久的货币历史和关键的、几乎不可替代的工业用途。白银拥有所有金属中最高的导电性和导热性，使其在电子、光伏和催化剂等领域至关重要。
+                            </div>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-atom text-xl text-white"></i>
+                            </div>
+                            <h4 class="font-bold text-lg mb-2">铂族金属 (PGMs)</h4>
+                            <div class="text-sm opacity-80 leading-relaxed">
+                                主要包括铂（Platinum）和钯（Palladium），其价值主要由工业应用决定，特别是其卓越的催化性能。它们是汽车尾气净化催化转换器的核心材料。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 全球价值链 -->
+                <div class="glass-effect rounded-lg p-8 mb-16">
+                    <h3 class="playfair text-2xl font-bold mb-8 text-gradient">全球价值链：从矿山到市场</h3>
+                    
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-gradient-to-r from-green-400 to-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-mountain text-xl text-white"></i>
+                            </div>
+                            <h4 class="font-bold text-lg mb-2">上游：勘探与开采</h4>
+                            <div class="text-sm opacity-80 leading-relaxed">
+                                这是价值链的起点，是一个资本密集且周期漫长的过程。从发现矿藏到实现商业化生产，通常需要10到20年的时间。
+                            </div>
+                            <div class="mt-3 text-xs opacity-60">
+                                开采方式主要分为大型机械化矿山（LSM）和手工及小规模采矿（ASM）
+                            </div>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-gradient-to-r from-orange-400 to-red-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-fire text-xl text-white"></i>
+                            </div>
+                            <h4 class="font-bold text-lg mb-2">中游：精炼与提纯</h4>
+                            <div class="text-sm opacity-80 leading-relaxed">
+                                这是价值链的关键环节，将从矿山产出的含杂质的合质金提纯至投资级别的金银锭（通常纯度高于99.5%）。
+                            </div>
+                            <div class="mt-3 text-xs opacity-60">
+                                该环节高度集中，瑞士精炼厂处理了全球高达70%的黄金
+                            </div>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-cogs text-xl text-white"></i>
+                            </div>
+                            <h4 class="font-bold text-lg mb-2">下游：加工与终端应用</h4>
+                            <div class="text-sm opacity-80 leading-relaxed">
+                                精炼后的贵金属被加工成最终产品，以满足不同领域的需求，包括珠宝首饰、投资产品以及高科技工业部件。
+                            </div>
+                            <div class="mt-3 text-xs opacity-60">
+                                连接制造业经济，需求直接与工业活动指标挂钩
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 市场治理与基础设施 -->
+                <div class="glass-effect rounded-lg p-8">
+                    <h3 class="playfair text-2xl font-bold mb-8 text-gradient">市场治理与基础设施：伦敦金银市场协会（LBMA）的角色</h3>
+                    
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="border-gradient rounded-lg p-6">
+                            <h5 class="font-bold text-lg mb-3 text-gradient">"合格交割"标准</h5>
+                            <div class="text-sm opacity-80 leading-relaxed">
+                                这是全球贵金属批发市场公认的质量基准，确保了在"伦敦本地"结算的黄金和白银金条具有统一的、可信赖的品质。该标准对金条的纯度、重量、尺寸、标记和外观都有着极其严格的规定。
+                            </div>
+                        </div>
+                        
+                        <div class="border-gradient rounded-lg p-6">
+                            <h5 class="font-bold text-lg mb-3 text-gradient">全球贵金属准则</h5>
+                            <div class="text-sm opacity-80 leading-relaxed">
+                                该准则为全球场外贵金属市场的参与者设定了道德和专业行为的最佳实践标准，涵盖了道德、治理、合规、风险管理和商业行为等多个方面，旨在促进一个稳健、公平、有效和透明的市场。
+                            </div>
+                        </div>
+                        
+                        <div class="border-gradient rounded-lg p-6">
+                            <h5 class="font-bold text-lg mb-3 text-gradient">负责任采购</h5>
+                            <div class="text-sm opacity-80 leading-relaxed">
+                                这是LBMA日益重要的ESG核心职能。所有合格交割精炼厂都必须遵守LBMA的负责任采购计划，该计划基于经合组织（OECD）的尽职调查指南，旨在打击洗钱、恐怖主义融资、侵犯人权等非法行为。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 内容分割线 -->
+    <div class="section-divider"></div>
+    
+    <!-- 第二部分：供应方程——来源、成本与未来制约 -->
+    <section id="supply-analysis" class="py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="playfair text-5xl font-bold mb-16 text-center text-gradient">供应方程——来源、成本与未来制约</h2>
+            
+            <div class="max-w-6xl mx-auto">
+                <div class="text-lg leading-relaxed mb-16 opacity-90">
+                    本章节将深入剖析贵金属市场的供应端，从当前的生产动态，到成本通胀和储量接替等前瞻性挑战。理解这些结构性制约因素对于判断未来价格走势至关重要。
+                </div>
+                
+                <!-- 初级供应 -->
+                <div class="glass-effect rounded-lg p-8 mb-16">
+                    <h3 class="playfair text-2xl font-bold mb-8 text-gradient">初级供应：全球矿产、关键地区与主要生产商</h3>
+                    
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-gradient mb-2">3,300吨</div>
+                            <div class="font-semibold mb-2">黄金 2024年产量</div>
+                            <div class="text-xs opacity-60 space-y-1">
+                                <div>中国 380吨</div>
+                                <div>澳大利亚 290吨</div>
+                                <div>俄罗斯 310吨</div>
+                            </div>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-gradient mb-2">25,000吨</div>
+                            <div class="font-semibold mb-2">白银 2024年产量</div>
+                            <div class="text-xs opacity-60 space-y-1">
+                                <div>墨西哥 6,300吨</div>
+                                <div>中国 3,300吨</div>
+                                <div>秘鲁 3,100吨</div>
+                            </div>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-gradient mb-2">120,000千克</div>
+                            <div class="font-semibold mb-2">铂金 2023年产量</div>
+                            <div class="text-xs opacity-60 space-y-1">
+                                <div>南非 主导地位</div>
+                                <div>俄罗斯 重要生产国</div>
+                                <div>高度集中供应</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 成本动态 -->
+                <div class="glass-effect rounded-lg p-8 mb-16">
+                    <h3 class="playfair text-2xl font-bold mb-6 text-gradient">成本动态：解析全方位维持成本（AISC）</h3>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="font-bold text-lg mb-4">成本上升趋势</h4>
+                            <div class="space-y-4">
+                                <div class="border-l-4 border-red-500 pl-4">
+                                    <div class="font-bold text-lg">2024年第三季度</div>
+                                    <div class="number-highlight text-2xl">$1,456/盎司</div>
+                                    <div class="text-sm opacity-60">创纪录的AISC</div>
+                                </div>
+                                <div class="border-l-4 border-orange-500 pl-4">
+                                    <div class="font-bold text-lg">2025年预期</div>
+                                    <div class="number-highlight text-2xl">$1,375-1,396/盎司</div>
+                                    <div class="text-sm opacity-60">维持高位区间</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-bold text-lg mb-4">成本驱动因素</h4>
+                            <div class="space-y-3">
+                                <div class="flex items-start">
+                                    <i class="fas fa-users text-yellow-500 mr-3 mt-1"></i>
+                                    <div>
+                                        <div class="font-semibold">劳动力成本</div>
+                                        <div class="text-sm opacity-80">关键矿业国薪资水平显著上涨，美国矿业工资同比上涨8.1%</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <i class="fas fa-bolt text-yellow-500 mr-3 mt-1"></i>
+                                    <div>
+                                        <div class="font-semibold">能源成本</div>
+                                        <div class="text-sm opacity-80">柴油、天然气等能源价格的上涨直接推高了运营成本</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <i class="fas fa-chart-line text-yellow-500 mr-3 mt-1"></i>
+                                    <div>
+                                        <div class="font-semibold">运营挑战</div>
+                                        <div class="text-sm opacity-80">矿石品位下降和剥采比增加，需要处理更多废石</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 二次供应 -->
+                <div class="glass-effect rounded-lg p-8 mb-16">
+                    <h3 class="playfair text-2xl font-bold mb-6 text-gradient">二次供应：回收经济学的重要性</h3>
+                    
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold number-highlight mb-2">1,370吨</div>
+                            <div class="font-semibold mb-2">黄金回收量</div>
+                            <div class="text-sm opacity-60 mb-2">2024年同比增长11%</div>
+                            <div class="text-xs opacity-40">占总供应量27.5%</div>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="text-2xl font-bold number-highlight mb-2">1.939亿盎司</div>
+                            <div class="font-semibold mb-2">白银回收量</div>
+                            <div class="text-sm opacity-60 mb-2">创12年新高</div>
+                            <div class="text-xs opacity-40">占总供应量19%</div>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="text-2xl font-bold number-highlight mb-2">117.6万盎司</div>
+                            <div class="font-semibold mb-2">铂金回收量</div>
+                            <div class="text-sm opacity-60 mb-2">主要来源报废汽车</div>
+                            <div class="text-xs opacity-40">催化转换器回收</div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 p-6 bg-gradient-to-r from-blue-900 to-purple-900 bg-opacity-50 rounded-lg">
+                        <h4 class="font-bold text-lg mb-3 text-blue-300">回收供应特点</h4>
+                        <div class="text-sm opacity-90 leading-relaxed">
+                            回收金的供应与金价和经济困境密切相关，当金价上涨或经济不景气时，消费者更倾向于出售旧有金饰，从而增加市场供应。超过90%的回收金来源于旧珠宝。
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 勘探前景 -->
+                <div class="glass-effect rounded-lg p-8">
+                    <h3 class="playfair text-2xl font-bold mb-6 text-gradient">勘探前景：投资趋势与储量接替挑战</h3>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="font-bold text-lg mb-4">投资下滑趋势</h4>
+                            <div class="space-y-4">
+                                <div class="border-l-3 border-red-500 pl-4">
+                                    <div class="font-semibold">2023年勘探预算</div>
+                                    <div class="number-highlight text-lg">127.6亿美元</div>
+                                    <div class="text-sm opacity-80">同比下降3%</div>
+                                </div>
+                                <div class="border-l-3 border-red-500 pl-4">
+                                    <div class="font-semibold">2024年预期</div>
+                                    <div class="number-highlight text-lg">进一步下降5%</div>
+                                    <div class="text-sm opacity-80">黄金勘探预算下降7%</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-bold text-lg mb-4">勘探策略转变</h4>
+                            <div class="p-6 bg-gradient-to-r from-orange-900 to-red-900 bg-opacity-50 rounded-lg">
+                                <div class="space-y-3 text-sm opacity-90">
+                                    <div class="flex items-start">
+                                        <i class="fas fa-arrow-right text-orange-400 mr-2 mt-1"></i>
+                                        <div>
+                                            <span class="font-semibold">从"绿地勘探"转向"棕地勘探"</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <i class="fas fa-arrow-right text-orange-400 mr-2 mt-1"></i>
+                                        <div>
+                                            <span class="font-semibold">风险较低但难以发现世界级新矿床</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <i class="fas fa-arrow-right text-orange-400 mr-2 mt-1"></i>
+                                        <div>
+                                            <span class="font-semibold">初级勘探公司融资额大幅萎缩</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 内容分割线 -->
+    <div class="section-divider"></div>
+    
+    <!-- 第三部分：需求版图——三大金属阵营的故事 -->
+    <section id="demand-analysis" class="py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="playfair text-5xl font-bold mb-16 text-center text-gradient">需求版图——三大金属阵营的故事</h2>
+            
+            <div class="max-w-6xl mx-auto">
+                <div class="text-lg leading-relaxed mb-16 opacity-90">
+                    本章节是报告的核心，将详细阐述各类贵金属独特的需求驱动因素。我们将重点分析黄金的货币属性与白银及铂族金属的工业属性之间的结构性分化。
+                </div>
+                
+                <!-- 黄金：永恒的货币资产 -->
+                <div class="glass-effect rounded-lg p-8 mb-16">
+                    <div class="flex items-center mb-6">
+                        <i class="fas fa-coins text-3xl text-gradient mr-4"></i>
+                        <h3 class="playfair text-3xl font-bold text-gradient">黄金：永恒的货币资产</h3>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="font-bold text-lg mb-4">央行需求</h4>
+                            <div class="space-y-4">
+                                <div class="border-l-4 border-yellow-500 pl-4">
+                                    <div class="font-bold text-lg">2024年央行净购买</div>
+                                    <div class="number-highlight text-2xl">1,045吨</div>
+                                    <div class="text-sm opacity-60">连续第三年超过1,000吨</div>
+                                </div>
+                                <div class="border-l-4 border-yellow-500 pl-4">
+                                    <div class="font-bold text-lg">2025年预期</div>
+                                    <div class="number-highlight text-2xl">900吨</div>
+                                    <div class="text-sm opacity-60">继续保持强劲购买力</div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-6 p-4 bg-gradient-to-r from-yellow-900 to-orange-900 bg-opacity-50 rounded-lg">
+                                <div class="font-semibold text-yellow-300 mb-2">根本动因</div>
+                                <div class="text-sm opacity-80">
+                                    全球地缘政治格局演变，各国央行寻求储备资产多元化以降低对美元的依赖（"去美元化"），并对冲日益加剧的地缘政治风险
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-bold text-lg mb-4">投资需求</h4>
+                            <div class="space-y-4">
+                                <div class="flex justify-between items-center">
+                                    <span>黄金ETF持有量</span>
+                                    <span class="number-highlight font-bold">3,639吨</span>
+                                </div>
+                                <div class="w-full bg-gray-700 rounded-full h-2">
+                                    <div class="bg-gradient-to-r from-yellow-500 to-orange-500 h-2 rounded-full" style="width: 85%"></div>
+                                </div>
+                                
+                                <div class="flex justify-between items-center">
+                                    <span>金条与金币投资</span>
+                                    <span class="number-highlight font-bold">创13年来最强劲开局</span>
+                                </div>
+                                <div class="w-full bg-gray-700 rounded-full h-2">
+                                    <div class="bg-gradient-to-r from-yellow-500 to-orange-500 h-2 rounded-full" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-6 text-xs opacity-60">
+                                主要受宏观经济预期驱动，特别是对未来利率下降、地缘政治不确定性以及对冲通胀和经济增长风险的需求
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 白银：不可或缺的工业金属 -->
+                <div class="glass-effect rounded-lg p-8 mb-16">
+                    <div class="flex items-center mb-6">
+                        <i class="fas fa-microchip text-3xl text-gradient mr-4"></i>
+                        <h3 class="playfair text-3xl font-bold text-gradient">白银：不可或缺的工业金属</h3>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="font-bold text-lg mb-4">工业需求占比</h4>
+                            <div class="text-center mb-6">
+                                <div class="text-4xl font-bold number-highlight">55%+</div>
+                                <div class="text-sm opacity-60">工业应用占总需求比例</div>
+                                <div class="text-xs opacity-40">十年前仅为45%</div>
+                            </div>
+                            
+                            <div class="space-y-3">
+                                <div class="flex justify-between">
+                                    <span>2024年工业需求量</span>
+                                    <span class="number-highlight font-bold">6.805亿盎司</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>光伏领域需求量</span>
+                                    <span class="number-highlight font-bold">1.976亿盎司</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>汽车行业需求量</span>
+                                    <span class="number-highlight font-bold">9,000万盎司</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-bold text-lg mb-4">绿色能源转型驱动</h4>
+                            <div class="space-y-4">
+                                <div class="border-l-3 border-green-500 pl-4">
+                                    <div class="font-semibold">光伏产业</div>
+                                    <div class="text-sm opacity-80">太阳能电池板生产是白银需求增长的主要引擎，银浆是光伏电池的关键材料</div>
+                                </div>
+                                
+                                <div class="border-l-3 border-green-500 pl-4">
+                                    <div class="font-semibold">电动汽车</div>
+                                    <div class="text-sm opacity-80">一辆电动汽车的银含量（25-50克）显著高于传统内燃机汽车（15-28克）</div>
+                                </div>
+                                
+                                <div class="border-l-3 border-green-500 pl-4">
+                                    <div class="font-semibold">5G技术</div>
+                                    <div class="text-sm opacity-80">5G通信基础设施建设依赖于大量使用白银的电子元器件</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 铂族金属：结构性分化的市场 -->
+                <div class="glass-effect rounded-lg p-8 mb-16">
+                    <div class="flex items-center mb-6">
+                        <i class="fas fa-atom text-3xl text-gradient mr-4"></i>
+                        <h3 class="playfair text-3xl font-bold text-gradient">铂族金属：结构性分化的市场</h3>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="font-bold text-lg mb-4">钯金：结构性萎缩</h4>
+                            <div class="p-6 bg-gradient-to-r from-red-900 to-orange-900 bg-opacity-50 rounded-lg">
+                                <div class="space-y-3 text-sm opacity-90">
+                                    <div class="flex items-start">
+                                        <i class="fas fa-exclamation-triangle text-red-400 mr-2 mt-1"></i>
+                                        <div>
+                                            <span class="font-semibold">超过80%需求来自汽油车催化转换器</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <i class="fas fa-exclamation-triangle text-red-400 mr-2 mt-1"></i>
+                                        <div>
+                                            <span class="font-semibold">纯电动汽车市场份额不断扩大（不使用催化转换器）</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <i class="fas fa-exclamation-triangle text-red-400 mr-2 mt-1"></i>
+                                        <div>
+                                            <span class="font-semibold">成本更低的铂金正加速替代钯金</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-4 text-center">
+                                <div class="text-2xl font-bold text-red-400">2026年开始</div>
+                                <div class="text-sm opacity-60">市场从供给短缺转向持续过剩</div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-bold text-lg mb-4">铂金：氢能经济催化剂</h4>
+                            <div class="p-6 bg-gradient-to-r from-blue-900 to-green-900 bg-opacity-50 rounded-lg">
+                                <div class="space-y-3 text-sm opacity-90">
+                                    <div class="flex items-start">
+                                        <i class="fas fa-check-circle text-green-400 mr-2 mt-1"></i>
+                                        <div>
+                                            <span class="font-semibold">正在汽油车催化剂中大规模替代钯金</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <i class="fas fa-check-circle text-green-400 mr-2 mt-1"></i>
+                                        <div>
+                                            <span class="font-semibold">混合动力汽车需要更高的PGM载量</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <i class="fas fa-check-circle text-green-400 mr-2 mt-1"></i>
+                                        <div>
+                                            <span class="font-semibold">质子交换膜燃料电池和电解槽的核心材料</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-4 text-center">
+                                <div class="text-2xl font-bold text-green-400">72.7万盎司</div>
+                                <div class="text-sm opacity-60">2025-2029年年均赤字</div>
+                                <div class="text-xs opacity-40">相当于年均需求的9%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 供需平衡表 -->
+                <div class="glass-effect rounded-lg p-8">
+                    <h3 class="playfair text-2xl font-bold mb-6 text-gradient">全球贵金属供需平衡表（2023-2025年预测）</h3>
+                    
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm luxury-table rounded-lg">
+                            <thead>
+                                <tr class="border-b border-cyan-500 border-opacity-30">
+                                    <th class="text-left py-3 px-2">项目</th>
+                                    <th class="text-left py-3 px-2">黄金(吨)</th>
+                                    <th class="text-left py-3 px-2">白银(百万盎司)</th>
+                                    <th class="text-left py-3 px-2">铂金(千盎司)</th>
+                                    <th class="text-left py-3 px-2">钯金(千盎司)</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-sm">
+                                <tr class="border-b border-gray-700">
+                                    <td class="py-3 px-2 font-semibold">2024年供应</td>
+                                    <td class="py-3 px-2 number-highlight">4,975</td>
+                                    <td class="py-3 px-2 number-highlight">1,014</td>
+                                    <td class="py-3 px-2 number-highlight">7,269</td>
+                                    <td class="py-3 px-2 number-highlight">9,199</td>
+                                </tr>
+                                <tr class="border-b border-gray-700">
+                                    <td class="py-3 px-2 font-semibold">2024年需求</td>
+                                    <td class="py-3 px-2 number-highlight">4,434</td>
+                                    <td class="py-3 px-2 number-highlight">1,081</td>
+                                    <td class="py-3 px-2 number-highlight">4,778</td>
+                                    <td class="py-3 px-2 number-highlight">1,947</td>
+                                </tr>
+                                <tr class="border-b border-gray-700">
+                                    <td class="py-3 px-2 font-semibold">净平衡</td>
+                                    <td class="py-3 px-2 text-green-400 font-bold">+541</td>
+                                    <td class="py-3 px-2 text-red-400 font-bold">-67</td>
+                                    <td class="py-3 px-2 text-red-400 font-bold">-682</td>
+                                    <td class="py-3 px-2 text-red-400 font-bold">-1,105</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="mt-4 text-xs opacity-60">
+                        注：此表为基于多个来源的综合估算。黄金数据主要来自世界黄金协会，白银数据来自白银协会，铂族金属数据来自世界铂金投资协会。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 内容分割线 -->
+    <div class="section-divider"></div>
+    
+    <!-- 第四部分：宏观经济熔炉——塑造市场的外部力量 -->
+    <section id="macro-drivers" class="py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="playfair text-5xl font-bold mb-16 text-center text-gradient">宏观经济熔炉——塑造市场的外部力量</h2>
+            
+            <div class="max-w-6xl mx-auto">
+                <div class="text-lg leading-relaxed mb-16 opacity-90">
+                    本章节将贵金属的内部基本面与驱动价格发现的外部宏观经济和地缘政治力量联系起来，为投资者提供一个理解市场波动的分析框架。
+                </div>
+                
+                <!-- 利率范式：实际收益率与机会成本 -->
+                <div class="glass-effect rounded-lg p-8 mb-16">
+                    <h3 class="playfair text-2xl font-bold mb-8 text-gradient">利率范式：实际收益率与机会成本</h3>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="font-bold text-lg mb-4">核心机制</h4>
+                            <div class="space-y-4">
+                                <div class="border-l-3 border-yellow-500 pl-4">
+                                    <div class="font-semibold">负相关关系</div>
+                                    <div class="text-sm opacity-80">黄金与实际利率（名义利率减去通胀预期）之间存在着根本性的负相关关系</div>
+                                </div>
+                                
+                                <div class="border-l-3 border-yellow-500 pl-4">
+                                    <div class="font-semibold">机会成本</div>
+                                    <div class="text-sm opacity-80">作为一种不产生任何收益的资产，黄金的主要投资竞争对手是能够提供利息回报的政府债券等固定收益工具</div>
+                                </div>
+                                
+                                <div class="border-l-3 border-yellow-500 pl-4">
+                                    <div class="font-semibold">实际利率下降</div>
+                                    <div class="text-sm opacity-80">当实际利率下降，尤其是降至负值时，持有现金或债券意味着购买力的实际损失，这使得持有黄金的机会成本消失</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-bold text-lg mb-4">当前影响</h4>
+                            <div class="p-6 bg-gradient-to-r from-green-900 to-blue-900 bg-opacity-50 rounded-lg">
+                                <div class="text-center mb-4">
+                                    <i class="fas fa-chart-line text-3xl text-green-400 mb-2"></i>
+                                    <div class="font-semibold">市场预期</div>
+                                </div>
+                                <div class="text-sm opacity-90 leading-relaxed">
+                                    市场对美联储将在2025年下半年开启降息周期的普遍预期，是支撑当前金价的核心宏观逻辑。预期的利率下降意味着未来实际收益率将走低，这对黄金构成了重大利好。
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 通胀与美元：价格发现的双引擎 -->
+                <div class="glass-effect rounded-lg p-8 mb-16">
+                    <h3 class="playfair text-2xl font-bold mb-6 text-gradient">通胀与美元：价格发现的双引擎</h3>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="font-bold text-lg mb-4">通货膨胀</h4>
+                            <div class="space-y-4">
+                                <div class="border-l-3 border-orange-500 pl-4">
+                                    <div class="font-semibold">对冲工具</div>
+                                    <div class="text-sm opacity-80">贵金属，特别是黄金，被广泛视为对冲通胀和货币贬值的有效工具</div>
+                                </div>
+                                
+                                <div class="border-l-3 border-orange-500 pl-4">
+                                    <div class="font-semibold">历史印证</div>
+                                    <div class="text-sm opacity-80">在历史上，如1970年代的高通胀时期，黄金价格曾出现爆炸性上涨，因为投资者纷纷涌入黄金以保护其财富的购买力</div>
+                                </div>
+                                
+                                <div class="border-l-3 border-orange-500 pl-4">
+                                    <div class="font-semibold">预防性需求</div>
+                                    <div class="text-sm opacity-80">通胀预期本身就能驱动黄金的预防性需求</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-bold text-lg mb-4">美元影响</h4>
+                            <div class="space-y-4">
+                                <div class="border-l-3 border-blue-500 pl-4">
+                                    <div class="font-semibold">计价效应</div>
+                                    <div class="text-sm opacity-80">全球黄金交易主要以美元计价。当美元升值时，对于使用其他货币的买家来说，黄金变得更加昂贵</div>
+                                </div>
+                                
+                                <div class="border-l-3 border-blue-500 pl-4">
+                                    <div class="font-semibold">避险替代效应</div>
+                                    <div class="text-sm opacity-80">美元和黄金在功能上存在竞争，两者都是全球投资者在市场动荡时寻求的避险资产</div>
+                                </div>
+                                
+                                <div class="border-l-3 border-blue-500 pl-4">
+                                    <div class="font-semibold">相关性变化</div>
+                                    <div class="text-sm opacity-80">在2023年至2024年期间，这种传统的负相关关系一度被打破，出现了美元与黄金同涨的罕见局面</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 地缘政治风险与避险溢价 -->
+                <div class="glass-effect rounded-lg p-8 mb-16">
+                    <h3 class="playfair text-2xl font-bold mb-6 text-gradient">地缘政治风险与避险溢价</h3>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="font-bold text-lg mb-4">避险机制</h4>
+                            <div class="space-y-4">
+                                <div class="border-l-3 border-red-500 pl-4">
+                                    <div class="font-semibold">直接催化剂</div>
+                                    <div class="text-sm opacity-80">地缘政治动荡是黄金避险需求的直接催化剂，其影响往往迅速而显著</div>
+                                </div>
+                                
+                                <div class="border-l-3 border-red-500 pl-4">
+                                    <div class="font-semibold">避险情绪</div>
+                                    <div class="text-sm opacity-80">地区冲突、贸易战、关税争端等事件会加剧全球金融市场的波动性和不确定性，引发投资者的"避险情绪"</div>
+                                </div>
+                                
+                                <div class="border-l-3 border-red-500 pl-4">
+                                    <div class="font-semibold">天然避风港</div>
+                                    <div class="text-sm opacity-80">黄金因其不依赖于任何主权信用、具有内在价值且历史悠久的避险属性，成为资本的天然避风港</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-bold text-lg mb-4">近期案例</h4>
+                            <div class="p-6 bg-gradient-to-r from-red-900 to-orange-900 bg-opacity-50 rounded-lg">
+                                <div class="space-y-3 text-sm opacity-90">
+                                    <div class="flex items-start">
+                                        <i class="fas fa-exclamation-triangle text-red-400 mr-2 mt-1"></i>
+                                        <div>
+                                            <span class="font-semibold">美国关税传闻</span>
+                                        </div>
+                                    </div>
+                                    <div class="text-sm opacity-80 leading-relaxed">
+                                        2025年期间，有关美国可能对进口金条征收关税的传闻，一度引发市场对供应中断的担忧和强烈的避险买盘，推动金价大幅上涨。
+                                    </div>
+                                    <div class="text-sm opacity-80 leading-relaxed">
+                                        这一事件完美诠释了地缘政治（在此为贸易保护主义）如何直接转化为黄金的风险溢价。
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 全球经济增长及其对工业需求的影响 -->
+                <div class="glass-effect rounded-lg p-8">
+                    <h3 class="playfair text-2xl font-bold mb-6 text-gradient">全球经济增长及其对工业需求的影响</h3>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="font-bold text-lg mb-4">强相关性</h4>
+                            <div class="space-y-4">
+                                <div class="border-l-3 border-green-500 pl-4">
+                                    <div class="font-semibold">工业需求主导</div>
+                                    <div class="text-sm opacity-80">白银和铂族金属的需求与全球工业生产和GDP增长密切相关</div>
+                                </div>
+                                
+                                <div class="border-l-3 border-green-500 pl-4">
+                                    <div class="font-semibold">经济扩张周期</div>
+                                    <div class="text-sm opacity-80">经济扩张周期通常伴随着汽车、电子产品和可再生能源设施等领域的消费和投资增长</div>
+                                </div>
+                                
+                                <div class="border-l-3 border-green-500 pl-4">
+                                    <div class="font-semibold">直接拉动</div>
+                                    <div class="text-sm opacity-80">从而直接拉动对铂、钯和白银的消耗</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-bold text-lg mb-4">历史印证</h4>
+                            <div class="space-y-4">
+                                <div class="border-l-3 border-blue-500 pl-4">
+                                    <div class="font-semibold">2008年金融危机</div>
+                                    <div class="text-sm opacity-80">在2008年全球金融危机期间，随着汽车销量和工业生产的急剧下滑，铂金价格从超过每盎司2,200美元的高位暴跌至约800美元</div>
+                                </div>
+                                
+                                <div class="border-l-3 border-blue-500 pl-4">
+                                    <div class="font-semibold">2020年新冠疫情</div>
+                                    <div class="text-sm opacity-80">同样，2020年新冠疫情初期，全球制造业的停滞也导致了铂金需求的短期急剧萎缩</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 p-6 bg-gradient-to-r from-purple-900 to-blue-900 bg-opacity-50 rounded-lg">
+                        <h4 class="font-bold text-lg mb-3 text-purple-300">当前宏观环境</h4>
+                        <div class="text-sm opacity-90 leading-relaxed">
+                            当前的宏观环境为黄金提供了一个异常有利的组合，即经济增长放缓的担忧（指向更宽松的货币政策）与持续的通胀压力和地缘政治风险并存。这种"类滞胀"的环境通常会压低实际利率，同时提升避险需求，对黄金极为有利。与此同时，白银和铂金的工业需求，由于其与绿色能源转型这一长期政策驱动的趋势紧密相连，即使在周期性经济增长疲软的情况下，也能保持结构性的强劲。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 内容分割线 -->
+    <div class="section-divider"></div>
+    
+    <!-- 第五部分：竞争舞台——企业战略与市场定位 -->
+    <section id="competition" class="py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="playfair text-5xl font-bold mb-16 text-center text-gradient">竞争舞台——企业战略与市场定位</h2>
+            
+            <div class="max-w-6xl mx-auto">
+                <div class="text-lg leading-relaxed mb-16 opacity-90">
+                    本章节将分析从市场层面转向企业层面，审视那些为投资者提供敞口的行业主要参与者。
+                </div>
+                
+                <!-- 行业巨头扫描 -->
+                <div class="glass-effect rounded-lg p-8 mb-16">
+                    <h3 class="playfair text-2xl font-bold mb-8 text-gradient">行业巨头扫描：领先的矿业公司</h3>
+                    
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="border-gradient rounded-lg p-6">
+                            <h4 class="font-bold text-lg mb-3 text-gradient">纽曼矿业 (Newmont)</h4>
+                            <div class="space-y-2 text-sm">
+                                <div class="flex justify-between">
+                                    <span>2024年产量</span>
+                                    <span class="number-highlight">670万盎司</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>AISC</span>
+                                    <span class="number-highlight">$1,516/盎司</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>黄金储备</span>
+                                    <span class="number-highlight">1.341亿盎司</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="border-gradient rounded-lg p-6">
+                            <h4 class="font-bold text-lg mb-3 text-gradient">巴里克黄金 (Barrick Gold)</h4>
+                            <div class="space-y-2 text-sm">
+                                <div class="flex justify-between">
+                                    <span>2024年产量</span>
+                                    <span class="number-highlight">390万盎司</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>AISC</span>
+                                    <span class="number-highlight">$1,375/盎司</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>黄金储备</span>
+                                    <span class="number-highlight">77百万盎司</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="border-gradient rounded-lg p-6">
+                            <h4 class="font-bold text-lg mb-3 text-gradient">阿格尼科伊格尔 (Agnico Eagle)</h4>
+                            <div class="space-y-2 text-sm">
+                                <div class="flex justify-between">
+                                    <span>2024年产量</span>
+                                    <span class="number-highlight">350万盎司</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>AISC</span>
+                                    <span class="number-highlight">$1,205/盎司</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>黄金储备</span>
+                                    <span class="number-highlight">54百万盎司</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="border-gradient rounded-lg p-6">
+                            <h4 class="font-bold text-lg mb-3 text-gradient">弗雷斯尼洛 (Fresnillo)</h4>
+                            <div class="space-y-2 text-sm">
+                                <div class="flex justify-between">
+                                    <span>2024年产量</span>
+                                    <span class="number-highlight">5,630.7万盎司</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>主要产品</span>
+                                    <span class="number-highlight">白银</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>白银储备</span>
+                                    <span class="number-highlight">18亿盎司</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="border-gradient rounded-lg p-6">
+                            <h4 class="font-bold text-lg mb-3 text-gradient">英美铂金 (Amplats)</h4>
+                            <div class="space-y-2 text-sm">
+                                <div class="flex justify-between">
+                                    <span>2024年产量</span>
+                                    <span class="number-highlight">175万盎司</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>主要产品</span>
+                                    <span class="number-highlight">铂金</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>5E储备</span>
+                                    <span class="number-highlight">164百万盎司</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="border-gradient rounded-lg p-6">
+                            <h4 class="font-bold text-lg mb-3 text-gradient">因帕拉铂金 (Implats)</h4>
+                            <div class="space-y-2 text-sm">
+                                <div class="flex justify-between">
+                                    <span>主要产品</span>
+                                    <span class="number-highlight">铂族金属</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>地理位置</span>
+                                    <span class="number-highlight">南非</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>市场地位</span>
+                                    <span class="number-highlight">全球领先</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 战略转型 -->
+                <div class="glass-effect rounded-lg p-8 mb-16">
+                    <h3 class="playfair text-2xl font-bold mb-6 text-gradient">战略转型：从增长到价值</h3>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="font-bold text-lg mb-4">战略重心转变</h4>
+                            <div class="space-y-4">
+                                <div class="border-l-3 border-yellow-500 pl-4">
+                                    <div class="font-semibold">价值优先于产量</div>
+                                    <div class="text-sm opacity-80">行业领先企业的战略重心正从过去的"不惜代价追求增长"转向"价值优先于产量"</div>
+                                </div>
+                                
+                                <div class="border-l-3 border-yellow-500 pl-4">
+                                    <div class="font-semibold">资产组合优化</div>
+                                    <div class="text-sm opacity-80">积极进行资产组合优化、严格控制成本以及专注于地缘政治稳定的"一级资产"</div>
+                                </div>
+                                
+                                <div class="border-l-3 border-yellow-500 pl-4">
+                                    <div class="font-semibold">非核心资产剥离</div>
+                                    <div class="text-sm opacity-80">纽曼矿业在完成对Newcrest的收购后，迅速启动了非核心资产的剥离计划</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-bold text-lg mb-4">合作与整合</h4>
+                            <div class="p-6 bg-gradient-to-r from-blue-900 to-green-900 bg-opacity-50 rounded-lg">
+                                <div class="space-y-3 text-sm opacity-90">
+                                    <div class="flex items-start">
+                                        <i class="fas fa-handshake text-blue-400 mr-2 mt-1"></i>
+                                        <div>
+                                            <span class="font-semibold">巴里克黄金与纽曼矿业合资</span>
+                                        </div>
+                                    </div>
+                                    <div class="text-sm opacity-80 leading-relaxed">
+                                        在内华达州成立合资企业，旨在通过整合资产来降低成本、提高效率
+                                    </div>
+                                    <div class="flex items-start">
+                                        <i class="fas fa-chart-line text-blue-400 mr-2 mt-1"></i>
+                                        <div>
+                                            <span class="font-semibold">长期影响</span>
+                                        </div>
+                                    </div>
+                                    <div class="text-sm opacity-80 leading-relaxed">
+                                        这种战略转型意味着全球最大的生产商们将不再是未来供应增长的主要动力，这将进一步加剧全球矿产金供应的长期紧张格局
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 中游守护者 -->
+                <div class="glass-effect rounded-lg p-8">
+                    <h3 class="playfair text-2xl font-bold mb-8 text-gradient">中游守护者：全球最大的精炼与加工企业</h3>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="font-bold text-lg mb-4">精炼商</h4>
+                            <div class="space-y-4">
+                                <div class="border-l-3 border-yellow-500 pl-4">
+                                    <div class="font-semibold">瑞士主导地位</div>
+                                    <div class="text-sm opacity-80">瑞士的精炼厂在全球黄金加工领域占据着无可争议的主导地位</div>
+                                </div>
+                                
+                                <div class="border-l-3 border-yellow-500 pl-4">
+                                    <div class="font-semibold">主要精炼厂</div>
+                                    <div class="text-sm opacity-80">Valcambi、PAMP、Argor-Heraeus和Metalor不仅处理量巨大，而且其品牌本身就是质量和信誉的保证</div>
+                                </div>
+                                
+                                <div class="border-l-3 border-yellow-500 pl-4">
+                                    <div class="font-semibold">LBMA认证</div>
+                                    <div class="text-sm opacity-80">被LBMA授予"合格交割"资质，是全球黄金贸易的物理中心</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-bold text-lg mb-4">催化剂制造商</h4>
+                            <div class="space-y-4">
+                                <div class="border-l-3 border-blue-500 pl-4">
+                                    <div class="font-semibold">汽车催化剂</div>
+                                    <div class="text-sm opacity-80">在下游，特别是PGM价值链中，汽车催化剂制造商是关键的需求方</div>
+                                </div>
+                                
+                                <div class="border-l-3 border-blue-500 pl-4">
+                                    <div class="font-semibold">欧洲化工巨头</div>
+                                    <div class="text-sm opacity-80">巴斯夫（BASF）、庄信万丰（Johnson Matthey）和优美科（Umicore）等欧洲化工巨头是该领域的领导者</div>
+                                </div>
+                                
+                                <div class="border-l-3 border-blue-500 pl-4">
+                                    <div class="font-semibold">技术路线影响</div>
+                                    <div class="text-sm opacity-80">它们的技术路线和采购策略直接影响着铂和钯的需求前景</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 内容分割线 -->
+    <div class="section-divider"></div>
+    
+    <!-- 第六部分：驾驭新前沿——ESG、监管与行业风险 -->
+    <section id="esg-regulation" class="py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="playfair text-5xl font-bold mb-16 text-center text-gradient">驾驭新前沿——ESG、监管与行业风险</h2>
+            
+            <div class="max-w-6xl mx-auto">
+                <div class="text-lg leading-relaxed mb-16 opacity-90">
+                    本章节将探讨日益影响投资决策的非财务因素，包括"社会运营许可"和行业面临的系统性风险。
+                </div>
+                
+                <!-- ESG的必要性 -->
+                <div class="glass-effect rounded-lg p-8 mb-16">
+                    <h3 class="playfair text-2xl font-bold mb-8 text-gradient">ESG的必要性：从运营许可到竞争优势</h3>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="font-bold text-lg mb-4">ESG作为核心风险</h4>
+                            <div class="space-y-4">
+                                <div class="border-l-3 border-red-500 pl-4">
+                                    <div class="font-semibold">首要风险</div>
+                                    <div class="text-sm opacity-80">在多个行业风险调查中，ESG相关问题（尤其是环境风险和社区关系）已跃升为矿业公司面临的首要风险之一</div>
+                                </div>
+                                
+                                <div class="border-l-3 border-green-500 pl-4">
+                                    <div class="font-semibold">财务表现</div>
+                                    <div class="text-sm opacity-80">拥有更高ESG评级的矿业公司在资本市场上表现出更强的韧性和更高的股东回报</div>
+                                </div>
+                                
+                                <div class="border-l-3 border-blue-500 pl-4">
+                                    <div class="font-semibold">战略议题</div>
+                                    <div class="text-sm opacity-80">ESG已从合规要求演变为矿业公司的核心战略议题，并成为投资者评估企业价值的关键维度</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-bold text-lg mb-4">行业标准与框架</h4>
+                            <div class="space-y-4">
+                                <div class="border-l-3 border-yellow-500 pl-4">
+                                    <div class="font-semibold">ICMM《采矿原则》</div>
+                                    <div class="text-sm opacity-80">为成员公司设定了全面的ESG绩效要求，涵盖人权、健康安全、环境保护和利益相关者参与等多个方面</div>
+                                </div>
+                                
+                                <div class="border-l-3 border-yellow-500 pl-4">
+                                    <div class="font-semibold">世界黄金协会RGMPs</div>
+                                    <div class="text-sm opacity-80">《负责任黄金开采原则》构成了贵金属行业，特别是黄金供应链的ESG治理基石</div>
+                                </div>
+                                
+                                <div class="border-l-3 border-yellow-500 pl-4">
+                                    <div class="font-semibold">LBMA负责任采购</div>
+                                    <div class="text-sm opacity-80">基于经合组织（OECD）的尽职调查指南，已成为行业内公认的ESG黄金标准</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 监管的流沙 -->
+                <div class="glass-effect rounded-lg p-8 mb-16">
+                    <h3 class="playfair text-2xl font-bold mb-6 text-gradient">监管的流沙：关键矿业国的政策变迁</h3>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="font-bold text-lg mb-4">南非：政策变革期</h4>
+                            <div class="p-6 bg-gradient-to-r from-orange-900 to-red-900 bg-opacity-50 rounded-lg">
+                                <div class="space-y-3 text-sm opacity-90">
+                                    <div class="flex items-start">
+                                        <i class="fas fa-exclamation-triangle text-orange-400 mr-2 mt-1"></i>
+                                        <div>
+                                            <span class="font-semibold">《矿产资源发展法案》草案</span>
+                                        </div>
+                                    </div>
+                                    <div class="text-sm opacity-80 leading-relaxed">
+                                        2025年新出台，旨在实现行业现代化，但也带来了关于本地选冶要求和黑人经济赋权（BEE）政策的不确定性
+                                    </div>
+                                    <div class="flex items-start">
+                                        <i class="fas fa-exclamation-triangle text-orange-400 mr-2 mt-1"></i>
+                                        <div>
+                                            <span class="font-semibold">数字化矿权管理系统</span>
+                                        </div>
+                                    </div>
+                                    <div class="text-sm opacity-80 leading-relaxed">
+                                        新的数字化矿权管理系统（Cadastre）的实施一再推迟，影响了勘探和投资活动的效率
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-bold text-lg mb-4">拉丁美洲：政策分化</h4>
+                            <div class="space-y-4">
+                                <div class="border-l-3 border-green-500 pl-4">
+                                    <div class="font-semibold">智利：投资环境改善</div>
+                                    <div class="text-sm opacity-80">2025年通过了旨在将矿业项目审批时间缩短30%-70%的新法律，极大地改善了投资环境</div>
+                                </div>
+                                
+                                <div class="border-l-3 border-red-500 pl-4">
+                                    <div class="font-semibold">墨西哥：政策收紧</div>
+                                    <div class="text-sm opacity-80">新政府宣布将停止批准所有新的采矿特许权，并对现有矿山进行更严格的环保审查</div>
+                                </div>
+                                
+                                <div class="border-l-3 border-orange-500 pl-4">
+                                    <div class="font-semibold">资源民族主义</div>
+                                    <div class="text-sm opacity-80">体现了日益增长的资源民族主义情绪，给未来的供应增长带来了巨大变数</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 展望未来：顶级行业风险 -->
+                <div class="glass-effect rounded-lg p-8">
+                    <h3 class="playfair text-2xl font-bold mb-8 text-gradient">展望未来：2025年及以后的顶级行业风险</h3>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="font-bold text-lg mb-4">核心战略风险</h4>
+                            <div class="space-y-4">
+                                <div class="border-l-4 border-red-500 pl-4">
+                                    <div class="font-bold text-lg">地缘政治与供应链碎片化</div>
+                                    <div class="text-sm opacity-80">大国竞争和资源民族主义正在重塑全球矿产供应链，导致全球供应链从高效整合走向区域化、碎片化</div>
+                                </div>
+                                
+                                <div class="border-l-4 border-orange-500 pl-4">
+                                    <div class="font-bold text-lg">资本获取与财务风险</div>
+                                    <div class="text-sm opacity-80">在满足能源转型带来的巨大金属需求与维持资本纪律之间，矿业公司面临两难。利率上升和信贷收紧增加了大型项目的融资难度</div>
+                                </div>
+                                
+                                <div class="border-l-4 border-yellow-500 pl-4">
+                                    <div class="font-bold text-lg">社会运营许可与ESG</div>
+                                    <div class="text-sm opacity-80">来自社区、投资者和监管机构的压力持续增加，对矿业公司在环境管理、社区关系和人权保护等方面的要求越来越高</div>
+                                </div>
+                                
+                                <div class="border-l-4 border-blue-500 pl-4">
+                                    <div class="font-bold text-lg">资源枯竭与新项目开发</div>
+                                    <div class="text-sm opacity-80">现有大型矿山的矿石品位普遍下降，而新的世界级矿床发现越来越少，行业面临着严峻的储量接替挑战</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-bold text-lg mb-4">"管辖区溢价"现象</h4>
+                            <div class="p-6 bg-gradient-to-r from-purple-900 to-blue-900 bg-opacity-50 rounded-lg">
+                                <div class="text-center mb-4">
+                                    <i class="fas fa-star text-3xl text-purple-400 mb-2"></i>
+                                    <div class="font-semibold">新兴趋势</div>
+                                </div>
+                                <div class="text-sm opacity-90 leading-relaxed space-y-3">
+                                    <p>这些风险的叠加正在催生一种"管辖区溢价"现象。在ESG标准日益严格、监管不确定性增加和资源民族主义抬头的背景下，位于政治稳定、法治健全、监管透明的国家（如加拿大、澳大利亚、美国）的矿业资产，将比那些位于高风险地区的同类资产享有显著的估值溢价。</p>
+                                    
+                                    <p>因为前者能为投资者提供更可预测的现金流和更低的运营风险。这一趋势将驱动资本向"一级管辖区"集中，并可能引发新一轮以降低地域风险为目的的并购活动。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 内容分割线 -->
+    <div class="section-divider"></div>
+    
+    <!-- 第七部分：投资论点与战略展望 -->
+    <section id="investment-outlook" class="py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="playfair text-5xl font-bold mb-16 text-center text-gradient">投资论点与战略展望</h2>
+            
+            <div class="max-w-6xl mx-auto">
+                <div class="text-lg leading-relaxed mb-16 opacity-90">
+                    本部分将综合前述所有分析，构建一个清晰、可执行的投资框架。
+                </div>
+                
+                <!-- 估值框架 -->
+                <div class="glass-effect rounded-lg p-8 mb-16">
+                    <h3 class="playfair text-2xl font-bold mb-8 text-gradient">估值框架：应用P/NAV与相对价值分析</h3>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="font-bold text-lg mb-4">核心估值方法</h4>
+                            <div class="space-y-4">
+                                <div class="border-l-3 border-yellow-500 pl-4">
+                                    <div class="font-semibold">净资产价值法（NAV）</div>
+                                    <div class="text-sm opacity-80">这是矿业公司估值的基石。该方法通过对公司旗下每个矿山未来的现金流进行折现（DCF），加总得出公司所有运营资产的现值</div>
+                                </div>
+                                
+                                <div class="border-l-3 border-yellow-500 pl-4">
+                                    <div class="font-semibold">市净率（P/NAV）</div>
+                                    <div class="text-sm opacity-80">将公司的市值与其NAV进行比较，即P/NAV比率。通常，运营稳健的公司其P/NAV比率在1.0x左右波动</div>
+                                </div>
+                                
+                                <div class="border-l-3 border-yellow-500 pl-4">
+                                    <div class="font-semibold">辅助估值指标</div>
+                                    <div class="text-sm opacity-80">对于处于不同发展阶段的公司，还可使用其他指标进行辅助分析</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-bold text-lg mb-4">辅助估值指标</h4>
+                            <div class="space-y-4">
+                                <div class="border-l-3 border-blue-500 pl-4">
+                                    <div class="font-semibold">EV/资源量</div>
+                                    <div class="text-sm opacity-80">对于尚未投产的勘探型公司，该指标（企业价值/总资源量）可用于横向比较其单位资源量的市场估值</div>
+                                </div>
+                                
+                                <div class="border-l-3 border-blue-500 pl-4">
+                                    <div class="font-semibold">EV/EBITDA 和 P/CF</div>
+                                    <div class="text-sm opacity-80">对于已投产的成熟矿企，这些传统的现金流倍数估值法依然适用，可用于与其他行业的公司进行比较</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 长期结构性展望 -->
+                <div class="glass-effect rounded-lg p-8 mb-16">
+                    <h3 class="playfair text-2xl font-bold mb-6 text-gradient">长期结构性展望：持久趋势与颠覆者</h3>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="font-bold text-lg mb-4">黄金：结构性牛市</h4>
+                            <div class="p-6 bg-gradient-to-r from-yellow-900 to-orange-900 bg-opacity-50 rounded-lg">
+                                <div class="space-y-3 text-sm opacity-90">
+                                    <div class="flex items-start">
+                                        <i class="fas fa-check-circle text-yellow-400 mr-2 mt-1"></i>
+                                        <div>
+                                            <span class="font-semibold">宏观政策陷阱</span>
+                                        </div>
+                                    </div>
+                                    <div class="text-sm opacity-80 leading-relaxed">
+                                        全球高企的主权债务、持续的通胀压力、央行的"去美元化"储备再配置，以及日益碎片化的地缘政治格局，共同构成了黄金的"宏观政策陷阱"驱动力
+                                    </div>
+                                    <div class="flex items-start">
+                                        <i class="fas fa-chart-line text-yellow-400 mr-2 mt-1"></i>
+                                        <div>
+                                            <span class="font-semibold">价格预测</span>
+                                        </div>
+                                    </div>
+                                    <div class="text-sm opacity-80 leading-relaxed">
+                                        多个机构预测其在2026年有望冲击每盎司4,000美元
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-bold text-lg mb-4">白银与铂金：工业革命驱动</h4>
+                            <div class="p-6 bg-gradient-to-r from-green-900 to-blue-900 bg-opacity-50 rounded-lg">
+                                <div class="space-y-3 text-sm opacity-90">
+                                    <div class="flex items-start">
+                                        <i class="fas fa-check-circle text-green-400 mr-2 mt-1"></i>
+                                        <div>
+                                            <span class="font-semibold">不可逆转的工业革命</span>
+                                        </div>
+                                    </div>
+                                    <div class="text-sm opacity-80 leading-relaxed">
+                                        绿色能源转型（光伏、氢能）和数字化革命（5G、AI）所带来的需求是结构性的、长期的，并且在很大程度上是非自由裁量的
+                                    </div>
+                                    <div class="flex items-start">
+                                        <i class="fas fa-chart-line text-green-400 mr-2 mt-1"></i>
+                                        <div>
+                                            <span class="font-semibold">价格重估</span>
+                                        </div>
+                                    </div>
+                                    <div class="text-sm opacity-80 leading-relaxed">
+                                        持续的供给短缺预示着这两种金属在中长期内将经历一次深刻的价格重估
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 p-6 bg-gradient-to-r from-red-900 to-orange-900 bg-opacity-50 rounded-lg">
+                        <h4 class="font-bold text-lg mb-3 text-red-300">钯金：结构性前景看跌</h4>
+                        <div class="text-sm opacity-90 leading-relaxed">
+                            技术替代（铂代钯）和终端市场萎缩（内燃机被电动车取代）的双重打击，使其长期需求前景黯淡。
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 投资组合配置建议 -->
+                <div class="glass-effect rounded-lg p-8">
+                    <h3 class="playfair text-2xl font-bold mb-8 text-gradient">投资组合配置建议</h3>
+                    
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="border-gradient rounded-lg p-6 tech-corner hex-tech">
+                            <h4 class="font-bold text-lg mb-3 text-gradient">核心战略配置——黄金</h4>
+                            <div class="text-sm opacity-80 leading-relaxed space-y-2">
+                                <p>• 对冲系统性风险、货币贬值和地缘政治冲击</p>
+                                <p>• 实物黄金/黄金ETF：追求高流动性和低交易成本</p>
+                                <p>• 优质矿业股：选择位于政治稳定"一级管辖区"的大型黄金生产商</p>
+                            </div>
+                        </div>
+                        
+                        <div class="border-gradient rounded-lg p-6 tech-corner data-stream">
+                            <h4 class="font-bold text-lg mb-3 text-gradient">成长/主题配置——白银与铂金</h4>
+                            <div class="text-sm opacity-80 leading-relaxed space-y-2">
+                                <p>• 捕捉绿色能源转型这一宏大主题的成长性资产</p>
+                                <p>• 白银：混合敞口，受益于绿色工业需求的结构性增长</p>
+                                <p>• 铂金：氢能经济投资标的，直接受益于氢能经济的长期发展</p>
+                            </div>
+                        </div>
+                        
+                        <div class="border-gradient rounded-lg p-6 tech-corner scan-line">
+                            <h4 class="font-bold text-lg mb-3 text-gradient">战术性低配/做空——钯金</h4>
+                            <div class="text-sm opacity-80 leading-relaxed space-y-2">
+                                <p>• 核心需求驱动力正处于结构性衰退中</p>
+                                <p>• 任何因短期供应中断或市场情绪引发的价格反弹</p>
+                                <p>• 都应被视为降低敞口的机会</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 p-6 bg-gradient-to-r from-purple-900 to-blue-900 bg-opacity-50 rounded-lg">
+                        <h4 class="font-bold text-lg mb-3 text-purple-300">投资组合构建逻辑</h4>
+                        <div class="text-sm opacity-90 leading-relaxed">
+                            通过构建这样一个基于不同金属核心驱动力的差异化投资组合，投资者不仅能够有效对冲日益复杂的宏观经济风险，还能积极参与到定义未来十年全球经济格局的结构性变革之中。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 引用文献 -->
+    <section class="py-24 bg-gradient-to-r from-gray-900 to-black">
+        <div class="container mx-auto px-6">
+            <h2 class="playfair text-3xl font-bold mb-12 text-center text-gradient">引用文献</h2>
+            
+            <div class="max-w-6xl mx-auto text-xs leading-relaxed opacity-80">
+                <div class="grid md:grid-cols-3 gap-6">
+                    <!-- 第一列引用 1-40 -->
+                    <div class="space-y-2">
+                        <div class="hover:opacity-100 transition-opacity citation-link">
+                            <a href="https://www.usgs.gov/centers/national-minerals-information-center/gold-statistics-and-information" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                1. Gold Statistics and Information | U.S. Geological Survey
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity citation-link">
+                            <a href="https://www.investopedia.com/ask/answers/09/gold-standard.asp" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                2. What Is the Gold Standard? History and Collapse - Investopedia
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://silverinstitute.org/silver-price-investment/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                3. SILVER PRICE & INVESTMENT - The Silver Institute
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://silverinstitute.org/silver-in-industry/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                4. SILVER IN INDUSTRY - The Silver Institute
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.usgs.gov/centers/national-minerals-information-center/silver-statistics-and-information" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                5. Silver Statistics and Information | U.S. Geological Survey
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://platinuminvestment.com/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                6. World Platinum Investment Council – WPIC®
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.usgs.gov/centers/national-minerals-information-center/platinum-group-metals-statistics-and-information" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                7. Platinum-Group Metals Statistics and Information | U.S. Geological Survey
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.fortunebusinessinsights.com/precious-metals-market-105747" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                8. Precious Metals Market Size, Share, Growth Analysis, 2032 - Fortune Business Insights
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.grandviewresearch.com/industry-analysis/precious-metals-market" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                9. Precious Metal Market Size And Share | Industry Report, 2030 - Grand View Research
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.mckinsey.com/industries/metals-and-mining/our-insights/the-mine-to-market-value-chain-a-hidden-gem" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                10. The mining value chain: A hidden gem | McKinsey
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.gold.org/about-gold" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                11. All About Gold | The Metal & its History | World Gold Council
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.imvoconvenanten.nl/-/media/imvo/files/banking/news/dba-analysis-gold-value-chain.pdf" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                12. Analysis of the Gold Value Chain - IMVO-convenanten
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://go.spectro.com/whitepaper/en/precious-metals" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                13. Analyzing Precious Metals - SPECTRO Analytical Instruments
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.goldmarket.fr/en/Argor-Heraeus--one-of-the-world%27s-largest-refiners-of-precious-metals/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                14. Argor-Heraeus: One of the World's Largest Precious Metal Refiners | GOLDMARKET
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://swissgoldsafe.ch/en/additional-information/fundamentals-precious-metals/precious-metal-refineries/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                15. Precious metal refining: Switzerland and worldwide - Swiss Gold Safe
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.lbma.org.uk/market-standards" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                16. Market Standards | LBMA
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.lbma.org.uk/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                17. LBMA: The Independent Precious Metals Authority
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.lbma.org.uk/good-delivery/about-good-delivery" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                18. About Good Delivery | LBMA
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.stonex.com/en/financial-glossary/good-delivery-gold/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                19. What is Good Delivery Gold? - StoneX
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://en.wikipedia.org/wiki/Good_Delivery" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                20. Good Delivery - Wikipedia
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://learn.apmex.com/investing-guide/what-is-the-lbma-good-delivery-list/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                21. What is the LBMA Good Delivery List? | APMEX
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.lbma.org.uk/responsible-sourcing" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                22. Responsible Sourcing - LBMA
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.lbma.org.uk/publications/responsible-gold-guidance-v9/about-lbma" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                23. About LBMA
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://pubs.usgs.gov/periodicals/mcs2025/mcs2025-gold.pdf" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                24. Prepared by Kristin N. Sheaffer - USGS.gov
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.gold.org/goldhub/research/gold-demand-trends/gold-demand-trends-full-year-2024/supply" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                25. Supply | World Gold Council
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://pubs.usgs.gov/periodicals/mcs2025/mcs2025-silver.pdf" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                26. SILVER - USGS.gov
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://nai500.com/blog/2025/01/which-countries-produced-the-most-platinum-and-palladium-updated-in-2024/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                27. Which Countries Produced the Most Platinum and Palladium? (Updated in 2024) - NAI 500
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://mine.nridigital.com/mine_jun24/uncertain-times-platinum-mining-outlook" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                28. Navigating uncertain times for platinum - Mine | Issue 141 | June 2024
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://discoveryalert.com.au/news/gold-miners-benefiting-record-prices-2025/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                29. Gold Miners Stack Records as Prices Reach Historic Highs in 2025 - Discovery Alert
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://discoveryalert.com.au/news/all-in-sustaining-costs-gold-mining-2025/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                30. All-In Sustaining Costs: Gold Production Trends for Q1 2025
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.gold.org/gold-supply" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                31. Gold Supply | Sources of Gold - World Gold Council
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://silverinstitute.org/silver-supply-demand/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                32. SILVER SUPPLY & DEMAND - The Silver Institute
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://sbma.org.sg/wp-content/uploads/2025/02/WPIC_Platinum_Essentials_February_2025.pdf" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                33. WPIC_Platinum_Essentials_Febr...
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://sbma.org.sg/wp-content/uploads/2024/04/WPIC_Platinum_Perspectives_December2023Recyclingchallenges.pdf" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                34. WPIC_Platinum_Perspectives_D
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.spglobal.com/market-intelligence/en/news-insights/research/world-exploration-trends-2024" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                35. World Exploration Trends 2024 | S&P Global
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://discoveryalert.com.au/news/global-exploration-budgets-declining-2025-trends/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                36. Global Exploration Budgets Fall: Junior Miners Navigate Funding Challenges - Discovery Alert
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://investingnews.com/exploration-financing-cyclical-low/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                37. Mining Industry's Exploration Spending Lagging, Will Budgets Grow in 2025? | INN
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.gold.org/goldhub/research/gold-demand-trends" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                38. Gold Market And Demand Trends - World Gold Council
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.gold.org/goldhub/research/gold-demand-trends/gold-demand-trends-full-year-2024/central-banks" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                39. Central Banks | World Gold Council
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.gold.org/news-and-events/press-releases/global-gold-demand-hits-new-high-prices-soar-2024" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                40. Global gold demand hits new high as prices soar in 2024 | World Gold Council
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- 第二列引用 41-80 -->
+                    <div class="space-y-2">
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://discoveryalert.com.au/news/gold-geopolitical-instability-performance-safe-haven-2025/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                41. Gold as a Safe Haven: Navigating Geopolitical Instability
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.ecb.europa.eu/press/other-publications/ire/focus/html/ecb.irebox202506_01~f93400a4aa.en.html" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                42. Gold demand: the role of the official sector and geopolitics - European Central Bank
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.jpmorgan.com/insights/global-research/commodities/gold-prices" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                43. A new high? | Gold price predictions from J.P. Morgan Research
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.gold.org/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                44. World Gold Council | The Authority on Gold
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.gold.org/goldhub/research/gold-etfs-holdings-and-flows/2025/08" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                45. US and Europe anchor July inflows - World Gold Council
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.gold.org/goldhub/research/gold-demand-trends/gold-demand-trends-full-year-2024/outlook" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                46. Outlook - Gold Demand Trends: Full Year 2024 - World Gold Council
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://discoveryalert.com.au/news/gold-etfs-record-inflows-2025-investment-demand/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                47. Gold ETFs See Largest $38 Billion Inflow Since 2020
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.gold.org/goldhub/research/gold-demand-trends/gold-demand-trends-q2-2025" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                48. Gold Demand Trends: Q2 2025 | World Gold Council
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.gold.org/goldhub/research/gold-demand-trends/gold-demand-trends-q1-2025" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                49. Gold Demand Trends: Q1 2025 - World Gold Council
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://discoveryalert.com.au/news/silver-driving-14-year-highs-supply-demand-2025/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                50. Industrial Silver Demand Drives Record Prices in 2025 - Discovery Alert
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.globenewswire.com/news-release/2025/04/16/3062637/0/en/Silver-Industrial-Demand-Reached-a-Record-680-5-Moz-in-2024.html" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                51. Silver Industrial Demand Reached a Record 680.5 Moz in
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.theassay.com/articles/feature-story/precious-metals-shining-in-tight-global-economy/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                52. Precious Metals Shining in Tight Global Economy - The Assay
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://silverinstitute.org/silver-play-critical-role-5g-technologies/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                53. Silver to Play a Critical Role in 5G Technologies
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://silverinstitute.org/global-silver-market-forecast-to-remain-in-a-sizeable-deficit-in-2025/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                54. Global Silver Market Forecast to Remain in a Sizeable Deficit in 2025
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://goldsilver.com/industry-news/goldsilver-news/the-silver-institute-world-silver-survey-2025/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                55. The Silver Institute: World Silver Survey 2025 - GoldSilver
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.heraeus-precious-metals.com/en/company/press-and-news/heraeus-precious-metals-precious-metals-forecast-2025/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                56. Heraeus Precious Metals Precious Metals Forecast 2025
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.cmegroup.com/articles/2024/palladium-oversold-and-platinums-attractive-fundamentals.html" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                57. Upside potential for platinum and palladium - CME Group
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.ainvest.com/news/platinum-palladium-diverging-demand-signals-precious-metals-strategic-investment-opportunity-2506/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                58. Platinum vs. Palladium: Diverging Demand Signals in Precious Metals
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://platinuminvestment.com/investment-research/essentials" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                59. Platinum Essentials - Investment Research
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://blog.gorozen.com/blog/the-hidden-revival-of-platinum-and-palladium" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                60. The Hidden Revival of Platinum and Palladium - Goehring & Rozencwajg
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.cmegroup.com/articles/2022/wpic-fuel-cell-electric-vehicles-and-platinum-demand.html" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                61. Fuel cell electric vehicles and platinum demand - CME Group
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.youtube.com/watch?v=4eiUOTN1w9M" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                62. Edward Sterck: Platinum Facing Third Deficit, Will Price Follow Gold Higher? - YouTube
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://investingnews.com/wgc-q2-gold-investment/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                63. WGC: Surging Gold Prices Drive Record Q2 Investment Demand | INN
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://thefederal.com/category/business/india-beats-china-to-become-largest-gold-jewellery-consumer-170306" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                64. India beats China to become largest gold jewellery consumer - The Federal
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://retailjewellerindia.com/india-is-largest-consumer-of-gold-jewellery-in-2024-surpassing-china-wgc-report/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                65. India is largest consumer of gold jewellery in 2024, surpassing China - WGC report
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.gold.org/goldhub/research/gold-demand-trends/gold-demand-trends-q2-2024/jewellery" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                66. Jewellery | World Gold Council
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://en.macromicro.me/charts/724/3month-bond-real-yield-gold-price" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                67. US - Real Interest Rate vs. Gold Price - MacroMicro
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://discoveryalert.com.au/news/interest-rates-gold-prices-relationship-2025/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                68. The Inverse Relationship Between Interest Rates and Gold Prices - Discovery Alert
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.bullionbypost.com/index/gold/gold-price-interest-rate-relationship/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                69. Gold Price and Interest Rate Relationship - BullionByPost.com
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.usgoldbureau.com/en/news/post/the-federal-reserves-policy-shifts-and-their-impact-on-gold-prices" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                70. The Federal Reserve's Policy Shifts and Their Impact on Gold Prices
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- 第三列引用 81-119 -->
+                    <div class="space-y-2">
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.investopedia.com/gold-is-back-near-a-record-high-why-the-price-of-the-precious-metal-is-surging-11786769" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                81. Gold is Back Near a Record High. Here's Why the Price of the Precious Metal is Surging.
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.goldinvestmentauthority.com/the-relationship-between-inflation-and-precious-metal-prices/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                82. The Relationship Between Inflation and Precious Metal Prices - Gold Investment Authority
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://atkinsonsbullion.com/news/educational/how-does-inflation-affect-the-price-of-precious-metals" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                83. How Does Inflation Affect Silver and Gold Prices? - Atkinsons Bullion
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://shopglobalcoin.com/blogs/blog/gold-and-inflation-the-ultimate-resource-on-inflations-impact-for-gold-investors" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                84. Gold and Inflation: The Ultimate Resource on Inflation's Impact for Gold Investors - Global Coin
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://en.macromicro.me/collections/45/mm-gold-price/592/us-usd-dollar-gold-price" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                85. US - Dollar Index vs. Gold Price | Gold | Collection | MacroMicro
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://stonexbullion.com/en/blog/correlation-between-us-dollar-and-gold-prices/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                86. Is There a Correlation Between the US Dollar and Gold Prices? - StoneX Bullion
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.cmegroup.com/openmarkets/metals/2025/Gold-and-the-US-Dollar-An-Evolving-Relationship.html" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                87. Gold and the U.S. Dollar: An Evolving Relationship? - OpenMarkets
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://economictimes.indiatimes.com/markets/commodities/gold-price-smashes-all-records-at-rs-1-02-lakh/10-g-is-38-profit-in-2025-just-the-beginning/articleshow/123166100.cms" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                88. Gold price smashes all records at Rs 1.02 lakh/10 g! Is 38% profit in 2025 just the beginning?
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://economictimes.indiatimes.com/mf/analysis/gold-price-hits-record-high-should-you-buy-now-or-beware/articleshow/123229528.cms" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                89. Gold price hits record high: Should you buy now or beware?
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://timesofindia.indiatimes.com/business/india-business/gold-hits-record-highs-above-rs-1-lakh-on-tariff-fears-and-safe-haven-demand-should-you-buy-hold-or-sell-heres-what-experts-say/articleshow/123241606.cms" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                90. Gold hits record highs above Rs 1 lakh on tariff fears and safe-haven demand! Should you buy, hold or sell? Here's what experts say
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://timesofindia.indiatimes.com/business/international-business/trade-war-will-us-impose-tariffs-on-gold-heres-what-donald-trump-said/articleshow/123244211.cms" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                91. Trade war: Will US impose tariffs on gold? Here's what Donald Trump said
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://tnfx.co/the-impact-of-global-events-on-metal-prices/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                92. The Impact Of Global Events On Metal Prices | TNFX
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.swissbullion.eu/en/posts/how-do-economic-conditions-affect-platinum-prices" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                93. Economic Conditions and Platinum Prices | Swiss Bullion Trading
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://en.wikipedia.org/wiki/Largest_gold_companies" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                94. Largest gold companies - Wikipedia
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://s24.q4cdn.com/382246808/files/doc_financials/2024/ar/Newmont-2024-Annual-Report.pdf" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                95. Newmont 2024 Annual Report – Form 10-K
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.fresnilloplc.com/media/xrfjufma/040325-f-fy24-prelim-report.pdf" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                96. Fresnillo plc Financial results for the year ended 31 December 2024
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://companiesmarketcap.com/gold-mining/largest-gold-mining-companies-by-market-cap/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                97. Largest gold mining companies by Market Cap
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.icmm.com/en-gb/our-principles" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                98. Our Principles - ICMM
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.controlrisks.com/our-thinking/insights/ten-global-issues-to-shape-mining-and-metals-markets-in-2025" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                99. Ten global issues to shape mining and metals markets in 2025 - Control Risks
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.corporatefinanceinstitute.com/resources/valuation/mining-asset-valuation-techniques/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                100. Mining Asset Valuation Techniques - Overview, Formula
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.bullionvault.com/gold-news/infographics/ai-gold-precious-metal-price-forecasts" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                101. Precious Metal Price Forecasts 2025: Gold, Silver and more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- JavaScript功能 -->
+    <script>
+        // Header 霓虹叠加层样式（不改变HTML结构）
+        (function(){
+            const style = document.createElement('style');
+            style.textContent = `
+                .header-hero::before{
+                    content:'';position:absolute;inset:-2px;z-index:0;pointer-events:none;
+                    background:
+                        radial-gradient(600px 300px at 20% 10%, rgba(0,229,255,0.12), transparent 55%),
+                        radial-gradient(700px 350px at 80% 20%, rgba(255,215,0,0.10), transparent 60%),
+                        linear-gradient(180deg, rgba(17,24,39,0.4), rgba(17,24,39,0));
+                    filter: blur(0.2px);
+                }
+            `;
+            document.head.appendChild(style);
+        })();
+
+        // 滚动进度指示器
+        window.addEventListener('scroll', () => {
+            const scrollIndicator = document.querySelector('.scroll-indicator');
+            const scrollTop = window.pageYOffset;
+            const docHeight = document.body.offsetHeight - window.innerHeight;
+            const scrollPercent = (scrollTop / docHeight) * 100;
+            scrollIndicator.style.transform = `scaleX(${scrollPercent / 100})`;
+        });
+        
+        // 浮动导航激活状态
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.floating-nav a');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+        
+        // 平滑滚动到锚点
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                if (targetSection) {
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // 数字滚动动画
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const numbers = entry.target.querySelectorAll('.number-highlight');
+                    numbers.forEach(number => {
+                        if (number.textContent.match(/\d/)) {
+                            const finalValue = number.textContent;
+                            const numericValue = parseFloat(finalValue.replace(/[^\d.-]/g, ''));
+                            if (!isNaN(numericValue)) {
+                                animateNumber(number, 0, numericValue, finalValue);
+                            }
+                        }
+                    });
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+        
+        // 观察所有包含数字高亮的元素
+        document.querySelectorAll('.glass-effect, .border-gradient').forEach(el => {
+            if (el.querySelector('.number-highlight')) {
+                observer.observe(el);
+            }
+        });
+        
+        function animateNumber(element, start, end, finalText) {
+            const duration = 2000;
+            const startTime = performance.now();
+            
+            function updateNumber(currentTime) {
+                const elapsed = currentTime - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                
+                const current = start + (end - start) * progress;
+                element.textContent = finalText.replace(/\d+/, Math.round(current));
+                
+                if (progress < 1) {
+                    requestAnimationFrame(updateNumber);
+                } else {
+                    element.textContent = finalText;
+                }
+            }
+            
+            requestAnimationFrame(updateNumber);
+        }
+        
+        // 段落淡入动画
+        const fadeInObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+        
+        // 为所有段落添加淡入效果
+        document.querySelectorAll('p, .glass-effect, .border-gradient').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            fadeInObserver.observe(el);
+        });
+        
+        // 页面加载完成后的初始化
+        document.addEventListener('DOMContentLoaded', () => {
+            // 发布日期动态渲染（中/英）
+            const monthsEn = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+            // 固定发布日期为2025年7月5日
+            const reportDate = new Date(2025, 6, 5); // 月份从0开始，所以6表示7月
+            const yyyy = reportDate.getFullYear();
+            const mm = String(reportDate.getMonth()+1).padStart(2,'0');
+            const dd = String(reportDate.getDate()).padStart(2,'0');
+            const dateCN = `${yyyy}年${mm}月${dd}日`;
+            const dateEN = `${monthsEn[reportDate.getMonth()]} ${parseInt(dd,10)}, ${yyyy}`;
+            const cnNode = document.getElementById('date-cn');
+            const enNode = document.getElementById('date-en');
+            if(cnNode) cnNode.textContent = dateCN;
+            if(enNode) enNode.textContent = dateEN;
+
+            // 标题动画
+            const title = document.querySelector('h1');
+            if (title) {
+                title.style.opacity = '0';
+                title.style.transform = 'translateY(30px)';
+                title.style.transition = 'opacity 1s ease, transform 1s ease';
+                
+                setTimeout(() => {
+                    title.style.opacity = '1';
+                    title.style.transform = 'translateY(0)';
+                }, 500);
+            }
+            
+            // 执行摘要动画
+            const summary = document.querySelector('#executive-summary');
+            if (summary) {
+                summary.style.opacity = '0';
+                summary.style.transform = 'translateY(30px)';
+                summary.style.transition = 'opacity 1s ease, transform 1s ease';
+                
+                setTimeout(() => {
+                    summary.style.opacity = '1';
+                    summary.style.transform = 'translateY(0)';
+                }, 1000);
+            }
+
+            // 轻量级视差（鼠标移动）
+            const hero = document.querySelector('.header-hero .parallax-container');
+            if (hero) {
+                hero.addEventListener('mousemove', (e) => {
+                    const { clientX, clientY } = e;
+                    const x = (clientX / window.innerWidth - 0.5) * 10; // -5~5deg
+                    const y = (clientY / window.innerHeight - 0.5) * -10;
+                    hero.style.transform = `perspective(1000px) rotateX(${y}deg) rotateY(${x}deg)`;
+                });
+                hero.addEventListener('mouseleave', () => {
+                    hero.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)';
+                });
+            }
+
+            // Emoji 清理（禁用emoji显示）
+            (function removeEmojis(){
+                const emojiRegex = /[\p{Emoji_Presentation}\p{Extended_Pictographic}]/gu;
+                const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null);
+                const nodes = [];
+                while(walker.nextNode()){ nodes.push(walker.currentNode); }
+                nodes.forEach(n => {
+                    if (emojiRegex.test(n.nodeValue)) {
+                        n.nodeValue = n.nodeValue.replace(emojiRegex, '');
+                    }
+                });
+            })();
+        });
+    </script>
+</body>
+</html>

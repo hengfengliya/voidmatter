@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新石油：驾驭关键矿产超级周期的分析框架</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <style>
+        /* 核心设计理念 - 色彩系统 */
+        :root {
+            --obsidian-black: #0A0A0A;
+            --midnight-black: #151515;
+            --shadow-black: #1F1F1F;
+            --charcoal-deep: #2A2A2A;
+            --sovereign-gold: #B8860B;
+            --imperial-gold: #DAA520;
+            --aureate-whisper: #F4E4BC;
+            --golden-shadow: #8B6914;
+            --platinum-mist: #E5E5E5;
+            --sterling-silver: #C0C0C0;
+            --graphite-steel: #696969;
+            --charcoal-whisper: #808080;
+            --ruby-accent: #8B0000;
+            --emerald-depth: #006400;
+            --sapphire-authority: #1e3a8a;
+        }
+
+        /* 全局样式 */
+        body {
+            background-color: var(--obsidian-black);
+            color: var(--platinum-mist);
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* 排版系统 */
+        .imperial-title {
+            font-family: 'Playfair Display', serif;
+            font-weight: 200;
+            letter-spacing: 0.12em;
+            line-height: 1.05;
+            color: var(--aureate-whisper);
+            text-shadow: 0 3px 12px rgba(184, 134, 11, 0.4);
+        }
+
+        .imperial-subtitle {
+            font-family: 'Playfair Display', serif;
+            font-weight: 300;
+            letter-spacing: 0.08em;
+            line-height: 1.15;
+            color: var(--imperial-gold);
+            text-shadow: 0 2px 8px rgba(218, 165, 32, 0.3);
+        }
+        
+        .imperial-tagline {
+            font-family: 'Inter', sans-serif;
+            font-weight: 200;
+            letter-spacing: 0.06em;
+            line-height: 1.4;
+            color: var(--sterling-silver);
+            font-style: italic;
+        }
+
+        .imperial-dedication {
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+            letter-spacing: 0.04em;
+            line-height: 1.3;
+            color: var(--imperial-gold);
+        }
+
+        .imperial-dedication-sub {
+            font-family: 'Inter', sans-serif;
+            font-weight: 200;
+            letter-spacing: 0.05em;
+            line-height: 1.3;
+            color: var(--sterling-silver);
+            font-style: italic;
+        }
+
+        .sovereign-heading {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            color: var(--imperial-gold);
+            text-shadow: 0 1px 4px rgba(218, 165, 32, 0.4);
+        }
+        
+        .noble-text {
+            font-weight: 300;
+            letter-spacing: 0.03em;
+            line-height: 2.2;
+            color: var(--platinum-mist);
+        }
+
+        .executive-quote {
+            font-weight: 300;
+            letter-spacing: 0.02em;
+            line-height: 1.8;
+            color: var(--sterling-silver);
+            font-size: 0.95rem;
+            font-style: italic;
+            position: relative;
+            padding: 0 2rem;
+            margin: 2rem 0;
+        }
+
+        .executive-quote::before {
+            content: '"';
+            position: absolute;
+            left: 0;
+            top: -0.5rem;
+            font-size: 3rem;
+            color: var(--sovereign-gold);
+            opacity: 0.3;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .executive-quote::after {
+            content: '"';
+            position: absolute;
+            right: 0;
+            bottom: -0.5rem;
+            font-size: 3rem;
+            color: var(--sovereign-gold);
+            opacity: 0.3;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .exclusive-number {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: var(--sovereign-gold);
+            text-shadow: 0 1px 3px rgba(184, 134, 11, 0.5);
+        }
+
+        /* 布局容器系统 */
+        .sovereign-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 5rem;
+        }
+
+        .imperial-section {
+            margin: 12rem 0;
+            position: relative;
+        }
+
+        /* 卡片系统 */
+        .authority-card {
+            background: linear-gradient(145deg, rgba(21, 21, 21, 0.9) 0%, rgba(31, 31, 31, 0.8) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.15);
+            border-radius: 2px;
+            padding: 3rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6), inset 0 1px 1px rgba(244, 228, 188, 0.05);
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .authority-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(184, 134, 11, 0.3);
+            box-shadow: 0 16px 48px rgba(0, 0, 0, 0.8), 0 0 24px rgba(184, 134, 11, 0.1), inset 0 1px 1px rgba(244, 228, 188, 0.08);
+        }
+
+        .authority-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(90deg, var(--sovereign-gold), transparent);
+            opacity: 0.6;
+        }
+
+        .authority-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(270deg, var(--sovereign-gold), transparent);
+            opacity: 0.6;
+        }
+        
+        .golden-glass-card {
+            background: radial-gradient(circle at 30% 30%, rgba(218, 165, 32, 0.12) 0%, transparent 50%), radial-gradient(circle at 70% 70%, rgba(184, 134, 11, 0.08) 0%, transparent 50%), linear-gradient(135deg, rgba(244, 228, 188, 0.06) 0%, rgba(218, 165, 32, 0.04) 30%, rgba(184, 134, 11, 0.03) 70%, rgba(139, 105, 20, 0.02) 100%);
+            border: 1px solid rgba(218, 165, 32, 0.15);
+            border-radius: 4px;
+            padding: 2.5rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6), inset 0 1px 1px rgba(244, 228, 188, 0.08), inset 0 0 30px rgba(218, 165, 32, 0.03);
+            transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .golden-glass-card::before {
+            content: '';
+            position: absolute;
+            inset: -1px;
+            background: linear-gradient(45deg, rgba(218, 165, 32, 0.2) 0%, rgba(184, 134, 11, 0.1) 25%, transparent 50%, rgba(244, 228, 188, 0.1) 75%, rgba(218, 165, 32, 0.15) 100%);
+            border-radius: 4px;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.8s ease;
+        }
+
+        .golden-glass-card:hover {
+            transform: translateY(-3px);
+            border-color: rgba(218, 165, 32, 0.3);
+            box-shadow: 0 16px 48px rgba(0, 0, 0, 0.8), 0 0 40px rgba(218, 165, 32, 0.1), inset 0 1px 1px rgba(244, 228, 188, 0.12), inset 0 0 40px rgba(218, 165, 32, 0.05);
+        }
+
+        .golden-glass-card:hover::before {
+            opacity: 1;
+        }
+        
+        .investment-logic-card {
+            background: radial-gradient(circle at 20% 80%, rgba(218, 165, 32, 0.08) 0%, transparent 60%), radial-gradient(circle at 80% 20%, rgba(244, 228, 188, 0.05) 0%, transparent 60%), linear-gradient(135deg, rgba(184, 134, 11, 0.06) 0%, rgba(139, 105, 20, 0.04) 50%, rgba(218, 165, 32, 0.02) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.12);
+            border-radius: 2px;
+            padding: 3rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6), inset 0 1px 1px rgba(244, 228, 188, 0.06), inset 0 0 25px rgba(184, 134, 11, 0.02);
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .investment-logic-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent 0%, rgba(218, 165, 32, 0.4) 25%, rgba(244, 228, 188, 0.6) 50%, rgba(218, 165, 32, 0.4) 75%, transparent 100%);
+            opacity: 0;
+            transition: opacity 0.6s ease;
+        }
+
+        .investment-logic-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(184, 134, 11, 0.25);
+            box-shadow: 0 16px 48px rgba(0, 0, 0, 0.8), 0 0 30px rgba(218, 165, 32, 0.08), inset 0 1px 1px rgba(244, 228, 188, 0.1), inset 0 0 35px rgba(184, 134, 11, 0.04);
+        }
+
+        .investment-logic-card:hover::after {
+            opacity: 1;
+        }
+
+        .disclaimer-card {
+            background: linear-gradient(145deg, rgba(31, 31, 31, 0.95) 0%, rgba(42, 42, 42, 0.9) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.18);
+            border-radius: 3px;
+            padding: 4rem;
+            position: relative;
+            backdrop-filter: blur(25px);
+            -webkit-backdrop-filter: blur(25px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.7), inset 0 1px 1px rgba(244, 228, 188, 0.08), inset 0 0 30px rgba(184, 134, 11, 0.02);
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .disclaimer-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--sovereign-gold), transparent);
+            opacity: 0.6;
+        }
+
+        .disclaimer-card:hover {
+            border-color: rgba(184, 134, 11, 0.25);
+            box-shadow: 0 16px 50px rgba(0, 0, 0, 0.8), 0 0 25px rgba(184, 134, 11, 0.08), inset 0 1px 1px rgba(244, 228, 188, 0.12);
+        }
+
+        .disclaimer-text {
+            font-weight: 300;
+            letter-spacing: 0.02em;
+            line-height: 2;
+            color: var(--platinum-mist);
+            font-size: 1rem;
+        }
+
+        /* 表格系统 */
+        .imperial-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            background: rgba(15, 15, 15, 0.8);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(184, 134, 11, 0.2);
+            border-radius: 2px;
+        }
+
+        .imperial-table th {
+            background: rgba(184, 134, 11, 0.08);
+            padding: 2rem 1.5rem;
+            text-align: left;
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--imperial-gold);
+            border-bottom: 1px solid rgba(184, 134, 11, 0.2);
+        }
+
+        .imperial-table td {
+            padding: 1.8rem 1.5rem;
+            border-bottom: 1px solid rgba(184, 134, 11, 0.05);
+            font-weight: 300;
+            color: var(--platinum-mist);
+        }
+
+        .imperial-table tbody tr:hover {
+            background: rgba(184, 134, 11, 0.03);
+        }
+
+        /* 垂直进度条导航系统 */
+        .reading-progress {
+            position: fixed;
+            top: 50%;
+            right: 2rem;
+            width: 4px;
+            height: 200px;
+            transform: translateY(-50%);
+            background: linear-gradient(180deg, rgba(184, 134, 11, 0.2) 0%, rgba(218, 165, 32, 0.3) 30%, rgba(244, 228, 188, 0.4) 60%, rgba(218, 165, 32, 0.3) 85%, rgba(139, 105, 20, 0.2) 100%);
+            z-index: 1001;
+            box-shadow: 0 0 12px rgba(184, 134, 11, 0.6), 2px 0 8px rgba(184, 134, 11, 0.3), inset 1px 0 2px rgba(244, 228, 188, 0.4);
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+        .reading-progress::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(180deg, rgba(244, 228, 188, 0.1) 0%, rgba(218, 165, 32, 0.15) 50%, rgba(244, 228, 188, 0.1) 100%);
+            border-radius: 2px;
+            animation: progressShimmer 3s ease-in-out infinite;
+        }
+
+        .reading-progress-fill {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(180deg, var(--golden-shadow) 0%, var(--sovereign-gold) 50%, var(--imperial-gold) 100%);
+            border-radius: 2px;
+            transition: height 0.1s ease;
+            box-shadow: inset 0 1px 2px rgba(244, 228, 188, 0.3), 0 0 8px rgba(184, 134, 11, 0.4);
+        }
+
+        @keyframes progressShimmer {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.8; }
+        }
+
+        .progress-tooltip {
+            position: fixed;
+            top: 50%;
+            right: 4rem;
+            transform: translateY(-50%);
+            background: linear-gradient(135deg, rgba(15, 15, 15, 0.95) 0%, rgba(31, 31, 31, 0.9) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.25);
+            border-radius: 8px;
+            padding: 0.8rem 2rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 0.85rem;
+            font-weight: 300;
+            color: var(--imperial-gold);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.7), 0 0 20px rgba(184, 134, 11, 0.1), inset 0 1px 1px rgba(244, 228, 188, 0.08);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+            z-index: 1002;
+            white-space: nowrap;
+            letter-spacing: 0.03em;
+        }
+
+        .progress-tooltip.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(-50%) translateX(-8px);
+        }
+
+        .progress-tooltip::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -8px;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-left: 8px solid rgba(184, 134, 11, 0.25);
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+        }
+
+        .progress-tooltip::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -7px;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-left: 7px solid rgba(15, 15, 15, 0.95);
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+        }
+
+        /* 装饰元素 */
+        .sovereign-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent 0%, rgba(184, 134, 11, 0.3) 30%, rgba(184, 134, 11, 0.6) 50%, rgba(184, 134, 11, 0.3) 70%, transparent 100%);
+            margin: 8rem 0;
+            position: relative;
+        }
+
+        .sovereign-divider::before {
+            content: '◆';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: var(--sovereign-gold);
+            font-size: 16px;
+            background: var(--obsidian-black);
+            padding: 0 1rem;
+        }
+
+        /* 引用文献系统 */
+        .citation-item {
+            padding: 1.5rem 2rem;
+            margin: 0.8rem 0;
+            background: linear-gradient(135deg, rgba(21, 21, 21, 0.8) 0%, rgba(31, 31, 31, 0.6) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.15);
+            border-radius: 3px;
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .citation-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--sovereign-gold), var(--golden-shadow));
+            opacity: 0.6;
+            transition: opacity 0.3s ease;
+        }
+
+        .citation-item:hover {
+            border-color: rgba(184, 134, 11, 0.4);
+            background: linear-gradient(135deg, rgba(31, 31, 31, 0.9) 0%, rgba(42, 42, 42, 0.7) 100%);
+            transform: translateX(6px) translateY(-1px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5), 0 0 20px rgba(184, 134, 11, 0.08);
+        }
+
+        .citation-item:hover::before {
+            opacity: 1;
+        }
+
+        .citation-item a {
+            color: var(--platinum-mist);
+            text-decoration: none;
+            font-size: 0.85rem;
+            line-height: 1.7;
+            font-weight: 300;
+            transition: color 0.4s ease, padding-left 0.4s ease;
+            display: block;
+            position: relative;
+        }
+        
+        .citation-item a:hover {
+            color: var(--aureate-whisper);
+            padding-left: 1rem;
+        }
+
+        .citation-item a::before {
+            content: '';
+            position: absolute;
+            left: -0.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 4px;
+            background: var(--sovereign-gold);
+            border-radius: 50%;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .citation-item:hover a::before {
+            opacity: 0.8;
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 1024px) {
+            .sovereign-container { padding: 0 2.5rem; }
+            .imperial-section { margin: 8rem 0; }
+        }
+
+        @media (max-width: 768px) {
+            .sovereign-container { padding: 0 1.5rem; }
+            .imperial-section { margin: 6rem 0; }
+            .authority-card, .investment-logic-card, .disclaimer-card { padding: 2rem; }
+            .reading-progress { right: 1rem; height: 150px; width: 3px; }
+            .progress-tooltip { right: 3rem; padding: 0.6rem 1.5rem; font-size: 0.75rem; }
+        }
+        
+        /* Material Icons 样式 */
+        .material-icons {
+            vertical-align: middle;
+            margin-right: 0.5rem;
+            opacity: 0.7;
+            color: var(--imperial-gold);
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body class="bg-obsidian-black">
+
+    <!-- 垂直进度条 -->
+    <div class="reading-progress">
+        <div class="reading-progress-fill"></div>
+    </div>
+    
+    <!-- 进度标题提示器 -->
+    <div class="progress-tooltip" id="progress-tooltip"></div>
+
+    <main>
+        <!-- 首屏标题 -->
+        <header id="header" class="min-h-screen flex items-center justify-center relative overflow-hidden" data-title="报告概述">
+            <div class="sovereign-container text-center relative z-10">
+                <!-- 主标题区域 -->
+                <div class="mb-16">
+                    <h1 class="imperial-title text-5xl md:text-7xl mb-6">
+                        新石油
+                    </h1>
+                    
+                    <h2 class="imperial-subtitle text-2xl md:text-4xl mb-12 opacity-90">
+                        驾驭关键矿产超级周期的分析框架
+                    </h2>
+                </div>
+                
+                <!-- 英文副标题 -->
+                <div class="mb-12">
+                    <div class="imperial-tagline text-sm md:text-base opacity-75 max-w-4xl mx-auto">
+                        The New Oil: An Analytical Framework for Navigating the Critical Minerals Supercycle
+                    </div>
+                </div>
+                
+                <!-- 致敬区域 -->
+                <div class="mb-16">
+                    <div class="imperial-dedication text-sm md:text-base">
+                        致：机构投资者与高净值客户
+                    </div>
+                    <div class="imperial-dedication-sub text-xs md:text-sm opacity-60 mt-2">
+                        For: Institutional Investors and High Net Worth Clients
+                    </div>
+                </div>
+                
+                <!-- 发布日期卡片 -->
+                <div class="golden-glass-card inline-block">
+                    <div class="text-xs uppercase tracking-[0.2em] opacity-50 mb-4 font-light">
+                        本报告发布于 · Published on
+                    </div>
+                    <div class="sovereign-heading text-base">
+                        <span class="exclusive-number">2025年7月</span> 
+                        <span class="mx-4 text-sovereign-gold opacity-40">◆</span> 
+                        <span class="exclusive-number">July 2025</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 背景装饰 -->
+            <div class="absolute inset-0 pointer-events-none opacity-8">
+                <div class="absolute top-20 left-20 w-px h-32 bg-gradient-to-b from-sovereign-gold to-transparent"></div>
+                <div class="absolute bottom-20 right-20 w-px h-32 bg-gradient-to-t from-sovereign-gold to-transparent"></div>
+                <div class="absolute top-1/2 left-1/4 w-24 h-px bg-gradient-to-r from-sovereign-gold to-transparent"></div>
+                <div class="absolute top-1/3 right-1/4 w-24 h-px bg-gradient-to-l from-sovereign-gold to-transparent"></div>
+            </div>
+        </header>
+
+        <!-- 执行摘要 -->
+        <section id="executive-summary" class="imperial-section" data-title="执行摘要">
+            <div class="sovereign-container">
+                <div class="text-center mb-16">
+                    <h2 class="sovereign-heading text-4xl">执行摘要</h2>
+                    <div class="imperial-tagline mt-4">Executive Summary</div>
+                </div>
+                <div class="executive-quote max-w-4xl mx-auto text-center">
+                    本报告旨在为机构投资者提供一个系统性的分析框架，以应对“稀有金属”行业正在经历的结构性变革。我们认为，该行业的传统定义已不再适用，其核心已转变为由地缘政治、能源转型和高科技应用共同定义的关键矿产领域。
+                </div>
+                <div class="noble-text max-w-5xl mx-auto space-y-8">
+                    <p>本报告的核心论点是：定义该行业的根本矛盾并非地缘上的资源稀缺性，而是中游加工冶炼产能的战略集中与武器化。这一结构性特征，叠加由技术革命驱动的需求超级周期和因地缘政治博弈而加剧的供应链碎片化，共同构成了未来十年本领域投资决策的核心变量。</p>
+                    <p>报告首先解构了“关键矿产”的政策定义，揭示其作为各国产业与安全战略工具的本质，而非单纯的地质学分类。随后，报告深入剖析了从上游开采、中游精炼到下游应用的完整价值链，并明确指出，中游环节是全球竞争的焦点与价值链的“咽喉”，其高度集中化（尤其在中国）是理解整个行业风险与机遇的基石。</p>
+                    <p>在需求端，本报告量化了以电动汽车（EV）为首的能源转型应用所带来的长期、结构性需求增长。分析表明，尽管短期增长率存在波动，但技术采纳的“S曲线”效应预示着大规模市场渗透阶段的到来将持续拉动对上游原材料的需求。</p>
+                    <p>在供给端，本报告对锂、钴、稀土三大核心品种进行了深度剖析。分析显示：锂市场的根本特征是需求变化与供给响应之间存在显著的时间错配；钴市场呈现出来源地和加工控制权的双重寡头垄断格局；稀土市场的核心价值在于永磁材料，其供应链呈现出近乎完全的单一国家主导格局。</p>
+                    <p>最后，本报告审视了全球主要经济体围绕关键矿产制定的产业政策，并分析了其对全球贸易流、资本开支和企业竞争格局的深远影响。对于投资者而言，理解这一由政策驱动的、长达数十年的结构性转变，将是识别长期价值和规避地缘政治风险的关键。</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="sovereign-divider"></div>
+
+        <!-- 第一部分 -->
+        <section id="part-one" class="imperial-section" data-title="战略要务：关键矿产宏观图景">
+            <div class="sovereign-container">
+                <div class="text-center mb-16">
+                    <h2 class="sovereign-heading text-4xl">战略要务</h2>
+                    <div class="imperial-subtitle text-2xl mt-4">定义关键矿产的宏观图景</div>
+                    <div class="imperial-tagline mt-4">Strategic Imperative: Defining the Macro Landscape of Critical Minerals</div>
+                </div>
+                
+                <div class="authority-card mb-12">
+                    <h3 class="sovereign-heading text-2xl mb-6 flex items-center"><i class="material-icons">change_history</i>从“稀有金属”到“关键矿产”：语义与战略的演变</h3>
+                    <div class="noble-text space-y-6">
+                        <p>长期以来，“稀有金属”一词在投资界被广泛使用，但其定义模糊，往往与地质储量的稀缺性相混淆。然而，当前市场的核心矛盾并非源于元素的绝对稀缺，而是源于其经济价值的高度集中和供应链的极端脆弱性。因此，一个更精确、更具操作性的分析框架必须建立在主要经济体官方定义的“关键矿产”（Critical Minerals）概念之上。这些定义不仅是技术分类，更是国家产业政策和安全战略的直接体现。</p>
+                        <p>“关键性”在很大程度上是一种由政策赋予的属性，而非纯粹的地质或市场属性。一种矿产被列入或移出清单，是强烈的政策信号，能够直接影响政府补贴、研发资金流向、项目审批速度乃至国际贸易政策，从而根本性地改变该商品的投资逻辑。</p>
+                    </div>
+                </div>
+
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-2xl mb-6 flex items-center"><i class="material-icons">account_tree</i>价值链剖析：从矿石到磁体</h3>
+                    <div class="noble-text space-y-6">
+                        <p>理解关键矿产行业必须从解构其价值链开始。这条价值链可清晰地划分为三个核心环节：上游（开采）、中游（加工与精炼）和下游（零部件制造与应用）。每个环节都具有截然不同的经济特征、技术壁垒和地缘政治风险，而价值和风险的集中点恰恰位于最易被忽视的中游环节。</p>
+                        <p>对价值链的分析揭示了一个核心的结构性矛盾：上游矿产资源在地理上相对分散，而中游加工和精炼能力却高度集中。数据显示，虽然锂矿主要来自澳大利亚和智利，钴矿来自刚果（金）和印尼，但全球超过70%的钴精炼产能、近60%的锂化合物转化产能以及接近90%的稀土分离产能都集中在中国。未来十年，全球关键矿产领域的资本流动、技术竞争和政策博弈，其主战场将不在于勘探新的矿山，而在于构建一个平行的、非中国主导的中游加工冶炼基础设施。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="sovereign-divider"></div>
+
+        <!-- 第二部分 -->
+        <section id="part-two" class="imperial-section" data-title="需求超级周期：能源与技术驱动">
+            <div class="sovereign-container">
+                <div class="text-center mb-16">
+                    <h2 class="sovereign-heading text-4xl">需求超级周期</h2>
+                    <div class="imperial-subtitle text-2xl mt-4">解构能源转型与技术驱动力</div>
+                    <div class="imperial-tagline mt-4">The Demand Supercycle: Deconstructing Energy Transition and Technological Drivers</div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="authority-card">
+                        <h3 class="sovereign-heading text-xl mb-4 flex items-center"><i class="material-icons">electric_car</i>电动汽车革命的核心催化作用</h3>
+                        <div class="noble-text text-sm">
+                            全球汽车产业向电动化的转型是关键矿产需求增长的最主要、最强劲的驱动引擎。根据IEA的数据，全球电动汽车销量在2023年已接近1400万辆。从技术采纳的“S曲线”理论视角来看，当一项新技术的市场渗透率越过10-15%的临界点后，其普及速度往往会急剧加快。
+                        </div>
+                    </div>
+                    <div class="authority-card">
+                        <h3 class="sovereign-heading text-xl mb-4 flex items-center"><i class="material-icons">storage</i>超越电动汽车：电网储能、风力发电与高科技应用</h3>
+                        <div class="noble-text text-sm">
+                            电网级储能系统、风力发电以及一个全新的强大驱动力——人工智能与数据中心，正在形成一个反射性需求循环。AI的繁荣不仅是半导体行业的需求驱动力，更是整个能源转型矿产 комплексы 的一个重要且可能被市场严重低估的长期需求加速器。
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="investment-logic-card mt-12">
+                     <h3 class="sovereign-heading text-2xl mb-6 flex items-center"><i class="material-icons">battery_charging_full</i>电池化学路径之争（LFP vs. NMC）：一场材料需求的结构性变革</h3>
+                     <div class="noble-text space-y-6">
+                        <p>在电池领域，正极材料的化学路径选择是决定不同金属需求强度的核心变量。磷酸铁锂（LFP）电池因其不含钴和镍，具有显著的成本优势、更长的循环寿命和更高的安全性，其崛起正在从根本上重塑对镍和钴的需求格局。</p>
+                        <p>这一技术路径的分化正在全球电池市场催生一个基于地理和性能的二元结构。西方汽车制造商面临战略困境：是拥抱成本更低但供应链被掌控的LFP技术，还是坚持成本更高且需解决ESG问题的NMC技术？对电池化学路径的持续追踪和分析，是判断未来十年不同关键矿产需求前景的核心。</p>
+                     </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="sovereign-divider"></div>
+
+        <!-- 第三部分 -->
+        <section id="part-three" class="imperial-section" data-title="全球供给格局：核心矿种剖析">
+            <div class="sovereign-container">
+                <div class="text-center mb-16">
+                    <h2 class="sovereign-heading text-4xl">全球供给格局</h2>
+                    <div class="imperial-subtitle text-2xl mt-4">核心矿产品种深度剖析</div>
+                    <div class="imperial-tagline mt-4">Global Supply Landscape: In-depth Analysis of Core Mineral Varieties</div>
+                </div>
+
+                <div class="authority-card mb-12">
+                    <h3 class="sovereign-heading text-2xl mb-6 flex items-center"><i class="material-icons">grain</i>锂：白色黄金的淘金热</h3>
+                    <div class="noble-text space-y-6">
+                        <p>全球锂资源的供给格局由硬岩型锂矿和盐湖卤水提锂主导。其核心结构性矛盾在于需求变化与供给响应之间存在显著的时间错配。一个新的锂资源项目通常需要5到10年才能投产，这种固有的时间滞后性，决定了锂市场必然会经历“繁荣-萧条”的剧烈周期。当前的资本支出削减正在为下一轮供给短缺埋下伏笔。</p>
+                    </div>
+                    <div class="overflow-x-auto mt-8">
+                        <table class="imperial-table text-sm">
+                            <thead>
+                                <tr>
+                                    <th>国家</th>
+                                    <th>2023年产量(吨)</th>
+                                    <th>全球产量份额(%)</th>
+                                    <th>储量(吨)</th>
+                                    <th>全球储量份额(%)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>澳大利亚</td><td class="exclusive-number">74,700</td><td>41.5%</td><td class="exclusive-number">6,200,000</td><td>22.4%</td></tr>
+                                <tr><td>智利</td><td class="exclusive-number">38,000</td><td>21.1%</td><td class="exclusive-number">9,300,000</td><td>33.6%</td></tr>
+                                <tr><td>中国</td><td class="exclusive-number">22,600</td><td>12.6%</td><td class="exclusive-number">3,000,000</td><td>10.8%</td></tr>
+                                <tr><td>阿根廷</td><td class="exclusive-number">6,500</td><td>3.6%</td><td class="exclusive-number">3,600,000</td><td>13.0%</td></tr>
+                                <tr><td>全球总计</td><td class="exclusive-number">180,000</td><td>100.0%</td><td class="exclusive-number">27,690,000</td><td>100.0%</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="authority-card mb-12">
+                    <h3 class="sovereign-heading text-2xl mb-6 flex items-center"><i class="material-icons">public</i>钴：地缘政治的瓶颈</h3>
+                    <div class="noble-text space-y-6">
+                        <p>钴的供应链是所有电池金属中地缘政治风险最高、ESG问题最为突出的领域。它呈现出一种独特的双重垄断结构：上游来源地由刚果（金）和印尼双头垄断，而中游精炼产能则由中国单一主导。尽管LFP电池的兴起对钴的长期需求构成了一定的抑制，但在高性能电池领域，由“DRC矿源+中国精炼”构成的供应链核心地位在可预见的未来仍难以撼动。</p>
+                    </div>
+                     <div class="overflow-x-auto mt-8">
+                        <table class="imperial-table text-sm">
+                            <thead>
+                                <tr>
+                                    <th>国家</th>
+                                    <th>2023年产量(吨)</th>
+                                    <th>全球产量份额(%)</th>
+                                    <th>储量(吨)</th>
+                                    <th>全球储量份额(%)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>刚果（金）</td><td class="exclusive-number">170,000</td><td>73.0%</td><td class="exclusive-number">6,000,000</td><td>52.8%</td></tr>
+                                <tr><td>印度尼西亚</td><td class="exclusive-number">17,000</td><td>7.3%</td><td class="exclusive-number">500,000</td><td>4.4%</td></tr>
+                                <tr><td>俄罗斯</td><td class="exclusive-number">8,800</td><td>3.8%</td><td class="exclusive-number">250,000</td><td>2.2%</td></tr>
+                                <tr><td>澳大利亚</td><td class="exclusive-number">4,600</td><td>2.0%</td><td class="exclusive-number">1,700,000</td><td>15.0%</td></tr>
+                                <tr><td>全球总计</td><td class="exclusive-number">233,000</td><td>100.0%</td><td class="exclusive-number">11,370,000</td><td>100.0%</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-2xl mb-6 flex items-center"><i class="material-icons">bubble_chart</i>稀土元素（REEs）：磁性材料的垄断格局</h3>
+                    <div class="noble-text space-y-6">
+                        <p>稀土市场的核心价值集中在四种用于制造高性能永磁体的元素上：钕、镨、镝和铽。在这一领域，中国从上游开采、中游分离到下游磁体制造的整个价值链上，都占据着近乎绝对的垄断地位。西方国家试图建立独立于中国之外的稀土供应链的努力，正面临一个经典的“囚徒困境”。</p>
+                    </div>
+                    <div class="overflow-x-auto mt-8">
+                        <table class="imperial-table text-sm">
+                            <thead>
+                                <tr>
+                                    <th>国家</th>
+                                    <th>2023年产量(REO吨)</th>
+                                    <th>全球产量份额(%)</th>
+                                    <th>储量(REO吨)</th>
+                                    <th>全球储量份额(%)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>中国</td><td class="exclusive-number">240,000</td><td>68.6%</td><td class="exclusive-number">44,000,000</td><td>40.0%</td></tr>
+                                <tr><td>美国</td><td class="exclusive-number">43,000</td><td>12.3%</td><td class="exclusive-number">1,800,000</td><td>1.6%</td></tr>
+                                <tr><td>缅甸</td><td class="exclusive-number">38,000</td><td>10.9%</td><td class="exclusive-number">N/A</td><td>N/A</td></tr>
+                                <tr><td>澳大利亚</td><td class="exclusive-number">18,000</td><td>5.1%</td><td class="exclusive-number">4,200,000</td><td>3.8%</td></tr>
+                                <tr><td>全球总计</td><td class="exclusive-number">350,000</td><td>100.0%</td><td class="exclusive-number">110,000,000</td><td>100.0%</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 免责声明 -->
+        <section id="disclaimer" class="imperial-section" data-title="免责声明">
+            <div class="sovereign-container">
+                <div class="disclaimer-card text-center">
+                    <h2 class="sovereign-heading text-2xl mb-8">免责声明</h2>
+                    <div class="disclaimer-text max-w-4xl mx-auto">
+                        本报告中的信息均来源于已公开的资料，我司对这些信息的准确性及完整性不作任何保证。报告中的信息和意见仅供参考，并不构成对所述证券买卖的出价或征价。该信息、意见并未考虑到获取本报告人员的具体投资目的、财务状况以及特定需求，在任何时候均不构成对任何人的个人推荐。
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 引用文献 -->
+        <section id="references" class="imperial-section bg-gradient-to-b from-transparent to-black/30" data-title="引用文献">
+            <div class="sovereign-container">
+                <h2 class="sovereign-heading text-3xl mb-12 text-center">引用文献</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl mx-auto">
+                    <!-- Citation items will be dynamically inserted here by JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 精美垂直进度条系统
+            const progressBar = document.querySelector('.reading-progress');
+            const progressFill = document.querySelector('.reading-progress-fill');
+            const progressTooltip = document.getElementById('progress-tooltip');
+            const sections = document.querySelectorAll('section[id], header[id]');
+
+            let currentSectionTitle = '';
+            let sectionsData = [];
+
+            // 初始化章节数据
+            function initSections() {
+                sectionsData = Array.from(sections).map(section => ({
+                    id: section.getAttribute('id'),
+                    title: section.getAttribute('data-title') || '未知章节',
+                    offsetTop: section.offsetTop,
+                    offsetHeight: section.offsetHeight
+                }));
+            }
+
+            // 更新进度条和当前章节
+            function updateProgress() {
+                const scrolled = window.pageYOffset || document.documentElement.scrollTop;
+                const maxHeight = document.documentElement.scrollHeight - window.innerHeight;
+                const progress = maxHeight > 0 ? (scrolled / maxHeight) * 100 : 0;
+                
+                progressFill.style.height = `${progress}%`;
+                
+                let currentSection = '';
+                sectionsData.forEach(section => {
+                    if (scrolled >= section.offsetTop - window.innerHeight / 2) {
+                        currentSection = section.id;
+                        currentSectionTitle = section.title;
+                    }
+                });
+            }
+
+            // 点击进度条跳转
+            progressBar.addEventListener('click', (e) => {
+                const rect = progressBar.getBoundingClientRect();
+                const clickY = e.clientY - rect.top;
+                const progressHeight = rect.height;
+                const clickPercent = clickY / progressHeight;
+                
+                const maxHeight = document.documentElement.scrollHeight - window.innerHeight;
+                const targetScroll = maxHeight * clickPercent;
+                
+                window.scrollTo({
+                    top: targetScroll,
+                    behavior: 'smooth'
+                });
+            });
+
+            // 悬停显示标题
+            progressBar.addEventListener('mouseenter', () => {
+                if (currentSectionTitle) {
+                    progressTooltip.textContent = currentSectionTitle;
+                    progressTooltip.classList.add('show');
+                }
+            });
+
+            progressBar.addEventListener('mouseleave', () => {
+                progressTooltip.classList.remove('show');
+            });
+
+            progressTooltip.addEventListener('mouseenter', () => {
+                progressTooltip.classList.add('show');
+            });
+
+            progressTooltip.addEventListener('mouseleave', () => {
+                progressTooltip.classList.remove('show');
+            });
+
+            // 事件监听
+            window.addEventListener('resize', () => {
+                setTimeout(initSections, 100);
+            });
+
+            window.addEventListener('scroll', updateProgress, { passive: true });
+
+            // 初始化
+            initSections();
+            updateProgress();
+
+            // 动态生成引用文献
+            const citations = [
+                { id: 1, text: "What is a critical mineral? | U.S. Geological Survey", url: "https://www.usgs.gov/faqs/what-a-critical-mineral" },
+                { id: 2, text: "www.usgs.gov, faqs/what-a-critical-mineral", url: "https://www.usgs.gov/faqs/what-a-critical-mineral#:~:text=The%20Energy%20Act%20of%202020,would%20have%20significant%20consequences%20for" },
+                { id: 3, text: "Critical Mineral Resources: The U.S. Geological Survey (USGS) Role | Congress.gov", url: "https://www.congress.gov/crs-product/R48005" },
+                { id: 4, text: "What Are Critical Materials and Critical Minerals? - Department of Energy", url: "https://www.energy.gov/cmm/what-are-critical-materials-and-critical-minerals" },
+                { id: 5, text: "GB standards,GB/T,Guobiao Standard", url: "https://www.gbstandards.org/" },
+                { id: 6, text: "National Standards of the People's Republic of China - Wikipedia", url: "https://en.wikipedia.org/wiki/National_Standards_of_the_People%27s_Republic_of_China" },
+                { id: 7, text: "Chinese Standard GB/T;GBT;GB;YY/T;QC/T", url: "https://www.chinesestandard.net/Index.aspx" },
+                { id: 8, text: "Standards Used in China - Standards portal", url: "https://www.standardsportal.org/usa_en/prc_standards_system/standards_used_in_china.aspx" },
+                { id: 9, text: "EASE Briefing: The Critical Raw Materials Act", url: "https://ease-storage.eu/wp-content/uploads/2023/04/EASE-Briefing-The-Critical-Raw-Materials-Act-1.pdf" },
+                { id: 10, text: "Critical Raw Materials Act - European Commission", url: "https://single-market-economy.ec.europa.eu/sectors/raw-materials/areas-specific-interest/critical-raw-materials/critical-raw-materials-act_en" },
+                { id: 11, text: "European Critical Raw Materials Act", url: "https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/european-green-deal/green-deal-industrial-plan/european-critical-raw-materials-act_en" },
+                { id: 12, text: "Europe: The EU's Critical Raw Materials Act enters into force", url: "https://insightplus.bakermckenzie.com/bm/projects/europe-the-eus-critical-raw-materials-act-enters-into-force" },
+                { id: 13, text: "Mineral Commodity Summaries 2024 (Lithium)", url: "https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-lithium.pdf" },
+                { id: 14, text: "Mineral Commodity Summaries 2024 - Cobalt", url: "https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-cobalt.pdf" },
+                { id: 15, text: "Rare Earths Statistics and Information | U.S. Geological Survey", url: "https://www.usgs.gov/centers/national-minerals-information-center/rare-earths-statistics-and-information" },
+                { id: 16, text: "Chinese Rare Earth Elements (REE) & Metals Dominance Analysis - Interos", url: "https://www.interos.ai/wp-content/uploads/2022/04/Interos-Report-Explores-Concentration-Risk-of-Rare-Earth-Minerals-and-China.pdf" },
+                { id: 17, text: "Written evidence submitted by the Cobalt Institute (MIN0003)", url: "https://committees.parliament.uk/writtenevidence/117331/pdf/" },
+                { id: 18, text: "Rare earth elements facts - Natural Resources Canada", url: "https://natural-resources.canada.ca/minerals-mining/mining-data-statistics-analysis/minerals-metals-facts/rare-earth-elements-facts" },
+                { id: 19, text: "Beyond NMC batteries: Supply chain issues for emerging battery technologies – IEA", url: "https://www.iea.org/reports/global-critical-minerals-outlook-2025/beyond-nmc-batteries-supply-chain-issues-for-emerging-battery-technologies" },
+                { id: 20, text: "Neodymium-Iron-Boron Magnet Market - IMARC Group", url: "https://www.imarcgroup.com/neodymium-iron-boron-magnet-manufacturing-plant" },
+                { id: 21, text: "NdFeB Magnets Market Size and Share | Statistics - 2034 - Fact.MR", url: "https://www.factmr.com/report/ndfeb-magnets-market" },
+                { id: 22, text: "Executive summary – Global Critical Minerals Outlook 2025 – IEA", url: "https://www.iea.org/reports/global-critical-minerals-outlook-2025/executive-summary" },
+                { id: 23, text: "Canadian Refinery: Breaking North America's Cobalt Import Dependency", url: "https://discoveryalert.com.au/news/cobalt-supply-chain-revolution-north-america-2025/" },
+                { id: 24, text: "Overview of Final 30D New Clean Vehicle Tax Credit Requirements - ZETA", url: "https://www.zeta.org/insights/overview-of-final-30d-new-clean-vehicle-tax-credit-requirements" },
+                { id: 25, text: "Anticipated Direction of Forthcoming Proposed Guidance on Critical Mineral...", url: "https://home.treasury.gov/system/files/136/30DWhite-Paper.pdf" },
+                { id: 26, text: "Executive summary – Global EV Outlook 2024 – IEA", url: "https://www.iea.org/reports/global-ev-outlook-2024/executive-summary" },
+                { id: 27, text: "Power Generation from Renewables Set to Jump 84%... - BloombergNEF", url: "https://about.bnef.com/insights/clean-energy/power-generation-from-renewables-set-to-jump-84-in-next-five-years-as-demand-from-new-data-centers-surges-bloombergnef/" },
+                { id: 28, text: "Executive summary – Global Critical Minerals Outlook 2024 – IEA", url: "https://www.iea.org/reports/global-critical-minerals-outlook-2024/executive-summary" },
+                { id: 29, text: "Global Energy Storage Growth Upheld by New Markets | BloombergNEF", url: "https://about.bnef.com/insights/clean-energy/global-energy-storage-growth-upheld-by-new-markets/" },
+                { id: 30, text: "Neodymium Iron Boron Magnets Market Share, Forecast [2024-2032]", url: "https://www.globalgrowthinsights.com/market-reports/neodymium-iron-boron-magnets-market-102157" },
+                { id: 31, text: "BloombergNEF's New Energy Outlook - YouTube", url: "https://www.youtube.com/watch?v=1deCc5h8nj0" },
+                { id: 32, text: "Critical Minerals - Eni", url: "https://www.eni.com/content/dam/enicom/documents/eng/visione/wer/2025/WER-2025-Critical-Minerals.pdf" },
+                { id: 33, text: "Cobalt Market Report 2024", url: "https://www.cobaltinstitute.org/wp-content/uploads/2025/05/Cobalt-Market-Report-2024.pdf" },
+                { id: 34, text: "LFP battery costs? - Thunder Said Energy", url: "https://thundersaidenergy.com/2024/09/26/lfp-batteries-cathode-glow/" },
+                { id: 35, text: "Lithium-Ion Battery Pack Prices See Largest Drop Since 2017... - BloombergNEF", url: "https://about.bnef.com/insights/commodities/lithium-ion-battery-pack-prices-see-largest-drop-since-2017-falling-to-115-per-kilowatt-hour-bloombergnef/" },
+                { id: 36, text: "Lithium facts - Natural Resources Canada", url: "https://natural-resources.canada.ca/minerals-mining/mining-data-statistics-analysis/minerals-metals-facts/lithium-facts" },
+                { id: 37, text: "Critical Minerals - Eni (WER 2024)", url: "https://www.eni.com/content/dam/enicom/documents/eng/visione/wer/4_WER_2024_CRITICAL_MINERALS.pdf" },
+                { id: 38, text: "Albemarle Surprises Markets with Unexpected Q2 Profit", url: "https://discoveryalert.com.au/news/albemarle-profitability-2025-lithium-market/" },
+                { id: 39, text: "SIGMA LITHIUM REPORTS 4Q24 AND FY24 RESULTS", url: "https://ir.sigmalithiumresources.com/news-releases/news-release-details/sigma-lithium-reports-4q24-and-fy24-results-strong-margin" },
+                { id: 40, text: "Special Issues | Benchmark Source", url: "https://source.benchmarkminerals.com/publications/special-issues" },
+                { id: 41, text: "Albemarle Navigates Lithium Price Slump...", url: "https://discoveryalert.com.au/news/albemarle-lithium-price-downturn-2025-navigating/" },
+                { id: 42, text: "Cobalt facts - Natural Resources Canada", url: "https://natural-resources.canada.ca/minerals-mining/mining-data-statistics-analysis/minerals-metals-facts/cobalt-facts" },
+                { id: 43, text: "Cobalt - Responsible Minerals Initiative", url: "https://www.responsiblemineralsinitiative.org/minerals-due-diligence/cobalt/" },
+                { id: 44, text: "Sustainability of artisanal mining of cobalt in DR Congo - PMC", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6166862/" },
+                { id: 45, text: "Cobalt ESG Risks Threaten Electric Vehicle Supply Chain - Sustainalytics", url: "https://www.sustainalytics.com/esg-research/resource/investors-esg-blog/cobalt-esg-risks-threaten-electric-vehicle-supply-chain" },
+                { id: 46, text: "CMOC Releases 2024 Annual Results", url: "https://en.cmoc.com/html/2025/News_0324/73.html" },
+                { id: 47, text: "2024 Preliminary Results Presentation - Glencore", url: "https://www.glencore.com/.rest/api/v1/documents/static/12da8f07-23d7-4150-91b8-cb8fc651cbca/20250219-GLEN-2024-Preliminary-Results-Presentation.pdf" },
+                { id: 48, text: "Rare earth elements: Auto industry looks beyond China | S&P Global", url: "https://www.spglobal.com/automotive-insights/en/blogs/2025/07/rare-earth-elements-auto-industry-china" },
+                { id: 49, text: "Rare-earth metals - Mineral Commodity Summaries 2024 - USGS.gov", url: "https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-rare-earths.pdf" },
+                { id: 50, text: "Global demand for magnetic Rare Earth Elements expected to triple by 2035", url: "https://theoregongroup.com/commodities/rare-earths/global-demand-for-magnetic-rare-earth-elements-expected-to-triple-by-2035/" },
+                { id: 51, text: "www.mckinsey.com, powering the energy transitions motor", url: "https://www.mckinsey.com/industries/metals-and-mining/our-insights/powering-the-energy-transitions-motor-circular-rare-earth-elements#:~:text=Moving%20forward%2C%20global%20demand%20for,renewable%20capacity%20expansions%20in%20wind." },
+                { id: 52, text: "Rare-Earth Metal Compounds in China Trade | OEC", url: "https://oec.world/en/profile/bilateral-product/rare-earth-metal-compounds/reporter/chn" },
+                { id: 53, text: "Analysis of China's Rare Earth Import and Export in | SMM", url: "https://news.metal.com/newscontent/102811610/" },
+                { id: 54, text: "Praseodymium Price Now - Strategic Metals Invest", url: "https://strategicmetalsinvest.com/praseodymium-prices/" },
+                { id: 55, text: "Neodymium Price Today - Strategic Metals Invest", url: "https://strategicmetalsinvest.com/neodymium-prices/" }
+            ];
+
+            const citationContainer = document.querySelector('#references .grid');
+            citations.forEach(citation => {
+                const item = document.createElement('div');
+                item.className = 'citation-item';
+                item.innerHTML = `<a href="${citation.url}" target="_blank" rel="noopener noreferrer">${citation.id}. ${citation.text}</a>`;
+                citationContainer.appendChild(item);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,2224 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全球工业金属行业深度分析报告 | Global Industrial Metals Industry Report</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Anime.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    
+    <!-- ECharts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.4.3/echarts.min.js"></script>
+    
+    <style>
+        :root {
+            --primary-gold: #FFD700;
+            --secondary-gold: #FFA500;
+            --accent-gold: #DAA520;
+            --deep-black: #0A0A0A;
+            --matte-black: #1A1A1A;
+            --soft-black: #2A2A2A;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, var(--deep-black) 0%, var(--matte-black) 100%);
+            color: var(--primary-gold);
+            overflow-x: hidden;
+        }
+        
+        .playfair {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .text-gradient {
+            background: linear-gradient(135deg, var(--primary-gold) 0%, var(--secondary-gold) 50%, var(--accent-gold) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .border-gradient {
+            border: 1px solid transparent;
+            background: linear-gradient(var(--matte-black), var(--matte-black)) padding-box,
+                        linear-gradient(135deg, var(--primary-gold), var(--secondary-gold)) border-box;
+        }
+        
+        .glass-effect {
+            backdrop-filter: blur(20px);
+            background: rgba(26, 26, 26, 0.8);
+            border: 1px solid rgba(255, 215, 0, 0.2);
+        }
+        
+        .parallax-container {
+            perspective: 1000px;
+            transform-style: preserve-3d;
+        }
+        
+        .parallax-layer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        
+        .number-highlight {
+            background: linear-gradient(135deg, var(--primary-gold) 0%, var(--secondary-gold) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+        }
+        
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent 0%, var(--primary-gold) 50%, transparent 100%);
+            margin: 4rem 0;
+        }
+        
+        .hover-glow:hover {
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
+        }
+        
+        .scroll-indicator {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary-gold) 0%, var(--secondary-gold) 100%);
+            transform-origin: left;
+            z-index: 1000;
+        }
+        
+        .floating-nav {
+            position: fixed;
+            top: 50%;
+            right: 2rem;
+            transform: translateY(-50%);
+            z-index: 100;
+        }
+        
+        .floating-nav a {
+            display: block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255, 215, 0, 0.3);
+            margin: 1rem 0;
+            transition: all 0.3s ease;
+        }
+        
+        .floating-nav a.active {
+            background: var(--primary-gold);
+            transform: scale(1.5);
+        }
+        
+        @media (max-width: 768px) {
+            .floating-nav {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 滚动进度指示器 -->
+    <div class="scroll-indicator"></div>
+    
+    <!-- 浮动导航 -->
+    <nav class="floating-nav">
+        <a href="#executive-summary" data-section="executive-summary"></a>
+        <a href="#macro-analysis" data-section="macro-analysis"></a>
+        <a href="#industry-analysis" data-section="industry-analysis"></a>
+        <a href="#commodity-analysis" data-section="commodity-analysis"></a>
+        <a href="#company-analysis" data-section="company-analysis"></a>
+        <a href="#future-forces" data-section="future-forces"></a>
+    </nav>
+    
+    <!-- 页面头部 -->
+    <header class="min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="parallax-container w-full h-full">
+            <!-- 背景动画效果 -->
+            <div class="absolute inset-0 opacity-10">
+                <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-full blur-3xl"></div>
+                <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gradient-to-r from-orange-400 to-yellow-500 rounded-full blur-3xl"></div>
+            </div>
+            
+            <div class="container mx-auto px-6 text-center relative z-10">
+                <!-- 报告标题 -->
+                <h1 class="playfair text-6xl md:text-8xl font-bold mb-8 text-gradient leading-tight">
+                    全球工业金属行业
+                    <br>
+                    深度分析报告
+                </h1>
+                
+                <div class="text-2xl md:text-3xl font-light mb-4 opacity-80">
+                    Global Industrial Metals Industry Analysis Report
+                </div>
+                
+                <div class="text-lg md:text-xl mb-12 opacity-60">
+                    在周期性波动与结构性变革中重塑价值链
+                    <br>
+                    Reshaping Value Chains Through Cyclical Volatility and Structural Transformation
+                </div>
+                
+                <!-- 发布日期 -->
+                <div class="glass-effect rounded-lg p-6 mb-12 inline-block">
+                    <div class="text-sm uppercase tracking-wider opacity-60 mb-2">报告发布日期 / Publication Date</div>
+                    <div class="text-xl font-semibold">
+                        <span class="number-highlight">2025年7月3日</span> / <span class="number-highlight">July 3, 2025</span>
+                    </div>
+                </div>
+                
+                <!-- 下滑提示 -->
+                <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+                    <div class="animate-bounce">
+                        <i class="fas fa-chevron-down text-2xl opacity-60"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- 免责声明 -->
+    <section class="py-16 border-gradient rounded-lg mx-6 mb-16">
+        <div class="container mx-auto px-6">
+            <div class="glass-effect rounded-lg p-8">
+                <h2 class="playfair text-2xl font-bold mb-6 text-center text-gradient">免责声明</h2>
+                <div class="text-sm leading-relaxed opacity-80 max-w-4xl mx-auto">
+                    本报告由虚空有物公司行业研究部编制，旨在为机构投资者及高净值客户提供对全球工业金属行业的深度分析。报告中的信息和数据均来源于公开可查的资料，包括但不限于行业协会报告、政府统计数据、企业年度报告、交易所数据及权威第三方研究。我们力求报告内容的客观、准确，但不对其完整性或准确性做出任何保证。本报告中的分析、结论和观点仅为研究目的，不构成任何形式的投资建议。投资者应基于自身的独立判断进行投资决策，并自行承担相关风险。在任何情况下，本公司及其雇员不对因使用本报告中的任何内容而引致的任何损失负任何责任。未经本公司书面许可，任何机构和个人不得以任何形式翻版、复制、发表或引用本报告的任何部分。
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 内容分割线 -->
+    <div class="section-divider"></div>
+    
+    <!-- 执行摘要 -->
+    <section id="executive-summary" class="py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="playfair text-5xl font-bold mb-16 text-center text-gradient">执行摘要</h2>
+            
+            <div class="max-w-6xl mx-auto">
+                <div class="text-lg leading-relaxed mb-12 opacity-90">
+                    全球工业金属行业正处于一个历史性的十字路口，其运行逻辑正在被两大力量重塑：传统的宏观经济周期与深刻的全球性结构变革。本报告旨在构建一个系统性的认知框架，以剖析这一复杂行业的内在驱动力、结构性矛盾与未来演化趋势。
+                </div>
+                
+                <!-- 关键亮点卡片 -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                    <div class="glass-effect rounded-lg p-6 hover-glow">
+                        <div class="text-3xl font-bold text-gradient mb-2">3.2%</div>
+                        <div class="text-sm opacity-60 mb-2">全球GDP增长预测</div>
+                        <div class="text-xs opacity-40">温和但低于历史均值</div>
+                    </div>
+                    
+                    <div class="glass-effect rounded-lg p-6 hover-glow">
+                        <div class="text-3xl font-bold text-gradient mb-2">80-180kg</div>
+                        <div class="text-sm opacity-60 mb-2">电动汽车铜用量</div>
+                        <div class="text-xs opacity-40">相比燃油车20kg大幅提升</div>
+                    </div>
+                    
+                    <div class="glass-effect rounded-lg p-6 hover-glow">
+                        <div class="text-3xl font-bold text-gradient mb-2">40%</div>
+                        <div class="text-sm opacity-60 mb-2">电力成本占铝冶炼成本</div>
+                        <div class="text-xs opacity-40">能源结构决定竞争力</div>
+                    </div>
+                </div>
+                
+                <!-- 宏观经济与政策超级周期 -->
+                <div class="mb-16">
+                    <h3 class="playfair text-2xl font-bold mb-6 text-gradient">宏观经济与政策超级周期</h3>
+                    <div class="leading-relaxed opacity-90 space-y-4">
+                        <p>全球经济呈现出一种"双速"运行的特征。一方面，以国际货币基金组织（IMF）和世界银行预测的温和但低于历史均值的全球GDP增长为代表，传统周期性需求（如房地产和一般制造业）面临增长乏力的挑战。中国固定资产投资增速的放缓，尤其是房地产投资的持续下滑，印证了这一趋势。</p>
+                        
+                        <p>另一方面，由全球脱碳政策驱动的能源转型正催生一股强大的、非周期性的世俗需求浪潮。交通运输的电动化、可再生能源的部署以及电网的现代化升级，正对铜、铝、镍等关键金属产生结构性的需求倍增效应。这种"绿色需求"具有政策强制性和长期性，为相关金属提供了穿越经济周期的底层支撑。</p>
+                    </div>
+                </div>
+                
+                <!-- 行业结构与价值链剖析 -->
+                <div class="mb-16">
+                    <h3 class="playfair text-2xl font-bold mb-6 text-gradient">行业结构与价值链剖析</h3>
+                    <div class="leading-relaxed opacity-90 space-y-4">
+                        <p>工业金属的价值链从上游的矿山开采，到中游的冶炼精炼，再到下游的加工制造，环环相扣。当前，价值链各环节的利润分配正在发生剧烈变化。铜市场的冶炼加工费（TC/RCs）已跌至历史性的负值区间，这揭示了全球铜矿供应相对于冶炼产能的结构性短缺，预示着未来精炼铜市场的供应压力。</p>
+                        
+                        <p>铝的价值链核心在于能源，电力成本占冶炼成本高达40%，使得能源结构和碳排放成为其竞争力的决定性因素。镍的价值链则出现了显著的"双轨制"分化：一条服务于不锈钢市场的传统火法冶金路径，以及一条服务于电池行业的新兴湿法冶金（HPAL）路径，后者正由印尼主导，并深刻改变了全球镍的成本曲线和定价逻辑。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 主要商品展望 -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <h3 class="playfair text-3xl font-bold mb-12 text-center text-gradient">主要商品市场展望</h3>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- 铜 -->
+                <div class="glass-effect rounded-lg p-6 hover-glow">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-bolt text-2xl text-gradient mr-3"></i>
+                        <h4 class="playfair text-xl font-bold">铜</h4>
+                    </div>
+                    <div class="text-sm opacity-60 mb-2">电气化导体</div>
+                    <div class="text-xs leading-relaxed opacity-80">
+                        尽管短期精炼铜市场可能呈现供需平衡甚至小幅过剩，但上游铜精矿的严重短缺是更强烈的长期信号，预示着未来精炼铜供应将面临瓶颈。
+                    </div>
+                </div>
+                
+                <!-- 铝 -->
+                <div class="glass-effect rounded-lg p-6 hover-glow">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-feather text-2xl text-gradient mr-3"></i>
+                        <h4 class="playfair text-xl font-bold">铝</h4>
+                    </div>
+                    <div class="text-sm opacity-60 mb-2">轻量化冠军</div>
+                    <div class="text-xs leading-relaxed opacity-80">
+                        其需求受益于汽车和航空航天领域。其高能耗的生产特性使其成为碳定价政策的焦点，未来市场将分化为"绿色铝"和"高碳铝"。
+                    </div>
+                </div>
+                
+                <!-- 镍 -->
+                <div class="glass-effect rounded-lg p-6 hover-glow">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-battery-three-quarters text-2xl text-gradient mr-3"></i>
+                        <h4 class="playfair text-xl font-bold">镍</h4>
+                    </div>
+                    <div class="text-sm opacity-60 mb-2">电池赋能者</div>
+                    <div class="text-xs leading-relaxed opacity-80">
+                        市场正被印尼的巨大产能所主导，导致全球市场陷入显著的供应过剩。技术路径的变革打通了不锈钢和电池两大市场。
+                    </div>
+                </div>
+                
+                <!-- 锌 -->
+                <div class="glass-effect rounded-lg p-6 hover-glow">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-shield-alt text-2xl text-gradient mr-3"></i>
+                        <h4 class="playfair text-xl font-bold">锌</h4>
+                    </div>
+                    <div class="text-sm opacity-60 mb-2">钢铁卫士</div>
+                    <div class="text-xs leading-relaxed opacity-80">
+                        其需求与传统的建筑和汽车行业高度绑定，是观察全球传统工业经济景气度的重要风向标。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 内容分割线 -->
+    <div class="section-divider"></div>
+    
+    <!-- 第I部分：宏观经济与政策超级周期 -->
+    <section id="macro-analysis" class="py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="playfair text-5xl font-bold mb-16 text-center text-gradient">第I部分：宏观经济与政策超级周期</h2>
+            
+            <div class="max-w-6xl mx-auto">
+                <div class="text-lg leading-relaxed mb-16 opacity-90">
+                    工业金属作为全球经济的基石，其需求本质上是宏观经济活动的映射。然而，当前的市场驱动力已超越传统的商业周期范畴。本部分旨在剖析驱动工业金属行业的双重力量：与全球工业产出同步的"周期性引擎"，以及由全球脱碳政策催生的、具有长期性和结构性影响的"世俗超级周期"。
+                </div>
+                
+                <!-- GDP增长预测图表 -->
+                <div class="glass-effect rounded-lg p-8 mb-16">
+                    <h3 class="playfair text-2xl font-bold mb-6 text-gradient">全球GDP增长预测</h3>
+                    <div id="gdp-chart" style="height: 400px;"></div>
+                    <div class="mt-4 text-sm opacity-60">
+                        数据来源：国际货币基金组织(IMF)和世界银行预测
+                    </div>
+                </div>
+                
+                <!-- 制造业PMI -->
+                <div class="grid md:grid-cols-2 gap-8 mb-16">
+                    <div class="glass-effect rounded-lg p-6">
+                        <h4 class="playfair text-xl font-bold mb-4 text-gradient">制造业PMI动态</h4>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center">
+                                <span>中国制造业PMI</span>
+                                <span class="number-highlight text-lg font-bold">49.3</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-gradient-to-r from-red-500 to-orange-500 h-2 rounded-full" style="width: 98.6%"></div>
+                            </div>
+                            
+                            <div class="flex justify-between items-center">
+                                <span>欧元区制造业PMI</span>
+                                <span class="number-highlight text-lg font-bold">49.5</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-gradient-to-r from-red-500 to-orange-500 h-2 rounded-full" style="width: 99%"></div>
+                            </div>
+                        </div>
+                        <div class="mt-4 text-xs opacity-60">
+                            50以下表示制造业收缩
+                        </div>
+                    </div>
+                    
+                    <div class="glass-effect rounded-lg p-6">
+                        <h4 class="playfair text-xl font-bold mb-4 text-gradient">中国固定资产投资</h4>
+                        <div class="text-center">
+                            <div class="text-4xl font-bold number-highlight mb-2">2.8%</div>
+                            <div class="text-sm opacity-60 mb-4">2025年1-6月累计同比增长</div>
+                            <div class="grid grid-cols-2 gap-4 text-xs">
+                                <div>
+                                    <div class="text-green-400 font-bold">制造业投资 +8.5%</div>
+                                    <div class="opacity-60">强劲增长</div>
+                                </div>
+                                <div>
+                                    <div class="text-red-400 font-bold">房地产投资 -10.7%</div>
+                                    <div class="opacity-60">持续下滑</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 能源转型需求 -->
+                <div class="glass-effect rounded-lg p-8 mb-16">
+                    <h3 class="playfair text-2xl font-bold mb-6 text-gradient">能源转型驱动的结构性需求</h3>
+                    
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="text-center">
+                            <i class="fas fa-car text-4xl text-gradient mb-4"></i>
+                            <h4 class="text-lg font-bold mb-2">交通电气化</h4>
+                            <div class="text-sm opacity-80 leading-relaxed">
+                                一辆电动汽车的铜用量是燃油车的<span class="number-highlight font-bold">4-9倍</span>，从20公斤跃升至80-180公斤
+                            </div>
+                        </div>
+                        
+                        <div class="text-center">
+                            <i class="fas fa-solar-panel text-4xl text-gradient mb-4"></i>
+                            <h4 class="text-lg font-bold mb-2">可再生能源</h4>
+                            <div class="text-sm opacity-80 leading-relaxed">
+                                太阳能和风能部署，以及配套的电网升级，创造了对铜、铝的巨大需求
+                            </div>
+                        </div>
+                        
+                        <div class="text-center">
+                            <i class="fas fa-battery-full text-4xl text-gradient mb-4"></i>
+                            <h4 class="text-lg font-bold mb-2">动力电池</h4>
+                            <div class="text-sm opacity-80 leading-relaxed">
+                                镍在高能量密度电池中的关键作用，电池行业占全球镍消费的快速增长份额
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 资本环境与地缘政治 -->
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="glass-effect rounded-lg p-6">
+                        <h4 class="playfair text-xl font-bold mb-4 text-gradient">
+                            <i class="fas fa-university mr-2"></i>
+                            货币政策环境
+                        </h4>
+                        <div class="space-y-4">
+                            <div class="flex justify-between">
+                                <span>美联储利率区间</span>
+                                <span class="number-highlight font-bold">4.25%-4.50%</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>全球平均利率预测</span>
+                                <span class="number-highlight font-bold">~4%</span>
+                            </div>
+                            <div class="text-xs opacity-60">
+                                "高利率长期化"环境显著提高矿业项目资本门槛
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="glass-effect rounded-lg p-6">
+                        <h4 class="playfair text-xl font-bold mb-4 text-gradient">
+                            <i class="fas fa-globe text-gradient mr-2"></i>
+                            地缘政治影响
+                        </h4>
+                        <div class="space-y-3">
+                            <div class="border-l-2 border-yellow-500 pl-3">
+                                <div class="font-semibold">资源民族主义</div>
+                                <div class="text-xs opacity-80">印尼禁止镍矿出口，智利国家锂战略</div>
+                            </div>
+                            <div class="border-l-2 border-yellow-500 pl-3">
+                                <div class="font-semibold">碳边境调节机制</div>
+                                <div class="text-xs opacity-80">欧盟CBAM将重塑全球铝贸易流向</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="section-divider"></div>
+    
+    <!-- 第II部分：工业金属行业剖析 -->
+    <section id="industry-analysis" class="py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="playfair text-5xl font-bold mb-16 text-center text-gradient">第II部分：工业金属行业剖析</h2>
+            
+            <div class="max-w-6xl mx-auto">
+                <!-- 价值链流程图 -->
+                <div class="glass-effect rounded-lg p-8 mb-16">
+                    <h3 class="playfair text-2xl font-bold mb-8 text-gradient">价值链：从矿体到终端市场</h3>
+                    
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-mountain text-xl text-black"></i>
+                            </div>
+                            <h4 class="font-bold text-lg mb-2">上游：采矿与选矿</h4>
+                            <div class="text-sm opacity-80 leading-relaxed">
+                                开采含金属矿石，进行选矿富集，将低品位矿石转化为高品位精矿
+                            </div>
+                            <div class="mt-3 text-xs opacity-60">
+                                资本密集型，依赖矿石品位和剥采比
+                            </div>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-gradient-to-r from-orange-400 to-red-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-fire text-xl text-white"></i>
+                            </div>
+                            <h4 class="font-bold text-lg mb-2">中游：冶炼与精炼</h4>
+                            <div class="text-sm opacity-80 leading-relaxed">
+                                能源消耗最密集环节，将精矿转化为高纯度金属
+                            </div>
+                            <div class="mt-3 text-xs opacity-60">
+                                价值创造关键环节，电力成本占主导
+                            </div>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-cogs text-xl text-white"></i>
+                            </div>
+                            <h4 class="font-bold text-lg mb-2">下游：加工与制造</h4>
+                            <div class="text-sm opacity-80 leading-relaxed">
+                                精炼金属加工成终端可用形态，连接制造业经济
+                            </div>
+                            <div class="mt-3 text-xs opacity-60">
+                                需求直接与PMI等工业活动指标挂钩
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- TC/RCs危机 -->
+                <div class="glass-effect rounded-lg p-8 mb-16">
+                    <h3 class="playfair text-2xl font-bold mb-6 text-gradient">铜市场TC/RCs危机信号</h3>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <div id="tc-rc-chart" style="height: 300px;"></div>
+                        </div>
+                        <div class="flex flex-col justify-center">
+                            <div class="space-y-4">
+                                <div class="border-l-4 border-red-500 pl-4">
+                                    <div class="font-bold text-lg">2024年长协基准价</div>
+                                    <div class="number-highlight text-2xl">$80/吨</div>
+                                </div>
+                                <div class="border-l-4 border-red-600 pl-4">
+                                    <div class="font-bold text-lg">2025年长协基准价</div>
+                                    <div class="number-highlight text-2xl">$0/吨</div>
+                                </div>
+                                <div class="border-l-4 border-red-700 pl-4">
+                                    <div class="font-bold text-lg">现货市场价格</div>
+                                    <div class="number-highlight text-2xl">-$45/吨</div>
+                                </div>
+                            </div>
+                            <div class="mt-6 text-sm opacity-80">
+                                TC/RCs崩溃表明全球铜精矿供应相对于冶炼产能出现结构性短缺
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 全球供应架构 -->
+                <div class="glass-effect rounded-lg p-8 mb-16">
+                    <h3 class="playfair text-2xl font-bold mb-8 text-gradient">全球供应架构</h3>
+                    
+                    <!-- 主要金属产量分布 -->
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-gradient mb-2">2,200万吨</div>
+                            <div class="font-semibold mb-2">铜 2023年产量</div>
+                            <div class="text-xs opacity-60 space-y-1">
+                                <div>智利 23%</div>
+                                <div>秘鲁 12%</div>
+                                <div>刚果(金) 11%</div>
+                            </div>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-gradient mb-2">7,000万吨</div>
+                            <div class="font-semibold mb-2">铝 2023年产量</div>
+                            <div class="text-xs opacity-60 space-y-1">
+                                <div>中国 59%</div>
+                                <div>印度 6%</div>
+                                <div>俄罗斯 5%</div>
+                            </div>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-gradient mb-2">370万吨</div>
+                            <div class="font-semibold mb-2">镍 2024年产量</div>
+                            <div class="text-xs opacity-60 space-y-1">
+                                <div>印尼 >50%</div>
+                                <div>菲律宾</div>
+                                <div>俄罗斯</div>
+                            </div>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-gradient mb-2">1,200万吨</div>
+                            <div class="font-semibold mb-2">锌 2024年产量</div>
+                            <div class="text-xs opacity-60 space-y-1">
+                                <div>中国 33%</div>
+                                <div>秘鲁 11%</div>
+                                <div>澳大利亚 9%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 成本曲线重要性 -->
+                <div class="glass-effect rounded-lg p-8">
+                    <h3 class="playfair text-2xl font-bold mb-6 text-gradient">成本曲线：竞争的护城河</h3>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="font-bold text-lg mb-4">成本定义</h4>
+                            <div class="space-y-3">
+                                <div class="border-l-3 border-yellow-500 pl-3">
+                                    <div class="font-semibold">C1现金成本</div>
+                                    <div class="text-sm opacity-80">直接现金支出，扣除副产品收入</div>
+                                </div>
+                                <div class="border-l-3 border-yellow-500 pl-3">
+                                    <div class="font-semibold">总维持成本(AISC)</div>
+                                    <div class="text-sm opacity-80">包含维持性资本支出的全面成本</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-bold text-lg mb-4">能源成本影响</h4>
+                            <div class="text-center">
+                                <div class="text-4xl font-bold number-highlight mb-2">40%</div>
+                                <div class="text-sm opacity-60 mb-4">电力成本占铝冶炼总成本</div>
+                                <div class="text-xs opacity-80 leading-relaxed">
+                                    生产一吨原铝需要消耗13-15兆瓦时电力，使铝被称为"凝固的电力"
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="section-divider"></div>
+    
+    <!-- 第III部分：主要商品深度剖析 -->
+    <section id="commodity-analysis" class="py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="playfair text-5xl font-bold mb-16 text-center text-gradient">第III部分：主要商品深度剖析</h2>
+            
+            <div class="max-w-6xl mx-auto">
+                <!-- 铜市场分析 -->
+                <div class="glass-effect rounded-lg p-8 mb-16">
+                    <div class="flex items-center mb-6">
+                        <i class="fas fa-bolt text-3xl text-gradient mr-4"></i>
+                        <h3 class="playfair text-3xl font-bold text-gradient">铜：电气化的导体</h3>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="font-bold text-lg mb-4">供需平衡预测</h4>
+                            <div id="copper-balance-chart" style="height: 300px;"></div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-bold text-lg mb-4">关键市场指标</h4>
+                            <div class="space-y-4">
+                                <div class="flex justify-between items-center">
+                                    <span>2024年精炼铜需求</span>
+                                    <span class="number-highlight font-bold">2,614万吨</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span>2024年精炼铜产量</span>
+                                    <span class="number-highlight font-bold">2,671万吨</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span>预计供应过剩</span>
+                                    <span class="number-highlight font-bold">57万吨</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span>2025年需求增长</span>
+                                    <span class="number-highlight font-bold">2.3%</span>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-6 p-4 bg-yellow-900 bg-opacity-30 rounded-lg">
+                                <div class="font-semibold text-yellow-300 mb-2">关键风险</div>
+                                <div class="text-sm opacity-80">
+                                    上游精矿短缺与下游精炼铜过剩的矛盾，TC/RCs负值预示未来供应瓶颈
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 铝市场分析 -->
+                <div class="glass-effect rounded-lg p-8 mb-16">
+                    <div class="flex items-center mb-6">
+                        <i class="fas fa-feather text-3xl text-gradient mr-4"></i>
+                        <h3 class="playfair text-3xl font-bold text-gradient">铝：轻量化的冠军</h3>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold number-highlight mb-2">4,100万吨</div>
+                            <div class="text-sm opacity-60 mb-2">中国2023年原铝产量</div>
+                            <div class="text-xs opacity-40">占全球总产量59%</div>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="text-2xl font-bold number-highlight mb-2">13-15 MWh</div>
+                            <div class="text-sm opacity-60 mb-2">生产1吨铝耗电量</div>
+                            <div class="text-xs opacity-40">电力成本占总成本40%</div>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="text-2xl font-bold number-highlight mb-2">2026年</div>
+                            <div class="text-sm opacity-60 mb-2">欧盟CBAM正式实施</div>
+                            <div class="text-xs opacity-40">将重塑全球铝贸易</div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 p-6 bg-gradient-to-r from-blue-900 to-purple-900 bg-opacity-50 rounded-lg">
+                        <h4 class="font-bold text-lg mb-3 text-blue-300">CBAM影响分析</h4>
+                        <div class="text-sm opacity-90 leading-relaxed">
+                            欧盟碳边境调节机制将对进口铝的隐含碳排放征税，创造"绿色铝"和"高碳铝"的市场分化。
+                            使用清洁能源（水电、核能）的生产商将获得显著竞争优势，而依赖煤电的高碳铝将面临高额碳税。
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 镍市场分析 -->
+                <div class="glass-effect rounded-lg p-8 mb-16">
+                    <div class="flex items-center mb-6">
+                        <i class="fas fa-battery-three-quarters text-3xl text-gradient mr-4"></i>
+                        <h3 class="playfair text-3xl font-bold text-gradient">镍：不锈钢与电池的赋能者</h3>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="font-bold text-lg mb-4">印尼主导的供应格局</h4>
+                            <div class="relative">
+                                <div class="absolute inset-0 bg-gradient-to-r from-green-600 to-blue-600 rounded-lg opacity-20"></div>
+                                <div class="relative p-6">
+                                    <div class="text-center mb-4">
+                                        <div class="text-4xl font-bold number-highlight">50%+</div>
+                                        <div class="text-sm opacity-60">印尼占全球镍产量份额</div>
+                                    </div>
+                                    
+                                    <div class="space-y-3">
+                                        <div class="flex justify-between">
+                                            <span>2024年预计产量</span>
+                                            <span class="number-highlight">217万吨</span>
+                                        </div>
+                                        <div class="flex justify-between">
+                                            <span>2025年预计产量</span>
+                                            <span class="number-highlight">240万吨</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-bold text-lg mb-4">市场供应过剩状况</h4>
+                            <div id="nickel-balance-chart" style="height: 250px;"></div>
+                            
+                            <div class="mt-4 p-4 bg-red-900 bg-opacity-30 rounded-lg">
+                                <div class="font-semibold text-red-300 mb-2">持续过剩压力</div>
+                                <div class="text-sm opacity-80">
+                                    2025年预计供应过剩19.8万吨，技术创新打通一级二级镍市场壁垒，
+                                    全球镍价受制于印尼低成本红土矿
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 双轨制市场 -->
+                    <div class="mt-8 grid md:grid-cols-2 gap-6">
+                        <div class="border-gradient rounded-lg p-6">
+                            <h5 class="font-bold text-lg mb-3 text-gradient">传统路径：不锈钢市场</h5>
+                            <div class="text-sm opacity-80 leading-relaxed">
+                                硫化镍矿/红土矿 → NPI/镍铁 → 不锈钢<br>
+                                约65%镍消费用于不锈钢生产
+                            </div>
+                        </div>
+                        
+                        <div class="border-gradient rounded-lg p-6">
+                            <h5 class="font-bold text-lg mb-3 text-gradient">新兴路径：电池市场</h5>
+                            <div class="text-sm opacity-80 leading-relaxed">
+                                红土矿 → HPAL → MHP → 电池前驱体<br>
+                                印尼主导，中国投资，服务全球电池供应链
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 锌市场分析 -->
+                <div class="glass-effect rounded-lg p-8">
+                    <div class="flex items-center mb-6">
+                        <i class="fas fa-shield-alt text-3xl text-gradient mr-4"></i>
+                        <h3 class="playfair text-3xl font-bold text-gradient">锌：钢铁的卫士</h3>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold number-highlight mb-2">50%</div>
+                            <div class="text-sm opacity-60 mb-2">镀锌用途占比</div>
+                            <div class="text-xs opacity-40">为钢材提供防腐蚀保护</div>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="text-2xl font-bold number-highlight mb-2">-1.8%</div>
+                            <div class="text-sm opacity-60 mb-2">2024年产量预计下降</div>
+                            <div class="text-xs opacity-40">供应端收缩</div>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="text-2xl font-bold number-highlight mb-2">+1.8%</div>
+                            <div class="text-sm opacity-60 mb-2">2024年消费预计增长</div>
+                            <div class="text-xs opacity-40">需求相对稳定</div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 p-6 bg-gradient-to-r from-gray-800 to-gray-700 rounded-lg">
+                        <h4 class="font-bold text-lg mb-3">传统经济周期指标</h4>
+                        <div class="text-sm opacity-90 leading-relaxed">
+                            锌的需求与建筑业和汽车业高度绑定，缺乏能源转型的"绿色溢价"成分。
+                            其供需平衡变化是观察全球传统制造业和建筑业健康状况的重要风向标。
+                            预计2024年出现约10万吨供应缺口，主要由供应端收缩驱动。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="section-divider"></div>
+    
+    <!-- 第IV部分：企业竞技场 -->
+    <section id="company-analysis" class="py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="playfair text-5xl font-bold mb-16 text-center text-gradient">第IV部分：企业竞技场</h2>
+            
+            <div class="max-w-6xl mx-auto">
+                <!-- 主要参与者 -->
+                <div class="glass-effect rounded-lg p-8 mb-16">
+                    <h3 class="playfair text-2xl font-bold mb-8 text-gradient">全球主要参与者财务表现</h3>
+                    
+                    <!-- 公司对比表格 -->
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm">
+                            <thead>
+                                <tr class="border-b border-yellow-500 border-opacity-30">
+                                    <th class="text-left py-3 px-2">公司</th>
+                                    <th class="text-left py-3 px-2">主要商品</th>
+                                    <th class="text-left py-3 px-2">2024年收入($M)</th>
+                                    <th class="text-left py-3 px-2">净利润($M)</th>
+                                    <th class="text-left py-3 px-2">ROIC(%)</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-sm">
+                                <tr class="border-b border-gray-700">
+                                    <td class="py-3 px-2 font-semibold">BHP</td>
+                                    <td class="py-3 px-2">铜, 铁矿石</td>
+                                    <td class="py-3 px-2 number-highlight">53,817</td>
+                                    <td class="py-3 px-2 number-highlight">13,420</td>
+                                    <td class="py-3 px-2 number-highlight">27.0</td>
+                                </tr>
+                                <tr class="border-b border-gray-700">
+                                    <td class="py-3 px-2 font-semibold">Rio Tinto</td>
+                                    <td class="py-3 px-2">铁矿石, 铝, 铜</td>
+                                    <td class="py-3 px-2 number-highlight">53,658</td>
+                                    <td class="py-3 px-2 number-highlight">11,552</td>
+                                    <td class="py-3 px-2 number-highlight">18.0</td>
+                                </tr>
+                                <tr class="border-b border-gray-700">
+                                    <td class="py-3 px-2 font-semibold">Glencore</td>
+                                    <td class="py-3 px-2">铜, 煤, 锌</td>
+                                    <td class="py-3 px-2 number-highlight">230,944</td>
+                                    <td class="py-3 px-2 text-red-400">(1,634)</td>
+                                    <td class="py-3 px-2">-</td>
+                                </tr>
+                                <tr class="border-b border-gray-700">
+                                    <td class="py-3 px-2 font-semibold">Freeport</td>
+                                    <td class="py-3 px-2">铜, 金</td>
+                                    <td class="py-3 px-2 number-highlight">25,455</td>
+                                    <td class="py-3 px-2 number-highlight">1,889</td>
+                                    <td class="py-3 px-2">-</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-2 font-semibold">紫金矿业</td>
+                                    <td class="py-3 px-2">铜, 金</td>
+                                    <td class="py-3 px-2 number-highlight">303,640 (RMB)</td>
+                                    <td class="py-3 px-2 number-highlight">32,051 (RMB)</td>
+                                    <td class="py-3 px-2">-</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <!-- 估值框架 -->
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="glass-effect rounded-lg p-6">
+                        <h4 class="playfair text-xl font-bold mb-4 text-gradient">估值方法论</h4>
+                        <div class="space-y-4">
+                            <div class="border-l-3 border-yellow-500 pl-4">
+                                <div class="font-semibold">资产净值法(NAV)</div>
+                                <div class="text-sm opacity-80">对每项矿产资源进行DCF分析，最核心方法</div>
+                            </div>
+                            <div class="border-l-3 border-yellow-500 pl-4">
+                                <div class="font-semibold">P/NAV比率</div>
+                                <div class="text-sm opacity-80">市值与资产净值比较，常用相对估值指标</div>
+                            </div>
+                            <div class="border-l-3 border-yellow-500 pl-4">
+                                <div class="font-semibold">EV/EBITDA</div>
+                                <div class="text-sm opacity-80">适用于多元化大型矿业公司</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="glass-effect rounded-lg p-6">
+                        <h4 class="playfair text-xl font-bold mb-4 text-gradient">周期性估值特征</h4>
+                        <div class="text-center mb-4">
+                            <div class="text-3xl font-bold number-highlight">93%</div>
+                            <div class="text-sm opacity-60">矿业公司市值与商品价格相关性</div>
+                        </div>
+                        
+                        <div class="p-4 bg-gradient-to-r from-red-900 to-orange-900 bg-opacity-50 rounded-lg">
+                            <div class="font-semibold text-red-300 mb-2">反周期估值陷阱</div>
+                            <div class="text-xs opacity-90 leading-relaxed">
+                                EV/EBITDA倍数在商品价格顶部最低（3-5倍），在价格底部最高。
+                                低倍数可能意味着高风险入场时机，需结合商品周期位置分析。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="section-divider"></div>
+    
+    <!-- 第V部分：重塑未来的结构性力量 -->
+    <section id="future-forces" class="py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="playfair text-5xl font-bold mb-16 text-center text-gradient">第V部分：重塑未来的结构性力量</h2>
+            
+            <div class="max-w-6xl mx-auto">
+                <!-- 技术前沿 -->
+                <div class="glass-effect rounded-lg p-8 mb-16">
+                    <h3 class="playfair text-2xl font-bold mb-8 text-gradient">
+                        <i class="fas fa-cog text-gradient mr-3"></i>
+                        技术前沿
+                    </h3>
+                    
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="border-gradient rounded-lg p-6">
+                            <i class="fas fa-robot text-2xl text-gradient mb-3"></i>
+                            <h4 class="font-bold text-lg mb-3">自动化与远程操作</h4>
+                            <div class="text-sm opacity-80 leading-relaxed space-y-2">
+                                <p>• 24/7连续运行，实时数据优化</p>
+                                <p>• 远程运营中心(ROC)集中管理</p>
+                                <p>• 专用5G网络支持，设备利用率提升50%</p>
+                                <p>• 消除安全隐患，提升工作质量</p>
+                            </div>
+                        </div>
+                        
+                        <div class="border-gradient rounded-lg p-6">
+                            <i class="fas fa-fire text-2xl text-gradient mb-3"></i>
+                            <h4 class="font-bold text-lg mb-3">惰性阳极技术</h4>
+                            <div class="text-sm opacity-80 leading-relaxed space-y-2">
+                                <p>• 革命性铝冶炼工艺突破</p>
+                                <p>• 副产品从CO₂变为纯氧</p>
+                                <p>• 消除直接温室气体排放</p>
+                                <p>• 降低15%运营成本，提升15%产量</p>
+                            </div>
+                        </div>
+                        
+                        <div class="border-gradient rounded-lg p-6">
+                            <i class="fas fa-flask text-2xl text-gradient mb-3"></i>
+                            <h4 class="font-bold text-lg mb-3">HPAL湿法冶金</h4>
+                            <div class="text-sm opacity-80 leading-relaxed space-y-2">
+                                <p>• 解锁红土镍矿资源关键技术</p>
+                                <p>• 高温高压极端腐蚀性环境</p>
+                                <p>• 印尼新一代工厂技术突破</p>
+                                <p>• 为电池市场提供镍钴原料</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- ESG价值驱动 -->
+                <div class="glass-effect rounded-lg p-8 mb-16">
+                    <h3 class="playfair text-2xl font-bold mb-6 text-gradient">
+                        <i class="fas fa-leaf text-gradient mr-3"></i>
+                        ESG作为核心价值驱动力
+                    </h3>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="font-bold text-lg mb-4">从合规成本到价值驱动</h4>
+                            <div class="space-y-4">
+                                <div class="flex items-start">
+                                    <i class="fas fa-dollar-sign text-yellow-500 mr-3 mt-1"></i>
+                                    <div>
+                                        <div class="font-semibold">资本成本影响</div>
+                                        <div class="text-sm opacity-80">ESG表现差的公司面临投资者减少，资本成本上升</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <i class="fas fa-handshake text-yellow-500 mr-3 mt-1"></i>
+                                    <div>
+                                        <div class="font-semibold">社会运营许可</div>
+                                        <div class="text-sm opacity-80">良好社区关系是项目顺利审批和稳定运营的前提</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <i class="fas fa-door-open text-yellow-500 mr-3 mt-1"></i>
+                                    <div>
+                                        <div class="font-semibold">市场准入门槛</div>
+                                        <div class="text-sm opacity-80">优异环境表现成为进入关键市场的先决条件</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-bold text-lg mb-4">财务相关性证据</h4>
+                            <div class="p-6 bg-gradient-to-r from-green-900 to-blue-900 bg-opacity-50 rounded-lg">
+                                <div class="text-center mb-4">
+                                    <i class="fas fa-chart-line text-3xl text-green-400 mb-2"></i>
+                                    <div class="font-semibold">正相关性</div>
+                                </div>
+                                <div class="text-sm opacity-90 leading-relaxed">
+                                    大量证据表明卓越的ESG表现与积极的财务结果之间存在正相关性。
+                                    ESG表现正从非财务指标转化为可量化的财务风险和机遇。
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 循环经济 -->
+                <div class="glass-effect rounded-lg p-8">
+                    <h3 class="playfair text-2xl font-bold mb-6 text-gradient">
+                        <i class="fas fa-recycle text-gradient mr-3"></i>
+                        循环经济与回收的崛起
+                    </h3>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="font-bold text-lg mb-4">二次供应的重要性</h4>
+                            <div class="space-y-4">
+                                <div class="border-l-3 border-green-500 pl-4">
+                                    <div class="font-semibold">铜回收</div>
+                                    <div class="text-sm opacity-80">
+                                        每年约<span class="number-highlight">32%</span>消费来自回收，
+                                        能耗降低<span class="number-highlight">85%</span>
+                                    </div>
+                                </div>
+                                <div class="border-l-3 border-green-500 pl-4">
+                                    <div class="font-semibold">铝回收</div>
+                                    <div class="text-sm opacity-80">
+                                        回收铝能耗仅为原生铝的<span class="number-highlight">5%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-bold text-lg mb-4">现实约束</h4>
+                            <div class="p-6 bg-gradient-to-r from-orange-900 to-red-900 bg-opacity-50 rounded-lg">
+                                <div class="space-y-3 text-sm opacity-90">
+                                    <div class="flex items-start">
+                                        <i class="fas fa-clock text-orange-400 mr-2 mt-1"></i>
+                                        <div>
+                                            <span class="font-semibold">时间滞后：</span>
+                                            金属产品使用寿命30-50年，废料库反映历史消费水平
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <i class="fas fa-chart-line text-orange-400 mr-2 mt-1"></i>
+                                        <div>
+                                            <span class="font-semibold">增长挑战：</span>
+                                            即便100%回收也无法满足快速增长的需求
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <i class="fas fa-balance-scale text-orange-400 mr-2 mt-1"></i>
+                                        <div>
+                                            <span class="font-semibold">经济功能：</span>
+                                            作为市场"减震器"和边际供应来源
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 引用文献 -->
+    <section class="py-24 bg-gradient-to-r from-gray-900 to-black">
+        <div class="container mx-auto px-6">
+            <h2 class="playfair text-3xl font-bold mb-12 text-center text-gradient">引用文献</h2>
+            
+            <div class="max-w-6xl mx-auto text-xs leading-relaxed opacity-80">
+                <div class="grid md:grid-cols-3 gap-6">
+                    <!-- 第一列引用 1-39 -->
+                    <div class="space-y-2">
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.imf.org/en/Publications/WEO" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                1. World Economic Outlook - International Monetary Fund (IMF)
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.worldbank.org/en/news/press-release/2024/06/11/global-economic-prospects-june-2024-press-release" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                2. Global Growth Is Stabilizing - World Bank
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://timesofindia.indiatimes.com/business/india-business/doing-very-well-rbi-guv-says-india-contributing-more-to-global-economy-than-us/articleshow/123141173.cms" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                3. RBI Governor: India contributing more to global economy than US
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://eoxs.com/new_blog/understanding-metal-market-demand-key-metrics-and-trends/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                4. Understanding Metal Market Demand - EOXS
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.economy.com/china/purchasing-managers-index" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                5. China Purchasing Managers index - Moody's Analytics
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://thecorner.eu/news-the-world/world-economy/chinas-manufacturing-pmi-returns-to-contraction-territory-falling-to-49-5-points-in-july/121419/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                6. China's manufacturing PMI returns to contraction territory
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://datatrack.trendforce.com/Chart/content/1265/euro-area-manufacturing-pmi-final" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                7. Euro Area: Manufacturing PMI - TrendForce
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.morningstar.com/news/dow-jones/20250811830/week-ahead-for-fx-bonds-us-inflation-china-activity-data-in-focus" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                8. Week Ahead: U.S. Inflation, China Activity Data - Morningstar
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://tradingeconomics.com/china/fixed-asset-investment" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                9. China Fixed Asset Investment - Trading Economics
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.investing.com/economic-calendar/fixed-asset-investment-460" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                10. China Fixed Asset Investment YoY - Investing.com
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.angloamerican.com/our-stories/innovation-and-technology/coppers-vital-role-in-sustainable-transportation-powering-the-future-of-mobility" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                11. Copper's vital role in sustainable transportation - Anglo American
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.copperexpo.com.cn/en-gb/media-center/industry-news/2025/1/11.html" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                12. Copper in automobiles and electric vehicles
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://copper.org/environment/sustainable-energy/electric-vehicles/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                13. Applications: Electric Vehicles - Copper.org
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://european-aluminium.eu/about-aluminium/aluminium-in-use/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                14. Aluminium in Use - European Aluminium
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.aluminiumleader.com/application/transport/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                15. Aluminium applications - Transport
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://copper.org/environment/sustainable-energy/grid-infrastructure/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                16. Grid Infrastructure - Copper.org
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.australwright.com.au/uses-of-aluminium/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                17. Common Industrial Uses of Aluminium
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://agmetalminer.com/2025/06/20/electric-vehicle-market-nickels-role/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                18. Electric Vehicle Market: Nickel's Critical Role
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://nickelinstitute.org/en/nickel-applications/nickel-in-batteries" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                19. Nickel in batteries - Nickel Institute
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.nickel28.com/media/about-nickel/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                20. About Nickel
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://bssa.org.uk/nickel-surplus-predicted/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                21. Nickel Surplus Predicted - British Stainless Steel Association
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.usbank.com/investing/financial-perspectives/market-news/federal-reserve-tapering-asset-purchases.html" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                22. Federal Reserve Calibrates Policy - U.S. Bank
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.globalsouthforum.org/article/the-emerging-trend-of-green-resource-nationalism-lessons-from-latin-america" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                23. The Emerging Trend of "Green" Resource Nationalism
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://chinaglobalsouth.com/analysis/critical-minerals-resource-nationalism-china/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                24. Critical Mineral Resource Nationalism: China and Global South
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://customs-taxation.learning.europa.eu/course/view.php?id=803&section=1" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                25. Carbon Border Adjustment Mechanism (CBAM): Aluminium sector
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                26. Carbon Border Adjustment Mechanism - EU
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.oddo-bhf.com/2025/04/15/carbon-border-adjustment-mechanism-cbam-the-final-blow-to-european-industry-the-aluminum-industry-particularly-exposed/cbam-the-final-blow-to-european-industry/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                27. Carbon Border Adjustment Mechanism (CBAM) - ODDO BHF
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.carbontrust.com/news-and-insights/insights/cbam-what-it-means-for-exporters-of-steel-iron-and-aluminium" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                28. CBAM: What it means for exporters - Carbon Trust
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://internationalcopper.org/sustainable-copper/about-copper/copper-life-cycle/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                29. Copper Life Cycle
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://koalagains.com/industry-tariff-report/aluminium/understand-industry" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                30. Aluminum Industry Overview - KoalaGains
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.sfa-oxford.com/battery-metals-and-materials/markets/nickel-market-and-nickel-sulphate-market-and-price-drivers/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                31. The Nickel Market, Nickel Sulphate Market and Price Drivers
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://investingnews.com/daily/resource-investing/base-metals-investing/copper-investing/copper-refining-from-ore-to-market/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                32. Copper Refining: From Ore to Market
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://documents1.worldbank.org/curated/en/543761492970653971/pdf/multi-page.pdf" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                33. Copper Handbook - World Bank Documents
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.harboraluminum.com/en/industries/aluminum-smelting-industry-explained" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                34. The Aluminum Smelting Process Explained
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.hulamin.com/iar2017/business/the-aluminium-value-chain.php" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                35. The Aluminium Value Chain - Hulamin
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://nickelinstitute.org/en/blog/2024/may/nickel-industry-part-1-processing-nickel-laterites-and-sulfides" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                36. Nickel industry - Part 1 - Processing nickel laterites and sulfides
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.strausscenter.org/wp-content/uploads/Nickel_Memo_Bhuwalka_Olivetti-Google-Docs.pdf" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                37. Nickel Market Dynamics and Battery Supply Chain Security
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://downloads.regulations.gov/IRS-2022-0021-0293/attachment_2.pdf" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                38. Global Nickel Production Trends: Sources of Ore and Intermediate Products
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://internationalcopper.org/sustainable-copper/about-copper/cu-demand-long-term-availability/stocks-flows/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                39. Stocks and Flows - International Copper Association
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- 第二列引用 40-78 -->
+                    <div class="space-y-2">
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://globalscmanagement.wordpress.com/2013/05/14/the-copper-global-value-chain/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                40. The copper global value chain and the black hole of China
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://continentalsteel.com/resources/comprehensive-guide-to-industrial-metals/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                41. Comprehensive Guide to Industrial Metals
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.usgs.gov/centers/national-minerals-information-center/aluminum-statistics-and-information" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                42. Aluminum Statistics and Information - USGS
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://discoveryalert.com.au/news/copper-concentrate-market-crisis-2025-production-cuts/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                43. Copper Crisis: Suppliers Propose Negative TC/RCs
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://discoveryalert.com.au/news/copper-processing-fees-2025-economics-smelter-charges/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                44. China Copper Smelters Accept Zero Processing Fees
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.fastmarkets.com/insights/copper-concentrate-benchmark-structure-at-risk/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                45. Copper concentrate benchmark structure at risk
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://kghm.com/sites/default/files/2025-02/2025-02-03%20Market%20Overview.pdf" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                46. Market Overview - KGHM
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://source.benchmarkminerals.com/article/copper-concentrate-tc-rcs-for-smelters-flatten" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                47. Copper concentrate TC/RCs for smelters flatten
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://resourcecapitalfunds.com/insights/mining-and-minerals-101/nickel/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                48. Minerals 101: Nickel
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://pubs.usgs.gov/periodicals/mcs2024/mcs2024-copper.pdf" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                49. Global copper mine production - USGS Mineral Commodity Summaries 2024
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://natural-resources.canada.ca/minerals-mining/mining-data-statistics-analysis/minerals-metals-facts/copper-facts" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                50. Copper facts - Natural Resources Canada
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://pubs.usgs.gov/periodicals/mcs2025/mcs2025-bauxite-alumina.pdf" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                51. BAUXITE AND ALUMINA - USGS
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://scrreen.eu/wp-content/uploads/2023/01/ALUMINIUM-AND-BAUXITE_CRM_2020_Factsheets_critical_Final.pdf" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                52. ALUMINIUM AND BAUXITE - SCRREEN
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://elements.visualcapitalist.com/visualizing-global-aluminum-production/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                53. Visualizing Global Aluminum Production
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://worldpopulationreview.com/country-rankings/aluminum-production-by-country" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                54. Aluminum Production by Country 2025
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://pubs.usgs.gov/periodicals/mcs2025/mcs2025-nickel.pdf" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                55. NICKEL - USGS Publications
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://pubs.usgs.gov/periodicals/mcs2025/mcs2025-zinc.pdf" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                56. ZINC - USGS Publications
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://pubs.usgs.gov/periodicals/mcs2025/mcs2025-copper.pdf" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                57. COPPER - USGS
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.woodmac.com/reports/metals-global-nickel-industry-cost-curve-37913111/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                58. Global nickel industry cost curve Report - Wood Mackenzie
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://erocopper.com/news/ero-copper-announces-2024-production-results-2025-guidance-and-updated-three-year-production-outlook/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                59. Ero Copper Announces 2024 Production Results
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://erocopper.com/news/ero-copper-reports-fourth-quarter-and-full-year-2024-operating-and-financial-results/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                60. Ero Copper Reports Q4 and Full Year 2024 Results
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://elkamehr.com/en/the-impact-of-energy-costs-on-aluminum-production-a-2025-outlook/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                61. The Impact of Energy Costs on Aluminum Production: A 2025 Outlook
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://elkamehr.com/en/the-impact-of-energy-costs-on-aluminum-production-a-2025-outlook/#:~:text=Aluminum%20manufacturing%20demands%20considerable%20electricity,operational%20stability%2C%20and%20market%20dynamics." target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                62. Aluminum manufacturing demands considerable electricity
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://european-aluminium.eu/wp-content/uploads/2022/10/2022-05-20-european-aluminium-response-to-repowereu.pdf" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                63. Executive Summary - European Aluminium
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.first-quantum.com/English/announcements/announcements-details/2025/First-Quantum-Minerals-Reports-Fourth-Quarter-2024-Results/default.aspx" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                64. First Quantum Minerals Reports Q4 2024 Results
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://investingnews.com/daily/resource-investing/base-metals-investing/nickel-investing/nickel-forecast/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                65. Nickel Price Update: Q2 2025 in Review
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://internationalcopper.org/wp-content/uploads/2022/02/ICA-RecyclingBrief-202201-A4-R2.pdf" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                66. Copper Recycling
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.weforum.org/stories/2024/12/mining-s-new-frontier-developing-copper-recycling-for-a-more-sustainable-future/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                67. Recycling metals can help mining industry tackle e-waste
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.grandviewresearch.com/industry-analysis/copper-market-report#:~:text=By%20end%20use%2C%20the%20building,share%20of%2084.8%25%20in%202024." target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                68. Copper Market Report - Grand View Research
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.coppercouncil.org/wp-content/uploads/2024/11/IWCC-Copper-Demand-Forecasts-Report.pdf" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                69. IWCC Copper Demand Forecasts Report
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.coppercouncil.org/iwcc-press-release-short-term-forecasts-for-copper-oct-2024" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                70. Short-Term Forecasts for Copper - IWCC Oct 2024
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.nextmsc.com/report/north-america-aluminium-market" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                71. North America Aluminum Market Analysis 2024-2030
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.openpr.com/news/4109942/aluminium-market-driven-by-demand-in-automotive-aerospace" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                72. Aluminium Market Driven by Demand in Automotive, Aerospace
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://news.metal.com/newscontent/103001977/Global-Aluminum-Production-Rises-Year-on-Year-But-Falls-Month-on-Month-in-September-2024-China-Sees-Slight-Decline" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                73. Global Aluminum Production data by IAI
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://leadthecharge.org/the-problem/aluminum/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                74. Aluminum - Lead the Charge
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.weforum.org/publications/net-zero-industry-tracker-2023/in-full/aluminium-industry-net-zero-tracker/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                75. Aluminium industry net-zero tracker
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://nickelinstitute.org/en/nickel-applications/stainless-steel" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                76. Stainless steel: The role of nickel
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://stainless-steel-world.net/nickel-demand-mitigation-a-100-billion-year-climate-action-issue/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                77. Nickel demand mitigation: a $100 billion/year climate action issue?
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.cruxinvestor.com/posts/nickel-market-rebalances-on-insg-supply-signals-as-strategic-projects-position-for-demand-led-cycle" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                78. Nickel Market Rebalances on INSG Supply Signals
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- 第三列引用 79-116 -->
+                    <div class="space-y-2">
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://galvanizeit.org/hot-dip-galvanizing/what-is-zinc/zinc-uses" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                79. Zinc Uses - American Galvanizers Association
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://iranmetalsmarket.ir/en/galvanization-process/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                80. The Role of Zinc in galvanization process
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.bruschitech.com/blog/the-importance-of-zinc-die-casting-in-automotive-industry" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                81. Zinc Die Casting in Automotive Industry
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.theassay.com/articles/the-assay-insights/zinc-market-analysis/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                82. Zinc Mining & Market Outlook 2022-2025
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.ilzsg.org/market_forecast/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                83. Market Forecast - International Lead and Zinc Study Group
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.ilzsg.org/statistical-activities/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                84. Statistical and Forecasting - ILZSG
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.ilzsg.org/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                85. International Lead and Zinc Study Group
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://en.wikipedia.org/wiki/List_of_largest_mining_companies_by_revenue" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                86. List of largest mining companies by revenue - Wikipedia
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://companiesmarketcap.com/mining/largest-mining-companies-by-revenue/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                87. Top publicly traded mining companies by revenue
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.gurufocus.com/term/roic/DD" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                88. ROIC % - GuruFocus
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.financialprofessionals.org/training-resources/resources/articles/Details/the-dupont-system-comprehensive-ratio-analysis" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                89. The DuPont System: Comprehensive Ratio Analysis
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.bhp.com/investors/annual-reporting/annual-report-2024" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                90. Annual report 2024 - BHP
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.riotinto.com/en/invest/reports/annual-report" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                91. Annual report - Rio Tinto
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.glencore.com/media-and-insights/news/preliminary-results-2024" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                92. Preliminary Results 2024 - Glencore
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.sec.gov/Archives/edgar/data/917851/000129281425001137/valeform20f_2024.htm" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                93. FORM 20-F - Vale
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="http://q4live.s22.clientfiles.s3-website-us-east-1.amazonaws.com/529358580/files/doc_financials/10-K/10_k2024.pdf" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                94. FCX 2024 Form 10-K
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://s29.q4cdn.com/945634774/files/doc_financials/2024/ar/2024_Alcoa_Corp_Annual_Report_Bookmarked_Final.pdf" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                95. 2024 ANNUAL REPORT - Alcoa
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.chalco.com.cn/zlgfen/tzzgxen/yjbgen/202506/P020250609385367472862.pdf" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                96. ANNUAL REPORT - Chalco
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0323/2025032300043.pdf" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                97. Annual Results Announcement - Zijin Mining
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://investo.bg/wp-content/uploads/2023/06/Valuation_of_Metals_and_Mining_Companies.pdf" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                98. Valuation of Metals and Mining Companies
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="http://sellsidehandbook.com/2018/07/17/valuation-of-metals-mining-companies-multiples/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                99. Valuation of Metals & Mining Companies Part II: Multiples
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.mckinsey.com/industries/metals-and-mining/our-insights/through-cycle-investment-in-mining" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                100. Through-cycle investment in mining - McKinsey
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.gurufocus.com/term/enterprise-value-to-ebitda/RIO" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                101. RIO (Rio Tinto) EV-to-EBITDA - GuruFocus
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.spglobal.com/market-intelligence/en/solutions/products/mine-economics" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                102. Mine Economics - S&P Global
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://scottautomation.com/en/insights/the-benefits-of-automation-in-mining" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                103. The Benefits of Automation in Mining
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://new.abb.com/industrial-software/connected-workforce/10-lessons-from-10-years-of-remote-operations-centers" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                104. 10 Lessons from 10 Years of Remote Operations Centers
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.ericsson.com/en/blog/2025/7/how-private-5g-powers-remote-mining-at-scale" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                105. How private 5G powers remote mining at scale - Ericsson
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.nsc.org/getmedia/165179c7-0807-4505-82ee-05bd92fae671/gc24-nutrien-case-study.pdf" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                106. Nutrien's Tele-Remote Mining Operations Case Study
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.trimet.eu/en/trimet/sustainability/environmental-and-climate-protection/production-of-inert-metallic-anodes" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                107. Production of inert metallic anodes - TRIMET
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.alcoa.com/products/elysis" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                108. Alcoa - ELYSIS
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://elysis.com/en/start-of-construction-of-commercial-scale-inert-anode-cells" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                109. Start of construction of commercial-scale inert anode cells - ELYSIS
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://d3e2i5nuh73s15.cloudfront.net/wp-content/uploads/2022/11/ALTA-2022-NCC-Keynote-Address-Arafura.pdf" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                110. KEYS TO A SUCCESSFUL NICKEL LATERITE HPAL DESIGN
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.braziliannickel.com/wp-content/uploads/2017/09/processing-of-nickel-ores-concentrates.pdf" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                111. Hydro-Pyro Integration in processing of Nickel Laterites
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://nickelinstitute.org/en/blog/2025/march/nickel-industry-part-3-processing-nickel-laterites-high-pressure-acid-leaching" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                112. Nickel industry - Part 3 - Processing nickel laterites, HPAL
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.unpri.org/download?ac=6529" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                113. ESG INTEGRATION: HOW ARE SOCIAL ISSUES INFLUENCING INVESTMENT?
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.whitecase.com/insight-our-thinking/mining-metals-2022-how-mining-metals-companies-make-ESG-work-downturn" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                114. How mining & metals companies can make ESG work - White & Case
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://jjxy.hznu.edu.cn/upload/resources/file/2025/06/26/7891538.pdf" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                115. ESG rating and financial risk of mining industry companies
+                            </a>
+                        </div>
+                        <div class="hover:opacity-100 transition-opacity">
+                            <a href="https://www.okonrecycling.com/industrial-scrap-metal-recycling/copper-recovery/copper-recycling-prices/" target="_blank" class="text-yellow-400 hover:text-yellow-300">
+                                116. Understanding Copper Recycling Prices: A Comprehensive Guide
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-12 text-center text-sm opacity-60">
+                    <div class="mb-2">
+                        <span class="font-semibold text-yellow-400">完整引用文献列表：116个参考来源</span>
+                    </div>
+                    <div class="text-xs">
+                        所有引用文献均提供可点击链接，方便读者查阅原始资料。
+                        引用来源包括国际组织报告、政府统计数据、企业年报、学术研究及权威行业分析。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 页脚 -->
+    <footer class="py-12 border-t border-yellow-500 border-opacity-30">
+        <div class="container mx-auto px-6 text-center">
+            <div class="text-lg font-semibold mb-4">全球工业金属行业深度分析报告</div>
+            <div class="text-sm opacity-60 mb-4">
+                Global Industrial Metals Industry Analysis Report
+            </div>
+            <div class="text-xs opacity-40">
+                © 2025 虚空有物公司研究部 | 本报告生成于2025年7月3日
+            </div>
+        </div>
+    </footer>
+
+    <!-- 返回顶部按钮 -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center text-black font-bold opacity-0 invisible transition-all duration-300 hover:scale-110">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- JavaScript 在文件末尾会添加 -->
+    <script>
+        // ECharts图表初始化
+        function initCharts() {
+            // GDP增长预测图表
+            const gdpChart = echarts.init(document.getElementById('gdp-chart'));
+            const gdpOption = {
+                backgroundColor: 'transparent',
+                grid: {
+                    top: '15%',
+                    left: '10%',
+                    right: '10%',
+                    bottom: '15%'
+                },
+                xAxis: {
+                    type: 'category',
+                    data: ['2023实际', '2024预测', '2025预测', '2026预测'],
+                    axisLine: { lineStyle: { color: '#FFD700' } },
+                    axisLabel: { color: '#FFD700', fontSize: 11 }
+                },
+                yAxis: {
+                    type: 'value',
+                    name: 'GDP增长率 (%)',
+                    nameTextStyle: { color: '#FFD700' },
+                    axisLine: { lineStyle: { color: '#FFD700' } },
+                    axisLabel: { color: '#FFD700', fontSize: 11 },
+                    splitLine: { lineStyle: { color: '#444', type: 'dashed' } }
+                },
+                series: [
+                    {
+                        name: '全球GDP',
+                        type: 'line',
+                        data: [3.0, 3.2, 3.2, 3.3],
+                        lineStyle: { color: '#FFD700', width: 3 },
+                        itemStyle: { color: '#FFD700' },
+                        areaStyle: {
+                            color: {
+                                type: 'linear',
+                                x: 0, y: 0, x2: 0, y2: 1,
+                                colorStops: [
+                                    { offset: 0, color: 'rgba(255, 215, 0, 0.3)' },
+                                    { offset: 1, color: 'rgba(255, 215, 0, 0.05)' }
+                                ]
+                            }
+                        },
+                        markLine: {
+                            data: [{ yAxis: 3.1, name: '历史平均' }],
+                            lineStyle: { color: '#FF6B6B', type: 'dashed' },
+                            label: { color: '#FF6B6B' }
+                        }
+                    },
+                    {
+                        name: '发达经济体',
+                        type: 'line',
+                        data: [1.6, 1.7, 1.8, 1.9],
+                        lineStyle: { color: '#FFA500', width: 2 },
+                        itemStyle: { color: '#FFA500' }
+                    },
+                    {
+                        name: '新兴市场',
+                        type: 'line',
+                        data: [4.3, 4.2, 4.2, 4.1],
+                        lineStyle: { color: '#DAA520', width: 2 },
+                        itemStyle: { color: '#DAA520' }
+                    }
+                ],
+                legend: {
+                    data: ['全球GDP', '发达经济体', '新兴市场'],
+                    textStyle: { color: '#FFD700' },
+                    top: '5%'
+                },
+                tooltip: {
+                    trigger: 'axis',
+                    backgroundColor: 'rgba(26, 26, 26, 0.9)',
+                    borderColor: '#FFD700',
+                    textStyle: { color: '#FFD700' }
+                }
+            };
+            gdpChart.setOption(gdpOption);
+
+            // TC/RCs趋势图表
+            const tcRcChart = echarts.init(document.getElementById('tc-rc-chart'));
+            const tcRcOption = {
+                backgroundColor: 'transparent',
+                grid: {
+                    top: '15%',
+                    left: '15%',
+                    right: '10%',
+                    bottom: '15%'
+                },
+                xAxis: {
+                    type: 'category',
+                    data: ['2022', '2023', '2024 Q1', '2024 Q2', '2024 Q3', '2024 Q4', '2025 Q1'],
+                    axisLine: { lineStyle: { color: '#FFD700' } },
+                    axisLabel: { color: '#FFD700', fontSize: 10 }
+                },
+                yAxis: {
+                    type: 'value',
+                    name: 'TC/RCs ($/吨)',
+                    nameTextStyle: { color: '#FFD700' },
+                    axisLine: { lineStyle: { color: '#FFD700' } },
+                    axisLabel: { color: '#FFD700', fontSize: 10 },
+                    splitLine: { 
+                        lineStyle: { color: '#444', type: 'dashed' } 
+                    }
+                },
+                series: [{
+                    name: 'TC/RCs',
+                    type: 'line',
+                    data: [95, 88, 80, 65, 35, 15, -45],
+                    lineStyle: { 
+                        color: {
+                            type: 'linear',
+                            colorStops: [
+                                { offset: 0, color: '#FFD700' },
+                                { offset: 0.7, color: '#FF6B6B' },
+                                { offset: 1, color: '#DC143C' }
+                            ]
+                        },
+                        width: 3 
+                    },
+                    itemStyle: { 
+                        color: function(params) {
+                            return params.value > 0 ? '#FFD700' : '#DC143C';
+                        }
+                    },
+                    areaStyle: {
+                        color: {
+                            type: 'linear',
+                            x: 0, y: 0, x2: 0, y2: 1,
+                            colorStops: [
+                                { offset: 0, color: 'rgba(255, 215, 0, 0.2)' },
+                                { offset: 1, color: 'rgba(220, 20, 60, 0.1)' }
+                            ]
+                        }
+                    },
+                    markLine: {
+                        data: [{ yAxis: 0, name: '盈亏平衡线' }],
+                        lineStyle: { color: '#FF6B6B', type: 'solid', width: 2 },
+                        label: { color: '#FF6B6B' }
+                    }
+                }],
+                tooltip: {
+                    trigger: 'axis',
+                    backgroundColor: 'rgba(26, 26, 26, 0.9)',
+                    borderColor: '#FFD700',
+                    textStyle: { color: '#FFD700' },
+                    formatter: function(params) {
+                        const value = params[0].value;
+                        const status = value > 0 ? '盈利' : '亏损';
+                        return `${params[0].name}<br/>TC/RCs: ${value}$/吨<br/>状态: ${status}`;
+                    }
+                }
+            };
+            tcRcChart.setOption(tcRcOption);
+
+            // 铜市场平衡图表
+            const copperChart = echarts.init(document.getElementById('copper-balance-chart'));
+            const copperOption = {
+                backgroundColor: 'transparent',
+                grid: {
+                    top: '15%',
+                    left: '15%',
+                    right: '10%',
+                    bottom: '15%'
+                },
+                xAxis: {
+                    type: 'category',
+                    data: ['2023实际', '2024预测', '2025预测'],
+                    axisLine: { lineStyle: { color: '#FFD700' } },
+                    axisLabel: { color: '#FFD700', fontSize: 11 }
+                },
+                yAxis: {
+                    type: 'value',
+                    name: '千吨',
+                    nameTextStyle: { color: '#FFD700' },
+                    axisLine: { lineStyle: { color: '#FFD700' } },
+                    axisLabel: { color: '#FFD700', fontSize: 10 },
+                    splitLine: { lineStyle: { color: '#444', type: 'dashed' } }
+                },
+                series: [
+                    {
+                        name: '精炼铜产量',
+                        type: 'bar',
+                        data: [25832, 26710, 27270],
+                        itemStyle: { 
+                            color: {
+                                type: 'linear',
+                                x: 0, y: 0, x2: 0, y2: 1,
+                                colorStops: [
+                                    { offset: 0, color: '#FFD700' },
+                                    { offset: 1, color: '#DAA520' }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        name: '精炼铜消费',
+                        type: 'bar',
+                        data: [25987, 26140, 26730],
+                        itemStyle: { 
+                            color: {
+                                type: 'linear',
+                                x: 0, y: 0, x2: 0, y2: 1,
+                                colorStops: [
+                                    { offset: 0, color: '#FF6B6B' },
+                                    { offset: 1, color: '#DC143C' }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                legend: {
+                    data: ['精炼铜产量', '精炼铜消费'],
+                    textStyle: { color: '#FFD700' },
+                    top: '5%'
+                },
+                tooltip: {
+                    trigger: 'axis',
+                    backgroundColor: 'rgba(26, 26, 26, 0.9)',
+                    borderColor: '#FFD700',
+                    textStyle: { color: '#FFD700' },
+                    formatter: function(params) {
+                        const supply = params[0].value;
+                        const demand = params[1].value;
+                        const surplus = supply - demand;
+                        const status = surplus > 0 ? '过剩' : '短缺';
+                        return `${params[0].name}<br/>产量: ${supply}千吨<br/>消费: ${demand}千吨<br/>平衡: ${status} ${Math.abs(surplus)}千吨`;
+                    }
+                }
+            };
+            copperChart.setOption(copperOption);
+
+            // 镍市场平衡图表
+            const nickelChart = echarts.init(document.getElementById('nickel-balance-chart'));
+            const nickelOption = {
+                backgroundColor: 'transparent',
+                grid: {
+                    top: '15%',
+                    left: '15%',
+                    right: '10%',
+                    bottom: '15%'
+                },
+                xAxis: {
+                    type: 'category',
+                    data: ['2023', '2024预测', '2025预测'],
+                    axisLine: { lineStyle: { color: '#FFD700' } },
+                    axisLabel: { color: '#FFD700', fontSize: 11 }
+                },
+                yAxis: {
+                    type: 'value',
+                    name: '千吨',
+                    nameTextStyle: { color: '#FFD700' },
+                    axisLine: { lineStyle: { color: '#FFD700' } },
+                    axisLabel: { color: '#FFD700', fontSize: 10 },
+                    splitLine: { lineStyle: { color: '#444', type: 'dashed' } }
+                },
+                series: [
+                    {
+                        name: '供应过剩',
+                        type: 'bar',
+                        data: [224, 194, 198],
+                        itemStyle: { 
+                            color: {
+                                type: 'linear',
+                                x: 0, y: 0, x2: 0, y2: 1,
+                                colorStops: [
+                                    { offset: 0, color: '#FF6B6B' },
+                                    { offset: 1, color: '#DC143C' }
+                                ]
+                            }
+                        }
+                    }
+                ],
+                tooltip: {
+                    trigger: 'axis',
+                    backgroundColor: 'rgba(26, 26, 26, 0.9)',
+                    borderColor: '#FFD700',
+                    textStyle: { color: '#FFD700' },
+                    formatter: function(params) {
+                        return `${params[0].name}<br/>供应过剩: ${params[0].value}千吨`;
+                    }
+                }
+            };
+            nickelChart.setOption(nickelOption);
+
+            // 响应式处理
+            window.addEventListener('resize', function() {
+                gdpChart.resize();
+                tcRcChart.resize();
+                copperChart.resize();
+                nickelChart.resize();
+            });
+        }
+
+        // 数字滚动动画
+        function animateNumbers() {
+            const numberElements = document.querySelectorAll('.number-highlight');
+            
+            numberElements.forEach(el => {
+                const text = el.textContent;
+                const match = text.match(/[\d,.-]+/);
+                
+                if (match) {
+                    const number = parseFloat(match[0].replace(/,/g, ''));
+                    if (!isNaN(number)) {
+                        el.textContent = text.replace(match[0], '0');
+                        
+                        anime({
+                            targets: { value: 0 },
+                            value: number,
+                            duration: 2000,
+                            easing: 'easeOutExpo',
+                            update: function(anim) {
+                                const currentValue = anim.animatables[0].target.value;
+                                const formattedValue = number % 1 === 0 ? 
+                                    Math.round(currentValue).toLocaleString() : 
+                                    currentValue.toFixed(1);
+                                el.textContent = text.replace(match[0], formattedValue);
+                            }
+                        });
+                    }
+                }
+            });
+        }
+
+        // 滚动进度指示器
+        function updateScrollProgress() {
+            const scrollTop = document.documentElement.scrollTop;
+            const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrollPercent = scrollTop / scrollHeight;
+            
+            document.querySelector('.scroll-indicator').style.transform = `scaleX(${scrollPercent})`;
+        }
+        
+        // 浮动导航激活状态
+        function updateActiveNav() {
+            const sections = ['executive-summary', 'macro-analysis', 'industry-analysis', 'commodity-analysis', 'company-analysis', 'future-forces'];
+            const scrollTop = window.scrollY + 100;
+            
+            sections.forEach(sectionId => {
+                const section = document.getElementById(sectionId);
+                const navItem = document.querySelector(`[data-section="${sectionId}"]`);
+                
+                if (section && navItem) {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.offsetHeight;
+                    
+                    if (scrollTop >= sectionTop && scrollTop < sectionTop + sectionHeight) {
+                        navItem.classList.add('active');
+                    } else {
+                        navItem.classList.remove('active');
+                    }
+                }
+            });
+        }
+        
+        // 返回顶部按钮
+        function updateBackToTop() {
+            const backToTopBtn = document.getElementById('back-to-top');
+            const scrollTop = window.scrollY;
+            
+            if (scrollTop > 300) {
+                backToTopBtn.classList.remove('opacity-0', 'invisible');
+                backToTopBtn.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopBtn.classList.add('opacity-0', 'invisible');
+                backToTopBtn.classList.remove('opacity-100', 'visible');
+            }
+        }
+        
+        // 页面初始化动画
+        function initAnimations() {
+            // 标题动画
+            anime({
+                targets: 'h1',
+                translateY: [50, 0],
+                opacity: [0, 1],
+                duration: 1500,
+                easing: 'easeOutExpo',
+                delay: 500
+            });
+            
+            // 副标题动画
+            anime({
+                targets: '.text-2xl, .text-3xl',
+                translateY: [30, 0],
+                opacity: [0, 1],
+                duration: 1000,
+                easing: 'easeOutExpo',
+                delay: anime.stagger(200, {start: 800})
+            });
+            
+            // 卡片动画
+            anime({
+                targets: '.glass-effect',
+                translateY: [30, 0],
+                opacity: [0, 1],
+                duration: 1000,
+                easing: 'easeOutExpo',
+                delay: anime.stagger(100, {start: 1000})
+            });
+            
+            // 触发数字动画
+            setTimeout(() => {
+                animateNumbers();
+            }, 1500);
+        }
+        
+        // Intersection Observer for animations
+        function setupScrollAnimations() {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        anime({
+                            targets: entry.target,
+                            translateY: [50, 0],
+                            opacity: [0, 1],
+                            duration: 800,
+                            easing: 'easeOutExpo'
+                        });
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+            
+            // 观察所有section元素
+            document.querySelectorAll('section').forEach(section => {
+                observer.observe(section);
+            });
+        }
+        
+        // 视差效果
+        function setupParallaxEffect() {
+            window.addEventListener('scroll', () => {
+                const scrolled = window.pageYOffset;
+                const backgrounds = document.querySelectorAll('.parallax-layer');
+                
+                backgrounds.forEach((bg, index) => {
+                    const rate = scrolled * -0.5 * (index + 1);
+                    bg.style.transform = `translateY(${rate}px)`;
+                });
+            });
+        }
+        
+        // 滚动事件监听
+        window.addEventListener('scroll', () => {
+            updateScrollProgress();
+            updateActiveNav();
+            updateBackToTop();
+        });
+        
+        // 返回顶部按钮事件
+        document.getElementById('back-to-top').addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // 页面加载完成后初始化
+        document.addEventListener('DOMContentLoaded', () => {
+            initAnimations();
+            initCharts();
+            setupScrollAnimations();
+            setupParallaxEffect();
+            updateScrollProgress();
+            updateActiveNav();
+        });
+        
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // 窗口大小变化时重新初始化图表
+        window.addEventListener('resize', () => {
+            setTimeout(() => {
+                initCharts();
+            }, 100);
+        });
+    </script>
+</body>
+</html>

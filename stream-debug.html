@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>流式API详细测试</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            background: #1a1a1a;
+            color: #fff;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .log {
+            background: #000;
+            border: 1px solid #555;
+            border-radius: 4px;
+            padding: 15px;
+            min-height: 400px;
+            overflow-y: auto;
+            font-size: 12px;
+            white-space: pre-wrap;
+        }
+        button {
+            background: #007acc;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .success { color: #4ade80; }
+        .error { color: #ef4444; }
+        .warning { color: #f59e0b; }
+        .info { color: #3b82f6; }
+        .response { color: #a855f7; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔧 流式API详细测试</h1>
+
+        <button onclick="testDetailedStream()">完整流式响应测试</button>
+        <button onclick="clearLog()">清空日志</button>
+
+        <div>
+            <h3>详细日志</h3>
+            <div id="testLog" class="log">准备开始详细测试...</div>
+        </div>
+    </div>
+
+    <script>
+        const CONFIG = {
+            apiKey: '4dea1399-3986-471a-8f8c-b080f01fa103',
+            baseURL: 'https://ark.cn-beijing.volces.com/api/v3',
+            model: 'bot-20250915112813-kx2qr'
+        };
+
+        function log(message, type = 'info') {
+            const logElement = document.getElementById('testLog');
+            const timestamp = new Date().toLocaleTimeString();
+            const className = type;
+
+            const logEntry = `<span class="${className}">[${timestamp}] ${message}</span>\n`;
+            logElement.innerHTML += logEntry;
+            logElement.scrollTop = logElement.scrollHeight;
+        }
+
+        function clearLog() {
+            document.getElementById('testLog').innerHTML = '日志已清空...\n';
+        }
+
+        async function testDetailedStream() {
+            log('=== 开始详细流式API测试 ===', 'info');
+
+            try {
+                const requestData = {
+                    model: CONFIG.model,
+                    stream: true,
+                    stream_options: {"include_usage": true},
+                    messages: [
+                        {
+                            role: "system",
+                            content: "You are a helpful assistant."
+                        },
+                        {
+                            role: "user",
+                            content: "请简单介绍一下你自己，用中文回答。"
+                        }
+                    ]
+                };
+
+                log(`发送请求到: ${CONFIG.baseURL}/bots/chat/completions`);
+                log(`请求数据: ${JSON.stringify(requestData, null, 2)}`);
+
+                const response = await fetch(`${CONFIG.baseURL}/bots/chat/completions`, {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': `Bearer ${CONFIG.apiKey}`,
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(requestData)
+                });
+
+                log(`响应状态: ${response.status} ${response.statusText}`);
+
+                if (!response.ok) {
+                    const errorText = await response.text();
+                    log(`❌ 请求失败: ${errorText}`, 'error');
+                    return;
+                }
+
+                log('✅ 开始接收流式数据...', 'success');
+
+                const reader = response.body.getReader();
+                const decoder = new TextDecoder();
+                let chunkCount = 0;
+                let fullResponse = '';
+
+                while (true) {
+                    const { done, value } = await reader.read();
+                    if (done) {
+                        log('🏁 流式响应完成', 'success');
+                        break;
+                    }
+
+                    chunkCount++;
+                    const chunk = decoder.decode(value, { stream: true });
+                    log(`--- 数据块 ${chunkCount} (原始) ---`, 'info');
+                    log(chunk, 'info');
+
+                    // 解析每一行
+                    const lines = chunk.split('\n');
+                    for (const line of lines) {
+                        if (line.trim() === '') continue;
+
+                        log(`处理行: ${line}`, 'info');
+
+                        if (line.startsWith('data: ')) {
+                            const data = line.slice(6);
+
+                            if (data === '[DONE]') {
+                                log('收到结束标记: [DONE]', 'success');
+                                continue;
+                            }
+
+                            try {
+                                const parsed = JSON.parse(data);
+                                log(`解析的JSON: ${JSON.stringify(parsed, null, 2)}`, 'response');
+
+                                const choice = parsed.choices?.[0];
+                                if (choice) {
+                                    if (choice.delta) {
+                                        log(`Delta对象: ${JSON.stringify(choice.delta, null, 2)}`, 'response');
+
+                                        if (choice.delta.content) {
+                                            fullResponse += choice.delta.content;
+                                            log(`📝 接收内容: "${choice.delta.content}"`, 'success');
+                                        }
+
+                                        if (choice.delta.thinking) {
+                                            log(`🧠 思维内容: "${choice.delta.thinking}"`, 'warning');
+                                        }
+                                    }
+
+                                    if (choice.finish_reason) {
+                                        log(`完成原因: ${choice.finish_reason}`, 'info');
+                                    }
+                                }
+
+                                if (parsed.usage) {
+                                    log(`使用情况: ${JSON.stringify(parsed.usage, null, 2)}`, 'info');
+                                }
+                            } catch (parseError) {
+                                log(`❌ JSON解析失败: ${parseError.message}`, 'error');
+                                log(`原始数据: ${data}`, 'error');
+                            }
+                        }
+                    }
+                }
+
+                log(`=== 测试完成 ===`, 'success');
+                log(`总数据块: ${chunkCount}`, 'info');
+                log(`完整响应: "${fullResponse}"`, 'success');
+
+                if (fullResponse === '') {
+                    log('⚠️ 警告: 没有接收到任何内容！', 'warning');
+                    log('可能的原因:', 'warning');
+                    log('1. 模型配置问题', 'warning');
+                    log('2. API参数设置问题', 'warning');
+                    log('3. 流式响应格式变化', 'warning');
+                }
+
+            } catch (error) {
+                log(`❌ 测试出错: ${error.message}`, 'error');
+                log(`错误详情: ${error.stack}`, 'error');
+            }
+        }
+
+        window.addEventListener('load', function() {
+            log('🚀 详细测试工具已启动', 'success');
+        });
+    </script>
+</body>
+</html>

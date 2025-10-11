@@ -1,0 +1,516 @@
+/* VM · 虚空有物 - 补充样式文件 */
+/* 用于扩展和补充主要样式 */
+
+/* 性能优化 - 懒加载图片样式 */
+img[data-src] {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+img.loading {
+    opacity: 0.5;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading-shimmer 1.5s infinite;
+}
+
+img.loaded {
+    opacity: 1;
+}
+
+img.error {
+    opacity: 0.3;
+    filter: grayscale(100%);
+}
+
+@keyframes loading-shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+/* 预加载提示 */
+.preload-indicator {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: rgba(212, 175, 55, 0.1);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    color: #D4AF37;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    z-index: 10000;
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.3s ease;
+}
+
+.preload-indicator.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* 自定义动画 */
+@keyframes vm-pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 20px rgba(255, 215, 0, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 215, 0, 0);
+    }
+}
+
+@keyframes vm-glow {
+    0%, 100% {
+        text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(255, 215, 0, 0.8), 0 0 30px rgba(184, 134, 11, 0.6);
+    }
+}
+
+@keyframes vm-float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* 特殊效果类 */
+.vm-pulse {
+    animation: vm-pulse 2s infinite;
+}
+
+.vm-glow-text {
+    animation: vm-glow 3s ease-in-out infinite;
+}
+
+.vm-float {
+    animation: vm-float 4s ease-in-out infinite;
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--vm-black);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, var(--vm-gold), var(--vm-gold-dark));
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--vm-gold);
+}
+
+/* 主题切换适配 - 调整黑色背景类在浅色主题中的表现 */
+:root[data-theme='light'] .bg-black\/20 {
+    background-color: rgba(17, 17, 17, 0.06) !important;
+}
+
+:root[data-theme='light'] .bg-black\/30 {
+    background-color: rgba(17, 17, 17, 0.08) !important;
+}
+
+:root[data-theme='light'] .bg-black\/40 {
+    background-color: rgba(17, 17, 17, 0.1) !important;
+}
+
+:root[data-theme='light'] .bg-black\/50 {
+    background-color: rgba(17, 17, 17, 0.14) !important;
+}
+
+:root[data-theme='light'] .bg-black {
+    background-color: #f4f5f7 !important;
+}
+
+:root[data-theme='light'] [class*="bg-gray-900"] {
+    background-color: rgba(17, 17, 17, 0.08) !important;
+}
+
+:root[data-theme='light'] [class*="bg-black/"],
+:root[data-theme='light'] [class*="bg-gray-900"] {
+    background-image: none !important;
+}
+
+:root[data-theme='light'] [class*="from-black"],
+:root[data-theme='light'] [class*="from-gray-900"] {
+    --tw-gradient-from: rgba(17, 17, 17, 0.08) !important;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(17, 17, 17, 0.02)) !important;
+}
+
+:root[data-theme='light'] [class*="via-black"],
+:root[data-theme='light'] [class*="via-gray-900"] {
+    --tw-gradient-stops: var(--tw-gradient-from, rgba(17, 17, 17, 0.05)), rgba(17, 17, 17, 0.03), var(--tw-gradient-to, rgba(17, 17, 17, 0.02)) !important;
+}
+
+:root[data-theme='light'] [class*="to-black"],
+:root[data-theme='light'] [class*="to-gray-900"] {
+    --tw-gradient-to: rgba(17, 17, 17, 0.02) !important;
+}
+
+/* 浅色主题下强制使用纯白背景，移除深色覆盖层 */
+html.vm-theme-light,
+body.vm-theme-light,
+:root[data-theme='light'] body {
+    background-color: #ffffff !important;
+    background-image: none !important;
+}
+
+/* 浅色主题为每个版块补充柔和底色，同时弱化深色装饰层 */
+:root[data-theme='light'] .vm-section {
+    background-color: #f4f5f7 !important; /* 使用纯色柔和灰白作为栏目的默认底色 */
+    box-shadow: inset 0 -1px 0 rgba(17, 17, 17, 0.05);
+}
+
+:root[data-theme='light'] section.vm-section:nth-of-type(even) {
+    background-color: #ffffff !important; /* 偶数区块保持纯白，强化层次同时满足纯色要求 */
+}
+
+:root[data-theme='light'] section.vm-section + section.vm-section {
+    border-top: 1px solid rgba(17, 17, 17, 0.06);
+}
+
+:root[data-theme='light'] .vm-section > .absolute.inset-0 {
+    display: block !important;
+    background-color: rgba(243, 244, 246, 0.92) !important; /* 采用半透明纯色遮罩，让底部纹理柔化且不出现渐变 */
+}
+
+:root[data-theme='light'] .vm-section > .absolute.inset-0 > * {
+    opacity: 0.45;
+}
+
+/* 浅色主题文本对比增强，避免金色与灰阶在白底上发虚 */
+.vm-theme-light .text-gray-100,
+.vm-theme-light .text-gray-200,
+.vm-theme-light .text-gray-300 {
+    color: rgba(17, 17, 17, 0.85) !important;
+}
+
+.vm-theme-light .text-gray-400,
+.vm-theme-light .text-gray-500,
+.vm-theme-light .text-gray-600 {
+    color: rgba(17, 17, 17, 0.78) !important;
+}
+
+.vm-theme-light .text-white {
+    color: var(--vm-text-primary, #111111) !important;
+}
+
+.vm-theme-light .text-yellow-400 {
+    color: #b8860b !important;
+}
+
+.vm-theme-light .vm-gradient-text,
+.vm-theme-light .vm-hero-glass-text {
+    color: #111827 !important; /* 使用深灰色提升浅色主题下的文字对比度 */
+    background: none !important; /* 取消金色渐变背景，避免视觉噪点 */
+    -webkit-text-fill-color: initial !important;
+    text-shadow: none;
+}
+
+/* 浅色主题 CTA 与导航按钮配色优化：默认更浅金色，悬停时加深 */
+.vm-theme-light .vm-button {
+    background: linear-gradient(135deg, #f8e4b1, #f0c968) !important; /* 浅金渐变作为默认状态 */
+    color: #4a3410 !important;
+}
+
+.vm-theme-light .vm-button:hover {
+    background: linear-gradient(135deg, #e6be54, #c98f16) !important; /* 悬停时使用更深金色营造反馈 */
+    color: #332407 !important;
+}
+
+.vm-theme-light #hero-buttons a {
+    background: linear-gradient(135deg, #fdf1c7, #f2cf6d) !important; /* 英雄区主按钮采用浅金基调 */
+    color: #3b2a0b !important;
+}
+
+.vm-theme-light #hero-buttons a:hover {
+    background: linear-gradient(135deg, #e7b84d, #c98512) !important; /* 悬停时加深金色，突出互动感 */
+    color: #241804 !important;
+}
+
+.vm-theme-light .premium-button {
+    background: linear-gradient(135deg, #f8e4b1, #f0c968, #e0b24b) !important; /* 重新定义浅色金色渐变 */
+    color: #3c2a0c !important;
+}
+
+.vm-theme-light .premium-button:hover {
+    background-position: 100% 100% !important;
+    background-image: linear-gradient(135deg, #e6be54, #c98f16, #a56b06) !important; /* 悬停时加深色泽 */
+    color: #241804 !important;
+    box-shadow: 0 16px 32px rgba(201, 143, 22, 0.25), 0 0 24px rgba(201, 143, 22, 0.2) !important;
+}
+
+/* 虚空×有物板块浅色主题高级感优化：更柔和的卡片与更大的留白 */
+.vm-theme-light #philosophy {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.vm-theme-light #philosophy .grid {
+    gap: 6rem 5rem !important; /* 调整网格间距，拉开层级关系 */
+}
+
+.vm-theme-light #philosophy .luxury-card {
+    background: rgba(255, 252, 244, 0.96) !important; /* 奶油色底，契合浅色调 */
+    backdrop-filter: blur(18px);
+    border-color: rgba(184, 134, 11, 0.18) !important;
+    padding: 4rem 3.5rem !important;
+    box-shadow: 0 28px 80px rgba(17, 24, 39, 0.08);
+    transform: translateY(0) !important;
+}
+
+.vm-theme-light #philosophy .luxury-card:hover {
+    background: rgba(255, 248, 230, 0.98) !important;
+    border-color: rgba(184, 134, 11, 0.3) !important;
+    transform: translateY(-6px) !important;
+    box-shadow: 0 40px 110px rgba(184, 134, 11, 0.16);
+}
+
+.vm-theme-light #philosophy .luxury-card .space-y-6 > * + * {
+    margin-top: 2.25rem !important; /* 加大段落呼吸感 */
+}
+
+.vm-theme-light #philosophy .luxury-card .text-lg {
+    line-height: 1.9 !important;
+}
+
+.vm-theme-light #philosophy .group:hover .vm-gradient-text {
+    transform: scale(1.04) !important; /* 降低放大比例，保持优雅克制 */
+}
+
+:root[data-theme='light'] .bg-gradient-radial {
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0)) !important;
+}
+
+/* 选择文本样式 */
+::selection {
+    background: rgba(255, 215, 0, 0.3);
+    color: #fff;
+}
+
+::-moz-selection {
+    background: rgba(255, 215, 0, 0.3);
+    color: #fff;
+}
+
+/* 图片加载效果 */
+.vm-image-placeholder {
+    background: linear-gradient(90deg, rgba(255, 215, 0, 0.1) 25%, rgba(184, 134, 11, 0.1) 50%, rgba(255, 215, 0, 0.1) 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+/* 移动端优化 */
+@media (max-width: 768px) {
+    .vm-hero-title {
+        font-size: 3rem !important;
+    }
+    
+    .vm-section {
+        min-height: 80vh;
+        padding: 2rem 0;
+    }
+    
+    .vm-chart-container {
+        margin: 1rem 0;
+        border-color: rgba(212, 175, 55, 0.4) !important;
+    }
+    
+    .vm-parallax {
+        transform: none !important;
+    }
+}
+
+/* 高对比度模式支持 */
+@media (prefers-contrast: high) {
+    .vm-gradient-text {
+        color: #fff !important;
+        background: none !important;
+        -webkit-text-fill-color: #fff !important;
+    }
+    
+    .vm-card {
+        border: 2px solid #fff !important;
+    }
+}
+
+/* 减少动画偏好支持 */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* 深色模式增强：仅在未显式切换为浅色主题时响应系统偏好 */
+@media (prefers-color-scheme: dark) {
+    html:not([data-theme='light']) body {
+        background-color: #000;
+    }
+}
+
+/* 高端首屏效果 */
+.bg-gradient-radial {
+    background: radial-gradient(circle at center, var(--tw-gradient-stops));
+}
+
+.animation-delay-1000 {
+    animation-delay: 1s;
+}
+
+.animation-delay-2000 {
+    animation-delay: 2s;
+}
+
+/* 高端字体效果 */
+.font-extralight {
+    font-weight: 200;
+}
+
+.tracking-widest-plus {
+    letter-spacing: 0.4em;
+}
+
+/* 高端按钮效果 */
+.luxury-button {
+    background: linear-gradient(135deg, #C9AA71, #D4AF37, #B8860B);
+    background-size: 200% 200%;
+    transition: all 0.5s ease;
+    box-shadow: 0 8px 32px rgba(212, 175, 55, 0.3);
+}
+
+.luxury-button:hover {
+    background-position: 100% 100%;
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 16px 64px rgba(212, 175, 55, 0.4);
+}
+
+/* 优雅的分割线 */
+.vm-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #D4AF37, transparent);
+}
+
+/* 高端卡片效果 */
+.luxury-card {
+    background: var(--vm-card-bg, rgba(0, 0, 0, 0.4));
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--vm-card-border, rgba(212, 175, 55, 0.2));
+    transition: all 0.4s ease;
+}
+
+.luxury-card:hover {
+    background: var(--vm-card-hover-bg, rgba(0, 0, 0, 0.6));
+    border-color: var(--vm-card-border-hover, rgba(212, 175, 55, 0.5));
+    transform: translateY(-5px);
+    box-shadow: 0 20px 60px rgba(212, 175, 55, 0.18);
+}
+
+/* 数据展示效果 */
+.stats-number {
+    background: linear-gradient(135deg, #D4AF37, #FFD700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 0 30px rgba(212, 175, 55, 0.5);
+}
+
+/* 打印样式 */
+@media print {
+    body {
+        background: white !important;
+        color: black !important;
+    }
+    
+    .vm-gradient-text {
+        color: black !important;
+        background: none !important;
+        -webkit-text-fill-color: black !important;
+    }
+    
+    .vm-nav,
+    .vm-button,
+    .cursor-glow {
+        display: none !important;
+    }
+}
+
+/* 图表容器专用样式 */
+.vm-chart-container {
+    background: var(--vm-card-bg, rgba(0, 0, 0, 0.4));
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--vm-card-border, rgba(212, 175, 55, 0.3));
+    transition: all 0.4s ease;
+    box-shadow: 0 8px 32px rgba(212, 175, 55, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.vm-chart-container:hover {
+    border-color: var(--vm-card-border-hover, rgba(212, 175, 55, 0.6));
+    box-shadow: 0 16px 64px rgba(212, 175, 55, 0.2);
+    transform: translateY(-2px);
+}
+
+/* 图表响应式优化 */
+@media (max-width: 768px) {
+    .vm-chart-container {
+        padding: 0.5rem !important;
+        margin: 0.5rem 0 !important;
+    }
+    
+    #cognitive-chart {
+        height: 300px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    #cognitive-chart {
+        height: 250px !important;
+    }
+}
+
+/* 图表加载动画 */
+.vm-chart-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.2), transparent);
+    transition: left 0.8s ease;
+    pointer-events: none;
+}
+
+.vm-chart-container:hover::before {
+    left: 100%;
+} 

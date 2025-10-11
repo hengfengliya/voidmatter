@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>珠宝与奢侈品行业研究报告 2025年Q3</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@200;300;400;500;600;700;800;900&family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <style>
+        :root {
+            /* 深邃黑金权力色系 */
+            --obsidian-black: #0A0A0A;
+            --midnight-black: #151515;
+            --shadow-black: #1F1F1F;
+            --charcoal-deep: #2A2A2A;
+            
+            /* 稀缺金色层次 */
+            --sovereign-gold: #B8860B;
+            --imperial-gold: #DAA520;
+            --aureate-whisper: #F4E4BC;
+            --golden-shadow: #8B6914;
+            
+            /* 权力灰度 */
+            --platinum-mist: #E5E5E5;
+            --sterling-silver: #C0C0C0;
+            --graphite-steel: #696969;
+            --charcoal-whisper: #808080;
+            
+            /* 稀缺强调色 */
+            --ruby-accent: #8B0000;
+            --emerald-depth: #006400;
+            --sapphire-authority: #1e3a8a;
+        }
+
+        body {
+            background: var(--obsidian-black);
+            color: var(--platinum-mist);
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .imperial-title {
+            font-family: 'Playfair Display', serif;
+            font-weight: 200;
+            letter-spacing: 0.12em;
+            line-height: 1.05;
+            color: var(--aureate-whisper);
+            text-shadow: 0 3px 12px rgba(184, 134, 11, 0.4);
+        }
+
+        .imperial-subtitle {
+            font-family: 'Playfair Display', serif;
+            font-weight: 300;
+            letter-spacing: 0.08em;
+            line-height: 1.15;
+            color: var(--imperial-gold);
+            text-shadow: 0 2px 8px rgba(218, 165, 32, 0.3);
+        }
+
+        .imperial-tagline {
+            font-family: 'Inter', sans-serif;
+            font-weight: 200;
+            letter-spacing: 0.06em;
+            line-height: 1.4;
+            color: var(--sterling-silver);
+            font-style: italic;
+        }
+
+        .imperial-dedication {
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+            letter-spacing: 0.04em;
+            line-height: 1.3;
+            color: var(--imperial-gold);
+        }
+
+        .imperial-dedication-sub {
+            font-family: 'Inter', sans-serif;
+            font-weight: 200;
+            letter-spacing: 0.05em;
+            line-height: 1.3;
+            color: var(--sterling-silver);
+            font-style: italic;
+        }
+
+        .sovereign-heading {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            color: var(--imperial-gold);
+            text-shadow: 0 1px 4px rgba(218, 165, 32, 0.4);
+        }
+
+        .noble-text {
+            font-weight: 300;
+            letter-spacing: 0.03em;
+            line-height: 2.2;
+            color: var(--platinum-mist);
+        }
+
+        .executive-quote {
+            font-weight: 300;
+            letter-spacing: 0.02em;
+            line-height: 1.8;
+            color: var(--sterling-silver);
+            font-size: 0.95rem;
+            font-style: italic;
+            position: relative;
+            padding: 0 2rem;
+            margin: 2rem 0;
+        }
+
+        .executive-quote::before {
+            content: '"';
+            position: absolute;
+            left: 0;
+            top: -0.5rem;
+            font-size: 3rem;
+            color: var(--sovereign-gold);
+            opacity: 0.3;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .executive-quote::after {
+            content: '"';
+            position: absolute;
+            right: 0;
+            bottom: -0.5rem;
+            font-size: 3rem;
+            color: var(--sovereign-gold);
+            opacity: 0.3;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .exclusive-number {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: var(--sovereign-gold);
+            text-shadow: 0 1px 3px rgba(184, 134, 11, 0.5);
+        }
+
+        .sovereign-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 5rem;
+        }
+
+        .imperial-section {
+            margin: 12rem 0;
+            position: relative;
+        }
+
+        .authority-card {
+            background: linear-gradient(145deg, 
+                rgba(21, 21, 21, 0.9) 0%, 
+                rgba(31, 31, 31, 0.8) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.15);
+            border-radius: 2px;
+            padding: 3rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            box-shadow: 
+                0 8px 32px rgba(0, 0, 0, 0.6),
+                inset 0 1px 1px rgba(244, 228, 188, 0.05);
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .authority-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(184, 134, 11, 0.3);
+            box-shadow: 
+                0 16px 48px rgba(0, 0, 0, 0.8),
+                0 0 24px rgba(184, 134, 11, 0.1),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08);
+        }
+
+        .authority-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(90deg, var(--sovereign-gold), transparent);
+            opacity: 0.6;
+        }
+
+        .authority-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(270deg, var(--sovereign-gold), transparent);
+            opacity: 0.6;
+        }
+
+        .golden-glass-card {
+            background: 
+                radial-gradient(circle at 30% 30%, rgba(218, 165, 32, 0.12) 0%, transparent 50%),
+                radial-gradient(circle at 70% 70%, rgba(184, 134, 11, 0.08) 0%, transparent 50%),
+                linear-gradient(135deg, 
+                    rgba(244, 228, 188, 0.06) 0%, 
+                    rgba(218, 165, 32, 0.04) 30%,
+                    rgba(184, 134, 11, 0.03) 70%,
+                    rgba(139, 105, 20, 0.02) 100%);
+            border: 1px solid rgba(218, 165, 32, 0.15);
+            border-radius: 4px;
+            padding: 2.5rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            box-shadow: 
+                0 8px 32px rgba(0, 0, 0, 0.6),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08),
+                inset 0 0 30px rgba(218, 165, 32, 0.03);
+            transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .golden-glass-card::before {
+            content: '';
+            position: absolute;
+            inset: -1px;
+            background: linear-gradient(45deg, 
+                rgba(218, 165, 32, 0.2) 0%, 
+                rgba(184, 134, 11, 0.1) 25%,
+                transparent 50%,
+                rgba(244, 228, 188, 0.1) 75%,
+                rgba(218, 165, 32, 0.15) 100%);
+            border-radius: 4px;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.8s ease;
+        }
+
+        .golden-glass-card:hover {
+            transform: translateY(-3px);
+            border-color: rgba(218, 165, 32, 0.3);
+            box-shadow: 
+                0 16px 48px rgba(0, 0, 0, 0.8),
+                0 0 40px rgba(218, 165, 32, 0.1),
+                inset 0 1px 1px rgba(244, 228, 188, 0.12),
+                inset 0 0 40px rgba(218, 165, 32, 0.05);
+        }
+
+        .golden-glass-card:hover::before {
+            opacity: 1;
+        }
+
+        .imperial-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            background: rgba(15, 15, 15, 0.8);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(184, 134, 11, 0.2);
+            border-radius: 2px;
+        }
+
+        .imperial-table th {
+            background: rgba(184, 134, 11, 0.08);
+            padding: 2rem 1.5rem;
+            text-align: left;
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--imperial-gold);
+            border-bottom: 1px solid rgba(184, 134, 11, 0.2);
+        }
+
+        .imperial-table td {
+            padding: 1.8rem 1.5rem;
+            border-bottom: 1px solid rgba(184, 134, 11, 0.05);
+            font-weight: 300;
+        }
+
+        .imperial-table tbody tr:hover {
+            background: rgba(184, 134, 11, 0.03);
+        }
+
+        .reading-progress {
+            position: fixed;
+            top: 50%;
+            right: 2rem;
+            width: 4px;
+            height: 200px;
+            transform: translateY(-50%);
+            background: linear-gradient(180deg, 
+                rgba(184, 134, 11, 0.2) 0%, 
+                rgba(218, 165, 32, 0.3) 30%,
+                rgba(244, 228, 188, 0.4) 60%,
+                rgba(218, 165, 32, 0.3) 85%,
+                rgba(139, 105, 20, 0.2) 100%);
+            z-index: 1001;
+            box-shadow: 
+                0 0 12px rgba(184, 134, 11, 0.6),
+                2px 0 8px rgba(184, 134, 11, 0.3),
+                inset 1px 0 2px rgba(244, 228, 188, 0.4);
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+        .reading-progress::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(180deg,
+                rgba(244, 228, 188, 0.1) 0%,
+                rgba(218, 165, 32, 0.15) 50%,
+                rgba(244, 228, 188, 0.1) 100%);
+            border-radius: 2px;
+            animation: progressShimmer 3s ease-in-out infinite;
+        }
+
+        .reading-progress-fill {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(180deg,
+                var(--golden-shadow) 0%,
+                var(--sovereign-gold) 50%,
+                var(--imperial-gold) 100%);
+            border-radius: 2px;
+            transition: height 0.1s ease;
+            box-shadow: 
+                inset 0 1px 2px rgba(244, 228, 188, 0.3),
+                0 0 8px rgba(184, 134, 11, 0.4);
+        }
+
+        @keyframes progressShimmer {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.8; }
+        }
+
+        .progress-tooltip {
+            position: fixed;
+            top: 50%;
+            right: 7rem;
+            transform: translateY(-50%);
+            background: linear-gradient(135deg, 
+                rgba(15, 15, 15, 0.95) 0%, 
+                rgba(31, 31, 31, 0.9) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.25);
+            border-radius: 8px;
+            padding: 0.8rem 2rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 0.85rem;
+            font-weight: 300;
+            color: var(--imperial-gold);
+            backdrop-filter: blur(20px);
+            box-shadow: 
+                0 8px 32px rgba(0, 0, 0, 0.7),
+                0 0 20px rgba(184, 134, 11, 0.1),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+            z-index: 1002;
+            white-space: nowrap;
+            letter-spacing: 0.03em;
+        }
+
+        .progress-tooltip.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(-50%) translateX(-8px);
+        }
+
+        .progress-tooltip::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -8px;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-left: 8px solid rgba(184, 134, 11, 0.25);
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+        }
+
+        .progress-tooltip::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -7px;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-left: 7px solid rgba(15, 15, 15, 0.95);
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+        }
+
+        .sovereign-divider {
+            height: 1px;
+            background: linear-gradient(90deg, 
+                transparent 0%, 
+                rgba(184, 134, 11, 0.3) 30%, 
+                rgba(184, 134, 11, 0.6) 50%, 
+                rgba(184, 134, 11, 0.3) 70%, 
+                transparent 100%);
+            margin: 8rem 0;
+            position: relative;
+        }
+
+        .sovereign-divider::before {
+            content: '◆';
+            position: absolute;
+            top: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--sovereign-gold);
+            font-size: 16px;
+            background: var(--obsidian-black);
+            padding: 0 1rem;
+        }
+
+        .citation-item {
+            padding: 1.5rem 2rem;
+            margin: 0.8rem 0;
+            background: linear-gradient(135deg, 
+                rgba(21, 21, 21, 0.8) 0%, 
+                rgba(31, 31, 31, 0.6) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.15);
+            border-radius: 3px;
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .citation-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--sovereign-gold), var(--golden-shadow));
+            opacity: 0.6;
+            transition: opacity 0.3s ease;
+        }
+
+        .citation-item:hover {
+            border-color: rgba(184, 134, 11, 0.4);
+            background: linear-gradient(135deg, 
+                rgba(31, 31, 31, 0.9) 0%, 
+                rgba(42, 42, 42, 0.7) 100%);
+            transform: translateX(6px) translateY(-1px);
+            box-shadow: 
+                0 8px 25px rgba(0, 0, 0, 0.5),
+                0 0 20px rgba(184, 134, 11, 0.08);
+        }
+
+        .citation-item:hover::before {
+            opacity: 1;
+        }
+
+        .citation-item a {
+            color: var(--platinum-mist);
+            text-decoration: none;
+            font-size: 0.85rem;
+            line-height: 1.7;
+            font-weight: 300;
+            transition: color 0.4s ease;
+            display: block;
+            position: relative;
+        }
+
+        .citation-item a::before {
+            content: '';
+            position: absolute;
+            left: -0.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 4px;
+            background: var(--sovereign-gold);
+            border-radius: 50%;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .citation-item:hover a {
+            color: var(--aureate-whisper);
+            padding-left: 1rem;
+        }
+
+        .citation-item:hover a::before {
+            opacity: 0.8;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 1024px) {
+            .sovereign-container {
+                padding: 0 2.5rem;
+            }
+            .imperial-section {
+                margin: 8rem 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .sovereign-container {
+                padding: 0 1.5rem;
+            }
+            .imperial-section {
+                margin: 6rem 0;
+            }
+            .authority-card {
+                padding: 2rem;
+            }
+            .reading-progress {
+                right: 1rem;
+                height: 150px;
+                width: 3px;
+            }
+            .progress-tooltip {
+                right: 5rem;
+                padding: 0.6rem 1.5rem;
+                font-size: 0.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 垂直进度条 -->
+    <div class="reading-progress">
+        <div class="reading-progress-fill"></div>
+    </div>
+
+    <!-- 进度标题提示器 -->
+    <div class="progress-tooltip" id="progress-tooltip"></div>
+
+    <!-- 首屏标题 -->
+    <header id="header" class="min-h-screen flex items-center justify-center relative" data-title="珠宝与奢侈品行业研究报告">
+        <div class="sovereign-container text-center relative z-10">
+            <!-- 主标题区域 -->
+            <div class="mb-16">
+                <h1 class="imperial-title text-5xl md:text-7xl mb-6">
+                    珠宝与奢侈品行业研究报告 2025年Q3
+                </h1>
+                
+                <h2 class="imperial-subtitle text-2xl md:text-4xl mb-12 opacity-90">
+                    全球珠宝与奢侈品行业深度分析报告：在动荡中重塑价值
+                </h2>
+            </div>
+            
+            <!-- 英文副标题 -->
+            <div class="mb-12">
+                <div class="imperial-tagline text-sm md:text-base opacity-75 max-w-4xl mx-auto">
+                    Global Luxury and Jewelry Industry Deep Analysis Report:<br class="md:hidden">
+                    Reshaping Value in Turbulence
+                </div>
+            </div>
+            
+            <!-- 致敬区域 -->
+            <div class="mb-16">
+                <div class="imperial-dedication text-sm md:text-base">
+                    致：机构投资者与高净值客户
+                </div>
+                <div class="imperial-dedication-sub text-xs md:text-sm opacity-60 mt-2">
+                    For: Institutional Investors and High Net Worth Clients
+                </div>
+            </div>
+            
+            <!-- 发布日期卡片 -->
+            <div class="golden-glass-card inline-block">
+                <div class="text-xs uppercase tracking-[0.2em] opacity-50 mb-4 font-light">
+                    本报告发布于 · Published on
+                </div>
+                <div class="sovereign-heading text-base">
+                    <span id="date-cn" class="exclusive-number">2025年8月</span> 
+                    <span class="mx-4 text-sovereign-gold opacity-40">◆</span> 
+                    <span id="date-en" class="exclusive-number">August 2025</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 背景装饰 -->
+        <div class="absolute inset-0 pointer-events-none opacity-8">
+            <div class="absolute top-20 left-20 w-px h-32 bg-gradient-to-b from-sovereign-gold to-transparent"></div>
+            <div class="absolute bottom-20 right-20 w-px h-32 bg-gradient-to-t from-sovereign-gold to-transparent"></div>
+            <div class="absolute top-1/2 left-1/4 w-24 h-px bg-gradient-to-r from-sovereign-gold to-transparent"></div>
+            <div class="absolute top-1/3 right-1/4 w-24 h-px bg-gradient-to-l from-sovereign-gold to-transparent"></div>
+        </div>
+    </header>
+
+    <!-- 执行摘要 -->
+    <section id="executive-summary" class="imperial-section" data-title="执行摘要">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-4xl mb-12 text-center">
+                <i class="material-icons align-middle mr-4">analytics</i>
+                执行摘要：十字路口上的市场
+            </h2>
+            
+            <div class="executive-quote max-w-4xl mx-auto text-center mb-16">
+                全球个人奢侈品行业正处于一个重要的拐点。在经历了后疫情时代的强劲反弹之后，行业进入了一个正常化与动荡并存的时期。
+            </div>
+            
+            <div class="authority-card mb-12">
+                <div class="noble-text">
+                    全球个人奢侈品行业正处于一个重要的拐点。在经历了后疫情时代的强劲反弹（市场规模在2023年达到3690亿欧元的顶峰）之后，行业进入了一个正常化与动荡并存的时期，2024年市场规模收缩1%至3640亿欧元。我们的分析框架预测，在持续的宏观经济逆风、地缘政治紧张局势以及消费者行为结构性转变的共同作用下，2025年市场将进一步下滑2%至5%。这一环境标志着普涨时代的结束，一个两极分化的、"赢家通吃"的市场格局正在形成，品牌韧性、战略清晰度和卓越运营将成为决定性优势。
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="authority-card">
+                    <h4 class="sovereign-heading text-lg mb-4">
+                        <i class="fas fa-chart-trend-up mr-3"></i>
+                        体验式消费兴起
+                    </h4>
+                    <div class="noble-text">
+                        在价格疲劳和经济不确定性的背景下，入门级奢侈品消费者正在减少购买，高净值人群正日益将支出优先用于体验（如高端旅游、美食）而非实物商品。
+                    </div>
+                </div>
+                
+                <div class="authority-card">
+                    <h4 class="sovereign-heading text-lg mb-4">
+                        <i class="fas fa-store mr-3"></i>
+                        直面消费者模式
+                    </h4>
+                    <div class="noble-text">
+                        品牌正在积极地从批发渠道转型，以获得对定价、品牌叙事和宝贵的第一方客户数据的控制权。2023年，零售渠道的份额（52%）首次超过批发渠道（48%）。
+                    </div>
+                </div>
+                
+                <div class="authority-card">
+                    <h4 class="sovereign-heading text-lg mb-4">
+                        <i class="fas fa-recycle mr-3"></i>
+                        循环经济正式化
+                    </h4>
+                    <div class="noble-text">
+                        二手市场正从一个边缘威胁演变为战略要务，预计将以超过11%的复合年增长率增长，到2033年市场规模将接近700亿美元。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 全球市场格局 -->
+    <section id="market-landscape" class="imperial-section" data-title="全球市场格局">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-4xl mb-12 text-center">
+                <i class="material-icons align-middle mr-4">public</i>
+                全球市场格局：在放缓中衡量机遇
+            </h2>
+            
+            <div class="mb-16">
+                <h3 class="sovereign-heading text-2xl mb-8">
+                    <i class="fas fa-chart-line mr-3"></i>
+                    市场规模与增长轨迹
+                </h3>
+                
+                <div class="authority-card mb-8">
+                    <div class="noble-text">
+                        全球个人奢侈品市场在2024年达到3640亿欧元，较2023年3690亿欧元的历史高点下降了1%。这标志着后疫情时代强劲复苏的显著减速。2025年第一季度的数据显示，市场持续下滑1-3%。贝恩咨询公司对2025年全年提出了三种情景预测，其中最可能的是"持续下滑"情景，即市场收缩2%至5%。
+                    </div>
+                </div>
+                
+                <div class="overflow-x-auto mb-12">
+                    <table class="imperial-table">
+                        <thead>
+                            <tr>
+                                <th>年度</th>
+                                <th>市场规模 (十亿欧元)</th>
+                                <th>同比增长率 (%)</th>
+                                <th>数据来源</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-semibold">2023 (实际)</td>
+                                <td class="exclusive-number">369</td>
+                                <td>-</td>
+                                <td>贝恩咨询</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">2024 (估计)</td>
+                                <td class="exclusive-number">364</td>
+                                <td class="text-red-400 font-bold">-1%</td>
+                                <td>贝恩咨询</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">2025 (预测)</td>
+                                <td class="exclusive-number">346 - 357</td>
+                                <td class="text-red-400 font-bold">-2% 至 -5%</td>
+                                <td>贝恩咨询</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">2026-2027 (预测)</td>
+                                <td>缓慢复苏</td>
+                                <td class="text-green-400 font-bold">1% 至 3%</td>
+                                <td>麦肯锡</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="mb-16">
+                <h3 class="sovereign-heading text-2xl mb-8">
+                    <i class="fas fa-globe-americas mr-3"></i>
+                    区域动态与分化
+                </h3>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="authority-card">
+                        <h4 class="sovereign-heading text-lg mb-4">美洲市场</h4>
+                        <div class="noble-text">
+                            2023年市场收缩8%，至1010亿欧元。这反映了面临经济压力的入门级消费者的退出，以及顶级客户将部分支出转向欧洲旅游和其他奢侈品类别的趋势。美国仍然是至关重要的市场，但品牌现在必须面对一个更加挑剔、注重价值的消费者群体。
+                        </div>
+                    </div>
+                    
+                    <div class="authority-card">
+                        <h4 class="sovereign-heading text-lg mb-4">欧洲市场</h4>
+                        <div class="noble-text">
+                            2023年，欧洲重新成为全球最大的个人奢侈品销售地区，销售额达到1020亿欧元。这主要得益于游客消费的强劲流入，特别是美国游客的消费额自2019年以来增长了2.5倍。然而，这一增长掩盖了欧洲本地消费者因自身宏观经济压力而导致的需求疲软。
+                        </div>
+                    </div>
+                    
+                    <div class="authority-card">
+                        <h4 class="sovereign-heading text-lg mb-4">中国大陆</h4>
+                        <div class="noble-text">
+                            中国大陆的奢侈品市场正在经历一次结构性重置。在2023年初经历强劲开局后，市场增长逐渐放缓，全年增长9%。这一趋势在2024年显著恶化，受房地产危机、消费者信心低迷以及出境旅游和海外奢侈品购物急剧反弹的影响，国内奢侈品消费预计下降18-20%。
+                        </div>
+                    </div>
+                    
+                    <div class="authority-card">
+                        <h4 class="sovereign-heading text-lg mb-4">日本及亚洲其他地区</h4>
+                        <div class="noble-text">
+                            日本是2023年增长最突出的市场，飙升17%至290亿欧元，这得益于日元疲软吸引了大量游客流入和强劲的本地需求。东南亚市场同样表现出韧性，由不断增长的本地客户群所支撑。相比之下，由于宏观经济不利，韩国市场出现放缓。
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="golden-glass-card">
+                <h3 class="sovereign-heading text-xl mb-6">"水涨船高"时代的终结</h3>
+                <div class="noble-text">
+                    当前的数据揭示了一个深刻的转变：奢侈品行业已经从一个普涨的周期性上升阶段，进入了一个结构性的分化时期。后疫情时代的繁荣（2021-2023年）是由被压抑的需求、超额储蓄以及体验式消费选择有限等因素共同推动的。这创造了一个几乎所有品牌都能通过激进的提价策略实现增长的环境。然而，从2024年开始，这些顺风因素转为逆风。超额储蓄已被消耗，体验式消费作为主要竞争对手回归，消费者对缺乏创新支撑的价格上涨感到"疲劳"。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 核心驱动力 -->
+    <section id="core-drivers" class="imperial-section" data-title="核心行业驱动力">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-4xl mb-12 text-center">
+                <i class="material-icons align-middle mr-4">trending_up</i>
+                核心行业驱动力与结构性转型
+            </h2>
+            
+            <div class="mb-16">
+                <h3 class="sovereign-heading text-2xl mb-8">
+                    <i class="fas fa-users mr-3"></i>
+                    演变中的奢侈品消费者
+                </h3>
+                
+                <div class="grid md:grid-cols-2 gap-6 mb-12">
+                    <div class="authority-card">
+                        <h4 class="sovereign-heading text-lg mb-4">代际变迁</h4>
+                        <div class="noble-text">
+                            到2025年，千禧一代和Z世代将占奢侈品消费者的70%。这些群体优先考虑真实性、可持续性、数字互动和体验，而非纯粹的所有权。他们也是二手市场的主要推动力。相比之下，欧美市场的成熟消费者更看重工艺和价值，近75%的人在购买前会进行价格比较。
+                        </div>
+                    </div>
+                    
+                    <div class="authority-card">
+                        <h4 class="sovereign-heading text-lg mb-4">价值的求索</h4>
+                        <div class="noble-text">
+                            毫无疑问，奢侈品牌肆意提价的时代已经结束。各细分市场的消费者都在质疑"价格-价值"的平衡点。麦肯锡指出，2019至2023年间，价格上涨贡献了行业80%的增长，但这一策略现已触及天花板，并开始对入门级消费者的需求产生负面影响。
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-16">
+                <h3 class="sovereign-heading text-2xl mb-8">
+                    <i class="fas fa-sync mr-3"></i>
+                    循环经济与二手市场的崛起
+                </h3>
+                
+                <div class="authority-card mb-8">
+                    <h4 class="sovereign-heading text-lg mb-4">市场动态</h4>
+                    <div class="noble-text">
+                        全球二手奢侈品市场在2023年的价值超过340亿美元，预计将以约10-12%的复合年增长率增长，到2030年代初达到600亿至700亿美元的规模。这一增长由消费者对可持续性、可负担性以及稀有或复古单品的需求所驱动。
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="authority-card">
+                        <h4 class="sovereign-heading text-lg mb-4">Vestiaire Collective</h4>
+                        <div class="noble-text">
+                            作为一个全球性的C2C（消费者对消费者）市场运营，并为Gucci和Burberry等品牌提供B2B（企业对企业）的"转售即服务"。其商业模式基于向卖家收取佣金（例如，在美国，对80至16,500美元的商品收取12%的费用），并提供认证作为核心服务以建立信任。
+                        </div>
+                    </div>
+                    
+                    <div class="authority-card">
+                        <h4 class="sovereign-heading text-lg mb-4">The RealReal</h4>
+                        <div class="noble-text">
+                            作为全球最大的线上寄售平台，其实际接收商品进行认证、拍照、定价和销售。该公司的财务数据显示，其商业模式专注于扩大商品交易总额（GMV），2024年第四季度达到5.04亿美元，并提升毛利率（2024年第四季度为74.4%）。
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="golden-glass-card">
+                <h3 class="sovereign-heading text-xl mb-6">二手市场：奢侈品的准金融市场</h3>
+                <div class="noble-text">
+                    二手市场的演变不仅仅是增加了一个销售渠道，它正在根本上改变奢侈品的资产属性。传统上，奢侈品的价值由品牌通过零售价单方面定义，二级市场则不透明且非正式。然而，像The RealReal和Vestiaire Collective这样的数字平台创造了透明、流动的二手奢侈品市场，配备了价格历史和认证服务。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 竞争格局 -->
+    <section id="competitive-landscape" class="imperial-section" data-title="竞争格局">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-4xl mb-12 text-center">
+                <i class="material-icons align-middle mr-4">business</i>
+                竞争格局与公司战略分析
+            </h2>
+            
+            <div class="executive-quote max-w-4xl mx-auto text-center mb-16">
+                奢侈品行业由少数几家大型多元化集团主导，它们利用规模、产品组合协同效应和财务实力来超越市场。
+            </div>
+            
+            <div class="mb-16">
+                <h3 class="sovereign-heading text-2xl mb-8">
+                    <i class="fas fa-crown mr-3"></i>
+                    "超级品牌"与企业集团分析
+                </h3>
+                
+                <div class="grid md:grid-cols-2 gap-6 mb-12">
+                    <div class="authority-card">
+                        <h4 class="sovereign-heading text-lg mb-4">LVMH Moët Hennessy Louis Vuitton</h4>
+                        <div class="noble-text mb-4">
+                            <strong>财务表现：</strong> 集团在充满挑战的环境中表现出韧性，2024年报告收入为847亿欧元。经常性业务利润为196亿欧元，实现了23.1%的强劲营业利润率。
+                        </div>
+                        <div class="noble-text">
+                            <strong>区域与渠道组合：</strong> 收入在地理上高度多元化，2024年亚洲（不含日本）占34%，美国占25%，欧洲（不含法国）占16%，日本占7%。集团运营着一个超过6,300家门店的零售网络。
+                        </div>
+                    </div>
+                    
+                    <div class="authority-card">
+                        <h4 class="sovereign-heading text-lg mb-4">开云集团 (Kering)</h4>
+                        <div class="noble-text mb-4">
+                            <strong>财务表现：</strong> 开云集团在2024年面临巨大阻力，收入下降12%至172亿欧元。经常性营业利润暴跌46%至26亿欧元，导致营业利润率从2023年的24.3%急剧收缩至2024年的14.9%。
+                        </div>
+                        <div class="noble-text">
+                            <strong>古驰的复兴战略：</strong> 古驰约占集团收入的45%，其2024年销售额（可比口径）下降了21%。董事会主席兼首席执行官弗朗索瓦-亨利·皮诺强调，古驰正在通过新的创意方向、更具专属性的产品和更清洁的分销网络来重建品牌吸引力。
+                        </div>
+                    </div>
+                    
+                    <div class="authority-card">
+                        <h4 class="sovereign-heading text-lg mb-4">历峰集团 (Richemont)</h4>
+                        <div class="noble-text mb-4">
+                            <strong>财务表现：</strong> 在截至2025年3月的财年（FY25），历峰集团报告销售额为214亿欧元，按固定汇率计算增长4%。营业利润下降7%至45亿欧元，营业利润率为20.9%。
+                        </div>
+                        <div class="noble-text">
+                            <strong>业绩分化：</strong> 集团的业绩突显了硬奢侈品内部的巨大分化。珠宝部门（卡地亚、梵克雅宝）是增长引擎，销售额增长8%至153亿欧元，并实现了31.9%的稳健营业利润率。相比之下，专业制表部门的销售额下降了13%，营业利润率暴跌至仅5.3%。
+                        </div>
+                    </div>
+                    
+                    <div class="authority-card">
+                        <h4 class="sovereign-heading text-lg mb-4">爱马仕 (Hermès)</h4>
+                        <div class="noble-text mb-4">
+                            <strong>财务与商业模式：</strong> 爱马仕继续展现出非凡的韧性，2024年实现收入152亿欧元，按固定汇率计算增长15%。经常性营业利润达到62亿欧元，产生了行业领先的40.5%的营业利润率。
+                        </div>
+                        <div class="noble-text">
+                            这一表现是其独特商业模式的直接结果，该模式以手工工艺、控制产量以维持稀缺性、垂直整合和几乎完全的直营零售网络为基础。
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="overflow-x-auto">
+                    <table class="imperial-table">
+                        <thead>
+                            <tr>
+                                <th>公司</th>
+                                <th>集团总收入 (十亿欧元)</th>
+                                <th>营业利润 (十亿欧元)</th>
+                                <th>营业利润率 (%)</th>
+                                <th>核心部门表现</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-semibold">LVMH</td>
+                                <td class="exclusive-number">84.7</td>
+                                <td class="exclusive-number">19.6</td>
+                                <td class="text-green-400 font-bold">23.1%</td>
+                                <td>时装与皮具: 收入 €41.1B</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">Kering</td>
+                                <td class="exclusive-number">17.2</td>
+                                <td class="exclusive-number">2.6</td>
+                                <td class="text-red-400 font-bold">14.9%</td>
+                                <td>Gucci: 收入 €7.7B, 利润率 21.0%</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">Richemont (FY25)</td>
+                                <td class="exclusive-number">21.4</td>
+                                <td class="exclusive-number">4.5</td>
+                                <td class="text-orange-400 font-bold">20.9%</td>
+                                <td>珠宝: 收入 €15.3B, 利润率 31.9%</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">Hermès</td>
+                                <td class="exclusive-number">15.2</td>
+                                <td class="exclusive-number">6.2</td>
+                                <td class="text-green-400 font-bold">40.5%</td>
+                                <td>皮具与马具: 收入 €6.4B</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 价值链与监管 -->
+    <section id="value-chain" class="imperial-section" data-title="价值链与监管">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-4xl mb-12 text-center">
+                <i class="material-icons align-middle mr-4">link</i>
+                价值链、利润池与监管环境
+            </h2>
+            
+            <div class="mb-16">
+                <h3 class="sovereign-heading text-2xl mb-8">
+                    <i class="fas fa-industry mr-3"></i>
+                    奢侈品价值链
+                </h3>
+                
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="authority-card">
+                        <h4 class="sovereign-heading text-lg mb-4">
+                            <i class="fas fa-mountain mr-3"></i>
+                            上游（采购与原材料）
+                        </h4>
+                        <div class="noble-text">
+                            这一阶段对质量和ESG合规至关重要。贵重材料（钻石与黄金）供应链复杂且不透明。品牌在人权和冲突融资方面面临巨大的声誉风险。金伯利进程认证计划等法规旨在消除冲突钻石，但其有效性受到批评。
+                        </div>
+                    </div>
+                    
+                    <div class="authority-card">
+                        <h4 class="sovereign-heading text-lg mb-4">
+                            <i class="fas fa-hammer mr-3"></i>
+                            中游（工艺与制造）
+                        </h4>
+                        <div class="noble-text">
+                            这是奢侈品价值创造的核心。爱马仕和劳力士等品牌非常强调其垂直整合的制造过程，这使得它们能够进行细致的质量控制，并保护手工艺的传承。这种控制是其关键的竞争优势来源。
+                        </div>
+                    </div>
+                    
+                    <div class="authority-card">
+                        <h4 class="sovereign-heading text-lg mb-4">
+                            <i class="fas fa-store mr-3"></i>
+                            下游（分销与零售）
+                        </h4>
+                        <div class="noble-text">
+                            这是正在发生最重大结构性转变的环节。利润池正从多品牌批发渠道迁移到品牌控制的DTC渠道（单一品牌专卖店和电商）。这一转变使品牌能够获得全部零售利润，控制客户体验，并避免与百货公司折扣相关的品牌价值侵蚀。
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="golden-glass-card">
+                <h3 class="sovereign-heading text-xl mb-6">
+                    <i class="fas fa-leaf mr-3"></i>
+                    监管与ESG考量
+                </h3>
+                <div class="noble-text mb-4">
+                    监管环境日益严格，迫使品牌将可持续性和透明度融入其核心运营。
+                </div>
+                <div class="noble-text">
+                    <strong>可追溯性与透明度：</strong> 消费者和监管机构对供应链透明度的要求越来越高。欧盟的数字产品护照等倡议将要求品牌提供产品从采购到报废的全生命周期详细信息。这将需要对区块链和数字ID等可追溯性技术进行大量投资。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 关键风险 -->
+    <section id="key-risks" class="imperial-section" data-title="关键风险">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-4xl mb-12 text-center">
+                <i class="material-icons align-middle mr-4">warning</i>
+                关键风险与前瞻性论点
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-6 mb-16">
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="fas fa-globe mr-3"></i>
+                        宏观经济与地缘政治风险
+                    </h3>
+                    <div class="noble-text mb-4">
+                        <strong>周期性：</strong> 奢侈品行业具有内在的周期性，对消费者信心、可自由支配支出和宏观经济健康状况高度敏感。当前的放缓证明了这种敏感性。
+                    </div>
+                    <div class="noble-text">
+                        <strong>地缘政治紧张与关税：</strong> 该行业受到全球贸易动态的影响。不断加剧的贸易紧张局势，特别是中美之间的紧张关系，可能导致关税，从而扰乱供应链并影响定价和需求。
+                    </div>
+                </div>
+                
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="fas fa-cogs mr-3"></i>
+                        运营与品牌风险
+                    </h3>
+                    <div class="noble-text mb-4">
+                        <strong>DTC转型：</strong> 尽管在战略上是必要的，但向DTC的转变涉及在房地产和技术方面的大量资本支出，并需要物流、数据分析和直接客户服务方面的新能力。如果管理不善，这种转型可能导致高昂的成本并疏远客户。
+                    </div>
+                    <div class="noble-text">
+                        <strong>二手市场管理：</strong> 参与二手市场带来了战略上的两难。虽然它提供了机遇，但也存在蚕食一手销售的风险，并且需要仔细管理以防止品牌稀释和控制定价。高仿假冒产品的泛滥仍然是一个持续的威胁。
+                    </div>
+                </div>
+            </div>
+
+            <div class="golden-glass-card">
+                <h3 class="sovereign-heading text-xl mb-6">结构性矛盾：增长与专属性的悖论</h3>
+                <div class="noble-text mb-4">
+                    任何上市奢侈品牌面临的根本挑战是，如何调和市场对持续增长的需求与奢侈品核心原则——稀缺性和专属性——之间的矛盾。
+                </div>
+                <div class="noble-text mb-4">
+                    <strong>过度曝光的风险：</strong> 过去十年的快速扩张，对一些品牌而言，导致了过度曝光和其专属性吸引力的稀释，削弱了它们的价值主张。
+                </div>
+                <div class="noble-text">
+                    <strong>长期博弈：</strong> 像爱马仕这样最成功的品牌，将长期品牌资产置于短期销售目标之上。当前的市场低迷将考验其他品牌是否具有战略纪律，以减少批发、严格管理库存，并抵制折扣的诱惑，即使这意味着在短期内接受较低的增长。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 引用文献 -->
+    <section id="references" class="imperial-section bg-gradient-to-b from-transparent to-black bg-opacity-30" data-title="引用文献">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl mb-12 text-center">
+                <i class="material-icons align-middle mr-4">menu_book</i>
+                引用文献
+            </h2>
+            
+            <!-- 固定4列布局网格 -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl mx-auto">
+                <div class="citation-item">
+                    <a href="https://rapaport.com/news/luxury-segment-likely-to-contract-up-to-5-in-2025-bain/" target="_blank">
+                        1. Luxury Segment Likely to Contract Up to 5% in 2025 – Bain - Rapaport
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.bain.com/about/media-center/press-releases/20252/luxury-confronts-slowdown-amid-economic-headwinds-and-market-disruptions-while-industry-resilience-and-strong-fundamentals-underpin-future-prospects/" target="_blank">
+                        2. Luxury confronts slowdown amid economic headwinds and market disruptions - Bain & Company
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://cpp-luxury.com/luxury-market-faces-more-complex-turbulence-bain-company-lowers-2025-forecast/" target="_blank">
+                        3. Luxury market faces more complex turbulence – Bain & Company lowers 2025 forecast
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.mckinsey.com/industries/retail/our-insights/state-of-luxury" target="_blank">
+                        4. The State of luxury goods in 2025 - McKinsey
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.fashiondive.com/news/luxury-fashion-market-growth-slow-2025-2027/737167/" target="_blank">
+                        5. Luxury market growth will be minimal until at least 2027: report - Fashion Dive
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.bain.com/insights/long-live-luxury-converge-to-expand-through-turbulence/" target="_blank">
+                        6. Luxury Report 2023: Converge to Expand Through Turbulence - Bain & Company
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.businessresearchinsights.com/market-reports/secondhand-luxury-goods-market-102564" target="_blank">
+                        7. Secondhand Luxury Goods Market Size & Growth [2025 To 2033] - Business Research Insights
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://time.com/7201984/why-top-brands-are-encouraging-customers-to-buy-second-hand/" target="_blank">
+                        8. Why Top Brands Are Encouraging Customers to Buy Second-Hand - TIME
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://savanta.com/us/knowledge-centre/view/the-rise-of-the-luxury-re-sale-market/" target="_blank">
+                        9. The rise of the luxury re-sale market – Savanta US
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.bain.com/insights/luxury-in-transition-securing-future-growth/" target="_blank">
+                        10. Luxury in Transition: Securing Future Growth - Bain & Company
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://jingdaily.com/intels/2025-01/16/mckinsey-report-luxury-market-growth-will-be-minimal-until-at-least-2027" target="_blank">
+                        11. McKinsey report: Luxury market growth will be minimal until at least 2027 - Jing Daily
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://luxonomy.net/global-luxury-market-trends-2025-2027/" target="_blank">
+                        12. Global Luxury Market Trends 2025-2027 - LUXONOMY
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.bain.com/about/media-center/press-releases/2024/luxury-market-in-mainland-china-to-stay-flat-in-2025/" target="_blank">
+                        13. Luxury market in mainland China to stay flat in 2025 - Bain & Company
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.jpmorgan.com/insights/global-research/retail/luxury-market" target="_blank">
+                        14. Luxury market outlook - J.P. Morgan Research
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://iroin.io/en/influencer-marketing-blog-von-iroin/de/blog/luxury-and-influencer-marketing" target="_blank">
+                        15. Luxury and influencer marketing: why the hype is real!
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://straitsresearch.com/report/luxury-goods-market" target="_blank">
+                        16. Luxury Goods Market Size, Growth & Demand Report by 2033 - Straits Research
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://bowermangroup.com/luxury-markets-in-2025-part-1-key-trends-strategic-insights/" target="_blank">
+                        17. Luxury Markets in 2025 Part 1: Key Trends & Strategic Insights - The Bowerman Group
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.simon-kucher.com/en/insights/luxury-study-insights-luxury-industry-trends" target="_blank">
+                        18. Luxury study: Insights into luxury industry trends
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.lvmh.com/en/investors" target="_blank">
+                        19. Investors - LVMH
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.kering.com/en/news/2024-annual-results/" target="_blank">
+                        20. 2024 Annual Results - Kering
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.richemont.com/media/ue1bjrjv/richemont-fy25-annual-report-en.pdf" target="_blank">
+                        21. Annual Report and Accounts 2025 - Richemont
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://finance.hermes.com/2024-full-year-results/" target="_blank">
+                        22. 2024 Full-Year Results - Hermès Finance
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://en.wikipedia.org/wiki/Vestiaire_Collective" target="_blank">
+                        23. Vestiaire Collective - Wikipedia
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://investor.therealreal.com/news-releases/news-release-details/realreal-announces-fourth-quarter-and-full-year-2024-results/" target="_blank">
+                        24. The RealReal Announces Fourth Quarter and Full Year 2024 Results
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // 精美垂直进度条系统（支持悬停显示标题 + 点击跳转）
+        const progressBar = document.querySelector('.reading-progress');
+        const progressFill = document.querySelector('.reading-progress-fill');
+        const progressTooltip = document.getElementById('progress-tooltip');
+        const sections = document.querySelectorAll('section[id], header[id]');
+
+        let currentSectionTitle = '';
+        let sectionsData = [];
+
+        // 初始化章节数据
+        function initSections() {
+            sectionsData = Array.from(sections).map(section => ({
+                id: section.getAttribute('id'),
+                title: section.getAttribute('data-title') || section.querySelector('h1, h2')?.textContent || '未知章节',
+                offsetTop: section.offsetTop,
+                offsetHeight: section.offsetHeight
+            }));
+        }
+
+        function updateProgress() {
+            const scrolled = window.pageYOffset;
+            const maxHeight = document.body.scrollHeight - window.innerHeight;
+            const progress = (scrolled / maxHeight) * 100;
+            
+            // 更新垂直进度条填充高度
+            progressFill.style.height = `${progress}%`;
+            
+            // 获取当前章节
+            let currentSection = '';
+            sectionsData.forEach(section => {
+                if (scrolled >= section.offsetTop - 300) {
+                    currentSection = section.id;
+                    currentSectionTitle = section.title;
+                }
+            });
+        }
+
+        // 点击进度条跳转到对应位置
+        progressBar.addEventListener('click', (e) => {
+            const rect = progressBar.getBoundingClientRect();
+            const clickY = e.clientY - rect.top;
+            const progressHeight = rect.height;
+            const clickPercent = clickY / progressHeight;
+            
+            const maxHeight = document.body.scrollHeight - window.innerHeight;
+            const targetScroll = maxHeight * clickPercent;
+            
+            window.scrollTo({
+                top: targetScroll,
+                behavior: 'smooth'
+            });
+        });
+
+        // 鼠标悬停显示当前章节标题
+        progressBar.addEventListener('mouseenter', () => {
+            if (currentSectionTitle) {
+                progressTooltip.textContent = currentSectionTitle;
+                progressTooltip.classList.add('show');
+            }
+        });
+
+        progressBar.addEventListener('mouseleave', () => {
+            progressTooltip.classList.remove('show');
+        });
+
+        // 提示框悬停保持显示
+        progressTooltip.addEventListener('mouseenter', () => {
+            progressTooltip.classList.add('show');
+        });
+
+        progressTooltip.addEventListener('mouseleave', () => {
+            progressTooltip.classList.remove('show');
+        });
+
+        // 窗口大小改变时重新计算章节位置
+        window.addEventListener('resize', () => {
+            setTimeout(initSections, 100);
+        });
+
+        window.addEventListener('scroll', updateProgress);
+
+        // 页面加载完成后初始化
+        window.addEventListener('load', () => {
+            initSections();
+            updateProgress();
+        });
+    </script>
+</body>
+</html>

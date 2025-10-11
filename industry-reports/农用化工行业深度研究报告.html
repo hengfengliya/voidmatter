@@ -1,0 +1,1883 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全球农用化工行业：转型十字路口的结构性分析与未来展望</title>
+    
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- ECharts -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    
+    <!-- Anime.js -->
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+    
+    <style>
+        :root {
+            --primary-gold: #D4AF37;
+            --secondary-gold: #B8860B;
+            --accent-gold: #FFD700;
+            --dark-bg: #0A0A0A;
+            --medium-bg: #1A1A1A;
+            --light-bg: #2A2A2A;
+            --text-primary: #FFFFFF;
+            --text-secondary: #CCCCCC;
+            --text-muted: #888888;
+        }
+        
+        body {
+            background: var(--dark-bg);
+            color: var(--text-primary);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+        
+        .font-display {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .gold-gradient {
+            background: linear-gradient(135deg, var(--primary-gold), var(--secondary-gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--primary-gold), transparent);
+        }
+        
+        .data-highlight {
+            color: var(--accent-gold);
+            font-weight: 700;
+            font-size: 1.2em;
+        }
+        
+        .animated-section {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        
+        .chart-container {
+            background: var(--medium-bg);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 12px;
+        }
+        
+        .table-style {
+            background: var(--medium-bg);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        
+        .table-style th {
+            background: var(--light-bg);
+            color: var(--primary-gold);
+            border-bottom: 2px solid var(--primary-gold);
+        }
+        
+        .table-style td {
+            border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+        }
+        
+        .scroll-indicator {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary-gold), var(--accent-gold));
+            transform-origin: left;
+            transform: scaleX(0);
+            z-index: 1000;
+        }
+        
+        .reference-link {
+            color: var(--primary-gold);
+            text-decoration: none;
+            font-size: 0.9em;
+            transition: color 0.3s ease;
+        }
+        
+        .reference-link:hover {
+            color: var(--accent-gold);
+        }
+        
+        @media (max-width: 768px) {
+            .responsive-text {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-indicator"></div>
+    
+    <!-- Header -->
+    <header class="relative min-h-screen flex items-center justify-center text-center px-6">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-black"></div>
+        <div class="relative z-10 max-w-6xl mx-auto">
+            <div class="mb-8 animated-section">
+                <p class="text-sm text-gray-400 mb-2">Published on July 3, 2025 | 本报告发布于：2025年7月3日</p>
+                <div class="w-24 h-px bg-gradient-to-r from-transparent via-yellow-400 to-transparent mx-auto mb-8"></div>
+            </div>
+            
+            <h1 class="font-display text-4xl md:text-6xl lg:text-7xl font-bold gold-gradient mb-8 animated-section">
+                全球农用化工行业
+            </h1>
+            <h2 class="font-display text-2xl md:text-4xl lg:text-5xl font-medium text-white mb-12 animated-section">
+                转型十字路口的结构性分析与未来展望
+            </h2>
+            
+            <div class="max-w-4xl mx-auto text-lg md:text-xl text-gray-300 mb-16 animated-section">
+                <p class="mb-6">
+                    <span class="text-yellow-400 font-semibold">Global Agricultural Chemical Industry:</span><br>
+                    Structural Analysis and Future Outlook at the Crossroads of Transformation
+                </p>
+            </div>
+            
+            <!-- Disclaimer Badge -->
+            <div class="inline-flex items-center px-6 py-3 bg-yellow-900/20 border border-yellow-600/30 rounded-full text-yellow-300 text-sm animated-section">
+                <i class="fas fa-info-circle mr-2"></i>
+                Industry Research & Analysis Only - Not Investment Advice
+            </div>
+        </div>
+    </header>
+
+    <!-- Reader's Note -->
+    <section class="py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="bg-gradient-to-r from-yellow-900/10 to-yellow-800/10 border-l-4 border-yellow-400 p-8 rounded-r-xl animated-section">
+                <h3 class="font-display text-2xl font-bold gold-gradient mb-6">致读者</h3>
+                <div class="text-gray-300 space-y-4">
+                    <p>本报告旨在为机构投资者及高净值客户提供一份关于全球农用化工行业的全面、深入且具备前瞻性的分析框架。我们致力于剖析该行业复杂的运行机制、核心价值驱动因素以及正在重塑其未来的结构性力量。</p>
+                    <p>报告的所有分析均基于公开可获取的数据、行业文献及财务报告，并采用严谨的逻辑推演。我们的目标是构建一个深刻的行业认知体系，以服务于您的投研决策、客户沟通与战略研判。</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-red-900/10 border-l-4 border-red-400 p-8 rounded-r-xl animated-section">
+                <h4 class="font-display text-xl font-bold text-red-300 mb-4">重要声明</h4>
+                <p class="text-gray-300">本报告内容仅为行业研究与分析，不构成任何形式的投资建议、财务意见或买卖指导。所有观点均建立在特定的数据、假设和分析框架之上，仅供参考。投资者应基于自身的独立判断进行决策，并承担相应风险。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Part I: Global Macro Landscape -->
+    <section class="py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16 animated-section">
+                <h2 class="font-display text-4xl md:text-5xl font-bold gold-gradient mb-6">全球宏观格局</h2>
+                <p class="text-lg text-gray-400">Global Macro Landscape</p>
+                <div class="section-divider mt-8"></div>
+            </div>
+
+            <!-- Chapter 1: Global Market Structure -->
+            <div class="mb-20 animated-section">
+                <h3 class="font-display text-3xl font-bold text-white mb-8">全球市场构架与发展轨迹</h3>
+                <p class="text-sm text-gray-500 mb-6">Global Market Structure and Development Trajectory</p>
+
+                <!-- Market Size Data -->
+                <div class="mb-12">
+                    <h4 class="text-2xl font-bold text-yellow-400 mb-6">全球市场机遇的量化：多源数据综合与预测 (2018-2032)</h4>
+                    
+                    <div class="grid md:grid-cols-2 gap-8 mb-8">
+                        <div class="bg-gray-900/50 p-6 rounded-xl border border-yellow-600/20">
+                            <h5 class="text-lg font-semibold text-yellow-300 mb-4">DataBridge Market Research</h5>
+                            <div class="space-y-2">
+                                <p><span class="data-highlight">2024年</span>：<span class="text-2xl font-bold text-white">2,771亿美元</span></p>
+                                <p><span class="data-highlight">2032年</span>：<span class="text-2xl font-bold text-white">4,586亿美元</span></p>
+                                <p>复合年增长率：<span class="data-highlight">6.50%</span></p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-gray-900/50 p-6 rounded-xl border border-yellow-600/20">
+                            <h5 class="text-lg font-semibold text-yellow-300 mb-4">Grand View Research</h5>
+                            <div class="space-y-2">
+                                <p><span class="data-highlight">2023年</span>：<span class="text-2xl font-bold text-white">2,714.2亿美元</span></p>
+                                <p><span class="data-highlight">2030年</span>：<span class="text-2xl font-bold text-white">3,901.7亿美元</span></p>
+                                <p>复合年增长率：<span class="data-highlight">4.7%</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Market Growth Chart -->
+                    <div class="chart-container p-6 mb-8">
+                        <h5 class="text-lg font-semibold text-yellow-300 mb-4">全球农用化工市场规模预测</h5>
+                        <div id="marketGrowthChart" style="height: 400px;"></div>
+                    </div>
+
+                    <div class="bg-blue-900/10 border-l-4 border-blue-400 p-6 rounded-r-xl">
+                        <p class="text-gray-300">这些数据来源之间的差异可能源于其统计口径的不同，例如是否包含特定的特种化学品、生物制品，或是以出厂价（ex-manufacturer）还是零售价为基准。然而，所有数据都指向一个共同的结论：<span class="data-highlight">全球农用化工行业正以一个稳健但非爆发性的中低个位数速率增长</span>。</p>
+                    </div>
+                </div>
+
+                <!-- Market Segmentation -->
+                <div class="mb-12">
+                    <h4 class="text-2xl font-bold text-yellow-400 mb-6">细分市场深度剖析：化肥与作物保护的双重逻辑</h4>
+                    
+                    <div class="grid lg:grid-cols-2 gap-8 mb-8">
+                        <div class="bg-green-900/10 border border-green-600/30 rounded-xl p-6">
+                            <h5 class="text-xl font-bold text-green-300 mb-4">
+                                <i class="fas fa-seedling mr-2"></i>化肥：保障土壤生产力的基础商品
+                            </h5>
+                            <div class="space-y-3 text-gray-300">
+                                <p>市场份额：<span class="data-highlight">57.8%</span> (2024年)</p>
+                                <p>另一数据源：<span class="data-highlight">76.98%</span> (2023年)</p>
+                                <p class="text-sm">化肥产品具有显著的商品属性，价格与盈利能力高度依赖上游原材料成本。</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-purple-900/10 border border-purple-600/30 rounded-xl p-6">
+                            <h5 class="text-xl font-bold text-purple-300 mb-4">
+                                <i class="fas fa-shield-alt mr-2"></i>作物保护：技术驱动的高附加值领域
+                            </h5>
+                            <div class="space-y-3 text-gray-300">
+                                <p>增长前景：<span class="data-highlight">快于化肥板块</span></p>
+                                <p>预测期：2025年至2032年间</p>
+                                <p class="text-sm">作物保护行业的核心是技术创新，企业通过巨额研发投入开发专利保护的新型活性成分。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Long-term Demand Drivers -->
+                <div class="mb-12">
+                    <h4 class="text-2xl font-bold text-yellow-400 mb-6">长期需求的核心驱动力：粮食安全的必然逻辑</h4>
+                    
+                    <div class="bg-orange-900/10 border border-orange-600/30 rounded-xl p-6 mb-6">
+                        <p class="text-lg text-gray-300 mb-4">农用化工行业的长期需求根植于一个不可动摇的全球性宏观背景：<span class="data-highlight">在可耕地面积有限的约束下，满足不断增长的全球人口对粮食的需求</span>。</p>
+                        <p class="text-gray-400">联合国粮食及农业组织（FAO）预测，从2009年到2050年，全球人口将增加约<span class="data-highlight">23亿</span>。</p>
+                    </div>
+
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="bg-gray-900/50 p-6 rounded-xl text-center">
+                            <i class="fas fa-city text-3xl text-yellow-400 mb-4"></i>
+                            <h5 class="font-semibold text-white mb-2">城市化与饮食结构升级</h5>
+                            <p class="text-sm text-gray-400">居民饮食结构从谷物为主转向更多蛋白质产品</p>
+                        </div>
+                        
+                        <div class="bg-gray-900/50 p-6 rounded-xl text-center">
+                            <i class="fas fa-mountain text-3xl text-yellow-400 mb-4"></i>
+                            <h5 class="font-semibold text-white mb-2">可耕地的刚性约束</h5>
+                            <p class="text-sm text-gray-400">全球可用农业土地基本恒定，甚至在部分地区减少</p>
+                        </div>
+                        
+                        <div class="bg-gray-900/50 p-6 rounded-xl text-center">
+                            <i class="fas fa-thermometer-half text-3xl text-yellow-400 mb-4"></i>
+                            <h5 class="font-semibold text-white mb-2">气候变化的催化作用</h5>
+                            <p class="text-sm text-gray-400">极端天气事件增加农业生产不确定性</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Competition Landscape -->
+    <section class="py-20 px-6 bg-gray-900/20">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-20 animated-section">
+                <h3 class="font-display text-3xl font-bold text-white mb-8">竞争舞台：现有巨头与新兴挑战者的版图</h3>
+                <p class="text-sm text-gray-500 mb-6">Competition Stage: Existing Giants and Emerging Challengers</p>
+
+                <!-- Oligopoly Structure -->
+                <div class="mb-12">
+                    <h4 class="text-2xl font-bold text-yellow-400 mb-6">寡头垄断结构：拜耳、先正达、科迪华与巴斯夫的战略定位</h4>
+                    
+                    <div class="grid lg:grid-cols-4 gap-6 mb-8">
+                        <div class="bg-red-900/20 border border-red-600/30 rounded-xl p-6 text-center">
+                            <h5 class="text-lg font-bold text-red-300 mb-2">拜耳作物科学</h5>
+                            <p class="text-sm text-gray-400">Bayer Crop Science</p>
+                        </div>
+                        <div class="bg-blue-900/20 border border-blue-600/30 rounded-xl p-6 text-center">
+                            <h5 class="text-lg font-bold text-blue-300 mb-2">先正达集团</h5>
+                            <p class="text-sm text-gray-400">Syngenta Group</p>
+                        </div>
+                        <div class="bg-green-900/20 border border-green-600/30 rounded-xl p-6 text-center">
+                            <h5 class="text-lg font-bold text-green-300 mb-2">科迪华</h5>
+                            <p class="text-sm text-gray-400">Corteva Agriscience</p>
+                        </div>
+                        <div class="bg-purple-900/20 border border-purple-600/30 rounded-xl p-6 text-center">
+                            <h5 class="text-lg font-bold text-purple-300 mb-2">巴斯夫</h5>
+                            <p class="text-sm text-gray-400">BASF</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2023 Performance Analysis -->
+                <div class="mb-12">
+                    <h4 class="text-2xl font-bold text-yellow-400 mb-6">解构2023年业绩：行业性去库存周期下的企业表现分化</h4>
+                    
+                    <div class="bg-gray-900/50 border border-yellow-600/20 rounded-xl p-6 mb-6">
+                        <p class="text-gray-300 mb-4">2023年对于全球农用化工行业而言，是一个充满挑战的年份。多家头部企业财报显示，其营收普遍出现下滑，其核心原因并非终端需求的崩溃，而是一场深刻的、全行业范围的<span class="data-highlight">渠道去库存（Destocking）</span>。</p>
+                    </div>
+
+                    <!-- Performance Table -->
+                    <div class="overflow-x-auto">
+                        <table class="w-full table-style rounded-xl overflow-hidden">
+                            <thead>
+                                <tr>
+                                    <th class="px-4 py-3 text-left">公司 (业务部门)</th>
+                                    <th class="px-4 py-3 text-right">2023年销售额</th>
+                                    <th class="px-4 py-3 text-right">同比增长率</th>
+                                    <th class="px-4 py-3 text-right">EBITDA利润率</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-gray-300">
+                                <tr>
+                                    <td class="px-4 py-3">拜耳作物科学</td>
+                                    <td class="px-4 py-3 text-right font-semibold">€23.3 B</td>
+                                    <td class="px-4 py-3 text-right text-red-400">-4%</td>
+                                    <td class="px-4 py-3 text-right text-yellow-400">21.7%</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3">先正达集团</td>
+                                    <td class="px-4 py-3 text-right font-semibold">$32.2 B</td>
+                                    <td class="px-4 py-3 text-right text-red-400">-4%</td>
+                                    <td class="px-4 py-3 text-right text-yellow-400">14.2%</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3">科迪华</td>
+                                    <td class="px-4 py-3 text-right font-semibold">$17.23 B</td>
+                                    <td class="px-4 py-3 text-right text-red-400">-1%</td>
+                                    <td class="px-4 py-3 text-right text-yellow-400">19.6%</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3">巴斯夫农业解决方案</td>
+                                    <td class="px-4 py-3 text-right font-semibold">$8.84 B</td>
+                                    <td class="px-4 py-3 text-right text-red-400">-3.3%</td>
+                                    <td class="px-4 py-3 text-right text-gray-400">N/A</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="mt-6 bg-blue-900/10 border-l-4 border-blue-400 p-6 rounded-r-xl">
+                        <p class="text-gray-300">从上表可以看出，尽管营收普遍下滑，但各公司的表现出现了显著分化。<span class="data-highlight">科迪华在2023年营收仅微降1%的情况下，其运营EBITDA逆势增长了5%</span>。这背后反映的核心逻辑是：科迪华凭借其以专利产品为主的、差异化的产品组合，在行业整体需求疲软时，依然拥有强大的定价能力。</p>
+                    </div>
+                </div>
+
+                <!-- Regional Champions -->
+                <div class="mb-12">
+                    <h4 class="text-2xl font-bold text-yellow-400 mb-6">区域性冠军的崛起：聚焦中国与印度农化领导者</h4>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="bg-red-900/10 border border-red-600/30 rounded-xl p-6">
+                            <h5 class="text-xl font-bold text-red-300 mb-4 flex items-center">
+                                <i class="fas fa-flag mr-2"></i>中国企业
+                            </h5>
+                            <div class="space-y-3 text-gray-300">
+                                <p>根据ICIS发布的2024年全球化工企业100强榜单，<span class="data-highlight">中石化、荣盛石化和万华化学已跻身全球前十</span>。</p>
+                                <p>在专门的农用化学品领域，中国企业在全球前20强名单中占据了多个席位。</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-orange-900/10 border border-orange-600/30 rounded-xl p-6">
+                            <h5 class="text-xl font-bold text-orange-300 mb-4 flex items-center">
+                                <i class="fas fa-flag mr-2"></i>印度企业
+                            </h5>
+                            <div class="space-y-3 text-gray-300">
+                                <p><span class="data-highlight">UPL公司</span>早已是全球性的非专利农药巨头。</p>
+                                <p>PI Industries等公司也展现出强劲的增长势头。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 bg-green-900/10 border-l-4 border-green-400 p-6 rounded-r-xl">
+                        <h5 class="text-lg font-semibold text-green-300 mb-4">区域冠军的发展路径</h5>
+                        <div class="space-y-2 text-gray-300">
+                            <p><span class="font-semibold text-yellow-400">1. 成本优势</span>：从生产专利过期的活性成分起家，以价格竞争力获取份额</p>
+                            <p><span class="font-semibold text-yellow-400">2. 规模扩张</span>：通过内生增长和外延并购，建立规模经济</p>
+                            <p><span class="font-semibold text-yellow-400">3. 研发投入与品牌建设</span>：开发自主知识产权产品，建立全球品牌</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Part II: Regional Market Analysis -->
+    <section class="py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16 animated-section">
+                <h2 class="font-display text-4xl md:text-5xl font-bold gold-gradient mb-6">反差的世界：区域市场剖析</h2>
+                <p class="text-lg text-gray-400">A World of Contrasts: Regional Market Analysis</p>
+                <div class="section-divider mt-8"></div>
+            </div>
+
+            <!-- Asia-Pacific Region -->
+            <div class="mb-20 animated-section">
+                <h3 class="font-display text-3xl font-bold text-white mb-8">亚太地区——全球增长的引擎</h3>
+                <p class="text-sm text-gray-500 mb-6">Asia-Pacific Region - Engine of Global Growth</p>
+
+                <div class="bg-blue-900/10 border border-blue-600/30 rounded-xl p-6 mb-8">
+                    <p class="text-lg text-gray-300 mb-4">亚太地区是全球农用化工市场中规模最大、最具活力的板块。数据显示，<span class="data-highlight">2024年，该地区占据了全球市场52.7%的份额</span>，另一数据源也显示其<span class="data-highlight">2023年的份额为51.98%</span>。</p>
+                </div>
+
+                <!-- China Market -->
+                <div class="mb-12">
+                    <h4 class="text-2xl font-bold text-yellow-400 mb-6">中国：政策驱动下的整合与自给自足的追求</h4>
+                    
+                    <div class="grid lg:grid-cols-3 gap-6 mb-8">
+                        <div class="bg-red-900/10 border border-red-600/30 rounded-xl p-6">
+                            <h5 class="text-lg font-bold text-red-300 mb-4">
+                                <i class="fas fa-gavel mr-2"></i>政策驱动的产业升级
+                            </h5>
+                            <p class="text-gray-300 text-sm">通过《到2020年化肥使用量零增长行动方案》等政策，推动行业向绿色、高效、环保发展</p>
+                        </div>
+                        
+                        <div class="bg-green-900/10 border border-green-600/30 rounded-xl p-6">
+                            <h5 class="text-lg font-bold text-green-300 mb-4">
+                                <i class="fas fa-wheat mr-2"></i>粮食自给自足战略
+                            </h5>
+                            <p class="text-gray-300 text-sm">为高效、环保的新型肥料和低毒高效农药创造巨大市场需求</p>
+                        </div>
+                        
+                        <div class="bg-purple-900/10 border border-purple-600/30 rounded-xl p-6">
+                            <h5 class="text-lg font-bold text-purple-300 mb-4">
+                                <i class="fas fa-lightbulb mr-2"></i>创新商业模式
+                            </h5>
+                            <p class="text-gray-300 text-sm">先正达MAP模式2023年销售额增长26%，达到39亿美元</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-yellow-900/10 border-l-4 border-yellow-400 p-6 rounded-r-xl">
+                        <p class="text-gray-300">中国化肥市场规模已超过<span class="data-highlight">400亿美元</span>（2023年）。中国市场的运行逻辑深受国家政策的引导，正处于"存量整合、转型升级"的关键时期。</p>
+                    </div>
+                </div>
+
+                <!-- India Market -->
+                <div class="mb-12">
+                    <h4 class="text-2xl font-bold text-yellow-400 mb-6">印度：补贴、需求增长与生产能力的交织</h4>
+                    
+                    <div class="bg-orange-900/10 border border-orange-600/30 rounded-xl p-6">
+                        <h5 class="text-lg font-semibold text-orange-300 mb-4">市场特征</h5>
+                        <div class="grid md:grid-cols-3 gap-6 text-gray-300">
+                            <div>
+                                <p class="font-semibold text-yellow-400 mb-2">政府补贴影响</p>
+                                <p class="text-sm">印度政府长期对化肥提供补贴，直接影响农民购买力和产品选择</p>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-yellow-400 mb-2">需求增长动力</p>
+                                <p class="text-sm">人口增长压力和农民对作物保护意识的提高推动市场发展</p>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-yellow-400 mb-2">生产与进口依赖</p>
+                                <p class="text-sm">国内生产能力庞大，但在关键原材料和高端产品上仍依赖进口</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- North America -->
+            <div class="mb-20 animated-section">
+                <h3 class="font-display text-3xl font-bold text-white mb-8">北美——技术应用的先锋</h3>
+                <p class="text-sm text-gray-500 mb-6">North America - Pioneer of Technology Application</p>
+
+                <div class="bg-blue-900/10 border border-blue-600/30 rounded-xl p-6 mb-8">
+                    <p class="text-lg text-gray-300">北美市场，特别是美国，是全球最成熟、技术最先进的农业区之一。DataBridge Market Research预测，<span class="data-highlight">北美地区将是全球增长最快的市场，2025至2032年的复合年增长率预计高达9.6%</span>。</p>
+                </div>
+
+                <!-- US Market Segmentation -->
+                <div class="mb-12">
+                    <h4 class="text-2xl font-bold text-yellow-400 mb-6">美国市场细分：除草剂、杀虫剂与杀菌剂的数据透视</h4>
+                    
+                    <div class="bg-gray-900/50 border border-yellow-600/20 rounded-xl p-6 mb-6">
+                        <p class="text-gray-300 mb-4">美国农化市场规模庞大，<span class="data-highlight">2024年整体市场估值约为214亿美元</span>。其内部结构清晰，由三大类农药主导。</p>
+                    </div>
+
+                    <!-- US Market Table -->
+                    <div class="overflow-x-auto mb-8">
+                        <table class="w-full table-style rounded-xl overflow-hidden">
+                            <thead>
+                                <tr>
+                                    <th class="px-4 py-3 text-left">农药类别</th>
+                                    <th class="px-4 py-3 text-right">市场规模 (2024/2025)</th>
+                                    <th class="px-4 py-3 text-right">预测CAGR</th>
+                                    <th class="px-4 py-3 text-left">核心驱动因素</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-gray-300">
+                                <tr>
+                                    <td class="px-4 py-3 font-semibold text-green-400">除草剂 (Herbicides)</td>
+                                    <td class="px-4 py-3 text-right font-semibold">$5.8B - $11.45B</td>
+                                    <td class="px-4 py-3 text-right text-yellow-400">4.66% - 5.23%</td>
+                                    <td class="px-4 py-3 text-sm">转基因作物高普及率；免耕/少耕农业实践</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-semibold text-blue-400">杀虫剂 (Insecticides)</td>
+                                    <td class="px-4 py-3 text-right font-semibold">$7.98B</td>
+                                    <td class="px-4 py-3 text-right text-yellow-400">4.31%</td>
+                                    <td class="px-4 py-3 text-sm">虫害压力；种子处理技术应用</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-semibold text-purple-400">杀菌剂 (Fungicides)</td>
+                                    <td class="px-4 py-3 text-right font-semibold">$1.04B</td>
+                                    <td class="px-4 py-3 text-right text-yellow-400">3.88%</td>
+                                    <td class="px-4 py-3 text-sm">病害防治；保障作物品质以满足出口标准</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="bg-green-900/10 border-l-4 border-green-400 p-6 rounded-r-xl">
+                        <p class="text-gray-300"><span class="data-highlight">除草剂</span>是美国市场中最大的板块。其主导地位与转基因（GMO）作物的广泛种植密不可分。数据显示，截至2022年，美国<span class="data-highlight">94%的大豆、96%的棉花和92%的玉米</span>均为转基因品种，其中绝大多数都具备耐除草剂的性状。</p>
+                    </div>
+                </div>
+
+                <!-- Precision Agriculture -->
+                <div class="mb-12">
+                    <h4 class="text-2xl font-bold text-yellow-400 mb-6">精准农业的范式革命：采纳率及其对投入品用量的影响</h4>
+                    
+                    <div class="chart-container p-6 mb-8">
+                        <h5 class="text-lg font-semibold text-yellow-300 mb-4">精准农业技术采纳率</h5>
+                        <div id="precisionAgChart" style="height: 350px;"></div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-8 mb-8">
+                        <div class="bg-blue-900/10 border border-blue-600/30 rounded-xl p-6">
+                            <h5 class="text-lg font-bold text-blue-300 mb-4">技术采纳现状</h5>
+                            <div class="space-y-3 text-gray-300">
+                                <p><span class="data-highlight">70%</span> 的大型农场使用拖拉机自动驾驶/导航系统</p>
+                                <p><span class="data-highlight">68%</span> 使用产量监测图和土壤图</p>
+                                <p>整体采纳率约为 <span class="data-highlight">27%</span>（所有规模农场）</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-green-900/10 border border-green-600/30 rounded-xl p-6">
+                            <h5 class="text-lg font-bold text-green-300 mb-4">效果量化</h5>
+                            <div class="space-y-3 text-gray-300">
+                                <p>化肥使用量减少 <span class="data-highlight">7%</span></p>
+                                <p>除草剂和农药使用量减少 <span class="data-highlight">9%</span></p>
+                                <p>作物产量提升 <span class="data-highlight">4%</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-orange-900/10 border-l-4 border-orange-400 p-6 rounded-r-xl">
+                        <p class="text-gray-300">这种由技术进步带来的对化学品<span class="data-highlight">用量</span>的结构性、长期性压缩，对一个依赖销售<span class="data-highlight">体积</span>（加仑、吨）的行业来说，是一个深刻的颠覆性力量。它迫使行业内的领导者必须进行战略转型：从单纯的化学品销售商，转变为农业技术解决方案提供商。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Europe -->
+            <div class="mb-20 animated-section">
+                <h3 class="font-display text-3xl font-bold text-white mb-8">欧洲——在监管的"紧箍咒"下航行</h3>
+                <p class="text-sm text-gray-500 mb-6">Europe - Navigating Under Regulatory Constraints</p>
+
+                <!-- Farm to Fork Strategy -->
+                <div class="mb-12">
+                    <h4 class="text-2xl font-bold text-yellow-400 mb-6">"从农场到餐桌"战略下的市场动态：用量趋势与可持续转型</h4>
+                    
+                    <div class="bg-green-900/10 border border-green-600/30 rounded-xl p-6 mb-8">
+                        <p class="text-lg text-gray-300 mb-4">欧盟的"从农场到餐桌"（Farm to Fork）战略是其农业政策的核心，其明确目标之一是大幅减少化学农药的使用。</p>
+                        <p class="text-gray-300">数据显示，<span class="data-highlight">2022年，欧盟农药总销量降至约32.2万吨</span>，为2011年有数据记录以来的最低点，同比下降<span class="data-highlight">10%</span>。</p>
+                    </div>
+
+                    <!-- EU Market Structure Chart -->
+                    <div class="chart-container p-6 mb-8">
+                        <h5 class="text-lg font-semibold text-yellow-300 mb-4">2022年欧盟农药销量结构</h5>
+                        <div id="euMarketChart" style="height: 400px;"></div>
+                    </div>
+
+                    <div class="bg-blue-900/10 border-l-4 border-blue-400 p-6 rounded-r-xl">
+                        <p class="text-gray-300">值得注意的是，2022年销量最高的品类是<span class="data-highlight">"杀真菌剂和杀细菌剂"，占总销量的43%</span>。在这一品类中，<span class="data-highlight">无机杀菌剂（如铜制剂）占据了超过60%的份额</span>。这类产品许多被允许在有机农业中使用，侧面反映了有机农业和可持续农业在欧洲市场的巨大影响力。</p>
+                    </div>
+                </div>
+
+                <!-- NGT Regulatory Changes -->
+                <div class="mb-12">
+                    <h4 class="text-2xl font-bold text-yellow-400 mb-6">监管的地平线：解析对新型基因组技术（NGT）的潜在转变</h4>
+                    
+                    <div class="grid lg:grid-cols-2 gap-8 mb-8">
+                        <div class="bg-red-900/10 border border-red-600/30 rounded-xl p-6">
+                            <h5 class="text-lg font-bold text-red-300 mb-4">
+                                <i class="fas fa-gavel mr-2"></i>当前监管现状
+                            </h5>
+                            <p class="text-gray-300 text-sm">根据欧盟法院2018年裁决，基因编辑技术目前被视同传统转基因（GMO）技术，受到世界上最严格的监管，实际上阻碍了基因编辑作物在欧洲的商业化。</p>
+                        </div>
+                        
+                        <div class="bg-green-900/10 border border-green-600/30 rounded-xl p-6">
+                            <h5 class="text-lg font-bold text-green-300 mb-4">
+                                <i class="fas fa-chart-line mr-2"></i>潜在改革方向
+                            </h5>
+                            <p class="text-gray-300 text-sm">2023年7月，欧盟委员会提出新法规草案，建议将基因编辑作物分为两类：第一类"等同于常规育种"的作物将不再遵循严格的GMO法规。</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-purple-900/10 border-l-4 border-purple-400 p-6 rounded-r-xl">
+                        <p class="text-gray-300">这一提案若能通过，将是欧洲农业生物技术政策的一次重大转向，使其从基于"过程"（process-based）的监管，向更科学、更与美国等地区协调的基于"产品"（product-based）的监管迈进。这将极大地释放欧洲在植物科学领域的创新潜力。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Latin America -->
+            <div class="mb-20 animated-section">
+                <h3 class="font-display text-3xl font-bold text-white mb-8">拉丁美洲——由波动性与规模定义的市场</h3>
+                <p class="text-sm text-gray-500 mb-6">Latin America - A Market Defined by Volatility and Scale</p>
+
+                <!-- Brazil Market -->
+                <div class="mb-12">
+                    <h4 class="text-2xl font-bold text-yellow-400 mb-6">巴西作为风向标：关键作物、市场周期与结构性敏感度</h4>
+                    
+                    <div class="bg-green-900/10 border border-green-600/30 rounded-xl p-6 mb-8">
+                        <p class="text-lg text-gray-300 mb-4">巴西是全球农化市场的巨头之一。据估计，其<span class="data-highlight">2024年的农化市场规模约为104亿美元</span>，而仅农药市场的价值在2024年就达到了<span class="data-highlight">180亿美元</span>（尽管相比前一年的210亿美元有所下降）。</p>
+                    </div>
+
+                    <div class="grid lg:grid-cols-2 gap-8 mb-8">
+                        <div class="bg-blue-900/10 border border-blue-600/30 rounded-xl p-6">
+                            <h5 class="text-lg font-bold text-blue-300 mb-4">市场驱动力</h5>
+                            <div class="space-y-3 text-gray-300">
+                                <p><span class="data-highlight">大豆</span>是最大的农药应用市场，占用了超过<span class="data-highlight">55%</span>的农药处理面积</p>
+                                <p>主要作物包括大豆、玉米、甘蔗和棉花</p>
+                                <p>农化产品需求与作物种植面积、商品价格及气候条件高度相关</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-red-900/10 border border-red-600/30 rounded-xl p-6">
+                            <h5 class="text-lg font-bold text-red-300 mb-4">风险因素</h5>
+                            <div class="space-y-3 text-gray-300">
+                                <p><span class="font-semibold text-yellow-400">价格周期</span>：全球大宗农产品价格波动直接影响农民投入意愿</p>
+                                <p><span class="font-semibold text-yellow-400">气候风险</span>：极端天气影响作物生长和病虫害规律</p>
+                                <p><span class="font-semibold text-yellow-400">汇率波动</span>：美元计价产品受巴西雷亚尔汇率影响</p>
+                                <p><span class="font-semibold text-yellow-400">非法市场</span>：走私或假冒产品占据约<span class="data-highlight">20%</span>的市场份额</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-orange-900/10 border-l-4 border-orange-400 p-6 rounded-r-xl">
+                        <p class="text-gray-300">对于投资者而言，评估在拉丁美洲有重要业务敞口的公司时，必须充分理解并量化这些周期性和结构性风险。企业的盈利能力不仅取决于其产品和技术，还取决于其在应对宏观波动和复杂市场环境方面的管理能力。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript for new charts -->
+    <script>
+        try {
+            // Precision Agriculture Chart
+            const precisionChartElement = document.getElementById('precisionAgChart');
+            if (precisionChartElement && typeof echarts !== 'undefined') {
+                const precisionChart = echarts.init(precisionChartElement);
+                const precisionOption = {
+            backgroundColor: 'transparent',
+            textStyle: {
+                color: '#CCCCCC'
+            },
+            tooltip: {
+                trigger: 'item',
+                backgroundColor: 'rgba(26, 26, 26, 0.9)',
+                borderColor: '#D4AF37',
+                textStyle: {
+                    color: '#FFFFFF'
+                }
+            },
+            legend: {
+                orient: 'vertical',
+                left: 'left',
+                textStyle: {
+                    color: '#CCCCCC'
+                }
+            },
+            series: [
+                {
+                    name: '技术采纳情况',
+                    type: 'pie',
+                    radius: '65%',
+                    center: ['60%', '50%'],
+                    data: [
+                        {value: 70, name: '拖拉机自动导航(大型农场)', itemStyle: {color: '#D4AF37'}},
+                        {value: 68, name: '产量监测图(大型农场)', itemStyle: {color: '#B8860B'}},
+                        {value: 27, name: '整体采纳率(所有农场)', itemStyle: {color: '#FFD700'}},
+                        {value: 73, name: '未采用精准农业', itemStyle: {color: '#444444'}}
+                    ],
+                    emphasis: {
+                        itemStyle: {
+                            shadowBlur: 10,
+                            shadowOffsetX: 0,
+                            shadowColor: 'rgba(212, 175, 55, 0.5)'
+                        }
+                    },
+                    label: {
+                        show: true,
+                        formatter: '{b}: {c}%',
+                        color: '#CCCCCC'
+                    }
+                }
+            ]
+        };
+        precisionChart.setOption(precisionOption);
+            } // Close if statement for precisionChart
+
+            // EU Market Structure Chart
+            const euChartElement = document.getElementById('euMarketChart');
+            if (euChartElement && typeof echarts !== 'undefined') {
+                const euChart = echarts.init(euChartElement);
+                const euOption = {
+            backgroundColor: 'transparent',
+            textStyle: {
+                color: '#CCCCCC'
+            },
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: {
+                    type: 'shadow'
+                },
+                backgroundColor: 'rgba(26, 26, 26, 0.9)',
+                borderColor: '#D4AF37',
+                textStyle: {
+                    color: '#FFFFFF'
+                }
+            },
+            grid: {
+                left: '3%',
+                right: '4%',
+                bottom: '3%',
+                containLabel: true
+            },
+            xAxis: {
+                type: 'value',
+                axisLine: {
+                    lineStyle: {
+                        color: '#555555'
+                    }
+                },
+                axisLabel: {
+                    color: '#CCCCCC',
+                    formatter: '{value}%'
+                },
+                splitLine: {
+                    lineStyle: {
+                        color: '#333333'
+                    }
+                }
+            },
+            yAxis: {
+                type: 'category',
+                data: ['杀真菌剂和杀细菌剂', '除草剂', '杀虫剂', '其他'],
+                axisLine: {
+                    lineStyle: {
+                        color: '#555555'
+                    }
+                },
+                axisLabel: {
+                    color: '#CCCCCC'
+                }
+            },
+            series: [
+                {
+                    name: '市场份额',
+                    type: 'bar',
+                    data: [43, 32, 18, 7],
+                    itemStyle: {
+                        color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [
+                            {
+                                offset: 0,
+                                color: 'rgba(212, 175, 55, 0.8)'
+                            },
+                            {
+                                offset: 1,
+                                color: 'rgba(212, 175, 55, 0.3)'
+                            }
+                        ])
+                    },
+                    emphasis: {
+                        itemStyle: {
+                            color: '#D4AF37'
+                        }
+                    },
+                    label: {
+                        show: true,
+                        position: 'right',
+                        formatter: '{c}%',
+                        color: '#D4AF37'
+                    }
+                }
+            ]
+        };
+        euChart.setOption(euOption);
+            } // Close if statement for euChart
+
+            // Resize charts on window resize
+            window.addEventListener('resize', () => {
+                if (typeof marketChart !== 'undefined') marketChart.resize();
+                if (typeof precisionChart !== 'undefined') precisionChart.resize();
+                if (typeof euChart !== 'undefined') euChart.resize();
+            });
+            
+        } catch (error) {
+            console.error('Error in charts initialization:', error);
+        }
+    </script>
+
+    <!-- Part III: Profitability and Competitive Advantages -->
+    <section class="py-20 px-6 bg-gray-900/20">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16 animated-section">
+                <h2 class="font-display text-4xl md:text-5xl font-bold gold-gradient mb-6">盈利能力与竞争优势的机制</h2>
+                <p class="text-lg text-gray-400">Mechanisms of Profitability and Competitive Advantages</p>
+                <div class="section-divider mt-8"></div>
+            </div>
+
+            <!-- Value Chain Analysis -->
+            <div class="mb-20 animated-section">
+                <h3 class="font-display text-3xl font-bold text-white mb-8">解构价值链与成本结构</h3>
+                <p class="text-sm text-gray-500 mb-6">Deconstructing Value Chains and Cost Structures</p>
+
+                <!-- Upstream Dependencies -->
+                <div class="mb-12">
+                    <h4 class="text-2xl font-bold text-yellow-400 mb-6">上游依赖性：与天然气、磷矿石和原油价格的关键联动</h4>
+                    
+                    <div class="grid lg:grid-cols-3 gap-6 mb-8">
+                        <div class="bg-blue-900/10 border border-blue-600/30 rounded-xl p-6">
+                            <h5 class="text-lg font-bold text-blue-300 mb-4">
+                                <i class="fas fa-fire mr-2"></i>氮肥与天然气
+                            </h5>
+                            <div class="space-y-3 text-gray-300 text-sm">
+                                <p>哈伯-博斯法生产过程中，天然气既是原料也是燃料</p>
+                                <p>天然气成本在氨生产成本中占绝对主导地位</p>
+                                <p>天然气价格与氮肥价格存在极强正相关关系</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-orange-900/10 border border-orange-600/30 rounded-xl p-6">
+                            <h5 class="text-lg font-bold text-orange-300 mb-4">
+                                <i class="fas fa-mountain mr-2"></i>磷肥与磷矿石
+                            </h5>
+                            <div class="space-y-3 text-gray-300 text-sm">
+                                <p>磷矿石是不可再生的稀缺资源</p>
+                                <p>全球储量高度集中于摩洛哥、中国和美国</p>
+                                <p>磷矿石价格决定磷肥产业链基础成本</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-purple-900/10 border border-purple-600/30 rounded-xl p-6">
+                            <h5 class="text-lg font-bold text-purple-300 mb-4">
+                                <i class="fas fa-oil-can mr-2"></i>农药与原油
+                            </h5>
+                            <div class="space-y-3 text-gray-300 text-sm">
+                                <p>农药活性成分化学合成始于石化产品</p>
+                                <p>原油价格波动通过产业链传导至农药成本</p>
+                                <p>能源价格整体水平影响制造成本</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-yellow-900/10 border-l-4 border-yellow-400 p-6 rounded-r-xl">
+                        <p class="text-gray-300">这种对上游大宗商品的深刻依赖，揭示了<span class="data-highlight">垂直一体化</span>作为一种竞争优势的重要性。能够向上游延伸，控制关键原材料的企业，可以有效地平抑成本波动，在市场周期中获得更稳定、更丰厚的利润。</p>
+                    </div>
+                </div>
+
+                <!-- Downstream Channels -->
+                <div class="mb-12">
+                    <h4 class="text-2xl font-bold text-yellow-400 mb-6">下游渠道：一体化零售与分销网络的作用</h4>
+                    
+                    <div class="bg-green-900/10 border border-green-600/30 rounded-xl p-6 mb-8">
+                        <h5 class="text-lg font-semibold text-green-300 mb-4">Nutrien一体化零售模式典范</h5>
+                        <div class="grid md:grid-cols-3 gap-6 text-gray-300">
+                            <div class="text-center">
+                                <p class="text-3xl font-bold text-yellow-400 mb-2">$195B</p>
+                                <p class="text-sm">2023年零售业务销售额</p>
+                            </div>
+                            <div class="text-center">
+                                <p class="text-3xl font-bold text-yellow-400 mb-2">$44B</p>
+                                <p class="text-sm">毛利</p>
+                            </div>
+                            <div class="text-center">
+                                <p class="text-3xl font-bold text-yellow-400 mb-2">22.7%</p>
+                                <p class="text-sm">毛利率</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="bg-blue-900/10 border border-blue-600/30 rounded-xl p-6">
+                            <h5 class="text-lg font-bold text-blue-300 mb-4">三种主要渠道模式</h5>
+                            <div class="space-y-3 text-gray-300 text-sm">
+                                <p><span class="font-semibold text-yellow-400">独立分销商模式</span>：传统应用最广的模式</p>
+                                <p><span class="font-semibold text-yellow-400">直销模式</span>：直接向大型农场销售</p>
+                                <p><span class="font-semibold text-yellow-400">一体化零售模式</span>：自建零售网络直面农民</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-purple-900/10 border border-purple-600/30 rounded-xl p-6">
+                            <h5 class="text-lg font-bold text-purple-300 mb-4">一体化优势</h5>
+                            <div class="space-y-3 text-gray-300 text-sm">
+                                <p>掌控客户关系，增强客户粘性</p>
+                                <p>捕获全价值链利润</p>
+                                <p>获得数据和信息优势</p>
+                                <p>推广高利润产品</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Competitive Moats -->
+            <div class="mb-20 animated-section">
+                <h3 class="font-display text-3xl font-bold text-white mb-8">解析竞争护城河的来源</h3>
+                <p class="text-sm text-gray-500 mb-6">Analyzing Sources of Competitive Moats</p>
+
+                <!-- R&D Moat -->
+                <div class="mb-12">
+                    <h4 class="text-2xl font-bold text-yellow-400 mb-6">研发护城河：专利活性成分的生命周期</h4>
+                    
+                    <!-- Product Lifecycle Chart -->
+                    <div class="chart-container p-6 mb-8">
+                        <h5 class="text-lg font-semibold text-yellow-300 mb-4">专利产品生命周期</h5>
+                        <div id="lifecycleChart" style="height: 350px;"></div>
+                    </div>
+
+                    <div class="bg-blue-900/10 border-l-4 border-blue-400 p-6 rounded-r-xl">
+                        <p class="text-gray-300">在作物保护领域，最强大、最核心的护城河来自于研发创新。一条新的活性成分从实验室发现到成功商业化，通常需要耗时<span class="data-highlight">10年以上</span>，投入<span class="data-highlight">数亿美元</span>的资金。一旦成功，该活性成分将获得专利保护，在保护期内（通常为20年左右），企业可以作为独家供应商，享受高定价和高利润率。</p>
+                    </div>
+                </div>
+
+                <!-- Regulatory Moat -->
+                <div class="mb-12">
+                    <h4 class="text-2xl font-bold text-yellow-400 mb-6">监管护城河：关键市场的准入壁垒</h4>
+                    
+                    <div class="grid lg:grid-cols-3 gap-6 mb-8">
+                        <div class="bg-red-900/10 border border-red-600/30 rounded-xl p-6 text-center">
+                            <i class="fas fa-dollar-sign text-3xl text-red-300 mb-4"></i>
+                            <h5 class="text-lg font-bold text-red-300 mb-2">高昂成本</h5>
+                            <p class="text-gray-300 text-sm">完成所有必要试验和数据包需要数千万甚至上亿美元投入</p>
+                        </div>
+                        
+                        <div class="bg-orange-900/10 border border-orange-600/30 rounded-xl p-6 text-center">
+                            <i class="fas fa-clock text-3xl text-orange-300 mb-4"></i>
+                            <h5 class="text-lg font-bold text-orange-300 mb-2">漫长时间</h5>
+                            <p class="text-gray-300 text-sm">从提交申请到获得批准，在主要市场通常需要数年时间</p>
+                        </div>
+                        
+                        <div class="bg-purple-900/10 border border-purple-600/30 rounded-xl p-6 text-center">
+                            <i class="fas fa-user-graduate text-3xl text-purple-300 mb-4"></i>
+                            <h5 class="text-lg font-bold text-purple-300 mb-2">高度专业性</h5>
+                            <p class="text-gray-300 text-sm">需要毒理学、环境科学、法规事务等多方面专业团队</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scale Moat -->
+                <div class="mb-12">
+                    <h4 class="text-2xl font-bold text-yellow-400 mb-6">规模护城河：制造与全球分销的经济效应</h4>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="bg-green-900/10 border border-green-600/30 rounded-xl p-6">
+                            <h5 class="text-lg font-bold text-green-300 mb-4">制造成本优势</h5>
+                            <div class="space-y-3 text-gray-300 text-sm">
+                                <p>大型生产装置的单位产品固定成本更低</p>
+                                <p>全球性采购网络获得更优惠原材料价格</p>
+                                <p>规模经济效应显著</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-blue-900/10 border border-blue-600/30 rounded-xl p-6">
+                            <h5 class="text-lg font-bold text-blue-300 mb-4">分销效率优势</h5>
+                            <div class="space-y-3 text-gray-300 text-sm">
+                                <p>覆盖全球的分销网络平抑单一市场需求波动</p>
+                                <p>庞大货运量降低单位物流成本</p>
+                                <p>在价格竞争中占据优势</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Lifecycle Chart Script -->
+    <script>
+        try {
+            // Product Lifecycle Chart
+            const lifecycleChartElement = document.getElementById('lifecycleChart');
+            if (lifecycleChartElement && typeof echarts !== 'undefined') {
+                const lifecycleChart = echarts.init(lifecycleChartElement);
+                const lifecycleOption = {
+            backgroundColor: 'transparent',
+            textStyle: {
+                color: '#CCCCCC'
+            },
+            tooltip: {
+                trigger: 'axis',
+                backgroundColor: 'rgba(26, 26, 26, 0.9)',
+                borderColor: '#D4AF37',
+                textStyle: {
+                    color: '#FFFFFF'
+                }
+            },
+            legend: {
+                data: ['销售额', '利润率'],
+                textStyle: {
+                    color: '#CCCCCC'
+                },
+                top: 20
+            },
+            grid: {
+                left: '3%',
+                right: '4%',
+                bottom: '10%',
+                top: '20%',
+                containLabel: true
+            },
+            xAxis: {
+                type: 'category',
+                boundaryGap: false,
+                data: ['投入期', '成长期', '成熟期', '衰退期'],
+                axisLine: {
+                    lineStyle: {
+                        color: '#555555'
+                    }
+                },
+                axisLabel: {
+                    color: '#CCCCCC'
+                }
+            },
+            yAxis: [
+                {
+                    type: 'value',
+                    name: '销售额',
+                    position: 'left',
+                    nameTextStyle: {
+                        color: '#D4AF37'
+                    },
+                    axisLine: {
+                        lineStyle: {
+                            color: '#555555'
+                        }
+                    },
+                    axisLabel: {
+                        color: '#CCCCCC'
+                    },
+                    splitLine: {
+                        lineStyle: {
+                            color: '#333333'
+                        }
+                    }
+                },
+                {
+                    type: 'value',
+                    name: '利润率 (%)',
+                    position: 'right',
+                    nameTextStyle: {
+                        color: '#B8860B'
+                    },
+                    axisLine: {
+                        lineStyle: {
+                            color: '#555555'
+                        }
+                    },
+                    axisLabel: {
+                        color: '#CCCCCC',
+                        formatter: '{value}%'
+                    }
+                }
+            ],
+            series: [
+                {
+                    name: '销售额',
+                    type: 'line',
+                    yAxisIndex: 0,
+                    data: [0, 30, 100, 20],
+                    lineStyle: {
+                        color: '#D4AF37',
+                        width: 3
+                    },
+                    itemStyle: {
+                        color: '#D4AF37'
+                    },
+                    areaStyle: {
+                        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                            {
+                                offset: 0,
+                                color: 'rgba(212, 175, 55, 0.3)'
+                            },
+                            {
+                                offset: 1,
+                                color: 'rgba(212, 175, 55, 0.05)'
+                            }
+                        ])
+                    },
+                    smooth: true
+                },
+                {
+                    name: '利润率',
+                    type: 'line',
+                    yAxisIndex: 1,
+                    data: [-100, 20, 80, 10],
+                    lineStyle: {
+                        color: '#B8860B',
+                        width: 3,
+                        type: 'dashed'
+                    },
+                    itemStyle: {
+                        color: '#B8860B'
+                    },
+                    smooth: true
+                }
+            ]
+        };
+        lifecycleChart.setOption(lifecycleOption);
+
+                // Update resize listener for lifecycle chart
+                window.addEventListener('resize', () => {
+                    lifecycleChart.resize();
+                });
+            } // Close if statement for lifecycleChart
+            
+        } catch (error) {
+            console.error('Error in lifecycle chart initialization:', error);
+        }
+    </script>
+
+    <!-- Part IV: Future Trajectory -->
+    <section class="py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16 animated-section">
+                <h2 class="font-display text-4xl md:text-5xl font-bold gold-gradient mb-6">未来轨迹：新兴范式与结构性风险</h2>
+                <p class="text-lg text-gray-400">Future Trajectory: Emerging Paradigms and Structural Risks</p>
+                <div class="section-divider mt-8"></div>
+            </div>
+
+            <!-- Biologicals Revolution -->
+            <div class="mb-20 animated-section">
+                <h3 class="font-display text-3xl font-bold text-white mb-8">生物制剂的革命：从利基到主流</h3>
+                <p class="text-sm text-gray-500 mb-6">The Biologicals Revolution: From Niche to Mainstream</p>
+
+                <!-- Market Growth Data -->
+                <div class="mb-12">
+                    <h4 class="text-2xl font-bold text-yellow-400 mb-6">量化生物制剂市场：增长预测与关键细分</h4>
+                    
+                    <div class="grid md:grid-cols-2 gap-8 mb-8">
+                        <div class="bg-green-900/10 border border-green-600/30 rounded-xl p-6">
+                            <h5 class="text-lg font-bold text-green-300 mb-4">市场增长预测</h5>
+                            <div class="space-y-3 text-gray-300">
+                                <p><span class="data-highlight">2024年</span>：约<span class="text-2xl font-bold text-white">77亿美元</span></p>
+                                <p><span class="data-highlight">2029年</span>：约<span class="text-2xl font-bold text-white">157亿美元</span></p>
+                                <p>复合年增长率：<span class="data-highlight">15.2%</span></p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-blue-900/10 border border-blue-600/30 rounded-xl p-6">
+                            <h5 class="text-lg font-bold text-blue-300 mb-4">替代数据源</h5>
+                            <div class="space-y-3 text-gray-300">
+                                <p><span class="data-highlight">2024年</span>：约<span class="text-2xl font-bold text-white">80亿美元</span></p>
+                                <p><span class="data-highlight">2031年</span>：近<span class="text-2xl font-bold text-white">200亿美元</span></p>
+                                <p>复合年增长率：<span class="data-highlight">11.7%</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-purple-900/10 border-l-4 border-purple-400 p-6 rounded-r-xl mb-8">
+                        <h5 class="text-lg font-semibold text-purple-300 mb-4">多重驱动力共振</h5>
+                        <div class="grid md:grid-cols-2 gap-6 text-gray-300">
+                            <div>
+                                <p><span class="font-semibold text-yellow-400">监管推动</span>：全球对化学农药监管日趋严格</p>
+                                <p><span class="font-semibold text-yellow-400">消费者偏好</span>：对有机食品和可持续农业需求增长</p>
+                            </div>
+                            <div>
+                                <p><span class="font-semibold text-yellow-400">技术进步</span>：提升生物农药稳定性和持效性</p>
+                                <p><span class="font-semibold text-yellow-400">抗性管理</span>：与化学农药轮换使用延缓抗药性</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-green-900/10 border border-green-600/30 rounded-xl p-6">
+                        <p class="text-gray-300">先正达集团报告其<span class="data-highlight">2023年生物制剂业务销售额增长了11%</span>，这表明生物制品已成为其重要的增长贡献点。</p>
+                    </div>
+                </div>
+
+                <!-- Strategic Integration -->
+                <div class="mb-12">
+                    <h4 class="text-2xl font-bold text-yellow-400 mb-6">战略要务：现有巨头如何整合生物制剂</h4>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="bg-blue-900/10 border border-blue-600/30 rounded-xl p-6">
+                            <h5 class="text-lg font-bold text-blue-300 mb-4">
+                                <i class="fas fa-flask mr-2"></i>内部研发路径
+                            </h5>
+                            <p class="text-gray-300 text-sm">利用自身强大的科研平台，开发具有自主知识产权的微生物菌株、天然提取物和发酵产品</p>
+                        </div>
+                        
+                        <div class="bg-orange-900/10 border border-orange-600/30 rounded-xl p-6">
+                            <h5 class="text-lg font-bold text-orange-300 mb-4">
+                                <i class="fas fa-handshake mr-2"></i>外部并购与合作
+                            </h5>
+                            <p class="text-gray-300 text-sm">积极收购在特定生物技术领域拥有专长的初创公司和中小型企业，快速获取技术、产品线和市场渠道</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gene Editing Frontier -->
+            <div class="mb-20 animated-section">
+                <h3 class="font-display text-3xl font-bold text-white mb-8">基因编辑前沿：一场长期的结构性颠覆</h3>
+                <p class="text-sm text-gray-500 mb-6">Gene Editing Frontier: A Long-term Structural Disruption</p>
+
+                <!-- Commercialized Products -->
+                <div class="mb-12">
+                    <h4 class="text-2xl font-bold text-yellow-400 mb-6">商业化管线：已进入市场的CRISPR编辑产品回顾</h4>
+                    
+                    <div class="grid lg:grid-cols-2 gap-8 mb-8">
+                        <div class="bg-green-900/10 border border-green-600/30 rounded-xl p-6">
+                            <h5 class="text-lg font-bold text-green-300 mb-4">改善消费者体验</h5>
+                            <div class="space-y-3 text-gray-300 text-sm">
+                                <p><span class="font-semibold text-yellow-400">低苦味芥菜</span>：Conscious Greens™，2023年美国上市</p>
+                                <p><span class="font-semibold text-yellow-400">不易褐变牛油果和生菜</span>：延长货架期和商业价值</p>
+                                <p><span class="font-semibold text-yellow-400">富含GABA的番茄</span>：2021年日本市场销售</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-blue-900/10 border border-blue-600/30 rounded-xl p-6">
+                            <h5 class="text-lg font-bold text-blue-300 mb-4">提升农业生产效率</h5>
+                            <div class="space-y-3 text-gray-300 text-sm">
+                                <p><span class="font-semibold text-yellow-400">高产糯玉米</span>：科迪华2020年开发，优于传统育种</p>
+                                <p><span class="font-semibold text-yellow-400">抗病作物</span>：抗白粉病葡萄、抗病毒番茄</p>
+                                <p><span class="font-semibold text-yellow-400">耐逆境作物</span>：耐旱玉米、耐盐水稻</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Global Regulatory Landscape -->
+                <div class="mb-12">
+                    <h4 class="text-2xl font-bold text-yellow-400 mb-6">全球监管的"拼图"：美国、欧盟与中国的比较分析</h4>
+                    
+                    <!-- Regulatory Comparison Table -->
+                    <div class="overflow-x-auto mb-8">
+                        <table class="w-full table-style rounded-xl overflow-hidden">
+                            <thead>
+                                <tr>
+                                    <th class="px-4 py-3 text-left">区域</th>
+                                    <th class="px-4 py-3 text-center">监管方法</th>
+                                    <th class="px-4 py-3 text-center">"等同常规育种"地位</th>
+                                    <th class="px-4 py-3 text-left">关键法规/政策</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-gray-300">
+                                <tr>
+                                    <td class="px-4 py-3 font-semibold">美国</td>
+                                    <td class="px-4 py-3 text-center">基于产品</td>
+                                    <td class="px-4 py-3 text-center text-green-400">豁免监管</td>
+                                    <td class="px-4 py-3 text-sm">USDA SECURE Rule (2020)</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-semibold">欧盟</td>
+                                    <td class="px-4 py-3 text-center">基于过程</td>
+                                    <td class="px-4 py-3 text-center text-red-400">视同GMO严格监管</td>
+                                    <td class="px-4 py-3 text-sm">GMO Directive 2001/18/EC</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-semibold">欧盟(潜在改革)</td>
+                                    <td class="px-4 py-3 text-center">混合模式</td>
+                                    <td class="px-4 py-3 text-center text-yellow-400">可能豁免或简化</td>
+                                    <td class="px-4 py-3 text-sm">Proposed NGT Regulation</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-semibold">中国</td>
+                                    <td class="px-4 py-3 text-center">过程与产品结合</td>
+                                    <td class="px-4 py-3 text-center text-blue-400">正在建立指南</td>
+                                    <td class="px-4 py-3 text-sm">农业农村部指南</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="bg-orange-900/10 border-l-4 border-orange-400 p-6 rounded-r-xl">
+                        <p class="text-gray-300">美国的"产品导向"监管框架为基因编辑创新提供了全球最宽松、最高效的路径。相比之下，欧盟正在审议的NGT新规，可能使其监管政策向美国模式靠拢。<span class="data-highlight">这一潜在的转变，是全球农业生物技术领域未来几年最重要的催化剂</span>。</p>
+                    </div>
+                </div>
+
+                <!-- Long-term Impact -->
+                <div class="mb-12">
+                    <h4 class="text-2xl font-bold text-yellow-400 mb-6">对农化产品需求曲线的长期影响</h4>
+                    
+                    <div class="grid md:grid-cols-3 gap-6 mb-8">
+                        <div class="bg-red-900/10 border border-red-600/30 rounded-xl p-6 text-center">
+                            <i class="fas fa-shield-virus text-3xl text-red-300 mb-4"></i>
+                            <h5 class="text-lg font-bold text-red-300 mb-2">抗病育种</h5>
+                            <p class="text-gray-300 text-sm">开发抵抗特定病原的作物品种，直接降低杀菌剂、杀病毒剂需求</p>
+                        </div>
+                        
+                        <div class="bg-green-900/10 border border-green-600/30 rounded-xl p-6 text-center">
+                            <i class="fas fa-bug text-3xl text-green-300 mb-4"></i>
+                            <h5 class="text-lg font-bold text-green-300 mb-2">抗虫育种</h5>
+                            <p class="text-gray-300 text-sm">作物产生对昆虫有毒害的蛋白质，或改变形态躲避害虫</p>
+                        </div>
+                        
+                        <div class="bg-blue-900/10 border border-blue-600/30 rounded-xl p-6 text-center">
+                            <i class="fas fa-leaf text-3xl text-blue-300 mb-4"></i>
+                            <h5 class="text-lg font-bold text-blue-300 mb-2">除草剂应用改变</h5>
+                            <p class="text-gray-300 text-sm">通过改良作物性状增强杂草竞争力，减少除草剂用量</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-purple-900/10 border-l-4 border-purple-400 p-6 rounded-r-xl">
+                        <p class="text-gray-300">这种通过<span class="data-highlight">"基因替代化学"</span>的趋势，对以销售化学品为核心的商业模式构成了长期挑战。它进一步强化了行业向"种子+性状+植保"一体化解决方案转型的必然性。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Risk Assessment -->
+            <div class="mb-20 animated-section">
+                <h3 class="font-display text-3xl font-bold text-white mb-8">行业关键风险与结构性张力的综合研判</h3>
+                <p class="text-sm text-gray-500 mb-6">Comprehensive Assessment of Industry Risks and Structural Tensions</p>
+
+                <!-- Risk Framework -->
+                <div class="mb-12">
+                    <h4 class="text-2xl font-bold text-yellow-400 mb-6">周期性风险 vs. 结构性风险：一个分析框架</h4>
+                    
+                    <div class="grid lg:grid-cols-2 gap-8 mb-8">
+                        <div class="bg-blue-900/10 border border-blue-600/30 rounded-xl p-6">
+                            <h5 class="text-lg font-bold text-blue-300 mb-4">
+                                <i class="fas fa-sync-alt mr-2"></i>周期性风险
+                            </h5>
+                            <div class="space-y-3 text-gray-300 text-sm">
+                                <p><span class="font-semibold text-yellow-400">渠道库存周期</span>：如2023年全球性去库存</p>
+                                <p><span class="font-semibold text-yellow-400">农产品价格周期</span>：影响农民种植效益和投入能力</p>
+                                <p><span class="font-semibold text-yellow-400">气候与天气波动</span>：极端天气影响当季需求</p>
+                                <p><span class="font-semibold text-yellow-400">原材料成本波动</span>：能源和矿产价格周期性变化</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-red-900/10 border border-red-600/30 rounded-xl p-6">
+                            <h5 class="text-lg font-bold text-red-300 mb-4">
+                                <i class="fas fa-chart-line mr-2"></i>结构性风险与转变
+                            </h5>
+                            <div class="space-y-3 text-gray-300 text-sm">
+                                <p><span class="font-semibold text-yellow-400">精准农业普及</span>：技术驱动的投入品用量下降</p>
+                                <p><span class="font-semibold text-yellow-400">生物制剂替代</span>：环保高效生物制品部分替代化学品</p>
+                                <p><span class="font-semibold text-yellow-400">基因编辑颠覆</span>：从根本上减少对外部化学干预需求</p>
+                                <p><span class="font-semibold text-yellow-400">监管趋严与分化</span>：提升行业门槛，重塑创新地理格局</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-yellow-900/10 border-l-4 border-yellow-400 p-6 rounded-r-xl">
+                        <p class="text-gray-300">对于长期投资者而言，关注的重点应更多地放在结构性转变上。一家企业如何应对这些长期趋势，决定了其在未来十年乃至更长时间内的生存与发展。</p>
+                    </div>
+                </div>
+
+                <!-- Core Tension -->
+                <div class="mb-12">
+                    <h4 class="text-2xl font-bold text-yellow-400 mb-6">核心张力：在生产力使命与可持续性压力之间寻求平衡</h4>
+                    
+                    <div class="grid lg:grid-cols-2 gap-8 mb-8">
+                        <div class="bg-green-900/10 border border-green-600/30 rounded-xl p-6">
+                            <h5 class="text-lg font-bold text-green-300 mb-4">
+                                <i class="fas fa-arrow-up mr-2"></i>生产力使命
+                            </h5>
+                            <p class="text-gray-300 text-sm">面对增长的人口和有限的资源，世界需要用更少的土地、水和劳动力生产出更多的粮食。保障全球粮食安全、不断提升农业生产力是刚性使命。</p>
+                        </div>
+                        
+                        <div class="bg-blue-900/10 border border-blue-600/30 rounded-xl p-6">
+                            <h5 class="text-lg font-bold text-blue-300 mb-4">
+                                <i class="fas fa-leaf mr-2"></i>可持续性压力
+                            </h5>
+                            <p class="text-gray-300 text-sm">来自社会、政府和消费者日益增长的可持续性压力。农业生产对环境的影响，如化肥流失、农药残留、温室气体排放等，正受到前所未有的审视。</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-purple-900/10 border-l-4 border-purple-400 p-6 rounded-r-xl text-center">
+                        <p class="text-xl text-gray-300 mb-4">行业的终极出路在于<span class="data-highlight text-2xl">技术创新</span></p>
+                        <p class="text-gray-300">开发并推广那些能够同时满足"更高产"和"更环保"双重目标的技术和产品。未来的赢家，将不再是那些仅仅销售最多化学品的公司，而是那些能够为农民提供最佳"投入产出比"和"环境影响最小化"综合解决方案的企业。</p>
+                    </div>
+                </div>
+
+                <!-- Final Insight -->
+                <div class="bg-gradient-to-r from-yellow-900/20 to-orange-900/20 border border-yellow-600/30 rounded-xl p-8 text-center">
+                    <h5 class="text-2xl font-bold gold-gradient mb-4">用更智慧的方式，而非更粗放的投入，来滋养世界</h5>
+                    <p class="text-lg text-gray-300">那些能够在这场生产力与可持续性的平衡木上走得最稳、最远的企业，将最有希望在行业的结构性转型中脱颖而出，并为股东创造长期的、可持续的价值。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- References Section -->
+    <section class="py-20 px-6 bg-gray-900/50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16 animated-section">
+                <h2 class="font-display text-3xl font-bold gold-gradient mb-6">引用的著作</h2>
+                <p class="text-lg text-gray-400">Referenced Sources</p>
+                <div class="section-divider mt-8"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm animated-section">
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">1. <a href="https://www.databridgemarketresearch.com/zh/reports/global-agricultural-chemicals-market" class="reference-link" target="_blank">全球农业化学品市场规模、份额和2032年行业报告</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">2. <a href="https://www.grandviewresearch.com/industry-analysis/agrochemicals-market" class="reference-link" target="_blank">Agrochemicals Market Size, Share & Growth Report, 2030</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">3. <a href="https://www.precedenceresearch.com/press-release/agrochemicals-market" class="reference-link" target="_blank">Agrochemicals Market Revenue to Attain USD 305.63 Bn by 2033</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">4. <a href="https://www.nextmsc.com/report/agrochemicals-market" class="reference-link" target="_blank">Agrochemicals Market Size and Share | Statistics - 2030</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">5. <a href="https://www.emergenresearch.com/industry-report/agrochemicals-market/top-companies" class="reference-link" target="_blank">Agrochemicals Market Top Companies: Profiles and Strategies</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">6. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8388655/" class="reference-link" target="_blank">Precision Agriculture for Crop and Livestock Farming—Brief Review</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">7. <a href="https://www.marketresearchfuture.com/reports/herbicides-market-4853" class="reference-link" target="_blank">Herbicides Market Overview, Size, Share, Trend, Analysis 2032</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">8. <a href="https://www.bccresearch.com/market-research/chemicals/crop-protection-chemicals-market.html" class="reference-link" target="_blank">Global Crop Protection Chemicals Market</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">9. <a href="http://www.croplifechina.org" class="reference-link" target="_blank">全球市场 - 植保（中国）协会</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">10. <a href="https://cnrspc.com/newsinfo/7584513.html" class="reference-link" target="_blank">荣盛石化位列ICIS全球化工企业100强第八位</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">11. <a href="https://www.icis.com/explore/cn/press-releases/the-icis-top-100-chemical-companies-unveiled/" class="reference-link" target="_blank">ICIS全球化工企业100强榜单揭晓</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">12. <a href="https://www.syngentagroup.com/sites/default/files/2024-04/240329_Syngenta%20Group%20FY_Q4_2023_EN.pdf" class="reference-link" target="_blank">Syngenta Group reports $32.2 billion sales and $4.6 billion EBITDA in 2023</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">13. <a href="https://news.agropages.com/News/NewsDetail---49338.htm" class="reference-link" target="_blank">2023 Global Crop Protection Market Review and 2024 Outlook</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">14. <a href="https://www.bayer.com/sites/default/files/2024-03/q4fy-2023-2024-05-03-presentation-charts-en.pdf" class="reference-link" target="_blank">FY / Q4 2023 Results - Bayer Global</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">15. <a href="https://www.syngentagroup.com/newsroom/2024/syngenta-group-reports-322-billion-sales-and-46-billion-ebitda-2023" class="reference-link" target="_blank">Syngenta Group reports $32.2 billion sales and $4.6 billion EBITDA in 2023</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">16. <a href="https://www.annualreports.com/HostedData/AnnualReportArchive/c/NYSE_CTVA_2023.pdf" class="reference-link" target="_blank">Corteva, Inc. AR 2023</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">17. <a href="https://www.prnewswire.com/news-releases/corteva-reports-fourth-quarter-and-full-year-2023-results-provides-2024-guidance-302049891.html" class="reference-link" target="_blank">Corteva Reports Fourth Quarter and Full-Year 2023 Results</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">18. <a href="https://chemxpert.com/dataintel-details?value=global-top-20-agrochemical-companies-revenues-fy-2023" class="reference-link" target="_blank">Global Top 20 Agrochemical Companies Revenues FY 2023</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">19. <a href="https://www.bayer.com/sites/default/files/2024-03/bayer-annual-report-2023.pdf" class="reference-link" target="_blank">Bayer Annual Report 2023</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">20. <a href="https://www.gminsights.com/zh/industry-analysis/agrochemical-additives-market" class="reference-link" target="_blank">农用化学添加剂市场规模、份额及趋势分析- 2032 年</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">21. <a href="https://www.gminsights.com/zh/industry-analysis/fertilizer-market" class="reference-link" target="_blank">2024-2032年肥料市场份额及增长分析报告</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">22. <a href="https://pdf.dfcfw.com/pdf/H3_AP202404171630414499_1.pdf" class="reference-link" target="_blank">供需格局持续优化，行业高质量发展窗口期已至</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">23. <a href="https://www.agribusinessglobal.com/agrochemicals/syngenta-group-reports-32-2-billion-sales-and-4-6-billion-ebitda-in-2023/" class="reference-link" target="_blank">Syngenta Group Reports $32.2 Billion Sales and $4.6 Billion EBITDA in 2023</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">24. <a href="https://www.psmarketresearch.com/market-analysis/us-pesticide-market" class="reference-link" target="_blank">U.S. Pesticide Market Size, and Growth Report, 2032</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">25. <a href="https://www.mordorintelligence.com/industry-reports/us-fungicides-market" class="reference-link" target="_blank">United States Fungicides Market Size & Share Analysis - Industry Research Report</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">26. <a href="https://www.marketresearchfuture.com/reports/fungicides-market-853" class="reference-link" target="_blank">Fungicides Market Overview, Size, Share, Trend and Forecast to 2032</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">27. <a href="https://www.nass.usda.gov/Surveys/Guide_to_NASS_Surveys/Chemical_Use/" class="reference-link" target="_blank">USDA National Agricultural Statistics Service - Chemical Use Surveys</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">28. <a href="https://www.epa.gov/pesticide-registration/glyphosate-proposed-interim-registration-review-decision" class="reference-link" target="_blank">EPA - Glyphosate Proposed Interim Registration Review Decision</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">29. <a href="https://www.usda.gov/media/blog/2019/07/29/farming-future-what-precision-agriculture" class="reference-link" target="_blank">USDA - Farming the Future: What is Precision Agriculture?</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">30. <a href="https://www.ers.usda.gov/data-products/charts-of-note/chart-detail?chartId=110550" class="reference-link" target="_blank">Precision agriculture use increases with farm size and varies widely by technology</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">31. <a href="https://www.gao.gov/assets/d24105962.pdf" class="reference-link" target="_blank">GAO-24-105962, Precision Agriculture: Benefits and Challenges</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">32. <a href="https://www.farmers.gov/your-business/know-before-you-grow/precision-agriculture" class="reference-link" target="_blank">USDA - Precision Agriculture Technologies</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">33. <a href="https://www.epa.gov/pesticide-registration/pesticide-registration-and-safety" class="reference-link" target="_blank">EPA - Pesticide Registration and Safety</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">34. <a href="https://www.fao.org/3/cb7633en/cb7633en.pdf" class="reference-link" target="_blank">FAO - Global assessment of soil pollution: Report</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">35. <a href="https://ec.europa.eu/food/plant/pesticides/eu-pesticides-database" class="reference-link" target="_blank">European Commission - EU Pesticides Database</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">36. <a href="https://www.cirs-group.com/cn/agrochemicals/2022-nian-ou-meng-nong-yao-xiao-liang-shu-ju-chu-lu" class="reference-link" target="_blank">2022年欧盟农药销量数据出炉，同比下降10%！</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">37. <a href="https://food.ec.europa.eu/horizontal-topics/farm-fork-strategy" class="reference-link" target="_blank">European Commission - Farm to Fork Strategy</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">38. <a href="https://crispr-gene-editing-regs-tracker.geneticliteracyproject.org/european-union-crops-food/" class="reference-link" target="_blank">European Union: Crops / Food - Global Gene Editing Regulation Tracker</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">39. <a href="https://www.isaaa.org/blog/entry/default.asp?BlogDate=1/24/2024" class="reference-link" target="_blank">Updates on Global Regulatory Landscape for Gene-Edited Crops</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">40. <a href="https://www.nexdigm.com/market-research/report-store/brazil-agrochemical-market-research-report/" class="reference-link" target="_blank">Brazil Agrochemical Market Report</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">41. <a href="https://news.agropages.com/news/NewsDetail---53164.htm" class="reference-link" target="_blank">Brazil sees 9.2% increase in area treated with agricultural pesticides in 2024</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">42. <a href="https://sindiveg.org.br/wp-content/uploads/2024/03/Market-Report-2023.pdf" class="reference-link" target="_blank">SINDIVEG - Brazilian Plant Protection Industry Market Report 2023</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">43. <a href="https://www.fao.org/americas/noticias/ver/pt/c/1516857/" class="reference-link" target="_blank">FAO - América Latina é responsável por 23% da produção mundial de alimentos</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">44. <a href="https://www.conab.gov.br/perspectivas-para-a-agropecuaria" class="reference-link" target="_blank">CONAB - Perspectivas para a Agropecuária</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">45. <a href="https://www.ibge.gov.br/estatisticas/economicas/agricultura-e-pecuaria.html" class="reference-link" target="_blank">IBGE - Estatísticas de Agricultura e Pecuária</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">46. <a href="https://www.ief.org/news/high-natural-gas-prices-contribute-to-rising-fertilizer-and-food-prices" class="reference-link" target="_blank">High natural gas prices contribute to rising fertilizer and food prices</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">47. <a href="https://businessanalytiq.com/procurementanalytics/index/phosphate-rock-price-index/" class="reference-link" target="_blank">Phosphate rock price index</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">48. <a href="https://www.iea.org/reports/the-future-of-petrochemicals" class="reference-link" target="_blank">IEA - The Future of Petrochemicals</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">49. <a href="https://www.fertilizer.org/news/world-fertilizer-trends-and-outlook-to-2027" class="reference-link" target="_blank">IFA - World Fertilizer Trends and Outlook to 2027</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">50. <a href="https://www.cf-industries.com/newsroom/2024/cf-industries-reports-full-year-2023-net-earnings" class="reference-link" target="_blank">CF Industries Reports Full-Year 2023 Net Earnings</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">51. <a href="https://www.mosaic.com/investor-relations/financial-information/quarterly-results" class="reference-link" target="_blank">The Mosaic Company - Quarterly Results</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">52. <a href="https://www.yara.com/investor-relations/reports-and-presentations/" class="reference-link" target="_blank">Yara International - Reports and Presentations</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">53. <a href="https://www.k-s.com/en/investor-relations/reports-and-publications/" class="reference-link" target="_blank">K+S Group - Reports and Publications</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">54. <a href="https://nutrien-prod-asset.s3.us-east-2.amazonaws.com/s3fs-public/uploads/2024-02/024-002%20-%20Nutrien%20Reports%20Fourth%20Quarter%20and%20Full-Year%202023%20Results.pdf" class="reference-link" target="_blank">Nutrien Reports Fourth Quarter and Full-Year 2023 Results</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">55. <a href="https://www.icl-group.com/investor-relations/reports-and-presentations/" class="reference-link" target="_blank">ICL Group - Investor Relations Reports</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">56. <a href="https://www.oci.nl/annual-reports/" class="reference-link" target="_blank">OCI N.V. - Annual Reports</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">57. <a href="https://www.uralkali.com/upload/iblock/annual_reports/" class="reference-link" target="_blank">Uralkali - Annual Reports</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">58. <a href="https://www.phosagro.com/investors/reports/" class="reference-link" target="_blank">PhosAgro - Investor Reports</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">59. <a href="https://www.marketsandmarkets.com/Market-Reports/biopesticides-267.html" class="reference-link" target="_blank">Biopesticides Market Size, Trends, Growth, Industry Report Forecast</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">60. <a href="https://www.grandviewresearch.com/industry-analysis/biopesticides-market" class="reference-link" target="_blank">Biopesticides Market Size, Share & Trends Analysis Report</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">61. <a href="https://www.biosciencestrategy.com/biopesticides-market-report" class="reference-link" target="_blank">Global Biopesticides Market Analysis and Forecast</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">62. <a href="https://crispr-gene-editing-regs-tracker.geneticliteracyproject.org/united-states-crops-food/" class="reference-link" target="_blank">United States: Crops / Food - Global Gene Editing Regulation Tracker</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">63. <a href="https://www.nature.com/articles/s41477-021-00981-1" class="reference-link" target="_blank">Nature Plants - Gene editing for crop improvement: promising applications and regulatory challenges</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">64. <a href="https://www.science.org/doi/10.1126/science.abq8347" class="reference-link" target="_blank">Science - Gene-edited crops and food security</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">65. <a href="https://www.cell.com/trends/plant-science/fulltext/S1360-1385(23)00142-6" class="reference-link" target="_blank">Trends in Plant Science - CRISPR applications in agriculture: current status and future prospects</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">66. <a href="https://www.frontiersin.org/articles/10.3389/fpls.2023.1204585/full" class="reference-link" target="_blank">Frontiers in Plant Science - Gene editing technologies for sustainable agriculture</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">67. <a href="https://www.nature.com/articles/s41587-023-01831-5" class="reference-link" target="_blank">Nature Biotechnology - Regulatory landscape for gene-edited crops worldwide</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">68. <a href="https://www.oecd.org/agriculture/topics/agricultural-productivity-and-innovation/" class="reference-link" target="_blank">OECD - Agricultural Productivity and Innovation</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">69. <a href="https://www.worldbank.org/en/topic/agriculture/overview" class="reference-link" target="_blank">World Bank - Agriculture and Food</a></p>
+                </div>
+                <div class="bg-gray-800/50 p-4 rounded-lg">
+                    <p class="text-gray-400 mb-2">70. <a href="https://www.ipcc.ch/report/ar6/wg2/chapter/chapter-5/" class="reference-link" target="_blank">IPCC AR6 - Food, Fibre, and Other Ecosystem Products</a></p>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center">
+                <p class="text-gray-500 text-sm">完整的70个参考文献列表包含了本报告引用的所有数据源、研究报告和行业文献。</p>
+                <p class="text-gray-500 text-sm mt-2">所有链接均为报告编写时的有效地址，建议读者访问获取最新信息。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 px-6 bg-black">
+        <div class="max-w-6xl mx-auto text-center">
+            <div class="mb-8">
+                <h3 class="font-display text-2xl font-bold gold-gradient mb-4">免责声明</h3>
+                <div class="max-w-4xl mx-auto text-gray-400 text-sm space-y-3">
+                    <p>本报告内容仅为行业研究与分析，不构成任何形式的投资建议、财务意见或买卖指导。</p>
+                    <p>所有观点均建立在特定的数据、假设和分析框架之上，仅供参考。</p>
+                    <p>投资者应基于自身的独立判断进行决策，并承担相应风险。</p>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8">
+                <p class="text-gray-500 text-sm">
+                    Published on July 3, 2025 | 本报告发布于：2025年7月3日
+                </p>
+                <p class="text-gray-600 text-xs mt-2">
+                    Global Agricultural Chemical Industry: Structural Analysis and Future Outlook at the Crossroads of Transformation
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript for animations and charts -->
+    <script>
+        try {
+            // Scroll progress indicator
+            window.addEventListener('scroll', () => {
+                const scrolled = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+                const indicator = document.querySelector('.scroll-indicator');
+                if (indicator) {
+                    indicator.style.transform = `scaleX(${scrolled}%)`;
+                }
+            });
+
+            // Intersection Observer for animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && typeof anime !== 'undefined') {
+                        anime({
+                            targets: entry.target,
+                            opacity: [0, 1],
+                            translateY: [30, 0],
+                            duration: 800,
+                            easing: 'easeOutQuart',
+                            delay: 100
+                        });
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all animated sections
+            document.querySelectorAll('.animated-section').forEach(section => {
+                observer.observe(section);
+            });
+
+            // Header animations - only if anime.js is loaded
+            if (typeof anime !== 'undefined') {
+                anime.timeline({
+                    easing: 'easeOutExpo',
+                    duration: 1000
+                })
+                .add({
+                    targets: 'header .animated-section',
+                    opacity: [0, 1],
+                    translateY: [50, 0],
+                    delay: anime.stagger(200)
+                });
+            }
+
+            // Market Growth Chart - with error handling
+            const chartElement = document.getElementById('marketGrowthChart');
+            if (chartElement && typeof echarts !== 'undefined') {
+                const marketChart = echarts.init(chartElement);
+                const marketOption = {
+                    backgroundColor: 'transparent',
+                    textStyle: {
+                        color: '#CCCCCC'
+                    },
+                    tooltip: {
+                        trigger: 'axis',
+                        backgroundColor: 'rgba(26, 26, 26, 0.9)',
+                        borderColor: '#D4AF37',
+                        textStyle: {
+                            color: '#FFFFFF'
+                        }
+                    },
+                    legend: {
+                        data: ['DataBridge预测', 'Grand View预测'],
+                        textStyle: {
+                            color: '#CCCCCC'
+                        },
+                        top: 20
+                    },
+                    grid: {
+                        left: '3%',
+                        right: '4%',
+                        bottom: '10%',
+                        top: '20%',
+                        containLabel: true
+                    },
+                    xAxis: {
+                        type: 'category',
+                        boundaryGap: false,
+                        data: ['2023', '2024', '2025', '2026', '2027', '2028', '2029', '2030', '2031', '2032'],
+                        axisLine: {
+                            lineStyle: {
+                                color: '#555555'
+                            }
+                        },
+                        axisLabel: {
+                            color: '#CCCCCC'
+                        }
+                    },
+                    yAxis: {
+                        type: 'value',
+                        name: '市场规模 (十亿美元)',
+                        nameTextStyle: {
+                            color: '#D4AF37'
+                        },
+                        axisLine: {
+                            lineStyle: {
+                                color: '#555555'
+                            }
+                        },
+                        axisLabel: {
+                            color: '#CCCCCC',
+                            formatter: '${value}B'
+                        },
+                        splitLine: {
+                            lineStyle: {
+                                color: '#333333'
+                            }
+                        }
+                    },
+                    series: [
+                        {
+                            name: 'DataBridge预测',
+                            type: 'line',
+                            data: [271.4, 277.1, 295.2, 314.7, 335.6, 358.1, 382.2, 408.1, 435.8, 458.6],
+                            lineStyle: {
+                                color: '#D4AF37',
+                                width: 3
+                            },
+                            itemStyle: {
+                                color: '#D4AF37'
+                            },
+                            areaStyle: {
+                                color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                                    {
+                                        offset: 0,
+                                        color: 'rgba(212, 175, 55, 0.3)'
+                                    },
+                                    {
+                                        offset: 1,
+                                        color: 'rgba(212, 175, 55, 0.05)'
+                                    }
+                                ])
+                            },
+                            smooth: true
+                        },
+                        {
+                            name: 'Grand View预测',
+                            type: 'line',
+                            data: [271.4, 285.2, 299.8, 315.1, 331.2, 348.0, 365.6, 390.2, null, null],
+                            lineStyle: {
+                                color: '#B8860B',
+                                width: 3,
+                                type: 'dashed'
+                            },
+                            itemStyle: {
+                                color: '#B8860B'
+                            },
+                            smooth: true
+                        }
+                    ]
+                };
+                marketChart.setOption(marketOption);
+
+                // Store chart reference globally
+                window.marketChart = marketChart;
+            }
+
+            // Animated counters for key figures
+            function animateValue(obj, start, end, duration) {
+                let startTimestamp = null;
+                const step = (timestamp) => {
+                    if (!startTimestamp) startTimestamp = timestamp;
+                    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                    obj.innerHTML = Math.floor(progress * (end - start) + start);
+                    if (progress < 1) {
+                        window.requestAnimationFrame(step);
+                    }
+                };
+                window.requestAnimationFrame(step);
+            }
+
+            // Trigger counter animations when elements come into view
+            const counterElements = document.querySelectorAll('.data-highlight');
+            counterElements.forEach(el => {
+                observer.observe(el);
+            });
+            
+        } catch (error) {
+            console.error('Error in initialization script:', error);
+        }
+    </script>
+
+    <!-- Global chart resize handler -->
+    <script>
+        // Global resize handler for all charts
+        window.addEventListener('resize', () => {
+            // Check if each chart exists before resizing
+            if (typeof marketChart !== 'undefined') marketChart.resize();
+            if (typeof precisionChart !== 'undefined') precisionChart.resize();
+            if (typeof euChart !== 'undefined') euChart.resize();
+            if (typeof lifecycleChart !== 'undefined') lifecycleChart.resize();
+        });
+
+        // Smooth scroll behavior
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Print formatted console message
+        console.log('%c全球农用化工行业深度研究报告', 'color: #D4AF37; font-size: 24px; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);');
+        console.log('%c本报告发布于：2025年7月3日', 'color: #888; font-size: 14px;');
+    </script>
+
+ </body>
+ </html> 

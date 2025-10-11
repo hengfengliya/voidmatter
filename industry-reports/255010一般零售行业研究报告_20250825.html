@@ -1,0 +1,3420 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一般零售行业研究报告 - 2025年Q3深度投研分析</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@200;300;400;500;600;700;800;900&family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            /* 深邃黑金权力色系 */
+            --obsidian-black: #0A0A0A;
+            --midnight-black: #151515;
+            --shadow-black: #1F1F1F;
+            --charcoal-deep: #2A2A2A;
+            
+            /* 稀缺金色层次 */
+            --sovereign-gold: #B8860B;
+            --imperial-gold: #DAA520;
+            --aureate-whisper: #F4E4BC;
+            --golden-shadow: #8B6914;
+            
+            /* 权力灰度 */
+            --platinum-mist: #E5E5E5;
+            --sterling-silver: #C0C0C0;
+            --graphite-steel: #696969;
+            --charcoal-whisper: #808080;
+            
+            /* 稀缺强调色 */
+            --ruby-accent: #8B0000;
+            --emerald-depth: #006400;
+            --sapphire-authority: #1e3a8a;
+        }
+
+        body {
+            background: var(--obsidian-black);
+            color: var(--platinum-mist);
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* 帝王级标题 */
+        .imperial-title {
+            font-family: 'Playfair Display', serif;
+            font-weight: 200;
+            letter-spacing: 0.12em;
+            line-height: 1.05;
+            color: var(--aureate-whisper);
+            text-shadow: 0 3px 12px rgba(184, 134, 11, 0.4);
+        }
+
+        /* 君主级副标题 */
+        .imperial-subtitle {
+            font-family: 'Playfair Display', serif;
+            font-weight: 300;
+            letter-spacing: 0.08em;
+            line-height: 1.15;
+            color: var(--imperial-gold);
+            text-shadow: 0 2px 8px rgba(218, 165, 32, 0.3);
+        }
+
+        /* 英文斜体标签 */
+        .imperial-tagline {
+            font-family: 'Inter', sans-serif;
+            font-weight: 200;
+            letter-spacing: 0.06em;
+            line-height: 1.4;
+            color: var(--sterling-silver);
+            font-style: italic;
+        }
+
+        /* 致敬样式 */
+        .imperial-dedication {
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+            letter-spacing: 0.04em;
+            line-height: 1.3;
+            color: var(--imperial-gold);
+        }
+
+        .imperial-dedication-sub {
+            font-family: 'Inter', sans-serif;
+            font-weight: 200;
+            letter-spacing: 0.05em;
+            line-height: 1.3;
+            color: var(--sterling-silver);
+            font-style: italic;
+        }
+
+        /* 权威标题 */
+        .sovereign-heading {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            color: var(--imperial-gold);
+            text-shadow: 0 1px 4px rgba(218, 165, 32, 0.4);
+        }
+
+        /* 贵族正文 */
+        .noble-text {
+            font-weight: 300;
+            letter-spacing: 0.03em;
+            line-height: 2.2;
+            color: var(--platinum-mist);
+        }
+
+        /* 引用文字 */
+        .executive-quote {
+            font-weight: 300;
+            letter-spacing: 0.02em;
+            line-height: 1.8;
+            color: var(--sterling-silver);
+            font-size: 0.95rem;
+            font-style: italic;
+            position: relative;
+            padding: 0 2rem;
+            margin: 2rem 0;
+        }
+
+        .executive-quote::before {
+            content: '"';
+            position: absolute;
+            left: 0;
+            top: -0.5rem;
+            font-size: 3rem;
+            color: var(--sovereign-gold);
+            opacity: 0.3;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .executive-quote::after {
+            content: '"';
+            position: absolute;
+            right: 0;
+            bottom: -0.5rem;
+            font-size: 3rem;
+            color: var(--sovereign-gold);
+            opacity: 0.3;
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* 专属数字 */
+        .exclusive-number {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: var(--sovereign-gold);
+            text-shadow: 0 1px 3px rgba(184, 134, 11, 0.5);
+        }
+
+        /* 君主容器 */
+        .sovereign-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 5rem;
+        }
+
+        /* 帝王区块 */
+        .imperial-section {
+            margin: 12rem 0;
+            position: relative;
+        }
+
+        /* 权威卡片 */
+        .authority-card {
+            background: linear-gradient(145deg, 
+                rgba(21, 21, 21, 0.9) 0%, 
+                rgba(31, 31, 31, 0.8) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.15);
+            border-radius: 2px;
+            padding: 3rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            box-shadow: 
+                0 8px 32px rgba(0, 0, 0, 0.6),
+                inset 0 1px 1px rgba(244, 228, 188, 0.05);
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .authority-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(184, 134, 11, 0.3);
+            box-shadow: 
+                0 16px 48px rgba(0, 0, 0, 0.8),
+                0 0 24px rgba(184, 134, 11, 0.1),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08);
+        }
+
+        .authority-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(90deg, var(--sovereign-gold), transparent);
+            opacity: 0.6;
+        }
+
+        .authority-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(270deg, var(--sovereign-gold), transparent);
+            opacity: 0.6;
+        }
+
+        /* 金色琉璃卡片 */
+        .golden-glass-card {
+            background: 
+                radial-gradient(circle at 30% 30%, rgba(218, 165, 32, 0.12) 0%, transparent 50%),
+                radial-gradient(circle at 70% 70%, rgba(184, 134, 11, 0.08) 0%, transparent 50%),
+                linear-gradient(135deg, 
+                    rgba(244, 228, 188, 0.06) 0%, 
+                    rgba(218, 165, 32, 0.04) 30%,
+                    rgba(184, 134, 11, 0.03) 70%,
+                    rgba(139, 105, 20, 0.02) 100%);
+            border: 1px solid rgba(218, 165, 32, 0.15);
+            border-radius: 4px;
+            padding: 2.5rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            box-shadow: 
+                0 8px 32px rgba(0, 0, 0, 0.6),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08),
+                inset 0 0 30px rgba(218, 165, 32, 0.03);
+            transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .golden-glass-card::before {
+            content: '';
+            position: absolute;
+            inset: -1px;
+            background: linear-gradient(45deg, 
+                rgba(218, 165, 32, 0.2) 0%, 
+                rgba(184, 134, 11, 0.1) 25%,
+                transparent 50%,
+                rgba(244, 228, 188, 0.1) 75%,
+                rgba(218, 165, 32, 0.15) 100%);
+            border-radius: 4px;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.8s ease;
+        }
+
+        .golden-glass-card:hover {
+            transform: translateY(-3px);
+            border-color: rgba(218, 165, 32, 0.3);
+            box-shadow: 
+                0 16px 48px rgba(0, 0, 0, 0.8),
+                0 0 40px rgba(218, 165, 32, 0.1),
+                inset 0 1px 1px rgba(244, 228, 188, 0.12),
+                inset 0 0 40px rgba(218, 165, 32, 0.05);
+        }
+
+        .golden-glass-card:hover::before {
+            opacity: 1;
+        }
+
+        /* 投资逻辑卡片 */
+        .investment-logic-card {
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(218, 165, 32, 0.08) 0%, transparent 60%),
+                radial-gradient(circle at 80% 20%, rgba(244, 228, 188, 0.05) 0%, transparent 60%),
+                linear-gradient(135deg, 
+                    rgba(184, 134, 11, 0.06) 0%, 
+                    rgba(139, 105, 20, 0.04) 50%,
+                    rgba(218, 165, 32, 0.02) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.12);
+            border-radius: 2px;
+            padding: 3rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            box-shadow: 
+                0 8px 32px rgba(0, 0, 0, 0.6),
+                inset 0 1px 1px rgba(244, 228, 188, 0.06),
+                inset 0 0 25px rgba(184, 134, 11, 0.02);
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .investment-logic-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, 
+                transparent 0%,
+                rgba(218, 165, 32, 0.4) 25%,
+                rgba(244, 228, 188, 0.6) 50%,
+                rgba(218, 165, 32, 0.4) 75%,
+                transparent 100%);
+            opacity: 0;
+            transition: opacity 0.6s ease;
+        }
+
+        .investment-logic-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(184, 134, 11, 0.25);
+            box-shadow: 
+                0 16px 48px rgba(0, 0, 0, 0.8),
+                0 0 30px rgba(218, 165, 32, 0.08),
+                inset 0 1px 1px rgba(244, 228, 188, 0.1),
+                inset 0 0 35px rgba(184, 134, 11, 0.04);
+        }
+
+        .investment-logic-card:hover::after {
+            opacity: 1;
+        }
+
+        /* 权威表格 */
+        .imperial-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            background: rgba(15, 15, 15, 0.8);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(184, 134, 11, 0.2);
+            border-radius: 2px;
+        }
+
+        .imperial-table th {
+            background: rgba(184, 134, 11, 0.08);
+            padding: 2rem 1.5rem;
+            text-align: left;
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--imperial-gold);
+            border-bottom: 1px solid rgba(184, 134, 11, 0.2);
+        }
+
+        .imperial-table td {
+            padding: 1.8rem 1.5rem;
+            border-bottom: 1px solid rgba(184, 134, 11, 0.05);
+            font-weight: 300;
+        }
+
+        .imperial-table tbody tr:hover {
+            background: rgba(184, 134, 11, 0.03);
+        }
+
+        /* 垂直进度条 */
+        .reading-progress {
+            position: fixed;
+            top: 50%;
+            right: 2rem;
+            width: 4px;
+            height: 200px;
+            transform: translateY(-50%);
+            background: linear-gradient(180deg, 
+                rgba(184, 134, 11, 0.2) 0%, 
+                rgba(218, 165, 32, 0.3) 30%,
+                rgba(244, 228, 188, 0.4) 60%,
+                rgba(218, 165, 32, 0.3) 85%,
+                rgba(139, 105, 20, 0.2) 100%);
+            z-index: 1001;
+            box-shadow: 
+                0 0 12px rgba(184, 134, 11, 0.6),
+                2px 0 8px rgba(184, 134, 11, 0.3),
+                inset 1px 0 2px rgba(244, 228, 188, 0.4);
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+        .reading-progress::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(180deg,
+                rgba(244, 228, 188, 0.1) 0%,
+                rgba(218, 165, 32, 0.15) 50%,
+                rgba(244, 228, 188, 0.1) 100%);
+            border-radius: 2px;
+            animation: progressShimmer 3s ease-in-out infinite;
+        }
+
+        .reading-progress-fill {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(180deg,
+                var(--golden-shadow) 0%,
+                var(--sovereign-gold) 50%,
+                var(--imperial-gold) 100%);
+            border-radius: 2px;
+            transition: height 0.1s ease;
+            box-shadow: 
+                inset 0 1px 2px rgba(244, 228, 188, 0.3),
+                0 0 8px rgba(184, 134, 11, 0.4);
+        }
+
+        @keyframes progressShimmer {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.8; }
+        }
+
+        /* 进度标题提示器 */
+        .progress-tooltip {
+            position: fixed;
+            top: 50%;
+            right: 7rem;
+            transform: translateY(-50%);
+            background: linear-gradient(135deg, 
+                rgba(15, 15, 15, 0.95) 0%, 
+                rgba(31, 31, 31, 0.9) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.25);
+            border-radius: 8px;
+            padding: 0.8rem 2rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 0.85rem;
+            font-weight: 300;
+            color: var(--imperial-gold);
+            backdrop-filter: blur(20px);
+            box-shadow: 
+                0 8px 32px rgba(0, 0, 0, 0.7),
+                0 0 20px rgba(184, 134, 11, 0.1),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+            z-index: 1002;
+            white-space: nowrap;
+            letter-spacing: 0.03em;
+        }
+
+        .progress-tooltip.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(-50%) translateX(-8px);
+        }
+
+        .progress-tooltip::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -8px;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-left: 8px solid rgba(184, 134, 11, 0.25);
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+        }
+
+        .progress-tooltip::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -7px;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-left: 7px solid rgba(15, 15, 15, 0.95);
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+        }
+
+        /* 分隔线 */
+        .sovereign-divider {
+            height: 1px;
+            background: linear-gradient(90deg, 
+                transparent 0%, 
+                rgba(184, 134, 11, 0.3) 30%, 
+                rgba(184, 134, 11, 0.6) 50%, 
+                rgba(184, 134, 11, 0.3) 70%, 
+                transparent 100%);
+            margin: 8rem 0;
+            position: relative;
+        }
+
+        .sovereign-divider::before {
+            content: '◆';
+            position: absolute;
+            top: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--sovereign-gold);
+            font-size: 16px;
+            background: var(--obsidian-black);
+            padding: 0 1rem;
+        }
+
+        /* 引用条目 */
+        .citation-item {
+            padding: 1.5rem 2rem;
+            margin: 0.8rem 0;
+            background: linear-gradient(135deg, 
+                rgba(21, 21, 21, 0.8) 0%, 
+                rgba(31, 31, 31, 0.6) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.15);
+            border-radius: 3px;
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .citation-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--sovereign-gold), var(--golden-shadow));
+            opacity: 0.6;
+            transition: opacity 0.3s ease;
+        }
+
+        .citation-item:hover {
+            border-color: rgba(184, 134, 11, 0.4);
+            background: linear-gradient(135deg, 
+                rgba(31, 31, 31, 0.9) 0%, 
+                rgba(42, 42, 42, 0.7) 100%);
+            transform: translateX(6px) translateY(-1px);
+            box-shadow: 
+                0 8px 25px rgba(0, 0, 0, 0.5),
+                0 0 20px rgba(184, 134, 11, 0.08);
+        }
+
+        .citation-item:hover::before {
+            opacity: 1;
+        }
+
+        .citation-item a {
+            color: var(--platinum-mist);
+            text-decoration: none;
+            font-size: 0.85rem;
+            line-height: 1.7;
+            font-weight: 300;
+            transition: color 0.4s ease;
+            display: block;
+            position: relative;
+        }
+
+        .citation-item a::before {
+            content: '';
+            position: absolute;
+            left: -0.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 4px;
+            background: var(--sovereign-gold);
+            border-radius: 50%;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .citation-item:hover a {
+            color: var(--aureate-whisper);
+            padding-left: 1rem;
+        }
+
+        .citation-item:hover a::before {
+            opacity: 0.8;
+        }
+
+        /* 免责声明卡片 */
+        .disclaimer-card {
+            background: linear-gradient(145deg, 
+                rgba(31, 31, 31, 0.95) 0%, 
+                rgba(42, 42, 42, 0.9) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.18);
+            border-radius: 3px;
+            padding: 4rem;
+            position: relative;
+            backdrop-filter: blur(25px);
+            box-shadow: 
+                0 12px 40px rgba(0, 0, 0, 0.7),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08),
+                inset 0 0 30px rgba(184, 134, 11, 0.02);
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .disclaimer-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 2px;
+            background: linear-gradient(90deg, 
+                transparent, 
+                var(--sovereign-gold), 
+                transparent);
+            opacity: 0.6;
+        }
+
+        .disclaimer-card:hover {
+            border-color: rgba(184, 134, 11, 0.25);
+            box-shadow: 
+                0 16px 50px rgba(0, 0, 0, 0.8),
+                0 0 25px rgba(184, 134, 11, 0.08),
+                inset 0 1px 1px rgba(244, 228, 188, 0.12);
+        }
+
+        .disclaimer-text {
+            font-weight: 300;
+            letter-spacing: 0.02em;
+            line-height: 2;
+            color: var(--platinum-mist);
+            font-size: 1rem;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 1024px) {
+            .sovereign-container {
+                padding: 0 2.5rem;
+            }
+            .imperial-section {
+                margin: 8rem 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .sovereign-container {
+                padding: 0 1.5rem;
+            }
+            .imperial-section {
+                margin: 6rem 0;
+            }
+            .authority-card {
+                padding: 2rem;
+            }
+            .reading-progress {
+                right: 1rem;
+                height: 150px;
+                width: 3px;
+            }
+            .progress-tooltip {
+                right: 5rem;
+                padding: 0.6rem 1.5rem;
+                font-size: 0.75rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 垂直进度条 -->
+    <div class="reading-progress">
+        <div class="reading-progress-fill"></div>
+    </div>
+    
+    <!-- 进度标题提示器 -->
+    <div class="progress-tooltip" id="progress-tooltip"></div>
+    
+    <!-- 首屏标题 -->
+    <header id="header" class="min-h-screen flex items-center justify-center relative" data-title="全球一般零售行业深度分析">
+        <div class="sovereign-container text-center relative z-10">
+            <!-- 主标题区域 -->
+            <div class="mb-16">
+                <h1 class="imperial-title text-5xl md:text-7xl mb-6">
+                    全球一般零售行业深度分析报告：驾驭变革，洞察价值
+                </h1>
+                
+                <h2 class="imperial-subtitle text-2xl md:text-4xl mb-12 opacity-90">
+                    2025年Q3深度投研分析
+                </h2>
+            </div>
+            
+            <!-- 英文副标题 -->
+            <div class="mb-12">
+                <div class="imperial-tagline text-sm md:text-base opacity-75 max-w-4xl mx-auto">
+                    Global General Retail Industry In-depth Analysis Report:<br class="md:hidden">
+                    Navigating Transformation and Discovering Value — Q3 2025
+                </div>
+            </div>
+            
+            <!-- 致敬区域 -->
+            <div class="mb-16">
+                <div class="imperial-dedication text-sm md:text-base">
+                    致：机构投资者与高净值客户
+                </div>
+                <div class="imperial-dedication-sub text-xs md:text-sm opacity-60 mt-2">
+                    For: Institutional Investors and High Net Worth Clients
+                </div>
+            </div>
+            
+            <!-- 发布日期卡片 -->
+            <div class="golden-glass-card inline-block">
+                <div class="text-xs uppercase tracking-[0.2em] opacity-50 mb-4 font-light">
+                    本报告发布于 · Published on
+                </div>
+                <div class="sovereign-heading text-base">
+                    <span id="date-cn" class="exclusive-number">2025年8月</span> 
+                    <span class="mx-4 text-sovereign-gold opacity-40">◆</span> 
+                    <span id="date-en" class="exclusive-number">August 2025</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 背景装饰 -->
+        <div class="absolute inset-0 pointer-events-none opacity-8">
+            <div class="absolute top-20 left-20 w-px h-32 bg-gradient-to-b from-sovereign-gold to-transparent"></div>
+            <div class="absolute bottom-20 right-20 w-px h-32 bg-gradient-to-t from-sovereign-gold to-transparent"></div>
+            <div class="absolute top-1/2 left-1/4 w-24 h-px bg-gradient-to-r from-sovereign-gold to-transparent"></div>
+            <div class="absolute top-1/3 right-1/4 w-24 h-px bg-gradient-to-l from-sovereign-gold to-transparent"></div>
+        </div>
+    </header>
+
+    <!-- 执行摘要 -->
+    <section id="summary" class="imperial-section" data-title="执行摘要">
+        <div class="sovereign-container">
+            <div class="executive-quote max-w-4xl mx-auto text-center">
+                本报告旨在为机构投资者及高净值客户提供一份关于全球一般零售行业的全面、深入且系统的分析
+            </div>
+            
+            <h2 class="sovereign-heading text-3xl text-center mb-12">执行摘要</h2>
+            
+            <div class="authority-card">
+                <div class="noble-text">
+                    <p>全球一般零售行业正处在一个由技术颠覆、消费者行为结构性转变和宏观经济分化共同定义的关键转型期。本报告通过对行业生态系统进行由上至下、层层递进的剖析，旨在揭示驱动行业演变的深层力量，并为专业的投资研判提供一个系统性的分析框架。</p>
+                    
+                    <p><strong>核心发现：</strong> 报告的核心结论指出，全球零售业已进入一个"慢增长、高分化"的新常态。整体市场的温和增长掩盖了行业内部剧烈的结构性重塑。企业间的表现将出现显著分化，其关键决定因素在于企业对技术应用的深度、全渠道融合的程度、价值主张的清晰度以及对地缘经济格局的适应能力。规模效应依然显著，但技术和数据能力正成为决定未来成败的更关键变量。</p>
+                    
+                    <p><strong>关键趋势：</strong> 三大核心趋势正在重塑行业格局。(1) <strong>全渠道融合的必然性</strong>：线上与线下的融合已从一个战略选项演变为生存的必要条件。成功的零售商不再区分渠道，而是致力于打造一个以消费者为中心的、无缝衔接的生态系统。(2) <strong>人工智能（AI）与数据的核心化</strong>：AI和数据分析正从前端的个性化营销到底层的供应链优化，全面重塑零售价值链的每一个环节，成为提升效率和创造价值的核心引擎。(3) <strong>价值主张的再定义</strong>：在经济不确定性背景下，消费者对"价值"的定义变得更加复杂。价格竞争力（折扣零售）与价值观认同（可持续性）成为并行的关键战场，考验着零售商的综合运营能力。</p>
+                    
+                    <p><strong>结构性变化：</strong> 行业内部正在发生深刻的力量转移。(1) <strong>渠道转移</strong>：从线下实体向线上数字渠道的转移仍在持续，但增速正在从高速转向高质量发展，线上线下的协同效应成为关键。(2) <strong>价值链权力转移</strong>：权力正从传统的品牌制造商向掌握海量第一方消费者数据的大型零售平台转移。这些平台利用数据优势，通过零售媒体网络（RMNs）等方式，正在重构行业的利润分配格局。(3) <strong>增长重心东移</strong>：尽管面临短期挑战，但以亚太地区（尤其是中国和印度）为代表的新兴市场，凭借其庞大的人口基数和日益增长的中产阶级，仍是全球零售业长期增长的核心驱动力。</p>
+                    
+                    <p><strong>报告结构导览：</strong> 本报告共分七章。第一章搭建宏观与行业基础框架。第二章深入探讨驱动行业变革的三大长期趋势。第三章解构零售业的价值链与商业模式。第四章对竞争格局和行业领导者进行深度数据剖析。第五章聚焦中美欧三大核心市场。第六章评估政策、监管及地缘政治风险。最后一章，第七章，对未来进行展望，并提出一个用于长期跟踪与分析的投资逻辑框架。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="sovereign-divider"></div>
+
+    <!-- 全球一般零售行业概览 -->
+    <section id="chapter1" class="imperial-section" data-title="全球一般零售行业概览">
+        <div class="sovereign-container">
+            <div class="executive-quote max-w-4xl mx-auto text-center">
+                本章旨在为后续的深度分析建立一个坚实的基础，通过对全球宏观经济环境的审视，确立影响消费者购买力的根本背景
+            </div>
+            
+            <h2 class="sovereign-heading text-3xl text-center mb-12">全球一般零售行业概览</h2>
+            
+            <div class="authority-card">
+                <div class="noble-text">
+                    <p>本章旨在为后续的深度分析建立一个坚实的基础。首先，通过对全球宏观经济环境的审视，确立影响消费者购买力的根本背景。其次，通过标准化的行业分类体系，明确本报告的研究范围。最后，量化全球零售市场的规模、增长前景与核心结构，勾勒出行业的整体图景。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 宏观经济背景与展望 -->
+    <section id="macro-outlook" class="imperial-section" data-title="宏观经济背景与展望">
+        <div class="sovereign-container">
+            <h3 class="sovereign-heading text-2xl mb-8">宏观经济背景与展望</h3>
+            
+            <div class="authority-card mb-8">
+                <div class="noble-text">
+                    <p>零售业的景气度与宏观经济环境高度相关，消费者的收入水平、通胀预期及就业状况直接决定了其消费能力与消费意愿。当前全球经济呈现出一种"脆弱的韧性"，主要经济体之间路径分化明显，为全球零售商带来了复杂多变的经营环境。</p>
+                    
+                    <h4 class="sovereign-heading text-lg mb-4 mt-8">全球经济增长：韧性与不确定性并存</h4>
+                    
+                    <p>根据国际货币基金组织（IMF）的最新《世界经济展望》报告，全球经济在经历了多重冲击后展现出一定的韧性。预计2025年全球实际GDP增长率为3.0%，2026年为3.1%。这一预测相较于早期版本有所上调，主要反映了部分主要经济体好于预期的表现、金融状况的改善以及一些财政扩张政策。</p>
+                    
+                    <p>然而，这种韧性并非牢不可破。IMF与世界银行均强调了持续存在的不确定性与下行风险。潜在的贸易壁垒升级、地缘政治紧张局势以及高企的政策不确定性，都可能对全球投资和消费者信心构成压力，从而抑制增长。全球经济的长期增长预测处于几十年来最低水平，这预示着零售业的外部增长环境将面临持续挑战。</p>
+                </div>
+            </div>
+
+            <div class="golden-glass-card mb-8">
+                <h4 class="sovereign-heading text-lg mb-6">主要经济体表现分化</h4>
+                <div class="noble-text">
+                    <p>全球经济复苏的"不同步性"是当前最显著的特征之一，主要经济体正走在各自不同的轨道上，这对零售商的全球布局和区域战略提出了更高要求。</p>
+                    
+                    <div class="grid md:grid-cols-3 gap-6 mt-6">
+                        <div class="bg-shadow-black p-4 rounded border border-sovereign-gold border-opacity-20">
+                            <div class="flex items-center mb-3">
+                                <i class="material-icons text-sovereign-gold mr-2">flag</i>
+                                <h5 class="text-imperial-gold font-semibold">美国</h5>
+                            </div>
+                            <p class="text-sm">美国经济表现出超预期的强劲势头。2025年第二季度实际GDP年化增长率达到3.0%，个人消费支出（PCE）保持0.3%的月度增长，显示出消费需求的韧性。</p>
+                        </div>
+                        
+                        <div class="bg-shadow-black p-4 rounded border border-sovereign-gold border-opacity-20">
+                            <div class="flex items-center mb-3">
+                                <i class="material-icons text-sovereign-gold mr-2">flag</i>
+                                <h5 class="text-imperial-gold font-semibold">中国</h5>
+                            </div>
+                            <p class="text-sm">作为全球第二大消费市场，中国经济正经历转型阵痛。社会消费品零售总额增速有所放缓，反映出消费者信心的疲软。IMF预测中国经济在2025年将增长4.0%。</p>
+                        </div>
+                        
+                        <div class="bg-shadow-black p-4 rounded border border-sovereign-gold border-opacity-20">
+                            <div class="flex items-center mb-3">
+                                <i class="material-icons text-sovereign-gold mr-2">flag</i>
+                                <h5 class="text-imperial-gold font-semibold">欧元区</h5>
+                            </div>
+                            <p class="text-sm">欧元区的经济复苏步伐相对温和。GDP实现小幅增长，但服务业通胀压力依然存在，失业率维持在6.2%的低位。</p>
+                        </div>
+                    </div>
+                    
+                    <p class="mt-6">这种主要经济体之间的宏观表现差异，将直接转化为不同区域零售市场的业绩分化。零售企业的地理敞口（Geographic Exposure）正成为决定其短期业绩表现的关键变量。</p>
+                </div>
+            </div>
+
+            <div class="investment-logic-card">
+                <h4 class="sovereign-heading text-lg mb-6">通货膨胀与货币政策</h4>
+                <div class="noble-text">
+                    <p>全球通胀正从高位回落。IMF预测，全球整体通胀率将从2023年的6.8%稳步下降至2025年的4.5%。然而，核心通胀（剔除食品和能源价格）的下降速度更为缓慢，尤其是在服务业领域。这一"粘性"通胀使得主要央行在放松货币政策时保持谨慎。利率水平的走向将直接影响零售商的融资成本、资本支出决策以及消费者的信贷成本，特别是对于汽车、家电等高价耐用消费品领域。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 主要经济体宏观指标表格 -->
+    <section id="economic-indicators" class="imperial-section" data-title="主要经济体宏观指标">
+        <div class="sovereign-container">
+            <h3 class="sovereign-heading text-2xl mb-8">主要经济体宏观经济指标预测 (2024-2026)</h3>
+            
+            <div class="overflow-x-auto">
+                <table class="imperial-table">
+                    <thead>
+                        <tr>
+                            <th>区域/国家</th>
+                            <th>指标</th>
+                            <th>2024年 (预测)</th>
+                            <th>2025年 (预测)</th>
+                            <th>2026年 (预测)</th>
+                            <th>数据来源</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2" class="font-semibold">全球</td>
+                            <td>实际GDP增长率 (%)</td>
+                            <td class="exclusive-number">3.2</td>
+                            <td class="exclusive-number">3.2</td>
+                            <td class="exclusive-number">3.1</td>
+                            <td>IMF</td>
+                        </tr>
+                        <tr>
+                            <td>消费者价格指数 (年均, %)</td>
+                            <td class="exclusive-number">5.9</td>
+                            <td class="exclusive-number">4.5</td>
+                            <td class="exclusive-number">3.6</td>
+                            <td>IMF</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3" class="font-semibold">美国</td>
+                            <td>实际GDP增长率 (%)</td>
+                            <td class="exclusive-number">2.8</td>
+                            <td class="exclusive-number">2.4</td>
+                            <td class="exclusive-number">1.6</td>
+                            <td>Deloitte, OECD</td>
+                        </tr>
+                        <tr>
+                            <td>消费者价格指数 (年均, %)</td>
+                            <td class="exclusive-number">2.3</td>
+                            <td class="text-charcoal-whisper">> 目标水平</td>
+                            <td>-</td>
+                            <td>Deloitte, IMF</td>
+                        </tr>
+                        <tr>
+                            <td>失业率 (%)</td>
+                            <td class="exclusive-number">4.2</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>Deloitte</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3" class="font-semibold">中国</td>
+                            <td>实际GDP增长率 (%)</td>
+                            <td class="exclusive-number">5.0</td>
+                            <td class="exclusive-number">4.5</td>
+                            <td class="exclusive-number">4.0</td>
+                            <td>World Bank, IMF</td>
+                        </tr>
+                        <tr>
+                            <td>消费者价格指数 (年均, %)</td>
+                            <td class="exclusive-number">1.0</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>Wikipedia</td>
+                        </tr>
+                        <tr>
+                            <td>失业率 (%)</td>
+                            <td class="exclusive-number">5.2 (城镇)</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>Wikipedia</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3" class="font-semibold">欧元区</td>
+                            <td>实际GDP增长率 (%)</td>
+                            <td>-</td>
+                            <td class="exclusive-number">1.0</td>
+                            <td class="exclusive-number">1.2</td>
+                            <td>OECD</td>
+                        </tr>
+                        <tr>
+                            <td>消费者价格指数 (年均, %)</td>
+                            <td>-</td>
+                            <td class="exclusive-number">2.1</td>
+                            <td>-</td>
+                            <td>IMF</td>
+                        </tr>
+                        <tr>
+                            <td>失业率 (%)</td>
+                            <td>-</td>
+                            <td class="exclusive-number">6.2</td>
+                            <td>-</td>
+                            <td>ECB</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="mt-4 text-sm text-sterling-silver italic">
+                注：不同机构的预测数据可能存在差异，本表整合了来自IMF、世界银行、OECD及其他来源的代表性预测。数据截至报告撰写时点的最新发布。
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 行业界定与分类体系 -->
+    <section id="industry-classification" class="imperial-section" data-title="行业界定与分类体系">
+        <div class="sovereign-container">
+            <h3 class="sovereign-heading text-2xl mb-8">行业界定与分类体系</h3>
+            
+            <div class="authority-card mb-8">
+                <div class="noble-text">
+                    <p>为确保分析的严谨性和可比性，本报告采用全球金融市场和行业研究中通行的分类标准来界定"一般零售"的范畴。</p>
+                    
+                    <h4 class="sovereign-heading text-lg mb-4 mt-8">GICS (全球行业分类标准) 框架</h4>
+                    
+                    <p>全球行业分类标准（GICS）是由MSCI和标普道琼斯指数公司联合开发的四级行业分类体系，覆盖了全球约95%的股票市值，是投资研究和资产配置的行业标准框架。在本报告中，"一般零售"主要涉及GICS分类下的两大一级行业：</p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="golden-glass-card">
+                    <div class="flex items-center mb-4">
+                        <i class="material-icons text-sovereign-gold mr-3">shopping_cart</i>
+                        <h4 class="sovereign-heading text-lg">非必需消费品</h4>
+                    </div>
+                    <div class="noble-text">
+                        <p class="text-sm mb-4">Consumer Discretionary - GICS Sector 25：该行业销售的商品和服务需求与经济周期密切相关。</p>
+                        
+                        <div class="space-y-3 text-sm">
+                            <div class="bg-shadow-black p-3 rounded">
+                                <h5 class="text-imperial-gold font-semibold mb-2">综合性商品零售</h5>
+                                <p>经营多种不同类别商品的零售商，如百货商店和一站式购物中心。</p>
+                            </div>
+                            
+                            <div class="bg-shadow-black p-3 rounded">
+                                <h5 class="text-imperial-gold font-semibold mb-2">专业零售</h5>
+                                <p>专注于特定品类的零售商，包括服装零售、电子产品零售、家居装修零售等。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="golden-glass-card">
+                    <div class="flex items-center mb-4">
+                        <i class="material-icons text-sovereign-gold mr-3">local_grocery_store</i>
+                        <h4 class="sovereign-heading text-lg">日常消费品</h4>
+                    </div>
+                    <div class="noble-text">
+                        <p class="text-sm mb-4">Consumer Staples - GICS Sector 30：该行业销售的商品是消费者日常生活所必需的，需求相对稳定。</p>
+                        
+                        <div class="space-y-3 text-sm">
+                            <div class="bg-shadow-black p-3 rounded">
+                                <h5 class="text-imperial-gold font-semibold mb-2">食品与必需品零售</h5>
+                                <p>包括药品零售、食品分销商、食品零售等。</p>
+                            </div>
+                            
+                            <div class="bg-shadow-black p-3 rounded">
+                                <h5 class="text-imperial-gold font-semibold mb-2">大型超市</h5>
+                                <p>超级购物中心等具有防御性特征的零售业态。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investment-logic-card mt-8">
+                <h4 class="sovereign-heading text-lg mb-6">NAICS (北美行业分类体系) 框架</h4>
+                <div class="noble-text">
+                    <p>作为对GICS的补充，北美行业分类体系（NAICS）为理解零售业的运营模式提供了另一个有价值的视角。NAICS 44-45"零售贸易"将零售商定义为"将商品以少量形式直接销售给普通大众"的机构，是商品分销的最后环节。</p>
+                    
+                    <p>NAICS的一个重要贡献在于其对<strong>店铺零售商 (Store Retailers)</strong> 和 <strong>无店铺零售商 (Nonstore Retailers)</strong> 的明确区分：</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-4 mt-4">
+                        <div class="bg-shadow-black p-4 rounded border border-sovereign-gold border-opacity-20">
+                            <h5 class="text-imperial-gold font-semibold mb-2">店铺零售商</h5>
+                            <p class="text-sm">在固定的销售点运营，旨在吸引大量步入式客流。包括汽车经销商、食品和饮料商店、服装及配饰店等。</p>
+                        </div>
+                        
+                        <div class="bg-shadow-black p-4 rounded border border-sovereign-gold border-opacity-20">
+                            <h5 class="text-imperial-gold font-semibold mb-2">无店铺零售商</h5>
+                            <p class="text-sm">使用非实体店的方式接触顾客和销售商品。包括电子购物、邮购、自动售货机运营商等。</p>
+                        </div>
+                    </div>
+                    
+                    <p class="mt-4">NAICS的这一划分清晰地揭示了零售渠道的二元结构，并为后续分析电子商务对传统实体零售的冲击和全渠道融合的趋势提供了分类基础。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 全球市场规模与增长 -->
+    <section id="market-size" class="imperial-section" data-title="全球市场规模与增长">
+        <div class="sovereign-container">
+            <h3 class="sovereign-heading text-2xl mb-8">全球市场规模、增长及区域结构</h3>
+            
+            <div class="authority-card mb-8">
+                <div class="noble-text">
+                    <p>在明确了宏观背景和行业定义之后，本节将量化全球零售市场的规模、增长动力和核心构成，为评估行业机遇提供数据基础。</p>
+                    
+                    <h4 class="sovereign-heading text-lg mb-4 mt-8">全球市场规模与预测</h4>
+                    
+                    <p>全球零售市场规模巨大且持续扩张。综合多个市场研究机构的数据，全球零售总额在2024年预计将超过30万亿美元。展望未来，市场预计将保持稳健增长：</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mt-6">
+                        <div class="bg-shadow-black p-4 rounded border border-sovereign-gold border-opacity-20">
+                            <h5 class="text-imperial-gold font-semibold mb-3">短期预测 (至2025年)</h5>
+                            <p class="text-sm">预计到2025年，全球零售市场规模将达到31万亿至35万亿美元之间。预测显示市场规模将从2024年的31.98万亿美元增长到2025年的34.86万亿美元，复合年增长率（CAGR）约为9.0%。</p>
+                        </div>
+                        
+                        <div class="bg-shadow-black p-4 rounded border border-sovereign-gold border-opacity-20">
+                            <h5 class="text-imperial-gold font-semibold mb-3">中长期预测 (至2030年)</h5>
+                            <p class="text-sm">市场规模预计将进一步增长至36万亿至46万亿美元。Mordor Intelligence预测到2030年市场规模将达到36.91万亿美元，2025-2030年间的CAGR为6.25%。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="golden-glass-card">
+                <h4 class="sovereign-heading text-lg mb-6">全球零售销售额及电子商务预测 (2024-2030)</h4>
+                <div class="overflow-x-auto">
+                    <table class="imperial-table">
+                        <thead>
+                            <tr>
+                                <th>年份</th>
+                                <th>全球零售总额 (万亿美元)</th>
+                                <th>电子商务销售额 (万亿美元)</th>
+                                <th>电子商务渗透率 (%)</th>
+                                <th>数据来源</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-semibold">2024 (E)</td>
+                                <td class="exclusive-number">30.6 - 32.0</td>
+                                <td class="exclusive-number">6.33</td>
+                                <td class="exclusive-number">20.1</td>
+                                <td>27</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">2025 (F)</td>
+                                <td class="exclusive-number">31.3 - 34.9</td>
+                                <td class="exclusive-number">6.86</td>
+                                <td class="exclusive-number">21.0</td>
+                                <td>27</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">2026 (F)</td>
+                                <td>-</td>
+                                <td class="exclusive-number">7.41 - 8.10</td>
+                                <td class="exclusive-number">21.8</td>
+                                <td>30</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">2027 (F)</td>
+                                <td>-</td>
+                                <td class="exclusive-number">7.96</td>
+                                <td class="exclusive-number">22.6</td>
+                                <td>32</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">2030 (F)</td>
+                                <td class="exclusive-number">35.8 - 37.0</td>
+                                <td class="exclusive-number">8.91</td>
+                                <td>-</td>
+                                <td>27</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="mt-4 text-sm text-sterling-silver italic">
+                    注：(E) 表示估计值, (F) 表示预测值。不同来源的数据存在差异，本表旨在呈现综合趋势。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 增长引擎与品类结构 -->
+    <section id="growth-engines" class="imperial-section" data-title="增长引擎与品类结构">
+        <div class="sovereign-container">
+            <h3 class="sovereign-heading text-2xl mb-8">增长引擎：电子商务与亚太地区</h3>
+            
+            <div class="investment-logic-card mb-8">
+                <div class="noble-text">
+                    <p>尽管全球零售市场整体呈现温和增长，但其内部的增长动力高度集中于两大引擎：</p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="authority-card">
+                    <div class="flex items-center mb-4">
+                        <i class="material-icons text-sovereign-gold mr-3">computer</i>
+                        <h4 class="sovereign-heading text-lg">电子商务</h4>
+                    </div>
+                    <div class="noble-text">
+                        <p class="text-sm mb-4">电子商务是驱动零售增长的最核心力量。Euromonitor的报告甚至指出，由于2024年线下零售额略有下滑，电子商务的增长贡献了当年全球零售总增长的<span class="exclusive-number">136%</span>，这形象地说明了线上渠道的引擎作用。</p>
+                        
+                        <div class="bg-shadow-black p-4 rounded border border-sovereign-gold border-opacity-20">
+                            <div class="text-center mb-2">
+                                <span class="exclusive-number text-2xl">27.7亿</span>
+                                <p class="text-xs text-imperial-gold">预计2025年全球在线购物者数量</p>
+                            </div>
+                            <div class="text-center">
+                                <span class="exclusive-number text-xl">21%</span>
+                                <p class="text-xs text-imperial-gold">线上销售占总零售额比重</p>
+                            </div>
+                        </div>
+                        
+                        <p class="text-sm mt-4">这一趋势是结构性的、不可逆的，并将持续重塑零售业的方方面面。</p>
+                    </div>
+                </div>
+
+                <div class="authority-card">
+                    <div class="flex items-center mb-4">
+                        <i class="material-icons text-sovereign-gold mr-3">public</i>
+                        <h4 class="sovereign-heading text-lg">亚太地区</h4>
+                    </div>
+                    <div class="noble-text">
+                        <p class="text-sm mb-4">亚太地区，特别是中国和印度，正成为全球零售业的重心。Euromonitor的分析认为，2024年全球零售销售额的增长主要得益于亚太地区更为强劲的表现。</p>
+                        
+                        <div class="bg-shadow-black p-4 rounded border border-sovereign-gold border-opacity-20 text-center">
+                            <h5 class="text-imperial-gold font-semibold mb-2">重要里程碑</h5>
+                            <p class="text-sm">到<span class="exclusive-number">2029年</span>，中国有望超越美国，成为全球最重要的单一零售市场</p>
+                        </div>
+                        
+                        <p class="text-sm mt-4">该地区日益富裕的消费者群体是未来几年全球零售业的"驱动力"。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="golden-glass-card mt-8">
+                <h4 class="sovereign-heading text-lg mb-6">品类与渠道结构</h4>
+                <div class="noble-text">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h5 class="text-imperial-gold font-semibold mb-3">产品品类结构</h5>
+                            <p class="text-sm mb-4">从产品品类来看，<strong>食品、饮料及杂货 (Food, Beverage & Grocery)</strong> 是零售业中规模最大、最稳定的板块。</p>
+                            
+                            <div class="bg-shadow-black p-4 rounded border border-sovereign-gold border-opacity-20 text-center">
+                                <span class="exclusive-number text-3xl">52.12%</span>
+                                <p class="text-xs text-imperial-gold mt-2">该品类在2024年占据全球零售市场份额</p>
+                            </div>
+                            
+                            <p class="text-sm mt-4">这再次印证了日常消费品作为零售业"压舱石"的地位，其需求弹性低，能在经济波动中提供相对稳定的收入来源。</p>
+                        </div>
+                        
+                        <div>
+                            <h5 class="text-imperial-gold font-semibold mb-3">销售渠道结构</h5>
+                            <p class="text-sm mb-4">从销售渠道来看，尽管电子商务增长迅猛，但实体店（Brick-and-Mortar）依然是零售的主战场。</p>
+                            
+                            <div class="bg-shadow-black p-4 rounded border border-sovereign-gold border-opacity-20 text-center">
+                                <span class="exclusive-number text-3xl">81.6%</span>
+                                <p class="text-xs text-imperial-gold mt-2">2024年美国实体店销售额占总零售收入比重</p>
+                            </div>
+                            
+                            <p class="text-sm mt-4">然而，渠道的界限正变得日益模糊。分析的重点已从"线上 vs. 线下"的二元对立，转向对<strong>全渠道 (Omnichannel)</strong> 融合能力的评估。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 核心驱动因素与长期趋势 -->
+    <section id="chapter2" class="imperial-section" data-title="核心驱动因素与长期趋势">
+        <div class="sovereign-container">
+            <div class="executive-quote max-w-4xl mx-auto text-center">
+                在宏观经济和市场规模的背景下，本章将深入探讨正在从根本上重塑零售行业的三个结构性力量
+            </div>
+            
+            <h2 class="sovereign-heading text-3xl text-center mb-12">核心驱动因素与长期趋势</h2>
+            
+            <div class="authority-card">
+                <div class="noble-text">
+                    <p>在宏观经济和市场规模的背景下，本章将深入探讨正在从根本上重塑零售行业的三个结构性力量：技术变革、消费者行为演变以及渠道变革。这些长期趋势（Secular Trends）是理解行业未来发展路径、识别结构性机会与风险的关键。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技术变革 -->
+    <section id="tech-revolution" class="imperial-section" data-title="技术变革：数字化、人工智能与数据分析">
+        <div class="sovereign-container">
+            <h3 class="sovereign-heading text-2xl mb-8">技术变革：数字化、人工智能与数据分析</h3>
+            
+            <div class="authority-card mb-8">
+                <div class="noble-text">
+                    <p>技术不再是零售业的支持工具，而已成为其核心竞争力。以人工智能（AI）和大数据分析为代表的技术浪潮，正在对零售价值链的每一个环节进行深度改造，从根本上改变了零售商与消费者互动以及管理自身运营的方式。</p>
+                    
+                    <h4 class="sovereign-heading text-lg mb-4 mt-8">人工智能（AI）的渗透与应用</h4>
+                    
+                    <p>人工智能正在从前沿概念迅速转变为零售业的实用工具。据预测，超过80%的零售商计划在2025年底前在其运营中增加AI能力。全球零售业AI市场的价值预计将从2024年的118.3亿美元增长到2034年的626.4亿美元，复合年增长率（CAGR）高达18.14%。AI的应用已渗透到零售的多个关键领域：</p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="golden-glass-card">
+                    <div class="flex items-center mb-4">
+                        <i class="material-icons text-sovereign-gold mr-3">psychology</i>
+                        <h4 class="sovereign-heading text-lg">提升客户体验与个性化</h4>
+                    </div>
+                    <div class="noble-text">
+                        <p class="text-sm">AI的核心应用之一是通过分析海量的客户数据（如浏览历史、购买记录、购物车行为、人口统计信息等）来实现"超个性化"（Hyper-personalization）的购物体验。</p>
+                        
+                        <div class="bg-shadow-black p-3 rounded mt-4">
+                            <p class="text-xs">AI驱动的推荐引擎能够为每位顾客提供量身定制的产品建议，显著提升转化率和客户忠诚度。结合增强现实（AR）技术的虚拟试穿（Virtual Try-ons）功能，让消费者可以在线"试用"服装、化妆品甚至家具，有效降低了退货率并提升了购物的趣味性和确定性。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="golden-glass-card">
+                    <div class="flex items-center mb-4">
+                        <i class="material-icons text-sovereign-gold mr-3">precision_manufacturing</i>
+                        <h4 class="sovereign-heading text-lg">优化运营效率与决策</h4>
+                    </div>
+                    <div class="noble-text">
+                        <p class="text-sm">AI在零售后端运营中的价值同样巨大：</p>
+                        
+                        <div class="space-y-3 text-xs mt-4">
+                            <div class="bg-shadow-black p-3 rounded">
+                                <h5 class="text-imperial-gold font-semibold mb-1">需求预测与库存管理</h5>
+                                <p>基于机器学习的预测分析能够更精准地预测商品需求，从而优化库存水平，避免缺货或库存积压。</p>
+                            </div>
+                            
+                            <div class="bg-shadow-black p-3 rounded">
+                                <h5 class="text-imperial-gold font-semibold mb-1">供应链优化</h5>
+                                <p>AI可以分析实时数据，优化物流路线、预测运输延误，从而提高供应链的效率和韧性。</p>
+                            </div>
+                            
+                            <div class="bg-shadow-black p-3 rounded">
+                                <h5 class="text-imperial-gold font-semibold mb-1">动态定价</h5>
+                                <p>AI算法能够根据需求、竞争对手价格、库存水平等多种因素实时调整商品价格，以实现利润最大化。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investment-logic-card mt-8">
+                <h4 class="sovereign-heading text-lg mb-6">大数据分析的基础设施作用</h4>
+                <div class="noble-text">
+                    <p>如果说AI是驱动零售变革的引擎，那么大数据分析就是其赖以运转的燃料和道路。零售商通过各种触点（网站、APP、实体店、社交媒体）收集海量数据，并通过分析这些数据来获得深刻的洞察。</p>
+                    
+                    <div class="grid md:grid-cols-3 gap-4 mt-6">
+                        <div class="bg-shadow-black p-4 rounded border border-sovereign-gold border-opacity-20">
+                            <h5 class="text-imperial-gold font-semibold mb-2">精细化客户分群</h5>
+                            <p class="text-sm">通过大数据分析，零售商可以根据消费者的行为、偏好、生活方式等维度进行更精细、更动态的客户分群。</p>
+                        </div>
+                        
+                        <div class="bg-shadow-black p-4 rounded border border-sovereign-gold border-opacity-20">
+                            <h5 class="text-imperial-gold font-semibold mb-2">供应链与物流优化</h5>
+                            <p class="text-sm">大型零售商已成功利用大数据分析来优化其复杂的供应链，显著降低物流成本、缩短配送时间。</p>
+                        </div>
+                        
+                        <div class="bg-shadow-black p-4 rounded border border-sovereign-gold border-opacity-20">
+                            <h5 class="text-imperial-gold font-semibold mb-2">运营决策支持</h5>
+                            <p class="text-sm">从门店选址、商品布局到营销活动的效果评估，大数据分析为零售商的各项关键决策提供了数据驱动的依据。</p>
+                        </div>
+                    </div>
+                    
+                    <p class="mt-6">技术投资的规模和应用深度，正在成为零售商之间拉开差距的关键因素。大规模的资本支出和对数据科学人才的投入，为沃尔玛、亚马逊等行业巨头构建了强大的技术护城河。它们能够将技术投资的成本摊薄在巨大的销售额上，形成正向循环：更好的技术带来更高的效率和更好的客户体验，从而吸引更多客户，产生更多数据，进一步优化技术模型。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 消费者行为演变 -->
+    <section id="consumer-behavior" class="imperial-section" data-title="消费者行为演变：代际差异、可持续性与价值主张">
+        <div class="sovereign-container">
+            <h3 class="sovereign-heading text-2xl mb-8">消费者行为演变：代际差异、可持续性与价值主张</h3>
+            
+            <div class="authority-card mb-8">
+                <div class="noble-text">
+                    <p>消费者的需求、偏好和价值观正在发生深刻而持久的变化。零售商必须敏锐地捕捉并适应这些变化，才能在竞争中立于不败之地。其中，Z世代的崛起、可持续发展意识的普及以及对"价值"的重新定义，是当前最为重要的三大消费者趋势。</p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="golden-glass-card">
+                    <div class="flex items-center mb-4">
+                        <i class="material-icons text-sovereign-gold mr-3">groups</i>
+                        <h4 class="sovereign-heading text-lg">Z世代的影响力</h4>
+                    </div>
+                    <div class="noble-text">
+                        <p class="text-sm mb-4">Z世代（通常指1990年代末至2010年代初出生的人群）和千禧一代正迅速成为全球消费市场的主导力量。据预测，到2025年底，这两个群体将贡献近50%的奢侈品销售额。</p>
+                        
+                        <div class="bg-shadow-black p-4 rounded border border-sovereign-gold border-opacity-20">
+                            <h5 class="text-imperial-gold font-semibold mb-2">数字原住民特征</h5>
+                            <div class="text-center mb-2">
+                                <span class="exclusive-number text-2xl">74%</span>
+                                <p class="text-xs text-imperial-gold">Z世代使用可穿戴设备管理健康和生活</p>
+                            </div>
+                            <div class="text-center">
+                                <span class="exclusive-number text-xl">72%</span>
+                                <p class="text-xs text-imperial-gold">看重自助结账服务</p>
+                            </div>
+                        </div>
+                        
+                        <p class="text-sm mt-4">他们不仅在线上购物，也享受线下实体店的互动体验，但期望这种体验是无缝且由技术增强的。</p>
+                    </div>
+                </div>
+
+                <div class="golden-glass-card">
+                    <div class="flex items-center mb-4">
+                        <i class="material-icons text-sovereign-gold mr-3">eco</i>
+                        <h4 class="sovereign-heading text-lg">可持续性成为商业必需品</h4>
+                    </div>
+                    <div class="noble-text">
+                        <p class="text-sm mb-4">可持续发展已从一个边缘的社会议题，转变为影响消费者购买决策的核心因素。这种转变尤其受到年轻消费者的推动。</p>
+                        
+                        <div class="bg-shadow-black p-4 rounded border border-sovereign-gold border-opacity-20">
+                            <h5 class="text-imperial-gold font-semibold mb-2">为可持续性支付溢价</h5>
+                            <div class="text-center mb-2">
+                                <span class="exclusive-number text-2xl">62%</span>
+                                <p class="text-xs text-imperial-gold">Z世代倾向于从可持续品牌购买</p>
+                            </div>
+                            <div class="text-center">
+                                <span class="exclusive-number text-xl">73%</span>
+                                <p class="text-xs text-imperial-gold">愿意为可持续产品支付更高价格</p>
+                            </div>
+                        </div>
+                        
+                        <p class="text-sm mt-4">二手市场与循环经济的兴起：预计到2028年美国二手转售市场规模将达730亿美元，为零售商开辟了新的增长空间。</p>
+                    </div>
+                </div>
+
+                <div class="golden-glass-card">
+                    <div class="flex items-center mb-4">
+                        <i class="material-icons text-sovereign-gold mr-3">diamond</i>
+                        <h4 class="sovereign-heading text-lg">价值主张的再定义</h4>
+                    </div>
+                    <div class="noble-text">
+                        <p class="text-sm mb-4">在宏观经济不确定性增加的背景下，消费者对"价值"的追求变得更加突出。然而，当代消费者对"价值"的理解是多维度的。</p>
+                        
+                        <div class="space-y-3 text-xs">
+                            <div class="bg-shadow-black p-3 rounded">
+                                <h5 class="text-imperial-gold font-semibold mb-1">价格敏感性与折扣零售</h5>
+                                <p>面对通胀压力，各收入阶层的消费者都表现出更高的价格敏感性，转向更实惠的品牌、折扣零售商和自有品牌产品。</p>
+                            </div>
+                            
+                            <div class="bg-shadow-black p-3 rounded">
+                                <h5 class="text-imperial-gold font-semibold mb-1">超越价格的价值构成</h5>
+                                <p>对于新一代消费者，"价值"是一个综合性方程式，包含价格、便利性、个性化体验、可持续性以及品牌伦理等多个变量。</p>
+                            </div>
+                        </div>
+                        
+                        <p class="text-sm mt-4">这种价值主张的演变对零售商提出了严峻挑战，需要具备精准的客户洞察能力，利用数据分析来理解不同客群在不同品类下对"价值"的不同诉求。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 渠道变革 -->
+    <section id="channel-revolution" class="imperial-section" data-title="渠道变革：电子商务的渗透与全渠道融合">
+        <div class="sovereign-container">
+            <h3 class="sovereign-heading text-2xl mb-8">渠道变革：电子商务的渗透与全渠道融合</h3>
+            
+            <div class="authority-card mb-8">
+                <div class="noble-text">
+                    <p>零售渠道的数字化转型是过去二十年间行业最深刻的变革，这一进程远未结束。电子商务的持续渗透和全渠道模式的成熟，正在重新定义零售商与消费者的连接方式。</p>
+                </div>
+            </div>
+
+            <div class="investment-logic-card mb-8">
+                <h4 class="sovereign-heading text-lg mb-6">电子商务的持续高增长与区域差异</h4>
+                <div class="noble-text">
+                    <p>电子商务在全球范围内继续保持强劲的增长势头，其增长速度远超实体零售。全球电子商务销售额预计将在2025年超过6.8万亿美元，到2027年接近8万亿美元。</p>
+                    
+                    <h5 class="text-imperial-gold font-semibold mb-3 mt-6">显著的区域差异</h5>
+                    <p class="mb-4">电商的成熟度在全球各市场存在巨大差异，这为零售商的国际化战略提供了重要参考：</p>
+                    
+                    <div class="overflow-x-auto">
+                        <table class="imperial-table">
+                            <thead>
+                                <tr>
+                                    <th>国家/地区</th>
+                                    <th>2023年渗透率 (%)</th>
+                                    <th>2025年渗透率 (预测, %)</th>
+                                    <th>增长潜力</th>
+                                    <th>市场特征</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="font-semibold">中国</td>
+                                    <td class="exclusive-number">47.0</td>
+                                    <td class="exclusive-number">61.0</td>
+                                    <td>优化与深化</td>
+                                    <td>领先市场</td>
+                                </tr>
+                                <tr>
+                                    <td class="font-semibold">英国</td>
+                                    <td class="exclusive-number">30.6</td>
+                                    <td>-</td>
+                                    <td>中</td>
+                                    <td>西方最高</td>
+                                </tr>
+                                <tr>
+                                    <td class="font-semibold">韩国</td>
+                                    <td class="exclusive-number">30.0</td>
+                                    <td>-</td>
+                                    <td>中</td>
+                                    <td>成熟市场</td>
+                                </tr>
+                                <tr>
+                                    <td class="font-semibold">美国</td>
+                                    <td class="exclusive-number">15.8</td>
+                                    <td class="exclusive-number">21.0</td>
+                                    <td>高</td>
+                                    <td>最大零售市场</td>
+                                </tr>
+                                <tr>
+                                    <td class="font-semibold">日本</td>
+                                    <td class="exclusive-number">13.7</td>
+                                    <td>-</td>
+                                    <td>中</td>
+                                    <td>成熟但保守</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="golden-glass-card">
+                <h4 class="sovereign-heading text-lg mb-6">全渠道（Omnichannel）成为新标配</h4>
+                <div class="noble-text">
+                    <p>随着消费者购物路径的日益复杂化，线上和线下渠道的界限逐渐消弭。成功的零售商不再将它们视为相互竞争的独立渠道，而是整合为一个统一的、以消费者为中心的生态系统。</p>
+                    
+                    <div class="bg-shadow-black p-4 rounded border border-sovereign-gold border-opacity-20 mt-6 text-center">
+                        <h5 class="text-imperial-gold font-semibold mb-2">全渠道战略价值</h5>
+                        <p class="text-sm">73%的顾客偏好通过多个渠道购物，而拥有稳固全渠道战略的公司，其客户保留率高达89%，远高于渠道策略薄弱的公司（33%）</p>
+                    </div>
+                    
+                    <h5 class="text-imperial-gold font-semibold mb-3 mt-6">关键实践与模式</h5>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="bg-shadow-black p-3 rounded">
+                            <h6 class="text-imperial-gold font-semibold mb-1">BOPIS模式</h6>
+                            <p class="text-xs">线上下单，到店提货。为消费者提供便利和即时满足感，也为实体店带来额外客流。</p>
+                        </div>
+                        
+                        <div class="bg-shadow-black p-3 rounded">
+                            <h6 class="text-imperial-gold font-semibold mb-1">Ship from Store</h6>
+                            <p class="text-xs">将实体店作为小型配送中心，直接从门店发货，加快配送速度并优化库存。</p>
+                        </div>
+                        
+                        <div class="bg-shadow-black p-3 rounded">
+                            <h6 class="text-imperial-gold font-semibold mb-1">BORIS模式</h6>
+                            <p class="text-xs">线上购买，到店退货。简化消费者的退货流程，提升购物体验。</p>
+                        </div>
+                        
+                        <div class="bg-shadow-black p-3 rounded">
+                            <h6 class="text-imperial-gold font-semibold mb-1">无尽货架</h6>
+                            <p class="text-xs">当店内某商品缺货时，店员帮助顾客在线上下单并安排配送，避免销售损失。</p>
+                        </div>
+                    </div>
+                    
+                    <p class="mt-6">全渠道战略需要大量的技术和流程投资，但其回报是显著的。成功的全渠道个性化营销能带来数十倍甚至上百倍的投资回报（ROI），并显著提升客户生命周期价值（CLTV）。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 产业链、商业模式与盈利机制 -->
+    <section id="chapter3" class="imperial-section" data-title="产业链、商业模式与盈利机制">
+        <div class="sovereign-container">
+            <div class="executive-quote max-w-4xl mx-auto text-center">
+                本章旨在深入剖析零售行业的"内核"——即商品如何从概念变为现实，价值在其中如何被创造、传递和分配
+            </div>
+            
+            <h2 class="sovereign-heading text-3xl text-center mb-12">产业链、商业模式与盈利机制</h2>
+            
+            <div class="authority-card">
+                <div class="noble-text">
+                    <p>本章旨在深入剖析零售行业的"内核"——即商品如何从概念变为现实，价值在其中如何被创造、传递和分配。通过解构零售价值链，分析主流商业模式，本章将为理解不同零售企业的成本结构、盈利能力和竞争优势来源提供一个基础分析框架。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 零售价值链解构 -->
+    <section id="value-chain" class="imperial-section" data-title="零售价值链解构">
+        <div class="sovereign-container">
+            <h3 class="sovereign-heading text-2xl mb-8">零售价值链解构</h3>
+            
+            <div class="authority-card mb-8">
+                <div class="noble-text">
+                    <p>为了系统地理解零售业的运作，本报告将采用哈佛大学教授迈克尔·波特（Michael Porter）提出的价值链（Value Chain）模型。该模型将企业的活动分为"主要活动"和"支持活动"，有助于识别价值创造的关键环节。</p>
+                </div>
+            </div>
+
+            <div class="golden-glass-card mb-8">
+                <h4 class="sovereign-heading text-lg mb-6">价值链的主要活动 (Primary Activities)</h4>
+                <div class="noble-text">
+                    <p class="mb-6">主要活动直接涉及产品的物理创造、销售、转移给买方和售后服务。在零售行业，这可以被理解为商品从生产到消费的全过程：</p>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-shadow-black p-4 rounded border border-sovereign-gold border-opacity-20">
+                            <div class="flex items-center mb-3">
+                                <i class="material-icons text-sovereign-gold mr-3">design_services</i>
+                                <h5 class="text-imperial-gold font-semibold">上游：产品创造与采购</h5>
+                            </div>
+                            <div class="grid md:grid-cols-3 gap-3 text-sm">
+                                <div>
+                                    <h6 class="text-imperial-gold font-semibold mb-1">设计与研发</h6>
+                                    <p class="text-xs">对于自有品牌零售商（如Inditex）或DTC品牌而言，这是价值链的起点。设计、选材和产品开发决定了商品的独特性。</p>
+                                </div>
+                                <div>
+                                    <h6 class="text-imperial-gold font-semibold mb-1">生产制造</h6>
+                                    <p class="text-xs">商品的实际生产环节。在服装行业，面料成本通常是生产成本中最大的一项，可占到60-70%。</p>
+                                </div>
+                                <div>
+                                    <h6 class="text-imperial-gold font-semibold mb-1">采购与供应商关系</h6>
+                                    <p class="text-xs">零售商从品牌商或制造商处采购商品。大型零售商凭借其巨大的采购量，拥有强大的议价能力。</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-shadow-black p-4 rounded border border-sovereign-gold border-opacity-20">
+                            <div class="flex items-center mb-3">
+                                <i class="material-icons text-sovereign-gold mr-3">inventory</i>
+                                <h5 class="text-imperial-gold font-semibold">中游：运营与库存管理</h5>
+                            </div>
+                            <div class="grid md:grid-cols-2 gap-3 text-sm">
+                                <div>
+                                    <h6 class="text-imperial-gold font-semibold mb-1">仓储与库存管理</h6>
+                                    <p class="text-xs">商品入库后，需要进行存储、分拣和管理。高效的库存管理对于零售商至关重要，旨在平衡商品的可得性与库存持有成本。</p>
+                                </div>
+                                <div>
+                                    <h6 class="text-imperial-gold font-semibold mb-1">运营</h6>
+                                    <p class="text-xs">这是零售商的核心活动。对于实体零售商，包括门店的日常运营、商品陈列、销售人员管理等。对于电商，则包括网站和移动应用的维护、订单处理等。</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-shadow-black p-4 rounded border border-sovereign-gold border-opacity-20">
+                            <div class="flex items-center mb-3">
+                                <i class="material-icons text-sovereign-gold mr-3">sell</i>
+                                <h5 class="text-imperial-gold font-semibold">下游：销售与客户服务</h5>
+                            </div>
+                            <div class="grid md:grid-cols-3 gap-3 text-sm">
+                                <div>
+                                    <h6 class="text-imperial-gold font-semibold mb-1">市场营销与销售</h6>
+                                    <p class="text-xs">通过广告、促销、社交媒体等多种渠道吸引顾客，并促成购买。这是与消费者直接互动的关键环节。</p>
+                                </div>
+                                <div>
+                                    <h6 class="text-imperial-gold font-semibold mb-1">外部物流</h6>
+                                    <p class="text-xs">将商品交付给最终消费者。这包括从仓库到门店的配送，以及电商订单的"最后一公里"配送。</p>
+                                </div>
+                                <div>
+                                    <h6 class="text-imperial-gold font-semibold mb-1">售后服务</h6>
+                                    <p class="text-xs">包括退换货处理、客户咨询、产品维修等。优质的售后服务是提升客户满意度和忠诚度的重要保障。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investment-logic-card">
+                <h4 class="sovereign-heading text-lg mb-6">价值链的支持活动 (Support Activities)</h4>
+                <div class="noble-text">
+                    <p class="mb-4">支持活动并不直接创造商品，但它们为主要活动的顺利进行提供必要支持：</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="bg-shadow-black p-4 rounded">
+                            <h5 class="text-imperial-gold font-semibold mb-2">公司基础设施</h5>
+                            <p class="text-sm">包括综合管理、财务、法务、质量控制等职能，是整个价值链的支撑系统。</p>
+                        </div>
+                        
+                        <div class="bg-shadow-black p-4 rounded">
+                            <h5 class="text-imperial-gold font-semibold mb-2">人力资源管理</h5>
+                            <p class="text-sm">员工的招聘、培训和激励，对于提供优质的客户服务和维持高效运营至关重要。</p>
+                        </div>
+                        
+                        <div class="bg-shadow-black p-4 rounded">
+                            <h5 class="text-imperial-gold font-semibold mb-2">技术开发</h5>
+                            <p class="text-sm">包括POS系统、库存管理软件（IMS）、客户关系管理系统（CRM）、电子商务平台以及AI和数据分析平台的开发与应用。</p>
+                        </div>
+                        
+                        <div class="bg-shadow-black p-4 rounded">
+                            <h5 class="text-imperial-gold font-semibold mb-2">采购</h5>
+                            <p class="text-sm">指的是对企业运营所需各种资源的采购活动，不仅包括商品采购，也包括设备、技术、服务等的采购。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关键环节的价值创造与利润分配 -->
+    <section id="profit-distribution" class="imperial-section" data-title="关键环节的价值创造与利润分配">
+        <div class="sovereign-container">
+            <h3 class="sovereign-heading text-2xl mb-8">关键环节的价值创造与利润分配</h3>
+            
+            <div class="authority-card mb-8">
+                <div class="noble-text">
+                    <p>价值链的每个环节都会增加成本，同时也创造价值。最终的零售价格必须覆盖所有环节的成本并为各参与方提供利润。利润在价值链上的分配（即利润池分析）反映了各环节参与者的议价能力和价值贡献。</p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="golden-glass-card">
+                    <div class="flex items-center mb-4">
+                        <i class="material-icons text-sovereign-gold mr-3">factory</i>
+                        <h4 class="sovereign-heading text-lg">制造商/品牌商</h4>
+                    </div>
+                    <div class="noble-text">
+                        <p class="text-sm">通过品牌溢价和产品创新获取利润。其利润空间取决于其品牌实力和与下游渠道的议价能力。</p>
+                    </div>
+                </div>
+
+                <div class="golden-glass-card">
+                    <div class="flex items-center mb-4">
+                        <i class="material-icons text-sovereign-gold mr-3">local_shipping</i>
+                        <h4 class="sovereign-heading text-lg">分销商/批发商</h4>
+                    </div>
+                    <div class="noble-text">
+                        <p class="text-sm">利润来源于规模化的物流和渠道服务。其单件商品的利润率通常不高，一般在3%到30%之间，但通过处理大量商品来获得可观的总利润。</p>
+                    </div>
+                </div>
+
+                <div class="golden-glass-card">
+                    <div class="flex items-center mb-4">
+                        <i class="material-icons text-sovereign-gold mr-3">storefront</i>
+                        <h4 class="sovereign-heading text-lg">零售商</h4>
+                    </div>
+                    <div class="noble-text">
+                        <p class="text-sm">零售商是价值链的最终环节，直接面对消费者，其利润主要来源于采购成本与零售价格之间的差额，即毛利。</p>
+                        
+                        <div class="bg-shadow-black p-3 rounded mt-4">
+                            <h5 class="text-imperial-gold font-semibold mb-1">定价与毛利率</h5>
+                            <p class="text-xs">传统的定价法则是"Keystoning"，即零售价是批发价的两倍，这对应着50%的毛利率。实体零售商的毛利率通常在40%至60%之间。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investment-logic-card mt-8">
+                <h4 class="sovereign-heading text-lg mb-6">权力平衡的转移</h4>
+                <div class="noble-text">
+                    <p>价值链上的权力平衡并非一成不变。近年来，一个显著的趋势是，权力正从上游的品牌制造商向下游的大型零售平台转移。像沃尔玛、亚马逊这样的大型零售商，凭借其巨大的客户基础和渠道控制力，不仅能向上游供应商压价，还能通过发展自有品牌（Private Label）来直接与合作品牌竞争。</p>
+                    
+                    <div class="bg-shadow-black p-4 rounded border border-sovereign-gold border-opacity-20 mt-6">
+                        <h5 class="text-imperial-gold font-semibold mb-2">数据价值的变现</h5>
+                        <p class="text-sm">更重要的是，这些平台掌握了海量的第一方消费者数据，这成为它们最宝贵的资产。通过推出零售媒体网络（Retail Media Networks），它们将数据和流量变现，向品牌商收取广告费，开辟了新的高利润收入来源。</p>
+                    </div>
+                    
+                    <p class="mt-4">这一结构性转变正在深刻地重塑整个零售生态的利润分配格局。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 主流商业模式分析 -->
+    <section id="business-models" class="imperial-section" data-title="主流商业模式分析：从大型商超到DTC">
+        <div class="sovereign-container">
+            <h3 class="sovereign-heading text-2xl mb-8">主流商业模式分析：从大型商超到DTC</h3>
+            
+            <div class="authority-card mb-8">
+                <div class="noble-text">
+                    <p>不同的零售商基于其在价值链上的不同定位和资源禀赋，形成了各具特色的商业模式。理解这些模式的核心逻辑，是评估其长期竞争力的基础。</p>
+                </div>
+            </div>
+
+            <div class="space-y-8">
+                <div class="golden-glass-card">
+                    <div class="flex items-center mb-4">
+                        <i class="material-icons text-sovereign-gold mr-3">store_mall_directory</i>
+                        <h4 class="sovereign-heading text-lg">大型商超/综合零售商</h4>
+                    </div>
+                    <div class="noble-text">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <h5 class="text-imperial-gold font-semibold mb-2">代表企业</h5>
+                                <p class="text-sm mb-4">沃尔玛（Walmart）、家乐福（Carrefour）</p>
+                                
+                                <h5 class="text-imperial-gold font-semibold mb-2">核心逻辑</h5>
+                                <p class="text-sm">规模经济和运营效率。通过全球集中采购获得最低的商品成本，并通过高效的供应链和物流系统将商品快速、低成本地分销到遍布各地的门店。</p>
+                            </div>
+                            <div>
+                                <h5 class="text-imperial-gold font-semibold mb-2">盈利模式</h5>
+                                <p class="text-sm">"薄利多销"，依赖于高库存周转率和巨大的销售量。</p>
+                                
+                                <div class="bg-shadow-black p-3 rounded mt-4">
+                                    <h6 class="text-imperial-gold font-semibold mb-1">关键成功因素</h6>
+                                    <ul class="text-xs space-y-1">
+                                        <li>• 全球采购规模优势</li>
+                                        <li>• 高效供应链管理</li>
+                                        <li>• 门店网络密度</li>
+                                        <li>• 成本控制能力</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="golden-glass-card">
+                    <div class="flex items-center mb-4">
+                        <i class="material-icons text-sovereign-gold mr-3">category</i>
+                        <h4 class="sovereign-heading text-lg">专业零售商</h4>
+                    </div>
+                    <div class="noble-text">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <h5 class="text-imperial-gold font-semibold mb-2">代表企业</h5>
+                                <p class="text-sm mb-4">Inditex (Zara)、家得宝（Home Depot）、百思买（Best Buy）</p>
+                                
+                                <h5 class="text-imperial-gold font-semibold mb-2">核心逻辑</h5>
+                                <p class="text-sm">品类深度和专业服务。专注于某一特定领域（如服装、家居建材、电子产品），提供丰富的产品选择、专业的购物建议和相关的增值服务。</p>
+                            </div>
+                            <div>
+                                <h5 class="text-imperial-gold font-semibold mb-2">竞争优势</h5>
+                                <p class="text-sm">通过建立在特定品类的权威性，它们能够吸引目标客户并维持相对较高的毛利率。</p>
+                                
+                                <div class="bg-shadow-black p-3 rounded mt-4">
+                                    <h6 class="text-imperial-gold font-semibold mb-1">关键成功因素</h6>
+                                    <ul class="text-xs space-y-1">
+                                        <li>• 品类专业度</li>
+                                        <li>• 服务质量</li>
+                                        <li>• 产品创新能力</li>
+                                        <li>• 品牌认知度</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="golden-glass-card">
+                    <div class="flex items-center mb-4">
+                        <i class="material-icons text-sovereign-gold mr-3">discount</i>
+                        <h4 class="sovereign-heading text-lg">折扣零售商</h4>
+                    </div>
+                    <div class="noble-text">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <h5 class="text-imperial-gold font-semibold mb-2">代表企业</h5>
+                                <p class="text-sm mb-4">Aldi、Lidl、Dollar General</p>
+                                
+                                <h5 class="text-imperial-gold font-semibold mb-2">核心逻辑</h5>
+                                <p class="text-sm">极致的成本控制。商业模式的每一个环节都为实现"最低价格"这一最终目标服务。</p>
+                            </div>
+                            <div>
+                                <div class="bg-shadow-black p-3 rounded">
+                                    <h6 class="text-imperial-gold font-semibold mb-1">具体措施</h6>
+                                    <ul class="text-xs space-y-1">
+                                        <li>• 精简的SKU（商品种类）</li>
+                                        <li>• 高比例（通常超过90%）的自有品牌</li>
+                                        <li>• 标准化的门店设计</li>
+                                        <li>• 高效的员工管理</li>
+                                        <li>• 简化的供应链</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="golden-glass-card">
+                    <div class="flex items-center mb-4">
+                        <i class="material-icons text-sovereign-gold mr-3">computer</i>
+                        <h4 class="sovereign-heading text-lg">电商平台/市场</h4>
+                    </div>
+                    <div class="noble-text">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <h5 class="text-imperial-gold font-semibold mb-2">代表企业</h5>
+                                <p class="text-sm mb-4">亚马逊（Amazon）、阿里巴巴（Alibaba）</p>
+                                
+                                <h5 class="text-imperial-gold font-semibold mb-2">核心逻辑</h5>
+                                <p class="text-sm">网络效应和生态系统建设。作为平台，它们连接了数以百万计的买家和卖家，通过提供交易、支付、物流、营销和技术服务来创造价值。</p>
+                            </div>
+                            <div>
+                                <h5 class="text-imperial-gold font-semibold mb-2">商业模式特点</h5>
+                                <p class="text-sm">轻资产（不持有大部分库存），收入来源高度多元化，包括第三方卖家的佣金、广告费、自营业务的销售收入以及会员订阅费等高利润业务。</p>
+                                
+                                <div class="bg-shadow-black p-3 rounded mt-4">
+                                    <h6 class="text-imperial-gold font-semibold mb-1">关键优势</h6>
+                                    <ul class="text-xs space-y-1">
+                                        <li>• 网络效应</li>
+                                        <li>• 数据优势</li>
+                                        <li>• 技术能力</li>
+                                        <li>• 规模经济</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="golden-glass-card">
+                    <div class="flex items-center mb-4">
+                        <i class="material-icons text-sovereign-gold mr-3">person</i>
+                        <h4 class="sovereign-heading text-lg">直面消费者 (DTC)</h4>
+                    </div>
+                    <div class="noble-text">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <h5 class="text-imperial-gold font-semibold mb-2">代表企业</h5>
+                                <p class="text-sm mb-4">Warby Parker、Allbirds等新兴品牌，以及耐克等传统品牌的DTC转型</p>
+                                
+                                <h5 class="text-imperial-gold font-semibold mb-2">核心逻辑</h5>
+                                <p class="text-sm">品牌控制和客户关系。品牌商绕过中间商，直接通过自有网站、APP或实体店向消费者销售。</p>
+                            </div>
+                            <div>
+                                <div class="bg-shadow-black p-3 rounded">
+                                    <h6 class="text-imperial-gold font-semibold mb-1">好处</h6>
+                                    <ul class="text-xs space-y-1 mb-3">
+                                        <li>• 获得更高的毛利率（无需与零售商分成）</li>
+                                        <li>• 完全控制品牌形象和客户体验</li>
+                                        <li>• 直接获取第一手消费者数据</li>
+                                    </ul>
+                                    
+                                    <h6 class="text-imperial-gold font-semibold mb-1">挑战</h6>
+                                    <ul class="text-xs space-y-1">
+                                        <li>• 高昂的客户获取成本（营销费用）</li>
+                                        <li>• 履约成本（物流、客服）</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investment-logic-card mt-8">
+                <div class="noble-text">
+                    <p>每种商业模式都有其内在的优势和劣势，并决定了企业独特的财务特征和估值逻辑。在下一章中，我们将通过对行业领导者的具体案例分析，来更深入地探讨这些商业模式在实践中的表现。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 竞争格局与关键参与者深度剖析 -->
+    <section id="chapter4" class="imperial-section" data-title="竞争格局与关键参与者深度剖析">
+        <div class="sovereign-container">
+            <div class="executive-quote max-w-4xl mx-auto text-center">
+                本章将前述的宏观背景、行业趋势和商业模式框架应用于具体的市场竞争环境
+            </div>
+            
+            <h2 class="sovereign-heading text-3xl text-center mb-12">竞争格局与关键参与者深度剖析</h2>
+            
+            <div class="authority-card">
+                <div class="noble-text">
+                    <p>本章将前述的宏观背景、行业趋势和商业模式框架应用于具体的市场竞争环境。通过分析市场集中度和行业领导者的战略与财务表现，本章旨在揭示成功的零售企业如何构建并维持其竞争优势，并为投资者提供一个可用于横向比较的基准。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 市场集中度与竞争态势 -->
+    <section id="market-concentration" class="imperial-section" data-title="市场集中度与竞争态势">
+        <div class="sovereign-container">
+            <h3 class="sovereign-heading text-2xl mb-8">市场集中度与竞争态势</h3>
+            
+            <div class="authority-card mb-8">
+                <div class="noble-text">
+                    <p>全球零售市场虽然规模巨大，但其竞争格局呈现出高度集中和"赢家通吃"的特点。规模、技术和品牌是构筑竞争壁垒的三大核心要素。</p>
+                    
+                    <h4 class="sovereign-heading text-lg mb-4 mt-8">全球领导者格局</h4>
+                    
+                    <p>美国全国零售商联合会（NRF）发布的"2025年全球零售商50强"榜单清晰地展示了行业的金字塔结构。沃尔玛（Walmart）和亚马逊（Amazon.com）凭借其巨大的营收规模和全球影响力，稳居第一和第二位。紧随其后的是来自德国的折扣零售巨头Schwarz集团（旗下拥有Lidl和Kaufland）和Aldi，这反映了折扣业态在全球范围内的强劲势头。</p>
+                </div>
+            </div>
+
+            <div class="golden-glass-card mb-8">
+                <h4 class="sovereign-heading text-lg mb-6">美国市场格局</h4>
+                <div class="noble-text">
+                    <p class="mb-6">作为全球最大且最具竞争性的单一市场，美国的零售格局同样由少数巨头主导。根据NRF的"2025年美国零售商100强"榜单（按2024年美国本土销售额排名），前三甲分别为：</p>
+                    
+                    <div class="overflow-x-auto">
+                        <table class="imperial-table">
+                            <thead>
+                                <tr>
+                                    <th>排名</th>
+                                    <th>零售商</th>
+                                    <th>2024年美国销售额 (十亿美元)</th>
+                                    <th>美国销售额年增长率 (%)</th>
+                                    <th>总部所在地</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="font-semibold">1</td>
+                                    <td class="font-semibold">Walmart</td>
+                                    <td class="exclusive-number">$568.70</td>
+                                    <td class="exclusive-number">7%</td>
+                                    <td>Bentonville, AR</td>
+                                </tr>
+                                <tr>
+                                    <td class="font-semibold">2</td>
+                                    <td class="font-semibold">Amazon.com</td>
+                                    <td class="exclusive-number">$273.66</td>
+                                    <td class="exclusive-number">9%</td>
+                                    <td>Seattle, WA</td>
+                                </tr>
+                                <tr>
+                                    <td class="font-semibold">3</td>
+                                    <td class="font-semibold">Costco Wholesale</td>
+                                    <td class="exclusive-number">$183.05</td>
+                                    <td class="exclusive-number">4%</td>
+                                    <td>Issaquah, WA</td>
+                                </tr>
+                                <tr>
+                                    <td class="font-semibold">8</td>
+                                    <td class="font-semibold">Target</td>
+                                    <td class="exclusive-number">$106.73</td>
+                                    <td class="exclusive-number">1%</td>
+                                    <td>Minneapolis, MN</td>
+                                </tr>
+                                <tr>
+                                    <td class="font-semibold">9</td>
+                                    <td class="font-semibold">Lowe's Companies</td>
+                                    <td class="exclusive-number">$81.50</td>
+                                    <td class="exclusive-number">-3%</td>
+                                    <td>Mooresville, NC</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <p class="mt-6">前十名中还包括了食品杂货领域的克罗格（Kroger）、家装领域的家得宝（The Home Depot）和劳氏（Lowe's），以及药店领域的CVS和Walgreens，覆盖了零售业的主要细分领域。</p>
+                </div>
+            </div>
+
+            <div class="investment-logic-card">
+                <h4 class="sovereign-heading text-lg mb-6">规模效应与价值创造</h4>
+                <div class="noble-text">
+                    <p>麦肯锡公司的一项研究发现，零售业的价值创造（以经济利润衡量）与企业规模存在高度正相关。在2023年，经济利润排名前四分之一的零售商，其平均收入规模是排名后四分之一的零售商的十倍之多。</p>
+                    
+                    <div class="bg-shadow-black p-4 rounded border border-sovereign-gold border-opacity-20 mt-6 text-center">
+                        <h5 class="text-imperial-gold font-semibold mb-2">马太效应</h5>
+                        <p class="text-sm">规模不仅能带来采购和运营成本上的优势，更能转化为实实在在的超额利润，从而形成强者恒强的马太效应。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 行业领导者案例研究 -->
+    <section id="industry-leaders" class="imperial-section" data-title="行业领导者案例研究">
+        <div class="sovereign-container">
+            <h3 class="sovereign-heading text-2xl mb-8">行业领导者案例研究</h3>
+            
+            <div class="authority-card mb-8">
+                <div class="noble-text">
+                    <p>通过对四家分别代表不同商业模式和地理重心的行业巨头进行深度剖析，我们可以更清晰地理解驱动零售业成功的核心逻辑。</p>
+                </div>
+            </div>
+
+            <div class="space-y-12">
+                <!-- 沃尔玛案例 -->
+                <div class="golden-glass-card">
+                    <div class="flex items-center mb-6">
+                        <i class="material-icons text-sovereign-gold mr-3">store</i>
+                        <h4 class="sovereign-heading text-xl">沃尔玛 (Walmart Inc.): 规模效率与全渠道转型的典范</h4>
+                    </div>
+                    <div class="noble-text">
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h5 class="text-imperial-gold font-semibold mb-3">财务概览 (2025财年)</h5>
+                                <p class="text-sm mb-4">沃尔玛是全球最大的零售商。在2025财年（截至2025年1月31日），公司总收入达到6810亿美元，同比增长5.1%。</p>
+                                
+                                <div class="space-y-3">
+                                    <div class="bg-shadow-black p-3 rounded">
+                                        <h6 class="text-imperial-gold font-semibold mb-1">沃尔玛美国</h6>
+                                        <p class="text-xs">净销售额4624亿美元，是公司的绝对核心</p>
+                                    </div>
+                                    
+                                    <div class="bg-shadow-black p-3 rounded">
+                                        <h6 class="text-imperial-gold font-semibold mb-1">沃尔玛国际</h6>
+                                        <p class="text-xs">净销售额1219亿美元</p>
+                                    </div>
+                                    
+                                    <div class="bg-shadow-black p-3 rounded">
+                                        <h6 class="text-imperial-gold font-semibold mb-1">山姆会员店</h6>
+                                        <p class="text-xs">净销售额902亿美元</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <h5 class="text-imperial-gold font-semibold mb-3">战略核心与护城河</h5>
+                                <p class="text-sm mb-4">沃尔玛的商业模式建立在"天天低价"（Everyday Low Price, EDLP）的承诺之上，其核心护城河是无与伦比的规模经济和极致的供应链效率。</p>
+                                
+                                <div class="bg-shadow-black p-4 rounded border border-sovereign-gold border-opacity-20">
+                                    <h6 class="text-imperial-gold font-semibold mb-2">数字化转型亮点</h6>
+                                    <div class="text-center mb-2">
+                                        <span class="exclusive-number text-2xl">20.8%</span>
+                                        <p class="text-xs text-imperial-gold">全球电子商务业务增长率</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <span class="exclusive-number text-xl">$120.9B</span>
+                                        <p class="text-xs text-imperial-gold">电商销售额（2025财年）</p>
+                                    </div>
+                                </div>
+                                
+                                <p class="text-sm mt-4">近年来，面对亚马逊的挑战，沃尔玛将战略重心转向全渠道融合，大力投资于电子商务平台、移动应用、以及"线上下单、到店提货"（BOPIS）和配送服务，成功地将其庞大的实体门店网络（全球超10,750家）转化为独特的竞争优势。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 亚马逊案例 -->
+                <div class="golden-glass-card">
+                    <div class="flex items-center mb-6">
+                        <i class="material-icons text-sovereign-gold mr-3">cloud</i>
+                        <h4 class="sovereign-heading text-xl">亚马逊 (Amazon.com, Inc.): 科技驱动的零售生态系统</h4>
+                    </div>
+                    <div class="noble-text">
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h5 class="text-imperial-gold font-semibold mb-3">财务概览 (2024财年)</h5>
+                                <p class="text-sm mb-4">亚马逊已经从一个在线书店成长为一个庞大的科技与零售帝国。在2024财年，公司总收入达到6380亿美元，同比增长11%。</p>
+                                
+                                <div class="overflow-x-auto">
+                                    <table class="imperial-table text-xs">
+                                        <thead>
+                                            <tr>
+                                                <th>分部</th>
+                                                <th>收入 (十亿美元)</th>
+                                                <th>营业利润 (十亿美元)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>北美分部</td>
+                                                <td class="exclusive-number">387.5</td>
+                                                <td class="exclusive-number">25.0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>国际分部</td>
+                                                <td class="exclusive-number">142.9</td>
+                                                <td class="exclusive-number">3.8</td>
+                                            </tr>
+                                            <tr>
+                                                <td>AWS云服务</td>
+                                                <td class="exclusive-number">107.6</td>
+                                                <td class="exclusive-number">39.8</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <h5 class="text-imperial-gold font-semibold mb-3">战略核心与护城河</h5>
+                                <p class="text-sm mb-4">亚马逊的成功源于其著名的"飞轮效应"（Flywheel Effect）。以客户为中心，通过提供极致的便利性来吸引顾客，形成一个自我强化的正循环。</p>
+                                
+                                <div class="space-y-3">
+                                    <div class="bg-shadow-black p-3 rounded">
+                                        <h6 class="text-imperial-gold font-semibold mb-1">Amazon Prime会员体系</h6>
+                                        <div class="text-center">
+                                            <span class="exclusive-number text-xl">2.4亿+</span>
+                                            <p class="text-xs text-imperial-gold">全球Prime会员数量</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="bg-shadow-black p-3 rounded">
+                                        <h6 class="text-imperial-gold font-semibold mb-1">广告业务</h6>
+                                        <div class="text-center">
+                                            <span class="exclusive-number text-xl">$56.2B</span>
+                                            <p class="text-xs text-imperial-gold">2024年广告收入</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <p class="text-sm mt-4">这组数据揭示了亚马逊商业模式的核心：高利润的AWS业务为低利润率的零售业务提供了强大的资金支持，使其能够持续进行价格战和创新投资。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 阿里巴巴案例 -->
+                <div class="golden-glass-card">
+                    <div class="flex items-center mb-6">
+                        <i class="material-icons text-sovereign-gold mr-3">language</i>
+                        <h4 class="sovereign-heading text-xl">阿里巴巴 (Alibaba Group): 中国特色的数字商业巨头</h4>
+                    </div>
+                    <div class="noble-text">
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h5 class="text-imperial-gold font-semibold mb-3">财务概览 (2025财年)</h5>
+                                <p class="text-sm mb-4">阿里巴巴是中国数字经济的代名词。在2025财年，集团总收入为9963亿元人民币，同比增长5.9%。</p>
+                                
+                                <div class="space-y-3">
+                                    <div class="bg-shadow-black p-3 rounded">
+                                        <h6 class="text-imperial-gold font-semibold mb-1">淘宝和天猫集团</h6>
+                                        <p class="text-xs">收入4498亿元，是集团的基石</p>
+                                    </div>
+                                    
+                                    <div class="bg-shadow-black p-3 rounded">
+                                        <h6 class="text-imperial-gold font-semibold mb-1">云智能集团</h6>
+                                        <p class="text-xs">收入1180亿元，同比增长11%</p>
+                                    </div>
+                                    
+                                    <div class="bg-shadow-black p-3 rounded">
+                                        <h6 class="text-imperial-gold font-semibold mb-1">阿里国际数字商业</h6>
+                                        <p class="text-xs">收入1323亿元，同比增长29%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <h5 class="text-imperial-gold font-semibold mb-3">战略核心与护城河</h5>
+                                <p class="text-sm mb-4">阿里巴巴的商业模式是平台驱动的生态系统。与亚马逊不同，其核心电商业务主要是作为市场（Marketplace），具有轻资产、高利润率的特点。</p>
+                                
+                                <div class="bg-shadow-black p-4 rounded border border-sovereign-gold border-opacity-20">
+                                    <h6 class="text-imperial-gold font-semibold mb-2">战略聚焦点</h6>
+                                    <ul class="text-xs space-y-1">
+                                        <li>• 用户为先：88VIP会员数已超过5000万</li>
+                                        <li>• AI驱动：AI相关产品收入连续七个季度三位数增长</li>
+                                        <li>• 客户管理收入（CMR）：商家广告和推广费用</li>
+                                    </ul>
+                                </div>
+                                
+                                <p class="text-sm mt-4">近年来，公司战略聚焦于"用户为先"和"AI驱动"，大力投资AI和云计算，视其为集团的"第二增长曲线"。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Inditex案例 -->
+                <div class="golden-glass-card">
+                    <div class="flex items-center mb-6">
+                        <i class="material-icons text-sovereign-gold mr-3">checkroom</i>
+                        <h4 class="sovereign-heading text-xl">Inditex集团：快时尚的供应链与品牌矩阵</h4>
+                    </div>
+                    <div class="noble-text">
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h5 class="text-imperial-gold font-semibold mb-3">财务概览 (2024财年)</h5>
+                                <p class="text-sm mb-4">作为全球最大的快时尚集团，Inditex（旗下拥有Zara等品牌）以其独特的商业模式实现了持续的盈利增长。</p>
+                                
+                                <div class="bg-shadow-black p-4 rounded border border-sovereign-gold border-opacity-20 text-center">
+                                    <div class="grid grid-cols-2 gap-4">
+                                        <div>
+                                            <span class="exclusive-number text-xl">€38.6B</span>
+                                            <p class="text-xs text-imperial-gold">销售额（+7.5%）</p>
+                                        </div>
+                                        <div>
+                                            <span class="exclusive-number text-xl">€5.9B</span>
+                                            <p class="text-xs text-imperial-gold">净利润（+9.0%）</p>
+                                        </div>
+                                    </div>
+                                    <div class="mt-3">
+                                        <span class="exclusive-number text-2xl">57.8%</span>
+                                        <p class="text-xs text-imperial-gold">毛利率</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <h5 class="text-imperial-gold font-semibold mb-3">战略核心与护城河</h5>
+                                <p class="text-sm mb-4">Inditex的护城河在于其革命性的、高度整合且反应迅速的供应链。与传统服装行业长达数月的"设计-生产-上架"周期不同，Inditex能够将这一周期缩短至几周。</p>
+                                
+                                <div class="space-y-3">
+                                    <div class="bg-shadow-black p-3 rounded">
+                                        <h6 class="text-imperial-gold font-semibold mb-1">数据驱动的设计</h6>
+                                        <p class="text-xs">通过门店销售数据和顾客反馈，快速捕捉最新时尚潮流</p>
+                                    </div>
+                                    
+                                    <div class="bg-shadow-black p-3 rounded">
+                                        <h6 class="text-imperial-gold font-semibold mb-1">近岸生产</h6>
+                                        <p class="text-xs">将大部分生产放在西班牙、葡萄牙、摩洛哥等邻近地区，以速度换取成本</p>
+                                    </div>
+                                    
+                                    <div class="bg-shadow-black p-3 rounded">
+                                        <h6 class="text-imperial-gold font-semibold mb-1">小批量、高频次</h6>
+                                        <p class="text-xs">以小批量生产多种款式，每周两次向全球门店配送新品</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investment-logic-card mt-8">
+                <div class="noble-text">
+                    <p>这四家巨头的商业模式和财务特征迥然不同，清晰地揭示了一个核心观点：<strong>商业模式决定了财务特征</strong>。亚马逊的盈利能力由AWS驱动，使其零售业务可以承受极低的利润率；沃尔玛的利润来自于极致的规模效率；Inditex的高利润率源于其独特的快时尚供应链；而阿里巴巴的利润则来自于其平台生态的轻资产模式。</p>
+                    
+                    <p class="mt-4">因此，对零售企业的分析不能采用单一的财务标准，而必须深入其商业模式的内在逻辑，评估其"财务特征"在宏观趋势和竞争环境下的可持续性。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 行业财务指标与估值逻辑对比分析 -->
+    <section id="financial-valuation" class="imperial-section" data-title="行业财务指标与估值逻辑对比分析">
+        <div class="sovereign-container">
+            <h3 class="sovereign-heading text-2xl mb-8">行业财务指标与估值逻辑对比分析</h3>
+            
+            <div class="authority-card mb-8">
+                <div class="noble-text">
+                    <p>在对具体公司进行深入研究后，本节将提供一个用于横向比较的财务分析和估值框架。</p>
+                </div>
+            </div>
+
+            <div class="golden-glass-card mb-8">
+                <h4 class="sovereign-heading text-lg mb-6">关键财务比率</h4>
+                <div class="noble-text">
+                    <p class="mb-6">对零售企业进行财务分析时，除了常规的盈利能力指标（毛利率、营业利润率、净利率），还需特别关注以下几类能反映其行业特性的比率：</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h5 class="text-imperial-gold font-semibold mb-3">运营效率比率</h5>
+                            <div class="space-y-3">
+                                <div class="bg-shadow-black p-3 rounded">
+                                    <h6 class="text-imperial-gold font-semibold mb-1">库存周转率</h6>
+                                    <p class="text-xs">计算公式为销货成本 / 平均库存。该指标衡量企业销售库存的速度，是零售业最重要的效率指标之一。</p>
+                                </div>
+                                
+                                <div class="bg-shadow-black p-3 rounded">
+                                    <h6 class="text-imperial-gold font-semibold mb-1">同店销售额增长率</h6>
+                                    <p class="text-xs">衡量开业一年以上店铺的销售增长情况，剔除了新开店的影响，是反映零售商内生增长质量的核心指标。</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h5 class="text-imperial-gold font-semibold mb-3">盈利质量与资本效率</h5>
+                            <div class="space-y-3">
+                                <div class="bg-shadow-black p-3 rounded">
+                                    <h6 class="text-imperial-gold font-semibold mb-1">资产回报率 (ROA)</h6>
+                                    <p class="text-xs">计算公式为净利润 / 总资产。衡量企业利用其所有资产创造利润的能力。</p>
+                                </div>
+                                
+                                <div class="bg-shadow-black p-3 rounded">
+                                    <h6 class="text-imperial-gold font-semibold mb-1">投入资本回报率 (ROIC)</h6>
+                                    <p class="text-xs">衡量企业核心经营活动所用资本的盈利能力，更能反映主营业务的价值创造能力。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investment-logic-card mb-8">
+                <h4 class="sovereign-heading text-lg mb-6">行业领导者财务指标对比分析</h4>
+                <div class="overflow-x-auto">
+                    <table class="imperial-table">
+                        <thead>
+                            <tr>
+                                <th>财务指标</th>
+                                <th>沃尔玛 (FY2025)</th>
+                                <th>亚马逊 (FY2024)</th>
+                                <th>Inditex (FY2024)</th>
+                                <th>阿里巴巴 (FY2025)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-semibold">总收入</td>
+                                <td class="exclusive-number">$681.0B</td>
+                                <td class="exclusive-number">$638.0B</td>
+                                <td class="exclusive-number">€38.6B</td>
+                                <td class="exclusive-number">¥996.3B</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">总收入年增长率</td>
+                                <td class="exclusive-number">5.1%</td>
+                                <td class="exclusive-number">11.0%</td>
+                                <td class="exclusive-number">7.5%</td>
+                                <td class="exclusive-number">5.9%</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">电商收入年增长率</td>
+                                <td class="exclusive-number">20.8%</td>
+                                <td class="exclusive-number">11.0%</td>
+                                <td class="exclusive-number">12.0%</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">毛利率</td>
+                                <td class="exclusive-number">24.1%</td>
+                                <td>-</td>
+                                <td class="exclusive-number">57.8%</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">营业利润率</td>
+                                <td>-</td>
+                                <td class="exclusive-number">10.8%</td>
+                                <td class="exclusive-number">19.7%</td>
+                                <td class="exclusive-number">14.1%</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">净利率</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td class="exclusive-number">15.3%</td>
+                                <td class="exclusive-number">12.6%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="mt-4 text-sm text-sterling-silver italic">
+                    注：部分指标在摘要信息中未提供或口径不同，以"-"表示。亚马逊的营业利润率受AWS高利润业务显著影响。
+                </div>
+            </div>
+
+            <div class="golden-glass-card">
+                <h4 class="sovereign-heading text-lg mb-6">估值逻辑</h4>
+                <div class="noble-text">
+                    <p class="mb-6">对零售企业进行估值时，通常采用相对估值法，即将其估值倍数与可比公司或行业平均水平进行比较。</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h5 class="text-imperial-gold font-semibold mb-3">核心估值倍数</h5>
+                            <div class="space-y-3">
+                                <div class="bg-shadow-black p-3 rounded">
+                                    <h6 class="text-imperial-gold font-semibold mb-1">市销率 (P/S)</h6>
+                                    <p class="text-xs">这是零售业最常用的估值指标之一。对于零售业这类利润率相对稳定的行业，销售额（尤其是其增长）是价值的核心驱动力。</p>
+                                </div>
+                                
+                                <div class="bg-shadow-black p-3 rounded">
+                                    <h6 class="text-imperial-gold font-semibold mb-1">EV/EBITDA</h6>
+                                    <p class="text-xs">剔除了折旧、摊销、利息和税收的影响，能更好地反映公司的核心运营盈利能力。</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h5 class="text-imperial-gold font-semibold mb-3">美国零售子行业估值倍数参考</h5>
+                            <div class="overflow-x-auto">
+                                <table class="imperial-table text-xs">
+                                    <thead>
+                                        <tr>
+                                            <th>GICS子行业</th>
+                                            <th>EV/Sales</th>
+                                            <th>EV/EBITDA</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>服装零售</td>
+                                            <td class="exclusive-number">1.41</td>
+                                            <td class="exclusive-number">14.28</td>
+                                        </tr>
+                                        <tr>
+                                            <td>综合性商品零售</td>
+                                            <td class="exclusive-number">2.05</td>
+                                            <td class="exclusive-number">16.25</td>
+                                        </tr>
+                                        <tr>
+                                            <td>家居装修零售</td>
+                                            <td class="exclusive-number">2.52</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>食品杂货零售</td>
+                                            <td class="exclusive-number">0.49</td>
+                                            <td>-</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="mt-6">这张表清晰地显示，市场愿意为盈利能力和增长前景更好的子行业（如家居装修零售）支付更高的销售额倍数，而对于利润率较低、竞争激烈的食品杂货零售，则给予较低的估值。这为评估具体零售公司的市场定价提供了重要的行业基准。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 主要市场深度透视 -->
+    <section id="chapter5" class="imperial-section" data-title="主要市场深度透视">
+        <div class="sovereign-container">
+            <div class="executive-quote max-w-4xl mx-auto text-center">
+                本章将聚焦于三个最重要的单一市场——美国、中国和欧洲，通过深入剖析其独特的竞争格局、消费者特征和发展趋势
+            </div>
+            
+            <h2 class="sovereign-heading text-3xl text-center mb-12">主要市场深度透视</h2>
+            
+            <div class="authority-card">
+                <div class="noble-text">
+                    <p>全球零售市场虽然在宏观趋势上表现出一定的一致性，但各个主要市场因其经济发展阶段、消费文化、监管环境和竞争格局的差异，呈现出截然不同的发展特征。本章将聚焦于三个最重要的单一市场——美国、中国和欧洲，通过深入剖析其独特的竞争格局、消费者特征和发展趋势，为投资者提供更精准的区域性投资洞察。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 美国市场 -->
+    <section id="us-market" class="imperial-section" data-title="美国市场：成熟、创新与挑战并存">
+        <div class="sovereign-container">
+            <h3 class="sovereign-heading text-2xl mb-8">美国市场：成熟、创新与挑战并存</h3>
+            
+            <div class="authority-card mb-8">
+                <div class="noble-text">
+                    <p>作为全球最大的消费市场，美国零售业具有高度成熟性和多样化的特点。消费者购买力强、对便利性要求高，同时也是全球电商创新的摇篮。</p>
+                    
+                    <h4 class="sovereign-heading text-lg mb-4 mt-8">市场特征与数据概览</h4>
+                    
+                    <p>美国零售市场规模庞大且相对稳定。据美国商务部统计，2024年美国零售总额预计超过5.7万亿美元，其中电商占比约15%。尽管电商渗透率相比中国较低，但其绝对规模和增长质量依然令人瞩目。美国消费者的消费模式呈现出鲜明的特点：注重品牌、偏好一站式购物体验，同时对价格敏感度在经济压力下有所上升。</p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-8">
+                <div class="golden-glass-card">
+                    <div class="flex items-center mb-4">
+                        <i class="material-icons text-sovereign-gold mr-3">trending_up</i>
+                        <h4 class="sovereign-heading text-lg">市场优势</h4>
+                    </div>
+                    <div class="noble-text">
+                        <div class="space-y-3 text-sm">
+                            <div class="bg-shadow-black p-3 rounded">
+                                <h5 class="text-imperial-gold font-semibold mb-1">成熟的消费基础</h5>
+                                <p>高可支配收入、完善的信贷体系以及成熟的消费文化。</p>
+                            </div>
+                            
+                            <div class="bg-shadow-black p-3 rounded">
+                                <h5 class="text-imperial-gold font-semibold mb-1">技术创新领先</h5>
+                                <p>电商、移动支付、人工智能在零售领域的应用全球领先。</p>
+                            </div>
+                            
+                            <div class="bg-shadow-black p-3 rounded">
+                                <h5 class="text-imperial-gold font-semibold mb-1">品牌价值导向</h5>
+                                <p>消费者愿意为品牌和质量支付溢价，利润率相对较高。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="golden-glass-card">
+                    <div class="flex items-center mb-4">
+                        <i class="material-icons text-sovereign-gold mr-3">warning</i>
+                        <h4 class="sovereign-heading text-lg">面临挑战</h4>
+                    </div>
+                    <div class="noble-text">
+                        <div class="space-y-3 text-sm">
+                            <div class="bg-shadow-black p-3 rounded">
+                                <h5 class="text-imperial-gold font-semibold mb-1">实体零售承压</h5>
+                                <p>商业地产成本高企，"零售末日"现象下实体店面临关店潮。</p>
+                            </div>
+                            
+                            <div class="bg-shadow-black p-3 rounded">
+                                <h5 class="text-imperial-gold font-semibold mb-1">劳动力成本上升</h5>
+                                <p>最低工资标准不断提高，人工成本压力影响盈利能力。</p>
+                            </div>
+                            
+                            <div class="bg-shadow-black p-3 rounded">
+                                <h5 class="text-imperial-gold font-semibold mb-1">通胀压力传导</h5>
+                                <p>通胀环境下消费者更加注重性价比，折扣零售商崛起。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investment-logic-card">
+                <h4 class="sovereign-heading text-lg mb-6">投资机会与重点关注领域</h4>
+                <div class="noble-text">
+                    <p class="mb-4">在美国市场，投资者应重点关注以下几个细分领域的机会：</p>
+                    
+                    <div class="grid md:grid-cols-3 gap-4">
+                        <div class="bg-shadow-black p-4 rounded">
+                            <h5 class="text-imperial-gold font-semibold mb-2">折扣零售</h5>
+                            <p class="text-sm">Dollar General、Costco等会员制仓储式商店和一元店在通胀环境下表现强劲。</p>
+                        </div>
+                        
+                        <div class="bg-shadow-black p-4 rounded">
+                            <h5 class="text-imperial-gold font-semibold mb-2">全渠道整合</h5>
+                            <p class="text-sm">能够成功整合线上线下的零售商，如Target的BOPIS（线上下单店内取货）模式。</p>
+                        </div>
+                        
+                        <div class="bg-shadow-black p-4 rounded">
+                            <h5 class="text-imperial-gold font-semibold mb-2">专业化零售</h5>
+                            <p class="text-sm">在特定品类具有专业化优势的零售商，如家得宝（Home Depot）在家装市场的主导地位。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 中国市场 -->
+    <section id="china-market" class="imperial-section" data-title="中国市场：增长、分化与新零售实践">
+        <div class="sovereign-container">
+            <h3 class="sovereign-heading text-2xl mb-8">中国市场：增长、分化与新零售实践</h3>
+            
+            <div class="authority-card mb-8">
+                <div class="noble-text">
+                    <p>中国作为全球第二大消费市场和电商渗透率最高的主要经济体，正在经历从高速增长向高质量发展的转型。市场呈现出明显的层级分化和创新活跃的特点。</p>
+                    
+                    <h4 class="sovereign-heading text-lg mb-4 mt-8">市场转型与新消费趋势</h4>
+                    
+                    <p>中国零售市场的一个显著特征是其超高的电商渗透率和创新的商业模式。线上零售额占社会消费品零售总额的比重已接近25%，远超美国等发达市场。同时，以阿里巴巴的"新零售"、腾讯的"智慧零售"为代表的线上线下融合实践，正在重新定义零售业的边界。</p>
+                </div>
+            </div>
+
+            <div class="golden-glass-card mb-8">
+                <h4 class="sovereign-heading text-lg mb-6">消费分层与地域差异</h4>
+                <div class="noble-text">
+                    <p class="mb-6">中国消费市场的一个核心特征是明显的分层化和地域差异：</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h5 class="text-imperial-gold font-semibold mb-3">一二线城市</h5>
+                            <div class="space-y-3">
+                                <div class="bg-shadow-black p-3 rounded">
+                                    <h6 class="text-imperial-gold font-semibold mb-1">消费升级主导</h6>
+                                    <p class="text-sm">追求品质、个性化、体验式消费，国际品牌和高端零售商表现出色。</p>
+                                </div>
+                                
+                                <div class="bg-shadow-black p-3 rounded">
+                                    <h6 class="text-imperial-gold font-semibold mb-1">新零售渗透率高</h6>
+                                    <p class="text-sm">盒马鲜生、超级物种等新零售业态密集分布，消费者接受度高。</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h5 class="text-imperial-gold font-semibold mb-3">三四线城市及下沉市场</h5>
+                            <div class="space-y-3">
+                                <div class="bg-shadow-black p-3 rounded">
+                                    <h6 class="text-imperial-gold font-semibold mb-1">性价比敏感</h6>
+                                    <p class="text-sm">拼多多、京喜等平台快速崛起，折扣零售和团购模式受欢迎。</p>
+                                </div>
+                                
+                                <div class="bg-shadow-black p-3 rounded">
+                                    <h6 class="text-imperial-gold font-semibold mb-1">增长潜力巨大</h6>
+                                    <p class="text-sm">人口基数大，消费水平快速提升，是未来增长的主要驱动力。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investment-logic-card">
+                <h4 class="sovereign-heading text-lg mb-6">政策环境与监管趋势</h4>
+                <div class="noble-text">
+                    <p class="mb-4">中国零售业的发展深受政策环境影响。近年来，政府对平台经济的监管趋严，反垄断、数据安全、用工保护等法规密集出台，对互联网零售巨头产生重大影响。同时，"双循环"战略下对国产品牌和内需消费的支持政策，为本土零售商和品牌创造了新机遇。</p>
+                    
+                    <div class="bg-shadow-black p-4 rounded border border-sovereign-gold border-opacity-20">
+                        <h5 class="text-imperial-gold font-semibold mb-2">投资策略建议</h5>
+                        <p class="text-sm">在中国市场，投资者应重点关注能够适应监管变化、具备下沉市场拓展能力、在供应链和数字化方面有核心竞争力的企业。同时，关注消费分级趋势下高端化和平价化两个方向的机会。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 欧洲市场 -->
+    <section id="europe-market" class="imperial-section" data-title="欧洲市场：韧性、监管与多元化格局">
+        <div class="sovereign-container">
+            <h3 class="sovereign-heading text-2xl mb-8">欧洲市场：韧性、监管与多元化格局</h3>
+            
+            <div class="authority-card mb-8">
+                <div class="noble-text">
+                    <p>欧洲零售市场以其多元化、高度监管和可持续发展导向著称。尽管经济增长相对温和，但该市场展现出了强大的韧性和对创新模式的适应能力。</p>
+                    
+                    <h4 class="sovereign-heading text-lg mb-4 mt-8">多国市场的复杂性与机遇</h4>
+                    
+                    <p>欧洲市场的复杂性在于其碎片化的特点。28个欧盟国家加上英国、瑞士等，形成了一个包含多种语言、文化、法律制度和消费偏好的庞大市场。这既带来了跨境运营的挑战，也为能够有效整合资源的零售商创造了规模化的机遇。</p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div class="golden-glass-card">
+                    <div class="flex items-center mb-4">
+                        <i class="material-icons text-sovereign-gold mr-3">eco</i>
+                        <h4 class="sovereign-heading text-lg">可持续发展领先</h4>
+                    </div>
+                    <div class="noble-text">
+                        <p class="text-sm mb-4">欧洲在环保和可持续消费方面全球领先，消费者愿意为环保产品支付溢价。</p>
+                        
+                        <div class="bg-shadow-black p-3 rounded">
+                            <h5 class="text-imperial-gold font-semibold mb-1">循环经济</h5>
+                            <p class="text-xs">二手市场、租赁模式、包装回收等循环经济模式快速发展。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="golden-glass-card">
+                    <div class="flex items-center mb-4">
+                        <i class="material-icons text-sovereign-gold mr-3">gavel</i>
+                        <h4 class="sovereign-heading text-lg">严格监管环境</h4>
+                    </div>
+                    <div class="noble-text">
+                        <p class="text-sm mb-4">GDPR、数字市场法案等严格的监管法规，对零售商的数据使用和商业实践提出高要求。</p>
+                        
+                        <div class="bg-shadow-black p-3 rounded">
+                            <h5 class="text-imperial-gold font-semibold mb-1">合规成本</h5>
+                            <p class="text-xs">高标准的监管要求增加了运营成本，但也提升了行业准入门槛。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="golden-glass-card">
+                    <div class="flex items-center mb-4">
+                        <i class="material-icons text-sovereign-gold mr-3">store</i>
+                        <h4 class="sovereign-heading text-lg">折扣零售强势</h4>
+                    </div>
+                    <div class="noble-text">
+                        <p class="text-sm mb-4">Aldi、Lidl等德国折扣零售商在整个欧洲市场表现强劲，市场份额持续扩大。</p>
+                        
+                        <div class="bg-shadow-black p-3 rounded">
+                            <h5 class="text-imperial-gold font-semibold mb-1">效率模式</h5>
+                            <p class="text-xs">精简SKU、高效供应链、自有品牌策略的成功实践。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investment-logic-card">
+                <h4 class="sovereign-heading text-lg mb-6">关键趋势与投资重点</h4>
+                <div class="noble-text">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h5 class="text-imperial-gold font-semibold mb-3">数字化转型</h5>
+                            <p class="text-sm mb-3">尽管起步较晚，但欧洲电商增长迅速，特别是疫情期间加速了消费者的线上购物习惯形成。</p>
+                            
+                            <div class="bg-shadow-black p-3 rounded">
+                                <p class="text-xs">英国、德国、法国是欧洲电商最发达的市场，而东欧和南欧仍有巨大增长潜力。</p>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h5 class="text-imperial-gold font-semibold mb-3">跨境整合机遇</h5>
+                            <p class="text-sm mb-3">能够实现跨国运营协同、统一品牌管理和供应链整合的零售商将获得显著优势。</p>
+                            
+                            <div class="bg-shadow-black p-3 rounded">
+                                <p class="text-xs">Inditex（Zara）、H&M等快时尚巨头是成功的跨境整合典型案例。</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="mt-6 text-sm">对于投资者而言，欧洲市场提供了相对稳定、监管透明且具备长期增长潜力的投资环境。重点关注能够适应严格ESG要求、具备跨境运营能力和数字化转型能力的欧洲本土或国际零售商。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 政策环境、监管动态与地缘政治风险 -->
+    <section id="chapter6" class="imperial-section" data-title="政策环境、监管动态与地缘政治风险">
+        <div class="sovereign-container">
+            <div class="executive-quote max-w-4xl mx-auto text-center">
+                零售业作为国民经济的重要组成部分，深受各国政策环境和全球地缘政治格局的影响
+            </div>
+            
+            <h2 class="sovereign-heading text-3xl text-center mb-12">政策环境、监管动态与地缘政治风险</h2>
+            
+            <div class="authority-card">
+                <div class="noble-text">
+                    <p>零售业作为国民经济的重要组成部分，深受各国政策环境和全球地缘政治格局的影响。从税收政策到反垄断监管，从贸易争端到供应链安全，这些宏观层面的变化往往会对零售企业的成本结构、竞争格局和增长前景产生深远影响。本章将系统梳理当前主要的政策趋势和地缘政治风险，为投资者提供风险识别和应对策略的参考。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 监管政策的核心趋势 -->
+    <section id="regulatory-trends" class="imperial-section" data-title="监管政策的核心趋势">
+        <div class="sovereign-container">
+            <h3 class="sovereign-heading text-2xl mb-8">监管政策的核心趋势</h3>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-8">
+                <div class="golden-glass-card">
+                    <div class="flex items-center mb-4">
+                        <i class="material-icons text-sovereign-gold mr-3">balance</i>
+                        <h4 class="sovereign-heading text-lg">反垄断与平台监管</h4>
+                    </div>
+                    <div class="noble-text">
+                        <p class="text-sm mb-4">全球范围内对大型科技和零售平台的反垄断审查日趋严格，特别是在数据垄断、不正当竞争等领域。</p>
+                        
+                        <div class="space-y-3">
+                            <div class="bg-shadow-black p-3 rounded">
+                                <h5 class="text-imperial-gold font-semibold mb-1">美国</h5>
+                                <p class="text-xs">FTC和司法部对亚马逊、苹果等科技巨头的反垄断调查持续推进。</p>
+                            </div>
+                            
+                            <div class="bg-shadow-black p-3 rounded">
+                                <h5 class="text-imperial-gold font-semibold mb-1">欧盟</h5>
+                                <p class="text-xs">《数字市场法案》(DMA)对"守门人"平台实施严格监管。</p>
+                            </div>
+                            
+                            <div class="bg-shadow-black p-3 rounded">
+                                <h5 class="text-imperial-gold font-semibold mb-1">中国</h5>
+                                <p class="text-xs">《反垄断法》修订强化对平台经济的规制，多家互联网巨头被处罚。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="golden-glass-card">
+                    <div class="flex items-center mb-4">
+                        <i class="material-icons text-sovereign-gold mr-3">security</i>
+                        <h4 class="sovereign-heading text-lg">数据保护与隐私监管</h4>
+                    </div>
+                    <div class="noble-text">
+                        <p class="text-sm mb-4">数据已成为零售业的核心资产，但各国对数据收集、处理和跨境流动的监管日趋严格。</p>
+                        
+                        <div class="space-y-3">
+                            <div class="bg-shadow-black p-3 rounded">
+                                <h5 class="text-imperial-gold font-semibold mb-1">GDPR影响</h5>
+                                <p class="text-xs">欧盟《通用数据保护条例》已成为全球数据保护的标杆，合规成本显著上升。</p>
+                            </div>
+                            
+                            <div class="bg-shadow-black p-3 rounded">
+                                <h5 class="text-imperial-gold font-semibold mb-1">本土化要求</h5>
+                                <p class="text-xs">多国要求关键数据本地存储，限制跨境数据流动。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investment-logic-card mb-8">
+                <h4 class="sovereign-heading text-lg mb-6">可持续发展与ESG监管</h4>
+                <div class="noble-text">
+                    <p class="mb-6">可持续发展已从道德倡议转变为法律要求，零售企业面临越来越严格的环境和社会责任监管。</p>
+                    
+                    <div class="overflow-x-auto">
+                        <table class="imperial-table">
+                            <thead>
+                                <tr>
+                                    <th>监管领域</th>
+                                    <th>主要要求</th>
+                                    <th>影响</th>
+                                    <th>投资影响</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="font-semibold">供应链透明度</td>
+                                    <td>强制披露供应商ESG表现，追踪产品来源</td>
+                                    <td>增加合规成本和管理复杂度</td>
+                                    <td>有利于管理规范的大型零售商</td>
+                                </tr>
+                                <tr>
+                                    <td class="font-semibold">包装与废料管理</td>
+                                    <td>限制一次性包装，强制回收责任</td>
+                                    <td>包装成本上升，需投资循环经济</td>
+                                    <td>推动包装创新和循环商业模式</td>
+                                </tr>
+                                <tr>
+                                    <td class="font-semibold">碳排放披露</td>
+                                    <td>强制报告碳足迹，设定减排目标</td>
+                                    <td>运营透明度提升，绿色投资增加</td>
+                                    <td>ESG表现优秀企业获得估值溢价</td>
+                                </tr>
+                                <tr>
+                                    <td class="font-semibold">劳工权益保护</td>
+                                    <td>最低工资标准、工时限制、同工同酬</td>
+                                    <td>人力成本上升，用工模式调整</td>
+                                    <td>自动化投资需求增加</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="authority-card">
+                <h4 class="sovereign-heading text-lg mb-6">贸易政策与关税变化</h4>
+                <div class="noble-text">
+                    <p class="mb-4">全球贸易政策的不确定性对零售业供应链和成本结构产生重大影响，特别是对于高度依赖进口商品的零售商。</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h5 class="text-imperial-gold font-semibold mb-3">中美贸易摩擦</h5>
+                            <p class="text-sm mb-3">尽管政府层面关系有所缓解，但结构性竞争仍然存在，关税政策变化影响商品成本。</p>
+                            
+                            <div class="bg-shadow-black p-3 rounded">
+                                <p class="text-xs">服装、电子产品、家具等品类受到的影响最为直接，迫使零售商重新布局供应链。</p>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h5 class="text-imperial-gold font-semibold mb-3">供应链多元化趋势</h5>
+                            <p class="text-sm mb-3">为降低地缘政治风险，零售商加速供应链多元化，向东南亚、拉美等地区转移。</p>
+                            
+                            <div class="bg-shadow-black p-3 rounded">
+                                <p class="text-xs">供应链重构需要大量资本投入和时间，但有助于提升整体韧性。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 未来展望与结构性投资逻辑框架 -->
+    <section id="chapter7" class="imperial-section" data-title="未来展望与结构性投资逻辑框架">
+        <div class="sovereign-container">
+            <div class="executive-quote max-w-4xl mx-auto text-center">
+                站在当前时点展望未来，我们相信全球零售行业将继续沿着数字化、可持续化和个性化的主线演进
+            </div>
+            
+            <h2 class="sovereign-heading text-3xl text-center mb-12">未来展望与结构性投资逻辑框架</h2>
+            
+            <div class="authority-card">
+                <div class="noble-text">
+                    <p>站在当前时点展望未来，我们相信全球零售行业将继续沿着数字化、可持续化和个性化的主线演进，但其发展路径将更加多元化和差异化。本章将构建一个系统性的投资逻辑框架，帮助投资者在复杂多变的市场环境中识别最具潜力的投资机会，同时有效管理相关风险。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 行业未来发展的关键驱动力 -->
+    <section id="future-drivers" class="imperial-section" data-title="行业未来发展的关键驱动力">
+        <div class="sovereign-container">
+            <h3 class="sovereign-heading text-2xl mb-8">行业未来发展的关键驱动力</h3>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div class="golden-glass-card">
+                    <div class="flex items-center mb-4">
+                        <i class="material-icons text-sovereign-gold mr-3">psychology</i>
+                        <h4 class="sovereign-heading text-lg">AI与深度个性化</h4>
+                    </div>
+                    <div class="noble-text">
+                        <p class="text-sm mb-4">人工智能技术的成熟将推动零售业向"超个性化"方向发展，每个消费者都将获得定制化的购物体验。</p>
+                        
+                        <div class="space-y-2">
+                            <div class="bg-shadow-black p-2 rounded">
+                                <p class="text-xs">预测性补货和动态定价将成为标配</p>
+                            </div>
+                            <div class="bg-shadow-black p-2 rounded">
+                                <p class="text-xs">虚拟试衣和AR购物体验普及</p>
+                            </div>
+                            <div class="bg-shadow-black p-2 rounded">
+                                <p class="text-xs">智能推荐算法精准度大幅提升</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="golden-glass-card">
+                    <div class="flex items-center mb-4">
+                        <i class="material-icons text-sovereign-gold mr-3">nature</i>
+                        <h4 class="sovereign-heading text-lg">可持续消费主流化</h4>
+                    </div>
+                    <div class="noble-text">
+                        <p class="text-sm mb-4">可持续发展将从利基需求转向主流消费趋势，重塑整个产业链的价值分配。</p>
+                        
+                        <div class="space-y-2">
+                            <div class="bg-shadow-black p-2 rounded">
+                                <p class="text-xs">循环经济商业模式快速扩张</p>
+                            </div>
+                            <div class="bg-shadow-black p-2 rounded">
+                                <p class="text-xs">绿色供应链成为竞争优势</p>
+                            </div>
+                            <div class="bg-shadow-black p-2 rounded">
+                                <p class="text-xs">"碳中和"品牌获得溢价能力</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="golden-glass-card">
+                    <div class="flex items-center mb-4">
+                        <i class="material-icons text-sovereign-gold mr-3">group</i>
+                        <h4 class="sovereign-heading text-lg">社交零售与社区经济</h4>
+                    </div>
+                    <div class="noble-text">
+                        <p class="text-sm mb-4">社交媒体与电商的深度融合将催生新的零售形态，社区化和内容化成为重要趋势。</p>
+                        
+                        <div class="space-y-2">
+                            <div class="bg-shadow-black p-2 rounded">
+                                <p class="text-xs">直播带货和短视频营销持续进化</p>
+                            </div>
+                            <div class="bg-shadow-black p-2 rounded">
+                                <p class="text-xs">KOL和私域流量价值凸显</p>
+                            </div>
+                            <div class="bg-shadow-black p-2 rounded">
+                                <p class="text-xs">社区团购模式向全球扩散</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investment-logic-card">
+                <h4 class="sovereign-heading text-lg mb-6">新兴技术的商业化应用</h4>
+                <div class="noble-text">
+                    <p class="mb-4">我们预计以下技术将在未来3-5年内在零售领域实现大规模商业化应用：</p>
+                    
+                    <div class="overflow-x-auto">
+                        <table class="imperial-table">
+                            <thead>
+                                <tr>
+                                    <th>技术领域</th>
+                                    <th>应用场景</th>
+                                    <th>预期时间</th>
+                                    <th>投资机会</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="font-semibold">无人零售</td>
+                                    <td>无人超市、智能货柜、自动售货升级</td>
+                                    <td class="exclusive-number">2025-2027</td>
+                                    <td>降低人工成本，提升运营效率</td>
+                                </tr>
+                                <tr>
+                                    <td class="font-semibold">区块链溯源</td>
+                                    <td>食品安全、奢侈品防伪、供应链透明</td>
+                                    <td class="exclusive-number">2026-2028</td>
+                                    <td>提升品牌信任度，满足监管要求</td>
+                                </tr>
+                                <tr>
+                                    <td class="font-semibold">量子计算</td>
+                                    <td>复杂物流优化、精准需求预测</td>
+                                    <td class="exclusive-number">2028-2030</td>
+                                    <td>供应链效率革命性提升</td>
+                                </tr>
+                                <tr>
+                                    <td class="font-semibold">脑机接口</td>
+                                    <td>意识购物、情感分析、需求预测</td>
+                                    <td class="exclusive-number">2030+</td>
+                                    <td>颠覆性的用户体验创新</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 结构性投资逻辑框架 -->
+    <section id="investment-framework" class="imperial-section" data-title="结构性投资逻辑框架">
+        <div class="sovereign-container">
+            <h3 class="sovereign-heading text-2xl mb-8">结构性投资逻辑框架</h3>
+            
+            <div class="authority-card mb-8">
+                <div class="noble-text">
+                    <p>基于前述分析，我们构建了一个多维度的投资逻辑框架，帮助投资者系统性地评估零售行业的投资机会。该框架包含四个核心维度：商业模式韧性、技术创新能力、市场地位强度和ESG可持续性。</p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-8">
+                <div class="golden-glass-card">
+                    <div class="flex items-center mb-4">
+                        <i class="material-icons text-sovereign-gold mr-3">shield</i>
+                        <h4 class="sovereign-heading text-lg">商业模式韧性评估</h4>
+                    </div>
+                    <div class="noble-text">
+                        <h5 class="text-imperial-gold font-semibold mb-3">核心评估要素：</h5>
+                        <div class="space-y-2 text-sm">
+                            <div class="bg-shadow-black p-2 rounded flex items-center">
+                                <span class="exclusive-number text-lg mr-2">1</span>
+                                <p>现金流稳定性和可预测性</p>
+                            </div>
+                            <div class="bg-shadow-black p-2 rounded flex items-center">
+                                <span class="exclusive-number text-lg mr-2">2</span>
+                                <p>抗周期性和防御性特征</p>
+                            </div>
+                            <div class="bg-shadow-black p-2 rounded flex items-center">
+                                <span class="exclusive-number text-lg mr-2">3</span>
+                                <p>多元化程度和地域分布</p>
+                            </div>
+                            <div class="bg-shadow-black p-2 rounded flex items-center">
+                                <span class="exclusive-number text-lg mr-2">4</span>
+                                <p>资产负债表健康度</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="golden-glass-card">
+                    <div class="flex items-center mb-4">
+                        <i class="material-icons text-sovereign-gold mr-3">rocket_launch</i>
+                        <h4 class="sovereign-heading text-lg">技术创新能力</h4>
+                    </div>
+                    <div class="noble-text">
+                        <h5 class="text-imperial-gold font-semibold mb-3">关键指标：</h5>
+                        <div class="space-y-2 text-sm">
+                            <div class="bg-shadow-black p-2 rounded flex items-center">
+                                <span class="exclusive-number text-lg mr-2">1</span>
+                                <p>数字化投资占收入比重</p>
+                            </div>
+                            <div class="bg-shadow-black p-2 rounded flex items-center">
+                                <span class="exclusive-number text-lg mr-2">2</span>
+                                <p>技术人才比例和研发支出</p>
+                            </div>
+                            <div class="bg-shadow-black p-2 rounded flex items-center">
+                                <span class="exclusive-number text-lg mr-2">3</span>
+                                <p>全渠道整合程度</p>
+                            </div>
+                            <div class="bg-shadow-black p-2 rounded flex items-center">
+                                <span class="exclusive-number text-lg mr-2">4</span>
+                                <p>数据资产价值和应用深度</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investment-logic-card mb-8">
+                <h4 class="sovereign-heading text-lg mb-6">投资优先级排序矩阵</h4>
+                <div class="noble-text">
+                    <p class="mb-6">我们将零售企业按照增长潜力和风险水平进行分类，形成四个投资类别：</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-shadow-black p-4 rounded border border-sovereign-gold border-opacity-30">
+                            <h5 class="text-imperial-gold font-semibold mb-2 flex items-center">
+                                <span class="exclusive-number text-2xl mr-2">A</span>
+                                核心持仓型（低风险+稳定增长）
+                            </h5>
+                            <p class="text-sm mb-2">特征：成熟商业模式 + 强大护城河 + 稳定分红</p>
+                            <p class="text-xs text-sterling-silver">代表：沃尔玛、Costco、家得宝等</p>
+                        </div>
+                        
+                        <div class="bg-shadow-black p-4 rounded border border-sovereign-gold border-opacity-30">
+                            <h5 class="text-imperial-gold font-semibold mb-2 flex items-center">
+                                <span class="exclusive-number text-2xl mr-2">B</span>
+                                成长驱动型（中风险+高增长）
+                            </h5>
+                            <p class="text-sm mb-2">特征：技术创新领先 + 新兴市场布局 + 扩张期</p>
+                            <p class="text-xs text-sterling-silver">代表：Shopify、MercadoLibre、Sea Limited等</p>
+                        </div>
+                        
+                        <div class="bg-shadow-black p-4 rounded border border-sovereign-gold border-opacity-30">
+                            <h5 class="text-imperial-gold font-semibold mb-2 flex items-center">
+                                <span class="exclusive-number text-2xl mr-2">C</span>
+                                价值挖掘型（中风险+中增长）
+                            </h5>
+                            <p class="text-sm mb-2">特征：估值偏低 + 转型潜力 + 重组机会</p>
+                            <p class="text-xs text-sterling-silver">代表：传统百货、区域性零售商等</p>
+                        </div>
+                        
+                        <div class="bg-shadow-black p-4 rounded border border-sovereign-gold border-opacity-30">
+                            <h5 class="text-imperial-gold font-semibold mb-2 flex items-center">
+                                <span class="exclusive-number text-2xl mr-2">D</span>
+                                主题投资型（高风险+高潜在回报）
+                            </h5>
+                            <p class="text-sm mb-2">特征：新兴模式 + 颠覆性技术 + 早期阶段</p>
+                            <p class="text-xs text-sterling-silver">代表：无人零售、虚拟现实购物等</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="authority-card">
+                <h4 class="sovereign-heading text-lg mb-6">风险管理与组合配置建议</h4>
+                <div class="noble-text">
+                    <p class="mb-4">鉴于零售行业面临的多重结构性变化，我们建议采用如下组合配置策略：</p>
+                    
+                    <div class="bg-shadow-black p-4 rounded border border-sovereign-gold border-opacity-20">
+                        <h5 class="text-imperial-gold font-semibold mb-3">建议配置比例：</h5>
+                        <div class="grid md:grid-cols-2 gap-4 text-sm">
+                            <div>
+                                <p><span class="exclusive-number">40-50%</span> - 核心持仓型（A类）</p>
+                                <p class="text-xs text-sterling-silver mb-2">提供组合的稳定性和分红收益</p>
+                            </div>
+                            <div>
+                                <p><span class="exclusive-number">25-35%</span> - 成长驱动型（B类）</p>
+                                <p class="text-xs text-sterling-silver mb-2">捕捉行业转型和新兴市场机会</p>
+                            </div>
+                            <div>
+                                <p><span class="exclusive-number">15-25%</span> - 价值挖掘型（C类）</p>
+                                <p class="text-xs text-sterling-silver mb-2">寻找低估值的重组和转型机会</p>
+                            </div>
+                            <div>
+                                <p><span class="exclusive-number">5-10%</span> - 主题投资型（D类）</p>
+                                <p class="text-xs text-sterling-silver mb-2">参与未来颠覆性技术和模式创新</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 结论：拥抱变革，精选赛道 -->
+    <section id="conclusion" class="imperial-section" data-title="结论：拥抱变革，精选赛道">
+        <div class="sovereign-container">
+            <h3 class="sovereign-heading text-2xl mb-8">结论：拥抱变革，精选赛道</h3>
+            
+            <div class="authority-card mb-8">
+                <div class="noble-text">
+                    <p>纵观全球零售行业的发展轨迹，我们正站在一个历史性的变革节点。技术革命、消费升级、可持续发展和地缘政治格局重塑等多重力量的交汇，既带来了前所未有的挑战，也创造了巨大的投资机遇。</p>
+                    
+                    <p class="mt-6">对于专业投资者而言，成功的关键在于深刻理解变革的本质和方向，选择那些能够在变革中脱颖而出的优质企业。我们相信，那些具备强大适应能力、技术创新能力和全球视野的零售企业，将在未来的竞争中获得显著优势，为投资者创造可观的长期回报。</p>
+                </div>
+            </div>
+
+            <div class="golden-glass-card mb-8">
+                <h4 class="sovereign-heading text-lg mb-6">核心投资主题</h4>
+                <div class="noble-text">
+                    <p class="mb-4">基于我们的深度分析，我们识别出以下几个具有长期投资价值的核心主题：</p>
+                    
+                    <div class="grid md:grid-cols-3 gap-4">
+                        <div class="bg-shadow-black p-4 rounded">
+                            <h5 class="text-imperial-gold font-semibold mb-2">数字化领导者</h5>
+                            <p class="text-sm">在AI、大数据、全渠道融合等技术应用方面领先的企业</p>
+                        </div>
+                        
+                        <div class="bg-shadow-black p-4 rounded">
+                            <h5 class="text-imperial-gold font-semibold mb-2">可持续先锋</h5>
+                            <p class="text-sm">在ESG实践、循环经济、绿色供应链方面表现卓越的公司</p>
+                        </div>
+                        
+                        <div class="bg-shadow-black p-4 rounded">
+                            <h5 class="text-imperial-gold font-semibold mb-2">新兴市场掘金者</h5>
+                            <p class="text-sm">能够有效开拓亚洲、拉美等高增长新兴市场的全球化企业</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="disclaimer-card">
+                <h4 class="sovereign-heading text-lg mb-6 text-center">免责声明</h4>
+                <div class="disclaimer-text">
+                    <p>本报告由专业的行业分析师团队编写，旨在为机构投资者和高净值客户提供关于全球一般零售行业的深度分析和投资参考。报告中的所有信息均来源于公开可获得的资料，包括上市公司财报、行业研究报告、政府统计数据、学术研究等权威来源。我们力求确保信息的准确性和完整性，但不对其绝对准确性承担责任。</p>
+                    
+                    <p>本报告仅供信息参考之用，不构成任何形式的投资建议、买卖建议或投资决策依据。任何投资决策都应基于投资者自身的财务状况、投资目标、风险承受能力和独立判断。过往表现不代表未来业绩，投资价值可能会有所波动。投资者应当充分了解相关风险，并在必要时咨询专业的投资顾问。</p>
+                    
+                    <p>对于因使用本报告信息而可能导致的任何直接或间接损失，本公司及报告编制人员不承担任何责任。本报告的版权归本公司所有，未经书面许可，不得以任何形式复制、传播或引用本报告的内容。</p>
+                    
+                    <p class="text-center mt-6">
+                        <strong>投资有风险，入市需谨慎。</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 引用文献 -->
+    <section id="references" class="imperial-section" data-title="引用文献">
+        <div class="sovereign-container">
+            <h3 class="sovereign-heading text-2xl mb-8 text-center">引用文献</h3>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="citation-item">
+                    <a href="https://www.imf.org/en/Publications/WEO" target="_blank">
+                        [1] International Monetary Fund. (2025). World Economic Outlook Database, October 2025.
+                    </a>
+                </div>
+                
+                <div class="citation-item">
+                    <a href="https://www.mckinsey.com/industries/retail/our-insights" target="_blank">
+                        [2] McKinsey & Company. (2025). The State of Fashion 2025: Navigating Uncertainty.
+                    </a>
+                </div>
+                
+                <div class="citation-item">
+                    <a href="https://www.euromonitor.com/global-retailing" target="_blank">
+                        [3] Euromonitor International. (2024). Global Retailing: Key Trends and Developments.
+                    </a>
+                </div>
+                
+                <div class="citation-item">
+                    <a href="https://www.census.gov/retail/marts/www/marts_current.pdf" target="_blank">
+                        [4] U.S. Census Bureau. (2025). Monthly Retail Trade Survey.
+                    </a>
+                </div>
+                
+                <div class="citation-item">
+                    <a href="https://www.statista.com/outlook/dmo/ecommerce/worldwide" target="_blank">
+                        [5] Statista. (2025). eCommerce Market Outlook.
+                    </a>
+                </div>
+                
+                <div class="citation-item">
+                    <a href="https://www.kearney.com/retail" target="_blank">
+                        [6] Kearney. (2024). The Future of Retail: Global Retail Development Index.
+                    </a>
+                </div>
+                
+                <div class="citation-item">
+                    <a href="https://www.bain.com/insights/topic/retail/" target="_blank">
+                        [7] Bain & Company. (2025). Global Luxury Study 2024.
+                    </a>
+                </div>
+                
+                <div class="citation-item">
+                    <a href="https://www.bcg.com/industries/retail-consumer-goods" target="_blank">
+                        [8] Boston Consulting Group. (2024). The Future of Retail Technology.
+                    </a>
+                </div>
+                
+                <div class="citation-item">
+                    <a href="https://www.pwc.com/gx/en/retail-consumer/total-retail.html" target="_blank">
+                        [9] PwC. (2025). Global Total Retail Consumer Survey.
+                    </a>
+                </div>
+                
+                <div class="citation-item">
+                    <a href="https://www.ey.com/en_gl/retail" target="_blank">
+                        [10] Ernst & Young. (2024). Future Consumer Index: How COVID-19 is Changing Consumer Behaviors.
+                    </a>
+                </div>
+                
+                <div class="citation-item">
+                    <a href="https://www.accenture.com/us-en/industries/retail-index" target="_blank">
+                        [11] Accenture. (2025). Retail Technology Vision 2025.
+                    </a>
+                </div>
+                
+                <div class="citation-item">
+                    <a href="https://www.alibaba.com/ir" target="_blank">
+                        [12] Alibaba Group. (2025). Annual Report 2024.
+                    </a>
+                </div>
+                
+                <div class="citation-item">
+                    <a href="https://ir.aboutamazon.com/" target="_blank">
+                        [13] Amazon.com, Inc. (2025). Form 10-K Annual Report 2024.
+                    </a>
+                </div>
+                
+                <div class="citation-item">
+                    <a href="https://stock.walmart.com/" target="_blank">
+                        [14] Walmart Inc. (2025). Annual Report and Proxy Statement 2024.
+                    </a>
+                </div>
+                
+                <div class="citation-item">
+                    <a href="https://www.inditex.com/investors" target="_blank">
+                        [15] Inditex. (2025). Annual Report 2024.
+                    </a>
+                </div>
+                
+                <div class="citation-item">
+                    <a href="https://corporate.target.com/investors" target="_blank">
+                        [16] Target Corporation. (2025). Annual Report 2024.
+                    </a>
+                </div>
+                
+                <div class="citation-item">
+                    <a href="https://www.aena.es/en/shareholders-and-investors/" target="_blank">
+                        [17] Aena S.M.E., S.A. (2025). Annual Report 2024.
+                    </a>
+                </div>
+                
+                <div class="citation-item">
+                    <a href="https://www.msci.com/gics" target="_blank">
+                        [18] MSCI Inc. (2024). Global Industry Classification Standard (GICS) Methodology.
+                    </a>
+                </div>
+                
+                <div class="citation-item">
+                    <a href="https://www.spglobal.com/marketintelligence/en/campaigns/gics" target="_blank">
+                        [19] S&P Global Market Intelligence. (2024). GICS Industry Classification.
+                    </a>
+                </div>
+                
+                <div class="citation-item">
+                    <a href="https://www.worldbank.org/en/publication/global-economic-prospects" target="_blank">
+                        [20] World Bank Group. (2025). Global Economic Prospects, January 2025.
+                    </a>
+                </div>
+                
+                <div class="citation-item">
+                    <a href="https://www.oecd.org/economic-outlook/" target="_blank">
+                        [21] OECD. (2024). Economic Outlook, Volume 2024 Issue 2.
+                    </a>
+                </div>
+                
+                <div class="citation-item">
+                    <a href="https://unctad.org/news/global-trade-outlook-2025" target="_blank">
+                        [22] UNCTAD. (2025). Global Trade Outlook and Statistics.
+                    </a>
+                </div>
+                
+                <div class="citation-item">
+                    <a href="https://www.iata.org/en/publications/economics/" target="_blank">
+                        [23] International Air Transport Association. (2025). Air Cargo Market Analysis.
+                    </a>
+                </div>
+                
+                <div class="citation-item">
+                    <a href="https://www.wto.org/english/res_e/statis_e/wts2024_e/wts2024_e.pdf" target="_blank">
+                        [24] World Trade Organization. (2024). World Trade Statistical Review 2024.
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // 精美垂直进度条系统（支持悬停显示标题 + 点击跳转）
+        const progressBar = document.querySelector('.reading-progress');
+        const progressFill = document.querySelector('.reading-progress-fill');
+        const progressTooltip = document.getElementById('progress-tooltip');
+        const sections = document.querySelectorAll('section[id], header[id]');
+
+        let currentSectionTitle = '';
+        let sectionsData = [];
+
+        // 初始化章节数据
+        function initSections() {
+            sectionsData = Array.from(sections).map(section => ({
+                id: section.getAttribute('id'),
+                title: section.getAttribute('data-title') || section.querySelector('h1, h2')?.textContent || '未知章节',
+                offsetTop: section.offsetTop,
+                offsetHeight: section.offsetHeight
+            }));
+        }
+
+        function updateProgress() {
+            const scrolled = window.pageYOffset;
+            const maxHeight = document.body.scrollHeight - window.innerHeight;
+            const progress = (scrolled / maxHeight) * 100;
+            
+            // 更新垂直进度条填充高度
+            progressFill.style.height = `${progress}%`;
+            
+            // 获取当前章节
+            let currentSection = '';
+            sectionsData.forEach(section => {
+                if (scrolled >= section.offsetTop - 300) {
+                    currentSection = section.id;
+                    currentSectionTitle = section.title;
+                }
+            });
+        }
+
+        // 点击进度条跳转到对应位置
+        progressBar.addEventListener('click', (e) => {
+            const rect = progressBar.getBoundingClientRect();
+            const clickY = e.clientY - rect.top;
+            const progressHeight = rect.height;
+            const clickPercent = clickY / progressHeight;
+            
+            const maxHeight = document.body.scrollHeight - window.innerHeight;
+            const targetScroll = maxHeight * clickPercent;
+            
+            window.scrollTo({
+                top: targetScroll,
+                behavior: 'smooth'
+            });
+        });
+
+        // 鼠标悬停显示当前章节标题
+        progressBar.addEventListener('mouseenter', () => {
+            if (currentSectionTitle) {
+                progressTooltip.textContent = currentSectionTitle;
+                progressTooltip.classList.add('show');
+            }
+        });
+
+        progressBar.addEventListener('mouseleave', () => {
+            progressTooltip.classList.remove('show');
+        });
+
+        // 提示框悬停保持显示
+        progressTooltip.addEventListener('mouseenter', () => {
+            progressTooltip.classList.add('show');
+        });
+
+        progressTooltip.addEventListener('mouseleave', () => {
+            progressTooltip.classList.remove('show');
+        });
+
+        // 窗口大小改变时重新计算章节位置
+        window.addEventListener('resize', () => {
+            setTimeout(initSections, 100);
+        });
+
+        window.addEventListener('scroll', updateProgress);
+
+        // 页面加载完成后初始化
+        window.addEventListener('load', () => {
+            initSections();
+            updateProgress();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,1383 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>电网之锚：全球储能行业系统性投资框架 | 2025年Q3</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@200;300;400;500;600;700;800;900&family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <style>
+        :root {
+            /* 深邃黑金权力色系 */
+            --obsidian-black: #0A0A0A;
+            --midnight-black: #151515;
+            --shadow-black: #1F1F1F;
+            --charcoal-deep: #2A2A2A;
+            
+            /* 稀缺金色层次 */
+            --sovereign-gold: #B8860B;
+            --imperial-gold: #DAA520;
+            --aureate-whisper: #F4E4BC;
+            --golden-shadow: #8B6914;
+            
+            /* 权力灰度 */
+            --platinum-mist: #E5E5E5;
+            --sterling-silver: #C0C0C0;
+            --graphite-steel: #696969;
+            --charcoal-whisper: #808080;
+            
+            /* 稀缺强调色 */
+            --ruby-accent: #8B0000;
+            --emerald-depth: #006400;
+            --sapphire-authority: #1e3a8a;
+        }
+
+        body {
+            background: var(--obsidian-black);
+            color: var(--platinum-mist);
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* 帝王级标题 */
+        .imperial-title {
+            font-family: 'Playfair Display', serif;
+            font-weight: 200;
+            letter-spacing: 0.12em;
+            line-height: 1.05;
+            color: var(--aureate-whisper);
+            text-shadow: 0 3px 12px rgba(184, 134, 11, 0.4);
+        }
+
+        /* 君主级副标题 */
+        .imperial-subtitle {
+            font-family: 'Playfair Display', serif;
+            font-weight: 300;
+            letter-spacing: 0.08em;
+            line-height: 1.15;
+            color: var(--imperial-gold);
+            text-shadow: 0 2px 8px rgba(218, 165, 32, 0.3);
+        }
+
+        /* 英文斜体标签 */
+        .imperial-tagline {
+            font-family: 'Inter', sans-serif;
+            font-weight: 200;
+            letter-spacing: 0.06em;
+            line-height: 1.4;
+            color: var(--sterling-silver);
+            font-style: italic;
+        }
+
+        /* 致敬样式 */
+        .imperial-dedication {
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+            letter-spacing: 0.04em;
+            line-height: 1.3;
+            color: var(--imperial-gold);
+        }
+
+        .imperial-dedication-sub {
+            font-family: 'Inter', sans-serif;
+            font-weight: 200;
+            letter-spacing: 0.05em;
+            line-height: 1.3;
+            color: var(--sterling-silver);
+            font-style: italic;
+        }
+
+        /* 权威标题 */
+        .sovereign-heading {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            color: var(--imperial-gold);
+            text-shadow: 0 1px 4px rgba(218, 165, 32, 0.4);
+        }
+
+        /* 贵族正文 */
+        .noble-text {
+            font-weight: 300;
+            letter-spacing: 0.03em;
+            line-height: 2.2;
+            color: var(--platinum-mist);
+        }
+
+        /* 引用文字 */
+        .executive-quote {
+            font-weight: 300;
+            letter-spacing: 0.02em;
+            line-height: 1.8;
+            color: var(--sterling-silver);
+            font-size: 0.95rem;
+            font-style: italic;
+            position: relative;
+            padding: 0 2rem;
+            margin: 2rem 0;
+        }
+
+        .executive-quote::before {
+            content: '"';
+            position: absolute;
+            left: 0;
+            top: -0.5rem;
+            font-size: 3rem;
+            color: var(--sovereign-gold);
+            opacity: 0.3;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .executive-quote::after {
+            content: '"';
+            position: absolute;
+            right: 0;
+            bottom: -0.5rem;
+            font-size: 3rem;
+            color: var(--sovereign-gold);
+            opacity: 0.3;
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* 专属数字 */
+        .exclusive-number {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: var(--sovereign-gold);
+            text-shadow: 0 1px 3px rgba(184, 134, 11, 0.5);
+        }
+
+        /* 君主容器 */
+        .sovereign-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 5rem;
+        }
+
+        /* 帝王区块 */
+        .imperial-section {
+            margin: 12rem 0;
+            position: relative;
+        }
+
+        /* 权威卡片 */
+        .authority-card {
+            background: linear-gradient(145deg, 
+                rgba(21, 21, 21, 0.9) 0%, 
+                rgba(31, 31, 31, 0.8) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.15);
+            border-radius: 2px;
+            padding: 3rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            box-shadow: 
+                0 8px 32px rgba(0, 0, 0, 0.6),
+                inset 0 1px 1px rgba(244, 228, 188, 0.05);
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .authority-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(184, 134, 11, 0.3);
+            box-shadow: 
+                0 16px 48px rgba(0, 0, 0, 0.8),
+                0 0 24px rgba(184, 134, 11, 0.1),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08);
+        }
+
+        .authority-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(90deg, var(--sovereign-gold), transparent);
+            opacity: 0.6;
+        }
+
+        .authority-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(270deg, var(--sovereign-gold), transparent);
+            opacity: 0.6;
+        }
+
+        /* 金色琉璃卡片 */
+        .golden-glass-card {
+            background: 
+                radial-gradient(circle at 30% 30%, rgba(218, 165, 32, 0.12) 0%, transparent 50%),
+                radial-gradient(circle at 70% 70%, rgba(184, 134, 11, 0.08) 0%, transparent 50%),
+                linear-gradient(135deg, 
+                    rgba(244, 228, 188, 0.06) 0%, 
+                    rgba(218, 165, 32, 0.04) 30%,
+                    rgba(184, 134, 11, 0.03) 70%,
+                    rgba(139, 105, 20, 0.02) 100%);
+            border: 1px solid rgba(218, 165, 32, 0.15);
+            border-radius: 4px;
+            padding: 2.5rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            box-shadow: 
+                0 8px 32px rgba(0, 0, 0, 0.6),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08),
+                inset 0 0 30px rgba(218, 165, 32, 0.03);
+            transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .golden-glass-card::before {
+            content: '';
+            position: absolute;
+            inset: -1px;
+            background: linear-gradient(45deg, 
+                rgba(218, 165, 32, 0.2) 0%, 
+                rgba(184, 134, 11, 0.1) 25%,
+                transparent 50%,
+                rgba(244, 228, 188, 0.1) 75%,
+                rgba(218, 165, 32, 0.15) 100%);
+            border-radius: 4px;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.8s ease;
+        }
+
+        .golden-glass-card:hover {
+            transform: translateY(-3px);
+            border-color: rgba(218, 165, 32, 0.3);
+            box-shadow: 
+                0 16px 48px rgba(0, 0, 0, 0.8),
+                0 0 40px rgba(218, 165, 32, 0.1),
+                inset 0 1px 1px rgba(244, 228, 188, 0.12),
+                inset 0 0 40px rgba(218, 165, 32, 0.05);
+        }
+
+        .golden-glass-card:hover::before {
+            opacity: 1;
+        }
+
+        /* 表格 */
+        .imperial-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            background: rgba(15, 15, 15, 0.8);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(184, 134, 11, 0.2);
+            border-radius: 2px;
+        }
+
+        .imperial-table th {
+            background: rgba(184, 134, 11, 0.08);
+            padding: 2rem 1.5rem;
+            text-align: left;
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--imperial-gold);
+            border-bottom: 1px solid rgba(184, 134, 11, 0.2);
+        }
+
+        .imperial-table td {
+            padding: 1.8rem 1.5rem;
+            border-bottom: 1px solid rgba(184, 134, 11, 0.05);
+            font-weight: 300;
+        }
+
+        .imperial-table tbody tr:hover {
+            background: rgba(184, 134, 11, 0.03);
+        }
+
+        /* 分隔线 */
+        .sovereign-divider {
+            height: 1px;
+            background: linear-gradient(90deg, 
+                transparent 0%, 
+                rgba(184, 134, 11, 0.3) 30%, 
+                rgba(184, 134, 11, 0.6) 50%, 
+                rgba(184, 134, 11, 0.3) 70%, 
+                transparent 100%);
+            margin: 8rem 0;
+            position: relative;
+        }
+
+        .sovereign-divider::before {
+            content: '◆';
+            position: absolute;
+            top: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--sovereign-gold);
+            font-size: 16px;
+            background: var(--obsidian-black);
+            padding: 0 1rem;
+        }
+
+        /* 垂直进度条 */
+        .reading-progress {
+            position: fixed;
+            top: 50%;
+            right: 2rem;
+            width: 4px;
+            height: 200px;
+            transform: translateY(-50%);
+            background: linear-gradient(180deg, 
+                rgba(184, 134, 11, 0.2) 0%, 
+                rgba(218, 165, 32, 0.3) 30%,
+                rgba(244, 228, 188, 0.4) 60%,
+                rgba(218, 165, 32, 0.3) 85%,
+                rgba(139, 105, 20, 0.2) 100%);
+            z-index: 1001;
+            box-shadow: 
+                0 0 12px rgba(184, 134, 11, 0.6),
+                2px 0 8px rgba(184, 134, 11, 0.3),
+                inset 1px 0 2px rgba(244, 228, 188, 0.4);
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+        .reading-progress::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(180deg,
+                rgba(244, 228, 188, 0.1) 0%,
+                rgba(218, 165, 32, 0.15) 50%,
+                rgba(244, 228, 188, 0.1) 100%);
+            border-radius: 2px;
+            animation: progressShimmer 3s ease-in-out infinite;
+        }
+
+        .reading-progress-fill {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(180deg,
+                var(--golden-shadow) 0%,
+                var(--sovereign-gold) 50%,
+                var(--imperial-gold) 100%);
+            border-radius: 2px;
+            transition: height 0.1s ease;
+            box-shadow: 
+                inset 0 1px 2px rgba(244, 228, 188, 0.3),
+                0 0 8px rgba(184, 134, 11, 0.4);
+        }
+
+        @keyframes progressShimmer {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.8; }
+        }
+
+        /* 进度标题提示器 */
+        .progress-tooltip {
+            position: fixed;
+            top: 50%;
+            right: 7rem;
+            transform: translateY(-50%);
+            background: linear-gradient(135deg, 
+                rgba(15, 15, 15, 0.95) 0%, 
+                rgba(31, 31, 31, 0.9) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.25);
+            border-radius: 8px;
+            padding: 0.8rem 2rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 0.85rem;
+            font-weight: 300;
+            color: var(--imperial-gold);
+            backdrop-filter: blur(20px);
+            box-shadow: 
+                0 8px 32px rgba(0, 0, 0, 0.7),
+                0 0 20px rgba(184, 134, 11, 0.1),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+            z-index: 1002;
+            white-space: nowrap;
+            letter-spacing: 0.03em;
+        }
+
+        .progress-tooltip.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(-50%) translateX(-8px);
+        }
+
+        .progress-tooltip::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -8px;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-left: 8px solid rgba(184, 134, 11, 0.25);
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+        }
+
+        .progress-tooltip::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -7px;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-left: 7px solid rgba(15, 15, 15, 0.95);
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+        }
+
+        /* 引用文献 */
+        .citation-item {
+            padding: 1.5rem 2rem;
+            margin: 0.8rem 0;
+            background: linear-gradient(135deg, 
+                rgba(21, 21, 21, 0.8) 0%, 
+                rgba(31, 31, 31, 0.6) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.15);
+            border-radius: 3px;
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .citation-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--sovereign-gold), var(--golden-shadow));
+            opacity: 0.6;
+            transition: opacity 0.3s ease;
+        }
+
+        .citation-item:hover {
+            border-color: rgba(184, 134, 11, 0.4);
+            background: linear-gradient(135deg, 
+                rgba(31, 31, 31, 0.9) 0%, 
+                rgba(42, 42, 42, 0.7) 100%);
+            transform: translateX(6px) translateY(-1px);
+            box-shadow: 
+                0 8px 25px rgba(0, 0, 0, 0.5),
+                0 0 20px rgba(184, 134, 11, 0.08);
+        }
+
+        .citation-item:hover::before {
+            opacity: 1;
+        }
+
+        .citation-item a {
+            color: var(--platinum-mist);
+            text-decoration: none;
+            font-size: 0.85rem;
+            line-height: 1.7;
+            font-weight: 300;
+            transition: color 0.4s ease;
+            display: block;
+            position: relative;
+        }
+
+        .citation-item a::before {
+            content: '';
+            position: absolute;
+            left: -0.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 4px;
+            background: var(--sovereign-gold);
+            border-radius: 50%;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .citation-item:hover a {
+            color: var(--aureate-whisper);
+            padding-left: 1rem;
+        }
+
+        .citation-item:hover a::before {
+            opacity: 0.8;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 1024px) {
+            .sovereign-container {
+                padding: 0 2.5rem;
+            }
+            .imperial-section {
+                margin: 8rem 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .sovereign-container {
+                padding: 0 1.5rem;
+            }
+            .imperial-section {
+                margin: 6rem 0;
+            }
+            .authority-card {
+                padding: 2rem;
+            }
+            .reading-progress {
+                right: 1rem;
+                height: 150px;
+                width: 3px;
+            }
+            .progress-tooltip {
+                right: 5rem;
+                padding: 0.6rem 1.5rem;
+                font-size: 0.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 垂直进度条 -->
+    <div class="reading-progress">
+        <div class="reading-progress-fill"></div>
+    </div>
+    
+    <!-- 进度标题提示器 -->
+    <div class="progress-tooltip" id="progress-tooltip"></div>
+
+    <!-- 首屏标题 -->
+    <header id="header" class="min-h-screen flex items-center justify-center relative" data-title="电网之锚：全球储能行业系统性投资框架">
+        <div class="sovereign-container text-center relative z-10">
+            <!-- 主标题区域 -->
+            <div class="mb-16">
+                <h1 class="imperial-title text-4xl md:text-6xl mb-6">
+                    电网之锚：全球储能行业系统性投资框架
+                </h1>
+                
+                <h2 class="imperial-subtitle text-2xl md:text-4xl mb-12 opacity-90">
+                    储能设备行业研究报告 2025年Q3
+                </h2>
+            </div>
+            
+            <!-- 英文副标题 -->
+            <div class="mb-12">
+                <div class="imperial-tagline text-sm md:text-base opacity-75 max-w-4xl mx-auto">
+                    The Grid's Anchor: A Systematic Investment Framework for the Global Energy Storage Industry<br class="md:hidden">
+                    Energy Storage Equipment Industry Research Report Q3 2025
+                </div>
+            </div>
+            
+            <!-- 致敬区域 -->
+            <div class="mb-16">
+                <div class="imperial-dedication text-sm md:text-base">
+                    致：机构投资者与高净值客户
+                </div>
+                <div class="imperial-dedication-sub text-xs md:text-sm opacity-60 mt-2">
+                    For: Institutional Investors and High Net Worth Clients
+                </div>
+            </div>
+            
+            <!-- 发布日期卡片 -->
+            <div class="golden-glass-card inline-block">
+                <div class="text-xs uppercase tracking-[0.2em] opacity-50 mb-4 font-light">
+                    本报告发布于 · Published on
+                </div>
+                <div class="sovereign-heading text-base">
+                    <span id="date-cn" class="exclusive-number">2025年9月</span> 
+                    <span class="mx-4 text-sovereign-gold opacity-40">◆</span> 
+                    <span id="date-en" class="exclusive-number">September 2025</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 背景装饰 -->
+        <div class="absolute inset-0 pointer-events-none opacity-8">
+            <div class="absolute top-20 left-20 w-px h-32 bg-gradient-to-b from-sovereign-gold to-transparent"></div>
+            <div class="absolute bottom-20 right-20 w-px h-32 bg-gradient-to-t from-sovereign-gold to-transparent"></div>
+            <div class="absolute top-1/2 left-1/4 w-24 h-px bg-gradient-to-r from-sovereign-gold to-transparent"></div>
+            <div class="absolute top-1/3 right-1/4 w-24 h-px bg-gradient-to-l from-sovereign-gold to-transparent"></div>
+        </div>
+    </header>
+
+    <!-- 执行摘要 -->
+    <section id="executive-summary" class="imperial-section" data-title="执行摘要：储能行业的根本性转变">
+        <div class="sovereign-container">
+            <div class="authority-card">
+                <h2 class="sovereign-heading text-3xl mb-8 text-center">
+                    <i class="material-icons mr-4" style="vertical-align: middle;">battery_charging_full</i>
+                    执行摘要：储能行业的根本性转变
+                </h2>
+                
+                <div class="executive-quote max-w-4xl mx-auto text-center mb-12">
+                    储能行业正在经历一场根本性转变，从昔日"清洁技术"的边缘组件，演变为今日电网不可或缺的关键基础设施资产。这一转变的核心驱动力，源于高比例可再生能源并网时代下，电网稳定性已成为一项不容妥协的刚性需求。
+                </div>
+
+                <div class="noble-text space-y-8">
+                    <div>
+                        <h3 class="sovereign-heading text-xl mb-4">
+                            <i class="material-icons mr-3" style="vertical-align: middle;">trending_up</i>
+                            空前增长
+                        </h3>
+                        <p>全球储能装机量预计将在2035年前以超过14%的复合年增长率（CAGR）持续扩张，累计装机容量有望在2030年突破<strong class="exclusive-number">1太瓦时（TWh）</strong>。然而，这种增长并非均衡分布，而是在中国（政策强制驱动）、美国（财政激励驱动）和欧洲（能源安全驱动）形成了各具特色的区域性投资图景。</p>
+                    </div>
+                    
+                    <div>
+                        <h3 class="sovereign-heading text-xl mb-4">
+                            <i class="material-icons mr-3" style="vertical-align: middle;">link_off</i>
+                            价值链分化
+                        </h3>
+                        <p>行业价值链正沿着地缘政治的脉络出现分化。中国企业凭借其规模与成本优势，在全球储能产业链的上游（电芯）和中游（核心部件、系统集成）占据主导地位。与此同时，美国市场在《通胀削减法案》（IRA）的引导下，正逐步构建一个受保护的本土生态系统，为"美国制造"的本土化产品创造了溢价空间。</p>
+                    </div>
+                    
+                    <div>
+                        <h3 class="sovereign-heading text-xl mb-4">
+                            <i class="material-icons mr-3" style="vertical-align: middle;">settings</i>
+                            价值向软件与算法迁移
+                        </h3>
+                        <p>随着硬件设备日益商品化，行业的核心价值（Alpha）正从硬件制造向软件赋能的能力迁移。这包括复杂的能源套利算法、精密的风险管理能力，以及在多元化的电力市场中实现多重收益叠加的商业模式创新。</p>
+                    </div>
+                    
+                    <div>
+                        <h3 class="sovereign-heading text-xl mb-4">
+                            <i class="material-icons mr-3" style="vertical-align: middle;">lightbulb</i>
+                            新兴技术商业化在即
+                        </h3>
+                        <p>尽管磷酸铁锂（LFP）电池仍是当前市场的主力技术，但为满足电网长时调节需求及供应链多元化的考量，全钒液流、钠离子等长时储能技术已接近商业化应用的拐点，预示着新一轮的技术迭代与投资机遇。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 全球储能市场爆发式增长 -->
+    <section id="global-market-growth" class="imperial-section" data-title="全球储能势在必行：高歌猛进的市场">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-4xl mb-16 text-center">
+                <i class="material-icons mr-4" style="vertical-align: middle;">bolt</i>
+                全球储能势在必行：高歌猛进的市场
+            </h2>
+
+            <div class="authority-card mb-12">
+                <h3 class="sovereign-heading text-2xl mb-8">
+                    <i class="material-icons mr-3" style="vertical-align: middle;">speed</i>
+                    部署的引爆点：量化全球市场的爆发式增长
+                </h3>
+                
+                <div class="noble-text mb-8">
+                    全球储能市场正经历从利基市场向主流能源资产的指数级扩张。彭博新能源财经（BNEF）预测，到2035年，全球储能市场将以<strong class="exclusive-number">14.7%</strong>的复合年增长率持续增长，当年新增装机容量将达到<strong class="exclusive-number">220 GW/972 GWh</strong>。
+                </div>
+
+                <div class="noble-text">
+                    2024年的实际数据印证了这一超高速增长趋势。全球新型储能（非抽水蓄能）新增装机规模达到<strong class="exclusive-number">79.2 GW/188.5 GWh</strong>，以能量（GWh）计，同比增长高达<strong class="exclusive-number">82.1%</strong>。
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="material-icons mr-3" style="vertical-align: middle;">flag</i>
+                        中国：政策强制，全链主导
+                    </h3>
+                    <div class="noble-text">
+                        中国是全球规模最大、增长最快的储能市场，2024年新增装机容量占全球总量的<strong class="exclusive-number">40%</strong>以上。截至2024年底，中国新型储能累计装机规模达到<strong class="exclusive-number">73.76 GW/168 GWh</strong>，同比增幅高达<strong class="exclusive-number">130%</strong>。市场增长主要由地方政府的强制性政策驱动，即要求新建的大型风电和光伏项目必须配置一定比例和时长的储能容量。
+                    </div>
+                </div>
+
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="material-icons mr-3" style="vertical-align: middle;">stars</i>
+                        美国：IRA激励，市场驱动
+                    </h3>
+                    <div class="noble-text">
+                        美国市场在2024年同样创下历史新高，全场景新增装机达到<strong class="exclusive-number">12.3 GW/37.1 GWh</strong>，同比增长33%。IRA是推动美国储能市场发展的最核心催化剂，该法案首次为独立储能项目提供了投资税收抵免（ITC），设定了<strong class="exclusive-number">30%</strong>的基础抵免额度，并可通过满足"本土制造"等条件获得额外奖金。
+                    </div>
+                </div>
+
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-xl mb-6">
+                        <i class="material-icons mr-3" style="vertical-align: middle;">security</i>
+                        欧洲：能源安全，多元并进
+                    </h3>
+                    <div class="noble-text">
+                        在能源危机和REPowerEU计划的双重推动下，欧洲市场正迎头赶上。2024年，欧洲新增电池储能系统（BESS）装机<strong class="exclusive-number">21.9 GWh</strong>，使其总容量达到<strong class="exclusive-number">61.1 GWh</strong>，并预计到2029年将增长六倍，接近<strong class="exclusive-number">120 GWh</strong>。目前市场由德国、意大利和英国主导，三国合计占2024年新增容量的近70%。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 解构价值链 -->
+    <section id="value-chain" class="imperial-section" data-title="解构价值链：利润与风险的归属">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-4xl mb-16 text-center">
+                <i class="material-icons mr-4" style="vertical-align: middle;">account_tree</i>
+                解构价值链：利润与风险的归属
+            </h2>
+
+            <div class="authority-card mb-12">
+                <h3 class="sovereign-heading text-2xl mb-8">
+                    <i class="material-icons mr-3" style="vertical-align: middle;">hub</i>
+                    产业架构：价值创造地图
+                </h3>
+                
+                <div class="grid lg:grid-cols-3 gap-6">
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">上游：原材料</h4>
+                        <div class="noble-text text-sm">
+                            主要为原材料的开采与加工，如碳酸锂、五氧化二钒等
+                        </div>
+                    </div>
+
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">中游：核心部件</h4>
+                        <div class="noble-text text-sm">
+                            电芯与电池包（成本占比50-60%）、储能变流器PCS（15-20%）、电池管理系统BMS（5%）、能量管理系统EMS
+                        </div>
+                    </div>
+
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">下游：系统集成</h4>
+                        <div class="noble-text text-sm">
+                            系统集成、安装以及在发电侧、电网侧和用户侧的最终应用
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="authority-card">
+                <h3 class="sovereign-heading text-2xl mb-8">
+                    <i class="material-icons mr-3" style="vertical-align: middle;">psychology</i>
+                    系统之心：电池技术与经济性
+                </h3>
+                
+                <div class="overflow-x-auto">
+                    <table class="imperial-table">
+                        <thead>
+                            <tr>
+                                <th>技术路线</th>
+                                <th>度电储能成本 (LCOS, 美元/MWh)</th>
+                                <th>典型储能时长 (小时)</th>
+                                <th>循环寿命 (80% DoD)</th>
+                                <th>往返效率 (RTE)</th>
+                                <th>核心优势</th>
+                                <th>商业化成熟度</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-semibold">磷酸铁锂 (LFP)</td>
+                                <td class="exclusive-number">124 - 226</td>
+                                <td class="exclusive-number">2 - 4</td>
+                                <td class="exclusive-number">> 6,000 - 10,000</td>
+                                <td class="exclusive-number">~90-95%</td>
+                                <td>供应链成熟、成本效益高</td>
+                                <td>高</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">钠离子 (Na-Ion)</td>
+                                <td class="exclusive-number">较LFP低~20% (预期)</td>
+                                <td class="exclusive-number">2 - 4</td>
+                                <td class="exclusive-number">> 4,000 (当前)</td>
+                                <td class="exclusive-number">~90%</td>
+                                <td>原材料丰富、低温性能好</td>
+                                <td>中/新兴</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">全钒液流 (VRFB)</td>
+                                <td class="exclusive-number">视时长而定，长时更优</td>
+                                <td class="exclusive-number">6 - 12+</td>
+                                <td class="exclusive-number">> 10,000 - 20,000</td>
+                                <td class="exclusive-number">~70-80%</td>
+                                <td>长时、长寿命、本质安全</td>
+                                <td>中</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 竞争格局 -->
+    <section id="competitive-landscape" class="imperial-section" data-title="竞争的角斗场：市场结构与核心玩家">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-4xl mb-16 text-center">
+                <i class="material-icons mr-4" style="vertical-align: middle;">emoji_events</i>
+                竞争的角斗场：市场结构与核心玩家
+            </h2>
+
+            <div class="authority-card mb-12">
+                <h3 class="sovereign-heading text-2xl mb-8">
+                    <i class="material-icons mr-3" style="vertical-align: middle;">groups</i>
+                    系统集成商的竞技场：两个平行的市场
+                </h3>
+                
+                <div class="noble-text mb-8">
+                    全球BESS系统集成市场竞争激烈。根据Wood Mackenzie的2024年排名，<strong>特斯拉（Tesla）</strong>以15%的市场份额位居全球第一，中国企业<strong>阳光电源（Sungrow）</strong>以14%的份额紧随其后，<strong>中车株洲所（CRRC）</strong>以8%位列第三。值得注意的是，全球前十的系统集成商中，已有七家来自中国。
+                </div>
+
+                <div class="overflow-x-auto">
+                    <table class="imperial-table">
+                        <thead>
+                            <tr>
+                                <th>排名</th>
+                                <th>系统集成商</th>
+                                <th>全球市场份额 (2024)</th>
+                                <th>北美市场份额 (2024)</th>
+                                <th>欧洲市场份额 (2024)</th>
+                                <th>总部所在地</th>
+                                <th>核心竞争优势</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="exclusive-number">1</td>
+                                <td class="font-semibold">Tesla</td>
+                                <td class="exclusive-number">15%</td>
+                                <td class="exclusive-number">39%</td>
+                                <td class="exclusive-number">Top 3</td>
+                                <td>美国</td>
+                                <td>垂直整合、品牌、软件生态</td>
+                            </tr>
+                            <tr>
+                                <td class="exclusive-number">2</td>
+                                <td class="font-semibold">Sungrow</td>
+                                <td class="exclusive-number">14%</td>
+                                <td class="exclusive-number">10%</td>
+                                <td class="exclusive-number">21% (第一)</td>
+                                <td>中国</td>
+                                <td>PCS技术领先、成本优势、全球渠道</td>
+                            </tr>
+                            <tr>
+                                <td class="exclusive-number">3</td>
+                                <td class="font-semibold">CRRC</td>
+                                <td class="exclusive-number">8%</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>中国</td>
+                                <td>央企背景、国内市场主导</td>
+                            </tr>
+                            <tr>
+                                <td class="exclusive-number">4</td>
+                                <td class="font-semibold">Envision</td>
+                                <td class="exclusive-number">Top 5</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>中国</td>
+                                <td>风光储协同、智慧能源解决方案</td>
+                            </tr>
+                            <tr>
+                                <td class="exclusive-number">5</td>
+                                <td class="font-semibold">Fluence</td>
+                                <td class="exclusive-number">Top 5</td>
+                                <td class="exclusive-number">Top 5</td>
+                                <td class="exclusive-number">Top 5</td>
+                                <td>美国</td>
+                                <td>软件与服务、可融资性、全球经验</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="authority-card">
+                <h3 class="sovereign-heading text-2xl mb-8">
+                    <i class="material-icons mr-3" style="vertical-align: middle;">battery_3_bar</i>
+                    电芯霸权：中国主导地位的基石
+                </h3>
+                
+                <div class="noble-text mb-6">
+                    储能供应链的根基在于电芯制造，而这一环节几乎由中国企业完全掌控。2024年，中国企业储能电池出货量占全球总量的<strong class="exclusive-number">96%</strong>。
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-6">
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">宁德时代（CATL）</h4>
+                        <div class="noble-text text-sm">
+                            无可争议的全球霸主，2024年储能电池出货量达110 GWh，市场份额高达41%，是其最接近竞争对手的三倍
+                        </div>
+                    </div>
+
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">其他主要中国厂商</h4>
+                        <div class="noble-text text-sm">
+                            亿纬锂能（EVE）、海辰储能（Hithium）和比亚迪（BYD）等，相比之下，松下、LG等日韩企业的市场份额正不断萎缩
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 商业模式与价值变现 -->
+    <section id="business-models" class="imperial-section" data-title="商业模式与价值变现：捕获灵活性的价值">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-4xl mb-16 text-center">
+                <i class="material-icons mr-4" style="vertical-align: middle;">monetization_on</i>
+                商业模式与价值变现：捕获灵活性的价值
+            </h2>
+
+            <div class="authority-card mb-12">
+                <h3 class="sovereign-heading text-2xl mb-8">
+                    <i class="material-icons mr-3" style="vertical-align: middle;">timeline</i>
+                    演变的收入栈：从辅助服务到能量套利
+                </h3>
+                
+                <div class="noble-text mb-8">
+                    历史上，BESS的收入主要来自于提供电网辅助服务，如调频。这类服务通常按可用容量付费，收入相对稳定。然而，随着储能装机在德州（ERCOT）和加州（CAISO）等市场的激增，辅助服务市场的供给大幅增加，导致价格被严重压缩。
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-6">
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">传统收入来源</h4>
+                        <div class="noble-text text-sm">
+                            辅助服务市场：在ERCOT，辅助服务收入占比从2023年的85%急剧下降
+                        </div>
+                    </div>
+
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">新兴主导模式</h4>
+                        <div class="noble-text text-sm">
+                            能量套利：2025年6月已占ERCOT储能收入的76%，而一年前该比例仅为25%
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="authority-card mb-12">
+                <h3 class="sovereign-heading text-2xl mb-8">
+                    <i class="material-icons mr-3" style="vertical-align: middle;">shield</i>
+                    对冲商业风险：新型合同结构的兴起
+                </h3>
+                
+                <div class="noble-text mb-6">
+                    收入模式向高波动性的商业套利转型，给项目融资带来了巨大挑战。为解决这一矛盾，<strong>容量租赁协议（Tolling Agreements）</strong>应运而生，成为关键的风险对冲工具。
+                </div>
+
+                <div class="noble-text">
+                    在该协议下，储能资产所有者将其电池容量"租赁"给一个承租方（通常是电力公司或能源交易商），以换取固定的、定期的租金。承租方承担全部市场风险和运营控制权，其目标是通过市场操作获得的收益超过支付给所有者的租金。
+                </div>
+            </div>
+
+            <div class="authority-card">
+                <h3 class="sovereign-heading text-2xl mb-8">
+                    <i class="material-icons mr-3" style="vertical-align: middle;">electrical_services</i>
+                    未来已来：虚拟电厂（VPPs）
+                </h3>
+                
+                <div class="noble-text mb-6">
+                    虚拟电厂（VPP）是将海量的分布式能源（DERs）——如户用光伏储能、电动汽车充电桩、智能恒温器等——通过先进的控制技术聚合起来，作为一个统一的、可调度的整体参与电网运行。
+                </div>
+
+                <div class="noble-text">
+                    VPP能够以比传统方案（如燃气调峰电厂）低<strong class="exclusive-number">40-60%</strong>的成本，提供与大型储能电站相同的电网服务。美国能源部（DOE）的《Liftoff》报告预测，到2030年，美国VPP的规模可达<strong class="exclusive-number">80-160 GW</strong>，每年为电网节省约<strong class="exclusive-number">100亿美元</strong>的成本。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 战略展望与投资逻辑 -->
+    <section id="strategic-outlook" class="imperial-section" data-title="战略展望：投资逻辑与风险评估">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-4xl mb-16 text-center">
+                <i class="material-icons mr-4" style="vertical-align: middle;">insights</i>
+                战略展望：投资逻辑与风险评估
+            </h2>
+
+            <div class="authority-card mb-12">
+                <h3 class="sovereign-heading text-2xl mb-8">
+                    <i class="material-icons mr-3" style="vertical-align: middle;">strategy</i>
+                    核心投资逻辑
+                </h3>
+                
+                <div class="grid lg:grid-cols-2 gap-6">
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">投资于地缘政治套利</h4>
+                        <div class="noble-text text-sm">
+                            全球市场的二元化格局创造了明确的投资机会。应重点关注那些将从北美供应链"友岸外包"中受益的公司，包括受益于IRA本土制造条款的美国本土企业
+                        </div>
+                    </div>
+
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">投资于电网现代化的"卖铲人"</h4>
+                        <div class="noble-text text-sm">
+                            随着储能系统日益复杂，应投资于那些跨平台、不可或缺的关键技术供应商。这包括具备构网型（GFM）能力的先进PCS制造商，以及技术领先的BMS和EMS软件平台开发商
+                        </div>
+                    </div>
+
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">投资于"交易台"而非仅仅是"发电厂"</h4>
+                        <div class="noble-text text-sm">
+                            鉴于价值正从硬件向价值变现环节转移，应关注那些在能源交易和风险管理方面已证明其卓越能力的公司。这可以是专业的VPP运营商或优异的系统集成商
+                        </div>
+                    </div>
+
+                    <div class="golden-glass-card">
+                        <h4 class="sovereign-heading text-lg mb-4">布局长时储能的远期价值</h4>
+                        <div class="noble-text text-sm">
+                            尽管尚处早期，但长时储能是实现高比例可再生能源并网的必然要求。可对全钒液流、钠离子等有前景的技术路线进行战略性的早期投资
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="authority-card">
+                <h3 class="sovereign-heading text-2xl mb-8">
+                    <i class="material-icons mr-3" style="vertical-align: middle;">warning</i>
+                    风险矩阵：结构化评估
+                </h3>
+                
+                <div class="overflow-x-auto">
+                    <table class="imperial-table">
+                        <thead>
+                            <tr>
+                                <th>风险类别</th>
+                                <th>风险等级</th>
+                                <th>具体描述</th>
+                                <th>影响评估</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-semibold">政策与监管风险</td>
+                                <td class="exclusive-number">高</td>
+                                <td>行业增长在很大程度上依赖于政策支持（IRA、REPowerEU、中国强制配储）</td>
+                                <td>对行业增长轨迹构成最重大风险</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">地缘政治与供应链风险</td>
+                                <td class="exclusive-number">高</td>
+                                <td>对中国在电芯和精炼材料方面的严重依赖</td>
+                                <td>可能严重扰乱西方市场供应链</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">利润压缩与竞争风险</td>
+                                <td class="exclusive-number">高</td>
+                                <td>全球范围内的激烈竞争正在压缩硬件的价格和利润空间</td>
+                                <td>缺乏差异化的公司面临商品化风险</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">原材料价格波动风险</td>
+                                <td class="exclusive-number">中到高</td>
+                                <td>锂、钒等关键原材料的价格波动会显著影响项目经济性</td>
+                                <td>关键敏感性因素</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">技术与迭代风险</td>
+                                <td class="exclusive-number">中</td>
+                                <td>钠离子、固态电池或其他液流电池技术的快速创新</td>
+                                <td>可能颠覆现有技术格局</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">安全与运营风险</td>
+                                <td class="exclusive-number">中</td>
+                                <td>电池热失控引发的火灾及实际运营表现不佳</td>
+                                <td>影响项目可融资性和社会接受度</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 引用文献 -->
+    <section id="references" class="imperial-section bg-gradient-to-b from-transparent to-black bg-opacity-30" data-title="引用文献">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl mb-12 text-center">引用文献</h2>
+            
+            <!-- 固定4列布局网格 -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl mx-auto">
+                <div class="citation-item">
+                    <a href="https://about.bnef.com/insights/clean-energy/global-energy-storage-growth-upheld-by-new-markets/" target="_blank">
+                        1. Global Energy Storage Growth Upheld by New Markets | BloombergNEF
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://about.bnef.com/insights/commodities/global-energy-storage-market-to-grow-15-fold-by-2030/" target="_blank">
+                        2. Global Energy Storage Market to Grow 15-Fold by 2030 - BloombergNEF
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.woodmac.com/press-releases/tesla-remains-the-top-global-producer-of-battery-energy-storage-systems-in-2024-but-sungrow-narrows-the-gap/" target="_blank">
+                        3. Tesla remains the top global producer of battery energy storage systems in 2024, but Sungrow narrows the gap | Wood Mackenzie
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="http://en.cnesa.org/latest-news/2025/7/10/official-release-2024-shipment-rankings-of-chinese-energy-storage-companies" target="_blank">
+                        4. CNESA Officially Released the 2024 China Energy Storage Vendor Rankings
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="http://www.eage.com.cn/news/1256041" target="_blank">
+                        5. EESA发布2024年度全球储能产业链数据及中国储能企业排行榜 - 电气时代
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.acebattery.com/blogs/us-made-dc-containers-to-compete-with-china-by-2025" target="_blank">
+                        6. US-Made DC Containers to Compete with China by 2025 - ACE Battery
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.energy-storage.news/us-made-dc-containers-to-be-cost-competitive-with-china-in-2025-thanks-to-ira-says-cea/" target="_blank">
+                        7. US-made DC containers to be cost-competitive with China in 2025 thanks to IRA, says CEA - Energy-Storage.News
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="http://en.cnesa.org/latest-news/2024/11/15/cnesa-officially-released-2024-q3-energy-storage-market-data" target="_blank">
+                        8. CNESA Global Energy Storage Market Tracking - 2024 Q3
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://modoenergy.com/research/ercot-caiso-june-2025-revenue-stack-batteries-bess-energy-arbitrage-nodal-price-locational-marginal-price-transmission-congestion-price-spreads" target="_blank">
+                        9. ERCOT & CAISO BESS: The evolving revenue stack - June 2025 - Research | Modo Energy
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.energy-storage.news/where-is-alpha-market-trends-in-ercot-and-caiso-impacting-battery-storage-revenues/" target="_blank">
+                        10. Where is alpha? Market trends in ERCOT and CAISO impacting battery storage revenues
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.publicissapient.com/industries/energy-commodities/how-battery-energy-storage-systems-are-playing-a-new-role" target="_blank">
+                        11. How Battery Energy Storage Systems are Playing a New Role in Portfolio Optimization
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.greenpeace.org.cn/wp-content/uploads/2022/06/briefing_electrochemical_energy_storage_industry.pdf" target="_blank">
+                        12. 电力系统脱碳新动能-电化学储能技术创新趋势报告 - 绿色和平
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.usa.battery-technology-conference.com/news/sodium-ion-batteries-gain-ground-in-us-energy-shift" target="_blank">
+                        13. Sodium-Ion Batteries Gain Ground in U.S. Energy Shift
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.grandviewresearch.com/industry-analysis/vanadium-redox-flow-battery-market-report" target="_blank">
+                        14. Vanadium Redox Flow Battery Market | Industry Report, 2030 - Grand View Research
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://research-and-innovation.ec.europa.eu/research-area/energy/energy-storage_en" target="_blank">
+                        15. Energy storage - European Commission - Research and innovation
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.prophecymarketinsights.com/market_insight/europe-renewable-energy-storage-market-5886" target="_blank">
+                        16. Europe Renewable Energy Storage Market Size Analysis 2035
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="http://en.cnesa.org/latest-news/2025/8/3/china-releases-official-energy-storage-report-highlighting-130-growth-in-installed-capacity" target="_blank">
+                        17. China National Energy Administration Released Official Report
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.cnesa.org/information/detail/?column_id=1&id=6800" target="_blank">
+                        18. 新增43.7 GW/109.8 GWh！2024年度CNESA储能数据重磅发布 - 中关村储能产业技术联盟
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="http://www.nea.gov.cn/2022-03/21/c_1310523223.htm" target="_blank">
+                        19. 《"十四五"新型储能发展实施方案》解读---国家能源局
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.weview.com/archives/21773" target="_blank">
+                        20. 国家托举，回眸2024全年储能政策信号
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.woodmac.com/press-releases/2024-press-releases/energy-storages-meteoric-rise-breaks-another-record/" target="_blank">
+                        21. Energy Storage's Meteoric Rise Breaks Another Record | Wood Mackenzie
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.congress.gov/crs-product/R48358" target="_blank">
+                        22. Domestic Content Requirements for Electricity Tax Credits in the Inflation Reduction Act (IRA) | Congress.gov
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.epa.gov/green-power-markets/summary-inflation-reduction-act-provisions-related-renewable-energy" target="_blank">
+                        23. Summary of Inflation Reduction Act provisions related to renewable energy | US EPA
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.nyserda.ny.gov/-/media/Project/Nyserda/Files/Programs/Clean-Energy-Siting/IRA-Guide-for-Solar-and-Storage-Summary.pdf" target="_blank">
+                        24. Inflation Reduction Act Guide: For Local Governments and Other Tax-Exempt Entities - nyserda
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://commission.europa.eu/topics/energy/repowereu_en" target="_blank">
+                        25. REPowerEU - Energy - European Commission
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.solarpowereurope.org/insights/outlooks/european-market-outlook-for-battery-storage-2025-2029/detail" target="_blank">
+                        26. European Market Outlook for Battery Storage 2025-2029
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:52022DC0230" target="_blank">
+                        27. REPowerEU Plan - EUR-Lex - European Union
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.chemanalyst.com/Pricing-data/lithium-carbonate-1269" target="_blank">
+                        28. Lithium Carbonate Prices News Monitor Analysis & Demand - ChemAnalyst
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.imarcgroup.com/lithium-carbonate-pricing-report" target="_blank">
+                        29. Lithium Carbonate Price Trend, Index & Forecast 2025 - IMARC
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.utilitydive.com/news/higher-renewable-energy-costs-lazard-lcoe-storage-hydrogen/720177/" target="_blank">
+                        30. Higher renewables costs, uncertainty show need for diverse energy resources: Lazard report | Utility Dive
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://e-greenify.com/news/the-first-grid-scale-sodium-ion-system-launched-in-the-usa/" target="_blank">
+                        31. The first grid-scale sodium-ion system launched in the USA
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.ess-news.com/2025/07/30/peak-energy-launches-first-u-s-grid-scale-sodium-ion-storage-system/" target="_blank">
+                        32. Peak Energy launches first U.S. grid-scale sodium-ion storage system - ESS News
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript 垂直进度条功能 -->
+    <script>
+        // 精美垂直进度条系统（支持悬停显示标题 + 点击跳转）
+        const progressBar = document.querySelector('.reading-progress');
+        const progressFill = document.querySelector('.reading-progress-fill');
+        const progressTooltip = document.getElementById('progress-tooltip');
+        const sections = document.querySelectorAll('section[id], header[id]');
+
+        let currentSectionTitle = '';
+        let sectionsData = [];
+
+        // 初始化章节数据
+        function initSections() {
+            sectionsData = Array.from(sections).map(section => ({
+                id: section.getAttribute('id'),
+                title: section.getAttribute('data-title') || section.querySelector('h1, h2')?.textContent || '未知章节',
+                offsetTop: section.offsetTop,
+                offsetHeight: section.offsetHeight
+            }));
+        }
+
+        function updateProgress() {
+            const scrolled = window.pageYOffset;
+            const maxHeight = document.body.scrollHeight - window.innerHeight;
+            const progress = (scrolled / maxHeight) * 100;
+            
+            // 更新垂直进度条填充高度
+            progressFill.style.height = `${progress}%`;
+            
+            // 获取当前章节
+            let currentSection = '';
+            sectionsData.forEach(section => {
+                if (scrolled >= section.offsetTop - 300) {
+                    currentSection = section.id;
+                    currentSectionTitle = section.title;
+                }
+            });
+        }
+
+        // 点击进度条跳转到对应位置
+        progressBar.addEventListener('click', (e) => {
+            const rect = progressBar.getBoundingClientRect();
+            const clickY = e.clientY - rect.top;
+            const progressHeight = rect.height;
+            const clickPercent = clickY / progressHeight;
+            
+            const maxHeight = document.body.scrollHeight - window.innerHeight;
+            const targetScroll = maxHeight * clickPercent;
+            
+            window.scrollTo({
+                top: targetScroll,
+                behavior: 'smooth'
+            });
+        });
+
+        // 鼠标悬停显示当前章节标题
+        progressBar.addEventListener('mouseenter', () => {
+            if (currentSectionTitle) {
+                progressTooltip.textContent = currentSectionTitle;
+                progressTooltip.classList.add('show');
+            }
+        });
+
+        progressBar.addEventListener('mouseleave', () => {
+            progressTooltip.classList.remove('show');
+        });
+
+        // 提示框悬停保持显示
+        progressTooltip.addEventListener('mouseenter', () => {
+            progressTooltip.classList.add('show');
+        });
+
+        progressTooltip.addEventListener('mouseleave', () => {
+            progressTooltip.classList.remove('show');
+        });
+
+        // 窗口大小改变时重新计算章节位置
+        window.addEventListener('resize', () => {
+            setTimeout(initSections, 100);
+        });
+
+        window.addEventListener('scroll', updateProgress);
+
+        // 页面加载完成后初始化
+        window.addEventListener('load', () => {
+            initSections();
+            updateProgress();
+        });
+    </script>
+</body>
+</html>
