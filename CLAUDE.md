@@ -2,8 +2,19 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-## Update Notes (2025-01-XX)
-- Aligned the Cognitive Arbitrage cards with the `vm-philosophy-card` system used in the “Void × Substance” area; cards remain compact and corner badges are prohibited.
+## Update Notes (2025-01-17)
+
+### 浅色模式全面优化
+- **微信二维码浮窗**: 修复点击无反应问题，改为`fixed`定位确保置顶，z-index: 99999
+- **导航栏样式**: 为浅色模式添加完整覆盖（基础、scrolled、hidden状态），确保所有状态下保持白色背景
+- **主题切换按钮**: 移除按钮文字，仅保留太阳/月亮图标，简化界面
+- **浅色模式关闭按钮**: 改为浅灰背景+深灰叉号，提升对比度
+- **文字可读性**: 所有金色文字改为深金色#B8860B（vm-philosophy-tagline、meta、cognitive-summary等）
+- **文字选中样式**: 浅色模式改为深金色背景+白色文字，提升可读性
+- **标题注释统一**: 所有标题下的注释统一使用vm-philosophy-tagline黄色小字样式
+
+### 设计系统完善
+- Aligned the Cognitive Arbitrage cards with the `vm-philosophy-card` system used in the "Void × Substance" area; cards remain compact and corner badges are prohibited.
 - `vm-cognitive-bg` plus `vm-cognitive-topfade / bottomfade` must be retained for smooth transitions; do not reintroduce open rectangular frames above the section.
 - Section copy should stay concise: single-line summary, then title/subtitle/description/keyword rows; avoid manual `<br>` line breaks in the body text.
 - Core Values & Focus Areas cards reuse the same compact card system (`vm-values-card`, `vm-area-card`) with lighter glass背景；Focus Areas 背景需使用 `vm-focus-bg` + 渐隐层，保持与认知套利过渡一致。
