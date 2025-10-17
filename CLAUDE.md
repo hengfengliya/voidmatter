@@ -2,6 +2,12 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Update Notes (2025-01-XX)
+- Aligned the Cognitive Arbitrage cards with the `vm-philosophy-card` system used in the “Void × Substance” area; cards remain compact and corner badges are prohibited.
+- `vm-cognitive-bg` plus `vm-cognitive-topfade / bottomfade` must be retained for smooth transitions; do not reintroduce open rectangular frames above the section.
+- Section copy should stay concise: single-line summary, then title/subtitle/description/keyword rows; avoid manual `<br>` line breaks in the body text.
+- Core Values & Focus Areas cards reuse the same compact card system (`vm-values-card`, `vm-area-card`) with lighter glass背景；Focus Areas 背景需使用 `vm-focus-bg` + 渐隐层，保持与认知套利过渡一致。
+
 ## 项目概述
 
 这是VM（上海虚空有物科技有限公司）的多业务项目，包含：

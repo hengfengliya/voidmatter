@@ -20,8 +20,8 @@
         '.vm-nav-item.active{color:var(--vm-nav-link-active,#D4AF37);}.vm-nav-item::after{content:\"\";position:absolute;bottom:-4px;left:0;width:0;height:2px;background:linear-gradient(90deg,var(--vm-nav-underline-start,#D4AF37),var(--vm-nav-underline-end,#FFD700));transition:width .3s ease;}' +
         '.vm-nav-item.active::after,.vm-nav-item:not(.active):hover::after{width:100%;}.vm-nav-item:not(.active):hover{color:var(--vm-nav-link-hover,#FFD700);transform:translateY(-1px);}' +
         '.vm-nav-brand-subtitle{color:var(--vm-nav-brand,rgba(209,213,219,.85));transition:color .3s ease;}' +
-        '.vm-theme-toggle,.vm-theme-toggle-mobile{display:inline-flex;align-items:center;gap:.5rem;border-radius:9999px;border:1px solid var(--vm-toggle-border,rgba(212,175,55,.35));background:var(--vm-toggle-bg,rgba(15,15,15,.5));color:var(--vm-toggle-text,#f1f5f9);letter-spacing:.12em;text-transform:uppercase;cursor:pointer;transition:all .3s ease;}' +
-        '.vm-theme-toggle{padding:.5rem 1.25rem;font-size:.875rem;}.vm-theme-toggle-mobile{padding:.5rem 1rem;font-size:.75rem;}' +
+        '.vm-theme-toggle,.vm-theme-toggle-mobile{display:inline-flex;align-items:center;justify-content:center;border-radius:9999px;border:1px solid var(--vm-toggle-border,rgba(212,175,55,.35));background:var(--vm-toggle-bg,rgba(15,15,15,.5));color:var(--vm-toggle-text,#f1f5f9);cursor:pointer;transition:all .3s ease;}' +
+        '.vm-theme-toggle{padding:.5rem;width:2.25rem;height:2.25rem;}.vm-theme-toggle-mobile{padding:.5rem;width:2.25rem;height:2.25rem;}' +
         '.vm-theme-toggle:hover,.vm-theme-toggle-mobile:hover{border-color:var(--vm-toggle-border-hover,rgba(212,175,55,.55));background:var(--vm-toggle-bg-hover,rgba(212,175,55,.18));color:var(--vm-nav-link-active,#D4AF37);box-shadow:0 18px 36px var(--vm-toggle-shadow,rgba(212,175,55,.18));transform:translateY(-1px);}' +
         '.vm-theme-toggle-icon{display:inline-flex;align-items:center;justify-content:center;width:1.75rem;height:1.75rem;border-radius:9999px;background:var(--vm-toggle-icon-bg,rgba(212,175,55,.12));}' +
         '.vm-nav-mobile{display:none;color:var(--vm-nav-link-active,#D4AF37);transition:color .3s ease,transform .3s ease;}.vm-nav-mobile:hover{color:var(--vm-nav-link-hover,#FFD700);transform:scale(1.05);}' +
@@ -88,11 +88,11 @@
     Navigation.prototype.buildLinks = function (className) { return NAV_ITEMS.map(function (item) { return '<a href="' + item.href + '" class="' + className + '" data-nav-id="' + item.id + '">' + item.text + '</a>'; }).join(''); };
 
     Navigation.prototype.buildDesktopToggle = function () {
-        return '<button id="vm-theme-toggle" type="button" class="vm-theme-toggle" aria-label="切换为浅色模式"><span class="vm-theme-toggle-icon"><i class="fas fa-sun"></i></span><span class="vm-theme-toggle-text">浅色模式</span></button>';
+        return '<button id="vm-theme-toggle" type="button" class="vm-theme-toggle" aria-label="切换为浅色模式"><span class="vm-theme-toggle-icon"><i class="fas fa-sun"></i></span></button>';
     };
 
     Navigation.prototype.buildMobileToggle = function () {
-        return '<div class="vm-nav-mobile-theme"><div class="vm-nav-mobile-theme-label">THEME</div><button id="vm-theme-toggle-mobile" type="button" class="vm-theme-toggle-mobile" aria-label="切换为浅色模式"><i class="fas fa-sun"></i><span class="vm-theme-toggle-mobile-text">浅色模式</span></button></div>';
+        return '<div class="vm-nav-mobile-theme"><div class="vm-nav-mobile-theme-label">THEME</div><button id="vm-theme-toggle-mobile" type="button" class="vm-theme-toggle-mobile" aria-label="切换为浅色模式"><i class="fas fa-sun"></i></button></div>';
     };
 
     Navigation.prototype.updateActiveStates = function () { var activeId = this.currentPage; document.querySelectorAll('[data-nav-id]').forEach(function (link) { link.classList.toggle('active', link.dataset.navId === activeId); }); };
@@ -140,12 +140,11 @@
         var isLight = theme === 'light';
         var iconClass = isLight ? 'fas fa-moon' : 'fas fa-sun';
         var label = isLight ? '切换为深色模式' : '切换为浅色模式';
-        var text = isLight ? '深色模式' : '浅色模式';
-        this.syncToggle(document.getElementById('vm-theme-toggle'), iconClass, text, label);
-        this.syncToggle(document.getElementById('vm-theme-toggle-mobile'), iconClass, text, label);
+        this.syncToggle(document.getElementById('vm-theme-toggle'), iconClass, label);
+        this.syncToggle(document.getElementById('vm-theme-toggle-mobile'), iconClass, label);
     };
 
-    Navigation.prototype.syncToggle = function (button, iconClass, text, ariaLabel) { if (!button) return; button.setAttribute('aria-label', ariaLabel); button.setAttribute('title', ariaLabel); var icon = button.querySelector('i'); if (icon) icon.className = iconClass; var textNode = button.querySelector('.vm-theme-toggle-text') || button.querySelector('.vm-theme-toggle-mobile-text'); if (textNode) textNode.textContent = text; };
+    Navigation.prototype.syncToggle = function (button, iconClass, ariaLabel) { if (!button) return; button.setAttribute('aria-label', ariaLabel); button.setAttribute('title', ariaLabel); var icon = button.querySelector('i'); if (icon) icon.className = iconClass; };
 
     Navigation.prototype.getActiveTheme = function () { if (window.vmThemeManager && typeof window.vmThemeManager.getTheme === 'function') return window.vmThemeManager.getTheme(); return document.documentElement.getAttribute('data-theme') || 'dark'; };
 

@@ -81,89 +81,219 @@
         }
         
         :root[data-theme="dark"] {
-            --vm-black: #0f0f0f;
-            --vm-background: #0f0f0f;
-            --vm-surface: rgba(15, 15, 15, 0.85);
-            --vm-surface-strong: rgba(15, 15, 15, 0.95);
-            --vm-gray-light: #f8f9fa;
-            --vm-text-primary: #f8f9fa;
-            --vm-text-secondary: rgba(226, 232, 240, 0.75);
-            --vm-nav-bg: rgba(15, 15, 15, 0.8);
-            --vm-nav-bg-scrolled: rgba(15, 15, 15, 0.95);
-            --vm-nav-border: rgba(255, 215, 0, 0.12);
-            --vm-nav-border-strong: rgba(255, 215, 0, 0.28);
+            /* 深色主题调色板：纯深黑背景搭配金色点缀 */
+            --vm-black: #000000;
+            --vm-background: #000000;
+            --vm-background-subtle: #0a0a0a;
+            --vm-surface: rgba(5, 5, 5, 0.88);
+            --vm-surface-strong: rgba(8, 8, 8, 0.95);
+            --vm-gray-light: #F5F7FF;
+            --vm-text-primary: #F8FAFF;
+            --vm-text-secondary: rgba(204, 214, 235, 0.78);
+            --vm-nav-bg: rgba(0, 0, 0, 0.72);
+            --vm-nav-bg-scrolled: rgba(0, 0, 0, 0.92);
+            --vm-nav-border: rgba(212, 175, 55, 0.15);
+            --vm-nav-border-strong: rgba(255, 215, 0, 0.26);
             --vm-nav-link: rgba(226, 232, 240, 0.85);
             --vm-nav-link-hover: #FFD700;
             --vm-nav-link-active: #D4AF37;
-            --vm-nav-brand: rgba(209, 213, 219, 0.85);
+            --vm-nav-brand: rgba(227, 231, 243, 0.88);
             --vm-nav-underline-start: #D4AF37;
             --vm-nav-underline-end: #FFD700;
-            --vm-toggle-bg: rgba(15, 15, 15, 0.5);
-            --vm-toggle-bg-hover: rgba(212, 175, 55, 0.2);
-            --vm-toggle-icon-bg: rgba(212, 175, 55, 0.15);
-            --vm-toggle-text: #f8fafc;
-            --vm-toggle-border: rgba(212, 175, 55, 0.35);
-            --vm-toggle-border-hover: rgba(212, 175, 55, 0.55);
-            --vm-toggle-shadow: rgba(212, 175, 55, 0.2);
-            --vm-mobile-menu-bg: rgba(15, 15, 15, 0.96);
+            --vm-toggle-bg: rgba(0, 0, 0, 0.5);
+            --vm-toggle-bg-hover: rgba(212, 175, 55, 0.22);
+            --vm-toggle-icon-bg: rgba(212, 175, 55, 0.18);
+            --vm-toggle-text: #F8FAFF;
+            --vm-toggle-border: rgba(212, 175, 55, 0.4);
+            --vm-toggle-border-hover: rgba(255, 215, 0, 0.52);
+            --vm-toggle-shadow: rgba(212, 175, 55, 0.28);
+            --vm-mobile-menu-bg: rgba(0, 0, 0, 0.96);
             --vm-mobile-divider: rgba(255, 255, 255, 0.08);
-            --vm-mobile-active-bg: rgba(212, 175, 55, 0.16);
-            --vm-mobile-hover-bg: rgba(212, 175, 55, 0.1);
-            --vm-mobile-theme-bg: rgba(212, 175, 55, 0.1);
-            --vm-card-bg: rgba(0, 0, 0, 0.45);
-            --vm-card-hover-bg: rgba(0, 0, 0, 0.65);
-            --vm-card-border: rgba(212, 175, 55, 0.2);
-            --vm-card-border-hover: rgba(212, 175, 55, 0.45);
-            --vm-overlay-soft: rgba(17, 17, 17, 0.3);
-            --vm-overlay-strong: rgba(0, 0, 0, 0.55);
-            --vm-section-accent: radial-gradient(circle at top, rgba(212, 175, 55, 0.08), transparent);
+            --vm-mobile-active-bg: rgba(212, 175, 55, 0.18);
+            --vm-mobile-hover-bg: rgba(212, 175, 55, 0.12);
+            --vm-mobile-theme-bg: rgba(212, 175, 55, 0.12);
+            --vm-card-bg: rgba(5, 5, 5, 0.88);
+            --vm-card-hover-bg: rgba(8, 8, 8, 0.95);
+            --vm-card-border: rgba(212, 175, 55, 0.28);
+            --vm-card-border-hover: rgba(255, 215, 0, 0.45);
+            --vm-card-shadow: 0 22px 70px rgba(0, 0, 0, 0.65);
+            --vm-card-shadow-hover: 0 32px 90px rgba(0, 0, 0, 0.78);
+            --vm-overlay-soft: rgba(0, 0, 0, 0.36);
+            --vm-overlay-strong: rgba(0, 0, 0, 0.68);
+            --vm-section-accent: radial-gradient(circle at 18% 12%, rgba(212, 175, 55, 0.12), transparent 55%);
+            --vm-shell-noise: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%27512%27%20height%3D%27512%27%3E%3Cfilter%20id%3D%27n%27%3E%3CfeTurbulence%20type%3D%27fractalNoise%27%20baseFrequency%3D%272.2%27%20numOctaves%3D%273%27%20stitchTiles%3D%27stitch%27%2F%3E%3C%2Ffilter%3E%3Crect%20width%3D%27512%27%20height%3D%27512%27%20filter%3D%27url(%23n)%27%20opacity%3D%270.18%27%2F%3E%3C%2Fsvg%3E");
+            --vm-shell-lume: radial-gradient(circle at 15% 22%, rgba(212, 175, 55, 0.16), transparent 58%), radial-gradient(circle at 82% 18%, rgba(212, 175, 55, 0.12), transparent 55%);
+            --vm-button-gradient: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 18%, #D4AF37 52%, #FFD700 100%);
+            --vm-button-gradient-hover: linear-gradient(135deg, #FFD700 0%, #D4AF37 50%, #9B6F1B 100%);
+            --vm-button-text: #060607;
+            --vm-button-shadow: 0 16px 52px rgba(212, 175, 55, 0.38);
+            --vm-button-shadow-hover: 0 24px 78px rgba(212, 175, 55, 0.5);
+            --vm-philosophy-card-bg: rgba(8, 8, 8, 0.82);
+            --vm-philosophy-card-hover-bg: rgba(12, 12, 12, 0.92);
+            --vm-philosophy-accent: rgba(212, 175, 55, 0.48);
+            --vm-philosophy-shadow: 0 28px 64px rgba(0, 0, 0, 0.6);
+            --vm-philosophy-shadow-hover: 0 36px 88px rgba(0, 0, 0, 0.72);
+            --vm-philosophy-text: rgba(226, 232, 248, 0.75);
+            --vm-philosophy-text-strong: #F8FAFF;
         }
         
+        /* 浅色模式下导航栏样式覆盖 */
+        :root[data-theme="light"] .vm-nav {
+            background: rgba(255, 255, 255, 0.88) !important;
+            border-bottom-color: rgba(207, 182, 130, 0.34) !important;
+        }
+
+        :root[data-theme="light"] .vm-nav.vm-nav-scrolled {
+            /* 浅色模式下导航栏滚动状态的明确样式定义 */
+            background: rgba(255, 255, 255, 0.96) !important;
+            border-bottom-color: rgba(209, 186, 128, 0.5) !important;
+        }
+
+        :root[data-theme="light"] .vm-nav.vm-nav-hidden {
+            /* 浅色模式下导航栏隐藏时保持白色 */
+            background: rgba(255, 255, 255, 0.96) !important;
+            border-bottom-color: rgba(209, 186, 128, 0.5) !important;
+        }
+
         :root[data-theme="light"] {
-            --vm-black: #ffffff;
-            --vm-background: #ffffff;
-            --vm-surface: #ffffff;
-            --vm-surface-strong: #ffffff;
-            --vm-gray-light: #111111;
-            --vm-text-primary: #111111;
-            --vm-text-secondary: rgba(30, 30, 30, 0.72);
-            --vm-nav-bg: rgba(255, 255, 255, 0.95);
-            --vm-nav-bg-scrolled: rgba(255, 255, 255, 0.98);
-            --vm-nav-border: rgba(184, 134, 11, 0.08);
-            --vm-nav-border-strong: rgba(184, 134, 11, 0.16);
-            --vm-nav-link: #c08f1a;
-            --vm-nav-link-hover: #a47107;
-            --vm-nav-link-active: #7a5304;
-            --vm-nav-brand: rgba(154, 110, 9, 0.8);
-            --vm-nav-underline-start: #daba55;
-            --vm-nav-underline-end: #b17a0c;
-            --vm-toggle-bg: rgba(255, 248, 232, 0.95);
-            --vm-toggle-bg-hover: rgba(184, 134, 11, 0.12);
-            --vm-toggle-icon-bg: rgba(184, 134, 11, 0.2);
-            --vm-toggle-text: #8a6511;
-            --vm-toggle-border: rgba(184, 134, 11, 0.28);
-            --vm-toggle-border-hover: rgba(184, 134, 11, 0.42);
-            --vm-toggle-shadow: rgba(184, 134, 11, 0.18);
-            --vm-mobile-menu-bg: rgba(255, 255, 255, 0.99);
-            --vm-mobile-divider: rgba(17, 17, 17, 0.05);
-            --vm-mobile-active-bg: rgba(17, 17, 17, 0.06);
-            --vm-mobile-hover-bg: rgba(17, 17, 17, 0.04);
-            --vm-mobile-theme-bg: rgba(17, 17, 17, 0.04);
-            --vm-card-bg: rgba(255, 255, 255, 0.99);
-            --vm-card-hover-bg: #ffffff;
-            --vm-card-border: rgba(17, 17, 17, 0.08);
-            --vm-card-border-hover: rgba(17, 17, 17, 0.14);
-            --vm-overlay-soft: rgba(255, 255, 255, 0);
-            --vm-overlay-strong: rgba(255, 255, 255, 0);
-            --vm-section-accent: radial-gradient(circle at top, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0));
+            /* 浅色主题调色板：象牙白(Ivory)与暖沙金(Warm Sand)融合 */
+            --vm-black: #FFFFFF;
+            --vm-background: #F9F6EE;
+            --vm-background-subtle: #E6D6B3;
+            --vm-surface: rgba(255, 255, 255, 0.82);
+            --vm-surface-strong: rgba(255, 255, 255, 0.96);
+            --vm-gray-light: #1F2333;
+            --vm-text-primary: #1F2333;
+            --vm-text-secondary: rgba(47, 52, 68, 0.72);
+            --vm-nav-bg: rgba(255, 255, 255, 0.88);
+            --vm-nav-bg-scrolled: rgba(255, 255, 255, 0.96);
+            --vm-nav-border: rgba(207, 182, 130, 0.34);
+            --vm-nav-border-strong: rgba(209, 186, 128, 0.5);
+            --vm-nav-link: #8C6A2B;
+            --vm-nav-link-hover: #B48732;
+            --vm-nav-link-active: #A0701F;
+            --vm-nav-brand: rgba(119, 93, 35, 0.88);
+            --vm-nav-underline-start: #E6D6B3;
+            --vm-nav-underline-end: #C89E2B;
+            --vm-toggle-bg: rgba(255, 249, 238, 0.95);
+            --vm-toggle-bg-hover: rgba(209, 186, 128, 0.24);
+            --vm-toggle-icon-bg: rgba(209, 186, 128, 0.3);
+            --vm-toggle-text: #6E5420;
+            --vm-toggle-border: rgba(209, 186, 128, 0.52);
+            --vm-toggle-border-hover: rgba(178, 146, 64, 0.62);
+            --vm-toggle-shadow: rgba(209, 186, 128, 0.3);
+            --vm-mobile-menu-bg: rgba(255, 255, 255, 0.98);
+            --vm-mobile-divider: rgba(31, 35, 51, 0.08);
+            --vm-mobile-active-bg: rgba(209, 186, 128, 0.18);
+            --vm-mobile-hover-bg: rgba(209, 186, 128, 0.12);
+            --vm-mobile-theme-bg: rgba(209, 186, 128, 0.16);
+            --vm-card-bg: rgba(255, 255, 255, 0.82);
+            --vm-card-hover-bg: rgba(255, 255, 255, 0.92);
+            --vm-card-border: rgba(230, 214, 179, 0.6);
+            --vm-card-border-hover: rgba(199, 170, 110, 0.85);
+            --vm-card-shadow: 0 14px 38px rgba(209, 186, 128, 0.28);
+            --vm-card-shadow-hover: 0 20px 48px rgba(137, 143, 158, 0.28);
+            --vm-overlay-soft: rgba(255, 255, 255, 0.72);
+            --vm-overlay-strong: rgba(255, 255, 255, 0.85);
+            --vm-section-accent: radial-gradient(circle at 18% 12%, rgba(217, 221, 228, 0.45), transparent 60%);
+            --vm-shell-noise: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%27512%27%20height%3D%27512%27%3E%3Cfilter%20id%3D%27n%27%3E%3CfeTurbulence%20type%3D%27fractalNoise%27%20baseFrequency%3D%271.2%27%20numOctaves%3D%273%27%20stitchTiles%3D%27stitch%27%2F%3E%3C%2Ffilter%3E%3Crect%20width%3D%27512%27%20height%3D%27512%27%20filter%3D%27url(%23n)%27%20opacity%3D%270.08%27%2F%3E%3C%2Fsvg%3E");
+            --vm-shell-lume: radial-gradient(circle at 18% 24%, rgba(255, 219, 170, 0.48), transparent 58%), radial-gradient(circle at 82% 18%, rgba(217, 221, 228, 0.55), transparent 62%);
+            --vm-button-gradient: linear-gradient(135deg, #FFF5E1 0%, #E6D6B3 48%, #D4AF37 100%);
+            --vm-button-gradient-hover: linear-gradient(135deg, #FFF9EC 0%, #E6D6B3 52%, #B8871F 100%);
+            --vm-button-text: #4F3815;
+            --vm-button-shadow: 0 14px 40px rgba(209, 186, 128, 0.32);
+            --vm-button-shadow-hover: 0 20px 52px rgba(209, 186, 128, 0.42);
+            --vm-philosophy-card-bg: rgba(255, 250, 240, 0.96);
+            --vm-philosophy-card-hover-bg: rgba(255, 244, 222, 0.98);
+            --vm-philosophy-accent: rgba(209, 186, 128, 0.45);
+            --vm-philosophy-shadow: 0 24px 56px rgba(201, 180, 130, 0.28);
+            --vm-philosophy-shadow-hover: 0 30px 64px rgba(170, 140, 90, 0.38);
+            --vm-philosophy-text: rgba(77, 62, 34, 0.72);
+            --vm-philosophy-text-strong: #3B2A16;
         }
-        
+
+        /* 浅色模式下的浅黄色字体改成深金色 */
+        :root[data-theme="light"] .vm-philosophy-tagline {
+            color: #B8860B !important;
+        }
+
+        :root[data-theme="light"] .vm-philosophy-meta {
+            color: #B8860B !important;
+        }
+
+        :root[data-theme="light"] .vm-cognitive-summary {
+            color: #B8860B !important;
+        }
+
+        :root[data-theme="light"] .vm-cognitive-icon i {
+            color: #B8860B !important;
+        }
+
+        :root[data-theme="light"] .vm-philosophy-label {
+            color: #B8860B !important;
+        }
+
+        /* 浅色模式下的文字选中样式 - 改成深金色背景 */
+        :root[data-theme="light"] ::selection {
+            background-color: #B8860B;
+            color: #FFFFFF;
+        }
+
+        :root[data-theme="light"] ::-moz-selection {
+            background-color: #B8860B;
+            color: #FFFFFF;
+        }
+
         body {
             font-family: 'Poppins', 'Noto Sans SC', sans-serif;
             background-color: var(--vm-background);
             color: var(--vm-text-primary);
             overflow-x: hidden;
             transition: background-color 0.4s ease, color 0.4s ease;
+            position: relative;
+            min-height: 100%;
+        }
+        
+        /* 背景氛围层：通过渐层与噪点营造沉浸式光影 */
+        body::before,
+        body::after {
+            content: '';
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            transition: opacity 0.8s ease, transform 1.2s ease;
+        }
+        
+        body::before {
+            z-index: -2;
+            background-color: var(--vm-background);
+            transform: none;
+        }
+        
+        body::after {
+            z-index: -1;
+            background: transparent;
+            opacity: 0;
+        }
+        
+        :root[data-theme="dark"] body::before {
+            /* 深色主题：深邃纯黑背景，突出金色质感 */
+            background: linear-gradient(135deg, #000000 0%, #0a0a0a 50%, #000000 100%);
+        }
+        
+        :root[data-theme="dark"] body::after {
+            opacity: 0.22;
+            mix-blend-mode: screen;
+        }
+        
+        :root[data-theme="light"] body::before {
+            /* 浅色主题：统一纯白背景 */
+            background: #ffffff;
+        }
+        
+        :root[data-theme="light"] body::after {
+            opacity: 0.12;
+            mix-blend-mode: multiply;
         }
         
         /* 平滑滚动优化 */
@@ -182,9 +312,34 @@
             line-height: 1.1;
         }
         
+        :root[data-theme="dark"] .vm-hero-title {
+            /* 深色主题主标题：72px 尺寸搭配金属光影 */
+            font-size: clamp(52px, 6vw, 72px);
+            letter-spacing: 0.08em;
+            text-shadow:
+                0 18px 48px rgba(9, 14, 28, 0.75),
+                0 0 24px rgba(212, 175, 55, 0.35);
+        }
+        
+        :root[data-theme="light"] .vm-hero-title {
+            /* 浅色主题主标题：68px 尺寸搭配暖金柔焦 */
+            font-size: clamp(50px, 5.6vw, 68px);
+            letter-spacing: 0.06em;
+            color: #1F2333;
+            text-shadow: 0 12px 28px rgba(209, 186, 128, 0.28);
+        }
+        
         .vm-subtitle {
             font-family: 'Playfair Display', serif;
             font-weight: 400;
+        }
+        
+        :root[data-theme="dark"] .vm-subtitle {
+            color: rgba(224, 228, 255, 0.78);
+        }
+        
+        :root[data-theme="light"] .vm-subtitle {
+            color: rgba(111, 93, 58, 0.72);
         }
         
         .vm-gradient-text {
@@ -194,6 +349,11 @@
             background-clip: text;
             background-size: 200% 200%;
             animation: vm-glass-shimmer 4s ease-in-out infinite;
+        }
+        
+        :root[data-theme="light"] .vm-gradient-text {
+            background: linear-gradient(135deg, #E6D6B3 0%, #F2E6CE 35%, #D4AF37 68%, #B8871F 100%);
+            text-shadow: 0 6px 18px rgba(209, 186, 128, 0.35);
         }
         
         /* 琉璃渐变动画系统 - 鬼斧神工级别 */
@@ -372,25 +532,341 @@
         }
         
         .vm-button {
-            background: linear-gradient(135deg, var(--vm-gold), var(--vm-gold-dark));
-            transition: all 0.3s ease;
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.85rem 1.8rem;
+            border-radius: 9999px;
+            background: var(--vm-button-gradient, linear-gradient(135deg, var(--vm-gold), var(--vm-gold-dark)));
+            color: var(--vm-button-text, #121212);
+            border: 1px solid transparent;
+            box-shadow: var(--vm-button-shadow, 0 12px 32px rgba(212, 175, 55, 0.32));
+            transition: background 0.6s ease, box-shadow 0.45s ease, transform 0.35s ease;
+            overflow: hidden;
+        }
+        
+        .vm-button::after {
+            content: '';
+            position: absolute;
+            inset: -120% 30%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.48) 0%, transparent 55%);
+            opacity: 0;
+            transition: opacity 0.5s ease, transform 0.6s ease;
         }
         
         .vm-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(255, 215, 0, 0.4);
+            background: var(--vm-button-gradient-hover, var(--vm-button-gradient));
+            box-shadow: var(--vm-button-shadow-hover, 0 20px 60px rgba(212, 175, 55, 0.45));
+            transform: translateY(-4px);
+        }
+        
+        .vm-button:hover::after {
+            opacity: 0.45;
+            transform: translate3d(0, 45%, 0);
         }
         
         .vm-card {
             background: var(--vm-card-bg);
             border: 1px solid var(--vm-card-border);
-            backdrop-filter: blur(18px);
-            transition: all 0.3s ease;
+            backdrop-filter: blur(22px);
+            box-shadow: var(--vm-card-shadow, 0 18px 48px rgba(4, 8, 20, 0.42));
+            transition: background 0.45s ease, border-color 0.45s ease, box-shadow 0.45s ease, transform 0.45s ease;
         }
         
         .vm-card:hover {
             border-color: var(--vm-card-border-hover);
             background: var(--vm-card-hover-bg);
+            box-shadow: var(--vm-card-shadow-hover, 0 28px 68px rgba(6, 10, 24, 0.58));
+            transform: translateY(-6px);
+        }
+        
+        /* 哲学卡片系统：统一虚空/有物的背景、光效与排版 */
+        .vm-philosophy-card {
+            position: relative;
+            padding: 3rem;
+            border-radius: 1.75rem;
+            border: 1px solid rgba(212, 175, 55, 0.18);
+            background: var(--vm-philosophy-card-bg);
+            box-shadow: var(--vm-philosophy-shadow);
+            backdrop-filter: blur(18px);
+            transition: background 0.45s ease, box-shadow 0.45s ease, transform 0.45s ease, border-color 0.45s ease;
+        }
+        
+        .vm-philosophy-card::before {
+            content: '';
+            position: absolute;
+            inset: -18%;
+            border-radius: 2.5rem;
+            background: radial-gradient(circle at 50% 10%, rgba(255, 255, 255, 0.12), transparent 68%);
+            opacity: 0;
+            transition: opacity 0.6s ease;
+        }
+        
+        .vm-philosophy-card:hover {
+            background: var(--vm-philosophy-card-hover-bg);
+            box-shadow: var(--vm-philosophy-shadow-hover);
+            transform: translateY(-8px);
+            border-color: rgba(212, 175, 55, 0.32);
+        }
+        
+        .vm-philosophy-card:hover::before {
+            opacity: 1;
+        }
+        
+        .vm-philosophy-topline,
+        .vm-philosophy-baseline {
+            position: absolute;
+            left: 50%;
+            width: 5rem;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--vm-philosophy-accent), transparent);
+            transform: translateX(-50%);
+            pointer-events: none; /* 允许点击穿透装饰性线条 */
+        }
+
+        .vm-philosophy-topline {
+            top: 0;
+        }
+
+        .vm-philosophy-baseline {
+            bottom: 0;
+        }
+        
+        .vm-philosophy-symbol {
+            width: 6rem;
+            height: 6rem;
+            margin: 0 auto 2.5rem;
+            filter: drop-shadow(0 18px 28px rgba(212, 175, 55, 0.25));
+            transition: transform 0.6s ease;
+        }
+        
+        .vm-philosophy-card:hover .vm-philosophy-symbol {
+            transform: scale(1.05) rotate(-2deg);
+        }
+        
+        .vm-philosophy-title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .vm-philosophy-title-primary {
+            font-family: 'Noto Sans SC', sans-serif;
+            font-size: clamp(2.4rem, 3.4vw, 3rem);
+            font-weight: 700;
+            letter-spacing: 0.28em;
+            color: var(--vm-philosophy-text-strong);
+        }
+        
+        .vm-philosophy-tagline {
+            margin-top: 1.25rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+            letter-spacing: 0.35em;
+            text-transform: uppercase;
+            font-style: italic;
+            color: rgba(212, 175, 55, 0.75);
+            text-align: center;
+        }
+        
+        .vm-philosophy-connector {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 1px;
+            height: 82%;
+            background: linear-gradient(180deg, transparent, var(--vm-philosophy-accent), transparent);
+            opacity: 0.55;
+            pointer-events: none;
+        }
+        
+        .vm-philosophy-divider {
+            width: 3rem;
+            height: 1px;
+            margin: 0.75rem auto 2.5rem;
+            background: linear-gradient(90deg, transparent, var(--vm-philosophy-accent), transparent);
+        }
+        
+        .vm-philosophy-text {
+            font-size: 1.1rem;
+            line-height: 1.9;
+            color: var(--vm-philosophy-text);
+            transition: color 0.45s ease;
+            text-align: left;
+            margin: 0;
+        }
+        
+        .vm-philosophy-card:hover .vm-philosophy-text {
+            color: var(--vm-philosophy-text-strong);
+        }
+
+        .vm-philosophy-body {
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+            align-items: center;
+        }
+
+        .vm-philosophy-label {
+            position: absolute;
+            top: 2.25rem;
+            right: 2.25rem;
+            font-size: 0.72rem;
+            letter-spacing: 0.32em;
+            text-transform: uppercase;
+            color: rgba(212, 175, 55, 0.4);
+            opacity: 0;
+            transform: translateY(-8px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .vm-philosophy-card:hover .vm-philosophy-label {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .vm-philosophy-meta {
+            margin-top: 0.8rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 0.95rem;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            font-style: italic;
+            color: rgba(212, 175, 55, 0.75);
+            text-align: center;
+            line-height: 1.6;
+        }
+        
+        .vm-cognitive-card {
+            padding: 1.15rem 0.95rem 1.25rem;
+            min-height: 8.4rem;
+        }
+        
+        .vm-cognitive-summary {
+            font-size: 0.9rem;
+            font-style: italic;
+            letter-spacing: 0.14em;
+            color: rgba(212, 175, 55, 0.76);
+            text-align: center;
+        }
+        
+        .vm-cognitive-icon {
+            width: 1.9rem;
+            height: 1.9rem;
+            margin: 0 auto 0.65rem;
+            border-radius: 0.6rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.22), rgba(212, 175, 55, 0.08));
+            border: 1px solid rgba(212, 175, 55, 0.25);
+            transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+        }
+        
+        .vm-cognitive-icon i {
+            font-size: 0.9rem;
+            color: rgba(212, 175, 55, 0.85);
+            transition: color 0.4s ease;
+        }
+        
+        .vm-cognitive-card:hover .vm-cognitive-icon {
+            transform: translateY(-3px);
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.28), rgba(212, 175, 55, 0.12));
+            box-shadow: 0 14px 24px rgba(212, 175, 55, 0.18);
+        }
+        
+        .vm-cognitive-card:hover .vm-cognitive-icon i {
+            color: #FFE08A;
+        }
+        
+        .vm-cognitive-card .vm-philosophy-title-primary {
+            font-size: clamp(1.45rem, 2.2vw, 1.9rem);
+            letter-spacing: 0.18em;
+        }
+        
+        .vm-cognitive-card .vm-philosophy-tagline {
+            margin-top: 0.4rem;
+            font-size: 0.82rem;
+            letter-spacing: 0.24em;
+        }
+        
+        .vm-cognitive-card .vm-philosophy-text {
+            font-size: 0.9rem;
+            line-height: 1.55;
+            margin-bottom: 0.35rem;
+        }
+        
+        .vm-cognitive-card .vm-philosophy-meta {
+            font-size: 0.68rem;
+            letter-spacing: 0.1em;
+        }
+        
+        .vm-values-card .vm-philosophy-text,
+        .vm-area-card .vm-philosophy-text {
+            font-size: 0.85rem;
+            line-height: 1.55;
+        }
+        
+        .vm-values-card .vm-philosophy-meta,
+        .vm-area-card .vm-philosophy-meta {
+            font-size: 0.66rem;
+            letter-spacing: 0.09em;
+        }
+        
+        .vm-philosophy-card:hover .vm-philosophy-meta {
+            color: var(--vm-philosophy-text-strong);
+        }
+        
+        :root[data-theme="light"] .vm-cognitive-icon {
+            background: linear-gradient(135deg, rgba(230, 214, 179, 0.32), rgba(230, 214, 179, 0.14));
+            border-color: rgba(199, 170, 110, 0.45);
+        }
+        
+        :root[data-theme="light"] .vm-cognitive-icon i {
+            color: #8C6A2B;
+        }
+        
+        :root[data-theme="light"] .vm-cognitive-card:hover .vm-cognitive-icon {
+            background: linear-gradient(135deg, rgba(255, 233, 180, 0.55), rgba(209, 186, 128, 0.28));
+            box-shadow: 0 26px 46px rgba(209, 186, 128, 0.28);
+        }
+        
+        :root[data-theme="light"] .vm-cognitive-step {
+            background: linear-gradient(135deg, #FDE9B0, #E6D6B3);
+            color: #6E5420;
+            box-shadow: 0 12px 24px rgba(209, 186, 128, 0.3);
+        }
+        
+        
+        .vm-values-card,
+        .vm-area-card {
+            background: linear-gradient(150deg, rgba(10, 10, 10, 0.65), rgba(5, 5, 5, 0.45));
+            border: 1px solid rgba(212, 175, 55, 0.18);
+            box-shadow: 0 18px 32px rgba(0, 0, 0, 0.55);
+        }
+
+        .vm-values-card:hover,
+        .vm-area-card:hover {
+            background: linear-gradient(150deg, rgba(15, 15, 15, 0.75), rgba(8, 8, 8, 0.55));
+            border-color: rgba(212, 175, 55, 0.32);
+            box-shadow: 0 24px 42px rgba(0, 0, 0, 0.65);
+        }
+        
+        :root[data-theme="light"] .vm-values-card,
+        :root[data-theme="light"] .vm-area-card {
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid rgba(199, 170, 110, 0.35);
+            box-shadow: 0 18px 30px rgba(185, 159, 111, 0.25);
+        }
+        
+        :root[data-theme="light"] .vm-values-card:hover,
+        :root[data-theme="light"] .vm-area-card:hover {
+            background: rgba(255, 255, 255, 0.95);
+            border-color: rgba(199, 170, 110, 0.45);
+            box-shadow: 0 26px 44px rgba(185, 159, 111, 0.3);
         }
         
         /* 高端动画延迟 */
@@ -469,15 +945,15 @@
             background-size: 200% 200%;
             transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
         }
-        
+
         .premium-button:hover {
             background-position: 100% 100%;
             transform: translateY(-3px) scale(1.02);
-            box-shadow: 
+            box-shadow:
                 0 20px 40px rgba(212, 175, 55, 0.4),
                 0 0 30px rgba(212, 175, 55, 0.3);
         }
-        
+
         .premium-button::before {
             content: '';
             position: absolute;
@@ -488,9 +964,128 @@
             background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
             transition: left 0.6s ease;
         }
-        
+
         .premium-button:hover::before {
             left: 100%;
+        }
+
+        /* 品牌故事：卡片栈布局 */
+        .vm-story-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+        }
+
+        /* 品牌故事标题部分 - 不使用卡片背景 */
+        .vm-story-title-section {
+            padding: 2rem 0;
+        }
+
+        .vm-story-card {
+            border-radius: 1.5rem;
+            padding: 2.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            background-color: rgba(8, 8, 8, 0.75);
+            backdrop-filter: blur(16px);
+            box-shadow: 0 22px 60px rgba(0, 0, 0, 0.45);
+            transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            gap: 1.75rem;
+        }
+
+        .vm-story-card:hover {
+            border-color: rgba(255, 255, 255, 0.16);
+            box-shadow: 0 28px 70px rgba(0, 0, 0, 0.55);
+            transform: translateY(-4px);
+        }
+
+        .vm-story-eyebrow {
+            letter-spacing: 0.4em;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            color: var(--vm-text-secondary);
+        }
+
+        @media (min-width: 768px) {
+            .vm-story-eyebrow {
+                font-size: 0.8rem;
+            }
+        }
+
+        .vm-story-divider {
+            height: 1px;
+            width: 100%;
+            background: linear-gradient(90deg, rgba(212, 175, 55, 0), rgba(212, 175, 55, 0.35), rgba(212, 175, 55, 0));
+        }
+
+        .vm-story-heading {
+            color: var(--vm-text-primary);
+        }
+
+        .vm-story-subtitle {
+            color: var(--vm-text-secondary);
+            max-width: 42rem;
+            line-height: 1.8;
+        }
+
+        .vm-story-body {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            color: var(--vm-text-secondary);
+        }
+
+        .vm-story-text {
+            font-size: 0.95rem;
+            line-height: 1.75;
+        }
+
+        .vm-story-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .vm-story-list-item {
+            border-radius: 1.25rem;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            background-color: rgba(255, 255, 255, 0.02);
+            padding: 1.75rem;
+            height: 100%;
+        }
+
+        .vm-story-list-item h4 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            color: var(--vm-text-primary);
+        }
+
+        .vm-story-list-item p {
+            margin: 0;
+            line-height: 1.7;
+            color: var(--vm-text-secondary);
+        }
+
+        :root[data-theme="light"] .vm-story-card {
+            background-color: rgba(255, 255, 255, 0.95);
+            border-color: rgba(31, 35, 51, 0.08);
+            box-shadow: 0 18px 48px rgba(31, 35, 51, 0.18);
+        }
+
+        :root[data-theme="light"] .vm-story-card:hover {
+            border-color: rgba(31, 35, 51, 0.16);
+            box-shadow: 0 22px 60px rgba(31, 35, 51, 0.22);
+        }
+
+        :root[data-theme="light"] .vm-story-title-section {
+            background: transparent; /* 标题部分在浅色模式下完全透明 */
+        }
+
+        :root[data-theme="light"] .vm-story-list-item {
+            border-color: rgba(31, 35, 51, 0.08);
+            background-color: rgba(255, 255, 255, 0.92);
         }
     </style>
 </head>
@@ -500,52 +1095,11 @@
 
     <!-- 英雄区域 -->
     <section class="vm-section relative overflow-hidden" id="hero">
-        <!-- 鬼斧神工级背景效果 - 琉璃世界 -->
-        <div class="absolute inset-0">
-            <!-- 深邃背景层 -->
-            <div class="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-black"></div>
-            
-            <!-- 琉璃折射光影 -->
-            <div class="absolute inset-0">
-                <div class="absolute inset-0 bg-gradient-radial from-yellow-400/5 via-transparent to-transparent"></div>
-                <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-yellow-300/3 via-transparent to-yellow-500/2"></div>
-                <div class="absolute bottom-0 right-0 w-full h-full bg-gradient-to-tl from-yellow-400/4 via-transparent to-transparent"></div>
-            </div>
-            
-            <!-- 琉璃粒子星系 -->
-            <div class="absolute inset-0 opacity-20">
-                <!-- 主星系 -->
-                <div class="absolute top-1/5 left-1/6 w-3 h-3 bg-gradient-to-r from-yellow-200 to-yellow-400 rounded-full animate-pulse blur-sm"></div>
-                <div class="absolute top-1/3 right-1/4 w-2 h-2 bg-gradient-to-r from-yellow-300 to-yellow-500 rounded-full animate-pulse animation-delay-1000 blur-sm"></div>
-                <div class="absolute bottom-1/4 left-1/3 w-4 h-4 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-full animate-pulse animation-delay-2000 blur-sm"></div>
-                
-                <!-- 卫星粒子 -->
-                <div class="absolute top-1/2 left-1/5 w-1 h-1 bg-yellow-300 rounded-full animate-ping"></div>
-                <div class="absolute top-3/5 right-1/5 w-1.5 h-1.5 bg-yellow-400 rounded-full animate-ping animation-delay-1000"></div>
-                <div class="absolute bottom-1/3 right-1/3 w-1 h-1 bg-yellow-500 rounded-full animate-ping animation-delay-2000"></div>
-                
-                <!-- 微观粒子群 -->
-                <div class="absolute top-2/3 left-2/3 w-0.5 h-0.5 bg-yellow-200 rounded-full animate-pulse blur-sm"></div>
-                <div class="absolute top-1/6 right-1/6 w-0.5 h-0.5 bg-yellow-300 rounded-full animate-pulse animation-delay-1000 blur-sm"></div>
-                <div class="absolute bottom-1/5 left-1/2 w-0.5 h-0.5 bg-yellow-400 rounded-full animate-pulse animation-delay-2000 blur-sm"></div>
-            </div>
-            
-            <!-- 琉璃光束扫射 -->
-            <div class="absolute inset-0 overflow-hidden">
-                <div class="absolute -top-10 -left-10 w-1 h-screen bg-gradient-to-b from-transparent via-yellow-300/30 to-transparent transform rotate-12 animate-pulse opacity-40"></div>
-                <div class="absolute -top-10 -right-10 w-1 h-screen bg-gradient-to-b from-transparent via-yellow-400/20 to-transparent transform -rotate-12 animate-pulse animation-delay-1000 opacity-30"></div>
-            </div>
-            
-            <!-- 最终渐变遮罩 -->
-            <div class="absolute inset-0 bg-gradient-radial from-transparent via-transparent to-black/90"></div>
-        </div>
+        <div class="absolute inset-0 pointer-events-none" style="background-color: var(--vm-background);"></div>
         
         <div class="max-w-6xl mx-auto px-8 text-center relative z-10 py-20">
             <!-- 品牌标识 - 鬼斧神工级琉璃呈现 -->
             <div class="mb-16" id="hero-title" style="opacity: 1; animation: vm-fallback-fade-in 2s ease-out;">
-                <!-- 琉璃背景光晕 -->
-                <div class="absolute -top-20 left-1/2 transform -translate-x-1/2 w-96 h-96 bg-gradient-radial from-yellow-400/10 via-yellow-500/5 to-transparent blur-3xl opacity-60 animate-pulse"></div>
-                
                 <!-- 主标题：虚空有物 -->
                 <div class="relative">
                     <div class="text-6xl md:text-8xl font-extralight mb-8 tracking-[0.3em] relative z-10"
@@ -625,18 +1179,6 @@
 
     <!-- 虚空有物哲学 -->
     <section class="vm-section relative overflow-hidden" id="philosophy">
-        <!-- 背景装饰 -->
-        <div class="absolute inset-0">
-            <!-- 渐变背景 -->
-            <div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-900"></div>
-            <!-- 几何装饰 -->
-            <div class="absolute top-1/4 left-1/6 w-96 h-96 bg-gradient-radial from-yellow-400/5 to-transparent rounded-full blur-3xl"></div>
-            <div class="absolute bottom-1/4 right-1/6 w-96 h-96 bg-gradient-radial from-yellow-600/3 to-transparent rounded-full blur-3xl"></div>
-            <!-- 线条装饰 -->
-            <div class="absolute top-0 left-1/3 w-px h-full bg-gradient-to-b from-transparent via-yellow-400/10 to-transparent"></div>
-            <div class="absolute top-0 right-1/3 w-px h-full bg-gradient-to-b from-transparent via-yellow-400/10 to-transparent"></div>
-            </div>
-            
         <div class="max-w-7xl mx-auto px-6 relative z-10">
             <div class="text-center mb-20">
                 <!-- 主标题装饰 -->
@@ -652,109 +1194,76 @@
                 </div>
             </div>
             
-            <div class="grid md:grid-cols-2 gap-20 items-center max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-20 items-start max-w-6xl mx-auto relative">
+                <div class="hidden md:block vm-philosophy-connector"></div>
+
                 <!-- 虚空 VOID -->
                 <div class="group relative">
-                    <!-- 卡片背景效果 -->
-                    <div class="absolute -inset-4 bg-gradient-to-r from-yellow-400/0 via-yellow-400/5 to-yellow-400/0 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
-                    <div class="absolute -inset-2 bg-gradient-to-br from-white/5 to-white/0 rounded-2xl opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-                    
-                    <div class="luxury-card p-12 rounded-2xl text-center relative z-10 border border-yellow-400/10 group-hover:border-yellow-400/30 transition-all duration-500 backdrop-blur-sm bg-black/20">
-                        <!-- 顶部装饰线 -->
-                        <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-16 h-px bg-gradient-to-r from-transparent via-yellow-400 to-transparent"></div>
-                        
-                        <div class="mb-12 relative">
-                            <!-- 符号背景光晕 -->
-                            <div class="absolute inset-0 flex items-center justify-center">
-                                <div class="w-32 h-32 bg-gradient-radial from-yellow-400/10 to-transparent rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
-                    </div>
-                            <div class="text-8xl vm-gradient-text mb-8 transform group-hover:scale-110 transition-all duration-500 relative z-10">∅</div>
-                            <div class="relative">
-                                <h3 class="text-4xl font-bold mb-6">
-                                    <span class="vm-gold-text">虚空</span>
-                                    <span class="text-2xl text-gray-400 mx-4">·</span>
-                                    <span class="vm-gold-text text-2xl font-light tracking-wider">VOID</span>
-                                </h3>
-                                <!-- 装饰线 -->
-                                <div class="w-12 h-px bg-gradient-to-r from-yellow-400 to-yellow-600 mx-auto"></div>
-                            </div>
+                    <div class="vm-philosophy-card text-center overflow-hidden">
+                        <div class="vm-philosophy-label">Potential Origin</div>
+                        <div class="vm-philosophy-topline"></div>
+                        <div class="vm-philosophy-baseline"></div>
+                        <svg class="vm-philosophy-symbol" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <defs>
+                                <linearGradient id="vm-void-orbit" x1="22" y1="24" x2="102" y2="100" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0" stop-color="#3C4B6E" />
+                                    <stop offset="0.55" stop-color="#D4AF37" />
+                                    <stop offset="1" stop-color="#7D5A1B" />
+                                </linearGradient>
+                                <radialGradient id="vm-void-glow" cx="0.5" cy="0.5" r="0.6">
+                                    <stop offset="0" stop-color="#FFD700" stop-opacity="0.7" />
+                                    <stop offset="1" stop-color="#0F0F0F" stop-opacity="0" />
+                                </radialGradient>
+                            </defs>
+                            <circle cx="60" cy="60" r="46" stroke="url(#vm-void-orbit)" stroke-width="4" opacity="0.45" />
+                            <circle cx="60" cy="60" r="30" stroke="url(#vm-void-orbit)" stroke-width="3" stroke-linecap="round" stroke-dasharray="14 10" opacity="0.65" />
+                            <path d="M28 86C45 68 54 60 76 42C88 33 97 26 104 24" stroke="url(#vm-void-orbit)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M22 40C32 28 46 22 60 22C74 22 88 28 98 40" stroke="url(#vm-void-orbit)" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="10 12" opacity="0.5" />
+                            <circle cx="60" cy="60" r="24" fill="url(#vm-void-glow)" opacity="0.4" />
+                        </svg>
+                        <div class="vm-philosophy-title">
+                            <span class="vm-philosophy-title-primary">虚空</span>
                         </div>
-                        
-                        <div class="space-y-6 text-left relative">
-                            <!-- 引用装饰 -->
-                            <div class="absolute -left-4 top-0 text-4xl vm-gradient-text opacity-20">"</div>
-                            <div class="pl-6">
-                                <p class="text-lg text-gray-200 leading-relaxed font-light group-hover:text-gray-100 transition-colors duration-300">
-                            潜能的策源地。市场的非有效性，前沿科技的萌芽阶段，超越主流范式的认知。
-                        </p>
-                                <p class="text-lg text-gray-200 leading-relaxed font-light group-hover:text-gray-100 transition-colors duration-300">
-                            我们主动探索这些未被定义的价值源泉。
-                        </p>
-                            </div>
-                            <div class="absolute -right-4 bottom-0 text-4xl vm-gradient-text opacity-20">"</div>
+                        <p class="vm-philosophy-tagline">潜能的策源地</p>
+                        <div class="vm-philosophy-divider"></div>
+                        <div class="vm-philosophy-body">
+                            <p class="vm-philosophy-meta">市场非有效性 · 前沿科技萌芽 · 超越主流范式</p>
                         </div>
-                        
-                        <!-- 底部装饰线 -->
-                        <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-16 h-px bg-gradient-to-r from-transparent via-yellow-400 to-transparent"></div>
                     </div>
                 </div>
-                
-                <!-- 中央连接元素 -->
-                <div class="hidden md:block absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
-                    <div class="relative">
-                        <!-- 中心圆 -->
-                        <div class="w-16 h-16 border-2 border-yellow-400/30 rounded-full flex items-center justify-center bg-black/50 backdrop-blur-sm">
-                            <div class="w-2 h-2 bg-yellow-400 rounded-full animate-pulse"></div>
-                        </div>
-                        <!-- 连接线 -->
-                        <div class="absolute top-1/2 -left-32 w-24 h-px bg-gradient-to-r from-yellow-400/50 to-transparent"></div>
-                        <div class="absolute top-1/2 -right-32 w-24 h-px bg-gradient-to-l from-yellow-400/50 to-transparent"></div>
-                    </div>
-                </div>
-                
+
                 <!-- 有物 SUBSTANCE -->
                 <div class="group relative">
-                    <!-- 卡片背景效果 -->
-                    <div class="absolute -inset-4 bg-gradient-to-l from-yellow-400/0 via-yellow-400/5 to-yellow-400/0 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
-                    <div class="absolute -inset-2 bg-gradient-to-bl from-white/5 to-white/0 rounded-2xl opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-                    
-                    <div class="luxury-card p-12 rounded-2xl text-center relative z-10 border border-yellow-400/10 group-hover:border-yellow-400/30 transition-all duration-500 backdrop-blur-sm bg-black/20">
-                        <!-- 顶部装饰线 -->
-                        <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-16 h-px bg-gradient-to-r from-transparent via-yellow-400 to-transparent"></div>
-                        
-                        <div class="mb-12 relative">
-                            <!-- 符号背景光晕 -->
-                            <div class="absolute inset-0 flex items-center justify-center">
-                                <div class="w-32 h-32 bg-gradient-radial from-yellow-400/10 to-transparent rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
-                    </div>
-                            <div class="text-8xl vm-gradient-text mb-8 transform group-hover:scale-110 transition-all duration-500 relative z-10">◉</div>
-                            <div class="relative">
-                                <h3 class="text-4xl font-bold mb-6">
-                                    <span class="vm-gold-text">有物</span>
-                                    <span class="text-2xl text-gray-400 mx-4">·</span>
-                                    <span class="vm-gold-text text-2xl font-light tracking-wider">SUBSTANCE</span>
-                                </h3>
-                                <!-- 装饰线 -->
-                                <div class="w-12 h-px bg-gradient-to-r from-yellow-400 to-yellow-600 mx-auto"></div>
-                            </div>
+                    <div class="vm-philosophy-card text-center overflow-hidden">
+                        <div class="vm-philosophy-label">Verified Substance</div>
+                        <div class="vm-philosophy-topline"></div>
+                        <div class="vm-philosophy-baseline"></div>
+                        <svg class="vm-philosophy-symbol" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <defs>
+                                <linearGradient id="vm-substance-orbit" x1="18" y1="30" x2="102" y2="90" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0" stop-color="#FFF3D2" />
+                                    <stop offset="0.5" stop-color="#D4AF37" />
+                                    <stop offset="1" stop-color="#9B6F1B" />
+                                </linearGradient>
+                                <radialGradient id="vm-substance-core" cx="0.5" cy="0.5" r="0.55">
+                                    <stop offset="0" stop-color="#1F2333" stop-opacity="0.95" />
+                                    <stop offset="0.65" stop-color="#23314A" stop-opacity="0.75" />
+                                    <stop offset="1" stop-color="#F1D79F" stop-opacity="0.2" />
+                                </radialGradient>
+                            </defs>
+                            <polygon points="60,18 94,38 94,82 60,102 26,82 26,38" stroke="url(#vm-substance-orbit)" stroke-width="4" fill="rgba(255, 219, 170, 0.12)" />
+                            <polygon points="60,28 86,42 86,78 60,92 34,78 34,42" stroke="url(#vm-substance-orbit)" stroke-width="2" stroke-dasharray="12 10" fill="none" opacity="0.6" />
+                            <circle cx="60" cy="60" r="22" fill="url(#vm-substance-core)" />
+                            <path d="M46 60L60 74L74 60L60 46Z" stroke="#FBE9C8" stroke-width="2.2" fill="rgba(255, 215, 128, 0.16)" />
+                        </svg>
+                        <div class="vm-philosophy-title">
+                            <span class="vm-philosophy-title-primary">有物</span>
                         </div>
-                        
-                        <div class="space-y-6 text-left relative">
-                            <!-- 引用装饰 -->
-                            <div class="absolute -left-4 top-0 text-4xl vm-gradient-text opacity-20">"</div>
-                            <div class="pl-6">
-                                <p class="text-lg text-gray-200 leading-relaxed font-light group-hover:text-gray-100 transition-colors duration-300">
-                            价值的最终形态。通过严谨的认知体系发掘、验证并持有的，具备长期确定性的价值载体。
-                        </p>
-                                <p class="text-lg text-gray-200 leading-relaxed font-light group-hover:text-gray-100 transition-colors duration-300">
-                            扎实的基本面，可验证的成长性。
-                        </p>
-                    </div>
-                            <div class="absolute -right-4 bottom-0 text-4xl vm-gradient-text opacity-20">"</div>
+                        <p class="vm-philosophy-tagline">价值的定型之处</p>
+                        <div class="vm-philosophy-divider"></div>
+                        <div class="vm-philosophy-body">
+                            <p class="vm-philosophy-meta">经体系严谨验证 · 可长期持有 · 确定性资产</p>
                         </div>
-                        
-                        <!-- 底部装饰线 -->
-                        <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-16 h-px bg-gradient-to-r from-transparent via-yellow-400 to-transparent"></div>
                     </div>
                 </div>
             </div>
@@ -763,255 +1272,112 @@
 
     <!-- 认知套利 -->
     <section class="vm-section relative overflow-hidden" id="cognitive-arbitrage">
-        <!-- 背景装饰 -->
-        <div class="absolute inset-0">
-            <div class="absolute inset-0 bg-gradient-to-tr from-black via-gray-900 to-black"></div>
-            <!-- 网格装饰 -->
-            <div class="absolute inset-0 opacity-10">
-                <div class="grid grid-cols-12 h-full">
-                    <div class="border-r border-yellow-400/10"></div>
-                    <div class="border-r border-yellow-400/10"></div>
-                    <div class="border-r border-yellow-400/10"></div>
-                    <div class="border-r border-yellow-400/10"></div>
-                    <div class="border-r border-yellow-400/10"></div>
-                    <div class="border-r border-yellow-400/10"></div>
-                    <div class="border-r border-yellow-400/10"></div>
-                    <div class="border-r border-yellow-400/10"></div>
-                    <div class="border-r border-yellow-400/10"></div>
-                    <div class="border-r border-yellow-400/10"></div>
-                    <div class="border-r border-yellow-400/10"></div>
-                    <div></div>
-                </div>
-            </div>
-            <!-- 放射状光效 -->
-            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-conic from-yellow-400/5 via-transparent to-yellow-400/5 rounded-full blur-3xl"></div>
-        </div>
-        
-        <div class="max-w-7xl mx-auto px-6 relative z-10">
-            <div class="text-center mb-20">
+        <div class="max-w-7xl mx-auto px-6 pt-32 md:pt-40 pb-24 relative z-10">
+            <div class="text-center mb-24">
                 <!-- 标题区域 -->
-                <div class="relative inline-block mb-12">
-                    <!-- 装饰框架 -->
-                    <div class="absolute -inset-8">
-                        <div class="absolute top-0 left-0 w-12 h-12 border-l-2 border-t-2 border-yellow-400/20"></div>
-                        <div class="absolute top-0 right-0 w-12 h-12 border-r-2 border-t-2 border-yellow-400/20"></div>
-                        <div class="absolute bottom-0 left-0 w-12 h-12 border-l-2 border-b-2 border-yellow-400/20"></div>
-                        <div class="absolute bottom-0 right-0 w-12 h-12 border-r-2 border-b-2 border-yellow-400/20"></div>
-                    </div>
-                    <h2 class="text-6xl font-bold mb-8 vm-gradient-text">认知套利</h2>
-                    <div class="w-32 h-px bg-gradient-to-r from-transparent via-yellow-400 to-transparent mx-auto mb-6"></div>
-                <p class="text-xl vm-gradient-text mb-8 font-extralight tracking-wider" style="font-family: 'Times New Roman', serif;">Cognitive Arbitrage</p>
+                <div class="text-center mb-12">
+                    <h2 class="text-6xl font-bold mb-6 vm-gradient-text">认知套利</h2>
+                    <p class="text-xl vm-gradient-text mb-8 font-extralight tracking-wider" style="font-family: 'Times New Roman', serif;">Cognitive Arbitrage</p>
                 </div>
                 
                 <div class="max-w-5xl mx-auto relative">
                     <!-- 装饰引号 -->
                     <div class="absolute -left-8 -top-4 text-6xl vm-gradient-text opacity-20">"</div>
-                    <p class="text-xl text-gray-200 leading-relaxed font-light px-8">
-                    当资产内在价值因前沿性、复杂性而与市场普遍认知产生巨大鸿沟时，<br>
-                        我们系统性地将<span class="vm-gradient-text font-semibold">"认知价差"</span>转化为客户的<span class="vm-gradient-text font-semibold">"认知Alpha"</span>。
-                </p>
+                    <p class="vm-cognitive-summary px-8">
+                        当资产内在价值因前沿性、复杂性而与市场普遍认知产生鸿沟时，我们系统性地将<span class="vm-gradient-text">"认知价差"</span>转化为客户的<span class="vm-gradient-text">"认知Alpha"</span>。
+                    </p>
                     <div class="absolute -right-8 -bottom-4 text-6xl vm-gradient-text opacity-20">"</div>
                 </div>
             </div>
             
-            <!-- 六边形流程图布局 -->
+            <!-- 认知流程卡片 -->
             <div class="relative max-w-6xl mx-auto">
-                <!-- 中心连接线网络 -->
-                <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
-                    <svg width="600" height="400" viewBox="0 0 600 400" class="opacity-20">
-                        <!-- 连接线 -->
-                        <path d="M150,100 L450,100" stroke="url(#gradient1)" stroke-width="1" />
-                        <path d="M150,300 L450,300" stroke="url(#gradient1)" stroke-width="1" />
-                        <path d="M75,200 L525,200" stroke="url(#gradient1)" stroke-width="1" />
-                        <path d="M150,100 L75,200" stroke="url(#gradient1)" stroke-width="1" />
-                        <path d="M450,100 L525,200" stroke="url(#gradient1)" stroke-width="1" />
-                        <path d="M150,300 L75,200" stroke="url(#gradient1)" stroke-width="1" />
-                        <path d="M450,300 L525,200" stroke="url(#gradient1)" stroke-width="1" />
-                        <defs>
-                            <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">
-                                <stop offset="0%" style="stop-color:#D4AF37;stop-opacity:0" />
-                                <stop offset="50%" style="stop-color:#D4AF37;stop-opacity:0.5" />
-                                <stop offset="100%" style="stop-color:#D4AF37;stop-opacity:0" />
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                    </div>
-                
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
-                    <!-- 信号探测 -->
-                    <div class="group relative">
-                        <div class="absolute -inset-3 bg-gradient-to-br from-yellow-400/0 via-yellow-400/10 to-yellow-400/0 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
-                        <div class="vm-card p-8 rounded-xl relative z-10 border border-yellow-400/10 group-hover:border-yellow-400/30 transition-all duration-500 backdrop-blur-sm bg-gradient-to-br from-black/40 to-gray-900/40 group-hover:from-black/60 group-hover:to-gray-900/60">
-                            <!-- 卡片编号 -->
-                            <div class="absolute -top-3 -right-3 w-8 h-8 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center text-black text-sm font-bold">01</div>
-                            
-                            <!-- 图标区域 -->
-                            <div class="relative mb-8">
-                                <div class="absolute inset-0 bg-gradient-radial from-yellow-400/20 to-transparent rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
-                                <div class="flex justify-center items-center mb-6 relative z-10">
-                                    <div class="w-16 h-16 bg-gradient-to-br from-yellow-400/20 to-yellow-600/20 rounded-xl flex items-center justify-center border border-yellow-400/30 group-hover:scale-110 transition-all duration-500">
-                                        <i class="fas fa-satellite-dish text-2xl vm-dark-gold-text group-hover:text-yellow-300 transition-colors duration-300"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <h3 class="text-2xl font-bold mb-6 vm-gradient-text transition-colors duration-300 text-center">信号探测</h3>
-                            <div class="w-12 h-px bg-gradient-to-r from-yellow-400 to-yellow-600 mx-auto mb-6"></div>
-                            <p class="text-gray-300 leading-relaxed text-center group-hover:text-gray-200 transition-colors duration-300 font-light">
-                        广泛捕捉前沿领域的微弱信号
-                    </p>
-                            
-                            <!-- 底部装饰 -->
-                            <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-yellow-400/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="vm-philosophy-card vm-cognitive-card text-center relative overflow-hidden group">
+                        <div class="vm-philosophy-topline"></div>
+                        <div class="vm-philosophy-baseline"></div>
+                        <div class="vm-cognitive-icon"><i class="fas fa-satellite-dish"></i></div>
+                        <div class="vm-philosophy-title"><span class="vm-philosophy-title-primary">信号探测</span></div>
+                        <p class="vm-philosophy-tagline">Signal Scouting</p>
+                        <div class="vm-philosophy-divider"></div>
+                        <div class="vm-philosophy-body">
+                            <p class="vm-philosophy-text">广泛捕捉前沿领域的微弱信号，建立早期洞察。</p>
+                            <p class="vm-philosophy-meta">市场非有效性 · 异常数据脉冲</p>
                         </div>
-                </div>
-                
-                    <!-- 构想生成 -->
-                    <div class="group relative">
-                        <div class="absolute -inset-3 bg-gradient-to-br from-yellow-400/0 via-yellow-400/10 to-yellow-400/0 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
-                        <div class="vm-card p-8 rounded-xl relative z-10 border border-yellow-400/10 group-hover:border-yellow-400/30 transition-all duration-500 backdrop-blur-sm bg-gradient-to-br from-black/40 to-gray-900/40 group-hover:from-black/60 group-hover:to-gray-900/60">
-                            <div class="absolute -top-3 -right-3 w-8 h-8 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center text-black text-sm font-bold">02</div>
-                            
-                            <div class="relative mb-8">
-                                <div class="absolute inset-0 bg-gradient-radial from-yellow-400/20 to-transparent rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
-                                <div class="flex justify-center items-center mb-6 relative z-10">
-                                    <div class="w-16 h-16 bg-gradient-to-br from-yellow-400/20 to-yellow-600/20 rounded-xl flex items-center justify-center border border-yellow-400/30 group-hover:scale-110 transition-all duration-500">
-                                        <i class="fas fa-lightbulb text-2xl vm-dark-gold-text group-hover:text-yellow-300 transition-colors duration-300"></i>
                     </div>
-                                </div>
-                            </div>
-                            
-                            <h3 class="text-2xl font-bold mb-6 vm-gradient-text transition-colors duration-300 text-center">构想生成</h3>
-                            <div class="w-12 h-px bg-gradient-to-r from-yellow-400 to-yellow-600 mx-auto mb-6"></div>
-                            <p class="text-gray-300 leading-relaxed text-center group-hover:text-gray-200 transition-colors duration-300 font-light">
-                        提出非共识性的投资构想
-                    </p>
-                            
-                            <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-yellow-400/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
+
+                    <div class="vm-philosophy-card vm-cognitive-card text-center relative overflow-hidden group">
+                        <div class="vm-philosophy-topline"></div>
+                        <div class="vm-philosophy-baseline"></div>
+                        <div class="vm-cognitive-icon"><i class="fas fa-lightbulb"></i></div>
+                        <div class="vm-philosophy-title"><span class="vm-philosophy-title-primary">构想生成</span></div>
+                        <p class="vm-philosophy-tagline">Idea Generation</p>
+                        <div class="vm-philosophy-divider"></div>
+                        <div class="vm-philosophy-body">
+                            <p class="vm-philosophy-text">将信号转译为非共识性投资命题，构建初步框架。</p>
+                            <p class="vm-philosophy-meta">跨学科推演 · 反直觉假设</p>
                         </div>
-                </div>
-                
-                    <!-- 深度研究 -->
-                    <div class="group relative">
-                        <div class="absolute -inset-3 bg-gradient-to-br from-yellow-400/0 via-yellow-400/10 to-yellow-400/0 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
-                        <div class="vm-card p-8 rounded-xl relative z-10 border border-yellow-400/10 group-hover:border-yellow-400/30 transition-all duration-500 backdrop-blur-sm bg-gradient-to-br from-black/40 to-gray-900/40 group-hover:from-black/60 group-hover:to-gray-900/60">
-                            <div class="absolute -top-3 -right-3 w-8 h-8 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center text-black text-sm font-bold">03</div>
-                            
-                            <div class="relative mb-8">
-                                <div class="absolute inset-0 bg-gradient-radial from-yellow-400/20 to-transparent rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
-                                <div class="flex justify-center items-center mb-6 relative z-10">
-                                    <div class="w-16 h-16 bg-gradient-to-br from-yellow-400/20 to-yellow-600/20 rounded-xl flex items-center justify-center border border-yellow-400/30 group-hover:scale-110 transition-all duration-500">
-                                        <i class="fas fa-microscope text-2xl vm-dark-gold-text group-hover:text-yellow-300 transition-colors duration-300"></i>
                     </div>
-                                </div>
-                            </div>
-                            
-                            <h3 class="text-2xl font-bold mb-6 vm-gradient-text transition-colors duration-300 text-center">深度研究</h3>
-                            <div class="w-12 h-px bg-gradient-to-r from-yellow-400 to-yellow-600 mx-auto mb-6"></div>
-                            <p class="text-gray-300 leading-relaxed text-center group-hover:text-gray-200 transition-colors duration-300 font-light">
-                        多维度研究与专家网络验证
-                    </p>
-                            
-                            <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-yellow-400/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
+
+                    <div class="vm-philosophy-card vm-cognitive-card text-center relative overflow-hidden group">
+                        <div class="vm-philosophy-topline"></div>
+                        <div class="vm-philosophy-baseline"></div>
+                        <div class="vm-cognitive-icon"><i class="fas fa-microscope"></i></div>
+                        <div class="vm-philosophy-title"><span class="vm-philosophy-title-primary">深度研究</span></div>
+                        <p class="vm-philosophy-tagline">Deep Research</p>
+                        <div class="vm-philosophy-divider"></div>
+                        <div class="vm-philosophy-body">
+                            <p class="vm-philosophy-text">多维度实证与专家网络验证，沉淀可执行知识。</p>
+                            <p class="vm-philosophy-meta">产业访谈 · 数据回测</p>
                         </div>
-                </div>
-                
-                    <!-- 红队演练 -->
-                    <div class="group relative">
-                        <div class="absolute -inset-3 bg-gradient-to-br from-yellow-400/0 via-yellow-400/10 to-yellow-400/0 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
-                        <div class="vm-card p-8 rounded-xl relative z-10 border border-yellow-400/10 group-hover:border-yellow-400/30 transition-all duration-500 backdrop-blur-sm bg-gradient-to-br from-black/40 to-gray-900/40 group-hover:from-black/60 group-hover:to-gray-900/60">
-                            <div class="absolute -top-3 -right-3 w-8 h-8 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center text-black text-sm font-bold">04</div>
-                            
-                            <div class="relative mb-8">
-                                <div class="absolute inset-0 bg-gradient-radial from-yellow-400/20 to-transparent rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
-                                <div class="flex justify-center items-center mb-6 relative z-10">
-                                    <div class="w-16 h-16 bg-gradient-to-br from-yellow-400/20 to-yellow-600/20 rounded-xl flex items-center justify-center border border-yellow-400/30 group-hover:scale-110 transition-all duration-500">
-                                        <i class="fas fa-chess text-2xl vm-dark-gold-text group-hover:text-yellow-300 transition-colors duration-300"></i>
                     </div>
-                                </div>
-                            </div>
-                            
-                            <h3 class="text-2xl font-bold mb-6 vm-gradient-text transition-colors duration-300 text-center">红队演练</h3>
-                            <div class="w-12 h-px bg-gradient-to-r from-yellow-400 to-yellow-600 mx-auto mb-6"></div>
-                            <p class="text-gray-300 leading-relaxed text-center group-hover:text-gray-200 transition-colors duration-300 font-light">
-                        内部反对小组压力测试
-                    </p>
-                
-                            <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-yellow-400/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
+
+                    <div class="vm-philosophy-card vm-cognitive-card text-center relative overflow-hidden group">
+                        <div class="vm-philosophy-topline"></div>
+                        <div class="vm-philosophy-baseline"></div>
+                        <div class="vm-cognitive-icon"><i class="fas fa-chess-knight"></i></div>
+                        <div class="vm-philosophy-title"><span class="vm-philosophy-title-primary">框架淬炼</span></div>
+                        <p class="vm-philosophy-tagline">Framework Refinement</p>
+                        <div class="vm-philosophy-divider"></div>
+                        <div class="vm-philosophy-body">
+                            <p class="vm-philosophy-text">整合认知地图与风险矩阵，明确核心驱动因子。</p>
+                            <p class="vm-philosophy-meta">战略定位 · 场景推演</p>
+                        </div>
                     </div>
-                </div>
-                
-                    <!-- 价值锚定 -->
-                    <div class="group relative">
-                        <div class="absolute -inset-3 bg-gradient-to-br from-yellow-400/0 via-yellow-400/10 to-yellow-400/0 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
-                        <div class="vm-card p-8 rounded-xl relative z-10 border border-yellow-400/10 group-hover:border-yellow-400/30 transition-all duration-500 backdrop-blur-sm bg-gradient-to-br from-black/40 to-gray-900/40 group-hover:from-black/60 group-hover:to-gray-900/60">
-                            <div class="absolute -top-3 -right-3 w-8 h-8 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center text-black text-sm font-bold">05</div>
-                            
-                            <div class="relative mb-8">
-                                <div class="absolute inset-0 bg-gradient-radial from-yellow-400/20 to-transparent rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
-                                <div class="flex justify-center items-center mb-6 relative z-10">
-                                    <div class="w-16 h-16 bg-gradient-to-br from-yellow-400/20 to-yellow-600/20 rounded-xl flex items-center justify-center border border-yellow-400/30 group-hover:scale-110 transition-all duration-500">
-                                        <i class="fas fa-anchor text-2xl vm-dark-gold-text group-hover:text-yellow-300 transition-colors duration-300"></i>
+
+                    <div class="vm-philosophy-card vm-cognitive-card text-center relative overflow-hidden group">
+                        <div class="vm-philosophy-topline"></div>
+                        <div class="vm-philosophy-baseline"></div>
+                        <div class="vm-cognitive-icon"><i class="fas fa-anchor"></i></div>
+                        <div class="vm-philosophy-title"><span class="vm-philosophy-title-primary">价值锚定</span></div>
+                        <p class="vm-philosophy-tagline">Value Anchoring</p>
+                        <div class="vm-philosophy-divider"></div>
+                        <div class="vm-philosophy-body">
+                            <p class="vm-philosophy-text">建立严谨估值模型，锁定可验证的长期确定性。</p>
+                            <p class="vm-philosophy-meta">定价锚点 · 容错区间</p>
+                        </div>
+                    </div>
+
+                    <div class="vm-philosophy-card vm-cognitive-card text-center relative overflow-hidden group">
+                        <div class="vm-philosophy-topline"></div>
+                        <div class="vm-philosophy-baseline"></div>
+                        <div class="vm-cognitive-icon"><i class="fas fa-rocket"></i></div>
+                        <div class="vm-philosophy-title"><span class="vm-philosophy-title-primary">决策执行</span></div>
+                        <p class="vm-philosophy-tagline">Decision Execution</p>
+                        <div class="vm-philosophy-divider"></div>
+                        <div class="vm-philosophy-body">
+                            <p class="vm-philosophy-text">投资委员会立体评估后执行策略并持续复盘。</p>
+                            <p class="vm-philosophy-meta">执行闭环 · Alpha守护</p>
+                        </div>
                     </div>
                 </div>
             </div>
-                            
-                            <h3 class="text-2xl font-bold mb-6 vm-gradient-text transition-colors duration-300 text-center">价值锚定</h3>
-                            <div class="w-12 h-px bg-gradient-to-r from-yellow-400 to-yellow-600 mx-auto mb-6"></div>
-                            <p class="text-gray-300 leading-relaxed text-center group-hover:text-gray-200 transition-colors duration-300 font-light">
-                        建立严谨估值模型
-                    </p>
-                            
-                            <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-yellow-400/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-                    </div>
-                </div>
-                
-                    <!-- 决策执行 -->
-                    <div class="group relative">
-                        <div class="absolute -inset-3 bg-gradient-to-br from-yellow-400/0 via-yellow-400/10 to-yellow-400/0 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
-                        <div class="vm-card p-8 rounded-xl relative z-10 border border-yellow-400/10 group-hover:border-yellow-400/30 transition-all duration-500 backdrop-blur-sm bg-gradient-to-br from-black/40 to-gray-900/40 group-hover:from-black/60 group-hover:to-gray-900/60">
-                            <div class="absolute -top-3 -right-3 w-8 h-8 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center text-black text-sm font-bold">06</div>
-                            
-                            <div class="relative mb-8">
-                                <div class="absolute inset-0 bg-gradient-radial from-yellow-400/20 to-transparent rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
-                                <div class="flex justify-center items-center mb-6 relative z-10">
-                                    <div class="w-16 h-16 bg-gradient-to-br from-yellow-400/20 to-yellow-600/20 rounded-xl flex items-center justify-center border border-yellow-400/30 group-hover:scale-110 transition-all duration-500">
-                                        <i class="fas fa-rocket text-2xl vm-dark-gold-text group-hover:text-yellow-300 transition-colors duration-300"></i>
-                    </div>
-                                </div>
-                </div>
-                
-                            <h3 class="text-2xl font-bold mb-6 vm-gradient-text transition-colors duration-300 text-center">决策执行</h3>
-                            <div class="w-12 h-px bg-gradient-to-r from-yellow-400 to-yellow-600 mx-auto mb-6"></div>
-                            <p class="text-gray-300 leading-relaxed text-center group-hover:text-gray-200 transition-colors duration-300 font-light">
-                        投资委员会决策与执行
-                    </p>
-                            
-                            <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-yellow-400/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-                    </div>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </section>
 
     <!-- 核心价值观 -->
     <section class="vm-section relative overflow-hidden" id="values">
-        <!-- 背景装饰 -->
-        <div class="absolute inset-0">
-            <div class="absolute inset-0 bg-gradient-to-bl from-gray-900 via-black to-gray-800"></div>
-            <!-- 几何装饰 -->
-            <div class="absolute top-1/6 right-1/6 w-80 h-80 bg-gradient-radial from-yellow-400/8 to-transparent rounded-full blur-3xl"></div>
-            <div class="absolute bottom-1/6 left-1/6 w-80 h-80 bg-gradient-radial from-yellow-600/5 to-transparent rounded-full blur-3xl"></div>
-            <!-- 六边形装饰网格 -->
-            <div class="absolute inset-0 opacity-5">
-                <div class="absolute top-20 left-20 w-6 h-6 border border-yellow-400 transform rotate-45"></div>
-                <div class="absolute top-40 right-32 w-4 h-4 border border-yellow-400 transform rotate-45"></div>
-                <div class="absolute bottom-32 left-40 w-5 h-5 border border-yellow-400 transform rotate-45"></div>
-                <div class="absolute bottom-20 right-20 w-3 h-3 border border-yellow-400 transform rotate-45"></div>
-            </div>
-            </div>
-            
         <div class="max-w-7xl mx-auto px-6 relative z-10">
             <div class="text-center mb-20">
                 <!-- 主标题区域 -->
@@ -1030,209 +1396,94 @@
                     <div class="absolute -left-12 top-1/2 transform -translate-y-1/2 w-8 h-px bg-gradient-to-r from-yellow-400 to-transparent"></div>
                     <div class="absolute -right-12 top-1/2 transform -translate-y-1/2 w-8 h-px bg-gradient-to-l from-yellow-400 to-transparent"></div>
                     
-                    <p class="text-xl text-gray-200 leading-relaxed font-light">
+                    <p class="vm-philosophy-meta" style="font-size: 1rem; text-transform: none;">
                     我们的行为准则与品格基石，指引我们在探索未知价值的征途上始终坚守初心
                 </p>
                     </div>
                 </div>
                 
-            <!-- 价值观卡片网格 -->
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-                <!-- 信赖 -->
-                <div class="group relative">
-                    <div class="absolute -inset-4 bg-gradient-to-br from-yellow-400/0 via-yellow-400/8 to-yellow-400/0 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
-                    <div class="vm-card p-10 rounded-xl relative z-10 border border-yellow-400/10 group-hover:border-yellow-400/25 transition-all duration-500 backdrop-blur-sm bg-gradient-to-br from-black/30 to-gray-900/30 group-hover:from-black/50 group-hover:to-gray-900/50">
-                        <!-- 顶部装饰 -->
-                        <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-yellow-400/30 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-                        
-                        <!-- 图标标题区域 -->
-                        <div class="flex items-center mb-8">
-                            <div class="relative mr-6">
-                                <div class="absolute inset-0 bg-gradient-radial from-yellow-400/20 to-transparent rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
-                                <div class="w-12 h-12 bg-gradient-to-br from-yellow-400/20 to-yellow-600/20 rounded-lg flex items-center justify-center border border-yellow-400/30 group-hover:scale-110 transition-all duration-500 relative z-10">
-                                    <i class="fas fa-shield-alt text-xl vm-gold-text group-hover:text-yellow-300 transition-colors duration-300"></i>
+            <!-- 价值观卡片 -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="vm-philosophy-card vm-cognitive-card vm-values-card text-center relative overflow-hidden group">
+                    <div class="vm-philosophy-topline"></div>
+                    <div class="vm-philosophy-baseline"></div>
+                    <div class="vm-cognitive-icon"><i class="fas fa-shield-alt"></i></div>
+                    <div class="vm-philosophy-title"><span class="vm-philosophy-title-primary">信赖</span></div>
+                    <p class="vm-philosophy-tagline">Trustworthy</p>
+                    <div class="vm-philosophy-divider"></div>
+                    <div class="vm-philosophy-body">
+                        <p class="vm-philosophy-text">恪守受托责任，客户利益至上。构建基于透明、专业与共识的长期伙伴关系。</p>
+                        <p class="vm-philosophy-meta">透明协作 · 长久共赢</p>
                     </div>
                 </div>
-                            <div>
-                                <h4 class="text-2xl font-bold vm-gradient-text transition-colors duration-300">信赖</h4>
-                                <div class="text-sm vm-gradient-text font-light tracking-wider">Trustworthy</div>
-            </div>
-        </div>
-                        
-                        <!-- 分割线 -->
-                        <div class="w-16 h-px bg-gradient-to-r from-yellow-400 to-yellow-600 mb-6 opacity-60 group-hover:opacity-100 transition-all duration-500"></div>
-                        
-                        <p class="text-gray-300 leading-relaxed group-hover:text-gray-200 transition-colors duration-300 font-light">
-                        恪守受托责任，客户利益至上。建立基于透明、专业和共同信念的长久伙伴关系。
-                    </p>
-                        
-                        <!-- 底部装饰 -->
-                        <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-yellow-400/30 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-                    </div>
-                </div>
-                
-                <!-- 坚韧 -->
-                <div class="group relative">
-                    <div class="absolute -inset-4 bg-gradient-to-br from-yellow-400/0 via-yellow-400/8 to-yellow-400/0 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
-                    <div class="vm-card p-10 rounded-xl relative z-10 border border-yellow-400/10 group-hover:border-yellow-400/25 transition-all duration-500 backdrop-blur-sm bg-gradient-to-br from-black/30 to-gray-900/30 group-hover:from-black/50 group-hover:to-gray-900/50">
-                        <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-yellow-400/30 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-                        
-                        <div class="flex items-center mb-8">
-                            <div class="relative mr-6">
-                                <div class="absolute inset-0 bg-gradient-radial from-yellow-400/20 to-transparent rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
-                                <div class="w-12 h-12 bg-gradient-to-br from-yellow-400/20 to-yellow-600/20 rounded-lg flex items-center justify-center border border-yellow-400/30 group-hover:scale-110 transition-all duration-500 relative z-10">
-                                    <i class="fas fa-mountain text-xl vm-gold-text group-hover:text-yellow-300 transition-colors duration-300"></i>
-                    </div>
-                            </div>
-                            <div>
-                                <h4 class="text-2xl font-bold vm-gradient-text transition-colors duration-300">坚韧</h4>
-                                <div class="text-sm vm-gradient-text font-light tracking-wider">Resilient</div>
-                            </div>
-                        </div>
-                        
-                        <div class="w-16 h-px bg-gradient-to-r from-yellow-400 to-yellow-600 mb-6 opacity-60 group-hover:opacity-100 transition-all duration-500"></div>
-                        
-                        <p class="text-gray-300 leading-relaxed group-hover:text-gray-200 transition-colors duration-300 font-light">
-                        笃行长期主义，穿越市场周期。拥有抵御短期诱惑的战略定力，守护价值的确定性增长。
-                    </p>
-                        
-                        <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-yellow-400/30 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-                    </div>
-                </div>
-                
-                <!-- 务实 -->
-                <div class="group relative">
-                    <div class="absolute -inset-4 bg-gradient-to-br from-yellow-400/0 via-yellow-400/8 to-yellow-400/0 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
-                    <div class="vm-card p-10 rounded-xl relative z-10 border border-yellow-400/10 group-hover:border-yellow-400/25 transition-all duration-500 backdrop-blur-sm bg-gradient-to-br from-black/30 to-gray-900/30 group-hover:from-black/50 group-hover:to-gray-900/50">
-                        <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-yellow-400/30 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-                        
-                        <div class="flex items-center mb-8">
-                            <div class="relative mr-6">
-                                <div class="absolute inset-0 bg-gradient-radial from-yellow-400/20 to-transparent rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
-                                <div class="w-12 h-12 bg-gradient-to-br from-yellow-400/20 to-yellow-600/20 rounded-lg flex items-center justify-center border border-yellow-400/30 group-hover:scale-110 transition-all duration-500 relative z-10">
-                                    <i class="fas fa-cogs text-xl vm-gold-text group-hover:text-yellow-300 transition-colors duration-300"></i>
-                    </div>
-                            </div>
-                            <div>
-                                <h4 class="text-2xl font-bold vm-gradient-text transition-colors duration-300">务实</h4>
-                                <div class="text-sm vm-gradient-text font-light tracking-wider">Pragmatic</div>
-                            </div>
-                        </div>
-                        
-                        <div class="w-16 h-px bg-gradient-to-r from-yellow-400 to-yellow-600 mb-6 opacity-60 group-hover:opacity-100 transition-all duration-500"></div>
-                        
-                        <p class="text-gray-300 leading-relaxed group-hover:text-gray-200 transition-colors duration-300 font-light">
-                        链接理想愿景，落地真实价值。关注创新的可持续性，确保每一个决策基于严谨评估。
-                    </p>
-                        
-                        <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-yellow-400/30 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-                    </div>
-                </div>
-                
-                <!-- 远见 -->
-                <div class="group relative">
-                    <div class="absolute -inset-4 bg-gradient-to-br from-yellow-400/0 via-yellow-400/8 to-yellow-400/0 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
-                    <div class="vm-card p-10 rounded-xl relative z-10 border border-yellow-400/10 group-hover:border-yellow-400/25 transition-all duration-500 backdrop-blur-sm bg-gradient-to-br from-black/30 to-gray-900/30 group-hover:from-black/50 group-hover:to-gray-900/50">
-                        <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-yellow-400/30 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-                        
-                        <div class="flex items-center mb-8">
-                            <div class="relative mr-6">
-                                <div class="absolute inset-0 bg-gradient-radial from-yellow-400/20 to-transparent rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
-                                <div class="w-12 h-12 bg-gradient-to-br from-yellow-400/20 to-yellow-600/20 rounded-lg flex items-center justify-center border border-yellow-400/30 group-hover:scale-110 transition-all duration-500 relative z-10">
-                                    <i class="fas fa-eye text-xl vm-gold-text group-hover:text-yellow-300 transition-colors duration-300"></i>
-                    </div>
-                            </div>
-                            <div>
-                                <h4 class="text-2xl font-bold vm-gradient-text transition-colors duration-300">远见</h4>
-                                <div class="text-sm vm-gradient-text font-light tracking-wider">Visionary</div>
-                            </div>
-                        </div>
-                        
-                        <div class="w-16 h-px bg-gradient-to-r from-yellow-400 to-yellow-600 mb-6 opacity-60 group-hover:opacity-100 transition-all duration-500"></div>
-                        
-                        <p class="text-gray-300 leading-relaxed group-hover:text-gray-200 transition-colors duration-300 font-light">
-                        洞察未来趋势，先行一步布局。以前瞻性视角穿透迷雾，发现"虚空"中的结构性机遇。
-                    </p>
-                        
-                        <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-yellow-400/30 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-                    </div>
-                </div>
-                
-                <!-- 深度 -->
-                <div class="group relative">
-                    <div class="absolute -inset-4 bg-gradient-to-br from-yellow-400/0 via-yellow-400/8 to-yellow-400/0 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
-                    <div class="vm-card p-10 rounded-xl relative z-10 border border-yellow-400/10 group-hover:border-yellow-400/25 transition-all duration-500 backdrop-blur-sm bg-gradient-to-br from-black/30 to-gray-900/30 group-hover:from-black/50 group-hover:to-gray-900/50">
-                        <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-yellow-400/30 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-                        
-                        <div class="flex items-center mb-8">
-                            <div class="relative mr-6">
-                                <div class="absolute inset-0 bg-gradient-radial from-yellow-400/20 to-transparent rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
-                                <div class="w-12 h-12 bg-gradient-to-br from-yellow-400/20 to-yellow-600/20 rounded-lg flex items-center justify-center border border-yellow-400/30 group-hover:scale-110 transition-all duration-500 relative z-10">
-                                    <i class="fas fa-search-plus text-xl vm-gold-text group-hover:text-yellow-300 transition-colors duration-300"></i>
-                    </div>
-                            </div>
-                            <div>
-                                <h4 class="text-2xl font-bold vm-gradient-text transition-colors duration-300">深度</h4>
-                                <div class="text-sm vm-gradient-text font-light tracking-wider">In-depth</div>
-                            </div>
-                        </div>
-                        
-                        <div class="w-16 h-px bg-gradient-to-r from-yellow-400 to-yellow-600 mb-6 opacity-60 group-hover:opacity-100 transition-all duration-500"></div>
-                        
-                        <p class="text-gray-300 leading-relaxed group-hover:text-gray-200 transition-colors duration-300 font-light">
-                        穷究事物本质，根植严谨研究。运用第一性原理思考，在纷繁中辨识价值核心。
-                    </p>
-                        
-                        <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-yellow-400/30 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-                    </div>
-                </div>
-                
-                <!-- 智慧 -->
-                <div class="group relative">
-                    <div class="absolute -inset-4 bg-gradient-to-br from-yellow-400/0 via-yellow-400/8 to-yellow-400/0 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
-                    <div class="vm-card p-10 rounded-xl relative z-10 border border-yellow-400/10 group-hover:border-yellow-400/25 transition-all duration-500 backdrop-blur-sm bg-gradient-to-br from-black/30 to-gray-900/30 group-hover:from-black/50 group-hover:to-gray-900/50">
-                        <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-yellow-400/30 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-                        
-                        <div class="flex items-center mb-8">
-                            <div class="relative mr-6">
-                                <div class="absolute inset-0 bg-gradient-radial from-yellow-400/20 to-transparent rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
-                                <div class="w-12 h-12 bg-gradient-to-br from-yellow-400/20 to-yellow-600/20 rounded-lg flex items-center justify-center border border-yellow-400/30 group-hover:scale-110 transition-all duration-500 relative z-10">
-                                    <i class="fas fa-brain text-xl vm-gold-text group-hover:text-yellow-300 transition-colors duration-300"></i>
-                    </div>
-                            </div>
-                            <div>
-                                <h4 class="text-2xl font-bold vm-gradient-text transition-colors duration-300">智慧</h4>
-                                <div class="text-sm vm-gradient-text font-light tracking-wider">Intelligent</div>
-                            </div>
-                        </div>
-                        
-                        <div class="w-16 h-px bg-gradient-to-r from-yellow-400 to-yellow-600 mb-6 opacity-60 group-hover:opacity-100 transition-all duration-500"></div>
-                        
-                        <p class="text-gray-300 leading-relaxed group-hover:text-gray-200 transition-colors duration-300 font-light">
-                        科技赋能认知，系统驱动决策。结合前沿科技工具，将"认知价差"转化为"认知Alpha"。
-                    </p>
-                        
-                        <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-yellow-400/30 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
+                <div class="vm-philosophy-card vm-cognitive-card vm-values-card text-center relative overflow-hidden group">
+                    <div class="vm-philosophy-topline"></div>
+                    <div class="vm-philosophy-baseline"></div>
+                    <div class="vm-cognitive-icon"><i class="fas fa-mountain"></i></div>
+                    <div class="vm-philosophy-title"><span class="vm-philosophy-title-primary">坚韧</span></div>
+                    <p class="vm-philosophy-tagline">Resilient</p>
+                    <div class="vm-philosophy-divider"></div>
+                    <div class="vm-philosophy-body">
+                        <p class="vm-philosophy-text">笃行长期主义，穿越市场周期。以战略定力抵御短期波动，守护价值成长。</p>
+                        <p class="vm-philosophy-meta">长期主义 · 战略定力</p>
+                    </div>
+                </div>
+
+                <div class="vm-philosophy-card vm-cognitive-card vm-values-card text-center relative overflow-hidden group">
+                    <div class="vm-philosophy-topline"></div>
+                    <div class="vm-philosophy-baseline"></div>
+                    <div class="vm-cognitive-icon"><i class="fas fa-cogs"></i></div>
+                    <div class="vm-philosophy-title"><span class="vm-philosophy-title-primary">务实</span></div>
+                    <p class="vm-philosophy-tagline">Pragmatic</p>
+                    <div class="vm-philosophy-divider"></div>
+                    <div class="vm-philosophy-body">
+                        <p class="vm-philosophy-text">链接理想愿景，落地真实价值。以严谨评估确保创新具备可持续性。</p>
+                        <p class="vm-philosophy-meta">真实价值 · 严谨评估</p>
+                    </div>
+                </div>
+
+                <div class="vm-philosophy-card vm-cognitive-card vm-values-card text-center relative overflow-hidden group">
+                    <div class="vm-philosophy-topline"></div>
+                    <div class="vm-philosophy-baseline"></div>
+                    <div class="vm-cognitive-icon"><i class="fas fa-eye"></i></div>
+                    <div class="vm-philosophy-title"><span class="vm-philosophy-title-primary">远见</span></div>
+                    <p class="vm-philosophy-tagline">Visionary</p>
+                    <div class="vm-philosophy-divider"></div>
+                    <div class="vm-philosophy-body">
+                        <p class="vm-philosophy-text">洞察未来趋势，先行一步布局。以结构化视角在“虚空”中识别机遇。</p>
+                        <p class="vm-philosophy-meta">趋势洞察 · 结构机遇</p>
+                    </div>
+                </div>
+
+                <div class="vm-philosophy-card vm-cognitive-card vm-values-card text-center relative overflow-hidden group">
+                    <div class="vm-philosophy-topline"></div>
+                    <div class="vm-philosophy-baseline"></div>
+                    <div class="vm-cognitive-icon"><i class="fas fa-search-plus"></i></div>
+                    <div class="vm-philosophy-title"><span class="vm-philosophy-title-primary">深度</span></div>
+                    <p class="vm-philosophy-tagline">In-depth</p>
+                    <div class="vm-philosophy-divider"></div>
+                    <div class="vm-philosophy-body">
+                        <p class="vm-philosophy-text">穷究事物本质，根植严谨研究。以第一性原理在纷繁中辨识价值核心。</p>
+                        <p class="vm-philosophy-meta">第一性原理 · 核心识别</p>
+                    </div>
+                </div>
+
+                <div class="vm-philosophy-card vm-cognitive-card vm-values-card text-center relative overflow-hidden group">
+                    <div class="vm-philosophy-topline"></div>
+                    <div class="vm-philosophy-baseline"></div>
+                    <div class="vm-cognitive-icon"><i class="fas fa-brain"></i></div>
+                    <div class="vm-philosophy-title"><span class="vm-philosophy-title-primary">智慧</span></div>
+                    <p class="vm-philosophy-tagline">Intelligent</p>
+                    <div class="vm-philosophy-divider"></div>
+                    <div class="vm-philosophy-body">
+                        <p class="vm-philosophy-text">科技赋能认知，系统驱动决策。将“认知价差”沉淀为可持续的“认知Alpha”。</p>
+                        <p class="vm-philosophy-meta">科技赋能 · 系统决策</p>
+                    </div>
+                </div>
+            </div>
     <!-- 关注领域 -->
     <section class="vm-section relative overflow-hidden" id="focus-areas">
-        <!-- 背景装饰 -->
-        <div class="absolute inset-0">
-            <div class="absolute inset-0 bg-gradient-to-tr from-black via-gray-900 to-black"></div>
-            <!-- 科技感网格 -->
-            <div class="absolute inset-0 opacity-5">
-                <div style="background-image: radial-gradient(circle at 2px 2px, #D4AF37 1px, transparent 0); background-size: 40px 40px;"></div>
-            </div>
-            <!-- 动态光圈 -->
-            <div class="absolute top-1/3 left-1/4 w-64 h-64 bg-gradient-radial from-yellow-400/10 to-transparent rounded-full blur-3xl animate-pulse"></div>
-            <div class="absolute bottom-1/3 right-1/4 w-64 h-64 bg-gradient-radial from-yellow-600/8 to-transparent rounded-full blur-3xl animate-pulse" style="animation-delay: 2s;"></div>
-        </div>
-        
         <div class="max-w-7xl mx-auto px-6 relative z-10">
             <div class="text-center mb-20">
                 <!-- 标题装饰 -->
@@ -1247,7 +1498,7 @@
                 </div>
                 
                 <div class="max-w-4xl mx-auto">
-                    <p class="text-xl text-gray-200 leading-relaxed font-light">
+                    <p class="vm-philosophy-meta" style="font-size: 1rem; text-transform: none;">
                     我们专注于具备长期结构性机遇的前沿科技领域
                 </p>
                 </div>
@@ -1255,158 +1506,55 @@
             
             <!-- 领域卡片 -->
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- 人工智能 -->
-                <div class="group relative">
-                    <div class="absolute -inset-3 bg-gradient-to-br from-yellow-400/0 via-yellow-400/10 to-yellow-400/0 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
-                    <div class="vm-card p-10 rounded-xl text-center relative z-10 border border-yellow-400/10 group-hover:border-yellow-400/30 transition-all duration-500 backdrop-blur-sm bg-gradient-to-br from-black/40 to-gray-900/40 group-hover:from-black/60 group-hover:to-gray-900/60 transform hover:-translate-y-2">
-                        <!-- 顶部装饰点 -->
-                        <div class="absolute -top-2 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-                        
-                        <!-- 图标区域 -->
-                        <div class="relative mb-8">
-                            <div class="absolute inset-0 bg-gradient-radial from-yellow-400/20 to-transparent rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
-                            <div class="w-20 h-20 mx-auto bg-gradient-to-br from-yellow-400/20 to-yellow-600/20 rounded-2xl flex items-center justify-center border border-yellow-400/30 group-hover:scale-110 transition-all duration-500 relative z-10">
-                                <!-- AI Brain Icon -->
-                                <svg class="w-10 h-10 vm-dark-gold-text group-hover:text-yellow-300 transition-colors duration-300" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 2C13.1 2 14 2.9 14 4V8.5C14 9.3 13.3 10 12.5 10S11 9.3 11 8.5V4C11 2.9 11.9 2 12 2M9.5 2C10.9 2 12 3.1 12 4.5S10.9 7 9.5 7 7 5.9 7 4.5 8.1 2 9.5 2M14.5 2C15.9 2 17 3.1 17 4.5S15.9 7 14.5 7 12 5.9 12 4.5 13.1 2 14.5 2M7 8.5C7 7.1 8.1 6 9.5 6S12 7.1 12 8.5 10.9 11 9.5 11 7 9.9 7 8.5M17 8.5C17 7.1 15.9 6 14.5 6S12 7.1 12 8.5 13.1 11 14.5 11 17 9.9 17 8.5M12 14C13.1 14 14 14.9 14 16V20C14 21.1 13.1 22 12 22S10 21.1 10 20V16C10 14.9 10.9 14 12 14Z"/>
-                                </svg>
+                <div class="vm-philosophy-card vm-cognitive-card vm-area-card text-center relative overflow-hidden group">
+                    <div class="vm-philosophy-topline"></div>
+                    <div class="vm-philosophy-baseline"></div>
+                    <div class="vm-cognitive-icon"><i class="fas fa-brain"></i></div>
+                    <div class="vm-philosophy-title"><span class="vm-philosophy-title-primary">人工智能</span></div>
+                    <p class="vm-philosophy-tagline">Artificial Intelligence</p>
+                    <div class="vm-philosophy-divider"></div>
+                    <div class="vm-philosophy-body">
+                        <p class="vm-philosophy-text">聚焦算力基础、垂直行业模型与AI驱动的科学发现，打造下一代智能基础设施。</p>
+                        <p class="vm-philosophy-meta">AI基础设施 · 行业模型 · 科学突破</p>
                     </div>
                 </div>
-                
-                        <h3 class="text-2xl font-bold mb-6 vm-gradient-text transition-colors duration-300">人工智能</h3>
-                        <div class="w-12 h-px bg-gradient-to-r from-yellow-400 to-yellow-600 mx-auto mb-6 opacity-60 group-hover:opacity-100 transition-all duration-500"></div>
-                        
-                        <div class="text-gray-300 group-hover:text-gray-200 transition-colors duration-300 space-y-3">
-                            <div class="flex items-center text-sm">
-                                <div class="w-1.5 h-1.5 bg-yellow-400 rounded-full mr-3"></div>
-                                <span>AI基础设施</span>
-                            </div>
-                            <div class="flex items-center text-sm">
-                                <div class="w-1.5 h-1.5 bg-yellow-400 rounded-full mr-3"></div>
-                                <span>垂直领域大模型</span>
-                            </div>
-                            <div class="flex items-center text-sm">
-                                <div class="w-1.5 h-1.5 bg-yellow-400 rounded-full mr-3"></div>
-                                <span>AI驱动的科学发现</span>
+
+                <div class="vm-philosophy-card vm-cognitive-card vm-area-card text-center relative overflow-hidden group">
+                    <div class="vm-philosophy-topline"></div>
+                    <div class="vm-philosophy-baseline"></div>
+                    <div class="vm-cognitive-icon"><i class="fas fa-dna"></i></div>
+                    <div class="vm-philosophy-title"><span class="vm-philosophy-title-primary">生命科学</span></div>
+                    <p class="vm-philosophy-tagline">Life Science</p>
+                    <div class="vm-philosophy-divider"></div>
+                    <div class="vm-philosophy-body">
+                        <p class="vm-philosophy-text">关注合成生物学、基因编辑与脑机接口等方向，挖掘下一代医疗科技价值。</p>
+                        <p class="vm-philosophy-meta">合成生物 · 基因治疗 · 脑机接口</p>
                     </div>
                 </div>
-                
-                        <!-- 底部装饰 -->
-                        <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-yellow-400/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
+
+                <div class="vm-philosophy-card vm-cognitive-card vm-area-card text-center relative overflow-hidden group">
+                    <div class="vm-philosophy-topline"></div>
+                    <div class="vm-philosophy-baseline"></div>
+                    <div class="vm-cognitive-icon"><i class="fas fa-bolt"></i></div>
+                    <div class="vm-philosophy-title"><span class="vm-philosophy-title-primary">未来能源</span></div>
+                    <p class="vm-philosophy-tagline">Future Energy</p>
+                    <div class="vm-philosophy-divider"></div>
+                    <div class="vm-philosophy-body">
+                        <p class="vm-philosophy-text">布局先进储能、绿色氢能与新型核能技术，推动能源体系的结构升级。</p>
+                        <p class="vm-philosophy-meta">储能革命 · 氢能产业 · 新核能</p>
                     </div>
                 </div>
-                
-                <!-- 生命科学 -->
-                <div class="group relative">
-                    <div class="absolute -inset-3 bg-gradient-to-br from-yellow-400/0 via-yellow-400/10 to-yellow-400/0 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
-                    <div class="vm-card p-10 rounded-xl text-center relative z-10 border border-yellow-400/10 group-hover:border-yellow-400/30 transition-all duration-500 backdrop-blur-sm bg-gradient-to-br from-black/40 to-gray-900/40 group-hover:from-black/60 group-hover:to-gray-900/60 transform hover:-translate-y-2">
-                        <div class="absolute -top-2 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-                        
-                        <div class="relative mb-8">
-                            <div class="absolute inset-0 bg-gradient-radial from-yellow-400/20 to-transparent rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
-                            <div class="w-20 h-20 mx-auto bg-gradient-to-br from-yellow-400/20 to-yellow-600/20 rounded-2xl flex items-center justify-center border border-yellow-400/30 group-hover:scale-110 transition-all duration-500 relative z-10">
-                                <!-- DNA Helix Icon -->
-                                <svg class="w-10 h-10 vm-dark-gold-text group-hover:text-yellow-300 transition-colors duration-300" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M4 2h2v2H4V2m0 16h2v2H4v-2m0-8h2v2H4v-2m16 8h2v2h-2v-2m0-16h2v2h-2V2m0 8h2v2h-2v-2M8 6h8v2H8V6m0 10h8v2H8v-2M6 4h2v2H6V4m12 0h2v2h-2V4M6 8h2v2H6V8m12 0h2v2h-2V8m-12 8h2v2H6v-2m12 0h2v2h-2v-2M10 12h4v2h-4v-2Z"/>
-                                </svg>
-                    </div>
-                </div>
-                        
-                        <h3 class="text-2xl font-bold mb-6 vm-gradient-text transition-colors duration-300">生命科学</h3>
-                        <div class="w-12 h-px bg-gradient-to-r from-yellow-400 to-yellow-600 mx-auto mb-6 opacity-60 group-hover:opacity-100 transition-all duration-500"></div>
-                        
-                        <div class="text-gray-300 group-hover:text-gray-200 transition-colors duration-300 space-y-3">
-                            <div class="flex items-center text-sm">
-                                <div class="w-1.5 h-1.5 bg-yellow-400 rounded-full mr-3"></div>
-                                <span>合成生物学平台</span>
-                            </div>
-                            <div class="flex items-center text-sm">
-                                <div class="w-1.5 h-1.5 bg-yellow-400 rounded-full mr-3"></div>
-                                <span>基因编辑与细胞疗法</span>
-                            </div>
-                            <div class="flex items-center text-sm">
-                                <div class="w-1.5 h-1.5 bg-yellow-400 rounded-full mr-3"></div>
-                                <span>脑机接口</span>
-                            </div>
-                        </div>
-                        
-                        <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-yellow-400/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-                    </div>
-                </div>
-                
-                <!-- 未来能源 -->
-                <div class="group relative">
-                    <div class="absolute -inset-3 bg-gradient-to-br from-yellow-400/0 via-yellow-400/10 to-yellow-400/0 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
-                    <div class="vm-card p-10 rounded-xl text-center relative z-10 border border-yellow-400/10 group-hover:border-yellow-400/30 transition-all duration-500 backdrop-blur-sm bg-gradient-to-br from-black/40 to-gray-900/40 group-hover:from-black/60 group-hover:to-gray-900/60 transform hover:-translate-y-2">
-                        <div class="absolute -top-2 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-                        
-                        <div class="relative mb-8">
-                            <div class="absolute inset-0 bg-gradient-radial from-yellow-400/20 to-transparent rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
-                            <div class="w-20 h-20 mx-auto bg-gradient-to-br from-yellow-400/20 to-yellow-600/20 rounded-2xl flex items-center justify-center border border-yellow-400/30 group-hover:scale-110 transition-all duration-500 relative z-10">
-                                <!-- Energy/Lightning Icon -->
-                                <svg class="w-10 h-10 vm-dark-gold-text group-hover:text-yellow-300 transition-colors duration-300" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M11,4H13V16L18.5,12L20,13L12,22L4,13L5.5,12L11,16V4M6,2H18V4H6V2Z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        
-                        <h3 class="text-2xl font-bold mb-6 vm-gradient-text transition-colors duration-300">未来能源</h3>
-                        <div class="w-12 h-px bg-gradient-to-r from-yellow-400 to-yellow-600 mx-auto mb-6 opacity-60 group-hover:opacity-100 transition-all duration-500"></div>
-                        
-                        <div class="text-gray-300 group-hover:text-gray-200 transition-colors duration-300 space-y-3">
-                            <div class="flex items-center text-sm">
-                                <div class="w-1.5 h-1.5 bg-yellow-400 rounded-full mr-3"></div>
-                                <span>下一代储能技术</span>
-                            </div>
-                            <div class="flex items-center text-sm">
-                                <div class="w-1.5 h-1.5 bg-yellow-400 rounded-full mr-3"></div>
-                                <span>先进核能</span>
-                            </div>
-                            <div class="flex items-center text-sm">
-                                <div class="w-1.5 h-1.5 bg-yellow-400 rounded-full mr-3"></div>
-                                <span>绿色氢能产业链</span>
-                            </div>
-                        </div>
-                        
-                        <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-yellow-400/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-                    </div>
-                </div>
-                
-                <!-- 深科技 -->
-                <div class="group relative">
-                    <div class="absolute -inset-3 bg-gradient-to-br from-yellow-400/0 via-yellow-400/10 to-yellow-400/0 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
-                    <div class="vm-card p-10 rounded-xl text-center relative z-10 border border-yellow-400/10 group-hover:border-yellow-400/30 transition-all duration-500 backdrop-blur-sm bg-gradient-to-br from-black/40 to-gray-900/40 group-hover:from-black/60 group-hover:to-gray-900/60 transform hover:-translate-y-2">
-                        <div class="absolute -top-2 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-                        
-                        <div class="relative mb-8">
-                            <div class="absolute inset-0 bg-gradient-radial from-yellow-400/20 to-transparent rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
-                            <div class="w-20 h-20 mx-auto bg-gradient-to-br from-yellow-400/20 to-yellow-600/20 rounded-2xl flex items-center justify-center border border-yellow-400/30 group-hover:scale-110 transition-all duration-500 relative z-10">
-                                <!-- Rocket/Space Icon -->
-                                <svg class="w-10 h-10 vm-dark-gold-text group-hover:text-yellow-300 transition-colors duration-300" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M2.81,14.12L5.64,11.29L8.17,10.79C11.39,6.41 17.55,4.22 19.78,4.22C19.78,6.45 17.59,12.61 13.21,15.83L12.71,18.36L9.88,21.19C9.29,21.78 8.28,21.78 7.69,21.19L2.81,16.31C2.22,15.72 2.22,14.71 2.81,14.12M7,17.5A1.5,1.5 0 0,0 8.5,16A1.5,1.5 0 0,0 7,14.5A1.5,1.5 0 0,0 5.5,16A1.5,1.5 0 0,0 7,17.5Z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        
-                        <h3 class="text-2xl font-bold mb-6 vm-gradient-text transition-colors duration-300">深科技</h3>
-                        <div class="w-12 h-px bg-gradient-to-r from-yellow-400 to-yellow-600 mx-auto mb-6 opacity-60 group-hover:opacity-100 transition-all duration-500"></div>
-                        
-                        <div class="text-gray-300 group-hover:text-gray-200 transition-colors duration-300 space-y-3">
-                            <div class="flex items-center text-sm">
-                                <div class="w-1.5 h-1.5 bg-yellow-400 rounded-full mr-3"></div>
-                                <span>先进制造</span>
-                            </div>
-                            <div class="flex items-center text-sm">
-                                <div class="w-1.5 h-1.5 bg-yellow-400 rounded-full mr-3"></div>
-                                <span>商业航天</span>
-                            </div>
-                            <div class="flex items-center text-sm">
-                                <div class="w-1.5 h-1.5 bg-yellow-400 rounded-full mr-3"></div>
-                                <span>量子计算</span>
-                            </div>
-                        </div>
-                        
-                        <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-yellow-400/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
+
+                <div class="vm-philosophy-card vm-cognitive-card vm-area-card text-center relative overflow-hidden group">
+                    <div class="vm-philosophy-topline"></div>
+                    <div class="vm-philosophy-baseline"></div>
+                    <div class="vm-cognitive-icon"><i class="fas fa-atom"></i></div>
+                    <div class="vm-philosophy-title"><span class="vm-philosophy-title-primary">深科技</span></div>
+                    <p class="vm-philosophy-tagline">Deep Tech</p>
+                    <div class="vm-philosophy-divider"></div>
+                    <div class="vm-philosophy-body">
+                        <p class="vm-philosophy-text">面向先进制造、商业航天与量子计算等硬科技赛道，捕捉结构性创新红利。</p>
+                        <p class="vm-philosophy-meta">先进制造 · 航天量子</p>
                     </div>
                 </div>
             </div>
@@ -1415,26 +1563,29 @@
 
     <!-- 质点智库 - 专业研究平台 -->
     <section class="vm-section relative overflow-hidden" id="think-tank-intro">
-        <!-- 深邃专业背景 -->
-        <div class="absolute inset-0">
-            <div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-800"></div>
-            <!-- 微妙的几何装饰 -->
-            <div class="absolute inset-0 opacity-[0.02]">
-                <div style="background-image: linear-gradient(45deg, #D4AF37 1px, transparent 1px), linear-gradient(-45deg, #D4AF37 1px, transparent 1px); background-size: 60px 60px;"></div>
-            </div>
-            <!-- 柔和光晕 -->
-            <div class="absolute top-1/3 left-1/4 w-96 h-96 bg-gradient-radial from-yellow-400/6 to-transparent rounded-full blur-3xl"></div>
-            <div class="absolute bottom-1/4 right-1/3 w-80 h-80 bg-gradient-radial from-yellow-600/4 to-transparent rounded-full blur-3xl"></div>
-        </div>
-        
-        <div class="max-w-6xl mx-auto px-6 relative z-10 py-20">
-            <!-- 简洁标题区域 -->
+        <div class="max-w-6xl mx-auto px-6 relative z-10 py-12">
+            <!-- 标题区域 -->
             <div class="text-center mb-16">
-                <h2 class="text-5xl md:text-6xl font-light mb-6 vm-gradient-text tracking-wide">质点智库</h2>
-                <div class="w-24 h-px bg-gradient-to-r from-transparent via-yellow-400 to-transparent mx-auto mb-8"></div>
-                <p class="text-lg text-gray-300 font-light max-w-2xl mx-auto leading-relaxed">
-                    从纷繁金融世界中，提炼构成市场真相的"质点"
-                </p>
+                <!-- 主标题区域 -->
+                <div class="relative mb-12">
+                    <!-- 装饰圆环 -->
+                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 border border-yellow-400/20 rounded-full"></div>
+                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-40 h-40 border border-yellow-400/10 rounded-full"></div>
+
+                    <h2 class="text-6xl font-bold mb-8 vm-gradient-text relative z-10">质点智库</h2>
+                    <div class="w-20 h-px bg-gradient-to-r from-transparent via-yellow-400 to-transparent mx-auto mb-6"></div>
+                    <p class="text-xl vm-gradient-text mb-8 font-extralight tracking-wider" style="font-family: 'Times New Roman', serif;">Think Tank</p>
+                </div>
+
+                <div class="max-w-4xl mx-auto relative">
+                    <!-- 侧边装饰 -->
+                    <div class="absolute -left-12 top-1/2 transform -translate-y-1/2 w-8 h-px bg-gradient-to-r from-yellow-400 to-transparent"></div>
+                    <div class="absolute -right-12 top-1/2 transform -translate-y-1/2 w-8 h-px bg-gradient-to-l from-yellow-400 to-transparent"></div>
+
+                    <p class="vm-philosophy-meta" style="font-size: 1rem; text-transform: none;">
+                        从纷繁金融世界中，提炼构成市场真相的"质点"
+                    </p>
+                </div>
             </div>
             
             <!-- 核心价值展示 -->
@@ -1484,323 +1635,143 @@
     </section>
 
     <!-- 品牌故事 -->
-    <section class="vm-section relative overflow-hidden" id="story">
-        <!-- 沉浸式背景 -->
-        <div class="absolute inset-0">
-            <!-- 深邃渐变 -->
-            <div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-800"></div>
-            <!-- 柔和光晕网络 -->
-            <div class="absolute top-1/6 left-1/6 w-96 h-96 bg-gradient-radial from-yellow-400/3 to-transparent rounded-full blur-3xl"></div>
-            <div class="absolute bottom-1/6 right-1/6 w-96 h-96 bg-gradient-radial from-yellow-600/2 to-transparent rounded-full blur-3xl"></div>
-            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-radial from-yellow-400/1 to-transparent rounded-full blur-3xl"></div>
-            <!-- 微妙纹理 -->
-            <div class="absolute inset-0 opacity-[0.02]">
-                <div style="background-image: radial-gradient(circle at 2px 2px, #D4AF37 1px, transparent 0); background-size: 120px 120px;"></div>
-            </div>
-            </div>
-            
-        <div class="max-w-6xl mx-auto px-6 relative z-10">
-            <!-- 标题区域 - 诗意呈现 -->
-            <div class="text-center mb-20">
-                <!-- 优雅标题框 -->
-                <div class="relative inline-block mb-16">
-                    <!-- 古典装饰 -->
-                    <div class="absolute -top-8 left-1/2 transform -translate-x-1/2 w-32 h-px bg-gradient-to-r from-transparent via-yellow-400/40 to-transparent"></div>
-                    <div class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 w-32 h-px bg-gradient-to-r from-transparent via-yellow-400/40 to-transparent"></div>
-                    
-                    <h2 class="text-6xl font-bold mb-8 vm-gradient-text">品牌故事</h2>
-                <p class="text-xl vm-gradient-text mb-8 font-extralight tracking-wider" style="font-family: 'Times New Roman', serif;">Brand Story</p>
-            </div>
-            
-                <!-- 核心理念 -->
-                <div class="relative">
-                    <div class="absolute -left-16 top-1/2 transform -translate-y-1/2 text-8xl vm-gradient-text opacity-10">"</div>
-                    <div class="absolute -right-16 top-1/2 transform -translate-y-1/2 text-8xl vm-gradient-text opacity-10">"</div>
-                    <h3 class="text-4xl font-extralight text-gray-200 tracking-widest leading-relaxed">
-                        于未知处，见未来值
-                    </h3>
-                </div>
-            </div>
-            
-            <!-- 故事内容 - 连贯叙述设计 -->
-            <div class="relative">
-                <!-- 中央故事线 -->
-                <div class="absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-yellow-400/30 to-transparent"></div>
-                
-                <!-- 故事节点 -->
-                <div class="space-y-24">
-                    <!-- 第一章：时代背景 -->
-                    <div class="relative">
-                        <!-- 节点标记 -->
-                        <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full border-4 border-black z-10"></div>
-                        
-                        <!-- 内容容器 -->
-                        <div class="grid md:grid-cols-12 gap-12 items-center">
-                            <!-- 左侧装饰 -->
-                            <div class="hidden md:block md:col-span-1">
-                                <div class="w-full h-px bg-gradient-to-r from-transparent to-yellow-400/30"></div>
-                            </div>
-                            
-                            <!-- 主要内容 -->
-                            <div class="md:col-span-10">
-                                <div class="bg-gradient-to-r from-transparent via-black/20 to-transparent backdrop-blur-sm rounded-2xl p-12 border-l-4 border-yellow-400/30">
-                                    <!-- 章节标题 -->
-                                    <div class="flex items-center mb-8">
-                                        <div class="w-8 h-8 bg-gradient-to-br from-yellow-400/20 to-yellow-600/20 rounded-lg flex items-center justify-center mr-4">
-                                            <span class="text-yellow-400 font-bold">I</span>
-                                        </div>
-                                        <h4 class="text-2xl font-bold vm-gradient-text">时代浪潮</h4>
-                                    </div>
-                                    
-                                    <!-- 正文内容 -->
-                                    <div class="space-y-6 text-gray-200 leading-relaxed">
-                                        <p class="text-lg font-light">
-                            我们正处在一个加速变革的时代。科技的浪潮以前所未有的力量重塑着世界，未来的轮廓在飞速的迭代中时而清晰，时而模糊。这片由数据、算法、基因序列、新材料、智能机器交织而成的广袤图景，既是充满无限可能的 <span class="vm-gradient-text font-semibold">"虚空" (Void)</span>，蕴藏着驱动下一个世代文明跃迁的巨大潜能；也是一片充满噪音、迷雾和不确定性的未知领域，让无数探索者目眩神迷，或失之交臂。
+    <section class="vm-section" id="story">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="vm-story-stack">
+                <!-- 标题部分 - 参考核心价值观层级结构 -->
+                <div class="vm-story-title-section text-center mb-20">
+                    <!-- 主标题 -->
+                    <h2 class="text-6xl font-bold mb-8 vm-gradient-text">信赖之上 远见为基</h2>
+                    <!-- 装饰分割线 -->
+                    <div class="w-20 h-px bg-gradient-to-r from-transparent via-yellow-400 to-transparent mx-auto mb-6"></div>
+                    <!-- 英文标题 -->
+                    <p class="text-xl vm-gradient-text mb-8 font-extralight tracking-wider" style="font-family: 'Times New Roman', serif;">Brand Philosophy</p>
+                    <!-- 小字注释 -->
+                    <div class="max-w-4xl mx-auto">
+                        <p class="vm-philosophy-meta" style="font-size: 1rem; text-transform: none;">
+                            以智慧洞见虚空，用坚韧守护有物
                         </p>
-                                        <p class="text-lg font-light">
+                    </div>
+                </div>
+
+                <article class="vm-story-card">
+                    <div class="vm-story-divider"></div>
+                    <div class="vm-story-body">
+                        <p class="vm-story-text text-base font-light">
+                            我们正处在一个加速变革的时代。科技的浪潮以前所未有的力量重塑着世界，未来的轮廓在飞速的迭代中时而清晰，时而模糊。这片由数据、算法、基因序列、新材料、智能机器交织而成的广袤图景，既是充满无限可能的
+                            <span class="vm-gradient-text font-semibold">"虚空" (Void)</span>
+                            ，蕴藏着驱动下一个世代文明跃迁的巨大潜能；也是一片充满噪音、迷雾和不确定性的未知领域，让无数探索者目眩神迷，或失之交臂。
+                        </p>
+                        <div class="vm-story-divider"></div>
+                        <p class="vm-story-text text-base font-light">
                             短期的喧嚣容易掩盖长期的价值，眼前的热点往往遮蔽了未来的航向。在这样一个机遇与挑战并存的"虚空"面前，大多数人选择观望、跟随，或是在变幻莫测的市场波动中焦虑不安。
                         </p>
-                                        <div class="text-center pt-4 text-xl font-light">
-                            而<span class="vm-gradient-text font-bold text-2xl">上海虚空有物科技有限公司</span>，正是为<span class="vm-gold-text">"向未知出发"</span>而生。
-                                        </div>
-                                    </div>
+                        <div class="vm-story-divider"></div>
+                        <p class="vm-story-text text-base font-light">
+                            我们的名字，即是我们的哲学，也是我们的方法论。
+                            <span class="vm-gradient-text font-semibold">"虚空"</span>
+                            并非意味着虚无，而是代表着一切价值的起源之地——那些未被主流发现的角落、尚未被完全理解的创新、以及蕴藏在复杂性背后的结构性机遇。我们不畏惧"虚空"的浩渺与深邃，反而视其为需要以
+                            <span class="vm-gold-text font-semibold">远见 (Visionary)</span>
+                            去洞察、以
+                            <span class="vm-gold-text font-semibold">智慧 (Intelligent)</span>
+                            去照亮的价值源泉。
+                        </p>
+                        <div class="vm-story-divider"></div>
+                        <p class="vm-story-text text-base font-light">
+                            我们深信，真正的、能够穿越周期的价值——那坚实的
+                            <span class="vm-gradient-text font-bold">"有物" (Something/Substance)</span>
+                            ——并非显而易见，它需要被发掘，被验证，被坚守。这要求我们必须沉潜下去，进行
+                            <span class="vm-gold-text font-semibold">深度 (In-depth)</span>
+                            的研究。我们摒弃浮躁的表面追逐，运用第一性原理思考，结合前沿的科技工具与数据分析，去穷究技术的本质、商业的逻辑和成长的驱动力，力求在纷繁的信息噪音中，辨识出那些真正具有长期生命力的价值核心。
+                        </p>
+                        <div class="vm-story-divider"></div>
+                        <p class="vm-story-text text-base font-light">
+                            我们的征途，是科技未来。我们聚焦于那些将深刻改变人类生活和社会运作方式的前沿科技领域。但我们并非空想家，
+                            <span class="vm-gold-text font-semibold">务实 (Pragmatic)</span>
+                            是我们连接理想与现实的桥梁。我们关注创新，更关注创新的可持续性；我们拥抱未来，更注重未来的可实现性。每一个投资决策，都基于严谨的价值评估和风险考量，确保我们为客户寻找的"有物"，是看得见、摸得着、能够稳健成长的真实价值。
+                        </p>
+                        <div class="vm-story-divider"></div>
+                        <p class="vm-story-text text-base font-light">
+                            我们深知，在这场探索未来的征途中，
+                            <span class="vm-gold-text font-semibold">坚韧 (Resilient)</span>
+                            是不可或缺的品质。科技创新的道路从不平坦，市场总有起伏波澜。因此，我们秉持
+                            <span class="vm-gradient-text font-semibold">长期主义 (Long-termism)</span>
+                            ，做时间的朋友。我们有战略定力去抵御短期的诱惑和干扰，有耐心去陪伴我们所发现的"有物"穿越周期，静待价值的花开。我们相信，从"虚空"中生长出的确定性，往往需要时间的浇灌与守护。
+                        </p>
+                        <div class="vm-story-divider"></div>
+                        <p class="vm-story-text text-base font-light">
+                            作为您的私募投顾，
+                            <span class="vm-gold-text font-semibold">信赖 (Trustworthy)</span>
+                            是我们一切工作的基石。我们恪守
+                            <span class="vm-gradient-text font-semibold">fiduciary duty（受托人责任）</span>
+                            ，以客户的根本利益为最高原则。我们追求的不仅是投资的成功，更是与您建立基于透明、专业和共同信念的长久伙伴关系。我们不仅仅是财富的管理者，更是您在这场激动人心又充满挑战的科技未来征途上，值得信赖的领航员和同行者。
+                        </p>
+                    </div>
+                </article>
+
+                <!-- 承诺与使命 - 参考核心价值观层级结构 -->
+                <div class="text-center mb-20">
+                    <!-- 主标题区域 -->
+                    <div class="relative mb-12">
+                        <!-- 装饰圆环 -->
+                        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 border border-yellow-400/20 rounded-full"></div>
+                        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-40 h-40 border border-yellow-400/10 rounded-full"></div>
+
+                        <h2 class="text-6xl font-bold mb-8 vm-gradient-text relative z-10">承诺与使命</h2>
+                        <div class="w-20 h-px bg-gradient-to-r from-transparent via-yellow-400 to-transparent mx-auto mb-6"></div>
+                        <p class="text-xl vm-gradient-text mb-8 font-extralight tracking-wider" style="font-family: 'Times New Roman', serif;">Promise & Mission</p>
+                    </div>
+
+                    <div class="max-w-4xl mx-auto relative">
+                        <!-- 侧边装饰 -->
+                        <div class="absolute -left-12 top-1/2 transform -translate-y-1/2 w-8 h-px bg-gradient-to-r from-yellow-400 to-transparent"></div>
+                        <div class="absolute -right-12 top-1/2 transform -translate-y-1/2 w-8 h-px bg-gradient-to-l from-yellow-400 to-transparent"></div>
+
+                        <p class="vm-philosophy-meta" style="font-size: 1rem; text-transform: none;">
+                            在上海虚空有物，我们不承诺捷径，但我们承诺与您一同
+                        </p>
                     </div>
                 </div>
 
-                            <!-- 右侧装饰 -->
-                            <div class="hidden md:block md:col-span-1">
-                                <div class="w-full h-px bg-gradient-to-l from-transparent to-yellow-400/30"></div>
-                            </div>
+                <!-- 承诺内容卡片 - 参考核心价值观卡片设计 -->
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="vm-philosophy-card vm-cognitive-card vm-values-card text-center relative overflow-hidden group">
+                        <div class="vm-philosophy-topline"></div>
+                        <div class="vm-philosophy-baseline"></div>
+                        <div class="vm-cognitive-icon"><i class="fas fa-eye"></i></div>
+                        <div class="vm-philosophy-title"><span class="vm-philosophy-title-primary">洞见虚空</span></div>
+                        <p class="vm-philosophy-tagline">Insight Into Void</p>
+                        <div class="vm-philosophy-divider"></div>
+                        <div class="vm-philosophy-body">
+                            <p class="vm-philosophy-text">以远见和智慧，穿透迷雾，洞察未来趋势。</p>
+                            <p class="vm-philosophy-meta">趋势洞察 · 认知突破</p>
                         </div>
                     </div>
 
-                    <!-- 第二章：哲学与方法论 -->
-                    <div class="relative">
-                        <!-- 节点标记 -->
-                        <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full border-4 border-black z-10"></div>
-                        
-                        <div class="grid md:grid-cols-12 gap-12 items-center">
-                            <div class="hidden md:block md:col-span-1">
-                                <div class="w-full h-px bg-gradient-to-r from-transparent to-yellow-400/30"></div>
-                            </div>
-                            
-                            <div class="md:col-span-10">
-                                <div class="bg-gradient-to-l from-transparent via-black/20 to-transparent backdrop-blur-sm rounded-2xl p-12 border-r-4 border-yellow-400/30">
-                                    <!-- 章节标题 -->
-                                    <div class="flex items-center mb-8">
-                                        <div class="w-8 h-8 bg-gradient-to-br from-yellow-400/20 to-yellow-600/20 rounded-lg flex items-center justify-center mr-4">
-                                            <span class="text-yellow-400 font-bold">II</span>
-                                        </div>
-                                        <h4 class="text-2xl font-bold vm-gradient-text">哲学指引</h4>
-                                    </div>
-                                    
-                                    <div class="space-y-6 text-gray-200 leading-relaxed">
-                                        <p class="text-lg font-light">
-                            我们的名字，即是我们的哲学，也是我们的方法论。<span class="vm-gradient-text font-semibold">"虚空"</span>并非意味着虚无，而是代表着一切价值的起源之地——那些未被主流发现的角落、尚未被完全理解的创新、以及蕴藏在复杂性背后的结构性机遇。我们不畏惧"虚空"的浩渺与深邃，反而视其为需要以<span class="vm-gold-text font-semibold">远见 (Visionary)</span> 去洞察、以<span class="vm-gold-text font-semibold">智慧 (Intelligent)</span> 去照亮的价值源泉。
-                        </p>
-                                        <p class="text-lg font-light">
-                            我们深信，真正的、能够穿越周期的价值——那坚实的<span class="vm-gradient-text font-bold">"有物" (Something/Substance)</span>——并非显而易见，它需要被发掘，被验证，被坚守。这要求我们必须沉潜下去，进行<span class="vm-gold-text font-semibold">深度 (In-depth)</span> 的研究。我们摒弃浮躁的表面追逐，运用第一性原理思考，结合前沿的科技工具与数据分析，去穷究技术的本质、商业的逻辑和成长的驱动力，力求在纷繁的信息噪音中，辨识出那些真正具有长期生命力的价值核心。
-                        </p>
-                                    </div>
-                    </div>
-                </div>
-
-                            <div class="hidden md:block md:col-span-1">
-                                <div class="w-full h-px bg-gradient-to-l from-transparent to-yellow-400/30"></div>
-                            </div>
+                    <div class="vm-philosophy-card vm-cognitive-card vm-values-card text-center relative overflow-hidden group">
+                        <div class="vm-philosophy-topline"></div>
+                        <div class="vm-philosophy-baseline"></div>
+                        <div class="vm-cognitive-icon"><i class="fas fa-gem"></i></div>
+                        <div class="vm-philosophy-title"><span class="vm-philosophy-title-primary">执掌有物</span></div>
+                        <p class="vm-philosophy-tagline">Grasp Substance</p>
+                        <div class="vm-philosophy-divider"></div>
+                        <div class="vm-philosophy-body">
+                            <p class="vm-philosophy-text">以深度和务实，发掘并持有真正具备长期价值的核心资产。</p>
+                            <p class="vm-philosophy-meta">价值发掘 · 长期持有</p>
                         </div>
                     </div>
 
-                    <!-- 第三章：务实征程 -->
-                    <div class="relative">
-                        <!-- 节点标记 -->
-                        <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full border-4 border-black z-10"></div>
-                        
-                        <div class="grid md:grid-cols-12 gap-12 items-center">
-                            <div class="hidden md:block md:col-span-1">
-                                <div class="w-full h-px bg-gradient-to-r from-transparent to-yellow-400/30"></div>
-                            </div>
-                            
-                            <div class="md:col-span-10">
-                                <div class="bg-gradient-to-r from-transparent via-black/20 to-transparent backdrop-blur-sm rounded-2xl p-12 border-l-4 border-yellow-400/30">
-                                    <div class="flex items-center mb-8">
-                                        <div class="w-8 h-8 bg-gradient-to-br from-yellow-400/20 to-yellow-600/20 rounded-lg flex items-center justify-center mr-4">
-                                            <span class="text-yellow-400 font-bold">III</span>
-                                        </div>
-                                        <h4 class="text-2xl font-bold vm-gradient-text">务实征程</h4>
-                                    </div>
-                                    
-                                    <div class="space-y-6 text-gray-200 leading-relaxed">
-                                        <p class="text-lg font-light">
-                            我们的征途，是科技未来。我们聚焦于那些将深刻改变人类生活和社会运作方式的前沿科技领域。但我们并非空想家，<span class="vm-gold-text font-semibold">务实 (Pragmatic)</span> 是我们连接理想与现实的桥梁。我们关注创新，更关注创新的可持续性；我们拥抱未来，更注重未来的可实现性。每一个投资决策，都基于严谨的价值评估和风险考量，确保我们为客户寻找的"有物"，是看得见、摸得着、能够稳健成长的真实价值。
-                        </p>
-                                    </div>
-                    </div>
-                </div>
-
-                            <div class="hidden md:block md:col-span-1">
-                                <div class="w-full h-px bg-gradient-to-l from-transparent to-yellow-400/30"></div>
-                            </div>
+                    <div class="vm-philosophy-card vm-cognitive-card vm-values-card text-center relative overflow-hidden group">
+                        <div class="vm-philosophy-topline"></div>
+                        <div class="vm-philosophy-baseline"></div>
+                        <div class="vm-cognitive-icon"><i class="fas fa-mountain"></i></div>
+                        <div class="vm-philosophy-title"><span class="vm-philosophy-title-primary">笃行致远</span></div>
+                        <p class="vm-philosophy-tagline">Persistent Journey</p>
+                        <div class="vm-philosophy-divider"></div>
+                        <div class="vm-philosophy-body">
+                            <p class="vm-philosophy-text">以坚韧和长期主义，穿越周期，实现价值的持续增长。</p>
+                            <p class="vm-philosophy-meta">坚韧守护 · 穿越周期</p>
                         </div>
-                    </div>
-
-                    <!-- 第四章：长期坚韧 -->
-                    <div class="relative">
-                        <!-- 节点标记 -->
-                        <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full border-4 border-black z-10"></div>
-                        
-                        <div class="grid md:grid-cols-12 gap-12 items-center">
-                            <div class="hidden md:block md:col-span-1">
-                                <div class="w-full h-px bg-gradient-to-r from-transparent to-yellow-400/30"></div>
-                            </div>
-                            
-                            <div class="md:col-span-10">
-                                <div class="bg-gradient-to-l from-transparent via-black/20 to-transparent backdrop-blur-sm rounded-2xl p-12 border-r-4 border-yellow-400/30">
-                                    <div class="flex items-center mb-8">
-                                        <div class="w-8 h-8 bg-gradient-to-br from-yellow-400/20 to-yellow-600/20 rounded-lg flex items-center justify-center mr-4">
-                                            <span class="text-yellow-400 font-bold">IV</span>
-                                        </div>
-                                        <h4 class="text-2xl font-bold vm-gradient-text">长期坚韧</h4>
-                                    </div>
-                                    
-                                    <div class="space-y-6 text-gray-200 leading-relaxed">
-                                        <p class="text-lg font-light">
-                            我们深知，在这场探索未来的征途中，<span class="vm-gold-text font-semibold">坚韧 (Resilient)</span> 是不可或缺的品质。科技创新的道路从不平坦，市场总有起伏波澜。因此，我们秉持<span class="vm-gradient-text font-semibold">长期主义 (Long-termism)</span>，做时间的朋友。我们有战略定力去抵御短期的诱惑和干扰，有耐心去陪伴我们所发现的"有物"穿越周期，静待价值的花开。我们相信，从"虚空"中生长出的确定性，往往需要时间的浇灌与守护。
-                        </p>
-                                    </div>
-                    </div>
-                </div>
-
-                            <div class="hidden md:block md:col-span-1">
-                                <div class="w-full h-px bg-gradient-to-l from-transparent to-yellow-400/30"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 第五章：信赖责任 -->
-                    <div class="relative">
-                        <!-- 节点标记 -->
-                        <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full border-4 border-black z-10"></div>
-                        
-                        <div class="grid md:grid-cols-12 gap-12 items-center">
-                            <div class="hidden md:block md:col-span-1">
-                                <div class="w-full h-px bg-gradient-to-r from-transparent to-yellow-400/30"></div>
-                            </div>
-                            
-                            <div class="md:col-span-10">
-                                <div class="bg-gradient-to-r from-transparent via-black/20 to-transparent backdrop-blur-sm rounded-2xl p-12 border-l-4 border-yellow-400/30">
-                                    <div class="flex items-center mb-8">
-                                        <div class="w-8 h-8 bg-gradient-to-br from-yellow-400/20 to-yellow-600/20 rounded-lg flex items-center justify-center mr-4">
-                                            <span class="text-yellow-400 font-bold">V</span>
-                                        </div>
-                                        <h4 class="text-2xl font-bold vm-gradient-text">信赖之约</h4>
-                                    </div>
-                                    
-                                    <div class="space-y-6 text-gray-200 leading-relaxed">
-                                        <p class="text-lg font-light">
-                            作为您的私募投顾，<span class="vm-gold-text font-semibold">信赖 (Trustworthy)</span> 是我们一切工作的基石。我们恪守 <span class="vm-gradient-text font-semibold">fiduciary duty（受托人责任）</span>，以客户的根本利益为最高原则。我们追求的不仅是投资的成功，更是与您建立基于透明、专业和共同信念的长久伙伴关系。我们不仅仅是财富的管理者，更是您在这场激动人心又充满挑战的科技未来征途上，值得信赖的领航员和同行者。
-                        </p>
-                                    </div>
-                    </div>
-                </div>
-
-                            <div class="hidden md:block md:col-span-1">
-                                <div class="w-full h-px bg-gradient-to-l from-transparent to-yellow-400/30"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 终章：承诺与使命 -->
-                    <div class="relative mt-32">
-                        <!-- 特殊节点标记 -->
-                        <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full border-4 border-black z-10 shadow-lg shadow-yellow-400/30"></div>
-                        
-                        <div class="grid md:grid-cols-12 gap-12 items-center">
-                            <div class="hidden md:block md:col-span-1">
-                                <div class="w-full h-px bg-gradient-to-r from-transparent to-yellow-400/50"></div>
-                            </div>
-                            
-                            <div class="md:col-span-10">
-                                <!-- 特殊设计的终章卡片 -->
-                                <div class="relative">
-                                    <!-- 金色边框光晕 -->
-                                    <div class="absolute -inset-4 bg-gradient-to-r from-yellow-400/20 via-yellow-500/30 to-yellow-600/20 rounded-3xl blur-xl"></div>
-                                    
-                                    <div class="bg-gradient-to-br from-black/40 via-gray-900/30 to-black/40 backdrop-blur-sm rounded-2xl p-20 border-2 border-yellow-400/40 relative z-10">
-                                        <!-- 终章标题 -->
-                                        <div class="text-center mb-16">
-                                            <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full mb-8 shadow-lg shadow-yellow-400/30">
-                                                <span class="text-black font-bold text-2xl">∞</span>
-                                            </div>
-                                            <h4 class="text-4xl font-bold vm-gradient-text mb-6">承诺与使命</h4>
-                                            <div class="w-32 h-px bg-gradient-to-r from-yellow-400 to-yellow-600 mx-auto"></div>
-                                        </div>
-                                        
-                                        <!-- 承诺内容 -->
-                                        <div class="space-y-12 text-gray-200 leading-relaxed">
-                                            <p class="text-2xl font-light text-center mb-16">
-                            在上海虚空有物，我们不承诺捷径，但我们承诺与您一同：
-                        </p>
-                                            
-                                            <!-- 三重承诺 -->
-                                            <div class="grid md:grid-cols-3 gap-12 my-20">
-                                                <div class="text-center group">
-                                                    <div class="relative mb-8">
-                                                        <div class="absolute inset-0 bg-gradient-radial from-yellow-400/20 to-transparent rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
-                                                        <div class="w-20 h-20 bg-gradient-to-br from-yellow-400/20 to-yellow-600/20 rounded-xl mx-auto flex items-center justify-center border border-yellow-400/30 relative z-10 group-hover:scale-110 transition-all duration-500">
-                                                            <i class="fas fa-eye text-3xl vm-gold-text group-hover:text-yellow-300 transition-colors duration-300"></i>
-                            </div>
-                            </div>
-                                                    <h5 class="text-2xl font-bold vm-gradient-text mb-4">洞见虚空</h5>
-                                                    <p class="text-gray-300 leading-relaxed">以远见和智慧，穿透迷雾，洞察未来趋势。</p>
-                            </div>
-                                                
-                                                <div class="text-center group">
-                                                    <div class="relative mb-8">
-                                                        <div class="absolute inset-0 bg-gradient-radial from-yellow-400/20 to-transparent rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
-                                                        <div class="w-20 h-20 bg-gradient-to-br from-yellow-400/20 to-yellow-600/20 rounded-xl mx-auto flex items-center justify-center border border-yellow-400/30 relative z-10 group-hover:scale-110 transition-all duration-500">
-                                                            <i class="fas fa-gem text-3xl vm-gold-text group-hover:text-yellow-300 transition-colors duration-300"></i>
-                        </div>
-                                                    </div>
-                                                    <h5 class="text-2xl font-bold vm-gradient-text mb-4">执掌有物</h5>
-                                                    <p class="text-gray-300 leading-relaxed">以深度和务实，发掘并持有真正具备长期价值的核心资产。</p>
-                                                </div>
-                                                
-                                                <div class="text-center group">
-                                                    <div class="relative mb-8">
-                                                        <div class="absolute inset-0 bg-gradient-radial from-yellow-400/20 to-transparent rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
-                                                        <div class="w-20 h-20 bg-gradient-to-br from-yellow-400/20 to-yellow-600/20 rounded-xl mx-auto flex items-center justify-center border border-yellow-400/30 relative z-10 group-hover:scale-110 transition-all duration-500">
-                                                            <i class="fas fa-mountain text-3xl vm-gold-text group-hover:text-yellow-300 transition-colors duration-300"></i>
-                                                        </div>
-                                                    </div>
-                                                    <h5 class="text-2xl font-bold vm-gradient-text mb-4">笃行致远</h5>
-                                                    <p class="text-gray-300 leading-relaxed">以坚韧和长期主义，穿越周期，实现价值的持续增长。</p>
-                                                </div>
-                                            </div>
-                                            
-                                            <!-- 最终宣言 -->
-                                            <div class="text-center pt-16">
-                                                <div class="relative">
-                                                    <div class="absolute -left-12 top-1/2 transform -translate-y-1/2 text-6xl vm-gradient-text opacity-20">"</div>
-                                                    <div class="absolute -right-12 top-1/2 transform -translate-y-1/2 text-6xl vm-gradient-text opacity-20">"</div>
-                                                    <p class="text-2xl font-light leading-relaxed px-16">
-                                                        <span class="vm-gradient-text font-bold text-3xl">上海虚空有物科技有限公司</span><br><br>
-                                                        <span class="text-xl">于未知处，为您探寻并守护决定未来的价值之锚。</span>
-                        </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="hidden md:block md:col-span-1">
-                                <div class="w-full h-px bg-gradient-to-l from-transparent to-yellow-400/50"></div>
-                            </div>
-                        </div>
-                        
-                        <!-- 底部留白 -->
-                        <div class="h-24"></div>
                     </div>
                 </div>
             </div>
@@ -1809,204 +1780,98 @@
 
     <!-- 联系我们 -->
     <section class="vm-section relative overflow-hidden" id="contact">
-        <!-- 背景装饰 -->
-        <div class="absolute inset-0">
-            <div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-800"></div>
-            <!-- 辐射状装饰 -->
-            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[1200px] h-[1200px] bg-gradient-conic from-yellow-400/3 via-transparent to-yellow-400/3 rounded-full blur-3xl"></div>
-            <!-- 螺旋装饰 -->
-            <div class="absolute top-1/4 left-1/6 w-2 h-2 bg-yellow-400 rounded-full opacity-30 animate-ping"></div>
-            <div class="absolute bottom-1/4 right-1/6 w-3 h-3 bg-yellow-400 rounded-full opacity-20 animate-ping" style="animation-delay: 1s;"></div>
-            <div class="absolute top-3/4 left-3/4 w-1 h-1 bg-yellow-400 rounded-full opacity-40 animate-ping" style="animation-delay: 2s;"></div>
-        </div>
-        
         <div class="max-w-6xl mx-auto px-6 text-center relative z-10">
             <!-- 标题区域 -->
-            <div class="mb-16">
-                <!-- 装饰性标题框架 -->
-                <div class="relative inline-block mb-12">
-                    <!-- 四角装饰 -->
-                    <div class="absolute -top-6 -left-6 w-12 h-12">
-                        <div class="absolute top-0 left-0 w-4 h-1 bg-gradient-to-r from-yellow-400 to-transparent"></div>
-                        <div class="absolute top-0 left-0 w-1 h-4 bg-gradient-to-b from-yellow-400 to-transparent"></div>
-                    </div>
-                    <div class="absolute -top-6 -right-6 w-12 h-12">
-                        <div class="absolute top-0 right-0 w-4 h-1 bg-gradient-to-l from-yellow-400 to-transparent"></div>
-                        <div class="absolute top-0 right-0 w-1 h-4 bg-gradient-to-b from-yellow-400 to-transparent"></div>
-                    </div>
-                    <div class="absolute -bottom-6 -left-6 w-12 h-12">
-                        <div class="absolute bottom-0 left-0 w-4 h-1 bg-gradient-to-r from-yellow-400 to-transparent"></div>
-                        <div class="absolute bottom-0 left-0 w-1 h-4 bg-gradient-to-t from-yellow-400 to-transparent"></div>
-                    </div>
-                    <div class="absolute -bottom-6 -right-6 w-12 h-12">
-                        <div class="absolute bottom-0 right-0 w-4 h-1 bg-gradient-to-l from-yellow-400 to-transparent"></div>
-                        <div class="absolute bottom-0 right-0 w-1 h-4 bg-gradient-to-t from-yellow-400 to-transparent"></div>
-                    </div>
-                    
-                    <h2 class="text-6xl font-bold mb-8 vm-gradient-text px-12 py-6">联系我们</h2>
+            <div class="text-center mb-20">
+                <!-- 主标题区域 -->
+                <div class="relative mb-12">
+                    <!-- 装饰圆环 -->
+                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 border border-yellow-400/20 rounded-full"></div>
+                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-40 h-40 border border-yellow-400/10 rounded-full"></div>
+
+                    <h2 class="text-6xl font-bold mb-8 vm-gradient-text relative z-10">联系我们</h2>
+                    <div class="w-20 h-px bg-gradient-to-r from-transparent via-yellow-400 to-transparent mx-auto mb-6"></div>
+                    <p class="text-xl vm-gradient-text mb-8 font-extralight tracking-wider" style="font-family: 'Times New Roman', serif;">Contact Us</p>
                 </div>
-                
-                <div class="w-32 h-px bg-gradient-to-r from-transparent via-yellow-400 to-transparent mx-auto mb-8"></div>
-                <p class="text-xl vm-gradient-text mb-12 font-extralight tracking-wider" style="font-family: 'Times New Roman', serif;">Contact Us</p>
-                
-                <!-- 核心价值主张 -->
-                <div class="relative max-w-4xl mx-auto mb-12">
-                    <!-- 装饰引号 -->
-                    <div class="absolute -left-8 -top-6 text-6xl vm-gradient-text opacity-30">"</div>
-                    <div class="absolute -right-8 -bottom-6 text-6xl vm-gradient-text opacity-30">"</div>
-                    
-                    <h3 class="text-4xl md:text-5xl font-extralight mb-8 leading-tight text-white px-12">
-                    让未来的一部分提前显现
-                </h3>
-                    <div class="w-24 h-px bg-gradient-to-r from-yellow-400 to-yellow-600 mx-auto mb-8"></div>
-                    <p class="text-xl text-gray-200 leading-relaxed font-light">
-                    为具备远见和勇气的资本，在未知的虚空中，导航至价值有物的目的地
-                </p>
+
+                <div class="max-w-4xl mx-auto relative">
+                    <!-- 侧边装饰 -->
+                    <div class="absolute -left-12 top-1/2 transform -translate-y-1/2 w-8 h-px bg-gradient-to-r from-yellow-400 to-transparent"></div>
+                    <div class="absolute -right-12 top-1/2 transform -translate-y-1/2 w-8 h-px bg-gradient-to-l from-yellow-400 to-transparent"></div>
+
+                    <p class="vm-philosophy-meta" style="font-size: 1rem; text-transform: none;">
+                        让未来的一部分提前显现
+                    </p>
                 </div>
             </div>
             
             <!-- 联系方式卡片 -->
             <div class="grid md:grid-cols-3 gap-8 mb-16">
                 <!-- 邮件联系 -->
-                <div class="group relative">
-                    <div class="absolute -inset-4 bg-gradient-to-br from-yellow-400/0 via-yellow-400/10 to-yellow-400/0 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
-                    <div class="luxury-card p-8 rounded-2xl text-center relative z-10 border border-yellow-400/15 group-hover:border-yellow-400/40 transition-all duration-500 backdrop-blur-sm bg-gradient-to-br from-black/40 to-gray-900/40 group-hover:from-black/60 group-hover:to-gray-900/60 transform hover:-translate-y-2">
-                        <!-- 顶部装饰线 -->
-                        <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-yellow-400/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-                        
-                        <!-- 图标和标题 -->
-                        <div class="mb-8">
-                            <div class="flex items-center justify-center mb-6">
-                                <div class="relative mr-4">
-                                    <div class="absolute inset-0 bg-gradient-radial from-yellow-400/30 to-transparent rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
-                                    <div class="w-16 h-16 bg-gradient-to-br from-yellow-400/20 to-yellow-600/20 rounded-xl flex items-center justify-center border border-yellow-400/40 group-hover:scale-110 transition-all duration-500 relative z-10">
-                                        <i class="fas fa-envelope text-2xl vm-gold-text group-hover:text-yellow-300 transition-colors duration-300"></i>
+                <div class="vm-philosophy-card vm-cognitive-card vm-values-card text-center relative overflow-hidden group">
+                    <div class="vm-philosophy-topline"></div>
+                    <div class="vm-philosophy-baseline"></div>
+                    <div class="vm-cognitive-icon"><i class="fas fa-envelope"></i></div>
+                    <div class="vm-philosophy-title"><span class="vm-philosophy-title-primary">邮件联系</span></div>
+                    <p class="vm-philosophy-tagline">Email Communication</p>
+                    <div class="vm-philosophy-divider"></div>
+                    <div class="vm-philosophy-body">
+                        <p class="vm-philosophy-text text-xl font-medium mb-3">1724111086@qq.com</p>
+                        <p class="vm-philosophy-meta">24小时内回复 · 开启投资对话</p>
                     </div>
                 </div>
-                                <div>
-                                    <h4 class="text-2xl font-bold vm-gradient-text transition-colors duration-300">邮件联系</h4>
-                                    <div class="text-xs vm-gradient-text font-light tracking-wider opacity-60 group-hover:opacity-100 transition-opacity duration-300">Email Communication</div>
-                    </div>
-                </div>
-                            
-                            <!-- 分割线 -->
-                            <div class="w-16 h-px bg-gradient-to-r from-yellow-400 to-yellow-600 mx-auto mb-6 opacity-60 group-hover:opacity-100 transition-all duration-500"></div>
-            </div>
-            
-                        <!-- 联系信息 -->
-                        <div class="space-y-4">
-                            <p class="text-xl text-gray-200 group-hover:text-gray-100 transition-colors duration-300 font-light">1724111086@qq.com</p>
-                            <p class="text-sm text-gray-400 group-hover:text-gray-300 transition-colors duration-300 leading-relaxed">
-                                我们将在24小时内回复您的咨询，开启专业的投资对话
-                            </p>
-                        </div>
-            
-                        <!-- 底部装饰线 -->
-                        <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-yellow-400/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-                    </div>
-                </div>
-                
+
                 <!-- 电话咨询 -->
-                <div class="group relative">
-                    <div class="absolute -inset-4 bg-gradient-to-bl from-yellow-400/0 via-yellow-400/10 to-yellow-400/0 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
-                    <div class="luxury-card p-8 rounded-2xl text-center relative z-10 border border-yellow-400/15 group-hover:border-yellow-400/40 transition-all duration-500 backdrop-blur-sm bg-gradient-to-bl from-black/40 to-gray-900/40 group-hover:from-black/60 group-hover:to-gray-900/60 transform hover:-translate-y-2">
-                        <!-- 顶部装饰线 -->
-                        <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-yellow-400/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-                        
-                        <!-- 图标和标题 -->
-                        <div class="mb-8">
-                            <div class="flex items-center justify-center mb-6">
-                                <div class="relative mr-4">
-                                    <div class="absolute inset-0 bg-gradient-radial from-yellow-400/30 to-transparent rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
-                                    <div class="w-16 h-16 bg-gradient-to-bl from-yellow-400/20 to-yellow-600/20 rounded-xl flex items-center justify-center border border-yellow-400/40 group-hover:scale-110 transition-all duration-500 relative z-10">
-                                        <i class="fas fa-phone text-2xl vm-gold-text group-hover:text-yellow-300 transition-colors duration-300"></i>
-                                    </div>
-                                </div>
-                                <div>
-                                    <h4 class="text-2xl font-bold vm-gradient-text transition-colors duration-300">电话咨询</h4>
-                                    <div class="text-xs vm-gradient-text font-light tracking-wider opacity-60 group-hover:opacity-100 transition-opacity duration-300">Phone Consultation</div>
-                                </div>
-                            </div>
-                            
-                            <!-- 分割线 -->
-                            <div class="w-16 h-px bg-gradient-to-r from-yellow-400 to-yellow-600 mx-auto mb-6 opacity-60 group-hover:opacity-100 transition-all duration-500"></div>
-                        </div>
-                        
-                        <!-- 联系信息 -->
-                        <div class="space-y-4">
-                            <p class="text-xl text-gray-200 group-hover:text-gray-100 transition-colors duration-300 font-light">15214300493</p>
-                            <p class="text-sm text-gray-400 group-hover:text-gray-300 transition-colors duration-300 leading-relaxed">
-                                预约一对一深度交流，探讨您的投资目标与我们的价值理念
-                            </p>
-                        </div>
-                        
-                        <!-- 底部装饰线 -->
-                        <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-yellow-400/50 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
+                <div class="vm-philosophy-card vm-cognitive-card vm-values-card text-center relative overflow-hidden group">
+                    <div class="vm-philosophy-topline"></div>
+                    <div class="vm-philosophy-baseline"></div>
+                    <div class="vm-cognitive-icon"><i class="fas fa-phone"></i></div>
+                    <div class="vm-philosophy-title"><span class="vm-philosophy-title-primary">电话咨询</span></div>
+                    <p class="vm-philosophy-tagline">Phone Consultation</p>
+                    <div class="vm-philosophy-divider"></div>
+                    <div class="vm-philosophy-body">
+                        <p class="vm-philosophy-text text-xl font-medium mb-3">15214300493</p>
+                        <p class="vm-philosophy-meta">一对一深度交流 · 共探价值理念</p>
                     </div>
                 </div>
-                
+
                 <!-- 微信联系 -->
-                <div class="group relative">
-                    <div class="absolute -inset-4 bg-gradient-to-br from-yellow-400/0 via-yellow-400/15 to-yellow-400/0 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
-                    <div class="luxury-card p-8 rounded-2xl text-center relative z-10 border border-yellow-400/20 group-hover:border-yellow-400/50 transition-all duration-500 backdrop-blur-sm bg-gradient-to-br from-black/50 to-gray-900/50 group-hover:from-black/70 group-hover:to-gray-900/70 transform hover:-translate-y-2">
-                        <!-- 顶部装饰线 -->
-                        <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-yellow-400/60 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-                        
-                        <!-- 图标和标题 -->
-                        <div class="mb-8">
-                            <div class="flex items-center justify-center mb-6">
-                                <div class="relative mr-4">
-                                    <div class="absolute inset-0 bg-gradient-radial from-yellow-400/30 to-transparent rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
-                                    <div class="w-16 h-16 bg-gradient-to-br from-yellow-400/30 to-yellow-600/30 rounded-xl flex items-center justify-center border border-yellow-400/50 group-hover:scale-110 transition-all duration-500 relative z-10">
-                                        <i class="fab fa-weixin text-2xl vm-gold-text group-hover:text-yellow-300 transition-colors duration-300"></i>
-                                    </div>
-                                </div>
-                                <div>
-                                    <h4 class="text-2xl font-bold vm-gradient-text transition-colors duration-300">微信联系</h4>
-                                    <div class="text-xs vm-gradient-text font-light tracking-wider opacity-60 group-hover:opacity-100 transition-opacity duration-300">WeChat Contact</div>
-                                </div>
-                            </div>
-                            
-                            <!-- 分割线 -->
-                            <div class="w-16 h-px bg-gradient-to-r from-yellow-400 to-yellow-600 mx-auto mb-6 opacity-60 group-hover:opacity-100 transition-all duration-500"></div>
-                        </div>
-                        
-                        <!-- 联系信息 -->
-                        <div class="space-y-4">
-                            <p class="text-xl text-gray-200 group-hover:text-gray-100 transition-colors duration-300 font-light">
-                                <span class="text-sm text-gray-400">weixin id：</span>yangmancaijing
-                            </p>
-                            <div class="relative">
-                                <!-- 二维码按钮 -->
-                                <button id="wechatQrBtn" class="w-full bg-gradient-to-r from-yellow-400/20 to-yellow-600/20 border border-yellow-400/30 hover:border-yellow-400/60 text-gray-300 hover:text-gray-100 px-4 py-3 rounded-lg transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-yellow-400/30 group-hover:to-yellow-600/30">
-                                    <i class="fas fa-qrcode mr-2"></i>
-                                    <span>点击查看二维码</span>
-                </button>
-                                
-                                <!-- 二维码显示区域 -->
-                                <div id="wechatQrContainer" class="absolute top-full left-1/2 transform -translate-x-1/2 mt-4 bg-white/95 backdrop-blur-sm rounded-xl p-4 border-2 border-yellow-400/30 shadow-2xl opacity-0 scale-95 pointer-events-none transition-all duration-500 z-50">
-                                    <div class="relative w-48 h-48">
-                                        <img id="wechatQrImage" src="" alt="微信二维码" class="w-full h-full object-contain rounded-lg shadow-lg" style="display: none;"/>
-                                        <!-- 加载状态 -->
-                                        <div id="wechatQrLoading" class="w-full h-full flex items-center justify-center">
-                                            <div class="flex flex-col items-center">
-                                                <i class="fas fa-spinner fa-spin text-2xl text-gray-400 mb-2"></i>
-                                                <span class="text-sm text-gray-500">加载中...</span>
-                                            </div>
+                <div class="vm-philosophy-card vm-cognitive-card vm-values-card text-center relative group" style="overflow: visible;">
+                    <div class="vm-philosophy-topline"></div>
+                    <div class="vm-philosophy-baseline"></div>
+                    <div class="vm-cognitive-icon"><i class="fab fa-weixin"></i></div>
+                    <div class="vm-philosophy-title"><span class="vm-philosophy-title-primary">微信联系</span></div>
+                    <p class="vm-philosophy-tagline">WeChat Contact</p>
+                    <div class="vm-philosophy-divider"></div>
+                    <div class="vm-philosophy-body">
+                        <p class="vm-philosophy-text text-xl font-medium mb-3">yangmancaijing</p>
+                        <div class="relative" style="z-index: 1;">
+                            <!-- 二维码按钮 -->
+                            <button id="wechatQrBtn" class="relative w-full bg-gradient-to-r from-yellow-400/20 to-yellow-600/20 border border-yellow-400/30 hover:border-yellow-400/60 text-gray-300 hover:text-gray-100 px-4 py-3 rounded-lg transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-yellow-400/30 group-hover:to-yellow-600/30" style="z-index: 10; cursor: pointer;">
+                                <i class="fas fa-qrcode mr-2"></i>
+                                <span>点击查看二维码</span>
+                            </button>
+
+                            <!-- 二维码显示区域 -->
+                            <div id="wechatQrContainer" class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white/95 backdrop-blur-sm rounded-xl p-4 border-2 border-yellow-400/30 shadow-2xl opacity-0 scale-95 pointer-events-none transition-all duration-500" style="z-index: 99999;">
+                                <div class="relative w-48 h-48">
+                                    <img id="wechatQrImage" src="" alt="微信二维码" class="w-full h-full object-contain rounded-lg shadow-lg" style="display: none;"/>
+                                    <!-- 加载状态 -->
+                                    <div id="wechatQrLoading" class="w-full h-full flex items-center justify-center">
+                                        <div class="flex flex-col items-center">
+                                            <i class="fas fa-spinner fa-spin text-2xl text-gray-400 mb-2"></i>
+                                            <span class="text-sm text-gray-500">加载中...</span>
                                         </div>
-                                        <!-- 关闭按钮 -->
-                                        <button id="closeQrBtn" class="absolute -top-2 -right-2 w-6 h-6 bg-gray-800 hover:bg-gray-700 text-white rounded-full flex items-center justify-center text-xs transition-colors duration-200">
-                                            <i class="fas fa-times"></i>
-                                        </button>
                                     </div>
-                                    <!-- 提示文字 -->
-                                    <p class="text-center text-sm text-gray-600 mt-3">长按识别二维码添加微信</p>
+                                    <!-- 关闭按钮 -->
+                                    <button id="closeQrBtn" class="absolute -top-2 -right-2 w-6 h-6 bg-gray-200 hover:bg-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700 text-gray-700 dark:text-white rounded-full flex items-center justify-center text-xs transition-colors duration-200">
+                                        <i class="fas fa-times"></i>
+                                    </button>
                                 </div>
+                                <!-- 提示文字 -->
+                                <p class="text-center text-sm text-gray-600 mt-3">长按识别二维码添加微信</p>
                             </div>
                         </div>
-                        
-                        <!-- 底部装饰线 -->
-                        <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-yellow-400/60 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
                     </div>
                 </div>
             </div>
@@ -2044,17 +1909,6 @@
 
     <!-- 页脚 -->
     <footer class="relative overflow-hidden border-t border-gray-800">
-        <!-- 背景装饰 -->
-        <div class="absolute inset-0">
-            <div class="absolute inset-0 bg-gradient-to-t from-black via-gray-950 to-gray-900"></div>
-            <!-- 微妙的光效 -->
-            <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-96 h-1 bg-gradient-to-r from-transparent via-yellow-400/30 to-transparent"></div>
-            <!-- 装饰性点阵 -->
-            <div class="absolute inset-0 opacity-5">
-                <div style="background-image: radial-gradient(circle at 1px 1px, #D4AF37 1px, transparent 0); background-size: 60px 60px;"></div>
-            </div>
-        </div>
-        
         <div class="max-w-7xl mx-auto px-6 py-16 relative z-10">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <!-- 左侧：品牌信息 -->
@@ -2256,32 +2110,56 @@
             const wechatQrImage = document.getElementById('wechatQrImage');
             const wechatQrLoading = document.getElementById('wechatQrLoading');
             const closeQrBtn = document.getElementById('closeQrBtn');
-            
+
+            console.log('微信二维码元素检查:', {
+                wechatQrBtn: !!wechatQrBtn,
+                wechatQrContainer: !!wechatQrContainer,
+                wechatQrImage: !!wechatQrImage,
+                wechatQrLoading: !!wechatQrLoading,
+                closeQrBtn: !!closeQrBtn
+            });
+
             if (wechatQrBtn && wechatQrContainer) {
                 let qrLoaded = false;
-                
+
                 // 点击显示二维码
                 wechatQrBtn.addEventListener('click', function(e) {
+                    console.log('微信二维码按钮被点击');
                     e.preventDefault();
                     e.stopPropagation();
-                    
+
                     // 显示容器
                     wechatQrContainer.classList.remove('opacity-0', 'scale-95', 'pointer-events-none');
                     wechatQrContainer.classList.add('opacity-100', 'scale-100', 'pointer-events-auto');
-                    
+                    console.log('二维码容器已显示');
+
                     // 如果还没有加载过图片，则开始加载
                     if (!qrLoaded) {
                         wechatQrLoading.style.display = 'flex';
                         wechatQrImage.style.display = 'none';
-                        
+
+                        // 尝试加载图片，如果失败则显示临时二维码
                         wechatQrImage.src = 'wxcode.jpg';
                         wechatQrImage.onload = function() {
+                            console.log('二维码图片加载成功');
                             wechatQrLoading.style.display = 'none';
                             wechatQrImage.style.display = 'block';
                             qrLoaded = true;
                         };
                         wechatQrImage.onerror = function() {
-                            wechatQrLoading.innerHTML = '<div class="flex flex-col items-center"><i class="fas fa-exclamation-triangle text-2xl text-red-400 mb-2"></i><span class="text-sm text-red-500">加载失败</span></div>';
+                            console.log('二维码图片加载失败，显示临时二维码');
+                            wechatQrLoading.innerHTML = `
+                                <div class="flex flex-col items-center">
+                                    <div class="w-32 h-32 bg-gray-200 border-2 border-gray-300 rounded-lg flex items-center justify-center mb-2">
+                                        <div class="text-center">
+                                            <i class="fab fa-weixin text-3xl text-green-500 mb-2"></i>
+                                            <div class="text-xs text-gray-600">微信号</div>
+                                            <div class="text-sm font-medium text-gray-800">yangmancaijing</div>
+                                        </div>
+                                    </div>
+                                    <span class="text-sm text-gray-600">请手动搜索微信号添加</span>
+                                </div>
+                            `;
                         };
                     } else {
                         // 如果已经加载过，直接显示
@@ -2289,16 +2167,19 @@
                         wechatQrImage.style.display = 'block';
                     }
                 });
-                
+
                 // 关闭二维码
-                closeQrBtn.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    
-                    wechatQrContainer.classList.add('opacity-0', 'scale-95', 'pointer-events-none');
-                    wechatQrContainer.classList.remove('opacity-100', 'scale-100', 'pointer-events-auto');
-                });
-                
+                if (closeQrBtn) {
+                    closeQrBtn.addEventListener('click', function(e) {
+                        console.log('关闭二维码按钮被点击');
+                        e.preventDefault();
+                        e.stopPropagation();
+
+                        wechatQrContainer.classList.add('opacity-0', 'scale-95', 'pointer-events-none');
+                        wechatQrContainer.classList.remove('opacity-100', 'scale-100', 'pointer-events-auto');
+                    });
+                }
+
                 // 点击外部关闭二维码
                 document.addEventListener('click', function(e) {
                     if (!wechatQrContainer.contains(e.target) && !wechatQrBtn.contains(e.target)) {
@@ -2306,11 +2187,13 @@
                         wechatQrContainer.classList.remove('opacity-100', 'scale-100', 'pointer-events-auto');
                     }
                 });
-                
+
                 // 阻止二维码容器内的点击事件冒泡
                 wechatQrContainer.addEventListener('click', function(e) {
                     e.stopPropagation();
                 });
+            } else {
+                console.error('微信二维码元素未找到');
             }
         });
     </script>

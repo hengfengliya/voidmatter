@@ -171,27 +171,26 @@ body.vm-theme-light,
     background-image: none !important;
 }
 
-/* 浅色主题为每个版块补充柔和底色，同时弱化深色装饰层 */
+/* 浅色主题为每个版块使用统一纯白背景 */
 :root[data-theme='light'] .vm-section {
-    background-color: #f4f5f7 !important; /* 使用纯色柔和灰白作为栏目的默认底色 */
-    box-shadow: inset 0 -1px 0 rgba(17, 17, 17, 0.05);
+    background-color: #ffffff !important; /* 统一使用纯白背景 */
+    box-shadow: none; /* 去除阴影 */
 }
 
 :root[data-theme='light'] section.vm-section:nth-of-type(even) {
-    background-color: #ffffff !important; /* 偶数区块保持纯白，强化层次同时满足纯色要求 */
+    background-color: #ffffff !important; /* 偶数区块也保持纯白 */
 }
 
 :root[data-theme='light'] section.vm-section + section.vm-section {
-    border-top: 1px solid rgba(17, 17, 17, 0.06);
+    border-top: none; /* 去除分隔线 */
 }
 
 :root[data-theme='light'] .vm-section > .absolute.inset-0 {
-    display: block !important;
-    background-color: rgba(243, 244, 246, 0.92) !important; /* 采用半透明纯色遮罩，让底部纹理柔化且不出现渐变 */
+    display: none !important; /* 隐藏装饰背景层 */
 }
 
-:root[data-theme='light'] .vm-section > .absolute.inset-0 > * {
-    opacity: 0.45;
+:root[data-theme='light'] #hero {
+    background-color: #ffffff !important; /* 首屏也使用纯白背景 */
 }
 
 /* 浅色主题文本对比增强，避免金色与灰阶在白底上发虚 */
