@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全球供热行业：在脱碳世界中构建投资框架 | Global District Heating Industry: Building an Investment Framework in a Decarbonizing World</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@200;300;400;500;600;700;800;900&family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            /* 深邃黑金权力色系 */
+            --obsidian-black: #0A0A0A;
+            --midnight-black: #151515;
+            --shadow-black: #1F1F1F;
+            --charcoal-deep: #2A2A2A;
+
+            /* 稀缺金色层次 */
+            --sovereign-gold: #B8860B;
+            --imperial-gold: #DAA520;
+            --aureate-whisper: #F4E4BC;
+            --golden-shadow: #8B6914;
+
+            /* 权力灰度 */
+            --platinum-mist: #E5E5E5;
+            --sterling-silver: #C0C0C0;
+            --graphite-steel: #696969;
+            --charcoal-whisper: #808080;
+
+            /* 稀缺强调色 */
+            --ruby-accent: #8B0000;
+            --emerald-depth: #006400;
+            --sapphire-authority: #1e3a8a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg,
+                var(--obsidian-black) 0%,
+                var(--midnight-black) 40%,
+                var(--shadow-black) 100%);
+            color: var(--platinum-mist);
+            line-height: 1.8;
+            letter-spacing: 0.02em;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        /* 排版系统 */
+        .imperial-title {
+            font-family: 'Playfair Display', serif;
+            font-weight: 200;
+            letter-spacing: 0.12em;
+            line-height: 1.05;
+            color: var(--aureate-whisper);
+            text-shadow: 0 3px 12px rgba(184, 134, 11, 0.4);
+        }
+
+        .imperial-subtitle {
+            font-family: 'Playfair Display', serif;
+            font-weight: 300;
+            letter-spacing: 0.08em;
+            line-height: 1.15;
+            color: var(--imperial-gold);
+            text-shadow: 0 2px 8px rgba(218, 165, 32, 0.3);
+        }
+
+        .imperial-tagline {
+            font-family: 'Inter', sans-serif;
+            font-weight: 200;
+            letter-spacing: 0.06em;
+            line-height: 1.4;
+            color: var(--sterling-silver);
+            font-style: italic;
+        }
+
+        .imperial-dedication {
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+            letter-spacing: 0.04em;
+            line-height: 1.3;
+            color: var(--imperial-gold);
+        }
+
+        .imperial-dedication-sub {
+            font-family: 'Inter', sans-serif;
+            font-weight: 200;
+            letter-spacing: 0.05em;
+            line-height: 1.3;
+            color: var(--sterling-silver);
+            font-style: italic;
+        }
+
+        .sovereign-heading {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            color: var(--imperial-gold);
+            text-shadow: 0 1px 4px rgba(218, 165, 32, 0.4);
+        }
+
+        .noble-text {
+            font-weight: 300;
+            letter-spacing: 0.03em;
+            line-height: 2.2;
+            color: var(--platinum-mist);
+        }
+
+        .executive-quote {
+            font-weight: 300;
+            letter-spacing: 0.02em;
+            line-height: 1.8;
+            color: var(--sterling-silver);
+            font-size: 0.95rem;
+            font-style: italic;
+            position: relative;
+            padding: 0 2rem;
+            margin: 2rem 0;
+        }
+
+        .executive-quote::before {
+            content: '"';
+            position: absolute;
+            left: 0;
+            top: -0.5rem;
+            font-size: 3rem;
+            color: var(--sovereign-gold);
+            opacity: 0.3;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .executive-quote::after {
+            content: '"';
+            position: absolute;
+            right: 0;
+            bottom: -0.5rem;
+            font-size: 3rem;
+            color: var(--sovereign-gold);
+            opacity: 0.3;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .exclusive-number {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: var(--sovereign-gold);
+            text-shadow: 0 1px 3px rgba(184, 134, 11, 0.5);
+        }
+
+        /* 布局容器 */
+        .sovereign-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 5rem;
+        }
+
+        .imperial-section {
+            margin: 12rem 0;
+            position: relative;
+        }
+
+        /* 卡片系统 */
+        .authority-card {
+            background: linear-gradient(145deg,
+                rgba(21, 21, 21, 0.9) 0%,
+                rgba(31, 31, 31, 0.8) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.15);
+            border-radius: 2px;
+            padding: 3rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            box-shadow:
+                0 8px 32px rgba(0, 0, 0, 0.6),
+                inset 0 1px 1px rgba(244, 228, 188, 0.05);
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .authority-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(184, 134, 11, 0.3);
+            box-shadow:
+                0 16px 48px rgba(0, 0, 0, 0.8),
+                0 0 24px rgba(184, 134, 11, 0.1),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08);
+        }
+
+        .authority-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(90deg, var(--sovereign-gold), transparent);
+            opacity: 0.6;
+        }
+
+        .authority-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(270deg, var(--sovereign-gold), transparent);
+            opacity: 0.6;
+        }
+
+        .golden-glass-card {
+            background:
+                radial-gradient(circle at 30% 30%, rgba(218, 165, 32, 0.12) 0%, transparent 50%),
+                radial-gradient(circle at 70% 70%, rgba(184, 134, 11, 0.08) 0%, transparent 50%),
+                linear-gradient(135deg,
+                    rgba(244, 228, 188, 0.06) 0%,
+                    rgba(218, 165, 32, 0.04) 30%,
+                    rgba(184, 134, 11, 0.03) 70%,
+                    rgba(139, 105, 20, 0.02) 100%);
+            border: 1px solid rgba(218, 165, 32, 0.15);
+            border-radius: 4px;
+            padding: 2.5rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            box-shadow:
+                0 8px 32px rgba(0, 0, 0, 0.6),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08),
+                inset 0 0 30px rgba(218, 165, 32, 0.03);
+            transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .golden-glass-card:hover {
+            transform: translateY(-3px);
+            border-color: rgba(218, 165, 32, 0.3);
+            box-shadow:
+                0 16px 48px rgba(0, 0, 0, 0.8),
+                0 0 40px rgba(218, 165, 32, 0.1),
+                inset 0 1px 1px rgba(244, 228, 188, 0.12),
+                inset 0 0 40px rgba(218, 165, 32, 0.05);
+        }
+
+        .investment-logic-card {
+            background:
+                radial-gradient(circle at 20% 80%, rgba(218, 165, 32, 0.08) 0%, transparent 60%),
+                radial-gradient(circle at 80% 20%, rgba(244, 228, 188, 0.05) 0%, transparent 60%),
+                linear-gradient(135deg,
+                    rgba(184, 134, 11, 0.06) 0%,
+                    rgba(139, 105, 20, 0.04) 50%,
+                    rgba(218, 165, 32, 0.02) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.12);
+            border-radius: 2px;
+            padding: 3rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            box-shadow:
+                0 8px 32px rgba(0, 0, 0, 0.6),
+                inset 0 1px 1px rgba(244, 228, 188, 0.06),
+                inset 0 0 25px rgba(184, 134, 11, 0.02);
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .investment-logic-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(184, 134, 11, 0.25);
+            box-shadow:
+                0 16px 48px rgba(0, 0, 0, 0.8),
+                0 0 30px rgba(218, 165, 32, 0.08),
+                inset 0 1px 1px rgba(244, 228, 188, 0.1),
+                inset 0 0 35px rgba(184, 134, 11, 0.04);
+        }
+
+        .disclaimer-card {
+            background: linear-gradient(145deg,
+                rgba(31, 31, 31, 0.95) 0%,
+                rgba(42, 42, 42, 0.9) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.18);
+            border-radius: 3px;
+            padding: 4rem;
+            position: relative;
+            backdrop-filter: blur(25px);
+            box-shadow:
+                0 12px 40px rgba(0, 0, 0, 0.7),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08),
+                inset 0 0 30px rgba(184, 134, 11, 0.02);
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .disclaimer-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 2px;
+            background: linear-gradient(90deg,
+                transparent,
+                var(--sovereign-gold),
+                transparent);
+            opacity: 0.6;
+        }
+
+        .disclaimer-card:hover {
+            border-color: rgba(184, 134, 11, 0.25);
+            box-shadow:
+                0 16px 50px rgba(0, 0, 0, 0.8),
+                0 0 25px rgba(184, 134, 11, 0.08),
+                inset 0 1px 1px rgba(244, 228, 188, 0.12);
+        }
+
+        .disclaimer-text {
+            font-weight: 300;
+            letter-spacing: 0.02em;
+            line-height: 2;
+            color: var(--platinum-mist);
+            font-size: 1rem;
+        }
+
+        /* 表格 */
+        .imperial-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            background: rgba(15, 15, 15, 0.8);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(184, 134, 11, 0.2);
+            border-radius: 2px;
+            margin: 2rem 0;
+        }
+
+        .imperial-table th {
+            background: rgba(184, 134, 11, 0.08);
+            padding: 2rem 1.5rem;
+            text-align: left;
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--imperial-gold);
+            border-bottom: 1px solid rgba(184, 134, 11, 0.2);
+        }
+
+        .imperial-table td {
+            padding: 1.8rem 1.5rem;
+            border-bottom: 1px solid rgba(184, 134, 11, 0.05);
+            font-weight: 300;
+        }
+
+        .imperial-table tbody tr:hover {
+            background: rgba(184, 134, 11, 0.03);
+        }
+
+        /* 分隔线 */
+        .sovereign-divider {
+            height: 1px;
+            background: linear-gradient(90deg,
+                transparent 0%,
+                rgba(184, 134, 11, 0.3) 30%,
+                rgba(184, 134, 11, 0.6) 50%,
+                rgba(184, 134, 11, 0.3) 70%,
+                transparent 100%);
+            margin: 8rem 0;
+            position: relative;
+        }
+
+        .sovereign-divider::before {
+            content: '◆';
+            position: absolute;
+            top: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--sovereign-gold);
+            font-size: 16px;
+            background: var(--obsidian-black);
+            padding: 0 1rem;
+        }
+
+        /* 垂直进度条 */
+        .reading-progress {
+            position: fixed;
+            top: 50%;
+            right: 2rem;
+            width: 4px;
+            height: 200px;
+            transform: translateY(-50%);
+            background: linear-gradient(180deg,
+                rgba(184, 134, 11, 0.2) 0%,
+                rgba(218, 165, 32, 0.3) 30%,
+                rgba(244, 228, 188, 0.4) 60%,
+                rgba(218, 165, 32, 0.3) 85%,
+                rgba(139, 105, 20, 0.2) 100%);
+            z-index: 1001;
+            box-shadow:
+                0 0 12px rgba(184, 134, 11, 0.6),
+                2px 0 8px rgba(184, 134, 11, 0.3),
+                inset 1px 0 2px rgba(244, 228, 188, 0.4);
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+        .reading-progress::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(180deg,
+                rgba(244, 228, 188, 0.1) 0%,
+                rgba(218, 165, 32, 0.15) 50%,
+                rgba(244, 228, 188, 0.1) 100%);
+            border-radius: 2px;
+            animation: progressShimmer 3s ease-in-out infinite;
+        }
+
+        .reading-progress-fill {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(180deg,
+                var(--golden-shadow) 0%,
+                var(--sovereign-gold) 50%,
+                var(--imperial-gold) 100%);
+            border-radius: 2px;
+            transition: height 0.1s ease;
+            box-shadow:
+                inset 0 1px 2px rgba(244, 228, 188, 0.3),
+                0 0 8px rgba(184, 134, 11, 0.4);
+        }
+
+        @keyframes progressShimmer {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.8; }
+        }
+
+        .progress-tooltip {
+            position: fixed;
+            top: 50%;
+            right: 7rem;
+            transform: translateY(-50%);
+            background: linear-gradient(135deg,
+                rgba(15, 15, 15, 0.95) 0%,
+                rgba(31, 31, 31, 0.9) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.25);
+            border-radius: 8px;
+            padding: 0.8rem 2rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 0.85rem;
+            font-weight: 300;
+            color: var(--imperial-gold);
+            backdrop-filter: blur(20px);
+            box-shadow:
+                0 8px 32px rgba(0, 0, 0, 0.7),
+                0 0 20px rgba(184, 134, 11, 0.1),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+            z-index: 1002;
+            white-space: nowrap;
+            letter-spacing: 0.03em;
+        }
+
+        .progress-tooltip.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(-50%) translateX(-8px);
+        }
+
+        .progress-tooltip::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -8px;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-left: 8px solid rgba(184, 134, 11, 0.25);
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+        }
+
+        .progress-tooltip::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -7px;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-left: 7px solid rgba(15, 15, 15, 0.95);
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+        }
+
+        /* 引用文献 */
+        .citation-item {
+            padding: 1.5rem 2rem;
+            margin: 0.8rem 0;
+            background: linear-gradient(135deg, rgba(21, 21, 21, 0.8) 0%, rgba(31, 31, 31, 0.6) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.15);
+            border-radius: 3px;
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .citation-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--sovereign-gold), var(--golden-shadow));
+            opacity: 0.6;
+            transition: opacity 0.3s ease;
+        }
+
+        .citation-item:hover {
+            border-color: rgba(184, 134, 11, 0.4);
+            background: linear-gradient(135deg, rgba(31, 31, 31, 0.9) 0%, rgba(42, 42, 42, 0.7) 100%);
+            transform: translateX(6px) translateY(-1px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5), 0 0 20px rgba(184, 134, 11, 0.08);
+        }
+
+        .citation-item:hover::before {
+            opacity: 1;
+        }
+
+        .citation-item a {
+            color: var(--platinum-mist);
+            text-decoration: none;
+            font-size: 0.85rem;
+            line-height: 1.7;
+            font-weight: 300;
+            transition: color 0.4s ease;
+            display: block;
+            position: relative;
+        }
+
+        .citation-item a::before {
+            content: '';
+            position: absolute;
+            left: -0.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 4px;
+            background: var(--sovereign-gold);
+            border-radius: 50%;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .citation-item:hover a {
+            color: var(--aureate-whisper);
+            padding-left: 1rem;
+        }
+
+        .citation-item:hover a::before {
+            opacity: 0.8;
+        }
+
+        /* 响应式 */
+        @media (max-width: 1024px) {
+            .sovereign-container { padding: 0 2.5rem; }
+            .imperial-section { margin: 8rem 0; }
+        }
+
+        @media (max-width: 768px) {
+            .sovereign-container { padding: 0 1.5rem; }
+            .imperial-section { margin: 6rem 0; }
+            .authority-card { padding: 2rem; }
+            .reading-progress { right: 1rem; height: 150px; width: 3px; }
+            .progress-tooltip { right: 5rem; padding: 0.6rem 1.5rem; font-size: 0.75rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- 垂直进度条 -->
+    <div class="reading-progress">
+        <div class="reading-progress-fill"></div>
+    </div>
+
+    <!-- 进度标题提示器 -->
+    <div class="progress-tooltip" id="progress-tooltip"></div>
+
+    <!-- 首屏 -->
+    <header id="header" class="min-h-screen flex items-center justify-center relative" data-title="全球供热行业：在脱碳世界中构建投资框架">
+        <div class="sovereign-container text-center relative z-10">
+            <div class="mb-16">
+                <h1 class="imperial-title text-5xl md:text-7xl mb-6">
+                    全球供热行业：在脱碳世界中构建投资框架
+                </h1>
+
+                <h2 class="imperial-subtitle text-2xl md:text-4xl mb-12 opacity-90">
+                    2025年Q4战略投资分析报告
+                </h2>
+            </div>
+
+            <div class="mb-12">
+                <div class="imperial-tagline text-sm md:text-base opacity-75 max-w-4xl mx-auto">
+                    Global District Heating Industry: Building an Investment Framework<br class="md:hidden">
+                    in a Decarbonizing World Strategic Analysis Report
+                </div>
+            </div>
+
+            <div class="mb-16">
+                <div class="imperial-dedication text-sm md:text-base flex items-center justify-center">
+                    <span class="material-icons mr-2" style="color: var(--sovereign-gold);">groups</span>
+                    致：机构投资者与高净值客户
+                </div>
+                <div class="imperial-dedication-sub text-xs md:text-sm opacity-60 mt-2">
+                    For: Institutional Investors and High Net Worth Clients
+                </div>
+            </div>
+
+            <div class="golden-glass-card inline-block">
+                <div class="text-xs uppercase tracking-[0.2em] opacity-50 mb-4 font-light flex items-center justify-center">
+                    <span class="material-icons text-sm mr-2">calendar_today</span>
+                    本报告发布于 · Published on
+                </div>
+                <div class="sovereign-heading text-base">
+                    <span class="exclusive-number">2025年10月22日</span>
+                    <span class="mx-4 text-sovereign-gold opacity-40">◆</span>
+                    <span class="exclusive-number">October 22, 2025</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute inset-0 pointer-events-none opacity-8">
+            <div class="absolute top-20 left-20 w-px h-32 bg-gradient-to-b from-sovereign-gold to-transparent"></div>
+            <div class="absolute bottom-20 right-20 w-px h-32 bg-gradient-to-t from-sovereign-gold to-transparent"></div>
+            <div class="absolute top-1/2 left-1/4 w-24 h-px bg-gradient-to-r from-sovereign-gold to-transparent"></div>
+            <div class="absolute top-1/3 right-1/4 w-24 h-px bg-gradient-to-l from-sovereign-gold to-transparent"></div>
+        </div>
+    </header>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 执行摘要 -->
+    <section id="summary" class="imperial-section" data-title="执行摘要">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl mb-12 text-center flex items-center justify-center">
+                <span class="material-icons mr-3" style="color: var(--sovereign-gold);">description</span>
+                执行摘要
+            </h2>
+
+            <div class="authority-card max-w-4xl mx-auto mb-8">
+                <div class="noble-text mb-6">
+                    本报告旨在为机构投资者及高净值客户构建一个系统性的"供热及其他"行业认知框架。通过对全球行业分类标准（GICS）的严谨应用，本报告揭示了该行业并非单一实体，而是由两个基本业务模式迥异的部分构成：公用事业（区域能源运营商）和工业（设备制造商）。这一核心二元结构是理解行业风险收益特征、增长动力和估值逻辑的基石。
+                </div>
+
+                <div class="noble-text mb-6">
+                    全球区域供热市场在2024年的规模约为1950亿美元，预计将以约5.2%的复合年增长率（CAGR）稳步增长，到2034年达到近3000亿美元的规模。然而，整体市场的平稳增长掩盖了其内部剧烈的结构性变革。真正的投资机遇并非源于市场的整体扩张，而在于由"脱碳"这一核心宏大趋势驱动的内部轮动——即可再生能源热源和高效技术（如热泵）的加速渗透，其增长速度显著高于行业平均水平。
+                </div>
+
+                <div class="noble-text">
+                    本报告对全球三大核心市场进行了深度剖析，揭示了它们截然不同的市场逻辑：欧洲作为全球最大且最成熟的市场，其发展由强有力的政策主导，欧盟的"Fit for 55"一揽子计划正在重塑行业规则；中国作为全球供热体量最大的市场，其核心特征是高度依赖煤炭和国家政策调控；北美则呈现出高度分散化和应用场景化的特点。
+                </div>
+            </div>
+
+            <div class="investment-logic-card max-w-4xl mx-auto">
+                <div class="executive-quote text-center mb-8">
+                    供热行业的未来竞争，不在于谁能供应最多的热，而在于谁能更高效地利用、处理和回收热资源，以及谁能更好地把握政策驱动的市场机遇。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 第一章 -->
+    <section id="chapter1" class="imperial-section" data-title="第一章：界定投资领域">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl mb-12 text-center flex items-center justify-center">
+                <span class="material-icons mr-3" style="color: var(--sovereign-gold);">category</span>
+                第一章：界定"供热及其他"投资领域
+            </h2>
+
+            <div class="authority-card max-w-4xl mx-auto mb-8">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">public</span>
+                    1.1. 二元结构产业：以GICS框架作为分析透镜
+                </h3>
+                <div class="noble-text mb-6">
+                    "供热及其他"并非一个标准的行业分类术语。为了将其转化为一个可投资的领域，我们必须采用一个严谨、系统且被全球金融界广泛接受的分类体系。由MSCI（摩根士丹利资本国际公司）和S&P Global（标普全球）联合开发的全球行业分类标准（GICS）是这一任务的最佳工具。GICS体系覆盖了全球超过95%的上市公司市值，是机构投资者进行资产配置、行业比较和风险管理的通用语言。
+                </div>
+
+                <div class="noble-text mb-6">
+                    通过GICS的分析透镜，我们可以清晰地看到，"供热"行业并非一个单一的整体，而是根据其核心商业活动，被划分到两个截然不同的一级行业（Sector）之中。这种划分揭示了该行业内在的二元结构：GICS行业：公用事业（Sector Code: 55）涵盖了作为公用事业公司运营的企业，其核心业务是提供区域供热（及制冷）服务。GICS行业：工业（Sector Code: 20）则包含了制造和销售用于供热（及制冷）的实体设备的公司。
+                </div>
+
+                <div class="noble-text">
+                    这种基于GICS的二元划分并非简单的学术分类，它直接反映了两种截然不同的商业模式和投资逻辑。公用事业运营商的盈利能力与能源商品价格、利率水平、监管政策和天气状况高度相关；而工业设备制造商的业绩则更多地受到宏观经济周期、建筑业景气度、技术革新和市场竞争格局的影响。
+                </div>
+            </div>
+
+            <div class="authority-card max-w-4xl mx-auto mb-8">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">water_drop</span>
+                    1.2. 行业价值链：从能源到终端用户
+                </h3>
+                <div class="noble-text mb-6">
+                    为了全面理解行业的运作模式和价值创造过程，我们需要绘制一幅完整的产业链图谱。这有助于识别不同环节的利润池、竞争壁垒以及投资切入点。上游包括为热源厂提供动力的初级能源，如天然气、煤炭、生物质、铀等，以及用于制造供热设备的原材料。中游是设备与技术制造环节，此环节是GICS"工业"板块的核心领域，全球市场由少数几家巨头主导。下游是供热与输配环节，此环节是GICS"公用事业"板块的核心业务，涉及在中心站集中生产热能（蒸汽、热水）或冷能（冷冻水），并通过封闭的管网系统进行输送和分配。终端用户是热能的最终消费者，根据应用场景分为居民用户、商业用户和工业用户。
+                </div>
+
+                <div class="noble-text">
+                    通过对价值链的梳理，投资者可以清晰地看到，投资"供热"行业意味着可以在不同环节做出选择：是投资于周期性较强、受益于技术升级和建筑周期的中游设备制造商，还是投资于现金流稳定、具有特许经营壁垒、受益于城市化和能源转型的下游公用事业运营商。
+                </div>
+            </div>
+
+            <div class="authority-card max-w-4xl mx-auto">
+                <h3 class="sovereign-heading text-2xl mb-6">表1：基于GICS框架的投资领域界定</h3>
+                <div class="table-container">
+                    <table class="imperial-table">
+                        <thead>
+                            <tr>
+                                <th>GICS Sector</th>
+                                <th>GICS Industry Group</th>
+                                <th>GICS Industry</th>
+                                <th>描述</th>
+                                <th>代表性公司类型</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>55 - 公用事业</td>
+                                <td>5510 - 公用事业</td>
+                                <td>551010 - 电力公用事业</td>
+                                <td>拥有并运营集中式热源和输配管网，向终端用户销售热能（蒸汽、热水）或冷能（冷冻水）的服务提供商。</td>
+                                <td>区域供热/供冷公司、综合能源服务公司</td>
+                            </tr>
+                            <tr>
+                                <td>20 - 工业</td>
+                                <td>2010 - 资本品</td>
+                                <td>201020 - 建筑产品</td>
+                                <td>制造用于建筑物的供暖、通风和空调（HVAC）系统、锅炉、散热器等产品的公司。</td>
+                                <td>HVAC设备制造商（如Carrier, Daikin）</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 第二章 -->
+    <section id="chapter2" class="imperial-section" data-title="第二章：全球市场规模与增长">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl mb-12 text-center flex items-center justify-center">
+                <span class="material-icons mr-3" style="color: var(--sovereign-gold);">trending_up</span>
+                第二章：全球区域能源市场：规模、增长与结构
+            </h2>
+
+            <div class="authority-card max-w-4xl mx-auto mb-8">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">bar_chart</span>
+                    2.1. 市场规模与预测（2024-2034）
+                </h3>
+                <div class="noble-text mb-6">
+                    全球区域供热市场是一个规模庞大且稳定增长的行业。根据不同研究机构的估算，2024年全球市场规模介于1870亿美元至1975亿美元之间。综合考量，我们将2024年的市场规模基准设定为约1950亿美元。展望未来，市场预计将保持稳健的增长态势。多家机构预测，从2025年到2030年或2034年，全球区域供热市场的复合年增长率（CAGR）将在5.1%至5.3%的区间内。这表明该行业正处于一个成熟的增长轨道，其增速虽不具备爆发性，但稳定地超越了全球GDP的平均增长水平。按此速度推算，到2034年，全球市场规模有望达到约3100亿美元。
+                </div>
+
+                <div class="noble-text">
+                    从应用领域来看，市场的需求结构呈现出清晰的层次：居民应用是区域供热最主要的服务对象，占据了绝对主导地位，2024年贡献了约60%的市场收入份额；商业应用包括写字楼、商场、酒店和医院等，约占19%的市场份额；工业应用占据剩余的市场份额。
+                </div>
+            </div>
+
+            <div class="authority-card max-w-4xl mx-auto mb-8">
+                <h3 class="sovereign-heading text-2xl mb-6">表2：全球区域供热市场规模及预测（2024-2034年）</h3>
+                <div class="table-container">
+                    <table class="imperial-table">
+                        <thead>
+                            <tr>
+                                <th>细分类型</th>
+                                <th>子类别</th>
+                                <th>2024年规模（亿美元）</th>
+                                <th>2034年预测（亿美元）</th>
+                                <th>CAGR</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>应用领域</td>
+                                <td>居民</td>
+                                <td>1,170</td>
+                                <td>1,891</td>
+                                <td>5.9%</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>商业</td>
+                                <td>371</td>
+                                <td>586</td>
+                                <td>5.1%</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>工业</td>
+                                <td>409</td>
+                                <td>900+</td>
+                                <td>快速增长</td>
+                            </tr>
+                            <tr>
+                                <td>热源厂类型</td>
+                                <td>热电联产（CHP）</td>
+                                <td>985</td>
+                                <td>1,557</td>
+                                <td>5.9%</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>纯热锅炉</td>
+                                <td>552</td>
+                                <td>785</td>
+                                <td>慢于平均</td>
+                            </tr>
+                            <tr>
+                                <td>总计</td>
+                                <td>—</td>
+                                <td>~1,950</td>
+                                <td>~3,100</td>
+                                <td>~5.2%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="authority-card max-w-4xl mx-auto">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">leaf</span>
+                    2.2. 演变中的热源结构：向绿色能源的结构性转移
+                </h3>
+                <div class="noble-text mb-6">
+                    尽管市场规模稳步增长，但其内部的热源结构正在经历一场深刻的、由脱碳驱动的变革。目前，全球区域供热行业在能源供给上仍严重依赖化石燃料。根据国际能源署（IEA）的数据，2022年全球区域供热网络中，近90%的热量由化石燃料产生。其中，煤炭是最大的热源，占比超过48%，尤其在中国市场占据主导地位；天然气其次，约占38%，主要集中在俄罗斯等市场。这种以化石燃料为主的能源结构，使得区域供热行业成为全球碳排放的重要来源之一。
+                </div>
+
+                <div class="noble-text">
+                    然而，结构性转变的趋势已然确立。在政策推动和技术进步的双重作用下，可再生能源正在成为增长最快的热源类别。市场预测显示，从2025年到2030年，可再生能源热源板块的复合年增长率预计将达到6.9%，显著高于市场整体增速。这一高速增长主要得益于政策驱动、技术成熟与成本下降、以及余热回收的兴起。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 第三章 -->
+    <section id="chapter3" class="imperial-section" data-title="第三章：区域深度剖析">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl mb-12 text-center flex items-center justify-center">
+                <span class="material-icons mr-3" style="color: var(--sovereign-gold);">public</span>
+                第三章：区域深度剖析：三大市场的不同叙事
+            </h2>
+
+            <div class="authority-card max-w-4xl mx-auto mb-8">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">flag</span>
+                    3.1. 欧洲：政策驱动的脱碳前沿
+                </h3>
+                <div class="noble-text mb-6">
+                    欧洲是全球规模最大、发展最成熟的区域供热市场。2024年，欧洲市场占据了全球总收入的74.2%，是无可争议的行业重心。据不同机构估算，2024年欧洲市场规模在868亿至1341亿美元之间。欧盟于2021年推出的"Fit for 55"一揽子气候政策是当前及未来十年塑造欧洲供热行业的最核心驱动力。该计划旨在到2030年将温室气体净排放量较1990年水平减少55%，并为此设定了一系列具有法律约束力的目标。
+                </div>
+
+                <div class="noble-text">
+                    在强有力的政策引导下，欧洲区域供热的能源结构已经发生了显著变化。根据欧盟统计局的数据，2023年欧盟的衍生热力生产中，可再生能源占比已达34.4%，成为第一大热源；天然气和固体化石燃料的占比分别为32.5%和17.4%。与2010年相比，来自固体化石燃料和天然气的热力生产量已分别大幅下降了51.1%和39.6%。
+                </div>
+            </div>
+
+            <div class="authority-card max-w-4xl mx-auto mb-8">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">location_city</span>
+                    3.2. 中国：煤炭巨人的转型之路
+                </h3>
+                <div class="noble-text mb-6">
+                    按供热面积和管网长度计算，中国拥有全球规模最庞大的区域供热系统，并且是增长最快的市场。其供热管网总长度超过20万公里，为超过90亿平方米的建筑面积提供供暖服务。与欧洲的绿色转型形成鲜明对比，中国的区域供热系统在能源结构上高度依赖化石燃料，尤其是煤炭。这使得中国的供热行业成为一个巨大的碳排放源，也使其成为国家"双碳"目标下亟待改革的关键领域。
+                </div>
+
+                <div class="noble-text">
+                    中国的区域供热行业带有强烈的政策管制色彩。其价格形成机制的核心是国家发展和改革委员会（NDRC）在2005年制定的"煤热价格联动机制"。该机制规定，当煤炭到厂价格在一个联动周期内（通常不少于一年）累计变化超过10%时，可相应调整热力出厂价格。然而，这一联动并非自动触发，特别是对于居民采暖价格的调整，需要履行听证会等程序，且政府出于保障民生和维持社会稳定的考量，往往对提价持谨慎态度。
+                </div>
+            </div>
+
+            <div class="authority-card max-w-4xl mx-auto">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">settings_suggest</span>
+                    3.3. 北美：利基应用的碎片化市场
+                </h3>
+                <div class="noble-text mb-6">
+                    与欧洲和中国由大型市政系统主导的模式不同，北美的区域能源市场规模较小，且高度碎片化。其典型特征并非覆盖整个城市的大型管网，而是服务于特定客户集群的、本地化的"能源孤岛"。根据国际区域能源协会（IDEA）的数据，北美区域能源系统的主要应用场景高度集中在以下几类客户：大学校园、医疗中心、市中心商业区、机场和军事基地。这些客户对能源供应的可靠性、弹性和运营效率有着极高的要求，这成为区域能源系统在该市场发展的核心价值主张。
+                </div>
+
+                <div class="noble-text">
+                    市场由专业的私营能源服务公司主导，如Enwave和Vicinity Energy。它们的商业模式通常不是简单的能源销售，而是提供一种全面的、长期的能源解决方案。由于其项目驱动和客户定制化的特性，北美市场成为许多创新区域能源技术的试验场和商业化前沿。例如，Enwave在多伦多成功实施的"深层湖水冷却"项目，利用安大略湖的深层冷水为市中心建筑提供制冷，大幅降低了能耗。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 第四章 -->
+    <section id="chapter4" class="imperial-section" data-title="第四章：设备与技术价值链">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl mb-12 text-center flex items-center justify-center">
+                <span class="material-icons mr-3" style="color: var(--sovereign-gold);">settings</span>
+                第四章：供热设备与技术价值链
+            </h2>
+
+            <div class="authority-card max-w-4xl mx-auto mb-8">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">build</span>
+                    4.1. 全球HVAC市场格局：寡头垄断结构
+                </h3>
+                <div class="noble-text mb-6">
+                    全球暖通空调（HVAC）设备市场是一个高度集中的行业，由少数几家跨国巨头主导，形成了典型的寡头垄断格局。这些领先企业凭借其技术优势、品牌声誉、全球分销网络和规模经济，构建了强大的竞争壁垒。以全球最大、竞争最激烈的北美市场为例，2023年的市场份额数据显示了高度的集中度：特灵科技以21.1%的份额位居榜首，大金工业紧随其后，占据19.0%的份额，开利全球和江森自控分别以16.7%和15.1%的份额位列第三和第四。这四家顶级公司合计控制了超过70%的北美市场，显示出极高的市场集中度。
+                </div>
+
+                <div class="noble-text">
+                    在这样一个成熟且集中的市场中，领先企业主要通过三大战略来维持和扩大其竞争优势：整合与并购，这是行业巨头获取技术、进入新市场和扩大规模的最快捷径；研发投入，技术创新是HVAC制造商的核心生命线，当前的研发重点高度集中在提升能源效率、开发环保制冷剂、以及集成物联网和人工智能的智能控制系统。
+                </div>
+            </div>
+
+            <div class="authority-card max-w-4xl mx-auto mb-8">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">bolt</span>
+                    4.2. 技术颠覆：电气化与热泵的崛起
+                </h3>
+                <div class="noble-text mb-6">
+                    当前，供热设备行业正经历着一场百年未有之大变局，其核心是能源利用方式的根本性转变——从依赖燃烧化石燃料（锅炉、燃气炉）转向全面的电气化，而热泵正是这场变革的核心技术。热泵并非直接产生热量，而是像"热的搬运工"，利用少量电能将室外空气、土壤或水中的低品位热能转移到室内。其能效比（COP）通常可以达到3-5，意味着消耗1千瓦时的电能，可以产生3-5千瓦时的热能，效率远高于能效最高仅为90%左右的燃气锅炉。
+                </div>
+
+                <div class="noble-text">
+                    然而，热泵的经济可行性，即其"平准化供热成本"（LCOH），高度依赖于一个关键变量：电价与天然气价格的比率。尽管热泵在能源效率上具有3-5倍的优势，但在许多国家，单位热值的电价是天然气价格的2.5倍甚至4倍，这在很大程度上抵消了其效率优势。研究表明，当电价与气价的比率下降到2:1左右时，热泵在包含设备购置、安装和运行的全生命周期成本上，可以与燃气锅炉打平甚至更优。目前，法国、荷兰等欧洲国家已经接近或达到了这一比率，使得热泵在这些市场具备了强大的经济竞争力。
+                </div>
+            </div>
+
+            <div class="authority-card max-w-4xl mx-auto">
+                <h3 class="sovereign-heading text-2xl mb-6">表3：北美市场主要HVAC设备制造商市场份额（2023年）</h3>
+                <div class="table-container">
+                    <table class="imperial-table">
+                        <thead>
+                            <tr>
+                                <th>排名</th>
+                                <th>公司</th>
+                                <th>2023年份额</th>
+                                <th>2022年份额</th>
+                                <th>关键战略</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>特灵科技</td>
+                                <td>21.1%</td>
+                                <td>—</td>
+                                <td>专注于商用市场，通过收购增强技术组合</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>大金</td>
+                                <td>19.0%</td>
+                                <td>17.5%</td>
+                                <td>积极的并购战略以加强北美供应链</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>开利全球</td>
+                                <td>16.7%</td>
+                                <td>—</td>
+                                <td>收购菲斯曼以主导欧洲热泵市场</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>江森自控</td>
+                                <td>15.1%</td>
+                                <td>—</td>
+                                <td>转型为商业建筑解决方案提供商</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 第五章 -->
+    <section id="chapter5" class="imperial-section" data-title="第五章：竞争格局分析">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl mb-12 text-center flex items-center justify-center">
+                <span class="material-icons mr-3" style="color: var(--sovereign-gold);">business</span>
+                第五章：竞争格局与关键参与者剖析
+            </h2>
+
+            <div class="authority-card max-w-4xl mx-auto mb-8">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">domain</span>
+                    5.1. 区域能源运营商：同业群体分析
+                </h3>
+                <div class="noble-text mb-6">
+                    区域能源运营商的商业模式和风险收益特征具有显著的地域性。欧洲公用事业（受监管的绿色转型）包括Vattenfall AB（瑞典国有的大型能源公用事业公司）和Fortum Oyj（芬兰能源巨头）。Vattenfall近期的核心战略举动是剥离其庞大的德国柏林供热业务，并将其出售给柏林州政府。北美创新者（基于合同的增长模式）包括Enwave Energy和Vicinity Energy，它们专注于为市政当局、大学、医院和大型商业开发项目提供高度定制化、长期的可持续能源解决方案。中国燃气公用事业（政策驱动的利润率博弈）包括华润燃气（中国领先的国有城市燃气分销商），其盈利能力的核心指标是"销气价差"。
+                </div>
+
+                <div class="noble-text">
+                    一个贯穿整个行业的显著趋势是，无论是公用事业端还是制造端，行业巨头们都在进行一场深刻的业务组合转型。Vattenfall、江森自控和开利等公司都在剥离非核心或增长前景较弱的业务，以便将资源和精力聚焦于其最具竞争优势和增长潜力的核心领域。
+                </div>
+            </div>
+
+            <div class="authority-card max-w-4xl mx-auto">
+                <h3 class="sovereign-heading text-2xl mb-6">表4：主要HVAC设备制造商财务与估值对比</h3>
+                <div class="table-container">
+                    <table class="imperial-table">
+                        <thead>
+                            <tr>
+                                <th>公司</th>
+                                <th>2024年收入</th>
+                                <th>调整后EPS</th>
+                                <th>市盈率</th>
+                                <th>EV/EBITDA</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>江森自控</td>
+                                <td>274亿美元</td>
+                                <td>3.71美元</td>
+                                <td>~30.5x</td>
+                                <td>~20.2x</td>
+                            </tr>
+                            <tr>
+                                <td>开利全球</td>
+                                <td>225亿美元</td>
+                                <td>2.56美元</td>
+                                <td>~19.5x</td>
+                                <td>—</td>
+                            </tr>
+                            <tr>
+                                <td>特灵科技</td>
+                                <td>—</td>
+                                <td>—</td>
+                                <td>~33.8x</td>
+                                <td>—</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 第六章 -->
+    <section id="chapter6" class="imperial-section" data-title="第六章：投资主线与展望">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl mb-12 text-center flex items-center justify-center">
+                <span class="material-icons mr-3" style="color: var(--sovereign-gold);">assessment</span>
+                第六章：结构性驱动力、投资主线与未来展望
+            </h2>
+
+            <div class="authority-card max-w-4xl mx-auto mb-8">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">trending_up</span>
+                    6.1. 变革的三大支柱：脱碳、气候与技术
+                </h3>
+                <div class="noble-text mb-6">
+                    供热行业的未来正被三股强大且相互关联的力量所塑造，它们共同构成了我们分析框架的基石。脱碳的必然性是驱动行业变革的最根本的宏大趋势。无论是欧盟的"Fit for 55"一揽子计划，还是中国的"双碳"目标，这些都已不再是简单的政策倡议，而是正在通过法律、法规和经济手段，强制性地推动整个价值链从化石燃料向清洁能源转型。气候的变量化意味着气候变化已从一个宏观概念演变为一个可量化、直接影响企业运营的变量。技术的颠覆性体现在数字化与电气化的融合正在为建筑能源管理开启一个全新的范式。
+                </div>
+
+                <div class="noble-text">
+                    未来的建筑能源系统将不再是孤立地提供热量，而是将供热、制冷、通风和电力系统智能地整合在一起，实现整体能效的最优化。
+                </div>
+            </div>
+
+            <div class="authority-card max-w-4xl mx-auto mb-8">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">star</span>
+                    6.2. 投资主线与战略建议
+                </h3>
+                <div class="noble-text mb-6">
+                    基于对结构性驱动力的分析，我们为投资者提炼出三条核心投资主线：主线一是投资"绿色公用事业"的转型价值，投资于那些在监管驱动下进行绿色转型的欧洲成熟区域供热运营商。成功转型的公司不仅能继续享受公用事业的稳定回报，还有望因其ESG形象的改善和在可再生能源、余热利用等增长领域的布局，而获得市场的价值重估。主线二是押注电气化浪潮中的硬件领导者，投资于全球领先的HVAC设备制造商，这些公司是建筑供暖电气化浪潮的直接受益者。主线三是博弈中国市场的利润率修复，对于风险承受能力较高的投资者，中国的城市燃气公用事业公司提供了一个基于价值和周期性修复的投资逻辑。
+                </div>
+
+                <div class="noble-text">
+                    随着全球LNG供应格局的改善和价格趋于稳定，以及中国国内天然气定价机制市场化改革的推进，这些公司的核心盈利指标——"销气价差"——有望从周期性低点逐步回升。
+                </div>
+            </div>
+
+            <div class="authority-card max-w-4xl mx-auto">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">visibility</span>
+                    6.3. 未来展望：迈向2035
+                </h3>
+                <div class="noble-text mb-6">
+                    展望未来十年，供热行业将朝着更加集成、智能和低碳的方向演进。行业耦合加深意味着区域供热网络将不再是一个孤立的系统，而是与电力系统深度融合。配备了大型热泵和热能储存设施的区域供热站，将扮演"虚拟电池"的角色，在电网可再生能源发电过剩时消纳电力并储存为热能，在用电高峰时减少自身耗电或通过热电联产向电网供电。
+                </div>
+
+                <div class="noble-text">
+                    数字化成为核心能力意味着数字化将从增值服务转变为运营商的核心竞争力。基于人工智能的能源管理平台将能够整合天气预报、实时电价、管网水力模型和用户需求预测，对整个系统的运行进行分钟级的动态优化。第五代区域供热技术（5GDHC）的兴起将在新建城区和低密度区域获得更多应用，这种模式颠覆了传统的集中式高温热源，代表了行业技术的终极发展方向。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 结论 -->
+    <section id="conclusion" class="imperial-section" data-title="结论与展望">
+        <div class="sovereign-container">
+            <div class="disclaimer-card max-w-4xl mx-auto">
+                <h2 class="sovereign-heading text-2xl mb-6 text-center flex items-center justify-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">check_circle</span>
+                    结论与展望
+                </h2>
+
+                <div class="executive-quote text-center mb-8">
+                    全球供热行业正处于一场由需求、供给、技术和政策共同驱动的深刻结构性变革之中。
+                </div>
+
+                <div class="disclaimer-text">
+                    <p class="mb-6">本报告通过构建一个从宏观到微观、从产业链到区域市场的系统性分析框架，旨在为机构投资者和企业决策者提供一个清晰、数据驱动的行业认知地图。全球供热市场正以约5.2%的复合年增长率稳步增长，到2034年达到近3000亿美元的规模。然而，这一看似平稳的总体增长掩盖了其内部正在进行的深刻变革。真正的投资机遇并非在于市场的整体扩张，而在于识别和投资于那些引领脱碳和电气化转型的公司和技术。</p>
+
+                    <p class="mb-6">三大区域市场呈现出截然不同的投资特征和风险因子。欧洲市场由强有力的政策主导，正在经历从化石燃料向可再生能源的系统性转变，为先发的绿色公用事业创造了长期的稳定回报机会。中国市场体量最大，但政策风险和商品价格风险交织，为敢于承担高风险的投资者提供了利润率修复的周期性机遇。北美市场虽然规模较小，但创新浓度最高，为技术驱动的专业能源服务公司提供了高增长潜力。</p>
+
+                    <p class="mb-6">在设备制造端，全球HVAC市场正处于由政策强制驱动的产品超级周期之中。用电驱动的热泵替代数以亿计的存量化石燃料锅炉，是一个长达数十年的、确定性极高的产品更新换代浪潮。领先企业如开利、大金和特灵科技，已通过战略布局明确地押注于这一转型。对于投资者而言，这些经过重塑的公司不应再被视为传统的周期性工业股，而应将其看作是准备从一场由全球政策催生的产品超级周期中获益的科技成长股。</p>
+
+                    <p>综而言之，精明的投资者应通过对行业驱动力的系统性认知、对企业商业模式的深入理解、以及对地域政策差异的敏锐把握，来构建一个兼具防御性与成长性的供热投资组合。在充满机遇与挑战的未来市场中，这将是做出卓越资本配置决策的基础。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 引用文献 -->
+    <section id="references" class="imperial-section" data-title="引用文献">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl mb-12 text-center flex items-center justify-center">
+                <span class="material-icons mr-3" style="color: var(--sovereign-gold);">link</span>
+                引用文献
+            </h2>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl mx-auto">
+                <div class="citation-item"><a href="https://en.wikipedia.org/wiki/Global_Industry_Classification_Standard" target="_blank" rel="noopener">1. Global Industry Classification Standard - Wikipedia</a></div>
+                <div class="citation-item"><a href="https://www.msci.com/downloads/documents/indexes/gics/GICS+Sector+Definitions+2023.pdf" target="_blank" rel="noopener">2. Global Industry Classification Sector (GICS®) | MSCI</a></div>
+                <div class="citation-item"><a href="https://www.msci.com/documents/1296102/11185224/GICS+Methodology+2020.pdf" target="_blank" rel="noopener">3. GICS Methodology 2020 - MSCI</a></div>
+                <div class="citation-item"><a href="https://www.precedenceresearch.com/district-heating-market" target="_blank" rel="noopener">4. District Heating Market - Precedence Research</a></div>
+                <div class="citation-item"><a href="https://www.gminsights.com/industry-analysis/district-heating-market" target="_blank" rel="noopener">5. District Heating Market - GMInsights</a></div>
+                <div class="citation-item"><a href="https://www.grandviewresearch.com/industry-analysis/district-heating-market-report" target="_blank" rel="noopener">6. District Heating Market Report - Grand View Research</a></div>
+                <div class="citation-item"><a href="https://www.iea.org/energy-system/buildings/district-heating" target="_blank" rel="noopener">7. District Heating - IEA Energy System</a></div>
+                <div class="citation-item"><a href="https://www.researchandmarkets.com/report/united-states-district-heating-market" target="_blank" rel="noopener">8. US District Heating Market - Research and Markets</a></div>
+                <div class="citation-item"><a href="https://epthinktank.eu/2024/08/01/fit-for-55-package/" target="_blank" rel="noopener">9. Fit for 55 Package - European Parliament</a></div>
+                <div class="citation-item"><a href="https://ec.europa.eu/eurostat/statistics-explained/index.php/Electricity_and_heat_statistics" target="_blank" rel="noopener">10. Electricity and Heat Statistics - Eurostat</a></div>
+                <div class="citation-item"><a href="https://chinaenergyportal.org/guidelines-on-the-establishment-of-a-coal-heat-price-linking-mechanism/" target="_blank" rel="noopener">11. Coal & Heat Price Linking Mechanism - China Energy Portal</a></div>
+                <div class="citation-item"><a href="https://www.eia.gov/analysis/studies/buildings/districtservices/" target="_blank" rel="noopener">12. District Energy Services - US EIA</a></div>
+                <div class="citation-item"><a href="https://www.enwave.com/" target="_blank" rel="noopener">13. Enwave Energy Corporation</a></div>
+                <div class="citation-item"><a href="https://www.vicinityenergy.us/" target="_blank" rel="noopener">14. Vicinity Energy</a></div>
+                <div class="citation-item"><a href="https://www.mordorintelligence.com/industry-reports/hvac-equipment-market/companies" target="_blank" rel="noopener">15. HVAC Equipment Companies - Mordor Intelligence</a></div>
+                <div class="citation-item"><a href="https://www.zerohvacr.com/top-hvac-companies-in-the-world-a-comprehensive-guide-to-industry-leaders/" target="_blank" rel="noopener">16. Top HVAC Companies - Zero HVAC</a></div>
+                <div class="citation-item"><a href="https://en.deallab.info/hvac-us/" target="_blank" rel="noopener">17. North America HVAC Market - DealLab</a></div>
+                <div class="citation-item"><a href="https://www.marketsandmarkets.com/ResearchInsight/hvac-system-market.asp" target="_blank" rel="noopener">18. HVAC System Market - MarketsandMarkets</a></div>
+                <div class="citation-item"><a href="https://www.fortunebusinessinsights.com/europe-district-heating-market-107608" target="_blank" rel="noopener">19. Europe District Heating Market - Fortune Business Insights</a></div>
+                <div class="citation-item"><a href="https://climate.copernicus.eu/climate-indicators/temperature" target="_blank" rel="noopener">20. Temperature Indicators - Copernicus Climate</a></div>
+                <div class="citation-item"><a href="https://wmo.int/news/media-centre/european-state-of-climate-extreme-events-warmest-year-record" target="_blank" rel="noopener">21. European State of Climate - WMO</a></div>
+                <div class="citation-item"><a href="https://climate-adapt.eea.europa.eu/en/metadata/indicators/heating-degree-days" target="_blank" rel="noopener">22. Heating and Cooling Degree Days - Climate-ADAPT</a></div>
+                <div class="citation-item"><a href="https://iea.blob.core.windows.net/assets/590cc681-349a-4a55-9d3f-609eff6cde0b/DistrictEnergySystemsinChina.pdf" target="_blank" rel="noopener">23. District Energy Systems in China - IEA</a></div>
+                <div class="citation-item"><a href="https://www.vexve.com/en/articles/finnish-expertise-in-china-s-district-heating-networks" target="_blank" rel="noopener">24. Finnish Expertise in China's District Heating - Vexve</a></div>
+                <div class="citation-item"><a href="https://www.clearbluemarkets.com/knowledge-base/chinas-market-oriented-reform-a-new-chapter-for-renewable-energy-pricing" target="_blank" rel="noopener">25. China's Market-Oriented Renewable Energy Pricing - Clear Blue Markets</a></div>
+                <div class="citation-item"><a href="https://www.districtenergy.org/resources/resources/system-maps" target="_blank" rel="noopener">26. System Maps - International District Energy Association</a></div>
+                <div class="citation-item"><a href="https://appsolve.com/customer-stories/enwave-energy-corporation/" target="_blank" rel="noopener">27. Enwave Energy Case Study - App Solve</a></div>
+                <div class="citation-item"><a href="https://www.vicinityenergy.us/products-services/" target="_blank" rel="noopener">28. Vicinity Energy Products and Services</a></div>
+                <div class="citation-item"><a href="https://www.ifminvestors.com/capabilities/infrastructure/our-portfolio/enwave/" target="_blank" rel="noopener">29. Enwave Portfolio - IFM Investors</a></div>
+                <div class="citation-item"><a href="https://www.corporate.carrier.com/news/news-articles/202502_carrier-reports-strong-2024-results-announces-2025-outlook.html" target="_blank" rel="noopener">30. Carrier 2024 Results - Carrier Corporation</a></div>
+                <div class="citation-item"><a href="https://www.investors.johnsoncontrols.com/~/media/Files/J/Johnson-Controls-IR-V2/annual-meeting-materials/annual-reports/2024-annual-report-proxy-statement.pdf" target="_blank" rel="noopener">31. Johnson Controls 2024 Annual Report</a></div>
+                <div class="citation-item"><a href="https://unfccc.int/ttclear/misc_/StaticFiles/gnwoerk_static/tn_meetings/00cf22a4049c4ece9f414e190def4202/8dff87ea3e1e4e7ba7d349a83ed04cbd.pdf" target="_blank" rel="noopener">32. 2023 Global Status Report Buildings - UNFCCC</a></div>
+                <div class="citation-item"><a href="https://ieecp.org/wp-content/uploads/2023/02/Study-Powering-our-buildings-FIRE-IEECP-v1.0.pdf" target="_blank" rel="noopener">33. Powering Our Buildings - IEECP</a></div>
+                <div class="citation-item"><a href="https://www.energy-transitions.org/bitesize/its-in-the-charts-heat-pump-lifetime-cost-electricity-to-gas/" target="_blank" rel="noopener">34. Heat Pump Lifetime Cost Analysis - Energy Transitions</a></div>
+                <div class="citation-item"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10956540/" target="_blank" rel="noopener">35. Industrial Process Heat Options Analysis - PMC</a></div>
+                <div class="citation-item"><a href="https://group.vattenfall.com/press-and-media/pressreleases/2025/vattenfall--year-end-report-2024" target="_blank" rel="noopener">36. Vattenfall Year-End Report 2024</a></div>
+                <div class="citation-item"><a href="https://group.vattenfall.com/siteassets/corporate/investors/interim_reports/2024/q4_report_2024.pdf" target="_blank" rel="noopener">37. Vattenfall Q4 Report 2024</a></div>
+                <div class="citation-item"><a href="https://www.fortum.com/investors/reports-and-presentations/fortum-annual-review-2024" target="_blank" rel="noopener">38. Fortum Annual Review 2024</a></div>
+                <div class="citation-item"><a href="https://www.fortum.com/sites/default/files/investor-documents/Fortum_transcript_financial_statements2024.pdf" target="_blank" rel="noopener">39. Fortum Financial Statements 2024</a></div>
+                <div class="citation-item"><a href="https://www.fortum.com/media/2025/02/fortum-financial-statements-bulletin-2024-good-generation-optimisation-warm-wet-and-windy-conditions-2024" target="_blank" rel="noopener">40. Fortum Financial Statements Bulletin 2024</a></div>
+                <div class="citation-item"><a href="https://www.morningstar.com/stocks/xhkg/01193/quote" target="_blank" rel="noopener">41. China Resources Gas - Morningstar</a></div>
+                <div class="citation-item"><a href="https://www.hellenicshippingnews.com/chinese-gas-utilities-financial-metrics-resilient-to-slower-demand/" target="_blank" rel="noopener">42. Chinese Gas Utilities Financial Metrics - Hellenic Shipping</a></div>
+                <div class="citation-item"><a href="https://www.spglobal.com/ratings/en/regulatory/article/240926-china-natural-gas-slip-in-policy-pecking-order-will-hit-growth-s13254048" target="_blank" rel="noopener">43. China Natural Gas Policy - S&P Global</a></div>
+                <div class="citation-item"><a href="https://www.johnsoncontrols.com/-/media/project/jci-global/johnson-controls/us-region/united-states-johnson-controls/media-center/documents/q4-fy24-earnings-release-final.pdf" target="_blank" rel="noopener">44. Johnson Controls Q4 FY24 Earnings</a></div>
+                <div class="citation-item"><a href="https://www.investors.johnsoncontrols.com/news-and-events/press-releases/johnson-controls-international-plc/2024/11-06-2024-115625229" target="_blank" rel="noopener">45. Johnson Controls Q4 FY24 Results</a></div>
+                <div class="citation-item"><a href="https://www.morningstar.com/stocks/xnys/jci/quote" target="_blank" rel="noopener">46. Johnson Controls Stock - Morningstar</a></div>
+                <div class="citation-item"><a href="https://seekingalpha.com/symbol/JCI/valuation/metrics" target="_blank" rel="noopener">47. Johnson Controls Valuation - Seeking Alpha</a></div>
+                <div class="citation-item"><a href="https://www.prnewswire.com/news-releases/carrier-reports-strong-2024-results-and-announces-2025-outlook-302373390.html" target="_blank" rel="noopener">48. Carrier 2024 Strong Results - PR Newswire</a></div>
+                <div class="citation-item"><a href="https://companiesmarketcap.com/eur/fortum/pe-ratio/" target="_blank" rel="noopener">49. Fortum P/E Ratio - Companies Market Cap</a></div>
+                <div class="citation-item"><a href="https://www.wisesheets.io/enterprise-value/FORTUM.HE" target="_blank" rel="noopener">50. Fortum Enterprise Value - Wisesheets</a></div>
+                <div class="citation-item"><a href="https://simplywall.st/stocks/fr/utilities/epa-engi/engie-shares/valuation" target="_blank" rel="noopener">51. ENGIE Valuation - Simply Wall St</a></div>
+                <div class="citation-item"><a href="https://multiples.vc/public-comps/engie-valuation-multiples" target="_blank" rel="noopener">52. ENGIE Valuation Multiples</a></div>
+                <div class="citation-item"><a href="https://ember-energy.org/countries-and-regions/china/" target="_blank" rel="noopener">53. China Energy Trends - Ember</a></div>
+                <div class="citation-item"><a href="https://ir.enn-ng.com/media/q4nprrpb/" target="_blank" rel="noopener">54. ENN Natural Gas 2024 Annual Report</a></div>
+                <div class="citation-item"><a href="https://globalabc.org/index.php/resources/publications/iea-tracking-report-buildings" target="_blank" rel="noopener">55. IEA Tracking Report - Buildings</a></div>
+                <div class="citation-item"><a href="https://wmo.int/publication-series/european-state-of-climate-2024" target="_blank" rel="noopener">56. European State of Climate 2024 - WMO</a></div>
+                <div class="citation-item"><a href="https://construction-today.com/news/enwave-energy-corporation/" target="_blank" rel="noopener">57. Enwave Energy News - Construction Today</a></div>
+                <div class="citation-item"><a href="https://www.investors.johnsoncontrols.com/financial-information/quarterly-and-annual-reports" target="_blank" rel="noopener">58. Johnson Controls Reports - Investor Relations</a></div>
+                <div class="citation-item"><a href="https://solarthermalworld.org/news/what-is-in-the-fit-for-55-package-for-district-heating/" target="_blank" rel="noopener">59. Fit for 55 District Heating - Solar Thermal World</a></div>
+                <div class="citation-item"><a href="https://ehpa.org/policy-2/european-green-deal/fit-for-55-package/" target="_blank" rel="noopener">60. Fit for 55 - European Heat Pump Association</a></div>
+                <div class="citation-item"><a href="https://www.eea.europa.eu/data-and-maps/indicators/heating-degree-days-2" target="_blank" rel="noopener">61. Heating Degree Days - European Environment Agency</a></div>
+                <div class="citation-item"><a href="https://www.fortunebusinessinsights.com/u-s-district-heating-market-113486" target="_blank" rel="noopener">62. US District Heating Market - Fortune Business Insights</a></div>
+                <div class="citation-item"><a href="https://www.marketsandmarkets.com/Market-Reports/district-heating-market-107420661.html" target="_blank" rel="noopener">63. District Heating Market Report - MarketsandMarkets</a></div>
+                <div class="citation-item"><a href="https://www.gminsights.com/industry-analysis/europe-district-heating-market" target="_blank" rel="noopener">64. Europe District Heating Market - GMInsights</a></div>
+                <div class="citation-item"><a href="https://enc-heating-cooling.org/wp-content/uploads/2021/08/Fit-for-55-District-Heating_final.pdf" target="_blank" rel="noopener">65. Fit for 55 District Heating Impact</a></div>
+                <div class="citation-item"><a href="https://solarthermalworld.org/news/what-is-in-the-fit-for-55-package-for-district-heating/" target="_blank" rel="noopener">66. District Heating in Fit for 55</a></div>
+                <div class="citation-item"><a href="https://environment.ec.europa.eu/topics/water/water-framework-directive_en" target="_blank" rel="noopener">67. EU Water Framework Directive</a></div>
+                <div class="citation-item"><a href="https://english.www.gov.cn/news/202502/10/content_WS67a9afb2c6d0868f4e8ef893.html" target="_blank" rel="noopener">68. China Renewable Energy Pricing Reform</a></div>
+                <div class="citation-item"><a href="https://www.carbonbrief.org/explainer-how-chinas-renewable-pricing-reforms-will-affect-its-climate-goals/" target="_blank" rel="noopener">69. China Renewable Pricing - Carbon Brief</a></div>
+                <div class="citation-item"><a href="https://www.pwc.com/gx/en/services/deals/trends/2025/energy-utilities-resources.html" target="_blank" rel="noopener">70. Energy M&A Trends 2025 - PwC</a></div>
+                <div class="citation-item"><a href="https://www.congress.gov/crs-product/R48553" target="_blank" rel="noopener">71. Congressional Research Service Capacity Markets</a></div>
+                <div class="citation-item"><a href="https://www.ferc.gov/introductory-guide-electricity-markets-regulated-federal-energy-regulatory-commission" target="_blank" rel="noopener">72. FERC Electricity Markets Guide</a></div>
+                <div class="citation-item"><a href="https://www.woodmac.com/press-releases/virtual-power-plant-capacity-expands-13.7-year-over-year-to-reach-37.5-gw/" target="_blank" rel="noopener">73. Virtual Power Plant Report - Wood Mackenzie</a></div>
+                <div class="citation-item"><a href="https://www.investor.nexteraenergy.com" target="_blank" rel="noopener">74. NextEra Investor Relations</a></div>
+                <div class="citation-item"><a href="https://www.investopedia.com/terms/r/regulatoryasset.asp" target="_blank" rel="noopener">75. Investopedia Regulatory Asset</a></div>
+                <div class="citation-item"><a href="https://www.entsoe.eu/publications/market-reports/" target="_blank" rel="noopener">76. ENTSO-E Market Reports</a></div>
+                <div class="citation-item"><a href="https://www.eea.europa.eu/en/analysis/maps-and-charts/emissions-trading-viewer-1-dashboards" target="_blank" rel="noopener">77. EU ETS Data Viewer - EEA</a></div>
+                <div class="citation-item"><a href="https://www.nexteraenergy.com/" target="_blank" rel="noopener">78. NextEra Energy Corporate</a></div>
+                <div class="citation-item"><a href="https://www.edf.fr/en" target="_blank" rel="noopener">79. EDF Corporate Website</a></div>
+                <div class="citation-item"><a href="https://en.wikipedia.org/wiki/State_Grid_Corporation_of_China" target="_blank" rel="noopener">80. SGCC Wikipedia</a></div>
+                <div class="citation-item"><a href="https://www.iea.org/reports/china-power-system-transformation" target="_blank" rel="noopener">81. China Power System Transformation - IEA</a></div>
+                <div class="citation-item"><a href="https://solarbuildermag.com/energy-storage/virtual-power-plant-market-hits-37-5-gw-as-deployments-surge-but-barriers-cap-growth/" target="_blank" rel="noopener">82. Virtual Power Plant Market - Solar Builder Magazine</a></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 免责声明 -->
+    <section id="disclaimer" class="imperial-section" data-title="免责声明">
+        <div class="sovereign-container">
+            <div class="disclaimer-card max-w-4xl mx-auto">
+                <h2 class="sovereign-heading text-2xl mb-6 text-center">免责声明</h2>
+                <div class="disclaimer-text">
+                    <p class="mb-4">本报告由虚空有物科技有限公司金融行业研究部编制，仅供机构投资者和高净值客户参考。本报告中的信息基于作者认为可靠的公开信息来源，但不保证其准确性、完整性或及时性。</p>
+                    <p class="mb-4">本报告不构成任何投资建议、买卖要约或任何证券交易的建议。读者应根据自身风险承受能力、投资目标和时间范围，寻求专业的财务、法律或税务顾问意见，做出独立的投资决策。</p>
+                    <p>虚空有物科技有限公司及其相关人士不对使用本报告信息而产生的任何直接或间接损失承担责任。本报告信息可能因市场条件变化而过时。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // 精美垂直进度条系统
+        const progressBar = document.querySelector('.reading-progress');
+        const progressFill = document.querySelector('.reading-progress-fill');
+        const progressTooltip = document.getElementById('progress-tooltip');
+        const sections = document.querySelectorAll('section[id], header[id]');
+
+        let currentSectionTitle = '';
+        let sectionsData = [];
+
+        function initSections() {
+            sectionsData = Array.from(sections).map(section => ({
+                id: section.getAttribute('id'),
+                title: section.getAttribute('data-title') || section.querySelector('h1, h2')?.textContent || '未知章节',
+                offsetTop: section.offsetTop,
+                offsetHeight: section.offsetHeight
+            }));
+        }
+
+        function updateProgress() {
+            const scrolled = window.pageYOffset;
+            const maxHeight = document.body.scrollHeight - window.innerHeight;
+            const progress = (scrolled / maxHeight) * 100;
+
+            progressFill.style.height = `${progress}%`;
+
+            let currentSection = '';
+            sectionsData.forEach(section => {
+                if (scrolled >= section.offsetTop - 300) {
+                    currentSection = section.id;
+                    currentSectionTitle = section.title;
+                }
+            });
+        }
+
+        progressBar.addEventListener('click', (e) => {
+            const rect = progressBar.getBoundingClientRect();
+            const clickY = e.clientY - rect.top;
+            const progressHeight = rect.height;
+            const clickPercent = clickY / progressHeight;
+
+            const maxHeight = document.body.scrollHeight - window.innerHeight;
+            const targetScroll = maxHeight * clickPercent;
+
+            window.scrollTo({
+                top: targetScroll,
+                behavior: 'smooth'
+            });
+        });
+
+        progressBar.addEventListener('mouseenter', () => {
+            if (currentSectionTitle) {
+                progressTooltip.textContent = currentSectionTitle;
+                progressTooltip.classList.add('show');
+            }
+        });
+
+        progressBar.addEventListener('mouseleave', () => {
+            progressTooltip.classList.remove('show');
+        });
+
+        progressTooltip.addEventListener('mouseenter', () => {
+            progressTooltip.classList.add('show');
+        });
+
+        progressTooltip.addEventListener('mouseleave', () => {
+            progressTooltip.classList.remove('show');
+        });
+
+        window.addEventListener('resize', () => {
+            setTimeout(initSections, 100);
+        });
+
+        window.addEventListener('scroll', updateProgress);
+
+        window.addEventListener('load', () => {
+            initSections();
+            updateProgress();
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            initSections();
+            updateProgress();
+        });
+    </script>
+</body>
+</html>

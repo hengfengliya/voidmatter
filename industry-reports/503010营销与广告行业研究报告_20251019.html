@@ -1,0 +1,1498 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大重构：在万亿美元广告产业中洞察价值创造与颠覆性变革 | The Great Restructuring in Trillion-Dollar Advertising</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@200;300;400;500;600;700;800;900&family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            /* 深邃黑金权力色系 */
+            --obsidian-black: #0A0A0A;
+            --midnight-black: #151515;
+            --shadow-black: #1F1F1F;
+            --charcoal-deep: #2A2A2A;
+
+            /* 稀缺金色层次 */
+            --sovereign-gold: #B8860B;
+            --imperial-gold: #DAA520;
+            --aureate-whisper: #F4E4BC;
+            --golden-shadow: #8B6914;
+
+            /* 权力灰度 */
+            --platinum-mist: #E5E5E5;
+            --sterling-silver: #C0C0C0;
+            --graphite-steel: #696969;
+            --charcoal-whisper: #808080;
+
+            /* 稀缺强调色 */
+            --ruby-accent: #8B0000;
+            --emerald-depth: #006400;
+            --sapphire-authority: #1e3a8a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg,
+                var(--obsidian-black) 0%,
+                var(--midnight-black) 40%,
+                var(--shadow-black) 100%);
+            color: var(--platinum-mist);
+            line-height: 1.8;
+            letter-spacing: 0.02em;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        /* 排版系统 */
+        .imperial-title {
+            font-family: 'Playfair Display', serif;
+            font-weight: 200;
+            letter-spacing: 0.12em;
+            line-height: 1.05;
+            color: var(--aureate-whisper);
+            text-shadow: 0 3px 12px rgba(184, 134, 11, 0.4);
+        }
+
+        .imperial-subtitle {
+            font-family: 'Playfair Display', serif;
+            font-weight: 300;
+            letter-spacing: 0.08em;
+            line-height: 1.15;
+            color: var(--imperial-gold);
+            text-shadow: 0 2px 8px rgba(218, 165, 32, 0.3);
+        }
+
+        .imperial-tagline {
+            font-family: 'Inter', sans-serif;
+            font-weight: 200;
+            letter-spacing: 0.06em;
+            line-height: 1.4;
+            color: var(--sterling-silver);
+            font-style: italic;
+        }
+
+        .imperial-dedication {
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+            letter-spacing: 0.04em;
+            line-height: 1.3;
+            color: var(--imperial-gold);
+        }
+
+        .imperial-dedication-sub {
+            font-family: 'Inter', sans-serif;
+            font-weight: 200;
+            letter-spacing: 0.05em;
+            line-height: 1.3;
+            color: var(--sterling-silver);
+            font-style: italic;
+        }
+
+        .sovereign-heading {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            color: var(--imperial-gold);
+            text-shadow: 0 1px 4px rgba(218, 165, 32, 0.4);
+        }
+
+        .noble-text {
+            font-weight: 300;
+            letter-spacing: 0.03em;
+            line-height: 2.2;
+            color: var(--platinum-mist);
+        }
+
+        .executive-quote {
+            font-weight: 300;
+            letter-spacing: 0.02em;
+            line-height: 1.8;
+            color: var(--sterling-silver);
+            font-size: 0.95rem;
+            font-style: italic;
+            position: relative;
+            padding: 0 2rem;
+            margin: 2rem 0;
+        }
+
+        .executive-quote::before {
+            content: '"';
+            position: absolute;
+            left: 0;
+            top: -0.5rem;
+            font-size: 3rem;
+            color: var(--sovereign-gold);
+            opacity: 0.3;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .executive-quote::after {
+            content: '"';
+            position: absolute;
+            right: 0;
+            bottom: -0.5rem;
+            font-size: 3rem;
+            color: var(--sovereign-gold);
+            opacity: 0.3;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .exclusive-number {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: var(--sovereign-gold);
+            text-shadow: 0 1px 3px rgba(184, 134, 11, 0.5);
+        }
+
+        /* 布局容器 */
+        .sovereign-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 5rem;
+        }
+
+        .imperial-section {
+            margin: 12rem 0;
+            position: relative;
+        }
+
+        /* 卡片系统 */
+        .authority-card {
+            background: linear-gradient(145deg,
+                rgba(21, 21, 21, 0.9) 0%,
+                rgba(31, 31, 31, 0.8) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.15);
+            border-radius: 2px;
+            padding: 3rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            box-shadow:
+                0 8px 32px rgba(0, 0, 0, 0.6),
+                inset 0 1px 1px rgba(244, 228, 188, 0.05);
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .authority-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(184, 134, 11, 0.3);
+            box-shadow:
+                0 16px 48px rgba(0, 0, 0, 0.8),
+                0 0 24px rgba(184, 134, 11, 0.1),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08);
+        }
+
+        .authority-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(90deg, var(--sovereign-gold), transparent);
+            opacity: 0.6;
+        }
+
+        .authority-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(270deg, var(--sovereign-gold), transparent);
+            opacity: 0.6;
+        }
+
+        .golden-glass-card {
+            background:
+                radial-gradient(circle at 30% 30%, rgba(218, 165, 32, 0.12) 0%, transparent 50%),
+                radial-gradient(circle at 70% 70%, rgba(184, 134, 11, 0.08) 0%, transparent 50%),
+                linear-gradient(135deg,
+                    rgba(244, 228, 188, 0.06) 0%,
+                    rgba(218, 165, 32, 0.04) 30%,
+                    rgba(184, 134, 11, 0.03) 70%,
+                    rgba(139, 105, 20, 0.02) 100%);
+            border: 1px solid rgba(218, 165, 32, 0.15);
+            border-radius: 4px;
+            padding: 2.5rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            box-shadow:
+                0 8px 32px rgba(0, 0, 0, 0.6),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08),
+                inset 0 0 30px rgba(218, 165, 32, 0.03);
+            transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .golden-glass-card:hover {
+            transform: translateY(-3px);
+            border-color: rgba(218, 165, 32, 0.3);
+            box-shadow:
+                0 16px 48px rgba(0, 0, 0, 0.8),
+                0 0 40px rgba(218, 165, 32, 0.1),
+                inset 0 1px 1px rgba(244, 228, 188, 0.12),
+                inset 0 0 40px rgba(218, 165, 32, 0.05);
+        }
+
+        .investment-logic-card {
+            background:
+                radial-gradient(circle at 20% 80%, rgba(218, 165, 32, 0.08) 0%, transparent 60%),
+                radial-gradient(circle at 80% 20%, rgba(244, 228, 188, 0.05) 0%, transparent 60%),
+                linear-gradient(135deg,
+                    rgba(184, 134, 11, 0.06) 0%,
+                    rgba(139, 105, 20, 0.04) 50%,
+                    rgba(218, 165, 32, 0.02) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.12);
+            border-radius: 2px;
+            padding: 3rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            box-shadow:
+                0 8px 32px rgba(0, 0, 0, 0.6),
+                inset 0 1px 1px rgba(244, 228, 188, 0.06),
+                inset 0 0 25px rgba(184, 134, 11, 0.02);
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .investment-logic-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(184, 134, 11, 0.25);
+            box-shadow:
+                0 16px 48px rgba(0, 0, 0, 0.8),
+                0 0 30px rgba(218, 165, 32, 0.08),
+                inset 0 1px 1px rgba(244, 228, 188, 0.1),
+                inset 0 0 35px rgba(184, 134, 11, 0.04);
+        }
+
+        .disclaimer-card {
+            background: linear-gradient(145deg,
+                rgba(31, 31, 31, 0.95) 0%,
+                rgba(42, 42, 42, 0.9) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.18);
+            border-radius: 3px;
+            padding: 4rem;
+            position: relative;
+            backdrop-filter: blur(25px);
+            box-shadow:
+                0 12px 40px rgba(0, 0, 0, 0.7),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08),
+                inset 0 0 30px rgba(184, 134, 11, 0.02);
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .disclaimer-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 2px;
+            background: linear-gradient(90deg,
+                transparent,
+                var(--sovereign-gold),
+                transparent);
+            opacity: 0.6;
+        }
+
+        .disclaimer-card:hover {
+            border-color: rgba(184, 134, 11, 0.25);
+            box-shadow:
+                0 16px 50px rgba(0, 0, 0, 0.8),
+                0 0 25px rgba(184, 134, 11, 0.08),
+                inset 0 1px 1px rgba(244, 228, 188, 0.12);
+        }
+
+        .disclaimer-text {
+            font-weight: 300;
+            letter-spacing: 0.02em;
+            line-height: 2;
+            color: var(--platinum-mist);
+            font-size: 1rem;
+        }
+
+        /* 表格 */
+        .imperial-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            background: rgba(15, 15, 15, 0.8);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(184, 134, 11, 0.2);
+            border-radius: 2px;
+            margin: 2rem 0;
+        }
+
+        .imperial-table th {
+            background: rgba(184, 134, 11, 0.08);
+            padding: 2rem 1.5rem;
+            text-align: left;
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--imperial-gold);
+            border-bottom: 1px solid rgba(184, 134, 11, 0.2);
+        }
+
+        .imperial-table td {
+            padding: 1.8rem 1.5rem;
+            border-bottom: 1px solid rgba(184, 134, 11, 0.05);
+            font-weight: 300;
+        }
+
+        .imperial-table tbody tr:hover {
+            background: rgba(184, 134, 11, 0.03);
+        }
+
+        /* 分隔线 */
+        .sovereign-divider {
+            height: 1px;
+            background: linear-gradient(90deg,
+                transparent 0%,
+                rgba(184, 134, 11, 0.3) 30%,
+                rgba(184, 134, 11, 0.6) 50%,
+                rgba(184, 134, 11, 0.3) 70%,
+                transparent 100%);
+            margin: 8rem 0;
+            position: relative;
+        }
+
+        .sovereign-divider::before {
+            content: '◆';
+            position: absolute;
+            top: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--sovereign-gold);
+            font-size: 16px;
+            background: var(--obsidian-black);
+            padding: 0 1rem;
+        }
+
+        /* 垂直进度条 */
+        .reading-progress {
+            position: fixed;
+            top: 50%;
+            right: 2rem;
+            width: 4px;
+            height: 200px;
+            transform: translateY(-50%);
+            background: linear-gradient(180deg,
+                rgba(184, 134, 11, 0.2) 0%,
+                rgba(218, 165, 32, 0.3) 30%,
+                rgba(244, 228, 188, 0.4) 60%,
+                rgba(218, 165, 32, 0.3) 85%,
+                rgba(139, 105, 20, 0.2) 100%);
+            z-index: 1001;
+            box-shadow:
+                0 0 12px rgba(184, 134, 11, 0.6),
+                2px 0 8px rgba(184, 134, 11, 0.3),
+                inset 1px 0 2px rgba(244, 228, 188, 0.4);
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+        .reading-progress::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(180deg,
+                rgba(244, 228, 188, 0.1) 0%,
+                rgba(218, 165, 32, 0.15) 50%,
+                rgba(244, 228, 188, 0.1) 100%);
+            border-radius: 2px;
+            animation: progressShimmer 3s ease-in-out infinite;
+        }
+
+        .reading-progress-fill {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(180deg,
+                var(--golden-shadow) 0%,
+                var(--sovereign-gold) 50%,
+                var(--imperial-gold) 100%);
+            border-radius: 2px;
+            transition: height 0.1s ease;
+            box-shadow:
+                inset 0 1px 2px rgba(244, 228, 188, 0.3),
+                0 0 8px rgba(184, 134, 11, 0.4);
+        }
+
+        @keyframes progressShimmer {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.8; }
+        }
+
+        .progress-tooltip {
+            position: fixed;
+            top: 50%;
+            right: 7rem;
+            transform: translateY(-50%);
+            background: linear-gradient(135deg,
+                rgba(15, 15, 15, 0.95) 0%,
+                rgba(31, 31, 31, 0.9) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.25);
+            border-radius: 8px;
+            padding: 0.8rem 2rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 0.85rem;
+            font-weight: 300;
+            color: var(--imperial-gold);
+            backdrop-filter: blur(20px);
+            box-shadow:
+                0 8px 32px rgba(0, 0, 0, 0.7),
+                0 0 20px rgba(184, 134, 11, 0.1),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+            z-index: 1002;
+            white-space: nowrap;
+            letter-spacing: 0.03em;
+        }
+
+        .progress-tooltip.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(-50%) translateX(-8px);
+        }
+
+        .progress-tooltip::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -8px;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-left: 8px solid rgba(184, 134, 11, 0.25);
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+        }
+
+        .progress-tooltip::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -7px;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-left: 7px solid rgba(15, 15, 15, 0.95);
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+        }
+
+        /* 引用文献 */
+        .citation-item {
+            padding: 1.5rem 2rem;
+            margin: 0.8rem 0;
+            background: linear-gradient(135deg, rgba(21, 21, 21, 0.8) 0%, rgba(31, 31, 31, 0.6) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.15);
+            border-radius: 3px;
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .citation-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--sovereign-gold), var(--golden-shadow));
+            opacity: 0.6;
+            transition: opacity 0.3s ease;
+        }
+
+        .citation-item:hover {
+            border-color: rgba(184, 134, 11, 0.4);
+            background: linear-gradient(135deg, rgba(31, 31, 31, 0.9) 0%, rgba(42, 42, 42, 0.7) 100%);
+            transform: translateX(6px) translateY(-1px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5), 0 0 20px rgba(184, 134, 11, 0.08);
+        }
+
+        .citation-item:hover::before {
+            opacity: 1;
+        }
+
+        .citation-item a {
+            color: var(--platinum-mist);
+            text-decoration: none;
+            font-size: 0.85rem;
+            line-height: 1.7;
+            font-weight: 300;
+            transition: color 0.4s ease;
+            display: block;
+            position: relative;
+        }
+
+        .citation-item a::before {
+            content: '';
+            position: absolute;
+            left: -0.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 4px;
+            background: var(--sovereign-gold);
+            border-radius: 50%;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .citation-item:hover a {
+            color: var(--aureate-whisper);
+            padding-left: 1rem;
+        }
+
+        .citation-item:hover a::before {
+            opacity: 0.8;
+        }
+
+        /* 响应式 */
+        @media (max-width: 1024px) {
+            .sovereign-container { padding: 0 2.5rem; }
+            .imperial-section { margin: 8rem 0; }
+        }
+
+        @media (max-width: 768px) {
+            .sovereign-container { padding: 0 1.5rem; }
+            .imperial-section { margin: 6rem 0; }
+            .authority-card { padding: 2rem; }
+            .reading-progress { right: 1rem; height: 150px; width: 3px; }
+            .progress-tooltip { right: 5rem; padding: 0.6rem 1.5rem; font-size: 0.75rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- 垂直进度条 -->
+    <div class="reading-progress">
+        <div class="reading-progress-fill"></div>
+    </div>
+
+    <!-- 进度标题提示器 -->
+    <div class="progress-tooltip" id="progress-tooltip"></div>
+
+    <!-- 首屏 -->
+    <header id="header" class="min-h-screen flex items-center justify-center relative" data-title="大重构：在万亿美元广告产业中洞察价值创造与颠覆性变革">
+        <div class="sovereign-container text-center relative z-10">
+            <div class="mb-16">
+                <h1 class="imperial-title text-5xl md:text-7xl mb-6">
+                    大重构：在万亿美元广告产业中洞察价值创造与颠覆性变革
+                </h1>
+
+                <h2 class="imperial-subtitle text-2xl md:text-4xl mb-12 opacity-90">
+                    2025年Q4战略投资分析报告
+                </h2>
+            </div>
+
+            <div class="mb-12">
+                <div class="imperial-tagline text-sm md:text-base opacity-75 max-w-4xl mx-auto">
+                    The Great Restructuring: Navigating Value Creation and Disruption<br class="md:hidden">
+                    in the Trillion-Dollar Global Advertising Ecosystem
+                </div>
+            </div>
+
+            <div class="mb-16">
+                <div class="imperial-dedication text-sm md:text-base flex items-center justify-center">
+                    <span class="material-icons mr-2" style="color: var(--sovereign-gold);">groups</span>
+                    致：机构投资者与高净值客户
+                </div>
+                <div class="imperial-dedication-sub text-xs md:text-sm opacity-60 mt-2">
+                    For: Institutional Investors and High Net Worth Clients
+                </div>
+            </div>
+
+            <div class="golden-glass-card inline-block">
+                <div class="text-xs uppercase tracking-[0.2em] opacity-50 mb-4 font-light flex items-center justify-center">
+                    <span class="material-icons text-sm mr-2">calendar_today</span>
+                    本报告发布于 · Published on
+                </div>
+                <div class="sovereign-heading text-base">
+                    <span class="exclusive-number">2025年10月19日</span>
+                    <span class="mx-4 text-sovereign-gold opacity-40">◆</span>
+                    <span class="exclusive-number">October 19, 2025</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute inset-0 pointer-events-none opacity-8">
+            <div class="absolute top-20 left-20 w-px h-32 bg-gradient-to-b from-sovereign-gold to-transparent"></div>
+            <div class="absolute bottom-20 right-20 w-px h-32 bg-gradient-to-t from-sovereign-gold to-transparent"></div>
+            <div class="absolute top-1/2 left-1/4 w-24 h-px bg-gradient-to-r from-sovereign-gold to-transparent"></div>
+            <div class="absolute top-1/3 right-1/4 w-24 h-px bg-gradient-to-l from-sovereign-gold to-transparent"></div>
+        </div>
+    </header>
+
+    <!-- 报告摘要 -->
+    <section id="summary" class="imperial-section" data-title="报告摘要">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl mb-8 text-center flex items-center justify-center">
+                <span class="material-icons mr-3" style="color: var(--sovereign-gold);">description</span>
+                报告摘要
+            </h2>
+
+            <div class="authority-card max-w-4xl mx-auto mb-8">
+                <div class="noble-text mb-6">
+                    本报告旨在为机构投资者及高净值客户构建一个系统性的营销与广告行业认知框架。我们的核心论点是：全球广告行业正经历一场深刻的结构性重塑，而非简单的周期性波动。两大核心驱动力——<span class="text-sovereign-gold font-semibold">以隐私保护为核心的数据重置</span>与<span class="text-sovereign-gold font-semibold">人工智能（AI）的颠覆性力量</span>——正在共同瓦解旧有格局，重塑价值链，并催生新的赢家与输家。
+                </div>
+
+                <div class="noble-text">
+                    行业价值正在经历一场大规模迁徙。价值正从缺乏差异化的中间商和传统的创意服务模式，流向拥有第一方数据的"围墙花园"（Walled Gardens）和零售商、赋能开放互联网进行隐私安全衡量与激活的独立技术平台，以及那些能够成功整合技术、数据与创意服务的新型混合体。
+                </div>
+            </div>
+
+            <div class="investment-logic-card max-w-4xl mx-auto">
+                <h3 class="sovereign-heading text-lg mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">lightbulb</span>
+                    五大核心研究焦点
+                </h3>
+                <ul class="noble-text text-sm space-y-3 ml-4">
+                    <li class="flex items-start">
+                        <span class="text-sovereign-gold mr-3 mt-1 font-bold">1.</span>
+                        <span><span class="font-semibold text-aureate-whisper">宏观格局与增长动力</span>：全球广告市场正历史性地迈向万亿美元规模，其增长完全由数字化驱动</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-sovereign-gold mr-3 mt-1 font-bold">2.</span>
+                        <span><span class="font-semibold text-aureate-whisper">价值链解构与效率革命</span>：解构复杂的程序化广告供应链，量化"价值损耗"，阐明CDP如何成为企业命脉</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-sovereign-gold mr-3 mt-1 font-bold">3.</span>
+                        <span><span class="font-semibold text-aureate-whisper">竞争格局重塑</span>："围墙花园"与"开放互联网"的战略对峙、传统广告集团与咨询公司的跨界融合</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-sovereign-gold mr-3 mt-1 font-bold">4.</span>
+                        <span><span class="font-semibold text-aureate-whisper">四大颠覆性力量</span>：隐私革命、人工智能转型、渠道演进（CTV、零售媒体、社交电商）、衡量危机</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-sovereign-gold mr-3 mt-1 font-bold">5.</span>
+                        <span><span class="font-semibold text-aureate-whisper">投资策略展望</span>：在产业大重构中识别长期赢家的战略性建议</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="mt-8">
+                <div class="executive-quote text-center">
+                    广告已从一个以"创意"为核心的行业，转变为一个以<span class="text-sovereign-gold font-semibold">"技术和数据"为核心、创意为重要组成部分</span>的行业
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 第一部分：全球广告市场格局 -->
+    <section id="market-landscape" class="imperial-section" data-title="第一部分：全球广告市场格局">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl mb-12 text-center flex items-center justify-center">
+                <span class="material-icons mr-3" style="color: var(--sovereign-gold);">public</span>
+                第一部分：全球广告市场格局：数字新纪元
+            </h2>
+
+            <div class="authority-card max-w-4xl mx-auto mb-8">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">trending_up</span>
+                    1.1. 跨越万亿美元门槛
+                </h3>
+                <div class="noble-text mb-6">
+                    全球广告行业将在2025年迎来一个历史性里程碑，其总支出预计将首次突破<span class="exclusive-number">1万亿美元</span>大关。这一数字自2016年以来翻了一番，使得广告业的经济体量足以与石油天然气、房地产等重量级行业相提并论。这一里程碑不仅彰显了行业的巨大经济影响力，也预示着其至少到2028年都将保持强劲的增长势头。
+                </div>
+
+                <div class="noble-text mb-6">
+                    这一增长几乎完全由数字广告所驱动。2025年，全球数字广告支出预计将超过<span class="exclusive-number">7500亿美元</span>，首次占据全球媒体广告总支出的<span class="exclusive-number">75%以上</span>。值得注意的是，这一里程碑的达成时间比早前预测提前了两年，凸显了数字化转型的惊人速度。整体市场预计在2025年增长<span class="exclusive-number">8.9%</span>，其中数字广告支出将跃升<span class="exclusive-number">12.7%</span>，而传统媒体支出则预计下滑<span class="exclusive-number">1%</span>。
+                </div>
+
+                <div class="noble-text">
+                    从2022年到2028年，几乎所有新增的广告预算都将流向数字渠道，这标志着一个结构性的、而非周期性的转变。不同研究机构的具体数据因统计口径差异而略有不同，但增长趋势高度一致，例如，IMARC Group估计2024年全球市场规模为6768亿美元，并预测到2033年将达到9950亿美元（年复合增长率4.4%）；MAGNA Global预测2025年全球广告总收入将达到9790亿美元，同比增长4.9%。
+                </div>
+            </div>
+
+            <div class="authority-card max-w-4xl mx-auto mb-8">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">public</span>
+                    1.2. 区域力量动态：三速发展格局
+                </h3>
+                <div class="noble-text mb-6">
+                    全球广告市场并非铁板一块，而是呈现出"三速"发展的分化格局：成熟高消费的美国市场、高速增长且移动优先的中国市场，以及受法规驱动创新的欧洲市场。
+                </div>
+
+                <div class="noble-text mb-4">
+                    <span class="font-semibold text-aureate-whisper">美国与中国</span>：这两个市场是无可争议的巨头，合计占据了2025年全球近59-60%的广告支出。美国市场作为全球广告业的中心，预计在2025年增长4.6%，达到3980亿美元。仅数字广告支出在2025年就达到了1370亿美元，同比增长12%。北美地区在全球市场中占据主导地位，份额超过31-32.6%。
+                </div>
+
+                <div class="noble-text mb-4">
+                    <span class="font-semibold text-aureate-whisper">中国市场</span>：中国的数字广告市场在2024年价值534亿美元，并预计在2025至2030年间以惊人的18%年复合增长率增长。这一增长由超过10亿用户的庞大移动互联网渗透率，以及微信、抖音等高度整合的生态系统所驱动。从行业来看，2025年中国广告支出增长强劲，其中娱乐休闲（同比增长53.1%）、电信（45.0%）和交通运输（32.5%）等行业领跑。
+                </div>
+
+                <div class="noble-text">
+                    <span class="font-semibold text-aureate-whisper">欧洲市场</span>：欧洲的数字广告市场在2024年价值1125亿美元，预计在2025至2030年间以14.1%的年复合增长率增长。英国以534.3亿美元的规模保持其重要市场地位，欧洲其他国家合计贡献约1400亿美元。移动优先策略和对GDPR等隐私法规的严格遵守是该地区增长的主要驱动力。
+                </div>
+            </div>
+
+            <div class="authority-card max-w-4xl mx-auto">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">show_chart</span>
+                    1.3. 经济的晴雨表
+                </h3>
+                <div class="noble-text mb-6">
+                    广告支出与宏观经济健康状况紧密相连。国际货币基金组织（IMF）将2025年全球经济增长预期从+3.2%下调至+2.8%，直接导致MAGNA等机构下调其广告增长预测，这充分说明广告预算对经济情绪和企业信心高度敏感。
+                </div>
+
+                <div class="noble-text mb-6">
+                    从历史数据看，广告业是国民生产总值（GDP）的重要贡献者。一项2014年的研究显示，广告业对美国GDP的贡献率高达19%。而一项针对2020年的更新研究发现，广告业的总影响占美国GDP的18.5%，支撑了2850万个就业岗位。
+                </div>
+
+                <div class="noble-text">
+                    这种关系是共生的：经济增长为广告支出提供燃料，而广告支出又反过来刺激消费和进一步的经济活动。平均而言，每1美元的广告支出能带动近21美元的销售活动。这种紧密的相关性使广告支出成为衡量经济健康状况的领先指标，也是刺激经济的关键杠杆。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 第二部分：价值链解构 -->
+    <section id="value-chain" class="imperial-section" data-title="第二部分：数字广告价值链解构">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl mb-12 text-center flex items-center justify-center">
+                <span class="material-icons mr-3" style="color: var(--sovereign-gold);">link</span>
+                第二部分：解构数字广告价值链：资金流向何方
+            </h2>
+
+            <div class="authority-card max-w-4xl mx-auto mb-8">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">cloud</span>
+                    2.1. 程序化引擎：LUMAscape解构
+                </h3>
+                <div class="noble-text mb-6">
+                    数字广告生态系统是一个连接广告主与发布商的复杂供应链，通常通过"LUMAscape"这一行业地图进行可视化呈现，该图谱对生态中的众多中间商进行了分类。
+                </div>
+
+                <div class="noble-text mb-6">
+                    <span class="font-semibold text-aureate-whisper">价值链中的关键角色：</span>
+                </div>
+
+                <ul class="noble-text text-sm space-y-3 ml-4 mb-6">
+                    <li class="flex items-start">
+                        <span class="material-icons text-sm mr-2" style="color: var(--sovereign-gold);">chevron_right</span>
+                        <span><span class="font-semibold">广告主/代理商</span>：作为"需求方"，他们寻求购买广告位以触达目标受众</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons text-sm mr-2" style="color: var(--sovereign-gold);">chevron_right</span>
+                        <span><span class="font-semibold">需求方平台 (DSPs)</span>：广告主使用的软件平台，通过单一界面自动化地从多个广告资源方购买广告库存</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons text-sm mr-2" style="color: var(--sovereign-gold);">chevron_right</span>
+                        <span><span class="font-semibold">广告交易平台 (Ad Exchanges)</span>：连接DSP和SSP的数字交易市场，类似于广告界的"证券交易所"</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons text-sm mr-2" style="color: var(--sovereign-gold);">chevron_right</span>
+                        <span><span class="font-semibold">供应方平台 (SSPs)</span>：发布商使用的软件平台，用于管理并向尽可能多的买家出售其广告库存</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons text-sm mr-2" style="color: var(--sovereign-gold);">chevron_right</span>
+                        <span><span class="font-semibold">发布商 (Publishers)</span>：作为"供应方"，在其网站和应用上提供广告展示空间</span>
+                    </li>
+                </ul>
+
+                <div class="noble-text">
+                    当用户访问一个网页时，发布商的SSP会向广告交易平台发送一个竞价请求。交易平台将此请求广播给多个DSP，这些DSP代表广告主进行出价。出价最高者赢得该次广告展示机会，其广告随即被投放给用户——整个过程在毫秒内完成。这一全自动化的流程即为<span class="font-semibold text-aureate-whisper">程序化广告</span>。
+                </div>
+            </div>
+
+            <div class="authority-card max-w-4xl mx-auto mb-8">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">error</span>
+                    2.2. "未知三角"：量化价值损耗
+                </h3>
+                <div class="noble-text mb-6">
+                    在复杂的程序化广告供应链中，广告主投入的每一美元都有相当一部分被中间环节消耗，这种现象被称为"价值损耗"或"价值泄漏"。
+                </div>
+
+                <div class="noble-text mb-6">
+                    具有里程碑意义的<span class="font-semibold text-aureate-whisper">2020年ISBA/PwC程序化供应链透然度研究</span>首次对这一问题进行了端到端的量化。研究发现，广告主的支出平均只有51%能够最终到达发布商手中。最令人震惊的是，研究揭示了一个高达15%的"未知三角"（Unknown Delta）——这部分支出在供应链中凭空消失，无法归因于任何已知环节，占到了所有供应链成本的三分之一。
+                </div>
+
+                <div class="noble-text mb-6">
+                    然而，在2023年初发布的后续研究（分析2022年数据）中，情况有了显著改善。这得益于全行业的共同努力和数据标准的统一：
+                </div>
+
+                <ul class="noble-text text-sm space-y-2 ml-4 mb-6">
+                    <li class="flex items-start">
+                        <span class="text-sovereign-gold mr-3 mt-1">▸</span>
+                        <span>"<span class="font-semibold text-aureate-whisper">未知三角</span>"从17%（2020年重述数据）大幅缩减至<span class="exclusive-number">3%</span></span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-sovereign-gold mr-3 mt-1">▸</span>
+                        <span>广告主支出到达发布商的比例，从57%（2020年重述数据）提升至<span class="exclusive-number">65%</span>，增加了8个百分点</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-sovereign-gold mr-3 mt-1">▸</span>
+                        <span>广告展示的匹配率从<span class="exclusive-number">12%</span>戏剧性地提升至<span class="exclusive-number">58%</span></span>
+                    </li>
+                </ul>
+
+                <div class="noble-text">
+                    <span class="font-semibold text-aureate-whisper">供应路径优化（Supply Path Optimization, SPO）</span>已成为解决价值损耗问题的关键行业举措，旨在减少广告从广告主到发布商的冗余路径。研究中"未知三角"的改善，尤其是在私有市场（PMP）中降至低于1%，有力地证明了这种精心策划、可审计的供应路径所带来的益处。
+                </div>
+            </div>
+
+            <div class="authority-card max-w-4xl mx-auto">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">settings</span>
+                    2.3. 现代营销技术栈：AdTech、MarTech与CDP
+                </h3>
+                <div class="noble-text mb-6">
+                    <span class="font-semibold text-aureate-whisper">广告技术 (AdTech)</span>涵盖用于策划、执行和衡量付费广告活动（主要在程序化生态系统内）的工具和软件，如DSP、SSP等。全球AdTech市场在2024年价值8762.1亿美元，预计到2032年将增长至2.5万亿美元（年复合增长率14.5%）。
+                </div>
+
+                <div class="noble-text mb-6">
+                    <span class="font-semibold text-aureate-whisper">营销技术 (MarTech)</span>是一个更广泛的类别，不仅包括AdTech，还涵盖管理自有和赢得媒体渠道的工具（如CRM、邮件营销、社交媒体管理等）。全球MarTech支出预计在2025年将超过6000亿美元。然而，Gartner的调查显示，企业的营销预算已停滞在公司总收入的7.7%，而MarTech的利用率已骤降至33%。这表明，首席营销官（CMO）们正优先保障付费媒体的支出，并且在从复杂的技术栈中提取价值方面面临困境。
+                </div>
+
+                <div class="noble-text">
+                    <span class="font-semibold text-aureate-whisper">客户数据平台 (CDPs)</span>作为现代技术栈的关键组成部分，是由企业管理的系统，通过从多个来源（CRM、网站、移动应用等）收集第一方数据，创建一个持久、统一的客户画像。在广告中的作用：CDP管理<span class="font-semibold text-aureate-whisper">第一方数据</span>（已知的客户信息），并将其激活用于精准广告、个性化体验和效果衡量。在后Cookie时代，CDP对于构建合规的、直接的客户关系至关重要。与数据管理平台（DMP）有本质区别。CDP专注于可识别的、用于长期客户关系管理的第一方数据；而DMP传统上则专注于匿名的、用于短期广告定向的第三方Cookie数据。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 第三部分：竞争舞台 -->
+    <section id="competitive-landscape" class="imperial-section" data-title="第三部分：竞争舞台">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl mb-12 text-center flex items-center justify-center">
+                <span class="material-icons mr-3" style="color: var(--sovereign-gold);">business</span>
+                第三部分：竞争舞台：巨头、挑战者与颠覆者
+            </h2>
+
+            <div class="authority-card max-w-4xl mx-auto mb-8">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">lock</span>
+                    3.1. "围墙花园"的统治：谷歌、Meta、亚马逊
+                </h3>
+                <div class="noble-text mb-6">
+                    "围墙花园"是一个封闭的广告生态系统，平台方控制着数据、广告库存、定向和衡量，从而限制了外部的透明度和跨平台洞察。谷歌（Alphabet）、Meta和亚马逊是主导数字广告收入的"三巨头"。仅谷歌和Meta两家，就将在2025年占据全球数字广告市场超过50%的份额。
+                </div>
+
+                <ul class="noble-text text-sm space-y-4 ml-4">
+                    <li class="flex items-start">
+                        <span class="material-icons text-sm mr-2" style="color: var(--sovereign-gold);">business</span>
+                        <span><span class="font-semibold text-aureate-whisper">Alphabet (谷歌)</span>：作为市场领导者，谷歌预计在2025年占据<span class="exclusive-number">24.8%的市场份额</span>，年广告收入达<span class="exclusive-number">2880亿美元</span>。其护城河建立在搜索领域的绝对优势（市场份额超过80-90%）、YouTube的巨大流量以及全面的广告技术栈（Google Marketing Platform）之上。2025年第二季度，Alphabet总收入为964亿美元，其中谷歌广告收入为713亿美元。</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons text-sm mr-2" style="color: var(--sovereign-gold);">business</span>
+                        <span><span class="font-semibold text-aureate-whisper">Meta Platforms</span>：位居第二，拥有<span class="exclusive-number">13.8%的市场份额</span>，2024年广告收入超过<span class="exclusive-number">1600亿美元</span>。其优势在于其"应用家族"（Facebook、Instagram、WhatsApp）积累的丰富用户数据、先进的AI定向算法以及庞大的用户规模（月活跃用户超过30亿）。</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons text-sm mr-2" style="color: var(--sovereign-gold);">business</span>
+                        <span><span class="font-semibold text-aureate-whisper">亚马逊</span>：增长最快的挑战者，预计2025年广告收入将超过<span class="exclusive-number">600亿美元</span>，市场份额为<span class="exclusive-number">4.8%</span>。其独特的竞争优势在于直接掌握第一方零售购买数据，能够将广告投放与销售点直接关联，形成闭环。</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="authority-card max-w-4xl mx-auto mb-8">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">open_in_new</span>
+                    3.2. "开放互联网"的替代方案：The Trade Desk (TTD)
+                </h3>
+                <div class="noble-text mb-6">
+                    <span class="font-semibold text-aureate-whisper">商业模式</span>：The Trade Desk运营着一个需求方平台（DSP），赋能广告买家在"开放互联网"（即"围墙花园"之外的领域）购买媒体资源。它将自己定位为客观、独立的合作伙伴，因为它不拥有任何媒体，完全专注于服务买方。
+                </div>
+
+                <div class="noble-text mb-6">
+                    <span class="font-semibold text-aureate-whisper">收入模式</span>：TTD的收入主要来自平台交易费，通常是其平台所管理广告支出的一个百分比（15-20%）。
+                </div>
+
+                <div class="noble-text mb-6">
+                    <span class="font-semibold text-aureate-whisper">战略定位</span>：TTD的核心战略是成为"围墙花园"之外一个规模化的、独立的替代选择。它积极倡导如Unified ID 2.0 (UID2)等行业倡议，旨在为后Cookie时代的开放互联网建立新的身份识别框架。其增长动力来自于捕捉向程序化渠道（如CTV和开放网络上的零售媒体）转移的广告支出。
+                </div>
+
+                <div class="noble-text">
+                    <span class="font-semibold text-aureate-whisper">财务表现</span>：TTD公布的2025年第二季度收入为6.94亿美元（同比增长19%），并预计第三季度收入至少达到7.17亿美元。
+                </div>
+            </div>
+
+            <div class="authority-card max-w-4xl mx-auto mb-8">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">group_work</span>
+                    3.3. 广告集团的蜕变：WPP与阳狮集团
+                </h3>
+                <div class="noble-text mb-6">
+                    传统的广告控股公司（"四大"：WPP、阳狮、Omnicom、IPG）正面临来自客户预算削减、服务内包、咨询公司竞争以及AI颠覆等多重压力。例如，WPP的股价大幅下跌，并预测其2025财年收入将出现下滑。
+                </div>
+
+                <div class="noble-text mb-6">
+                    <span class="font-semibold text-aureate-whisper">WPP的"创意转型公司"战略</span>：WPP正重新定位，致力于整合传播、体验、商业和技术四大领域。具体措施包括简化组织结构（如将VMLY&R和Wunderman Thompson合并为VML），并通过其WPP Open平台每年投入2.5-3亿英镑，大力投资于AI和数据。其目标是从一个由孤立代理商组成的集合体，转变为一个利用技术增强创意的整合服务提供商。
+                </div>
+
+                <div class="noble-text">
+                    <span class="font-semibold text-aureate-whisper">阳狮集团的"连接公司"模式</span>：阳狮已从控股公司转型为平台模式，将其服务整合为四大"解决方案中心"（传播、媒体、Sapient、健康）。"Power of One"战略为客户提供单一联系人（全球客户负责人），以调动集团内的所有能力。对数据公司Epsilon的收购及其Marcel AI平台的开发是该模式的核心，旨在融合数据、创意与技术。阳狮集团凭借此模式表现强劲，已将其2025财年的有机增长指引上调至+5.0-5.5%。
+                </div>
+            </div>
+
+            <div class="authority-card max-w-4xl mx-auto">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">school</span>
+                    3.4. 咨询公司的入侵：埃森哲互动与德勤数字
+                </h3>
+                <div class="noble-text mb-6">
+                    全球性的IT和商业咨询公司已大举进入营销服务领域，它们利用其在高管层（C-suite）的关系、深厚的技术专长以及对大规模业务转型的关注，对传统广告业构成了巨大冲击。按收入计算，埃森哲互动（Accenture Song）和德勤数字（Deloitte Digital）现已跻身全球最大的数字代理网络之列，超越了许多传统广告集团。
+                </div>
+
+                <div class="noble-text mb-6">
+                    <span class="font-semibold text-aureate-whisper">埃森哲互动 (Accenture Song)</span>：作为埃森哲的创意部门，其2025财年报告收入高达<span class="exclusive-number">200亿美元</span>（同比增长8%）。其模式是通过收购顶尖创意公司（如Droga5），并将其与埃森哲庞大的技术、数据和咨询能力相结合。它们通过提供从战略、IT架构到创意执行和客户体验的端到端解决方案来展开竞争。然而，埃森哲在历史上一直缺乏规模化的媒体购买能力，而这正是WPP等广告集团的核心优势。
+                </div>
+
+                <div class="noble-text">
+                    <span class="font-semibold text-aureate-whisper">文化冲突</span>：咨询公司以数据驱动、流程为导向的文化与广告代理商以创意、理念为中心的文化之间存在根本性的张力。咨询公司被视为专注于业务成果的战略性"成本节约者"，而代理商则常被看作是专注于营销活动的执行性"成本驱动者"。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 竞争格局表格 -->
+    <section id="competitors-comparison" class="imperial-section" data-title="竞争对手对比">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-2xl mb-6 text-center">竞争格局：主要参与者财务摘要</h2>
+            <div class="overflow-x-auto">
+                <table class="imperial-table mx-auto" style="max-width: 100%;">
+                    <thead>
+                        <tr>
+                            <th style="width: 15%;">公司</th>
+                            <th style="width: 15%;">商业模式</th>
+                            <th style="width: 20%;">2024/2025年收入</th>
+                            <th style="width: 15%;">同比增长率</th>
+                            <th style="width: 35%;">核心优势</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="font-semibold text-aureate-whisper">Alphabet (Google)</td>
+                            <td>围墙花园</td>
+                            <td class="exclusive-number">$2880亿 (2025年预测)</td>
+                            <td class="text-emerald-depth">+10.4%</td>
+                            <td>搜索垄断、YouTube流量、完整技术栈</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold text-aureate-whisper">Meta Platforms</td>
+                            <td>围墙花园</td>
+                            <td class="exclusive-number">$1645亿 (2024)</td>
+                            <td class="text-emerald-depth">+15%</td>
+                            <td>应用家族、AI定向、30亿月活用户</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold text-aureate-whisper">Amazon</td>
+                            <td>围墙花园</td>
+                            <td class="exclusive-number">$562亿 (2024)</td>
+                            <td class="text-emerald-depth">+19%</td>
+                            <td>第一方零售数据、闭环归因</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold text-aureate-whisper">The Trade Desk</td>
+                            <td>独立DSP</td>
+                            <td class="exclusive-number">$28.7亿 (2025年预测)</td>
+                            <td class="text-emerald-depth">+19%</td>
+                            <td>开放互联网中立地位、高增长</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold text-aureate-whisper">WPP</td>
+                            <td>广告控股集团</td>
+                            <td class="exclusive-number">£147.4亿 (2024)</td>
+                            <td class="text-ruby-accent">-3%至-5%</td>
+                            <td>全球规模、创意能力</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold text-aureate-whisper">Publicis Groupe</td>
+                            <td>广告控股集团</td>
+                            <td class="exclusive-number">€141.5亿 (2025年预测)</td>
+                            <td class="text-emerald-depth">+5.0%至+5.5%</td>
+                            <td>平台整合、Marcel AI</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold text-aureate-whisper">Accenture Song</td>
+                            <td>咨询公司</td>
+                            <td class="exclusive-number">$200亿 (FY2025)</td>
+                            <td class="text-emerald-depth">+8%</td>
+                            <td>技术深度、战略咨询、高管关系</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 第四部分：四大颠覆性力量 -->
+    <section id="disruption-forces" class="imperial-section" data-title="第四部分：四大颠覆性力量">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl mb-12 text-center flex items-center justify-center">
+                <span class="material-icons mr-3" style="color: var(--sovereign-gold);">flash_on</span>
+                第四部分：四大结构性力量重塑行业格局
+            </h2>
+
+            <div class="authority-card max-w-4xl mx-auto mb-8">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">lock_outline</span>
+                    4.1. 隐私革命与新身份体系
+                </h3>
+                <div class="noble-text mb-6">
+                    一场由监管压力和平台政策共同引发的"隐私革命"，正从根本上瓦解数字广告业对第三方追踪技术的依赖。
+                </div>
+
+                <div class="noble-text mb-6">
+                    <span class="font-semibold text-aureate-whisper">变革的催化剂</span>：欧洲的《通用数据保护条例》（GDPR）、加州的《加州隐私权法案》（CPRA）等法规，与苹果的应用追踪透明度（ATT）框架、谷歌逐步淘汰第三方Cookie的计划相结合，共同构成了这场变革的核心。
+                </div>
+
+                <div class="noble-text mb-6">
+                    <span class="font-semibold text-aureate-whisper">第三方Cookie淘汰的影响</span>：这一转变严重削弱了广告业的核心功能，包括个性化推荐、重定向广告、频次控制、跨网站用户行为追踪以及传统的归因和广告支出回报率（ROAS）衡量。69%的广告主认为，其影响将超过GDPR等隐私法规。
+                </div>
+
+                <div class="noble-text mb-6">
+                    <span class="font-semibold text-aureate-whisper">苹果ATT框架的冲击</span>：ATT要求应用必须获得用户的明确授权才能进行跨应用追踪，这极大地减少了iOS设备上的广告标识符（IDFA）的可用性。由于约75-85%的用户选择拒绝追踪，Meta等平台的广告定向精准度下降，成本上升，效果减弱。一项研究发现，ATT实施后，依赖第三方数据进行优化的Meta广告活动点击率下降了<span class="exclusive-number">37%</span>。
+                </div>
+
+                <div class="noble-text">
+                    <span class="font-semibold text-aureate-whisper">新兴解决方案</span>：行业正在探索一系列替代方案以适应新环境：第一方数据、隐私增强技术（PETs）、数据净室、营销组合模型（MMM）等。这些解决方案的共同点在于将数据和控制权重新集中到大型平台所有者手中。
+                </div>
+            </div>
+
+            <div class="authority-card max-w-4xl mx-auto mb-8">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">smart_toy</span>
+                    4.2. 人工智能转型：效率引擎还是利润杀手？
+                </h3>
+                <div class="noble-text mb-6">
+                    人工智能，特别是生成式AI（GenAI），正在以前所未有的速度渗透到广告行业的各个角落。超过80%的营销人员已在积极使用GenAI，其中93%的CMO报告称看到了可衡量的投资回报。
+                </div>
+
+                <div class="noble-text mb-6">
+                    <span class="font-semibold text-aureate-whisper">核心应用场景</span>：
+                </div>
+
+                <ul class="noble-text text-sm space-y-3 ml-4 mb-6">
+                    <li class="flex items-start">
+                        <span class="text-sovereign-gold mr-3 mt-1">▸</span>
+                        <span><span class="font-semibold">内容创作与创意自动化</span>：GenAI能大规模自动化地生成广告文案、图片和视频，极大地降低了制作成本和时间</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-sovereign-gold mr-3 mt-1">▸</span>
+                        <span><span class="font-semibold">超个性化</span>：AI算法通过分析海量数据，为个体消费者或细分群体提供高度个性化的信息和体验</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-sovereign-gold mr-3 mt-1">▸</span>
+                        <span><span class="font-semibold">营销活动优化与预测分析</span>：AI能够优化受众定向、自动化程序化广告竞价，并预测未来的消费者行为</span>
+                    </li>
+                </ul>
+
+                <div class="noble-text mb-6">
+                    <span class="font-semibold text-aureate-whisper">对代理商的双刃剑效应</span>：
+                </div>
+
+                <ul class="noble-text text-sm space-y-3 ml-4 mb-6">
+                    <li class="flex items-start">
+                        <span class="text-sovereign-gold mr-3 mt-1">✓</span>
+                        <span><span class="font-semibold text-emerald-depth">价值倍增器（乐观前景）</span>：AI可以成为代理商的强大工具，将常规任务自动化，从而解放人类员工专注于更高价值的战略和创意工作</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-ruby-accent mr-3 mt-1">✗</span>
+                        <span><span class="font-semibold">利润压缩机（悲观前景）</span>：GenAI的普及也带来了商品化的风险，威胁到传统上作为代理商主要收入来源的核心创意服务</span>
+                    </li>
+                </ul>
+
+                <div class="noble-text">
+                    GenAI的商品化威胁将迫使代理商模式出现分化。一部分将成为"效率型玩家"，另一部分则将转型为"战略型玩家"，专注于高阶品牌战略、业务转型等需要人类深度洞察的领域。
+                </div>
+            </div>
+
+            <div class="authority-card max-w-4xl mx-auto mb-8">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">tv</span>
+                    4.3. 渠道演进：CTV、零售媒体与社交电商
+                </h3>
+                <div class="noble-text mb-6">
+                    广告预算正随着消费者注意力的转移而发生剧烈变动，催生了三大高速增长的新渠道。
+                </div>
+
+                <ul class="noble-text text-sm space-y-4 ml-4 mb-6">
+                    <li class="flex items-start">
+                        <span class="material-icons text-sm mr-2" style="color: var(--sovereign-gold);">featured_play_list</span>
+                        <span><span class="font-semibold text-aureate-whisper">互联电视 (CTV)</span>：美国CTV广告支出预计在2025年达到<span class="exclusive-number">333.5亿美元</span>，同比增长15.8%。流媒体现在已占美国总电视观看时长的<span class="exclusive-number">43.8%</span>，为广告主提供比传统电视更强的定向和衡量能力。</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons text-sm mr-2" style="color: var(--sovereign-gold);">shopping_cart</span>
+                        <span><span class="font-semibold text-aureate-whisper">零售媒体网络 (RMNs)</span>：被称为数字广告的"第三次浪潮"，零售媒体是增长最快的细分市场。全球支出预计在2025年达到<span class="exclusive-number">1455亿美元</span>。亚马逊（562亿美元）和沃尔玛（44亿美元）是市场的主导者。</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="material-icons text-sm mr-2" style="color: var(--sovereign-gold);">video_call</span>
+                        <span><span class="font-semibold text-aureate-whisper">社交电商</span>：TikTok Shop的全球商品交易总额（GMV）预计在2025年达到<span class="exclusive-number">300亿美元</span>，比2024年翻一番。这一模式将内容、社区和商业无缝整合在单一平台内。</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="authority-card max-w-4xl mx-auto">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">assessment</span>
+                    4.4. 衡量危机与范式重塑
+                </h3>
+                <div class="noble-text mb-6">
+                    第三方身份标识的消失，使得传统的、基于用户级追踪的归因模型（如末次点击或多点触控归因MTA）变得越来越不可靠。这引发了一场深刻的"衡量危机"。
+                </div>
+
+                <div class="noble-text mb-6">
+                    <span class="font-semibold text-aureate-whisper">问题的核心</span>：营销人员对他们的数据失去了信心。只有<span class="exclusive-number">18%</span>的人对正确归因应用安装的能力感到"非常有信心"。高达<span class="exclusive-number">74%</span>的受访者表示，隐私法规正在造成代价高昂的衡量盲区。
+                </div>
+
+                <div class="noble-text mb-6">
+                    <span class="font-semibold text-aureate-whisper">未来的衡量范式</span>：行业正朝着一种"三角测量"或混合方法发展，结合多种隐私安全方法的洞察：MMM用于自上而下的战略性预算分配、增量测试用于颗粒化的因果关系验证、数据净室用于安全的跨合作伙伴协作与衡量。
+                </div>
+
+                <div class="noble-text">
+                    这一新范式要求营销思维从确定性的、用户级的追踪，转变为概率性的、聚合性的分析。这对从业者的技能提出了新的要求，并需要他们对统计模型有更高的接受度。这种文化和技能上的差距，为咨询公司和专业的分析服务商创造了巨大的机会。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 第五部分：投资策略 -->
+    <section id="investment-strategy" class="imperial-section" data-title="第五部分：投资策略综合展望">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl mb-12 text-center flex items-center justify-center">
+                <span class="material-icons mr-3" style="color: var(--sovereign-gold);">trending_up</span>
+                第五部分：投资策略综合展望
+            </h2>
+
+            <div class="authority-card max-w-4xl mx-auto mb-8">
+                <h3 class="sovereign-heading text-2xl mb-6">5.1. 新的价值创造地图</h3>
+                <div class="noble-text mb-6">
+                    在行业重构的背景下，价值的流动路径变得清晰：
+                </div>
+
+                <div class="noble-text mb-6">
+                    <span class="font-semibold text-aureate-whisper">价值增值领域</span>：
+                </div>
+
+                <ul class="noble-text text-sm space-y-3 ml-4 mb-6">
+                    <li class="flex items-start">
+                        <span class="text-sovereign-gold mr-3 mt-1">●</span>
+                        <span><span class="font-semibold">第一方数据所有者</span>：这是新价值链的顶端。包括大型"围墙花园"、电商领导者、任何拥有大规模、高参与度、直面消费者（DTC）关系的公司</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-sovereign-gold mr-3 mt-1">●</span>
+                        <span><span class="font-semibold">独立、客观的平台</span>：如The Trade Desk，为开放互联网提供了透明、高效的交易方式</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-sovereign-gold mr-3 mt-1">●</span>
+                        <span><span class="font-semibold">集成数据与AI平台</span>：提供基础技术层（CDP、AI模型、衡量解决方案）的公司</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-sovereign-gold mr-3 mt-1">●</span>
+                        <span><span class="font-semibold">混合型代理/咨询模式</span>：成功地将战略咨询、技术实施和创意执行融为一体的公司</span>
+                    </li>
+                </ul>
+
+                <div class="noble-text">
+                    <span class="font-semibold text-aureate-whisper">价值减损领域</span>：无差异化的AdTech中间商、未能整合数据和AI的传统创意代理商、缺乏第一方数据的发布商，将面临严重的利润压力。
+                </div>
+            </div>
+
+            <div class="authority-card max-w-4xl mx-auto mb-8">
+                <h3 class="sovereign-heading text-2xl mb-6">5.2. 关键风险与机遇</h3>
+                <div class="noble-text mb-6">
+                    <span class="font-semibold text-aureate-whisper">主要风险</span>：监管风险（反垄断审查）、技术风险（开放互联网身份解决方案的可行性）、执行风险（传统公司的转型难度）。
+                </div>
+
+                <div class="noble-text">
+                    <span class="font-semibold text-aureate-whisper">投资机遇</span>：关注具有防御性护城河的市场领导者，如"围墙花园"（GOOGL, META, AMZN）、领先的独立DSP（TTD），以及集成的MarTech平台（ADBE, CRM）。私募市场中的并购目标将是拥有独特数据资产、专业AI能力的公司。
+                </div>
+            </div>
+
+            <div class="authority-card max-w-4xl mx-auto">
+                <h3 class="sovereign-heading text-2xl mb-6">5.3. 可操作的投资建议</h3>
+                <div class="noble-text mb-6">
+                    <span class="font-semibold text-aureate-whisper">对于机构投资者（公开市场）</span>：采取"杠铃策略"，核心仓位配置于具有主导地位、现金流充裕的"围墙花园"，同时投资于高增长的"开放互联网"领导者。密切关注广告控股集团的转型进展，优先考虑那些在整合数据/技术方面取得切实成功的公司。审慎评估AI的财务影响。
+                </div>
+
+                <div class="noble-text">
+                    <span class="font-semibold text-aureate-whisper">对于高净值客户（多元化/私募）</span>：探索专注于AdTech/MarTech领域的风险投资基金。考虑投资于新广告生态系统中的"镓和铲"——为所有参与者提供数据基础设施、身份解决方案和分析工具的公司。评估新兴市场社交电商、专业化CTV广告平台等细分领域的机会。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 结论 -->
+    <section id="conclusion" class="imperial-section" data-title="结论与最终建议">
+        <div class="sovereign-container">
+            <div class="disclaimer-card max-w-4xl mx-auto">
+                <h2 class="sovereign-heading text-2xl mb-6 text-center flex items-center justify-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">check_circle</span>
+                    结论：范式转移与新时代的投资逻辑
+                </h2>
+
+                <div class="executive-quote text-center mb-8">
+                    本报告的核心结论是，广告行业的基本属性已经发生了改变。它不再是一个单纯的"创意"行业，而是一个以<span class="text-sovereign-gold font-semibold">"技术和数据"为核心，并由创意赋能的行业</span>
+                </div>
+
+                <div class="disclaimer-text">
+                    <p class="mb-6">价值创造的重心已不可逆转地从制作广告转向了理解客户、合规触达并科学衡量。在这一新范式下，那些能够解决"我是谁（身份识别）"、"如何合规地找到你（数据激活）"以及"如何证明有效（效果衡量）"这些核心技术与数据问题的公司，正在成为新的价值中心。</p>
+
+                    <p class="mb-6">这解释了为何科技公司（谷歌、亚马逊、The Trade Desk、Salesforce）的表现优于传统的服务型公司。传统代理商正被迫转型为技术集成商和数据咨询顾问，以求在新的价值链中找到自己的位置。</p>
+
+                    <p class="mb-6">这种"大重构"必然会导向一场"大整合"。利润压力、技术转型的高昂成本（尤其是在AI领域）以及价值链不同部分之间的协同效应，使得大规模并购几乎成为必然。行业当前的碎片化和低效率状态难以为继。未来几年，我们可能会见证一波整合浪潮，最终形成少数几个集咨询、数据、技术、媒体和创意于一体的端到端"增长平台"。</p>
+
+                    <p>对于投资者而言，理解这一根本性的范式转移是至关重要的。投资的重点应从评估单个广告活动的创意优劣，转向评估企业在数据资产、技术基础设施、隐私合规能力和商业模式整合方面的长期竞争优势。成功识别并投资于那些在这场重构中占据有利地位的公司，将是在这个万亿美元产业的变革中获取超额回报的关键。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 引用文献 -->
+    <section id="references" class="imperial-section" data-title="引用文献">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl mb-12 text-center flex items-center justify-center">
+                <span class="material-icons mr-3" style="color: var(--sovereign-gold);">link</span>
+                引用文献
+            </h2>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl mx-auto">
+                <div class="citation-item">
+                    <a href="https://cloud.insight.insiderintelligence.com/20250331-LiveRamp-Report_RegPageProgPro?utm_source=chatgpt.com" target="_blank" rel="noopener">
+                        1. Worldwide Ad Spending Forecast 2025 - eMarketer
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://abbeymecca.com/worldwide-ad-spending-to-hit-1-trillion-in-2025-what-it-means-for-businesses-marketers-and-nonprofits/" target="_blank" rel="noopener">
+                        2. Global Ad Spending to Hit $1 Trillion in 2025 - Abbey Mecca
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.adnews.com.au/news/emarketer-double-digit-advertising-spend-forecast" target="_blank" rel="noopener">
+                        3. Emarketer: Double Digit Advertising Spend Forecast - AdNews
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.imarcgroup.com/global-advertising-market" target="_blank" rel="noopener">
+                        4. Advertising Market Size, Share | Industry Report 2033 - IMARC Group
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://magnaglobal.com/advertising-proves-resilient-amidst-economic-uncertainty/" target="_blank" rel="noopener">
+                        5. Advertising Proves Resilient Amidst Economic Uncertainty - MAGNA Global
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://sensortower.com/blog/state-of-digital-advertising-2025" target="_blank" rel="noopener">
+                        6. State of Digital Advertising 2025 - Sensor Tower
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.grandviewresearch.com/industry-analysis/digital-advertising-market-report" target="_blank" rel="noopener">
+                        7. Digital Advertising Market Size, Share | Industry Report - Grand View Research
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.grandviewresearch.com/horizon/outlook/digital-advertising-market/china" target="_blank" rel="noopener">
+                        8. China Digital Advertising Market Size & Outlook - Grand View Research
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.chinatradingdesk.com/post/advertising-trends-in-china-2025-reshaping-value-and-growth" target="_blank" rel="noopener">
+                        9. Advertising Trends in China 2025 - ChinaTradingDesk
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.grandviewresearch.com/horizon/outlook/digital-advertising-market/europe" target="_blank" rel="noopener">
+                        10. Europe Digital Advertising Market - Grand View Research
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.reportlinker.com/clp/global/8480" target="_blank" rel="noopener">
+                        11. Advertising Market Outlook 2024-2028 - ReportLinker
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.ana.net/content/show/id/37679" target="_blank" rel="noopener">
+                        12. Study Confirms Advertising Is Major Contributor to GDP - ANA
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.ana.net/content/show/id/pr-2022-05-advertising-drives-sales" target="_blank" rel="noopener">
+                        13. Advertising Drives Sales Study - The Advertising Coalition
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.monetizemore.com/blog/best-guide-to-display-lumascape/" target="_blank" rel="noopener">
+                        14. Best Guide to Display Lumascape - MonetizeMore
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://blog.adunity.com/taxonomy-of-species-in-the-programmatic-ecosystem/" target="_blank" rel="noopener">
+                        15. Taxonomy of Species in The Programmatic Ecosystem - AdUnity Blog
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://lumapartners.com/lumascapes/" target="_blank" rel="noopener">
+                        16. LUMAscapes - LUMA Partners
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 免责声明 -->
+    <section id="disclaimer-section" class="imperial-section" data-title="免责声明">
+        <div class="sovereign-container">
+            <div class="disclaimer-card max-w-4xl mx-auto">
+                <h2 class="sovereign-heading text-2xl mb-6 text-center">免责声明</h2>
+                <div class="disclaimer-text">
+                    <p class="mb-4">本报告由虚空有物科技有限公司金融行业研究部编制，仅供机构投资者和高净值客户参考。本报告中的信息基于作者认为可靠的公开信息来源，但不保证其准确性、完整性或及时性。</p>
+                    <p class="mb-4">本报告不构成任何投资建议、买卖要约或任何证券交易的建议。读者应根据自身风险承受能力、投资目标和时间范围，寻求专业的财务、法律或税务顾问意见，做出独立的投资决策。</p>
+                    <p>虚空有物科技有限公司及其相关人士不对使用本报告信息而产生的任何直接或间接损失承担责任。本报告信息可能因市场条件变化而过时。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // 精美垂直进度条系统（完整功能）
+        const progressBar = document.querySelector('.reading-progress');
+        const progressFill = document.querySelector('.reading-progress-fill');
+        const progressTooltip = document.getElementById('progress-tooltip');
+        const sections = document.querySelectorAll('section[id], header[id]');
+
+        let currentSectionTitle = '';
+        let sectionsData = [];
+
+        // 初始化章节数据
+        function initSections() {
+            sectionsData = Array.from(sections).map(section => ({
+                id: section.getAttribute('id'),
+                title: section.getAttribute('data-title') || section.querySelector('h1, h2')?.textContent || '未知章节',
+                offsetTop: section.offsetTop,
+                offsetHeight: section.offsetHeight
+            }));
+        }
+
+        function updateProgress() {
+            const scrolled = window.pageYOffset;
+            const maxHeight = document.body.scrollHeight - window.innerHeight;
+            const progress = (scrolled / maxHeight) * 100;
+
+            progressFill.style.height = `${progress}%`;
+
+            // 获取当前章节
+            let currentSection = '';
+            sectionsData.forEach(section => {
+                if (scrolled >= section.offsetTop - 300) {
+                    currentSection = section.id;
+                    currentSectionTitle = section.title;
+                }
+            });
+        }
+
+        // 点击进度条跳转
+        progressBar.addEventListener('click', (e) => {
+            const rect = progressBar.getBoundingClientRect();
+            const clickY = e.clientY - rect.top;
+            const progressHeight = rect.height;
+            const clickPercent = clickY / progressHeight;
+
+            const maxHeight = document.body.scrollHeight - window.innerHeight;
+            const targetScroll = maxHeight * clickPercent;
+
+            window.scrollTo({
+                top: targetScroll,
+                behavior: 'smooth'
+            });
+        });
+
+        // 悬停显示标题
+        progressBar.addEventListener('mouseenter', () => {
+            if (currentSectionTitle) {
+                progressTooltip.textContent = currentSectionTitle;
+                progressTooltip.classList.add('show');
+            }
+        });
+
+        progressBar.addEventListener('mouseleave', () => {
+            progressTooltip.classList.remove('show');
+        });
+
+        progressTooltip.addEventListener('mouseenter', () => {
+            progressTooltip.classList.add('show');
+        });
+
+        progressTooltip.addEventListener('mouseleave', () => {
+            progressTooltip.classList.remove('show');
+        });
+
+        // 窗口大小改变时重新计算
+        window.addEventListener('resize', () => {
+            setTimeout(initSections, 100);
+        });
+
+        window.addEventListener('scroll', updateProgress);
+
+        // 页面加载完成后初始化
+        window.addEventListener('load', () => {
+            initSections();
+            updateProgress();
+        });
+
+        // DOM加载完成立即初始化
+        document.addEventListener('DOMContentLoaded', () => {
+            initSections();
+            updateProgress();
+        });
+    </script>
+</body>
+</html>

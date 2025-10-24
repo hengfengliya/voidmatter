@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中国电信增值服务行业深度分析：构建新数字基础设施的投资框架</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700;800;900&family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        :root {
+            --obsidian-black: #0A0A0A;
+            --midnight-black: #151515;
+            --shadow-black: #1F1F1F;
+            --charcoal-deep: #2A2A2A;
+            --sovereign-gold: #B8860B;
+            --imperial-gold: #DAA520;
+            --aureate-whisper: #F4E4BC;
+            --golden-shadow: #8B6914;
+            --platinum-mist: #E5E5E5;
+            --sterling-silver: #C0C0C0;
+            --graphite-steel: #696969;
+            --charcoal-whisper: #808080;
+            --ruby-accent: #8B0000;
+            --emerald-depth: #006400;
+            --sapphire-authority: #1e3a8a;
+        }
+        * {margin: 0; padding: 0; box-sizing: border-box;}
+        body {font-family: 'Inter', sans-serif; background: linear-gradient(135deg, var(--obsidian-black) 0%, var(--midnight-black) 40%, var(--shadow-black) 100%); color: var(--platinum-mist); line-height: 1.8; letter-spacing: 0.02em; overflow-x: hidden; min-height: 100vh;}
+        .imperial-title {font-family: 'Playfair Display', serif; font-weight: 200; letter-spacing: 0.12em; line-height: 1.05; color: var(--aureate-whisper); text-shadow: 0 3px 12px rgba(184, 134, 11, 0.4);}
+        .imperial-subtitle {font-family: 'Playfair Display', serif; font-weight: 300; letter-spacing: 0.08em; line-height: 1.15; color: var(--imperial-gold); text-shadow: 0 2px 8px rgba(218, 165, 32, 0.3);}
+        .imperial-tagline {font-family: 'Inter', sans-serif; font-weight: 200; letter-spacing: 0.06em; line-height: 1.4; color: var(--sterling-silver); font-style: italic;}
+        .imperial-dedication {font-family: 'Inter', sans-serif; font-weight: 300; letter-spacing: 0.04em; line-height: 1.3; color: var(--imperial-gold);}
+        .imperial-dedication-sub {font-family: 'Inter', sans-serif; font-weight: 200; letter-spacing: 0.05em; line-height: 1.3; color: var(--sterling-silver); font-style: italic;}
+        .sovereign-heading {font-family: 'Playfair Display', serif; font-weight: 600; letter-spacing: 0.06em; color: var(--imperial-gold); text-shadow: 0 1px 4px rgba(218, 165, 32, 0.4);}
+        .noble-text {font-weight: 300; letter-spacing: 0.03em; line-height: 2.2; color: var(--platinum-mist);}
+        .exclusive-number {font-family: 'Playfair Display', serif; font-weight: 700; color: var(--sovereign-gold); text-shadow: 0 1px 3px rgba(184, 134, 11, 0.5);}
+        .sovereign-container {max-width: 1400px; margin: 0 auto; padding: 0 5rem;}
+        .imperial-section {margin: 12rem 0; position: relative;}
+        .golden-glass-card {background: radial-gradient(circle at 30% 30%, rgba(218, 165, 32, 0.12) 0%, transparent 50%), linear-gradient(135deg, rgba(244, 228, 188, 0.06) 0%, rgba(218, 165, 32, 0.04) 30%, rgba(184, 134, 11, 0.03) 70%); border: 1px solid rgba(218, 165, 32, 0.15); border-radius: 4px; padding: 2.5rem; position: relative; backdrop-filter: blur(20px); box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6), inset 0 1px 1px rgba(244, 228, 188, 0.08);}
+        .authority-card {background: linear-gradient(145deg, rgba(21, 21, 21, 0.9) 0%, rgba(31, 31, 31, 0.8) 100%); border: 1px solid rgba(184, 134, 11, 0.15); border-radius: 2px; padding: 3rem; position: relative; backdrop-filter: blur(20px); box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6), inset 0 1px 1px rgba(244, 228, 188, 0.05);}
+        .investment-logic-card {background: radial-gradient(circle at 20% 80%, rgba(218, 165, 32, 0.08) 0%, transparent 60%), linear-gradient(135deg, rgba(184, 134, 11, 0.06) 0%, rgba(139, 105, 20, 0.04) 50%); border: 1px solid rgba(184, 134, 11, 0.12); border-radius: 2px; padding: 3rem; position: relative; backdrop-filter: blur(20px); box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6), inset 0 1px 1px rgba(244, 228, 188, 0.06);}
+        .imperial-table {width: 100%; border-collapse: separate; border-spacing: 0; background: rgba(15, 15, 15, 0.8); backdrop-filter: blur(15px); border: 1px solid rgba(184, 134, 11, 0.2); border-radius: 2px;}
+        .imperial-table th {background: rgba(184, 134, 11, 0.08); padding: 2rem 1.5rem; text-align: left; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--imperial-gold); border-bottom: 1px solid rgba(184, 134, 11, 0.2);}
+        .imperial-table td {padding: 1.8rem 1.5rem; border-bottom: 1px solid rgba(184, 134, 11, 0.05); font-weight: 300;}
+        .sovereign-divider {height: 1px; background: linear-gradient(90deg, transparent 0%, rgba(184, 134, 11, 0.3) 30%, rgba(184, 134, 11, 0.6) 50%, rgba(184, 134, 11, 0.3) 70%, transparent 100%); margin: 8rem 0; position: relative;}
+        .sovereign-divider::before {content: '◆'; position: absolute; top: -8px; left: 50%; transform: translateX(-50%); color: var(--sovereign-gold); font-size: 16px; background: var(--obsidian-black); padding: 0 1rem;}
+        .reading-progress {position: fixed; top: 50%; right: 2rem; width: 4px; height: 200px; transform: translateY(-50%); background: linear-gradient(180deg, rgba(184, 134, 11, 0.2) 0%, rgba(218, 165, 32, 0.3) 30%, rgba(244, 228, 188, 0.4) 60%, rgba(218, 165, 32, 0.3) 85%, rgba(139, 105, 20, 0.2) 100%); z-index: 1001; box-shadow: 0 0 12px rgba(184, 134, 11, 0.6), 2px 0 8px rgba(184, 134, 11, 0.3), inset 1px 0 2px rgba(244, 228, 188, 0.4); border-radius: 2px; cursor: pointer;}
+        .reading-progress-fill {position: absolute; bottom: 0; left: 0; width: 100%; background: linear-gradient(180deg, var(--golden-shadow) 0%, var(--sovereign-gold) 50%, var(--imperial-gold) 100%); border-radius: 2px; transition: height 0.1s ease; box-shadow: inset 0 1px 2px rgba(244, 228, 188, 0.3), 0 0 8px rgba(184, 134, 11, 0.4);}
+        .progress-tooltip {position: fixed; top: 50%; right: 7rem; transform: translateY(-50%); background: linear-gradient(135deg, rgba(15, 15, 15, 0.95) 0%, rgba(31, 31, 31, 0.9) 100%); border: 1px solid rgba(184, 134, 11, 0.25); border-radius: 8px; padding: 0.8rem 2rem; font-family: 'Playfair Display', serif; font-size: 0.85rem; font-weight: 300; color: var(--imperial-gold); backdrop-filter: blur(20px); box-shadow: 0 8px 32px rgba(0, 0, 0, 0.7), 0 0 20px rgba(184, 134, 11, 0.1); opacity: 0; visibility: hidden; transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1); z-index: 1002; white-space: nowrap; letter-spacing: 0.03em;}
+        .progress-tooltip.show {opacity: 1; visibility: visible; transform: translateY(-50%) translateX(-8px);}
+        .citation-item {padding: 1.5rem 2rem; margin: 0.8rem 0; background: linear-gradient(135deg, rgba(21, 21, 21, 0.8) 0%, rgba(31, 31, 31, 0.6) 100%); border: 1px solid rgba(184, 134, 11, 0.15); border-radius: 3px; transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1); position: relative; overflow: hidden;}
+        .citation-item a {color: var(--platinum-mist); text-decoration: none; font-size: 0.85rem; line-height: 1.7; font-weight: 300; transition: color 0.4s ease; display: block; position: relative;}
+        .citation-item:hover a {color: var(--aureate-whisper); padding-left: 1rem;}
+        @media (max-width: 768px) {
+            .sovereign-container {padding: 0 1.5rem;}
+            .imperial-section {margin: 6rem 0;}
+        }
+        ::selection {background: rgba(184, 134, 11, 0.2); color: var(--aureate-whisper);}
+        ::-webkit-scrollbar {width: 6px;}
+        ::-webkit-scrollbar-track {background: var(--obsidian-black);}
+        ::-webkit-scrollbar-thumb {background: var(--sovereign-gold); border-radius: 3px;}
+    </style>
+</head>
+<body>
+    <div class="reading-progress"><div class="reading-progress-fill"></div></div>
+    <div class="progress-tooltip" id="progress-tooltip"></div>
+    <header id="header" class="min-h-screen flex items-center justify-center relative" data-title="中国电信增值服务行业深度分析：构建新数字基础设施的投资框架">
+        <div class="sovereign-container text-center relative z-10">
+            <div class="mb-16">
+                <h1 class="imperial-title text-5xl md:text-7xl mb-6">中国电信增值服务行业深度分析：构建新数字基础设施的投资框架</h1>
+                <h2 class="imperial-subtitle text-2xl md:text-4xl mb-12 opacity-90">2025年Q4深度投研分析</h2>
+            </div>
+            <div class="mb-12">
+                <div class="imperial-tagline text-sm md:text-base opacity-75 max-w-4xl mx-auto">China Telecommunications Value-Added Services: Deep Investment Research Analysis for Building New Digital Infrastructure Framework<br class="md:hidden">Deep Investment Research Analysis in Q4 2025</div>
+            </div>
+            <div class="mb-16">
+                <div class="imperial-dedication text-sm md:text-base">致：机构投资者与高净值客户</div>
+                <div class="imperial-dedication-sub text-xs md:text-sm opacity-60 mt-2">For: Institutional Investors and High Net Worth Clients</div>
+            </div>
+            <div class="golden-glass-card inline-block">
+                <div class="text-xs uppercase tracking-[0.2em] opacity-50 mb-4 font-light">本报告发布于 · Published on</div>
+                <div class="sovereign-heading text-base"><span id="date-cn" class="exclusive-number">2025年Q4</span><span class="mx-4 text-sovereign-gold opacity-40">◆</span><span id="date-en" class="exclusive-number">Q4 2025</span></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="imperial-section">
+        <div class="sovereign-container">
+            <div class="authority-card text-center">
+                <h2 class="sovereign-heading text-2xl mb-8">免责声明</h2>
+                <div class="noble-text max-w-4xl mx-auto">本报告由资深行业分析师电信增值服务研究部编制，旨在为机构投资者与高净值客户提供关于电信增值服务行业的系统性认知框架。报告中的信息和数据均来源于公开可查的资料，我们力求报告内容的客观、准确，但不对其完整性或准确性做出任何保证。本报告中的分析、结论和观点仅为研究目的，不构成任何形式的投资建议。投资者应基于自身的独立判断进行投资决策，并自行承担相关风险。</div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <section id="chapter-one" class="imperial-section" data-title="第一章：行业基石">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-5xl mb-16 text-center">第一章：行业基石——电信增值服务的定义、分类与监管框架</h2>
+
+            <div class="authority-card mb-16">
+                <h3 class="sovereign-heading text-2xl mb-6">1.1 官方界定：从《电信业务分类目录》解析增值电信服务</h3>
+                <div class="noble-text space-y-6">
+                    <p>根据《中华人民共和国电信条例》，中国的电信业务被明确划分为基础电信业务和增值电信业务两大类别。基础电信业务主要涵盖公共网络基础设施、公共数据传送和基本话音通信服务，是国家信息通信的基石。而增值电信业务（Value-Added Telecommunications Services, VATS）则被官方界定为利用公共网络基础设施提供的电信与信息服务的业务。这一定义清晰地将增值电信服务定位为构建于基础电信网络之上的应用与服务层，是数字经济繁荣发展的直接载体。</p>
+                    <p>行业监管与市场准入的核心法律文件是工业和信息化部（工信部）发布的《电信业务分类目录》。该目录是《电信条例》的重要附件，对增值电信业务进行了详细的划分和定义。目前最新有效版本为2015年版，并于2019年为适应第五代移动通信技术的发展，增补了"第五代数字蜂窝移动通信业务"相关内容。对于所有市场参与者而言，该目录不仅是申请相应业务牌照、界定经营范围的根本法律依据，也是投资者研判企业业务合规性、理解其市场定位的起点。</p>
+                </div>
+            </div>
+
+            <div class="authority-card mb-16">
+                <h3 class="sovereign-heading text-2xl mb-6">1.2 核心分类：B1类与B2类业务详解</h3>
+                <div class="noble-text space-y-6">
+                    <p>《电信业务分类目录（2015年版）》将增值电信业务进一步细分为两大子类，即B1类业务和B2类业务，这种划分体现了监管机构对于不同业务属性和市场影响力的差异化管理思路。</p>
+                    <p>B1类业务被定义为"基于设施和资源类的业务"。此类业务的共同特点是与物理基础设施（如数据中心机房）和核心电信资源（如带宽、IP地址）紧密耦合，对国家信息安全、网络稳定和社会秩序具有重大影响。因此，监管机构对此类业务设置了较高的准入门槛和更严格的安全管理要求。本报告重点分析的业务，如互联网数据中心（IDC）业务、内容分发网络（CDN）业务、国内互联网虚拟专用网（IP-VPN）业务以及互联网接入服务（ISP）业务，均属于B1类。</p>
+                    <p>B2类业务被定义为"基于公共应用平台类的业务"。与B1类相比，B2类业务更侧重于应用和信息服务层面，通常进入门槛相对宽松，旨在鼓励市场竞争和技术创新。典型的B2类业务包括：在线数据处理与交易处理业务、信息服务业务、以及呼叫中心业务。</p>
+                </div>
+            </div>
+
+            <div class="authority-card">
+                <h3 class="sovereign-heading text-2xl mb-6">1.3 准入与合规：牌照制度与政策演变</h3>
+                <div class="noble-text space-y-6">
+                    <p>在中国境内从事任何增值电信业务，都必须依法获得工信部或各省、自治区、直辖市通信管理局颁发的《增值电信业务经营许可证》，即行业俗称的"牌照"。申请牌照需满足一系列法定条件，包括：经营者为依法设立的公司；具备与经营活动相适应的资金和专业人员；拥有必要的场地、设施及技术方案；以及公司及其主要人员无电信业务经营失信记录等。</p>
+                    <p>外资准入政策是影响行业竞争格局的关键变量。2024年4月，工信部发布《关于开展增值电信业务扩大对外开放试点工作的通告》，决定在北京、上海、海南、深圳四个试点地区，放开互联网数据中心（IDC）、内容分发网络（CDN）等部分增值电信业务的外资股比限制，这意味着外资在这些地区可以设立全资子公司从事相关业务。</p>
+                    <p>与此同时，数据安全与合规监管日益收紧。随着《网络安全法》、《数据安全法》及《个人信息保护法》的全面实施，云服务商、IDC服务商等作为关键的数据处理者，其法律责任被大幅强化。这些法律法规要求企业必须建立健全数据分类分级保护制度，履行数据全生命周期的安全保护义务。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <section id="chapter-two" class="imperial-section" data-title="第二章：产业全景">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-5xl mb-16 text-center">第二章：产业全景——生态系统、价值链与商业模式</h2>
+
+            <div class="authority-card mb-16">
+                <h3 class="sovereign-heading text-2xl mb-6">2.1 价值链解构</h3>
+                <div class="noble-text space-y-6">
+                    <p>电信增值服务行业的价值链结构清晰，呈现出典型的三层模型，上游为基础资源与核心技术的提供者，中游为整合资源并提供服务的增值服务商，下游则是需求广泛的各行各业最终用户。</p>
+                    <p>上游是整个数字基础设施的物理与技术基石，技术壁垒高，市场呈现高度集中的格局。硬件设备方面，AI芯片（特别是GPU）已成为价值链中最关键的一环，NVIDIA凭借其CUDA生态系统在数据中心GPU市场占据了高达94%的绝对主导地位。虚拟化软件是构建云计算环境的基础，其中VMware长期占据市场领导地位。</p>
+                    <p>中游服务商是价值链的核心环节，他们通过采购、整合上游的软硬件资源和基础电信资源，构建起服务平台，以不同的商业模式向下游客户提供服务。这一层级的参与者类型多样，包括提供IaaS/PaaS服务的云计算厂商、提供机柜托管服务的中立IDC服务商、以及提供内容加速服务的专业CDN服务商。</p>
+                    <p>下游覆盖了国民经济的千行百业，是增值电信服务的最终需求来源和价值实现端。早期，VATS的主要客户集中在互联网行业。随着数字化转型的深入，需求已全面渗透至金融、政务、工业制造、交通物流、医疗健康等传统行业。</p>
+                </div>
+            </div>
+
+            <div class="authority-card">
+                <h3 class="sovereign-heading text-2xl mb-6">2.2 商业模式矩阵</h3>
+                <div class="noble-text space-y-6">
+                    <p>电信增值服务商根据其提供的服务类型，形成了多样化的商业模式矩阵：</p>
+                    <p>基础设施即服务（IaaS）与平台即服务（PaaS）是云计算的核心模式，服务商提供标准化的计算、存储、网络等IT资源或开发平台。其主流计费方式为按需付费（Pay-as-you-go），即根据用户实际使用的资源量进行计费，为客户提供了极大的灵活性和成本效益。</p>
+                    <p>软件即服务（SaaS）的模式通常采用订阅制（Subscription），即用户按月或按年支付固定费用以获取软件使用权。主机托管（Colocation）是传统IDC服务商的主要商业模式。CDN服务通常有两种主流计费模式：按带宽峰值计费和按实际使用流量计费。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <section id="chapter-three" class="imperial-section" data-title="第三章：核心赛道">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-5xl mb-16 text-center">第三章：核心赛道深度剖析：数字经济的"底座"与"引擎"</h2>
+
+            <div class="authority-card mb-16">
+                <h3 class="sovereign-heading text-2xl mb-6">3.1 B1类业务：云计算与数据中心</h3>
+                <div class="noble-text space-y-6">
+                    <p>云计算市场正由生成式AI引爆新一轮增长周期。据Synergy Research Group的数据，2024年全球云基础设施服务市场规模已达3300亿美元，其中生成式AI贡献了自2022年底以来的半数增长。中国市场表现尤为强劲，中国信通院数据显示，2023年中国云计算市场规模达到6165亿元人民币，同比增速高达35.5%。</p>
+                    <p>中国公有云市场高度集中，且格局正从"一超多强"向群雄逐鹿演变。根据Canalys的数据，2023年第四季度，阿里云以39%的市场份额保持领先，华为云（19%）和腾讯云（16%）紧随其后。运营商系云厂商也在迅速崛起，成为市场的重要力量。</p>
+                    <p>互联网数据中心（IDC）作为云计算的物理载体，中国IDC市场规模持续扩张。作为云计算的物理载体，中国IDC市场规模持续扩张。市场格局主要由三大基础电信运营商和第三方中立服务商构成。"东数西算"工程是重塑中国IDC地理布局的国家级战略工程，其核心目标是引导东部沿海地区对时延不敏感的算力需求，有序迁移至可再生能源丰富、气候适宜的西部地区。</p>
+                    <p>AI大模型训练需要部署大规模的GPU集群，其单机柜功率密度可达传统服务器机柜的数倍甚至数十倍，对供电和散热系统提出了巨大挑战。高盛预测，仅AI就将驱动全球数据中心电力需求到2030年增长160%。</p>
+                </div>
+            </div>
+
+            <div class="authority-card mb-16">
+                <h3 class="sovereign-heading text-2xl mb-6">3.2 B1类业务：CDN与边缘计算</h3>
+                <div class="noble-text space-y-6">
+                    <p>随着高清视频、直播和短视频的普及，全球CDN市场保持高速增长。据Fortune Business Insights预测，全球市场规模将从2024年的255.6亿美元增长至2032年的1323.2亿美元，CAGR高达23.3%。</p>
+                    <p>中国CDN市场竞争异常激烈，早期由专业CDN厂商主导，后随着云厂商以低价策略入局，市场格局被重塑。目前已形成以阿里云、腾讯云等云厂商和网宿科技等专业厂商为主导的竞争局面。</p>
+                    <p>CDN的本质是通过遍布全球的边缘节点缓存内容，缩短用户访问延迟。行业的技术趋势正清晰地从提供单一的内容缓存与分发，向具备数据处理、实时计算、存储和安全功能的综合性边缘计算节点演进。</p>
+                    <p>5G网络所具备的大带宽、低时延和广连接特性，为众多新型应用场景的实现提供了可能。这些场景对数据处理的实时性要求极高，因此必须将计算能力下沉到离用户和数据源更近的网络边缘。</p>
+                </div>
+            </div>
+
+            <div class="authority-card">
+                <h3 class="sovereign-heading text-2xl mb-6">3.3 B2类业务：通信平台即服务</h3>
+                <div class="noble-text space-y-6">
+                    <p>全球通信云市场正经历爆发式增长。据多家市场研究机构预测，全球CPaaS市场正以超过25%的年均复合增长率高速扩张。与此同时，提供一体化通信解决方案的UCaaS市场也增长迅速，预计到2030年全球市场规模将超过2600亿美元。</p>
+                    <p>CPaaS的核心价值在于将传统的通信能力（如短信、语音通话、视频、即时消息）解耦，并通过API的形式，方便开发者将其灵活地嵌入到企业自身的应用程序和业务流程中。其商业模式通常是按API的调用量或使用时长付费。</p>
+                    <p>AI技术正在为通信云服务注入新的活力。Gartner预测，到2028年，将有高达80%的企业利用CPaaS平台，将生成式AI能力集成到其客户体验策略中。这意味着CPaaS不仅是通信能力的管道，更将成为企业引入和应用AI的重要入口。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <section id="chapter-four" class="imperial-section" data-title="第四章：增长驱动力">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-5xl mb-16 text-center">第四章：增长引擎与未来展望：驱动力、挑战与投资逻辑</h2>
+
+            <div class="authority-card mb-16">
+                <h3 class="sovereign-heading text-2xl mb-6">4.1 核心驱动力：三驾马车</h3>
+                <div class="noble-text space-y-6">
+                    <p>电信增值服务行业的长期增长由三大结构性力量共同驱动：企业数字化转型、5G普及与AI革命。</p>
+                    <p>企业数字化转型是VATS行业最根本、最持久的增长基石。全球范围内的企业都在加速将其IT基础设施从传统的本地自建模式迁移至云端。根据Flexera的报告，已有近半数的企业工作负载和数据部署在公有云上。在中国，IDC预测，到2028年，中国数字化转型市场的总体支出规模将超过7300亿美元。</p>
+                    <p>5G网络的规模化部署为数据流量的爆发式增长提供了强大的网络基础。截至2024年底，中国已建成425.1万个5G基站，5G移动电话用户渗透率达到56.7%。5G带来的不仅仅是网速的提升，更是应用场景的革命。</p>
+                    <p>人工智能是当前及未来数年内，驱动VATS行业实现指数级增长的最强劲引擎。生成式AI和大模型的兴起，特别是其训练阶段对海量GPU算力的需求，正以前所未有的规模推动着数据中心和云服务市场的扩张。</p>
+                </div>
+            </div>
+
+            <div class="authority-card mb-16">
+                <h3 class="sovereign-heading text-2xl mb-6">4.2 关键挑战</h3>
+                <div class="noble-text space-y-6">
+                    <p>尽管增长前景广阔，VATS行业同样面临着一系列严峻的挑战。B1类业务，特别是数据中心和云计算，是典型的资本密集型行业。企业需要持续投入巨额资金用于土地购置、机房建设、服务器采购和网络设备升级。</p>
+                    <p>数据中心是公认的"耗能大户"，其用电量占全社会用电总量的比例正逐年攀升。在中国"双碳"战略目标的大背景下，数据中心行业面临着来自政府的严格能耗总量控制和能源效率限制。</p>
+                    <p>无论是云计算、IDC还是CDN领域，市场竞争都已进入白热化阶段。特别是在公有云和CDN市场，价格战屡见不鲜，服务价格持续下探，严重侵蚀了服务商的利润空间。</p>
+                    <p>作为一个与国家安全和公共利益紧密相关的行业，VATS持续受到严格的监管。数据安全、网络安全、个人信息保护以及反垄断等领域的法律法规不断完善和演进。</p>
+                </div>
+            </div>
+
+            <div class="investment-logic-card">
+                <h3 class="sovereign-heading text-2xl mb-6">4.3 未来趋势与投资框架</h3>
+                <div class="noble-text space-y-6">
+                    <p>展望未来，技术创新和应用需求的演进将推动VATS行业呈现四大发展趋势：算力网络、云边端协同、AIOps、绿色数据中心。</p>
+                    <p>算力网络的最终愿景是构建一个全国一体化的算力网络体系。在这个体系中，算力将不再是孤立的数据中心资源，而是像水、电一样，成为一种可以被统一调度、按需分配、便捷使用的社会级基础资源。</p>
+                    <p>基于对行业驱动力、挑战和趋势的分析，为VATS行业构建一个有效的投资框架，应重点关注三个维度：护城河识别、资本回报效率（ROIC）评估、以及科学的估值方法选择。对于处于高速增长期的云计算公司，企业价值/销售收入是较为适用的估值方法。对于商业模式成熟、现金流稳定的数据中心，市价/调整后运营资金流是行业标准估值工具。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <section id="chapter-five" class="imperial-section" data-title="第五章：关键参与者">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-5xl mb-16 text-center">第五章：关键参与者竞争力分析</h2>
+
+            <div class="authority-card mb-16">
+                <h3 class="sovereign-heading text-2xl mb-6">5.1 中国市场主要玩家</h3>
+                <div class="noble-text space-y-6">
+                    <p>阿里云作为中国云计算市场的开创者和长期领导者，拥有最深厚的技术积累和最广泛的客户基础。其2023年第四季度市场份额为39%。为应对挑战，阿里云进行了深刻的战略调整，确立了"AI驱动、公共云优先"的核心战略。</p>
+                    <p>华为云近年来增长势头强劲，市场份额稳步提升至第二位（19%）。依托华为强大的研发能力、深厚的政企客户关系以及"云、网、边、端"的协同优势，华为云在政府、金融、制造等领域表现突出。</p>
+                    <p>腾讯云市场份额位居第三（16%），在经历了一段时间的盈利能力调整后，已重新恢复两位数的健康增长。其优势在于与腾讯强大的社交、游戏和内容生态的深度协同。</p>
+                    <p>万国数据作为中国规模最大的第三方中立数据中心服务商，凭借其在高标准数据中心的设计、建设和运营方面的专业能力，赢得了对可靠性要求极高的头部客户的信赖。</p>
+                    <p>世纪互联是中国领先的运营商中立和云中立的互联网数据中心服务提供商。作为微软Azure和Office 365云服务在中国大陆的独家运营方，积累了丰富的合规运营经验。</p>
+                    <p>网宿科技作为中国最早的专业CDN服务商，在CDN市场长年保持领先地位。面对行业向边缘计算的演进趋势，网宿科技积极进行战略转型，持续投入边缘计算平台的建设。</p>
+                </div>
+            </div>
+
+            <div class="authority-card">
+                <h3 class="sovereign-heading text-2xl mb-8 text-center">表5.1：主要中国电信增值服务商关键财务指标对比 (FY2024)</h3>
+                <div class="overflow-x-auto">
+                    <table class="imperial-table">
+                        <thead>
+                            <tr>
+                                <th>指标</th>
+                                <th>阿里云</th>
+                                <th>腾讯云</th>
+                                <th>万国数据</th>
+                                <th>世纪互联</th>
+                                <th>网宿科技</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-semibold">业务收入</td>
+                                <td class="exclusive-number">未提供</td>
+                                <td class="exclusive-number">¥2119.56亿</td>
+                                <td class="exclusive-number">未提供</td>
+                                <td class="exclusive-number">未提供</td>
+                                <td class="exclusive-number">¥49.32亿</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">收入同比增速</td>
+                                <td class="exclusive-number">未提供</td>
+                                <td class="exclusive-number">+4%</td>
+                                <td class="exclusive-number">未提供</td>
+                                <td class="exclusive-number">未提供</td>
+                                <td class="exclusive-number">+4.81%</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">市场份额</td>
+                                <td class="exclusive-number">IaaS: 39%</td>
+                                <td class="exclusive-number">IaaS: 16%</td>
+                                <td class="exclusive-number">IDC: 4.1%</td>
+                                <td class="exclusive-number">IDC: 5.2%</td>
+                                <td class="exclusive-number">CDN: 第一梯队</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">研发投入占比</td>
+                                <td class="exclusive-number">未提供</td>
+                                <td class="exclusive-number">未提供</td>
+                                <td class="exclusive-number">未提供</td>
+                                <td class="exclusive-number">未提供</td>
+                                <td class="exclusive-number">9.07%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <section id="chapter-six" class="imperial-section" data-title="第六章：结论与建议">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-5xl mb-16 text-center">第六章：结论与战略建议</h2>
+
+            <div class="authority-card mb-16">
+                <h3 class="sovereign-heading text-2xl mb-6">6.1 核心观点总结</h3>
+                <div class="noble-text space-y-6">
+                    <p>本报告通过对中国电信增值服务行业的全面剖析，形成了以下四个核心结论，为投资者构建认知框架提供指引。</p>
+                    <p>行业定位升级：电信增值服务已超越传统"增值"概念，演变为支撑整个数字经济运行的"新基建"。其核心价值不再局限于提供网络管道之上的附加功能，而是围绕数据要素，提供关键的计算、存储、传输和安全能力。</p>
+                    <p>AI驱动的范式革命：人工智能，特别是生成式AI的爆发，是当前及未来驱动VATS行业增长的最核心、最强劲的引擎。AI对算力的海量需求正在重塑数据中心的设计标准、云计算的服务模式以及整个价值链的利润分配。</p>
+                    <p>竞争维度跃迁：行业竞争的重心正在发生根本性转变，已从过去单纯追求规模扩张和价格优势的"量"的竞争，转向以技术创新、能源效率和生态系统构建为核心的"质"的竞争。</p>
+                    <p>投资逻辑重塑：对VATS行业的投资评估逻辑也必须与时俱进。投资者需要从过去对收入增长率的单一崇拜，转向对"增长质量"的综合评估，包括衡量企业资本运用效率的ROIC和衡量企业长期发展潜力的可持续发展能力。</p>
+                </div>
+            </div>
+
+            <div class="investment-logic-card">
+                <h3 class="sovereign-heading text-2xl mb-6">6.2 对机构投资者的战略建议</h3>
+                <div class="noble-text space-y-6">
+                    <p>基于上述分析，为在电信增值服务这一"新基建"浪潮中进行有效的资产配置，建议采取以下"核心-卫星-上游"的组合策略。</p>
+                    <p>核心配置：建议将投资组合的核心部分，配置于那些在AI技术栈和绿色高密度数据中心运营方面已经建立起明确、可持续竞争优势的头部企业。这些企业通常是市场份额领先的云服务商和IDC龙头。</p>
+                    <p>卫星配置：在核心配置之外，建议将部分资金作为卫星配置，投向在特定高增长细分赛道中具备独特技术优势的专业厂商，包括边缘计算解决方案提供商、CPaaS平台领导者、以及网络安全服务商。</p>
+                    <p>上游敞口：考虑到中下游市场竞争的激烈性和利润率压力，建议通过投资全球AI芯片领导者，来获得对整个VATS行业增长的上游敞口。这不仅可以直接分享AI算力需求爆发带来的最确定性红利，也可以在一定程度上对冲中下游服务商因价格战或技术迭代而面临的经营风险。</p>
+                    <p>风险管理：在执行上述配置策略时，必须建立常态化的风险监控机制。首先，密切跟踪政策监管动态，特别是数据安全、跨境数据流动、能耗指标分配及外资准入政策的任何变化。其次，持续审视主要厂商的资本支出计划与其资本回报率的变化趋势。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <section class="imperial-section bg-gradient-to-b from-transparent to-black bg-opacity-30">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl mb-12 text-center">引用文献</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl mx-auto">
+                <div class="citation-item"><a href="https://www.kwm.com/cn/zh/insights/latest-thinking/china-s-pilot-program-to-expand-opening-up-in-value-added-telecom-services.html" target="_blank">1. 工信部启动增值电信业务扩大对外开放试点</a></div>
+                <div class="citation-item"><a href="https://www.kwm.com/cn/zh/insights/latest-thinking/on-china-s-new-move-to-lift-foreign-ownership-limit-in-value-added-telecom-services.html" target="_blank">2. 千呼万唤始出来——解读工信部新政</a></div>
+                <div class="citation-item"><a href="https://www.leetsai.com.cn/m/405-1065-5189%2Cc1267521d.html?Lang=zh-cn" target="_blank">3. 工业和信息化部发布新版《电信业务分类目录》</a></div>
+                <div class="citation-item"><a href="https://www.waizi.org.cn/doc/64122.html" target="_blank">4. 《电信业务分类目录（2015年版）》（2019年修订版）全文</a></div>
+                <div class="citation-item"><a href="https://www.brightstonelawyers.com/Home/PublishDetail/e20a1a12-1831-49b2-8886-05514883c8ed" target="_blank">5. 详解电商企业的电信业务许可证资质</a></div>
+                <div class="citation-item"><a href="https://www.zhonglun.com/research/articles/52942.html" target="_blank">6. 中国试点扩大电信领域对外开放</a></div>
+                <div class="citation-item"><a href="https://www.zhonglun.com/upload/file/20240122/1705919179136022778.pdf" target="_blank">7. 全景透视AIGC的法律挑战与合规路径</a></div>
+                <div class="citation-item"><a href="https://www.zhonglun.com/research/articles/7998.html" target="_blank">8. 新基建背景下的投资新贵（中）：数据中心行业准入</a></div>
+                <div class="citation-item"><a href="https://ythzxfw.miit.gov.cn/bssx/alx/dxhhlw/art/2025/art_5898effe0ba947d0bbfeff111b09f7fe.html" target="_blank">9. 电信业务经营许可 - 政务服务</a></div>
+                <div class="citation-item"><a href="https://www.glo.com.cn/Content/2024/11-01/1539070046.html" target="_blank">10. 增值电信业务扩大对外开放试点启动</a></div>
+                <div class="citation-item"><a href="https://www.gov.cn/gongbao/content/2009/content_1417933.htm" target="_blank">11. 中华人民共和国工业和信息化部令（第5号）电信业务经营许可管理办法</a></div>
+                <div class="citation-item"><a href="https://www.cac.gov.cn/2022-07/22/c_1660132931014404.htm" target="_blank">12. 专家解读｜云服务安全评估关注度持续增加</a></div>
+                <div class="citation-item"><a href="https://www.kwm.com/cn/zh/insights/latest-thinking/review-and-outlook-network-security-and-data-compliance-in-2023.html" target="_blank">13. 起于三寸之坎，以就万仞之深——2023年网络安全与数据合规回顾与展望</a></div>
+                <div class="citation-item"><a href="https://law.uibe.edu.cn/docs/2020-07/20200720115829992496.pdf" target="_blank">14. 数据安全法：定位、立场与制度构造</a></div>
+                <div class="citation-item"><a href="https://www.secrss.com/articles/36298" target="_blank">15. 从刑事合规角度深度解读《网络数据安全管理条例》</a></div>
+                <div class="citation-item"><a href="https://www.deloitte.com/cn/zh/services/consulting-risk/analysis/management-of-cybersecurity-incident-reports.html" target="_blank">16. 德勤解读《网络安全事件报告管理办法（征求意见稿）》</a></div>
+                <div class="citation-item"><a href="https://www.yunpian.com/blog/article/60e6a917ad27a534df301477" target="_blank">17. 解读《数据安全法》，聚焦企业数据安全"新风向"</a></div>
+                <div class="citation-item"><a href="https://wallstreetcn.com/articles/3754912" target="_blank">18. 英伟达GPU，市占94%</a></div>
+                <div class="citation-item"><a href="https://companiesmarketcap.com/cloudflare/annual-reports-10k/" target="_blank">19. Cloudflare - Annual Reports (10-K)</a></div>
+                <div class="citation-item"><a href="https://www.precedenceresearch.com/data-center-cpu-market" target="_blank">20. Data Center CPU Market Size to Hit USD 28.04 Billion by 2034</a></div>
+                <div class="citation-item"><a href="https://www.grandviewresearch.com/industry-analysis/data-center-chip-market-report" target="_blank">21. Data Center Chip Market Size, Share | Industry Report, 2030</a></div>
+                <div class="citation-item"><a href="https://www.intc.com/news-events/press-releases/detail/1726/intel-reports-fourth-quarter-and-full-year-2024-financial" target="_blank">22. Intel Reports Fourth-Quarter and Full-Year 2024 Financial Results</a></div>
+                <div class="citation-item"><a href="https://ir.amd.com/news-events/press-releases/detail/1236/amd-reports-fourth-quarter-and-full-year-2024-financial-results" target="_blank">23. AMD Reports Fourth Quarter and Full Year 2024 Financial Results</a></div>
+                <div class="citation-item"><a href="https://pdf.dfcfw.com/pdf/H3_AP202310161601481363_1.pdf?1697470092000.pdf" target="_blank">24. Arista:交换机新锐,引领软硬件解耦趋势</a></div>
+                <div class="citation-item"><a href="https://pdf.dfcfw.com/pdf/H3_AP202412221641389856_1.pdf" target="_blank">25. 证券研究报告</a></div>
+                <div class="citation-item"><a href="http://www.21jingji.com/article/20230317/herald/0b9e460983135ccf1ae1635448cd04a3.html" target="_blank">26. 2023年IDC互联网数据中心研究报告</a></div>
+                <div class="citation-item"><a href="https://www.fortunebusinessinsights.com/optical-transceiver-market-108985" target="_blank">27. Optical Transceiver Market Size, Share, Trends | Forecast [2032]</a></div>
+                <div class="citation-item"><a href="https://www.zionmarketresearch.com/report/optical-transceiver-market" target="_blank">28. Optical Transceiver Market Report Size, Share, Value and Forecast 2032</a></div>
+                <div class="citation-item"><a href="https://www.verifiedmarketresearch.com/product/global-optical-transceiver-market/" target="_blank">29. Optical Transceiver Market Size, Share, Analysis & Forecast</a></div>
+                <div class="citation-item"><a href="https://www.21jingji.com/article/20240228/herald/a6ced51cacb64c6c40a56d9fd3c655c5.html" target="_blank">30. 2024年中国云计算行业研究报告</a></div>
+                <div class="citation-item"><a href="https://www.ibm.com/cn-zh/topics/vmware" target="_blank">31. 基本指南| 什么是VMware</a></div>
+                <div class="citation-item"><a href="https://pdf.dfcfw.com/pdf/H3_AP202107011501123351_1.pdf" target="_blank">32. 复盘Vmware：二十年创新史</a></div>
+                <div class="citation-item"><a href="https://www.gminsights.com/zh/industry-analysis/virtual-machine-market" target="_blank">33. 虚拟机市场规模及行业预测（2024-2032）</a></div>
+                <div class="citation-item"><a href="http://www.21jingji.com/article/20211104/herald/1cf887b82c823664bd7d7b191127a8c6.html" target="_blank">34. 2021年IDC互联网数据中心发展研究报告</a></div>
+                <div class="citation-item"><a href="https://pdf.dfcfw.com/pdf/H3_AP202311201611699772_1.pdf" target="_blank">35. 内容分发网络（CDN）头豹词条报告系列</a></div>
+                <div class="citation-item"><a href="https://www.cww.net.cn/article?id=589733" target="_blank">36. 流量新政下CDN行业发展趋势分析</a></div>
+                <div class="citation-item"><a href="http://www.caict.ac.cn/kxyj/qwfb/ztbg/202307/P020230706731265165322.pdf" target="_blank">37. 中国第三方数据中心服务商分析报告</a></div>
+                <div class="citation-item"><a href="http://www.caict.ac.cn/english/research/whitepapers/202311/P020231103312619845700.pdf" target="_blank">38. 云计算白皮书 - 中国信息通信研究院</a></div>
+                <div class="citation-item"><a href="https://cloud.google.com/discover/types-of-cloud-computing?hl=zh-CN" target="_blank">39. 云计算有哪些不同类型？</a></div>
+                <div class="citation-item"><a href="https://www.cdnetworks.com/cn/what-is-a-cdn/" target="_blank">40. 什么是CDN？内容分发网络解释</a></div>
+                <div class="citation-item"><a href="https://pdf.dfcfw.com/pdf/H3_AP202312141614129058_1.pdf" target="_blank">41. 海外SaaS系列报告之3：Twilio"云通信+ 数据"模式为何没跑通</a></div>
+                <div class="citation-item"><a href="https://m.10jqka.com.cn/20231214/c653153567.shtml" target="_blank">42. 券商观点|海外SaaS系列报告之3</a></div>
+                <div class="citation-item"><a href="https://www.insightaceanalytic.com/report/data-center-colocation-market/2473" target="_blank">43. Data Center Colocation Market Research Report 2025-2034</a></div>
+                <div class="citation-item"><a href="https://www.grandviewresearch.com/horizon/outlook/data-center-colocation-market/united-states" target="_blank">44. The United States Data Center Colocation Market Size & Outlook, 2030</a></div>
+                <div class="citation-item"><a href="http://www.cgws.com/cczq/ggdt/ccyj/202403/P020240321314128823895.pdf" target="_blank">45. 通信- 算力持续催化数据中心行业发展</a></div>
+                <div class="citation-item"><a href="https://pdf.dfcfw.com/pdf/H3_AP202306151590979109_1.pdf" target="_blank">46. 2023年中国互联网数据中心(IDC)行业词条报告</a></div>
+                <div class="citation-item"><a href="https://pdf.dfcfw.com/pdf/H3_AP202304271585976586_1.pdf" target="_blank">47. 2022年中国内容分发网络（CDN）服务市场行业报告</a></div>
+                <div class="citation-item"><a href="https://nvidianews.nvidia.com/_gallery/download_pdf/65d669a33d63329bbf62672a/" target="_blank">48. NVIDIA Announces Financial Results for Fourth Quarter and Fiscal</a></div>
+                <div class="citation-item"><a href="https://s2.q4cdn.com/299287126/files/doc_financials/2025/ar/Amazon-2024-Annual-Report.pdf" target="_blank">49. Amazon's 2024 annual report</a></div>
+                <div class="citation-item"><a href="https://www.tencent.com/zh-cn/investors.html" target="_blank">50. 连接投资者 - Tencent 腾讯</a></div>
+                <div class="citation-item"><a href="https://static.www.tencent.com/uploads/2025/04/08/0706a9085e70140122364ded872455ca.pdf" target="_blank">51. 腾讯财务数据</a></div>
+                <div class="citation-item"><a href="https://xxzx.fujian.gov.cn/jjxx/xxhdt/202404/t20240408_6425306.htm" target="_blank">52. Canalys：2024年，中国大陆的云服务支出预计增长18%</a></div>
+                <div class="citation-item"><a href="https://www.srgresearch.com/articles/cloud-market-jumped-to-330-billion-in-2024-genai-is-now-driving-half-of-the-growth" target="_blank">53. Cloud Market Jumped to $330 billion in 2024 – GenAI is Now Driving Half of the Growth</a></div>
+                <div class="citation-item"><a href="https://www.secrss.com/articles/68374" target="_blank">54. 信通院发布《云计算白皮书(2024年)》</a></div>
+                <div class="citation-item"><a href="https://my.idc.com/getdoc.jsp?containerId=prCHC52566124" target="_blank">55. IDC: 2028年中国ICT市场规模超6,915亿美元</a></div>
+                <div class="citation-item"><a href="https://www.caict.ac.cn/english/research/whitepapers/202411/P020241129559762200350.pdf" target="_blank">56. 云计算白皮书 - 中国信息通信研究院</a></div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const progressBar = document.querySelector('.reading-progress');
+        const progressFill = document.querySelector('.reading-progress-fill');
+        const progressTooltip = document.getElementById('progress-tooltip');
+        const sections = document.querySelectorAll('section[id], header[id]');
+        let currentSectionTitle = '';
+        let sectionsData = [];
+
+        function initSections() {
+            sectionsData = Array.from(sections).map(section => ({
+                id: section.getAttribute('id'),
+                title: section.getAttribute('data-title') || section.querySelector('h1, h2')?.textContent || '未知章节',
+                offsetTop: section.offsetTop,
+                offsetHeight: section.offsetHeight
+            }));
+        }
+
+        function updateProgress() {
+            const scrolled = window.pageYOffset;
+            const maxHeight = document.body.scrollHeight - window.innerHeight;
+            const progress = (scrolled / maxHeight) * 100;
+            progressFill.style.height = `${progress}%`;
+
+            let currentSection = '';
+            sectionsData.forEach(section => {
+                if (scrolled >= section.offsetTop - 300) {
+                    currentSection = section.id;
+                    currentSectionTitle = section.title;
+                }
+            });
+        }
+
+        progressBar.addEventListener('click', (e) => {
+            const rect = progressBar.getBoundingClientRect();
+            const clickY = e.clientY - rect.top;
+            const progressHeight = rect.height;
+            const clickPercent = clickY / progressHeight;
+            const maxHeight = document.body.scrollHeight - window.innerHeight;
+            const targetScroll = maxHeight * clickPercent;
+            window.scrollTo({top: targetScroll, behavior: 'smooth'});
+        });
+
+        progressBar.addEventListener('mouseenter', () => {
+            if (currentSectionTitle) {
+                progressTooltip.textContent = currentSectionTitle;
+                progressTooltip.classList.add('show');
+            }
+        });
+
+        progressBar.addEventListener('mouseleave', () => {
+            progressTooltip.classList.remove('show');
+        });
+
+        window.addEventListener('scroll', updateProgress);
+        window.addEventListener('load', () => {
+            initSections();
+            updateProgress();
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const now = new Date();
+            const month = now.getMonth();
+            const quarter = Math.floor(month / 3) + 1;
+            const year = now.getFullYear();
+            document.getElementById('date-cn').textContent = `${year}年Q${quarter}`;
+            document.getElementById('date-en').textContent = `Q${quarter} ${year}`;
+        });
+    </script>
+</body>
+</html>

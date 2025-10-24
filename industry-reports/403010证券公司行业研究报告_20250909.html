@@ -1,0 +1,1550 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2024年全球与中国证券公司行业深度研究：新"国九条"周期下的结构性重塑与价值再定位</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700;800;900&family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        :root {
+            /* 深邃黑金权力色系 */
+            --obsidian-black: #0A0A0A;
+            --midnight-black: #151515;
+            --shadow-black: #1F1F1F;
+            --charcoal-deep: #2A2A2A;
+
+            /* 稀缺金色层次 */
+            --sovereign-gold: #B8860B;
+            --imperial-gold: #DAA520;
+            --aureate-whisper: #F4E4BC;
+            --golden-shadow: #8B6914;
+
+            /* 权力灰度 */
+            --platinum-mist: #E5E5E5;
+            --sterling-silver: #C0C0C0;
+            --graphite-steel: #696969;
+            --charcoal-whisper: #808080;
+
+            /* 稀缺强调色 */
+            --ruby-accent: #8B0000;
+            --emerald-depth: #006400;
+            --sapphire-authority: #1e3a8a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg,
+                var(--obsidian-black) 0%,
+                var(--midnight-black) 40%,
+                var(--shadow-black) 100%);
+            color: var(--platinum-mist);
+            line-height: 1.8;
+            letter-spacing: 0.02em;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        /* 排版系统 */
+        .imperial-title {
+            font-family: 'Playfair Display', serif;
+            font-weight: 200;
+            letter-spacing: 0.12em;
+            line-height: 1.05;
+            color: var(--aureate-whisper);
+            text-shadow: 0 3px 12px rgba(184, 134, 11, 0.4);
+        }
+
+        .imperial-subtitle {
+            font-family: 'Playfair Display', serif;
+            font-weight: 300;
+            letter-spacing: 0.08em;
+            line-height: 1.15;
+            color: var(--imperial-gold);
+            text-shadow: 0 2px 8px rgba(218, 165, 32, 0.3);
+        }
+
+        .imperial-tagline {
+            font-family: 'Inter', sans-serif;
+            font-weight: 200;
+            letter-spacing: 0.06em;
+            line-height: 1.4;
+            color: var(--sterling-silver);
+            font-style: italic;
+        }
+
+        .imperial-dedication {
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+            letter-spacing: 0.04em;
+            line-height: 1.3;
+            color: var(--imperial-gold);
+        }
+
+        .imperial-dedication-sub {
+            font-family: 'Inter', sans-serif;
+            font-weight: 200;
+            letter-spacing: 0.05em;
+            line-height: 1.3;
+            color: var(--sterling-silver);
+            font-style: italic;
+        }
+
+        .sovereign-heading {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            color: var(--imperial-gold);
+            text-shadow: 0 1px 4px rgba(218, 165, 32, 0.4);
+        }
+
+        .noble-text {
+            font-weight: 300;
+            letter-spacing: 0.03em;
+            line-height: 2.2;
+            color: var(--platinum-mist);
+        }
+
+        .executive-quote {
+            font-weight: 300;
+            letter-spacing: 0.02em;
+            line-height: 1.8;
+            color: var(--sterling-silver);
+            font-size: 0.95rem;
+            font-style: italic;
+            position: relative;
+            padding: 0 2rem;
+            margin: 2rem 0;
+        }
+
+        .executive-quote::before {
+            content: '"';
+            position: absolute;
+            left: 0;
+            top: -0.5rem;
+            font-size: 3rem;
+            color: var(--sovereign-gold);
+            opacity: 0.3;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .executive-quote::after {
+            content: '"';
+            position: absolute;
+            right: 0;
+            bottom: -0.5rem;
+            font-size: 3rem;
+            color: var(--sovereign-gold);
+            opacity: 0.3;
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* 免责声明卡片 */
+        .disclaimer-card {
+            background: linear-gradient(145deg,
+                rgba(31, 31, 31, 0.95) 0%,
+                rgba(42, 42, 42, 0.9) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.18);
+            border-radius: 3px;
+            padding: 4rem;
+            position: relative;
+            backdrop-filter: blur(25px);
+            box-shadow:
+                0 12px 40px rgba(0, 0, 0, 0.7),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08),
+                inset 0 0 30px rgba(184, 134, 11, 0.02);
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .disclaimer-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 2px;
+            background: linear-gradient(90deg,
+                transparent,
+                var(--sovereign-gold),
+                transparent);
+            opacity: 0.6;
+        }
+
+        .disclaimer-card:hover {
+            border-color: rgba(184, 134, 11, 0.25);
+            box-shadow:
+                0 16px 50px rgba(0, 0, 0, 0.8),
+                0 0 25px rgba(184, 134, 11, 0.08),
+                inset 0 1px 1px rgba(244, 228, 188, 0.12);
+        }
+
+        .disclaimer-text {
+            font-weight: 300;
+            letter-spacing: 0.02em;
+            line-height: 2;
+            color: var(--platinum-mist);
+            font-size: 1rem;
+        }
+
+        .exclusive-number {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: var(--sovereign-gold);
+            text-shadow: 0 1px 3px rgba(184, 134, 11, 0.5);
+        }
+
+        /* 容器系统 */
+        .sovereign-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 5rem;
+        }
+
+        .imperial-section {
+            margin: 12rem 0;
+            position: relative;
+        }
+
+        /* 卡片系统 */
+        .golden-glass-card {
+            background:
+                radial-gradient(circle at 30% 30%, rgba(218, 165, 32, 0.12) 0%, transparent 50%),
+                radial-gradient(circle at 70% 70%, rgba(184, 134, 11, 0.08) 0%, transparent 50%),
+                linear-gradient(135deg,
+                    rgba(244, 228, 188, 0.06) 0%,
+                    rgba(218, 165, 32, 0.04) 30%,
+                    rgba(184, 134, 11, 0.03) 70%,
+                    rgba(139, 105, 20, 0.02) 100%);
+            border: 1px solid rgba(218, 165, 32, 0.15);
+            border-radius: 4px;
+            padding: 2.5rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            box-shadow:
+                0 8px 32px rgba(0, 0, 0, 0.6),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08),
+                inset 0 0 30px rgba(218, 165, 32, 0.03);
+            transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .golden-glass-card::before {
+            content: '';
+            position: absolute;
+            inset: -1px;
+            background: linear-gradient(45deg,
+                rgba(218, 165, 32, 0.2) 0%,
+                rgba(184, 134, 11, 0.1) 25%,
+                transparent 50%,
+                rgba(244, 228, 188, 0.1) 75%,
+                rgba(218, 165, 32, 0.15) 100%);
+            border-radius: 4px;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.8s ease;
+        }
+
+        .golden-glass-card:hover {
+            transform: translateY(-3px);
+            border-color: rgba(218, 165, 32, 0.3);
+            box-shadow:
+                0 16px 48px rgba(0, 0, 0, 0.8),
+                0 0 40px rgba(218, 165, 32, 0.1),
+                inset 0 1px 1px rgba(244, 228, 188, 0.12),
+                inset 0 0 40px rgba(218, 165, 32, 0.05);
+        }
+
+        .golden-glass-card:hover::before {
+            opacity: 1;
+        }
+
+        /* 投资逻辑卡片 */
+        .investment-logic-card {
+            background:
+                radial-gradient(circle at 20% 80%, rgba(218, 165, 32, 0.08) 0%, transparent 60%),
+                radial-gradient(circle at 80% 20%, rgba(244, 228, 188, 0.05) 0%, transparent 60%),
+                linear-gradient(135deg,
+                    rgba(184, 134, 11, 0.06) 0%,
+                    rgba(139, 105, 20, 0.04) 50%,
+                    rgba(218, 165, 32, 0.02) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.12);
+            border-radius: 2px;
+            padding: 3rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            box-shadow:
+                0 8px 32px rgba(0, 0, 0, 0.6),
+                inset 0 1px 1px rgba(244, 228, 188, 0.06),
+                inset 0 0 25px rgba(184, 134, 11, 0.02);
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .investment-logic-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg,
+                transparent 0%,
+                rgba(218, 165, 32, 0.4) 25%,
+                rgba(244, 228, 188, 0.6) 50%,
+                rgba(218, 165, 32, 0.4) 75%,
+                transparent 100%);
+            opacity: 0;
+            transition: opacity 0.6s ease;
+        }
+
+        .investment-logic-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(184, 134, 11, 0.25);
+            box-shadow:
+                0 16px 48px rgba(0, 0, 0, 0.8),
+                0 0 30px rgba(218, 165, 32, 0.08),
+                inset 0 1px 1px rgba(244, 228, 188, 0.1),
+                inset 0 0 35px rgba(184, 134, 11, 0.04);
+        }
+
+        .investment-logic-card:hover::after {
+            opacity: 1;
+        }
+
+        /* 权威卡片 */
+        .authority-card {
+            background: linear-gradient(145deg,
+                rgba(21, 21, 21, 0.9) 0%,
+                rgba(31, 31, 31, 0.8) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.15);
+            border-radius: 2px;
+            padding: 3rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            box-shadow:
+                0 8px 32px rgba(0, 0, 0, 0.6),
+                inset 0 1px 1px rgba(244, 228, 188, 0.05);
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .authority-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(184, 134, 11, 0.3);
+            box-shadow:
+                0 16px 48px rgba(0, 0, 0, 0.8),
+                0 0 24px rgba(184, 134, 11, 0.1),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08);
+        }
+
+        .authority-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(90deg, var(--sovereign-gold), transparent);
+            opacity: 0.6;
+        }
+
+        .authority-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(270deg, var(--sovereign-gold), transparent);
+            opacity: 0.6;
+        }
+
+        /* 权威表格 */
+        .imperial-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            background: rgba(15, 15, 15, 0.8);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(184, 134, 11, 0.2);
+            border-radius: 2px;
+        }
+
+        .imperial-table th {
+            background: rgba(184, 134, 11, 0.08);
+            padding: 2rem 1.5rem;
+            text-align: left;
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--imperial-gold);
+            border-bottom: 1px solid rgba(184, 134, 11, 0.2);
+        }
+
+        .imperial-table td {
+            padding: 1.8rem 1.5rem;
+            border-bottom: 1px solid rgba(184, 134, 11, 0.05);
+            font-weight: 300;
+        }
+
+        .imperial-table tbody tr:hover {
+            background: rgba(184, 134, 11, 0.03);
+        }
+
+        /* 分隔线 */
+        .sovereign-divider {
+            height: 1px;
+            background: linear-gradient(90deg,
+                transparent 0%,
+                rgba(184, 134, 11, 0.3) 30%,
+                rgba(184, 134, 11, 0.6) 50%,
+                rgba(184, 134, 11, 0.3) 70%,
+                transparent 100%);
+            margin: 8rem 0;
+            position: relative;
+        }
+
+        .sovereign-divider::before {
+            content: '◆';
+            position: absolute;
+            top: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--sovereign-gold);
+            font-size: 16px;
+            background: var(--obsidian-black);
+            padding: 0 1rem;
+        }
+
+        /* 垂直进度条系统 */
+        .reading-progress {
+            position: fixed;
+            top: 50%;
+            right: 2rem;
+            width: 4px;
+            height: 200px;
+            transform: translateY(-50%);
+            background: linear-gradient(180deg,
+                rgba(184, 134, 11, 0.2) 0%,
+                rgba(218, 165, 32, 0.3) 30%,
+                rgba(244, 228, 188, 0.4) 60%,
+                rgba(218, 165, 32, 0.3) 85%,
+                rgba(139, 105, 20, 0.2) 100%);
+            z-index: 1001;
+            box-shadow:
+                0 0 12px rgba(184, 134, 11, 0.6),
+                2px 0 8px rgba(184, 134, 11, 0.3),
+                inset 1px 0 2px rgba(244, 228, 188, 0.4);
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+        .reading-progress::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(180deg,
+                rgba(244, 228, 188, 0.1) 0%,
+                rgba(218, 165, 32, 0.15) 50%,
+                rgba(244, 228, 188, 0.1) 100%);
+            border-radius: 2px;
+            animation: progressShimmer 3s ease-in-out infinite;
+        }
+
+        .reading-progress-fill {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(180deg,
+                var(--golden-shadow) 0%,
+                var(--sovereign-gold) 50%,
+                var(--imperial-gold) 100%);
+            border-radius: 2px;
+            transition: height 0.1s ease;
+            box-shadow:
+                inset 0 1px 2px rgba(244, 228, 188, 0.3),
+                0 0 8px rgba(184, 134, 11, 0.4);
+        }
+
+        @keyframes progressShimmer {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.8; }
+        }
+
+        /* 进度标题提示器 */
+        .progress-tooltip {
+            position: fixed;
+            top: 50%;
+            right: 7rem;
+            transform: translateY(-50%);
+            background: linear-gradient(135deg,
+                rgba(15, 15, 15, 0.95) 0%,
+                rgba(31, 31, 31, 0.9) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.25);
+            border-radius: 8px;
+            padding: 0.8rem 2rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 0.85rem;
+            font-weight: 300;
+            color: var(--imperial-gold);
+            backdrop-filter: blur(20px);
+            box-shadow:
+                0 8px 32px rgba(0, 0, 0, 0.7),
+                0 0 20px rgba(184, 134, 11, 0.1),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+            z-index: 1002;
+            white-space: nowrap;
+            letter-spacing: 0.03em;
+        }
+
+        .progress-tooltip.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(-50%) translateX(-8px);
+        }
+
+        .progress-tooltip::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -8px;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-left: 8px solid rgba(184, 134, 11, 0.25);
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+        }
+
+        .progress-tooltip::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -7px;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-left: 7px solid rgba(15, 15, 15, 0.95);
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+        }
+
+        /* 引用文献 */
+        .citation-item {
+            padding: 1.5rem 2rem;
+            margin: 0.8rem 0;
+            background: linear-gradient(135deg,
+                rgba(21, 21, 21, 0.8) 0%,
+                rgba(31, 31, 31, 0.6) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.15);
+            border-radius: 3px;
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .citation-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--sovereign-gold), var(--golden-shadow));
+            opacity: 0.6;
+            transition: opacity 0.3s ease;
+        }
+
+        .citation-item:hover {
+            border-color: rgba(184, 134, 11, 0.4);
+            background: linear-gradient(135deg,
+                rgba(31, 31, 31, 0.9) 0%,
+                rgba(42, 42, 42, 0.7) 100%);
+            transform: translateX(6px) translateY(-1px);
+            box-shadow:
+                0 8px 25px rgba(0, 0, 0, 0.5),
+                0 0 20px rgba(184, 134, 11, 0.08);
+        }
+
+        .citation-item:hover::before {
+            opacity: 1;
+        }
+
+        .citation-item a {
+            color: var(--platinum-mist);
+            text-decoration: none;
+            font-size: 0.85rem;
+            line-height: 1.7;
+            font-weight: 300;
+            transition: color 0.4s ease;
+            display: block;
+            position: relative;
+        }
+
+        .citation-item a::before {
+            content: '';
+            position: absolute;
+            left: -0.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 4px;
+            background: var(--sovereign-gold);
+            border-radius: 50%;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .citation-item:hover a {
+            color: var(--aureate-whisper);
+            padding-left: 1rem;
+        }
+
+        .citation-item:hover a::before {
+            opacity: 0.8;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 1024px) {
+            .sovereign-container {
+                padding: 0 2.5rem;
+            }
+            .imperial-section {
+                margin: 8rem 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .sovereign-container {
+                padding: 0 1.5rem;
+            }
+            .imperial-section {
+                margin: 6rem 0;
+            }
+            .authority-card {
+                padding: 2rem;
+            }
+            .reading-progress {
+                right: 1rem;
+                height: 150px;
+                width: 3px;
+            }
+            .progress-tooltip {
+                right: 5rem;
+                padding: 0.6rem 1.5rem;
+                font-size: 0.75rem;
+            }
+        }
+
+        /* 选择高亮 */
+        ::selection {
+            background: rgba(184, 134, 11, 0.2);
+            color: var(--aureate-whisper);
+        }
+
+        /* 滚动条 */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--obsidian-black);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--sovereign-gold);
+            border-radius: 3px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--imperial-gold);
+        }
+    </style>
+</head>
+<body>
+    <!-- 阅读进度条 -->
+    <div class="reading-progress">
+        <div class="reading-progress-fill"></div>
+    </div>
+
+    <!-- 进度标题提示器 -->
+    <div class="progress-tooltip" id="progress-tooltip"></div>
+
+    <!-- 页面标题区域 -->
+    <header id="header" class="min-h-screen flex items-center justify-center relative" data-title="2024年全球与中国证券公司行业深度研究">
+        <div class="sovereign-container text-center relative z-10">
+            <!-- 主标题区域 -->
+            <div class="mb-16">
+                <h1 class="imperial-title text-5xl md:text-7xl mb-6">
+                    2024年全球与中国证券公司行业深度研究
+                </h1>
+
+                <h2 class="imperial-subtitle text-2xl md:text-4xl mb-12 opacity-90">
+                    新"国九条"周期下的结构性重塑与价值再定位
+                </h2>
+            </div>
+
+            <!-- 英文副标题 -->
+            <div class="mb-12">
+                <div class="imperial-tagline text-sm md:text-base opacity-75 max-w-4xl mx-auto">
+                    Global and China Securities Industry In-Depth Research:<br class="md:hidden">
+                    Structural Reshaping and Value Repositioning Under the New "National 9 Points" Cycle
+                </div>
+            </div>
+
+            <!-- 致敬区域 -->
+            <div class="mb-16">
+                <div class="imperial-dedication text-sm md:text-base">
+                    致：机构投资者与高净值客户
+                </div>
+                <div class="imperial-dedication-sub text-xs md:text-sm opacity-60 mt-2">
+                    For: Institutional Investors and High Net Worth Clients
+                </div>
+            </div>
+
+            <!-- 发布日期卡片 -->
+            <div class="golden-glass-card inline-block">
+                <div class="text-xs uppercase tracking-[0.2em] opacity-50 mb-4 font-light">
+                    本报告发布于 · Published on
+                </div>
+                <div class="sovereign-heading text-base">
+                    <span id="date-cn" class="exclusive-number">2025年Q3</span>
+                    <span class="mx-4 text-sovereign-gold opacity-40">◆</span>
+                    <span id="date-en" class="exclusive-number">Q3 2025</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 背景装饰 -->
+        <div class="absolute inset-0 pointer-events-none opacity-8">
+            <div class="absolute top-20 left-20 w-px h-32 bg-gradient-to-b from-sovereign-gold to-transparent"></div>
+            <div class="absolute bottom-20 right-20 w-px h-32 bg-gradient-to-t from-sovereign-gold to-transparent"></div>
+            <div class="absolute top-1/2 left-1/4 w-24 h-px bg-gradient-to-r from-sovereign-gold to-transparent"></div>
+            <div class="absolute top-1/3 right-1/4 w-24 h-px bg-gradient-to-l from-sovereign-gold to-transparent"></div>
+        </div>
+    </header>
+
+    <!-- 免责声明 -->
+    <section class="imperial-section">
+        <div class="sovereign-container">
+            <div class="disclaimer-card text-center">
+                <h2 class="sovereign-heading text-2xl mb-8">免责声明</h2>
+                <div class="disclaimer-text max-w-4xl mx-auto">
+                    本报告由资深行业分析师证券研究部编制，旨在为机构投资者与高净值客户提供关于证券行业的系统性认知框架。报告中的信息和数据均来源于公开可查的资料，我们力求报告内容的客观、准确，但不对其完整性或准确性做出任何保证。本报告中的分析、结论和观点仅为研究目的，不构成任何形式的投资建议。投资者应基于自身的独立判断进行投资决策，并自行承担相关风险。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 引言部分 -->
+    <section id="introduction" class="imperial-section" data-title="引言：研究背景与框架">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-5xl mb-16 text-center">引言：研究背景与框架</h2>
+
+            <div class="executive-quote max-w-4xl mx-auto text-center">
+                2024年，全球宏观经济环境进入一个充满不确定性的新阶段，高利率的持续、地缘政治的复杂化以及全球资本流动的新格局，共同塑造了外部环境的挑战。
+            </div>
+
+            <div class="authority-card mb-16">
+                <div class="noble-text space-y-6">
+                    <p>中国资本市场迎来了以"金融强国"为核心目标的第三个"国九条"（即《关于加强监管防范风险推动资本市场高质量发展的若干意见》）顶层设计。这一系列内外部因素的叠加，共同驱动了中国乃至全球证券行业经历前所未有的结构性重塑与运行逻辑演变。本报告旨在构建一个全面、深入且系统性的行业认知框架，从宏观周期、行业结构、业务驱动到企业案例与估值逻辑，深入剖析2024年行业的核心变化与未来趋势，为机构投资者和高净值客户提供可用于投资研究与战略研判的深刻洞察。</p>
+
+                    <p>本报告将以"宏观环境→行业结构→业务剖析→企业案例→估值逻辑"的递进式分析框架展开。首先，我们将审视全球资本流动的最新趋势和中国新"国九条"政策的深层意图，以此作为理解行业变化的宏观基础。其次，我们将通过行业整体业绩、业务结构与竞争格局的数据，揭示行业的结构性矛盾与再平衡趋势。接着，报告将逐一剖析经纪、投行、自营、资管等核心业务的盈利模式与增长路径，阐明其在严监管周期下的核心驱动变量。最后，通过对头部券商和互联网券商的案例分析，结合PB-ROE等估值框架，探讨证券公司的价值锚定与核心竞争力。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 第一章：全球与中国资本市场宏观环境 -->
+    <section id="chapter-one" class="imperial-section" data-title="全球与中国资本市场宏观环境：周期性规律与结构性挑战">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-5xl mb-16 text-center">全球与中国资本市场宏观环境</h2>
+            <h3 class="sovereign-heading text-3xl mb-12 text-center">周期性规律与结构性挑战</h3>
+
+            <div class="grid md:grid-cols-2 gap-12 mb-16">
+                <div class="authority-card">
+                    <h4 class="sovereign-heading text-2xl mb-6 flex items-center">
+                        <i class="material-icons text-xl mr-3">public</i>
+                        全球高利率周期与资本流动
+                    </h4>
+                    <div class="noble-text space-y-4">
+                        <p>在全球高利率的宏观背景下，全球资本流动呈现出向欧美市场倾斜的显著趋势。美国和加拿大的资产管理中心评分和排名普遍上升，而亚洲地区则普遍出现小幅下跌。这一现象背后的深层逻辑在于，高利率环境改变了全球资金的风险偏好，资金更倾向于回流至政治经济环境稳定、法律制度完善的传统成熟市场。</p>
+
+                        <p>纽约、伦敦和芝加哥位列全球资管中心前三。新加坡、上海和东京的排名均较去年下滑。香港市场虽然在家族办公室和虚拟资管产品领域领先亚洲，但因股债市场持续低迷，排名仅小幅上升。</p>
+                    </div>
+                </div>
+
+                <div class="authority-card">
+                    <h4 class="sovereign-heading text-2xl mb-6 flex items-center">
+                        <i class="material-icons text-xl mr-3">trending_up</i>
+                        新"国九条"与金融强国战略
+                    </h4>
+                    <div class="noble-text space-y-4">
+                        <p>2024年，中国资本市场最重要的顶层设计文件当属《关于加强监管防范风险推动资本市场高质量发展的若干意见》，即第三个新"国九条"。这一文件与证监会及相关部门的配套制度规则，共同构成了"1+N"的政策体系框架。</p>
+
+                        <p>新"国九条"的核心意图不再是追求市场规模的简单扩张，而是聚焦于"高质量发展"，通过强化监管、防范风险，来构建一个高度适应性、竞争力和普惠性的资本市场体系。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 数据表格 -->
+            <div class="authority-card mb-16">
+                <h4 class="sovereign-heading text-2xl mb-8 text-center">2024年中国资本市场核心指标</h4>
+                <div class="overflow-x-auto">
+                    <table class="imperial-table">
+                        <thead>
+                            <tr>
+                                <th>指标</th>
+                                <th>2024年数据</th>
+                                <th>同比变化</th>
+                                <th>备注</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-semibold">日均股基交易额</td>
+                                <td class="exclusive-number">11,853亿元</td>
+                                <td class="text-emerald-400 font-bold">+23%</td>
+                                <td>Q4日均交易额环比增长161%</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">融资融券余额</td>
+                                <td class="exclusive-number">1.86万亿元</td>
+                                <td class="text-emerald-400 font-bold">+13%</td>
+                                <td>平均维持担保比255%，风险可控</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">IPO发行家数</td>
+                                <td class="exclusive-number">100家</td>
+                                <td>募资规模同比下滑</td>
+                                <td>募资规模同比下滑81%</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">公募基金发行规模</td>
+                                <td class="exclusive-number">11,838亿份</td>
+                                <td class="text-emerald-400 font-bold">+3%</td>
+                                <td>企稳回升</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 第二章：行业结构与竞争格局 -->
+    <section id="chapter-two" class="imperial-section" data-title="行业结构与竞争格局：头部集中化与盈利再平衡">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-5xl mb-16 text-center">行业结构与竞争格局</h2>
+            <h3 class="sovereign-heading text-3xl mb-12 text-center">头部集中化与盈利再平衡</h3>
+
+            <div class="authority-card mb-16">
+                <h4 class="sovereign-heading text-2xl mb-8">行业整体业绩概览</h4>
+                <div class="noble-text space-y-4 mb-8">
+                    <p>在2024年复杂的市场环境中，中国证券行业整体表现出较强的韧性。根据已披露的业绩数据，24家上市券商合计实现营业收入3,988亿元，同比增长6%；实现归母净利润1,265亿元，同比增长15%。这一业绩增长并非由简单的规模扩张所驱动，其背后是盈利结构与资本效率的深刻变化。</p>
+
+                    <p>在盈利能力方面，上市券商的平均净资产收益率（ROE）为5.88%，较2023年增加了2.35个百分点。这一提升尤其值得关注，因为与此同时，行业的平均杠杆率却从2023年的3.77倍下滑至3.63倍。这种"去杠杆"下的盈利能力提升，表明行业正在从过去依赖高杠杆、粗放式扩张的模式，转向更加注重资产配置效率与风险控制的精细化运营。</p>
+                </div>
+
+                <div class="overflow-x-auto">
+                    <table class="imperial-table">
+                        <thead>
+                            <tr>
+                                <th>指标</th>
+                                <th>营收总额（亿元）</th>
+                                <th>营收同比增速</th>
+                                <th>归母净利润（亿元）</th>
+                                <th>归母净利润同比增速</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-semibold">24家上市券商合计</td>
+                                <td class="exclusive-number">3,988</td>
+                                <td class="text-emerald-400 font-bold">+6%</td>
+                                <td class="exclusive-number">1,265</td>
+                                <td class="text-emerald-400 font-bold">+15%</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">43家上市券商（全年）</td>
+                                <td class="exclusive-number">3,623.88</td>
+                                <td class="text-emerald-400 font-bold">+7.7%</td>
+                                <td class="exclusive-number">1,383.87</td>
+                                <td class="text-emerald-400 font-bold">+16.3%</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">43家上市券商（Q4）</td>
+                                <td class="exclusive-number">1,136.25</td>
+                                <td class="text-emerald-400 font-bold">+47.2%</td>
+                                <td class="exclusive-number">400.31</td>
+                                <td class="text-emerald-400 font-bold">+93.1%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="authority-card">
+                <h4 class="sovereign-heading text-2xl mb-8">业务结构演变与收入驱动力</h4>
+                <div class="noble-text space-y-4 mb-8">
+                    <p>2024年，证券行业的收入结构经历了显著的再平衡。经纪业务与投行业务面临明显的挑战，但自营业务表现出较强的韧性，贡献了约32%的营收占比，成为券商收入的核心驱动力。资管业务也表现出了较强的韧性，营收占比接近10%，成为券商收入增长的新亮点。</p>
+
+                    <p>这种收入结构的再平衡，在第四季度表现得尤为明显。得益于市场活跃度的回升，2024年Q4各项业务同比增速均实现正增长。</p>
+                </div>
+
+                <div class="overflow-x-auto">
+                    <table class="imperial-table">
+                        <thead>
+                            <tr>
+                                <th>业务类型</th>
+                                <th>Q4收入占比</th>
+                                <th>Q4同比增速</th>
+                                <th>Q4环比增速</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-semibold">经纪业务</td>
+                                <td class="exclusive-number">30.4%</td>
+                                <td class="text-emerald-400 font-bold">+82.9%</td>
+                                <td class="text-emerald-400 font-bold">+111.0%</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">投行业务</td>
+                                <td class="exclusive-number">7.5%</td>
+                                <td class="text-emerald-400 font-bold">+5.6%</td>
+                                <td class="text-emerald-400 font-bold">+49.6%</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">资管业务</td>
+                                <td class="exclusive-number">9.1%</td>
+                                <td class="text-emerald-400 font-bold">+6.9%</td>
+                                <td class="text-emerald-400 font-bold">+10.8%</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">利息收入</td>
+                                <td class="exclusive-number">11.1%</td>
+                                <td class="text-emerald-400 font-bold">+33.7%</td>
+                                <td class="text-emerald-400 font-bold">+136.5%</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">投资收入</td>
+                                <td class="exclusive-number">32.0%</td>
+                                <td class="text-emerald-400 font-bold">+22.7%</td>
+                                <td class="text-red-400 font-bold">-27.5%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 第三章：核心业务深度剖析 -->
+    <section id="chapter-three" class="imperial-section" data-title="核心业务深度剖析：盈利模式、增长路径与核心变量">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-5xl mb-16 text-center">核心业务深度剖析</h2>
+            <h3 class="sovereign-heading text-3xl mb-12 text-center">盈利模式、增长路径与核心变量</h3>
+
+            <div class="grid md:grid-cols-2 gap-12 mb-16">
+                <div class="authority-card">
+                    <h4 class="sovereign-heading text-2xl mb-6 flex items-center">
+                        <i class="material-icons text-xl mr-3">handshake</i>
+                        经纪业务转型
+                    </h4>
+                    <div class="noble-text space-y-4">
+                        <p>经纪业务作为证券公司的传统支柱，其盈利模式正面临严峻挑战。代理买卖证券业务的平均净佣金率持续下降，2024年上半年已降至万分之2.15。这一趋势是不可逆的，导致券商的"通道价值"逐渐归零。</p>
+
+                        <p>这迫使传统券商必须从单一的"通道服务"向提供高附加值的"财富管理"服务转型。东方财富等互联网券商的成功模式提供了新的发展路径，其低成本的获客模式使得其经纪业务和两融业务市占率持续提升。</p>
+                    </div>
+                </div>
+
+                <div class="authority-card">
+                    <h4 class="sovereign-heading text-2xl mb-6 flex items-center">
+                        <i class="material-icons text-xl mr-3">trending_down</i>
+                        投行业务挑战
+                    </h4>
+                    <div class="noble-text space-y-4">
+                        <p>投资银行业务在2024年面临严峻挑战。在严把发行上市准入关的监管导向和资本市场低迷的双重影响下，2024年IPO募资规模和再融资规模均出现大幅下滑。</p>
+
+                        <p>增发募资规模同比下滑70%，可转债和可交换债规模也分别下降66%和6%。这种急剧的业务萎缩，体现了监管部门推动资本市场从"量"到"质"转变的意图。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="authority-card">
+                    <h4 class="sovereign-heading text-2xl mb-6 flex items-center">
+                        <i class="material-icons text-xl mr-3">savings</i>
+                        自营业务崛起
+                    </h4>
+                    <div class="noble-text space-y-4">
+                        <p>自营业务在2024年成为券商业绩的"决胜点"。自营业务以36%的占比成为行业第一大收入来源，2024年上半年其在总收入中占比达到30.68%。</p>
+
+                        <p>其高增的深层驱动并非简单的高风险权益投资，而是"固收化"的资产配置策略。截至2024年末，固收资产在上市券商的投资资产中占比高达62.9%。</p>
+                    </div>
+                </div>
+
+                <div class="authority-card">
+                    <h4 class="sovereign-heading text-2xl mb-6 flex items-center">
+                        <i class="material-icons text-xl mr-3">computer</i>
+                        金融科技赋能
+                    </h4>
+                    <div class="noble-text space-y-4">
+                        <p>资产管理业务在2024年表现出较强的韧性，营收占比接近10%，成为券商收入增长的新亮点。与此同时，金融科技的投入与应用，正在从根本上重塑券商的业务模式和成本结构。</p>
+
+                        <p>2023年券商信息系统投入合计达到430亿元，占总营收的比重从2021年的6.8%提升至10.8%。金融科技正在从"成本中心"向"利润中心"战略升级。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 第四章：监管与政策 -->
+    <section id="chapter-four" class="imperial-section" data-title="监管与政策：新一轮顶层设计下的制度重塑">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-5xl mb-16 text-center">监管与政策</h2>
+            <h3 class="sovereign-heading text-3xl mb-12 text-center">新一轮顶层设计下的制度重塑</h3>
+
+            <div class="investment-logic-card mb-16">
+                <h4 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <i class="material-icons text-xl mr-3">policy</i>
+                    新"国九条"与"1+N"政策体系
+                </h4>
+                <div class="noble-text space-y-4">
+                    <p>新"国九条"的发布，是继2004年和2014年之后国务院再次出台的资本市场顶层设计文件，体现了中央层面对于资本市场高质量发展的高度重视。其核心目标在于通过"强监管、防风险、促高质量发展"，来重塑资本市场生态。</p>
+
+                    <p>这一顶层设计将与证监会会同相关部门组织实施的若干配套制度规则共同形成"1+N"政策体系。例如，在引导中长期资金入市方面，政策推动各类中长期资金（如养老金、保险资金）优化长周期考核机制，更好地实现"长钱长投"。</p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 mb-16">
+                <div class="authority-card">
+                    <h4 class="sovereign-heading text-xl mb-6">严把"入口"与"出口"</h4>
+                    <div class="noble-text space-y-3 text-sm">
+                        <p><strong class="text-imperial-gold">入口端：</strong> 证监会强化发行监管，将IPO现场检查比例大幅提升至20%，严厉打击违规代持、突击入股等行为。</p>
+
+                        <p><strong class="text-imperial-gold">出口端：</strong> 新规将资金占用长期不解决、多年连续内控非标意见、控制权无序争夺等纳入规范类退市情形。2024年全年有55家上市公司退市。</p>
+                    </div>
+                </div>
+
+                <div class="authority-card">
+                    <h4 class="sovereign-heading text-xl mb-6">融券监管与交易秩序</h4>
+                    <div class="noble-text space-y-3 text-sm">
+                        <p><strong class="text-imperial-gold">融券新规：</strong> 全面暂停了限售股出借，将转融券市场化约定申报由实时可用调整为次日可用。融券保证金比例也从不低于80%上调至100%。</p>
+
+                        <p><strong class="text-imperial-gold">程序化交易监管：</strong> 新规要求程序化交易投资者提前报告账户基本信息、资金信息和交易策略等内容，并由交易所实行实时监测。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 第五章：企业案例与估值逻辑 -->
+    <section id="chapter-five" class="imperial-section" data-title="企业案例与估值逻辑：价值锚定与核心竞争力分析">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-5xl mb-16 text-center">企业案例与估值逻辑</h2>
+            <h3 class="sovereign-heading text-3xl mb-12 text-center">价值锚定与核心竞争力分析</h3>
+
+            <div class="authority-card mb-16">
+                <h4 class="sovereign-heading text-2xl mb-8 flex items-center">
+                    <i class="material-icons text-xl mr-3">business</i>
+                    头部券商：中信证券与华泰证券
+                </h4>
+                <div class="noble-text space-y-4 mb-8">
+                    <p>作为中国证券行业的领军者，中信证券与华泰证券在2024年继续保持领先地位。中信证券与华泰证券的2024年归母净利润均超过150亿元，其中华泰证券归母净利润为153.51亿元，总资产达到8,142.70亿元。</p>
+
+                    <p>头部券商的核心竞争力已经从单一的"通道"优势，切换至以资本实力和全业务链能力为核心的综合优势。其强大的资本金使其能够更好地布局自营业务，获取更高收益。在2024年自营收入排名中，中信证券以263.45亿元稳居榜首。</p>
+                </div>
+
+                <div class="overflow-x-auto">
+                    <table class="imperial-table">
+                        <thead>
+                            <tr>
+                                <th>公司名称</th>
+                                <th>归母净利润（亿元）</th>
+                                <th>主要特点</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-semibold">中信证券</td>
+                                <td class="exclusive-number">217.04</td>
+                                <td>自营收入稳居行业第一，综合实力强劲</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">华泰证券</td>
+                                <td class="exclusive-number">153.51</td>
+                                <td>资本实力雄厚，业务链条完整</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">国泰君安</td>
+                                <td class="exclusive-number">130.24</td>
+                                <td>投行与自营业务协同效应明显</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">招商证券</td>
+                                <td class="exclusive-number">103.86</td>
+                                <td>财富管理转型成效显著</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="authority-card">
+                <h4 class="sovereign-heading text-2xl mb-8 flex items-center">
+                    <i class="material-icons text-xl mr-3">cloud_sync</i>
+                    互联网券商：东方财富的轻资产模式
+                </h4>
+                <div class="noble-text space-y-4 mb-8">
+                    <p>东方财富的成功模式与传统券商迥异，其核心竞争力在于"流量飞轮"和"轻资产运营"模式。通过免费财经资讯和社区平台集聚海量用户，其获客成本远低于传统券商的营业部扩张模式。然后，公司将这些流量高效地转化为金融产品（经纪、两融、基金代销）的客户，实现业务变现。</p>
+
+                    <p>2024年，东方财富实现营业总收入116.04亿元，同比增长4.72%；归母净利润96.10亿元，同比增长17.29%。公司的净利润率从2023年的74%提升至2024年的83%，营业成本从2023年的538百万元下降至2024年的462百万元。</p>
+                </div>
+
+                <div class="investment-logic-card">
+                    <h4 class="sovereign-heading text-lg mb-4">估值框架：PB-ROE模型的应用</h4>
+                    <div class="noble-text">
+                        <p>对证券公司进行估值，不能仅依赖单一指标。作为强周期、重资产行业，证券公司估值的核心框架是市净率-净资产收益率（PB-ROE）模型。然而，PB-ROE模型在A股的应用中也存在局限性。因此，对券商的估值应采用"双重锚定"策略：首先，以PB-ROE为基础价值锚，评估其内在价值与盈利能力；其次，结合市盈率（PE）、市销率（PS）、企业价值倍数（EV/EBITDA）等相对估值方法进行横向比较与动态校准。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 第六章：风险与展望 -->
+    <section id="chapter-six" class="imperial-section" data-title="风险因素与未来展望">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-5xl mb-16 text-center">风险因素与未来展望</h2>
+
+            <div class="grid md:grid-cols-2 gap-12 mb-16">
+                <div class="authority-card">
+                    <h4 class="sovereign-heading text-2xl mb-6 flex items-center">
+                        <i class="material-icons text-xl mr-3">warning</i>
+                        核心风险归因
+                    </h4>
+                    <div class="noble-text space-y-3 text-sm">
+                        <p><strong class="text-ruby-accent">市场波动风险：</strong> 证券行业的盈利与资本市场的波动高度相关，以自营和经纪业务为主的收入结构，使其业绩具有高度的周期性与不确定性。</p>
+
+                        <p><strong class="text-ruby-accent">政策变化风险：</strong> 监管政策的调整，如IPO、再融资、融券新规等，可能在短期内对券商的业务模式和收入来源造成冲击。</p>
+
+                        <p><strong class="text-ruby-accent">技术颠覆风险：</strong> 以人工智能、大数据为代表的金融科技快速发展，对传统业务模式构成颠覆性挑战。</p>
+                    </div>
+                </div>
+
+                <div class="authority-card">
+                    <h4 class="sovereign-heading text-2xl mb-6 flex items-center">
+                        <i class="material-icons text-xl mr-3">visibility</i>
+                        四大发展趋势
+                    </h4>
+                    <div class="noble-text space-y-3 text-sm">
+                        <p><strong class="text-emerald-depth">趋势一：</strong> 资本市场改革深化，直接融资功能持续强化，券商战略地位将进一步提升。</p>
+
+                        <p><strong class="text-emerald-depth">趋势二：</strong> 财富管理转型进入深水区，服务与产品能力成为核心竞争力。</p>
+
+                        <p><strong class="text-emerald-depth">趋势三：</strong> 金融科技赋能，从后台降本增效走向前台模式重塑。</p>
+
+                        <p><strong class="text-emerald-depth">趋势四：</strong> 并购整合趋势凸显，行业集中度有望进一步提升。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 报告结论 -->
+    <section id="conclusion" class="imperial-section" data-title="报告结论与总结">
+        <div class="sovereign-container">
+            <div class="investment-logic-card text-center mb-16">
+                <h2 class="sovereign-heading text-3xl mb-8">报告结论与总结</h2>
+                <div class="noble-text space-y-6 max-w-4xl mx-auto">
+                    <p>2024年，全球与中国的证券行业在宏观环境与监管政策的共同作用下，进入了一个结构性重塑的关键周期。本报告的分析显示，证券业正在经历三大核心转变。</p>
+
+                    <p><strong class="text-imperial-gold">首先，监管范式转变：</strong> 监管的重心从过去的"速度与规模"转向"质量与安全"。通过严把入口、畅通出口的制度设计，资本市场的生态环境正在被系统性净化，为券商的长期发展奠定坚实基础。</p>
+
+                    <p><strong class="text-imperial-gold">其次，盈利结构再平衡：</strong> 面对传统经纪和投行业务的挑战，自营业务以其"固收化"的资产配置策略，成为行业业绩的"压舱石"。同时，资管业务和金融科技的崛起，正在为行业贡献新的增长引擎。</p>
+
+                    <p><strong class="text-imperial-gold">最后，竞争格局演变：</strong> 行业集中度高企的趋势持续，但头部券商的竞争优势已不再单纯依赖牌照，而是转向更深层次的资本实力、全业务链能力和技术赋能。东方财富等互联网券商的崛起，则揭示了"流量壁垒"与"轻资产运营"模式的巨大潜力。</p>
+                </div>
+            </div>
+
+            <div class="disclaimer-card text-center">
+                <h3 class="sovereign-heading text-2xl mb-6">免责声明</h3>
+                <div class="disclaimer-text max-w-4xl mx-auto">
+                    本报告所有结论均基于公开数据与逻辑推理，旨在为投资者提供系统性的行业认知框架。本报告不构成任何形式的投资建议，投资者在做出投资决策前，应独立判断并咨询专业意见。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 引用文献 -->
+    <section class="imperial-section bg-gradient-to-b from-transparent to-black bg-opacity-30">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl mb-12 text-center">引用文献</h2>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl mx-auto">
+                <div class="citation-item">
+                    <a href="https://repository.ceibs.edu/files/56738470/2024_.pdf" target="_blank">
+                        1. 2024全球资管中心评价指数报告
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.deloitte.com/cn/zh/Industries/financial-services/perspectives/chinese-securities-sector-2024-review-and-2025-outlook.html" target="_blank">
+                        2. 中国证券业2024年发展回顾及2025年展望 - Deloitte
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.fangdalaw.com/articles/金融法律监管年度报告" target="_blank">
+                        3. 金融法律监管年度报告（2025）：证券期货业篇 - Fangda Partners
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="http://www.csrc.gov.cn/csrc/c100029/c7473708/content.shtml" target="_blank">
+                        4. 2024年4月12日新闻发布会 - 中国证监会
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="http://www.csrc.gov.cn/csrc/c100029/c7458464/content.shtml" target="_blank">
+                        5. 2024年1月19日新闻发布会 - 中国证监会
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://pdf.dfcfw.com/pdf/H3_AP202504021650216031_1.pdf" target="_blank">
+                        6. 四季度净利润同比翻番——证券行业2024年年报总结
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.cls.cn/detail/1645337" target="_blank">
+                        7. 上交所：新上市规则对于财务类强制退市的修改
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="http://www.csrc.gov.cn/csrc/c100028/c7557781/content.shtml" target="_blank">
+                        8. 2024年证监会坚持"应退尽退" - 中国证监会
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="http://www.csrc.gov.cn/csrc/c100211/c1452065/content.shtml" target="_blank">
+                        9. 证券市场的各种风险类型 - 中国证监会
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.js-skl.org.cn/uploads/Files/2018-05/18/1-1526627545-909.pdf" target="_blank">
+                        10. 我国股票市场波动和经济增长周期的关系研究
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.lhratings.com/file/fb2bd5a2777.pdf" target="_blank">
+                        11. 2024年半年度证券行业分析 - 联合资信
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://pdf.dfcfw.com/pdf/H3_AP202312121613764841_1.pdf" target="_blank">
+                        12. 2024年大环境下的证券市场分析与展望
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://pdf.dfcfw.com/pdf/H3_AP202504251662282592_1.pdf" target="_blank">
+                        13. 证券公司资产配置专题暨2024年报综述
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://assets.kpmg.com/content/dam/kpmg/cn/pdf/zh/2024/09/mainland-china-securities-survey-2024.pdf" target="_blank">
+                        14. 二零二四年中国证券业调查报告 - KPMG
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="http://www.zqrb.cn/jrjg/quanshang/2025-03-29/A1743166848107.html" target="_blank">
+                        15. 9大"顶流"券商业绩排名出炉 - 证券日报
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.cls.cn/detail/1987653" target="_blank">
+                        16. 50家券商业绩大比拼，5家净利超百亿 - 财联社
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.cls.cn/detail/2132718" target="_blank">
+                        17. 150家券商上半年经营情况出炉 - 财联社
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="http://www.ccb.com/Info/49191975" target="_blank">
+                        18. 7月券商佣金收入约38亿环比降7.7% - 建设银行
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://pdf.dfcfw.com/pdf/H3_AP202108091508948333_1.pdf" target="_blank">
+                        19. 东方财富（300059.SZ）公司分析
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://pdf.dfcfw.com/pdf/H3_AP202505011665789777_1.pdf" target="_blank">
+                        20. 东方财富（300059.SZ）2024年年报点评
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://pdf.dfcfw.com/pdf/H3_AP202504021650299167_1.pdf" target="_blank">
+                        21. 东方财富2024年年报点评：业绩弹性显现
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.21jingji.com/article/20250830/herald/b15e4cfb82cc1bfb9e35bf14bf07371e.html" target="_blank">
+                        22. 上市券商上半年业绩亮眼10家营收过百亿 - 21经济网
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://paper.cnstock.com/html/2024-09/11/content_1966572.htm" target="_blank">
+                        23. 券商自营业务"挑大梁" - 上海证券报
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.stcn.com/article/detail/3316518.html" target="_blank">
+                        24. 牛市旗手成绩单来了券业上半年净利超1122亿 - 证券时报
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="http://www.eeo.com.cn/2023/0422/587600.shtml" target="_blank">
+                        25. 券商的2022：整体业绩回撤 - 经济观察网
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://jrj.wuhan.gov.cn/ynzx_57/xwzx/202509/t20250902_2642450.shtml" target="_blank">
+                        26. 券商营收和净利润双双增长原因何在
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.cls.cn/detail/1704034" target="_blank">
+                        27. 2023年106家券商IT投入达430亿 - 财联社
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.shaqiu.cn/article/436" target="_blank">
+                        28. 9个"大模型+智能投顾"案例 - 沙丘社区
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.cls.cn/detail/2111839" target="_blank">
+                        29. 券商AI竞速 - 财联社
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.stcn.com/article/detail/3142530.html" target="_blank">
+                        30. 券商从业人员向"高质高效"转型 - 证券时报
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="http://www.csrc.gov.cn/csrc/c100029/c7464344/content.shtml" target="_blank">
+                        31. 2024年2月23日新闻发布会 - 中国证监会
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="http://www.xinhuanet.com/fortune/20240710/699ef41f3c4a4333a82a68c151e27125/c.html" target="_blank">
+                        32. 转融券业务11日起暂停 - 新华网
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.cls.cn/detail/1729975" target="_blank">
+                        33. 证监会调整融券保证金比例 - 财联社
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0328/2025032802867_c.pdf" target="_blank">
+                        34. 华泰证券2024年12月31日年度业绩公告 - HKEXnews
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="http://pdf.dfcfw.com/pdf/H3_AP202308011592973081_1.pdf" target="_blank">
+                        35. 东方财富：从轻资产新贵走向传统龙头
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="http://jjckb.xinhuanet.com/20250314/4bd12d567abd4b719426779d9c5c1ab3/c.html" target="_blank">
+                        36. 营收净利"双增长" 东方财富披露上市券商首份年报
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://pdf.dfcfw.com/pdf/H3_AP202310231602723319_1.pdf" target="_blank">
+                        37. PB-ROE策略：理论与框架
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://pdf.dfcfw.com/pdf/H3_AP202006231386856732_1.pdf" target="_blank">
+                        38. 重新认识PB-ROE：9个象限，9种公司及估值逻辑
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.futunn.com/learn/detail-how-to-value-a-stock-4-ways-for-you-to-choose-89193-230754021" target="_blank">
+                        39. 如何给股票估值？4大方法任你选 - Futunn
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.stockfeel.com.tw/10-%E7%A8%AE%E5%BF%85%E7%9F%A5%E7%9A%84%E5%85%AC%E5%8F%B8%E4%BC%B0%E5%80%BC%E6%96%B9%E6%B3%95/" target="_blank">
+                        40. 股票估值怎麼算？10種必知的公司估值方法！- StockFeel
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        // 精美垂直进度条系统（支持悬停显示标题 + 点击跳转）
+        const progressBar = document.querySelector('.reading-progress');
+        const progressFill = document.querySelector('.reading-progress-fill');
+        const progressTooltip = document.getElementById('progress-tooltip');
+        const sections = document.querySelectorAll('section[id], header[id]');
+
+        let currentSectionTitle = '';
+        let sectionsData = [];
+
+        // 初始化章节数据
+        function initSections() {
+            sectionsData = Array.from(sections).map(section => ({
+                id: section.getAttribute('id'),
+                title: section.getAttribute('data-title') || section.querySelector('h1, h2')?.textContent || '未知章节',
+                offsetTop: section.offsetTop,
+                offsetHeight: section.offsetHeight
+            }));
+        }
+
+        function updateProgress() {
+            const scrolled = window.pageYOffset;
+            const maxHeight = document.body.scrollHeight - window.innerHeight;
+            const progress = (scrolled / maxHeight) * 100;
+
+            // 更新垂直进度条填充高度
+            progressFill.style.height = `${progress}%`;
+
+            // 获取当前章节
+            let currentSection = '';
+            sectionsData.forEach(section => {
+                if (scrolled >= section.offsetTop - 300) {
+                    currentSection = section.id;
+                    currentSectionTitle = section.title;
+                }
+            });
+        }
+
+        // 点击进度条跳转到对应位置
+        progressBar.addEventListener('click', (e) => {
+            const rect = progressBar.getBoundingClientRect();
+            const clickY = e.clientY - rect.top;
+            const progressHeight = rect.height;
+            const clickPercent = clickY / progressHeight;
+
+            const maxHeight = document.body.scrollHeight - window.innerHeight;
+            const targetScroll = maxHeight * clickPercent;
+
+            window.scrollTo({
+                top: targetScroll,
+                behavior: 'smooth'
+            });
+        });
+
+        // 鼠标悬停显示当前章节标题
+        progressBar.addEventListener('mouseenter', () => {
+            if (currentSectionTitle) {
+                progressTooltip.textContent = currentSectionTitle;
+                progressTooltip.classList.add('show');
+            }
+        });
+
+        progressBar.addEventListener('mouseleave', () => {
+            progressTooltip.classList.remove('show');
+        });
+
+        // 提示框悬停保持显示
+        progressTooltip.addEventListener('mouseenter', () => {
+            progressTooltip.classList.add('show');
+        });
+
+        progressTooltip.addEventListener('mouseleave', () => {
+            progressTooltip.classList.remove('show');
+        });
+
+        // 窗口大小改变时重新计算章节位置
+        window.addEventListener('resize', () => {
+            setTimeout(initSections, 100);
+        });
+
+        window.addEventListener('scroll', updateProgress);
+
+        // 页面加载完成后初始化
+        window.addEventListener('load', () => {
+            initSections();
+            updateProgress();
+        });
+
+        // 日期显示
+        document.addEventListener('DOMContentLoaded', () => {
+            const now = new Date();
+
+            // 计算季度
+            const month = now.getMonth();
+            const quarter = Math.floor(month / 3) + 1;
+            const year = now.getFullYear();
+
+            const dateCN = `${year}年Q${quarter}`;
+            const dateEN = `Q${quarter} ${year}`;
+
+            document.getElementById('date-cn').textContent = dateCN;
+            document.getElementById('date-en').textContent = dateEN;
+        });
+
+        // 优雅的页面加载动画
+        document.addEventListener('DOMContentLoaded', () => {
+            document.body.style.opacity = '0';
+            document.body.style.transition = 'opacity 1s ease';
+
+            setTimeout(() => {
+                document.body.style.opacity = '1';
+            }, 100);
+        });
+    </script>
+</body>
+</html>

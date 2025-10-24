@@ -941,6 +941,483 @@ const reportsDatabase = [
             thirdLevel: '化学药',
             fourthLevel: ''
         }
+    },
+    // 新增：9月-10月报告（医药、金融、IT、通信、公用事业、房地产）
+    {
+        id: 'traditional-chinese-medicine-2025-09-03',
+        title: '中药行业深度研究报告',
+        publishDate: '2025-09-03',
+        tags: ['中药', '中医药产业', '现代化发展'],
+        preview: '深入分析中药行业现代化发展趋势，重点关注中成药创新、中药饮片标准化、中医药国际化等发展机遇。',
+        viewCount: 2600,
+        downloadCount: 580,
+        rating: 4.6,
+        filePath: 'industry-reports/352030中药行业研究报告_20250903.html',
+        classification: {
+            industry: '医药卫生',
+            subIndustry: '医药',
+            thirdLevel: '中药',
+            fourthLevel: ''
+        }
+    },
+    {
+        id: 'pharmaceutical-biotech-services-2025-09-01',
+        title: '制药与生物科技服务行业研究报告',
+        publishDate: '2025-09-01',
+        tags: ['制药服务', '生物科技', 'CRO/CDMO'],
+        preview: '系统研究制药与生物科技服务行业高速增长动力，分析CRO、CDMO等专业服务板块的盈利能力与竞争格局。',
+        viewCount: 3200,
+        downloadCount: 710,
+        rating: 4.7,
+        filePath: 'industry-reports/352040制药与生物科技服务行业研究报告_20250901.html',
+        classification: {
+            industry: '医药卫生',
+            subIndustry: '医药',
+            thirdLevel: '制药与生物科技服务',
+            fourthLevel: ''
+        }
+    },
+    {
+        id: 'commercial-banks-2025-09-06',
+        title: '商业银行行业研究报告',
+        publishDate: '2025-09-06',
+        tags: ['商业银行', '金融科技', '风险管理'],
+        preview: '全面分析商业银行业竞争格局演变，探讨金融科技赋能、息差压力、风险管理等核心议题的投资价值。',
+        viewCount: 3900,
+        downloadCount: 880,
+        rating: 4.8,
+        filePath: 'industry-reports/401010商业银行行业研究报告_20250906.html',
+        classification: {
+            industry: '金融',
+            subIndustry: '银行',
+            thirdLevel: '商业银行',
+            fourthLevel: ''
+        }
+    },
+    {
+        id: 'mortgage-lending-institutions-2025-09-15',
+        title: '抵押信贷机构行业研究报告',
+        publishDate: '2025-09-15',
+        tags: ['抵押信贷', '地产融资', '风险防范'],
+        preview: '深度研究抵押信贷机构业务模式与风险特征，分析房地产金融周期对行业的影响及投资机遇。',
+        viewCount: 2400,
+        downloadCount: 500,
+        rating: 4.4,
+        filePath: 'industry-reports/401020抵押信贷机构行业研究报告_20250915.html',
+        classification: {
+            industry: '金融',
+            subIndustry: '银行',
+            thirdLevel: '抵押信贷机构',
+            fourthLevel: ''
+        }
+    },
+    {
+        id: 'consumer-finance-2025-09-12',
+        title: '消费信贷行业研究报告',
+        publishDate: '2025-09-12',
+        tags: ['消费信贷', '消费金融', '风险控制'],
+        preview: '系统分析消费信贷行业信用风险与盈利能力，探讨消费升级驱动下的市场机遇与监管挑战。',
+        viewCount: 3100,
+        downloadCount: 680,
+        rating: 4.7,
+        filePath: 'industry-reports/402020消费信贷行业研究报告_20250912.html',
+        classification: {
+            industry: '金融',
+            subIndustry: '其他金融',
+            thirdLevel: '消费信贷',
+            fourthLevel: ''
+        }
+    },
+    {
+        id: 'securities-companies-2025-09-09',
+        title: '证券公司行业研究报告',
+        publishDate: '2025-09-09',
+        tags: ['证券行业', '投行业务', '资产管理'],
+        preview: '全面分析证券公司业务多元化发展趋势，重点关注投行业务、资产管理、财富管理等新兴增长点的盈利前景。',
+        viewCount: 3400,
+        downloadCount: 750,
+        rating: 4.8,
+        filePath: 'industry-reports/403010证券公司行业研究报告_20250909.html',
+        classification: {
+            industry: '金融',
+            subIndustry: '资本市场',
+            thirdLevel: '证券公司',
+            fourthLevel: ''
+        }
+    },
+    {
+        id: 'insurance-industry-2025-09-18',
+        title: '保险行业研究报告',
+        publishDate: '2025-09-18',
+        tags: ['保险业', '寿险', '财险'],
+        preview: '深入研究保险行业利率环境变化、人口老龄化、消费升级等核心驱动因素，评估行业长期增长潜力与投资价值。',
+        viewCount: 3600,
+        downloadCount: 810,
+        rating: 4.8,
+        filePath: 'industry-reports/404010保险行业研究报告_20250918.html',
+        classification: {
+            industry: '金融',
+            subIndustry: '保险',
+            thirdLevel: '保险',
+            fourthLevel: ''
+        }
+    },
+    {
+        id: 'software-development-2025-09-24',
+        title: '软件开发行业研究报告',
+        publishDate: '2025-09-24',
+        tags: ['软件产业', 'AI应用', '云原生'],
+        preview: '系统分析软件开发行业AI赋能、云原生转型等新趋势，重点关注国产替代、垂直应用等细分领域的成长机会。',
+        viewCount: 3800,
+        downloadCount: 840,
+        rating: 4.8,
+        filePath: 'industry-reports/451010软件开发行业研究报告_20250924.html',
+        classification: {
+            industry: '信息技术',
+            subIndustry: '计算机',
+            thirdLevel: '软件开发',
+            fourthLevel: ''
+        }
+    },
+    {
+        id: 'information-technology-services-2025-09-21',
+        title: '信息技术服务行业研究报告',
+        publishDate: '2025-09-21',
+        tags: ['IT服务', '系统集成', '云计算'],
+        preview: '全面研究IT服务行业云计算、AI中台、数字化转型等创新方向，分析系统集成、IT咨询等细分市场的投资机遇。',
+        viewCount: 3500,
+        downloadCount: 780,
+        rating: 4.7,
+        filePath: 'industry-reports/451020信息技术服务行业研究报告_20250921.html',
+        classification: {
+            industry: '信息技术',
+            subIndustry: '计算机',
+            thirdLevel: '信息技术服务',
+            fourthLevel: ''
+        }
+    },
+    {
+        id: 'electronic-chemicals-2025-09-27',
+        title: '电子化学品行业研究报告',
+        publishDate: '2025-09-27',
+        tags: ['电子化学品', '半导体材料', '先进制程'],
+        preview: '深度分析电子化学品在芯片制造中的关键作用，重点关注先进制程所需高端化学品的国产替代机遇。',
+        viewCount: 3100,
+        downloadCount: 700,
+        rating: 4.7,
+        filePath: 'industry-reports/452040电子化学品行业研究报告_20250927.html',
+        classification: {
+            industry: '信息技术',
+            subIndustry: '电子',
+            thirdLevel: '电子化学品',
+            fourthLevel: ''
+        }
+    },
+    {
+        id: 'integrated-circuits-2025-09-30',
+        title: '集成电路行业研究报告',
+        publishDate: '2025-09-30',
+        tags: ['芯片产业', '工业级芯片', '设计创新'],
+        preview: '系统研究集成电路行业技术升级与产业链重构，分析工业级芯片、AI芯片等新兴领域的长期投资机遇。',
+        viewCount: 4200,
+        downloadCount: 950,
+        rating: 4.9,
+        filePath: 'industry-reports/453010集成电路行业研究报告_20250930.html',
+        classification: {
+            industry: '信息技术',
+            subIndustry: '半导体',
+            thirdLevel: '集成电路',
+            fourthLevel: ''
+        }
+    },
+    {
+        id: 'discrete-devices-2025-10-03',
+        title: '分立器件行业研究报告',
+        publishDate: '2025-10-03',
+        tags: ['分立器件', '功率芯片', '新能源'],
+        preview: '全面解析分立器件在新能源汽车、光伏等高增长领域的应用潜力，评估功率芯片国产化的投资价值。',
+        viewCount: 3400,
+        downloadCount: 760,
+        rating: 4.7,
+        filePath: 'industry-reports/453020分立器件行业研究报告_20251003.html',
+        classification: {
+            industry: '信息技术',
+            subIndustry: '半导体',
+            thirdLevel: '分立器件',
+            fourthLevel: ''
+        }
+    },
+    {
+        id: 'semiconductor-materials-equipment-2025-10-06',
+        title: '半导体材料与设备行业研究报告',
+        publishDate: '2025-10-06',
+        tags: ['半导体材料', '工艺设备', '产业链安全'],
+        preview: '深入分析半导体材料与设备行业战略意义，探讨EDA、光刻机等关键环节的国产替代机遇与挑战。',
+        viewCount: 3900,
+        downloadCount: 870,
+        rating: 4.8,
+        filePath: 'industry-reports/453030半导体材料与设备行业研究报告_20251006.html',
+        classification: {
+            industry: '信息技术',
+            subIndustry: '半导体',
+            thirdLevel: '半导体材料与设备',
+            fourthLevel: ''
+        }
+    },
+    {
+        id: 'telecom-operations-2025-10-12',
+        title: '电信运营服务行业研究报告',
+        publishDate: '2025-10-12',
+        tags: ['电信运营', '5G商用', '数字化转型'],
+        preview: '系统分析电信运营商5G商用阶段的盈利能力与成本压力，探讨云计算、IDC等新业务的增长潜力。',
+        viewCount: 3300,
+        downloadCount: 740,
+        rating: 4.7,
+        filePath: 'industry-reports/501010电信运营服务行业研究报告_20251012.html',
+        classification: {
+            industry: '通信服务',
+            subIndustry: '电信服务',
+            thirdLevel: '电信运营服务',
+            fourthLevel: ''
+        }
+    },
+    {
+        id: 'telecom-value-added-services-2025-10-09',
+        title: '电信增值服务行业研究报告',
+        publishDate: '2025-10-09',
+        tags: ['增值服务', '云服务', 'API经济'],
+        preview: '全面研究电信增值服务多样化发展趋势，重点关注云计算、大数据应用等新兴服务模式的盈利空间。',
+        viewCount: 2900,
+        downloadCount: 650,
+        rating: 4.5,
+        filePath: 'industry-reports/501020电信增值服务行业研究报告_20251009.html',
+        classification: {
+            industry: '通信服务',
+            subIndustry: '电信服务',
+            thirdLevel: '电信增值服务',
+            fourthLevel: ''
+        }
+    },
+    {
+        id: 'communication-equipment-2025-10-15',
+        title: '通信设备行业研究报告',
+        publishDate: '2025-10-15',
+        tags: ['通信设备', '5G基建', '网络安全'],
+        preview: '深度解析通信设备行业5G周期与后5G时代的发展路径，分析网络设备、终端设备等细分领域的投资价值。',
+        viewCount: 3600,
+        downloadCount: 800,
+        rating: 4.8,
+        filePath: 'industry-reports/502010通信设备行业研究报告_20251015.html',
+        classification: {
+            industry: '通信服务',
+            subIndustry: '通信设备及技术服务',
+            thirdLevel: '通信设备',
+            fourthLevel: ''
+        }
+    },
+    {
+        id: 'data-centers-2025-10-21',
+        title: '数据中心行业研究报告',
+        publishDate: '2025-10-21',
+        tags: ['数据中心', 'IDC', 'AI基础设施'],
+        preview: '系统研究数据中心行业AI时代的机遇与挑战，分析高性能计算、边缘计算等新兴细分市场的成长潜力。',
+        viewCount: 4100,
+        downloadCount: 920,
+        rating: 4.9,
+        filePath: 'industry-reports/502020数据中心行业研究报告_20251021.html',
+        classification: {
+            industry: '通信服务',
+            subIndustry: '通信设备及技术服务',
+            thirdLevel: '数据中心',
+            fourthLevel: ''
+        }
+    },
+    {
+        id: 'telecom-technology-services-2025-10-18',
+        title: '通信技术服务行业研究报告',
+        publishDate: '2025-10-18',
+        tags: ['通信服务', '网络运维', '技术咨询'],
+        preview: '全面分析通信技术服务行业在5G部署、网络优化等领域的服务需求与盈利模式创新。',
+        viewCount: 2700,
+        downloadCount: 600,
+        rating: 4.5,
+        filePath: 'industry-reports/502030通信技术服务行业研究报告_20251018.html',
+        classification: {
+            industry: '通信服务',
+            subIndustry: '通信设备及技术服务',
+            thirdLevel: '通信技术服务',
+            fourthLevel: ''
+        }
+    },
+    {
+        id: 'marketing-advertising-2025-10-19',
+        title: '营销与广告行业研究报告',
+        publishDate: '2025-10-19',
+        tags: ['广告产业', '数字营销', '效果营销'],
+        preview: '深入分析广告行业数字化转型趋势，重点关注效果营销、社交电商等新兴营销模式的增长潜力。',
+        viewCount: 3200,
+        downloadCount: 710,
+        rating: 4.6,
+        filePath: 'industry-reports/503010营销与广告行业研究报告_20251019.html',
+        classification: {
+            industry: '通信服务',
+            subIndustry: '传媒',
+            thirdLevel: '营销与广告',
+            fourthLevel: ''
+        }
+    },
+    {
+        id: 'entertainment-culture-2025-10-20',
+        title: '文化娱乐行业研究报告',
+        publishDate: '2025-10-20',
+        tags: ['文化产业', '内容娱乐', '新兴业态'],
+        preview: '系统研究文化娱乐行业内容IP化、短视频化等新趋势，分析游戏、动漫、影视等细分领域的投资机遇。',
+        viewCount: 3500,
+        downloadCount: 780,
+        rating: 4.7,
+        filePath: 'industry-reports/503020文化娱乐行业研究报告_20251020.html',
+        classification: {
+            industry: '通信服务',
+            subIndustry: '传媒',
+            thirdLevel: '文化娱乐',
+            fourthLevel: ''
+        }
+    },
+    {
+        id: 'digital-media-2025-10-21',
+        title: '数字媒体行业研究报告',
+        publishDate: '2025-10-21',
+        tags: ['数字媒体', '新媒体', '内容平台'],
+        preview: '全面解析数字媒体行业平台化、内容化、商业化三重驱动，重点关注短视频、直播等新兴媒体形态的盈利模式。',
+        viewCount: 3800,
+        downloadCount: 850,
+        rating: 4.8,
+        filePath: 'industry-reports/503030数字媒体行业研究报告_20251021.html',
+        classification: {
+            industry: '通信服务',
+            subIndustry: '传媒',
+            thirdLevel: '数字媒体',
+            fourthLevel: ''
+        }
+    },
+    {
+        id: 'electricity-grid-2025-10-21',
+        title: '电力及电网行业研究报告',
+        publishDate: '2025-10-21',
+        tags: ['电力行业', '新能源并网', '智能电网'],
+        preview: '深度分析电力及电网行业能源转型背景下的结构性机遇，重点关注新能源消纳、储能配置等新兴议题。',
+        viewCount: 3900,
+        downloadCount: 870,
+        rating: 4.8,
+        filePath: 'industry-reports/551010电力及电网行业研究报告_20251021.html',
+        classification: {
+            industry: '公用事业',
+            subIndustry: '公用事业',
+            thirdLevel: '电力及电网',
+            fourthLevel: ''
+        }
+    },
+    {
+        id: 'water-utilities-2025-10-22',
+        title: '水务行业研究报告',
+        publishDate: '2025-10-22',
+        tags: ['水处理', '节水产业', '环保'],
+        preview: '系统研究水务行业水资源紧张背景下的投资机遇，分析污水处理、中水回用等细分领域的成长潜力。',
+        viewCount: 2800,
+        downloadCount: 620,
+        rating: 4.5,
+        filePath: 'industry-reports/551030水务行业研究报告_20251022.html',
+        classification: {
+            industry: '公用事业',
+            subIndustry: '公用事业',
+            thirdLevel: '水务',
+            fourthLevel: ''
+        }
+    },
+    {
+        id: 'municipal-sanitation-2025-10-22',
+        title: '市政环卫行业研究报告',
+        publishDate: '2025-10-22',
+        tags: ['市政环卫', '垃圾分类', '城市管理'],
+        preview: '全面分析市政环卫行业转型升级趋势，重点关注垃圾分类、智慧环卫等政策驱动下的新兴商业模式。',
+        viewCount: 2600,
+        downloadCount: 580,
+        rating: 4.4,
+        filePath: 'industry-reports/551040市政环卫行业研究报告_20251022.html',
+        classification: {
+            industry: '公用事业',
+            subIndustry: '公用事业',
+            thirdLevel: '市政环卫',
+            fourthLevel: ''
+        }
+    },
+    {
+        id: 'heating-other-utilities-2025-10-22',
+        title: '供热及其他行业研究报告',
+        publishDate: '2025-10-22',
+        tags: ['供热产业', '新能源', '气候变化'],
+        preview: '深入分析供热行业清洁能源转型趋势，探讨地热、热泵等新技术在能源替代中的应用前景。',
+        viewCount: 2400,
+        downloadCount: 520,
+        rating: 4.3,
+        filePath: 'industry-reports/551050供热及其他行业研究报告_20251022.html',
+        classification: {
+            industry: '公用事业',
+            subIndustry: '公用事业',
+            thirdLevel: '供热及其他',
+            fourthLevel: ''
+        }
+    },
+    {
+        id: 'real-estate-development-2025-10-20',
+        title: '房地产开发与园区行业研究报告',
+        publishDate: '2025-10-20',
+        tags: ['房地产', '产业园区', '产城融合'],
+        preview: '系统研究房地产行业新发展模式，分析产业园区、产城融合等新兴业态的长期投资价值与风险。',
+        viewCount: 3300,
+        downloadCount: 740,
+        rating: 4.6,
+        filePath: 'industry-reports/601010房地产开发与园区行业研究报告_20251020.html',
+        classification: {
+            industry: '房地产',
+            subIndustry: '房地产',
+            thirdLevel: '房地产开发与园区',
+            fourthLevel: ''
+        }
+    },
+    {
+        id: 'real-estate-management-services-2025-10-19',
+        title: '房地产管理服务行业研究报告',
+        publishDate: '2025-10-19',
+        tags: ['物业管理', '房地产服务', '服务转型'],
+        preview: '全面分析房地产管理服务行业增值服务拓展趋势，重点关注物业科技、增值服务等新兴增长极的盈利能力。',
+        viewCount: 3100,
+        downloadCount: 700,
+        rating: 4.6,
+        filePath: 'industry-reports/601020房地产管理服务行业研究报告_20251019.html',
+        classification: {
+            industry: '房地产',
+            subIndustry: '房地产',
+            thirdLevel: '房地产管理与服务',
+            fourthLevel: ''
+        }
+    },
+    {
+        id: 'real-estate-reits-2025-10-20',
+        title: 'REITs行业研究报告',
+        publishDate: '2025-10-20',
+        tags: ['REITs', '房地产融资', '产业基金'],
+        preview: '深度解析REITs作为房地产融资创新工具的发展前景，分析专业化管理对资产回报的提升机制。',
+        viewCount: 2800,
+        downloadCount: 630,
+        rating: 4.5,
+        filePath: 'industry-reports/601030REITs行业研究报告_20251020.html',
+        classification: {
+            industry: '房地产',
+            subIndustry: '房地产',
+            thirdLevel: '房地产投资信托(REITs)',
+            fourthLevel: ''
+        }
     }
 ];
 

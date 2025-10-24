@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>厚德载物：中国中药行业系统性认知框架与投资洞察报告 | Traditional Chinese Medicine Industry Insight Report</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700;800;900&family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            /* 深邃黑金权力色系 */
+            --obsidian-black: #0A0A0A;
+            --midnight-black: #151515;
+            --shadow-black: #1F1F1F;
+            --charcoal-deep: #2A2A2A;
+
+            /* 稀缺金色层次 */
+            --sovereign-gold: #B8860B;
+            --imperial-gold: #DAA520;
+            --aureate-whisper: #F4E4BC;
+            --golden-shadow: #8B6914;
+
+            /* 权力灰度 */
+            --platinum-mist: #E5E5E5;
+            --sterling-silver: #C0C0C0;
+            --graphite-steel: #696969;
+            --charcoal-whisper: #808080;
+
+            /* 稀缺强调色 */
+            --ruby-accent: #8B0000;
+            --emerald-depth: #006400;
+            --sapphire-authority: #1e3a8a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg,
+                var(--obsidian-black) 0%,
+                var(--midnight-black) 40%,
+                var(--shadow-black) 100%);
+            color: var(--platinum-mist);
+            line-height: 1.8;
+            letter-spacing: 0.02em;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        /* 权威性排版系统 */
+        .imperial-title {
+            font-family: 'Playfair Display', serif;
+            font-weight: 200;
+            letter-spacing: 0.12em;
+            line-height: 1.05;
+            color: var(--aureate-whisper);
+            text-shadow: 0 3px 12px rgba(184, 134, 11, 0.4);
+        }
+
+        .imperial-subtitle {
+            font-family: 'Playfair Display', serif;
+            font-weight: 300;
+            letter-spacing: 0.08em;
+            line-height: 1.15;
+            color: var(--imperial-gold);
+            text-shadow: 0 2px 8px rgba(218, 165, 32, 0.3);
+        }
+
+        .imperial-tagline {
+            font-family: 'Inter', sans-serif;
+            font-weight: 200;
+            letter-spacing: 0.06em;
+            line-height: 1.4;
+            color: var(--sterling-silver);
+            font-style: italic;
+        }
+
+        .imperial-dedication {
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+            letter-spacing: 0.04em;
+            line-height: 1.3;
+            color: var(--imperial-gold);
+        }
+
+        .imperial-dedication-sub {
+            font-family: 'Inter', sans-serif;
+            font-weight: 200;
+            letter-spacing: 0.05em;
+            line-height: 1.3;
+            color: var(--sterling-silver);
+            font-style: italic;
+        }
+
+        .sovereign-heading {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            color: var(--imperial-gold);
+            text-shadow: 0 1px 4px rgba(218, 165, 32, 0.4);
+        }
+
+        .noble-text {
+            font-weight: 300;
+            letter-spacing: 0.03em;
+            line-height: 2.2;
+            color: var(--platinum-mist);
+        }
+
+        .executive-quote {
+            font-weight: 300;
+            letter-spacing: 0.02em;
+            line-height: 1.8;
+            color: var(--sterling-silver);
+            font-size: 0.95rem;
+            font-style: italic;
+            position: relative;
+            padding: 0 2rem;
+            margin: 2rem 0;
+        }
+
+        .executive-quote::before {
+            content: '"';
+            position: absolute;
+            left: 0;
+            top: -0.5rem;
+            font-size: 3rem;
+            color: var(--sovereign-gold);
+            opacity: 0.3;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .executive-quote::after {
+            content: '"';
+            position: absolute;
+            right: 0;
+            bottom: -0.5rem;
+            font-size: 3rem;
+            color: var(--sovereign-gold);
+            opacity: 0.3;
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* 免责声明精致样式 */
+        .disclaimer-card {
+            background: linear-gradient(145deg,
+                rgba(31, 31, 31, 0.95) 0%,
+                rgba(42, 42, 42, 0.9) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.18);
+            border-radius: 3px;
+            padding: 4rem;
+            position: relative;
+            backdrop-filter: blur(25px);
+            box-shadow:
+                0 12px 40px rgba(0, 0, 0, 0.7),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08),
+                inset 0 0 30px rgba(184, 134, 11, 0.02);
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .disclaimer-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 2px;
+            background: linear-gradient(90deg,
+                transparent,
+                var(--sovereign-gold),
+                transparent);
+            opacity: 0.6;
+        }
+
+        .disclaimer-card:hover {
+            border-color: rgba(184, 134, 11, 0.25);
+            box-shadow:
+                0 16px 50px rgba(0, 0, 0, 0.8),
+                0 0 25px rgba(184, 134, 11, 0.08),
+                inset 0 1px 1px rgba(244, 228, 188, 0.12);
+        }
+
+        .disclaimer-text {
+            font-weight: 300;
+            letter-spacing: 0.02em;
+            line-height: 2;
+            color: var(--platinum-mist);
+            font-size: 1rem;
+        }
+
+        .exclusive-number {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: var(--sovereign-gold);
+            text-shadow: 0 1px 3px rgba(184, 134, 11, 0.5);
+        }
+
+        /* 极简奢华容器 */
+        .sovereign-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 5rem;
+        }
+
+        .imperial-section {
+            margin: 12rem 0;
+            position: relative;
+        }
+
+        /* 金色琉璃卡片 */
+        .golden-glass-card {
+            background:
+                radial-gradient(circle at 30% 30%, rgba(218, 165, 32, 0.12) 0%, transparent 50%),
+                radial-gradient(circle at 70% 70%, rgba(184, 134, 11, 0.08) 0%, transparent 50%),
+                linear-gradient(135deg,
+                    rgba(244, 228, 188, 0.06) 0%,
+                    rgba(218, 165, 32, 0.04) 30%,
+                    rgba(184, 134, 11, 0.03) 70%,
+                    rgba(139, 105, 20, 0.02) 100%);
+            border: 1px solid rgba(218, 165, 32, 0.15);
+            border-radius: 4px;
+            padding: 2.5rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            box-shadow:
+                0 8px 32px rgba(0, 0, 0, 0.6),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08),
+                inset 0 0 30px rgba(218, 165, 32, 0.03);
+            transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .golden-glass-card:hover {
+            transform: translateY(-3px);
+            border-color: rgba(218, 165, 32, 0.3);
+            box-shadow:
+                0 16px 48px rgba(0, 0, 0, 0.8),
+                0 0 40px rgba(218, 165, 32, 0.1),
+                inset 0 1px 1px rgba(244, 228, 188, 0.12),
+                inset 0 0 40px rgba(218, 165, 32, 0.05);
+        }
+
+        /* 权力卡片系统 */
+        .authority-card {
+            background: linear-gradient(145deg,
+                rgba(21, 21, 21, 0.9) 0%,
+                rgba(31, 31, 31, 0.8) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.15);
+            border-radius: 2px;
+            padding: 3rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            box-shadow:
+                0 8px 32px rgba(0, 0, 0, 0.6),
+                inset 0 1px 1px rgba(244, 228, 188, 0.05);
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .authority-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(184, 134, 11, 0.3);
+            box-shadow:
+                0 16px 48px rgba(0, 0, 0, 0.8),
+                0 0 24px rgba(184, 134, 11, 0.1),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08);
+        }
+
+        .authority-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(90deg, var(--sovereign-gold), transparent);
+            opacity: 0.6;
+        }
+
+        .authority-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(270deg, var(--sovereign-gold), transparent);
+            opacity: 0.6;
+        }
+
+        /* 权威表格 */
+        .imperial-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            background: rgba(15, 15, 15, 0.8);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(184, 134, 11, 0.2);
+            border-radius: 2px;
+        }
+
+        .imperial-table th {
+            background: rgba(184, 134, 11, 0.08);
+            padding: 2rem 1.5rem;
+            text-align: left;
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--imperial-gold);
+            border-bottom: 1px solid rgba(184, 134, 11, 0.2);
+        }
+
+        .imperial-table td {
+            padding: 1.8rem 1.5rem;
+            border-bottom: 1px solid rgba(184, 134, 11, 0.05);
+            font-weight: 300;
+        }
+
+        .imperial-table tbody tr:hover {
+            background: rgba(184, 134, 11, 0.03);
+        }
+
+        /* 分隔线艺术 */
+        .sovereign-divider {
+            height: 1px;
+            background: linear-gradient(90deg,
+                transparent 0%,
+                rgba(184, 134, 11, 0.3) 30%,
+                rgba(184, 134, 11, 0.6) 50%,
+                rgba(184, 134, 11, 0.3) 70%,
+                transparent 100%);
+            margin: 8rem 0;
+            position: relative;
+        }
+
+        .sovereign-divider::before {
+            content: '◆';
+            position: absolute;
+            top: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--sovereign-gold);
+            font-size: 16px;
+            background: var(--obsidian-black);
+            padding: 0 1rem;
+        }
+
+        /* 精美垂直进度条系统 */
+        .reading-progress {
+            position: fixed;
+            top: 50%;
+            right: 2rem;
+            width: 4px;
+            height: 200px;
+            transform: translateY(-50%);
+            background: linear-gradient(180deg,
+                rgba(184, 134, 11, 0.2) 0%,
+                rgba(218, 165, 32, 0.3) 30%,
+                rgba(244, 228, 188, 0.4) 60%,
+                rgba(218, 165, 32, 0.3) 85%,
+                rgba(139, 105, 20, 0.2) 100%);
+            z-index: 1001;
+            box-shadow:
+                0 0 12px rgba(184, 134, 11, 0.6),
+                2px 0 8px rgba(184, 134, 11, 0.3),
+                inset 1px 0 2px rgba(244, 228, 188, 0.4);
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+        .reading-progress::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(180deg,
+                rgba(244, 228, 188, 0.1) 0%,
+                rgba(218, 165, 32, 0.15) 50%,
+                rgba(244, 228, 188, 0.1) 100%);
+            border-radius: 2px;
+            animation: progressShimmer 3s ease-in-out infinite;
+        }
+
+        .reading-progress-fill {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(180deg,
+                var(--golden-shadow) 0%,
+                var(--sovereign-gold) 50%,
+                var(--imperial-gold) 100%);
+            border-radius: 2px;
+            transition: height 0.1s ease;
+            box-shadow:
+                inset 0 1px 2px rgba(244, 228, 188, 0.3),
+                0 0 8px rgba(184, 134, 11, 0.4);
+        }
+
+        @keyframes progressShimmer {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.8; }
+        }
+
+        /* 进度标题提示器 */
+        .progress-tooltip {
+            position: fixed;
+            top: 50%;
+            right: 7rem;
+            transform: translateY(-50%);
+            background: linear-gradient(135deg,
+                rgba(15, 15, 15, 0.95) 0%,
+                rgba(31, 31, 31, 0.9) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.25);
+            border-radius: 8px;
+            padding: 0.8rem 2rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 0.85rem;
+            font-weight: 300;
+            color: var(--imperial-gold);
+            backdrop-filter: blur(20px);
+            box-shadow:
+                0 8px 32px rgba(0, 0, 0, 0.7),
+                0 0 20px rgba(184, 134, 11, 0.1),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+            z-index: 1002;
+            white-space: nowrap;
+            letter-spacing: 0.03em;
+        }
+
+        .progress-tooltip.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(-50%) translateX(-8px);
+        }
+
+        .progress-tooltip::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -8px;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-left: 8px solid rgba(184, 134, 11, 0.25);
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+        }
+
+        .progress-tooltip::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -7px;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-left: 7px solid rgba(15, 15, 15, 0.95);
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+        }
+
+        /* 移动端适配 */
+        @media (max-width: 768px) {
+            .reading-progress {
+                right: 1rem;
+                height: 150px;
+                width: 3px;
+            }
+            .progress-tooltip {
+                right: 5rem;
+                padding: 0.6rem 1.5rem;
+                font-size: 0.75rem;
+            }
+        }
+
+        /* 引用文献奢华样式 */
+        .citation-item {
+            padding: 1.5rem 2rem;
+            margin: 0.8rem 0;
+            background: linear-gradient(135deg,
+                rgba(21, 21, 21, 0.8) 0%,
+                rgba(31, 31, 31, 0.6) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.15);
+            border-radius: 3px;
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .citation-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--sovereign-gold), var(--golden-shadow));
+            opacity: 0.6;
+            transition: opacity 0.3s ease;
+        }
+
+        .citation-item:hover {
+            border-color: rgba(184, 134, 11, 0.4);
+            background: linear-gradient(135deg,
+                rgba(31, 31, 31, 0.9) 0%,
+                rgba(42, 42, 42, 0.7) 100%);
+            transform: translateX(6px) translateY(-1px);
+            box-shadow:
+                0 8px 25px rgba(0, 0, 0, 0.5),
+                0 0 20px rgba(184, 134, 11, 0.08);
+        }
+
+        .citation-item:hover::before {
+            opacity: 1;
+        }
+
+        .citation-item a {
+            color: var(--platinum-mist);
+            text-decoration: none;
+            font-size: 0.85rem;
+            line-height: 1.7;
+            font-weight: 300;
+            transition: color 0.4s ease;
+            display: block;
+            position: relative;
+        }
+
+        .citation-item a::before {
+            content: '';
+            position: absolute;
+            left: -0.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 4px;
+            background: var(--sovereign-gold);
+            border-radius: 50%;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .citation-item:hover a {
+            color: var(--aureate-whisper);
+            padding-left: 1rem;
+        }
+
+        .citation-item:hover a::before {
+            opacity: 0.8;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 1024px) {
+            .sovereign-container {
+                padding: 0 2.5rem;
+            }
+            .imperial-section {
+                margin: 8rem 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .sovereign-container {
+                padding: 0 1.5rem;
+            }
+            .imperial-section {
+                margin: 6rem 0;
+            }
+            .authority-card {
+                padding: 2rem;
+            }
+        }
+
+        /* 选择高亮 */
+        ::selection {
+            background: rgba(184, 134, 11, 0.2);
+            color: var(--aureate-whisper);
+        }
+
+        /* 滚动条 */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--obsidian-black);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--sovereign-gold);
+            border-radius: 3px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--imperial-gold);
+        }
+    </style>
+</head>
+<body>
+    <!-- 阅读进度条 -->
+    <div class="reading-progress">
+        <div class="reading-progress-fill"></div>
+    </div>
+
+    <!-- 进度标题提示器 -->
+    <div class="progress-tooltip" id="progress-tooltip"></div>
+
+    <!-- 页面标题区域 -->
+    <header id="header" class="min-h-screen flex items-center justify-center relative" data-title="厚德载物：中国中药行业系统性认知框架与投资洞察">
+        <div class="sovereign-container text-center relative z-10">
+            <!-- 主标题区域 -->
+            <div class="mb-16">
+                <h1 class="imperial-title text-4xl md:text-6xl mb-6">
+                    厚德载物：中国中药行业系统性认知框架与投资洞察
+                </h1>
+
+                <h2 class="imperial-subtitle text-xl md:text-3xl mb-12 opacity-90">
+                    传承与创新并重的产业转型
+                </h2>
+            </div>
+
+            <!-- 英文副标题 -->
+            <div class="mb-12">
+                <div class="imperial-tagline text-sm md:text-base opacity-75 max-w-4xl mx-auto">
+                    Traditional Chinese Medicine Industry Insight Report:<br class="md:hidden">
+                    Systematic Framework and Investment Analysis on Heritage and Innovation
+                </div>
+            </div>
+
+            <!-- 致敬区域 -->
+            <div class="mb-16">
+                <div class="imperial-dedication text-sm md:text-base">
+                    致：机构投资者与高净值客户
+                </div>
+                <div class="imperial-dedication-sub text-xs md:text-sm opacity-60 mt-2">
+                    For: Institutional Investors and High Net Worth Clients
+                </div>
+            </div>
+
+            <!-- 发布日期卡片 -->
+            <div class="golden-glass-card inline-block">
+                <div class="text-xs uppercase tracking-[0.2em] opacity-50 mb-4 font-light">
+                    本报告发布于 · Published on
+                </div>
+                <div class="sovereign-heading text-base">
+                    <span id="date-cn" class="exclusive-number"></span>
+                    <span class="mx-4 text-sovereign-gold opacity-40">◆</span>
+                    <span id="date-en" class="exclusive-number"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 背景装饰 -->
+        <div class="absolute inset-0 pointer-events-none opacity-8">
+            <div class="absolute top-20 left-20 w-px h-32 bg-gradient-to-b from-sovereign-gold to-transparent"></div>
+            <div class="absolute bottom-20 right-20 w-px h-32 bg-gradient-to-t from-sovereign-gold to-transparent"></div>
+            <div class="absolute top-1/2 left-1/4 w-24 h-px bg-gradient-to-r from-sovereign-gold to-transparent"></div>
+            <div class="absolute top-1/3 right-1/4 w-24 h-px bg-gradient-to-l from-sovereign-gold to-transparent"></div>
+        </div>
+    </header>
+
+    <!-- 免责声明 -->
+    <section class="imperial-section">
+        <div class="sovereign-container">
+            <div class="disclaimer-card text-center">
+                <h2 class="sovereign-heading text-2xl mb-8">免责声明</h2>
+                <div class="disclaimer-text max-w-4xl mx-auto">
+                    本报告由资深行业分析师编制，旨在为机构投资者与高净值客户提供关于中药行业的系统性认知框架。报告中的信息和数据均来源于公开可查的资料，我们力求报告内容的客观、准确，但不对其完整性或准确性做出任何保证。本报告中的分析、结论和观点仅为研究目的，不构成任何形式的投资建议。投资者应基于自身的独立判断进行投资决策，并自行承担相关风险。本报告著作权归属于本研究部门，禁止任何形式的复制、改编、转售或进行衍生创意。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 前言 -->
+    <section id="preface" class="imperial-section" data-title="前言与核心观点">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-4xl md:text-5xl mb-16 text-center">前言：研究背景与核心观点</h2>
+
+            <div class="authority-card">
+                <div class="noble-text space-y-6">
+                    <p>在当前全球医药产业格局深刻重塑、中国经济结构持续转型的宏观背景下，中药行业作为我国独具特色的传统产业，正经历一场由内而外的深刻变革。其核心驱动力、产业结构以及投资价值均面临重估。本报告旨在超越单一维度的描述，构建一个从宏观环境、到微观产业链、再到核心变量，最终回归资本市场估值逻辑的立体化分析框架。</p>
+
+                    <p><strong class="text-imperial-gold">本报告的核心观点是，中国中药行业正在从一个依赖传统模式、以粗放式生产为主的"特色制造业"，向一个由政策支持、品牌壁垒、研发创新和高标准驱动的"品牌消费品+创新医药"融合的新型产业业态转型。</strong>这一转型不仅是市场规模的简单扩张，更是产业内在驱动逻辑与价值创造方式的质变，为市场带来了新的投资机遇与挑战。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 第一章 -->
+    <section id="chapter1" class="imperial-section" data-title="行业总览与宏观环境">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-4xl md:text-5xl mb-16 text-center">第一章：行业总览与宏观环境</h2>
+
+            <div class="space-y-12">
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-2xl mb-8">1.1 全球及中国中医药市场规模与演进趋势</h3>
+                    <div class="noble-text space-y-6">
+                        <p>中药作为中国医药市场的重要组成部分，其市场规模与增长态势是理解行业发展的基础。根据市场研究数据显示，中国医药市场规模总体呈现稳步增长趋势。2023年中国医药市场规模已达到17,977亿元，并预计在2024年进一步增长至19,312亿元。</p>
+
+                        <p>在这一庞大市场中，中药市场的体量与化学药和生物药存在结构性差异。2023年，中药市场规模为4,772亿元，预计2024年将达到5,015亿元。与此同期，化学药市场规模为7,858亿元，生物药市场规模则为5,347亿元。将这三个细分市场进行量化对比可以发现，中药市场在2023年至2024年间的预测增速约为5.1%，显著慢于生物药板块同期约16%的预测增速。</p>
+
+                        <p>这种增速差异并非偶然，其背后是不同子行业底层驱动逻辑的根本不同。生物药的增长主要由持续的技术创新与庞大的资本投入所驱动，其市场空间的拓展基于新适应症的发现和高价值产品的增量。而中药市场的增长则更多依赖于宏观趋势的贝塔增长，例如居民可支配收入的持续增长、医保目录的扩容以及人口老龄化带来的医疗保健需求提升等。</p>
+
+                        <p>从长远来看，行业分析机构普遍对中医药市场的未来保持乐观预期。预测显示，到2025年，中医药市场的总规模将达到2.2万亿元。这一预测涵盖了中药产品与医疗服务，表明中医药整体产业具备可观的增长潜力。</p>
+                    </div>
+                </div>
+
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-2xl mb-8">1.2 行业属性与结构性特征</h3>
+                    <div class="noble-text space-y-6">
+                        <p>相比于追求单一靶点、精准疗效的化学药与生物药，中药行业在技术、研发、产品和市场方面具有显著的独特性。这种独特性决定了其竞争模式、增长路径与估值逻辑的内在差异。</p>
+
+                        <p><strong class="text-imperial-gold">中药的研发模式与西药存在本质区别。</strong>西药研发常采用随机筛选与分子靶点模式，而中药研发的核心在于"性味"与"配伍"理论，强调方剂的整体协同作用，即通过对动植物等天然物质的提取、加工与组方，实现对人体生命系统的综合调节。这一特性使得传统的中药研发缺乏一套与西药完全对等的科学验证体系，导致其新药研发周期长、成功率低。2023年，中药新药临床试验占比仅为3.3%，远低于化学药和生物制品。</p>
+
+                        <p>然而，这种局面正在发生积极的变化。国家药监局正积极建立一个符合中药特性的"理论-经验-临床"三结合的审评证据体系，旨在为中药新药提供一条量身定制的、科学的审评路径。2021年，获批的中药新药数量达到12款，超过了2017年至2020年四年的总和，这正是政策对研发产生正向激励的有力证明。</p>
+
+                        <p><strong class="text-imperial-gold">中药行业的产品壁垒具有独特性。</strong>与化药的专利期保护和生物药的技术壁垒不同，中药的核心壁垒在于其"独家品种"与"炮制工艺"。拥有独家品种的中药企业，因其产品的独特性和消费者认知度，更容易占据细分市场并实现稳定增长。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 第二章 -->
+    <section id="chapter2" class="imperial-section" data-title="产业链深度剖析">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-4xl md:text-5xl mb-16 text-center">第二章：中药产业链深度剖析</h2>
+
+            <div class="space-y-12">
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-2xl mb-8">2.1 上游：中药材与饮片——价值之源的结构性矛盾</h3>
+                    <div class="noble-text space-y-6">
+                        <p>中药材是整个中药产业链的基石，其质量与价格的稳定性直接关系到中成药产品的疗效与成本。中药材的行业特性可概括为"微小投入，巨大产出"。</p>
+
+                        <p>从供需关系来看，2022年中国中药材总产量为521.0万吨，需求量为520.7万吨，市场供给略大于需求。然而，中药材价格市场却经历了显著的波动。截至2024年初，中药材综合200价格指数达到3337.29点，较2023年同期上升18.75%。</p>
+
+                        <p>这种价格波动并非简单的市场供需关系所能完全解释，其背后是"靠天吃饭"的自然属性与"政府政策"的宏观调控双重影响。新冠疫情爆发以来，公众对清肺解毒、增强免疫力等中药材的需求激增，直接推动了价格上涨。国家为保障粮食供应而实施的退耕还林、复耕种粮等政策，可能限制了部分中药材的种植面积，从而限制了供应侧的增长潜力。</p>
+
+                        <p><strong class="text-imperial-gold">价格上涨虽然可能压缩中游制药企业的毛利，但也凸显了那些拥有自有种植基地和良好农业规范（GAP）认证的企业的战略价值。</strong>这些企业通过垂直整合，能够有效平滑原材料成本波动，保障产品质量稳定性，从而获得更高的市场溢价和竞争优势。</p>
+                    </div>
+                </div>
+
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-2xl mb-8">2.2 中游：中成药与配方颗粒——生产端的变革与创新</h3>
+                    <div class="noble-text space-y-6">
+                        <p>中药产业链的中游环节包括中药饮片、中成药和中药配方颗粒的制造生产。其中，中药配方颗粒作为新型中药产品，正成为行业增长的新引擎。</p>
+
+                        <p>中药配方颗粒是传统中药饮片经现代提取、浓缩、干燥等工艺制成的单味颗粒。这一产品的出现，解决了传统中药饮片煎煮不便、质量难控等问题，更符合现代快节奏生活的需求。数据显示，中药配方颗粒市场规模在2017年至2021年间从98.3亿元高速增长至361.5亿元，年复合增长率高达23.92%。</p>
+
+                        <p>这一市场的爆发式增长，直接得益于政策的驱动。首先，"零加成"政策的实施使得公立医院取消了药品加成，为弥补收入缺口，医院开始增加对中药饮片，包括配方颗粒的使用。其次，中药注射剂在医保目录中的受限使用，也使得配方颗粒作为替代品，销量得以提升。</p>
+
+                        <p><strong class="text-imperial-gold">2021年，国家结束了试点工作，并已向国家及各省发放了60余张牌照。随之而来的，是2023年首次中药配方颗粒省际联盟集采的落地，平均降价幅度高达50.77%。</strong>这标志着该子行业正从过去的"政策红利垄断"时代，进入一个以"规模化、成本控制"为核心的全面竞争时代。</p>
+                    </div>
+                </div>
+
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-2xl mb-8">2.3 下游：流通与消费——渠道变革与市场分层</h3>
+                    <div class="noble-text space-y-6">
+                        <p>中药产品的销售渠道复杂且分层，其核心在于中药的"双重属性"——即同时具备"治疗性"和"消费性"。</p>
+
+                        <p>从渠道结构来看，中成药的主要销售渠道集中在城市公立医院和零售药店，两者合计销售占比达到69%。其中，公立医院对中成药销售的贡献为38%，而零售药店和基层医疗机构则占据更重要的地位。这与以医院为主导的化学药销售渠道形成鲜明对比。</p>
+
+                        <p>渠道下沉与多元化趋势正在重塑这一格局。零售药店的终端销售占比从2013年的23.3%稳步提升至2020年的26.3%。随着医药电商、兴趣电商等新兴渠道的兴起，以及线下连锁渠道向疾病预防、健康教育和健康管理方向的转变，中药产品的销售转化途径日益多元。</p>
+
+                        <p><strong class="text-imperial-gold">这种渠道变革对中药企业的营销模式产生了深远影响。传统的"To B"营销模式正在向"To C"的品牌建设模式转变。</strong>那些同时布局医院、零售药店、电商等多元化渠道的企业，其抗风险能力和增长空间更为广阔。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 第三章 -->
+    <section id="chapter3" class="imperial-section" data-title="政策环境与核心驱动力">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-4xl md:text-5xl mb-16 text-center">第三章：政策环境与核心驱动力分析</h2>
+
+            <div class="space-y-12">
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-2xl mb-8">3.1 医保政策：从控费到支持的结构性转变</h3>
+                    <div class="noble-text space-y-6">
+                        <p>国家医保政策的调整，是影响中药行业盈利能力和市场空间的核心变量。新版国家医保药品目录中，药品总数达到2967种，其中中成药1381种，中药饮片892种未作调整。国家医保局在近几年的目录调整工作中，已累计将835种药品新增进入目录，同时也调出438种疗效不确切或易滥用的品种。</p>
+
+                        <p><strong class="text-imperial-gold">这一系列政策的深层逻辑在于，医保不再是中药发展的单纯"制约"，而是一个精细化的"杠杆"。</strong>它通过集中带量采购对同质化、价格虚高的品种进行挤压，以腾出有限的医保空间；与此同时，对独家品种、创新中药和经典名方给予差异化支持。这一"腾笼换鸟"的策略，引导行业从过去的"数量扩张"转向"质量提升"和"价值创新"。</p>
+                    </div>
+                </div>
+
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-2xl mb-8">3.2 监管与审评审批：传承与创新的双重加速</h3>
+                    <div class="noble-text space-y-6">
+                        <p>中药行业监管的另一大核心驱动力在于审评审批制度的改革。国家药监局近年来出台了一系列重要文件，并构建了符合中药特性的"三结合"审评证据体系。这些改革措施的根本目的在于加速中药新药的上市，并推动行业规范化发展。</p>
+
+                        <p>严格的质量监管，特别是针对上游原材料和中游炮制环节的规范化要求，正在不可逆地提升行业的进入门槛和运营成本。尽管2022年全国中药材及饮片抽检合格率已提升至近98%，但监管部门仍在持续打击掺假、非标炮制和硫磺熏蒸等问题。这一过程将加速淘汰无法满足新标准的落后产能，从而推动行业集中度提升，形成强者恒强的"马太效应"。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 第四章 -->
+    <section id="chapter4" class="imperial-section" data-title="竞争格局与企业战略">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-4xl md:text-5xl mb-16 text-center">第四章：竞争格局与企业战略分析</h2>
+
+            <div class="space-y-12">
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-2xl mb-8">4.1 行业竞争格局：差异化与集中度提升</h3>
+                    <div class="noble-text space-y-6">
+                        <p>中药行业内部竞争格局复杂且差异化。由于各中药品种的适应症不同，行业由许多细分市场组成，竞争的焦点往往集中在独家品种的掌控上。拥有独家品种的企业，凭借其产品的稀缺性，能够更容易地占据消费者认知、获得可观的市场份额和稳定增长。</p>
+
+                        <p><strong class="text-imperial-gold">中药行业的壁垒并非单一的专利保护，而是一个复杂的复合壁垒。</strong>包括：独家配方（商业秘密）、强大的品牌认知、多元化的渠道掌控能力（医院+零售）以及对上游核心原材料的锁定。这种独特的壁垒结构决定了中药行业的竞争模式。</p>
+                    </div>
+                </div>
+
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-2xl mb-8">4.2 头部企业案例剖析：增长路径与战略布局</h3>
+                    <div class="noble-text space-y-6">
+                        <p><strong class="text-imperial-gold">云南白药：</strong>2024年实现营业收入400.33亿元，同比增长2.36%；归母净利润47.49亿元，同比增长16.02%，创下历史新高。公司的核心产品如云南白药气雾剂、创可贴、牙膏等在各自的零售市场保持领先地位。公司的核心战略已转向"大健康"产业，通过其牙膏等消费品获取更广阔的非医保市场，从而降低对医保政策的依赖。</p>
+
+                        <p><strong class="text-imperial-gold">片仔癀：</strong>作为另一家头部企业，2024年营收超过107亿元，净利润同比增长6.32%。其核心产品片仔癀系列不仅在国内享有盛誉，在国际市场也表现亮眼。公司积极通过设立产业基金来布局产业链上下游，以期加速医药产业聚集，激发创新活力。</p>
+
+                        <p><strong class="text-imperial-gold">华润三九：</strong>2024年实现营业收入276.17亿元，同比增长11.63%；归母净利润33.7亿元，同比增长18.1%。其业绩的快速增长主要得益于中药配方颗粒业务的贡献，该业务营业额同比增长78.5%，占总营业额的53.0%。</p>
+                    </div>
+                </div>
+
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-2xl mb-8">4.3 并购整合：行业集中度的资本推手</h3>
+                    <div class="noble-text space-y-6">
+                        <p>近年来，中药行业的并购整合趋势愈发明显。2024年第四季度以来，A股中药板块上市公司并购动作密集。</p>
+
+                        <p>本轮并购浪潮的核心驱动力是政策鼓励企业通过并购提升自身发展质量。特别值得关注的是，国资背景企业的积极参与，例如华润三九以62亿元收购天士力控股权，以及华润三九收购昆药集团以布局老龄化赛道。此外，片仔癀和云南白药等头部企业也通过设立产业基金来布局产业链上下游。</p>
+
+                        <p><strong class="text-imperial-gold">这一系列并购行动表明，资本正成为推动中药产业现代化的关键力量。</strong>并购将成为头部企业获取新增长点、整合产业链、补足短板的重要战略手段。这将加速行业进入"剩者为王"的竞争新阶段。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 第五章 -->
+    <section id="chapter5" class="imperial-section" data-title="估值逻辑与投资风险">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-4xl md:text-5xl mb-16 text-center">第五章：估值逻辑与投资风险研判</h2>
+
+            <div class="space-y-12">
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-2xl mb-8">5.1 中药行业估值体系：从高成长到价值重估</h3>
+                    <div class="noble-text space-y-6">
+                        <p>中药板块的估值逻辑正在经历一场深刻的动态演变。从历史数据来看，中药子行业上市公司的整体PE估值在A股医药生物上市公司中偏低。截至2024年初，中药板块的整体涨幅也显著低于同期白酒板块。</p>
+
+                        <p><strong class="text-imperial-gold">然而，这种低估值状态并非一成不变。资本市场对中药板块的估值正向两个方向分化：</strong></p>
+                        <p>第一，"品牌消费品+稳定高股息"模式：对于那些拥有强大品牌认知、稳定现金流和高分红比例的非处方药与大健康消费品企业，其估值逻辑更接近于消费品。这类企业在市场整体回报率下行环境中，提供了较高的股息率和防御抗跌属性。</p>
+                        <p>第二，"创新成长"模式：对于那些在研发端持续投入、拥有丰富创新管线和独家品种的企业，其估值则正在向创新药企靠拢。</p>
+                    </div>
+                </div>
+
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-2xl mb-8">5.2 核心风险要素分析</h3>
+                    <div class="noble-text space-y-6">
+                        <p>尽管中药行业具备结构性投资机遇，但其面临的风险要素不容忽视。</p>
+
+                        <p><strong class="text-imperial-gold">政策风险：</strong>医保目录调整和集中带量采购政策的不可预测性，可能对中成药品种的盈利能力造成冲击。</p>
+
+                        <p><strong class="text-imperial-gold">市场风险：</strong>中药材原材料价格的周期性波动和供应链不稳定，可能压缩中游制药企业的毛利。</p>
+
+                        <p><strong class="text-imperial-gold">技术风险：</strong>行业整体研发投入相对不足，新药研发成功率与速度相较于化药和生物药仍有差距。</p>
+
+                        <p><strong class="text-imperial-gold">竞争风险：</strong>传统中药产品同质化严重，缺乏核心竞争力，容易在集采和市场竞争中失去定价权。</p>
+
+                        <p>这些风险并非独立存在，而是相互关联的系统性问题。因此，成功的投资策略必须建立在对这些风险的综合研判之上。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 第六章 -->
+    <section id="chapter6" class="imperial-section" data-title="展望与总结">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-4xl md:text-5xl mb-16 text-center">第六章：展望与总结</h2>
+
+            <div class="authority-card">
+                <div class="noble-text space-y-6">
+                    <p>本报告通过系统性地梳理中药行业的宏观环境、产业链结构、政策导向与竞争格局，旨在为投资者构建一个全面、深入的认知框架。</p>
+
+                    <p><strong class="text-imperial-gold">总结而言，</strong>中国中药行业正处于一个由政策、品牌、创新和资本共同驱动的结构性转型期。其核心驱动力正从过去的"粗放式增长"转向"高质量发展"，价值创造模式也从单纯的"产品销售"转向"品牌溢价+创新回报"的多元化路径。</p>
+
+                    <p><strong class="text-imperial-gold">展望未来，</strong>中药行业预计将呈现以下趋势：</p>
+
+                    <p>1. <strong>行业集中度持续提升：</strong>头部企业将通过并购整合实现规模和品类的双重扩张，加速行业洗牌，形成更加清晰的竞争格局。</p>
+
+                    <p>2. <strong>研发投入成为核心竞争要素：</strong>随着"三结合"审评体系的落地与完善，研发创新将获得更多政策支持与市场回报。</p>
+
+                    <p>3. <strong>渠道进一步分化：</strong>品牌和营销能力将成为新的护城河。中药产品的消费属性将被进一步挖掘，多元化的渠道布局将成为企业抗风险与拓展增长空间的关键。</p>
+
+                    <p>4. <strong>估值逻辑持续演变：</strong>中药板块的估值将持续向"品牌消费品+高股息"和"创新药"模式分化，为投资者提供更具针对性的投资机会。</p>
+
+                    <p><strong class="text-imperial-gold">面对这一转型浪潮，</strong>投资者应保持专业、客观、可追溯的研究标准，将行业现象置于多层逻辑中进行解释，并聚焦于那些具备深厚品牌壁垒、持续创新能力和前瞻性战略布局的优质企业，以期在行业变革中捕捉长期价值。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 引用文献 -->
+    <section class="imperial-section bg-gradient-to-b from-transparent to-black bg-opacity-30" data-title="引用文献">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl mb-12 text-center">引用文献</h2>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl mx-auto">
+                <div class="citation-item"><a href="https://pdf.dfcfw.com/pdf/H3_AP202408021639117845_1.pdf" target="_blank">1. 医药行业市场呈稳定增长趋势 - 汉鼎智库咨询</a></div>
+                <div class="citation-item"><a href="http://docs.cn-healthcare.com/sharedoc/src_files/20211202/72b980eea5c4868ee419f21bd2a14c88.pdf" target="_blank">2. 中国中成药行业研究报告 - CN-Healthcare</a></div>
+                <div class="citation-item"><a href="http://www.21jingji.com/article/20210201/herald/201acde657e73e716de6e99f94f9059c.html" target="_blank">3. 中药行业价值分析 - 21财经</a></div>
+                <div class="citation-item"><a href="https://pdf.dfcfw.com/pdf/H3_AP202011051426807765_1.pdf" target="_blank">4. 中药行业基础不断完善 - 投研资讯</a></div>
+                <div class="citation-item"><a href="https://www.21jingji.com/article/20231217/herald/927a3eb62a80086a2559cca9d39bb3e2.html" target="_blank">5. 中康科技董事长吴瀚预测 - 21财经</a></div>
+                <div class="citation-item"><a href="https://www1.hkexnews.hk/app/sehk/2025/107267/a122580/sehk25040302317_c.pdf" target="_blank">6. 行業概覽中藥市場 - HKEXnews</a></div>
+                <div class="citation-item"><a href="https://nync.yn.gov.cn/uploadfile/s38/2022/0811/20220811110824942.pdf" target="_blank">7. 云南省中药材产业发展报告 - 云南省农业农村厅</a></div>
+                <div class="citation-item"><a href="https://www.cas.cn/zt/jzt/wxcbzt/zgkxyyk2004ndsq/lt/200405/t20040520_2667509.shtml" target="_blank">8. 中药现代化研究的思考 - 中国科学院</a></div>
+                <div class="citation-item"><a href="https://www.yicai.com/news/101304400.html" target="_blank">9. 生物医药的六大赛道 - 第一财经</a></div>
+                <div class="citation-item"><a href="http://www.zyytbzz.cn/zyytb/article/abstract/20231242" target="_blank">10. 从中药与西药之差异论中药的发展 - 中医药通报</a></div>
+                <div class="citation-item"><a href="https://www.cpi.ac.cn/sjcx/yjbg/202405/P020240520590599279920.pdf" target="_blank">11. 国家药品监督管理局2024年5月报告 - 药审中心</a></div>
+                <div class="citation-item"><a href="https://pdf.dfcfw.com/pdf/H3_AP202412261641430798_1.pdf" target="_blank">12. 2023年中国创新药研发报告 - 研究机构</a></div>
+                <div class="citation-item"><a href="https://www.gov.cn/zccfh/2025zccfh/20250321/jdzc/202503/content_7014877.htm" target="_blank">13. 深化中药审评审批制度改革 - 中国政府网</a></div>
+                <div class="citation-item"><a href="http://cgws.com/cczq/ggdt/ccyj/202401/P020240129342993098552.pdf" target="_blank">14. 医药中药行业专题报告 - 长城证券</a></div>
+                <div class="citation-item"><a href="http://wjw.sz.gov.cn/attachment/1/1238/1238878/10390161.pdf" target="_blank">15. 深圳市医疗机构中药临方制剂工作指南 - 政府部门</a></div>
+                <div class="citation-item"><a href="https://capcofile.oss-cn-beijing.aliyuncs.com/2023/file/上市公司医疗健康行业发展报告2023.pdf" target="_blank">16. 上市公司医疗健康行业发展报告2023 - 中国上市公司协会</a></div>
+                <div class="citation-item"><a href="http://m.cnpharm.com/c/2022-04-18/823412.shtml" target="_blank">17. 研发投入持续增长医药创新稳中求进 - 中国食品药品网</a></div>
+                <div class="citation-item"><a href="https://world.chinadaily.com.cn/a/202504/29/WS68106ba0a310205377030f15.html" target="_blank">18. 以岭药业2024年研发占比14% - 中国日报网</a></div>
+                <div class="citation-item"><a href="https://pdf.dfcfw.com/pdf/H3_AP202408151639292680_1.pdf" target="_blank">19. 中药材市场发展空间广阔 - 汉鼎智库咨询</a></div>
+                <div class="citation-item"><a href="http://www.cnpharm.com/c/2023-07-05/1022423.shtml" target="_blank">20. 常用中药材品种市场规模分析 - 中国食品药品网</a></div>
+                <div class="citation-item"><a href="https://www.nmpaied.org.cn/article/264957" target="_blank">21. 2022年全国中药材及饮片质量分析 - 国家药监局</a></div>
+                <div class="citation-item"><a href="https://www.researchgate.net/publication/369130028_zhongyaozhijishengchangongyicunzaidewentiheduiceyanjiu" target="_blank">22. 中药制剂生产工艺存在的问题和对策 - ResearchGate</a></div>
+                <div class="citation-item"><a href="https://pdf.dfcfw.com/pdf/H3_AP202311141610709296_1.pdf" target="_blank">23. 中药配方颗粒头豹词条报告系列 - 头豹研究</a></div>
+                <div class="citation-item"><a href="http://pdf.dfcfw.com/pdf/H3_AP202008141398449766_1.pdf" target="_blank">24. 2020年中国中药配方颗粒行业概览 - 市场研究</a></div>
+                <div class="citation-item"><a href="https://cmea.org.cn/Index/detail?id=2935" target="_blank">25. 中药配方颗粒的前世今生 - 中国医药教育协会</a></div>
+                <div class="citation-item"><a href="https://www.gyzq.com.hk/UploadFiles/2024/01/020933308C5B642D.pdf" target="_blank">26. 业绩强劲恢复增长深耕中药全产业链 - 公司报告</a></div>
+                <div class="citation-item"><a href="https://www.rolandberger.com/publications/publication_pdf/roland_berger_chinese_herbal_patent_medicine_201608909.pdf" target="_blank">27. 中成药企业营销转型的启示 - Roland Berger</a></div>
+                <div class="citation-item"><a href="https://pdf.dfcfw.com/pdf/H3_AP202106181498489404_1.pdf" target="_blank">28. 2021年中国医药新零售市场洞察 - 市场分析</a></div>
+                <div class="citation-item"><a href="https://pdf.dfcfw.com/pdf/H2_AN202503311649710556_1.pdf" target="_blank">29. 云南白药集团股份有限公司2024年年度报告 - 公司公告</a></div>
+                <div class="citation-item"><a href="http://jjckb.xinhuanet.com/20250401/c765a09de93641acb4b85d5903e1fffe/c.html" target="_blank">30. 云南白药2024年业绩创新高 - 新华网</a></div>
+                <div class="citation-item"><a href="https://www.gov.cn/fuwu/2023-02/27/content_5743455.htm" target="_blank">31. 最新版国家医保药品目录实施 - 中国政府网</a></div>
+                <div class="citation-item"><a href="https://hsa.sz.gov.cn/gkmlpt/content/11/11831/post_11831270.html" target="_blank">32. 国家医保局2024年版国家医保药品目录 - 医保部门</a></div>
+                <div class="citation-item"><a href="https://stcn.com/article/detail/1507977.html" target="_blank">33. 片仔癀2024年营收超107亿元 - 证券时报</a></div>
+                <div class="citation-item"><a href="https://m.cnpharm.com/c/2025-02-28/1067287.shtml" target="_blank">34. 2024年中药类商品进出口形势分析 - 中国食品药品网</a></div>
+                <div class="citation-item"><a href="https://www.cs.com.cn/cj2020/202501/t20250107_6466555.html" target="_blank">35. 中药行业并购重组热 - 中证网</a></div>
+                <div class="citation-item"><a href="https://wap.eastmoney.com/a/202503123343852487.html" target="_blank">36. 华润三九2024年年报 - 东方财富</a></div>
+                <div class="citation-item"><a href="https://www1.hkexnews.hk/listedco/listconews/sehk/2025/0312/2025031201000_c.pdf" target="_blank">37. 華潤三九主要財務資料2024年 - HKEXnews</a></div>
+                <div class="citation-item"><a href="https://www.zhihuiya.com/news/info_7633.html" target="_blank">38. 10亿资金注入中药行业国资布局 - 智慧芽</a></div>
+                <div class="citation-item"><a href="https://pdf.dfcfw.com/pdf/H3_AP202405261634687791_1.pdf" target="_blank">39. 中药行业2023年年报及2024年一季报总结 - 研究机构</a></div>
+                <div class="citation-item"><a href="https://pdf.dfcfw.com/pdf/H3_AP202403101626202471_1.pdf" target="_blank">40. 医药商业估值分析增速稳定分红率高 - 投研报告</a></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        // 精美垂直进度条系统
+        const progressBar = document.querySelector('.reading-progress');
+        const progressFill = document.querySelector('.reading-progress-fill');
+        const progressTooltip = document.getElementById('progress-tooltip');
+        const sections = document.querySelectorAll('section[id], header[id]');
+
+        let currentSectionTitle = '';
+        let sectionsData = [];
+
+        function initSections() {
+            sectionsData = Array.from(sections).map(section => ({
+                id: section.getAttribute('id'),
+                title: section.getAttribute('data-title') || section.querySelector('h1, h2')?.textContent || '未知章节',
+                offsetTop: section.offsetTop,
+                offsetHeight: section.offsetHeight
+            }));
+        }
+
+        function updateProgress() {
+            const scrolled = window.pageYOffset;
+            const maxHeight = document.body.scrollHeight - window.innerHeight;
+            const progress = (scrolled / maxHeight) * 100;
+
+            progressFill.style.height = `${progress}%`;
+
+            let currentSection = '';
+            sectionsData.forEach(section => {
+                if (scrolled >= section.offsetTop - 300) {
+                    currentSection = section.id;
+                    currentSectionTitle = section.title;
+                }
+            });
+        }
+
+        progressBar.addEventListener('click', (e) => {
+            const rect = progressBar.getBoundingClientRect();
+            const clickY = e.clientY - rect.top;
+            const progressHeight = rect.height;
+            const clickPercent = clickY / progressHeight;
+
+            const maxHeight = document.body.scrollHeight - window.innerHeight;
+            const targetScroll = maxHeight * clickPercent;
+
+            window.scrollTo({
+                top: targetScroll,
+                behavior: 'smooth'
+            });
+        });
+
+        progressBar.addEventListener('mouseenter', () => {
+            if (currentSectionTitle) {
+                progressTooltip.textContent = currentSectionTitle;
+                progressTooltip.classList.add('show');
+            }
+        });
+
+        progressBar.addEventListener('mouseleave', () => {
+            progressTooltip.classList.remove('show');
+        });
+
+        progressTooltip.addEventListener('mouseenter', () => {
+            progressTooltip.classList.add('show');
+        });
+
+        progressTooltip.addEventListener('mouseleave', () => {
+            progressTooltip.classList.remove('show');
+        });
+
+        window.addEventListener('resize', () => {
+            setTimeout(initSections, 100);
+        });
+
+        window.addEventListener('scroll', updateProgress);
+
+        window.addEventListener('load', () => {
+            initSections();
+            updateProgress();
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const now = new Date();
+
+            const dateCN = now.toLocaleDateString('zh-CN', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+
+            const dateEN = now.toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+
+            document.getElementById('date-cn').textContent = dateCN;
+            document.getElementById('date-en').textContent = dateEN;
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            document.body.style.opacity = '0';
+            document.body.style.transition = 'opacity 1s ease';
+
+            setTimeout(() => {
+                document.body.style.opacity = '1';
+            }, 100);
+        });
+    </script>
+</body>
+</html>

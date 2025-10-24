@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>深度行业分析报告：新范式，新周期——金融IT服务行业的结构性重塑</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700;800;900&family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        :root {
+            --obsidian-black: #0A0A0A;
+            --midnight-black: #151515;
+            --shadow-black: #1F1F1F;
+            --charcoal-deep: #2A2A2A;
+
+            --sovereign-gold: #B8860B;
+            --imperial-gold: #DAA520;
+            --aureate-whisper: #F4E4BC;
+            --golden-shadow: #8B6914;
+
+            --platinum-mist: #E5E5E5;
+            --sterling-silver: #C0C0C0;
+            --graphite-steel: #696969;
+            --charcoal-whisper: #808080;
+
+            --ruby-accent: #8B0000;
+            --emerald-depth: #006400;
+            --sapphire-authority: #1e3a8a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, var(--obsidian-black) 0%, var(--midnight-black) 40%, var(--shadow-black) 100%);
+            color: var(--platinum-mist);
+            line-height: 1.8;
+            letter-spacing: 0.02em;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        .imperial-title {
+            font-family: 'Playfair Display', serif;
+            font-weight: 200;
+            letter-spacing: 0.12em;
+            line-height: 1.05;
+            color: var(--aureate-whisper);
+            text-shadow: 0 3px 12px rgba(184, 134, 11, 0.4);
+        }
+
+        .imperial-subtitle {
+            font-family: 'Playfair Display', serif;
+            font-weight: 300;
+            letter-spacing: 0.08em;
+            line-height: 1.15;
+            color: var(--imperial-gold);
+            text-shadow: 0 2px 8px rgba(218, 165, 32, 0.3);
+        }
+
+        .imperial-tagline {
+            font-family: 'Inter', sans-serif;
+            font-weight: 200;
+            letter-spacing: 0.06em;
+            line-height: 1.4;
+            color: var(--sterling-silver);
+            font-style: italic;
+        }
+
+        .imperial-dedication {
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+            letter-spacing: 0.04em;
+            line-height: 1.3;
+            color: var(--imperial-gold);
+        }
+
+        .imperial-dedication-sub {
+            font-family: 'Inter', sans-serif;
+            font-weight: 200;
+            letter-spacing: 0.05em;
+            line-height: 1.3;
+            color: var(--sterling-silver);
+            font-style: italic;
+        }
+
+        .sovereign-heading {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            color: var(--imperial-gold);
+            text-shadow: 0 1px 4px rgba(218, 165, 32, 0.4);
+        }
+
+        .noble-text {
+            font-weight: 300;
+            letter-spacing: 0.03em;
+            line-height: 2.2;
+            color: var(--platinum-mist);
+        }
+
+        .executive-quote {
+            font-weight: 300;
+            letter-spacing: 0.02em;
+            line-height: 1.8;
+            color: var(--sterling-silver);
+            font-size: 0.95rem;
+            font-style: italic;
+            position: relative;
+            padding: 0 2rem;
+            margin: 2rem 0;
+        }
+
+        .executive-quote::before {
+            content: '"';
+            position: absolute;
+            left: 0;
+            top: -0.5rem;
+            font-size: 3rem;
+            color: var(--sovereign-gold);
+            opacity: 0.3;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .executive-quote::after {
+            content: '"';
+            position: absolute;
+            right: 0;
+            bottom: -0.5rem;
+            font-size: 3rem;
+            color: var(--sovereign-gold);
+            opacity: 0.3;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .disclaimer-card {
+            background: linear-gradient(145deg, rgba(31, 31, 31, 0.95) 0%, rgba(42, 42, 42, 0.9) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.18);
+            border-radius: 3px;
+            padding: 4rem;
+            position: relative;
+            backdrop-filter: blur(25px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.7), inset 0 1px 1px rgba(244, 228, 188, 0.08), inset 0 0 30px rgba(184, 134, 11, 0.02);
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .disclaimer-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--sovereign-gold), transparent);
+            opacity: 0.6;
+        }
+
+        .disclaimer-text {
+            font-weight: 300;
+            letter-spacing: 0.02em;
+            line-height: 2;
+            color: var(--platinum-mist);
+            font-size: 1rem;
+        }
+
+        .exclusive-number {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: var(--sovereign-gold);
+            text-shadow: 0 1px 3px rgba(184, 134, 11, 0.5);
+        }
+
+        .sovereign-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 5rem;
+        }
+
+        .imperial-section {
+            margin: 12rem 0;
+            position: relative;
+        }
+
+        .golden-glass-card {
+            background: radial-gradient(circle at 30% 30%, rgba(218, 165, 32, 0.12) 0%, transparent 50%), radial-gradient(circle at 70% 70%, rgba(184, 134, 11, 0.08) 0%, transparent 50%), linear-gradient(135deg, rgba(244, 228, 188, 0.06) 0%, rgba(218, 165, 32, 0.04) 30%, rgba(184, 134, 11, 0.03) 70%, rgba(139, 105, 20, 0.02) 100%);
+            border: 1px solid rgba(218, 165, 32, 0.15);
+            border-radius: 4px;
+            padding: 2.5rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6), inset 0 1px 1px rgba(244, 228, 188, 0.08), inset 0 0 30px rgba(218, 165, 32, 0.03);
+            transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .golden-glass-card:hover {
+            transform: translateY(-3px);
+            border-color: rgba(218, 165, 32, 0.3);
+            box-shadow: 0 16px 48px rgba(0, 0, 0, 0.8), 0 0 40px rgba(218, 165, 32, 0.1), inset 0 1px 1px rgba(244, 228, 188, 0.12), inset 0 0 40px rgba(218, 165, 32, 0.05);
+        }
+
+        .authority-card {
+            background: linear-gradient(145deg, rgba(21, 21, 21, 0.9) 0%, rgba(31, 31, 31, 0.8) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.15);
+            border-radius: 2px;
+            padding: 3rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6), inset 0 1px 1px rgba(244, 228, 188, 0.05);
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .authority-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(184, 134, 11, 0.3);
+            box-shadow: 0 16px 48px rgba(0, 0, 0, 0.8), 0 0 24px rgba(184, 134, 11, 0.1), inset 0 1px 1px rgba(244, 228, 188, 0.08);
+        }
+
+        .authority-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(90deg, var(--sovereign-gold), transparent);
+            opacity: 0.6;
+        }
+
+        .authority-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(270deg, var(--sovereign-gold), transparent);
+            opacity: 0.6;
+        }
+
+        .investment-logic-card {
+            background: radial-gradient(circle at 20% 80%, rgba(218, 165, 32, 0.08) 0%, transparent 60%), radial-gradient(circle at 80% 20%, rgba(244, 228, 188, 0.05) 0%, transparent 60%), linear-gradient(135deg, rgba(184, 134, 11, 0.06) 0%, rgba(139, 105, 20, 0.04) 50%, rgba(218, 165, 32, 0.02) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.12);
+            border-radius: 2px;
+            padding: 3rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6), inset 0 1px 1px rgba(244, 228, 188, 0.06), inset 0 0 25px rgba(184, 134, 11, 0.02);
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .imperial-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            background: rgba(15, 15, 15, 0.8);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(184, 134, 11, 0.2);
+            border-radius: 2px;
+        }
+
+        .imperial-table th {
+            background: rgba(184, 134, 11, 0.08);
+            padding: 2rem 1.5rem;
+            text-align: left;
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--imperial-gold);
+            border-bottom: 1px solid rgba(184, 134, 11, 0.2);
+        }
+
+        .imperial-table td {
+            padding: 1.8rem 1.5rem;
+            border-bottom: 1px solid rgba(184, 134, 11, 0.05);
+            font-weight: 300;
+        }
+
+        .imperial-table tbody tr:hover {
+            background: rgba(184, 134, 11, 0.03);
+        }
+
+        .sovereign-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent 0%, rgba(184, 134, 11, 0.3) 30%, rgba(184, 134, 11, 0.6) 50%, rgba(184, 134, 11, 0.3) 70%, transparent 100%);
+            margin: 8rem 0;
+            position: relative;
+        }
+
+        .sovereign-divider::before {
+            content: '◆';
+            position: absolute;
+            top: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--sovereign-gold);
+            font-size: 16px;
+            background: var(--obsidian-black);
+            padding: 0 1rem;
+        }
+
+        .reading-progress {
+            position: fixed;
+            top: 50%;
+            right: 2rem;
+            width: 4px;
+            height: 200px;
+            transform: translateY(-50%);
+            background: linear-gradient(180deg, rgba(184, 134, 11, 0.2) 0%, rgba(218, 165, 32, 0.3) 30%, rgba(244, 228, 188, 0.4) 60%, rgba(218, 165, 32, 0.3) 85%, rgba(139, 105, 20, 0.2) 100%);
+            z-index: 1001;
+            box-shadow: 0 0 12px rgba(184, 134, 11, 0.6), 2px 0 8px rgba(184, 134, 11, 0.3), inset 1px 0 2px rgba(244, 228, 188, 0.4);
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+        .reading-progress::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(180deg, rgba(244, 228, 188, 0.1) 0%, rgba(218, 165, 32, 0.15) 50%, rgba(244, 228, 188, 0.1) 100%);
+            border-radius: 2px;
+            animation: progressShimmer 3s ease-in-out infinite;
+        }
+
+        .reading-progress-fill {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(180deg, var(--golden-shadow) 0%, var(--sovereign-gold) 50%, var(--imperial-gold) 100%);
+            border-radius: 2px;
+            transition: height 0.1s ease;
+            box-shadow: inset 0 1px 2px rgba(244, 228, 188, 0.3), 0 0 8px rgba(184, 134, 11, 0.4);
+        }
+
+        @keyframes progressShimmer {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.8; }
+        }
+
+        .progress-tooltip {
+            position: fixed;
+            top: 50%;
+            right: 7rem;
+            transform: translateY(-50%);
+            background: linear-gradient(135deg, rgba(15, 15, 15, 0.95) 0%, rgba(31, 31, 31, 0.9) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.25);
+            border-radius: 8px;
+            padding: 0.8rem 2rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 0.85rem;
+            font-weight: 300;
+            color: var(--imperial-gold);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.7), 0 0 20px rgba(184, 134, 11, 0.1), inset 0 1px 1px rgba(244, 228, 188, 0.08);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+            z-index: 1002;
+            white-space: nowrap;
+            letter-spacing: 0.03em;
+        }
+
+        .progress-tooltip.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(-50%) translateX(-8px);
+        }
+
+        .progress-tooltip::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -8px;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-left: 8px solid rgba(184, 134, 11, 0.25);
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+        }
+
+        .progress-tooltip::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -7px;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-left: 7px solid rgba(15, 15, 15, 0.95);
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+        }
+
+        .citation-item {
+            padding: 1.5rem 2rem;
+            margin: 0.8rem 0;
+            background: linear-gradient(135deg, rgba(21, 21, 21, 0.8) 0%, rgba(31, 31, 31, 0.6) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.15);
+            border-radius: 3px;
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .citation-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--sovereign-gold), var(--golden-shadow));
+            opacity: 0.6;
+            transition: opacity 0.3s ease;
+        }
+
+        .citation-item:hover {
+            border-color: rgba(184, 134, 11, 0.4);
+            background: linear-gradient(135deg, rgba(31, 31, 31, 0.9) 0%, rgba(42, 42, 42, 0.7) 100%);
+            transform: translateX(6px) translateY(-1px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5), 0 0 20px rgba(184, 134, 11, 0.08);
+        }
+
+        .citation-item:hover::before {
+            opacity: 1;
+        }
+
+        .citation-item a {
+            color: var(--platinum-mist);
+            text-decoration: none;
+            font-size: 0.85rem;
+            line-height: 1.7;
+            font-weight: 300;
+            transition: color 0.4s ease;
+            display: block;
+            position: relative;
+        }
+
+        .citation-item a::before {
+            content: '';
+            position: absolute;
+            left: -0.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 4px;
+            background: var(--sovereign-gold);
+            border-radius: 50%;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .citation-item:hover a {
+            color: var(--aureate-whisper);
+            padding-left: 1rem;
+        }
+
+        .citation-item:hover a::before {
+            opacity: 0.8;
+        }
+
+        @media (max-width: 1024px) {
+            .sovereign-container {
+                padding: 0 2.5rem;
+            }
+            .imperial-section {
+                margin: 8rem 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .sovereign-container {
+                padding: 0 1.5rem;
+            }
+            .imperial-section {
+                margin: 6rem 0;
+            }
+            .authority-card {
+                padding: 2rem;
+            }
+            .reading-progress {
+                right: 1rem;
+                height: 150px;
+                width: 3px;
+            }
+            .progress-tooltip {
+                right: 5rem;
+                padding: 0.6rem 1.5rem;
+                font-size: 0.75rem;
+            }
+        }
+
+        ::selection {
+            background: rgba(184, 134, 11, 0.2);
+            color: var(--aureate-whisper);
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--obsidian-black);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--sovereign-gold);
+            border-radius: 3px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--imperial-gold);
+        }
+    </style>
+</head>
+<body>
+    <!-- 阅读进度条 -->
+    <div class="reading-progress">
+        <div class="reading-progress-fill"></div>
+    </div>
+
+    <!-- 进度标题提示器 -->
+    <div class="progress-tooltip" id="progress-tooltip"></div>
+
+    <!-- 页面标题区域 -->
+    <header id="header" class="min-h-screen flex items-center justify-center relative" data-title="深度行业分析报告">
+        <div class="sovereign-container text-center relative z-10">
+            <!-- 主标题区域 -->
+            <div class="mb-16">
+                <h1 class="imperial-title text-5xl md:text-7xl mb-6">
+                    新范式，新周期
+                </h1>
+
+                <h2 class="imperial-subtitle text-2xl md:text-4xl mb-12 opacity-90">
+                    金融IT服务行业的结构性重塑
+                </h2>
+            </div>
+
+            <!-- 英文副标题 -->
+            <div class="mb-12">
+                <div class="imperial-tagline text-sm md:text-base opacity-75 max-w-4xl mx-auto">
+                    Financial IT Services Industry In-Depth Research:<br class="md:hidden">
+                    Structural Reshaping In The New Paradigm And Cycle
+                </div>
+            </div>
+
+            <!-- 致敬区域 -->
+            <div class="mb-16">
+                <div class="imperial-dedication text-sm md:text-base">
+                    致：机构投资者与高净值客户
+                </div>
+                <div class="imperial-dedication-sub text-xs md:text-sm opacity-60 mt-2">
+                    For: Institutional Investors and High Net Worth Clients
+                </div>
+            </div>
+
+            <!-- 发布日期卡片 -->
+            <div class="golden-glass-card inline-block">
+                <div class="text-xs uppercase tracking-[0.2em] opacity-50 mb-4 font-light">
+                    本报告发布于 · Published on
+                </div>
+                <div class="sovereign-heading text-base">
+                    <span id="date-cn" class="exclusive-number">2025年Q3</span>
+                    <span class="mx-4 text-sovereign-gold opacity-40">◆</span>
+                    <span id="date-en" class="exclusive-number">Q3 2025</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 背景装饰 -->
+        <div class="absolute inset-0 pointer-events-none opacity-8">
+            <div class="absolute top-20 left-20 w-px h-32 bg-gradient-to-b from-sovereign-gold to-transparent"></div>
+            <div class="absolute bottom-20 right-20 w-px h-32 bg-gradient-to-t from-sovereign-gold to-transparent"></div>
+            <div class="absolute top-1/2 left-1/4 w-24 h-px bg-gradient-to-r from-sovereign-gold to-transparent"></div>
+            <div class="absolute top-1/3 right-1/4 w-24 h-px bg-gradient-to-l from-sovereign-gold to-transparent"></div>
+        </div>
+    </header>
+
+    <!-- 免责声明 -->
+    <section class="imperial-section">
+        <div class="sovereign-container">
+            <div class="disclaimer-card text-center">
+                <h2 class="sovereign-heading text-2xl mb-8">免责声明</h2>
+                <div class="disclaimer-text max-w-4xl mx-auto">
+                    本报告由资深行业分析师金融IT研究部编制，旨在为机构投资者与高净值客户提供关于金融IT服务行业的系统性认知框架。报告中的信息和数据均来源于公开可查的资料，我们力求报告内容的客观、准确，但不对其完整性或准确性做出任何保证。本报告中的分析、结论和观点仅为研究目的，不构成任何形式的投资建议。投资者应基于自身的独立判断进行投资决策，并自行承担相关风险。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 引言部分 -->
+    <section id="introduction" class="imperial-section" data-title="引言：金融IT服务的战略地位">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-5xl mb-16 text-center">引言：金融IT服务的战略地位</h2>
+
+            <div class="executive-quote max-w-4xl mx-auto text-center">
+                金融IT服务已不再是简单的成本中心，而是成为金融机构实现运营效率、产品创新和客户增长的核心基础设施。
+            </div>
+
+            <div class="authority-card mb-16">
+                <h3 class="sovereign-heading text-xl mb-6 flex items-center">
+                    <i class="material-icons text-xl mr-3">info</i>
+                    行业定义与核心价值
+                </h3>
+                <div class="noble-text space-y-6">
+                    <p>金融IT服务（Financial IT Services）定义为通过应用商业与技术专长，帮助金融机构进行信息创建、管理、优化或业务流程处理的综合服务。这不仅包括传统的系统集成、应用开发与维护，也涵盖新兴的云服务、网络安全、大数据分析以及基于人工智能的解决方案。</p>
+
+                    <p>在全球宏观环境充满不确定性与技术革命加速演进的双重影响下，理解该行业的核心驱动力、正在经历的结构性变化，以及领先企业如何通过技术与资本策略构建长期竞争优势，对制定前瞻性投资与战略研判至关重要。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 第一章：宏观环境 -->
+    <section id="chapter-one" class="imperial-section" data-title="宏观环境与技术驱动：变革的底层逻辑">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-5xl mb-16 text-center">宏观环境与技术驱动</h2>
+            <h3 class="sovereign-heading text-3xl mb-12 text-center">变革的底层逻辑</h3>
+
+            <div class="grid md:grid-cols-2 gap-12 mb-16">
+                <div class="authority-card">
+                    <h4 class="sovereign-heading text-xl mb-6 flex items-center">
+                        <i class="material-icons text-xl mr-3">trending_down</i>
+                        全球货币政策与信贷市场
+                    </h4>
+                    <div class="noble-text space-y-4 text-sm">
+                        <p>全球主要经济体的货币政策转向对信贷市场产生了深远影响。在高利率环境中，金融机构的IT预算呈现出显著的"分化效应"。</p>
+
+                        <p>美国市场中，美联储的加息周期直接推高了抵押贷款利率。美国抵押贷款银行家协会（MBA）的购房指数仍处于历史低位，表明当前购房需求受抑。</p>
+                    </div>
+                </div>
+
+                <div class="authority-card">
+                    <h4 class="sovereign-heading text-xl mb-6 flex items-center">
+                        <i class="material-icons text-xl mr-3">computer</i>
+                        AI与数字化转型
+                    </h4>
+                    <div class="noble-text space-y-4 text-sm">
+                        <p>生成式AI（GenAI）正引发一场IT服务行业的"成本结构革命"与"盈利模式范式转移"。全球企业对AI的投资以39%的CAGR增长。</p>
+
+                        <p>GenAI有潜力自动化知识工作者60%-70%的活动，并使新员工在简单、重复性任务上的生产力提升高达40%。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investment-logic-card">
+                <h4 class="sovereign-heading text-xl mb-4 flex items-center">
+                    <i class="material-icons text-lg mr-2">flash_on</i>
+                    技术驱动的市场需求
+                </h4>
+                <div class="noble-text text-sm">
+                    <p>在高利率环境下，金融机构对更高效、低成本的线上化风控与审核系统的需求激增。银行需要利用AI驱动的反欺诈系统和大数据风控平台，来提升风险事件的精准防控能力，大幅降低贷前调查成本。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 第二章：行业全景 -->
+    <section id="chapter-two" class="imperial-section" data-title="全球金融IT服务行业全景图：结构、竞争与盈利模式">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-5xl mb-16 text-center">行业全景图</h2>
+            <h3 class="sovereign-heading text-3xl mb-12 text-center">结构、竞争与盈利模式</h3>
+
+            <div class="authority-card mb-16">
+                <h4 class="sovereign-heading text-2xl mb-8 flex items-center">
+                    <i class="material-icons text-xl mr-3">layers</i>
+                    行业价值链与参与者
+                </h4>
+                <div class="noble-text space-y-6 mb-12">
+                    <p>全球IT服务市场在2024年估值为1.34万亿美元。竞争格局正在从传统的"通用型人力外包"转向"专业化能力与平台化交付"。托管服务以22.73%的份额占据主导地位。</p>
+
+                    <p>全球巨头如埃森哲提供"技术驱动的端到端战略执行"。中国本土巨头如神州数码和中软国际正在从传统IT服务向高价值技术解决方案转型。</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="authority-card">
+                        <h5 class="sovereign-heading text-base mb-3">全球巨头战略</h5>
+                        <div class="noble-text text-xs">从高层战略咨询到技术实施的一体化服务，通过人才培养巩固技术护城河</div>
+                    </div>
+                    <div class="authority-card">
+                        <h5 class="sovereign-heading text-base mb-3">本土企业转型</h5>
+                        <div class="noble-text text-xs">从IT分销商向AI和解决方案集成商转型，AI相关业务高速增长</div>
+                    </div>
+                    <div class="authority-card">
+                        <h5 class="sovereign-heading text-base mb-3">竞争核心</h5>
+                        <div class="noble-text text-xs">从人力规模转向技术壁垒和平台化交付能力的竞争</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 第三章：并购整合 -->
+    <section id="chapter-three" class="imperial-section" data-title="并购整合：新能力与新增长引擎">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-5xl mb-16 text-center">并购整合战略</h2>
+            <h3 class="sovereign-heading text-3xl mb-12 text-center">从规模扩张到能力补强</h3>
+
+            <div class="authority-card mb-16">
+                <h4 class="sovereign-heading text-2xl mb-8">并购驱动力的演变</h4>
+                <div class="noble-text space-y-4 mb-8">
+                    <p>行业正从传统的"横向整合"以获取市场份额，转变为"纵向整合"以构建独特的"技术-服务-行业"全栈能力。IT服务行业竞争加剧且毛利承压，企业无法仅依靠内生增长来迅速补足新兴技术能力。</p>
+
+                    <p>尽管交易量下降，但AI、云和网络安全领域的交易价值和数量依然坚挺，反映出行业正从数量驱动的整合转向质量驱动的整合。</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="investment-logic-card">
+                        <h5 class="sovereign-heading text-base mb-3">IBM-HashiCorp</h5>
+                        <div class="noble-text text-xs">64亿美元收购，构建混合云全栈能力，获取关键基础设施工具</div>
+                    </div>
+                    <div class="investment-logic-card">
+                        <h5 class="sovereign-heading text-base mb-3">HCLTech-HPE</h5>
+                        <div class="noble-text text-xs">2.25亿美元收购，垂直深耕电信领域，巩固特定市场领导地位</div>
+                    </div>
+                    <div class="investment-logic-card">
+                        <h5 class="sovereign-heading text-base mb-3">Cognizant收购</h5>
+                        <div class="noble-text text-xs">系列精准收购，快速构建关键技术平台和高价值领域能力</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 第四章：案例分析 -->
+    <section id="chapter-four" class="imperial-section" data-title="案例研究：抵押信贷领域的金融科技变革">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-5xl mb-16 text-center">案例研究</h2>
+            <h3 class="sovereign-heading text-3xl mb-12 text-center">抵押信贷领域的金融科技变革</h3>
+
+            <div class="authority-card mb-16">
+                <h4 class="sovereign-heading text-2xl mb-8 flex items-center">
+                    <i class="material-icons text-xl mr-3">show_chart</i>
+                    2024年美国住宅抵押贷款发放量排名
+                </h4>
+                <div class="overflow-x-auto mb-8">
+                    <table class="imperial-table">
+                        <thead>
+                            <tr>
+                                <th>排名</th>
+                                <th>贷款机构</th>
+                                <th>2024年贷款量</th>
+                                <th>业务模式</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-semibold">1</td>
+                                <td>United Wholesale Mortgage</td>
+                                <td class="exclusive-number">$139.7 billion</td>
+                                <td>100% 批发</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">2</td>
+                                <td>Rocket Mortgage</td>
+                                <td class="exclusive-number">$97.6 billion</td>
+                                <td>100% 零售</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">3</td>
+                                <td>CrossCountry Mortgage</td>
+                                <td class="exclusive-number">$39.4 billion</td>
+                                <td>100% 零售</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">4</td>
+                                <td>Chase</td>
+                                <td class="exclusive-number">$38.2 billion</td>
+                                <td>银行</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">5</td>
+                                <td>Bank of America</td>
+                                <td class="exclusive-number">$29.5 billion</td>
+                                <td>银行</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="noble-text space-y-4">
+                    <p><strong class="text-imperial-gold">市场结构变化：</strong> 非银行贷款机构如United Wholesale Mortgage和Rocket Mortgage已在2024年占据了市场主导地位，而传统银行则在缩减其个人住房贷款业务规模。</p>
+
+                    <p><strong class="text-imperial-gold">技术驱动优势：</strong> Rocket Companies的成功在于其"平台化"和"AI优先"的战略，通过自主研发的AI驱动承销系统实现显著效率提升。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 第五章：风险与展望 -->
+    <section id="chapter-five" class="imperial-section" data-title="风险归因与未来展望">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-5xl mb-16 text-center">风险与展望</h2>
+
+            <div class="grid md:grid-cols-2 gap-12 mb-16">
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-xl mb-6 flex items-center">
+                        <i class="material-icons text-xl mr-3">warning</i>
+                        核心风险
+                    </h3>
+                    <div class="noble-text space-y-3 text-sm">
+                        <p><strong class="text-ruby-accent">宏观经济风险：</strong> 高利率、地缘政治不确定性可能抑制全球企业IT支出。</p>
+
+                        <p><strong class="text-ruby-accent">技术风险：</strong> AI快速发展带来的数据隐私、合规与算法偏差风险。</p>
+
+                        <p><strong class="text-ruby-accent">人才与成本风险：</strong> 高端技术人才短缺与AI生产力提升的定价矛盾。</p>
+                    </div>
+                </div>
+
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-xl mb-6 flex items-center">
+                        <i class="material-icons text-xl mr-3">trending_up</i>
+                        未来机遇
+                    </h3>
+                    <div class="noble-text space-y-3 text-sm">
+                        <p><strong class="text-emerald-depth">AI全栈解决方案：</strong> 从基础设施到应用的完整解决方案提供商。</p>
+
+                        <p><strong class="text-emerald-depth">垂直领域专家：</strong> 专注高壁垒行业的IT服务商具有更高议价能力。</p>
+
+                        <p><strong class="text-emerald-depth">平台化服务商：</strong> 以技术为核心实现规模化、自动化交付的企业。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 引用文献 -->
+    <section class="imperial-section bg-gradient-to-b from-transparent to-black bg-opacity-30">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl mb-12 text-center">引用文献</h2>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl mx-auto">
+                <div class="citation-item">
+                    <a href="https://wap.eastmoney.com/a/202501173300369871.html" target="_blank">
+                        1. 美国住房抵押贷款利率超7%创新高
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.yicai.com/news/102175179.html" target="_blank">
+                        2. 2024年下半年宏观经济展望
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://zh.tradingeconomics.com/united-states/mba-purchase-index" target="_blank">
+                        3. 美国MBA购房指数
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://zh.tradingeconomics.com/united-states/mortgage-applications" target="_blank">
+                        4. 美国MBA抵押贷款申请
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.nfra.gov.cn/branch/liaoning/view/pages/common/ItemDetail.html" target="_blank">
+                        5. 电信诈骗防范案例
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="http://www.caict.ac.cn/kxyj/qwfb/ztbg/201804/P020180327605403296958.pdf" target="_blank">
+                        6. 大数据在金融领域应用
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.bloombergchina.com/blog/why-china-is-revamping-its-sustem-of-interest-rate/" target="_blank">
+                        7. 中国利率体系改革
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="http://paper.people.com.cn/zgjjzk/html/2020-09/30/content_2012842.htm" target="_blank">
+                        8. LPR制度与房贷影响
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.gminsights.com/zh/industry-analysis/mortgage-lender-market" target="_blank">
+                        9. 抵押贷款市场规模统计
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.gov.cn/lianbo/bumen/202411/content_6985749.htm" target="_blank">
+                        10. 2024年三季度贷款投向统计
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://v.icbc.com.cn/userfiles/resources/icbcltd/download/2025/1.pdf" target="_blank">
+                        11. 工商银行2024年年报
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://wap.eastmoney.com/a/202503253355844880.html" target="_blank">
+                        12. 招商银行2024年年报
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://jrj.sh.gov.cn/GZTJ214/20250703/742a9d38b87642d3a6db579ad826b78d.html" target="_blank">
+                        13. 上海科技金融典型案例
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="http://www.jiangmen.gov.cn/jmkjj/gkmlpt/content/3/3321/post_3321445.html" target="_blank">
+                        14. 江门科技信贷产品创新
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://datacenterplatform.com/insights/infographic-dx-spending-forecast-transition/" target="_blank">
+                        15. 数字化转型支出预测
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.myhubintranet.com/digital-transformation-statistics/" target="_blank">
+                        16. 数字化转型统计数据
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.ciena.com/insights/blog/2025/enterprise-ai-is-booming-what-does-it-mean-to-service-providers" target="_blank">
+                        17. 企业AI投资增长趋势
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.morganstanley.com/insights/articles/genai-revenue-growth-and-profitability" target="_blank">
+                        18. GenAI收入增长预测
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.zrgpartners.com/insights/how-will-generative-ai-affect-the-professional-services-industry/" target="_blank">
+                        19. GenAI对专业服务影响
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.ainvest.com/news/industry-faces-cost-pressures-shift-outcome-based-pricing-models-2508/" target="_blank">
+                        20. IT行业成本压力与定价转变
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://timesofindia.indiatimes.com/business/india-business/tcs-salary-hikes-it-giant-rolls-out-4-5-7-raise-to-majority-of-employees-lowest-in-last-four-years/articleshow/123652431.cms" target="_blank">
+                        21. TCS薪资增长数据
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://economictimes.indiatimes.com/markets/stocks/news/tcs-shares-in-focus-as-it-major-sets-up-new-ai-transformation-unit/articleshow/123555817.cms" target="_blank">
+                        22. TCS AI转型单位
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://news.mit.edu/2025/explained-generative-ai-environmental-impact-0117" target="_blank">
+                        23. GenAI环境影响分析
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.fortunebusinessinsights.com/it-services-market-113127" target="_blank">
+                        24. IT服务市场规模预测
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.hava.io/blog/2024-cloud-market-share-analysis-decoding-industry-leaders-and-trends" target="_blank">
+                        25. 2024年云市场份额分析
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.fortunebusinessinsights.com/cloud-computing-market-102697" target="_blank">
+                        26. 全球云计算市场规模
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.grandviewresearch.com/industry-analysis/cloud-computing-industry" target="_blank">
+                        27. 云计算行业分析报告
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://dealroom.net/blog/recent-m-a-deals" target="_blank">
+                        28. 最近并购交易动态
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://erp.today/ibm-acquires-hashicorp-enhancing-hybrid-cloud-and-ai-capabilities/" target="_blank">
+                        29. IBM收购HashiCorp分析
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://thecuberesearch.com/ibm-acquires-hashicorp-what-it-means-for-hybrid-cloud-developers/" target="_blank">
+                        30. HashiCorp收购对混合云影响
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.casebasix.com/pages/accenture-strategy-overview" target="_blank">
+                        31. 埃森哲战略概览
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.accenture.com/us-en/about/company/integrated-reporting-talent-accessing-talent" target="_blank">
+                        32. 埃森哲人才发展战略
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.accenture.com/us-en/about/company/integrated-reporting-talent-creating-talent" target="_blank">
+                        33. 埃森哲人才创造战略
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://en.digitalchina.com/show-79-886-1.html" target="_blank">
+                        34. 神州数码2025半年报
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://pitchbook.com/profiles/company/223029-73" target="_blank">
+                        35. 神州数码集团公司简介
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://finbox.com/SEHK:354/explorer/total_rev" target="_blank">
+                        36. 中软国际营收数据
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.chinasofti.com/u/cms/en/202504/281752374nl1.pdf" target="_blank">
+                        37. 中软国际2024年报
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.itexchangenet.com/post/2025-m-a-trends-in-the-it-sector" target="_blank">
+                        38. 2025年IT行业并购趋势
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://moldstud.com/articles/p-comprehensive-guide-to-evaluating-it-service-costs-maximize-value-and-reduce-expenses" target="_blank">
+                        39. IT服务成本评估指南
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.planview.com/resources/articles/what-are-it-automation-solutions/" target="_blank">
+                        40. IT自动化解决方案
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.staffingindustry.com/news/global-daily-news/tech-talent-shortage-hits-76-of-it-employers-globally" target="_blank">
+                        41. 技术人才短缺统计
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.scnsoft.com/software-development/automation" target="_blank">
+                        42. 软件开发自动化指南
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.wipro.com/newsroom/press-releases/2024/wipro-adopts-google-cloud-ai-technologies-including-gemini-to-accelerate-innovation-and-productivity/" target="_blank">
+                        43. Wipro采用Google Cloud AI
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.pwc.com/us/en/industries/tmt/library/technology-deals-outlook.html" target="_blank">
+                        44. PwC技术交易前景
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.staffingindustry.com/news/global-daily-news/hcltech-acquires-telecom-business-hewlett-packard-enterprise-0" target="_blank">
+                        45. HCLTech收购HPE电信业务
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.hpe.com/us/en/newsroom/blog-post/2024/05/hpe-to-advance-strategy-by-divesting-communications-technology-group-to-hcltech.html" target="_blank">
+                        46. HPE战略转向分析
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://cognizant.q4cdn.com/123993165/files/doc_financials/2024/ar/CTSH-2024-Annual-Report_Final2.pdf" target="_blank">
+                        47. Cognizant2024年报
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.scotsmanguide.com/rankings/top-mortgage-lenders/2024-top-overall-lenders/" target="_blank">
+                        48. 2024年顶级抵押贷款机构
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.bankrate.com/mortgages/largest-mortgage-lenders/" target="_blank">
+                        49. 美国最大抵押贷款机构
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.sec.gov/Archives/edgar/data/72971/000007297125000092/wfc2024annualreport.pdf" target="_blank">
+                        50. 富国银行2024年报
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://ir.rocketcompanies.com/news-and-events/press-releases/press-release-details/2025/Rocket-Companies-Announces-Fourth-Quarter-and-Full-Year-2024-Results/default.aspx" target="_blank">
+                        51. Rocket Companies2024年度
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://per.spdb.com.cn/small_micro_finance/assets_loans/201512/t20151217_92493.shtml" target="_blank">
+                        52. 房抵快贷产品介绍
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://nationalmortgageprofessional.com/news/rocket-companies-posts-record-revenue-latest-earnings-report" target="_blank">
+                        53. Rocket Companies创纪录收益
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.pwc.com/gx/en/services/deals/trends.html" target="_blank">
+                        54. 全球并购行业趋势
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.spgchinaratings.cn/research/pdf/20240306_slides_consumer_overview__outlook_2024_cn.pdf" target="_blank">
+                        55. 中国消费贷市场观察
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.teamwork.com/blog/it-challenges/" target="_blank">
+                        56. 2025年IT业务挑战
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        const progressBar = document.querySelector('.reading-progress');
+        const progressFill = document.querySelector('.reading-progress-fill');
+        const progressTooltip = document.getElementById('progress-tooltip');
+        const sections = document.querySelectorAll('section[id], header[id]');
+
+        let currentSectionTitle = '';
+        let sectionsData = [];
+
+        function initSections() {
+            sectionsData = Array.from(sections).map(section => ({
+                id: section.getAttribute('id'),
+                title: section.getAttribute('data-title') || section.querySelector('h1, h2')?.textContent || '未知章节',
+                offsetTop: section.offsetTop,
+                offsetHeight: section.offsetHeight
+            }));
+        }
+
+        function updateProgress() {
+            const scrolled = window.pageYOffset;
+            const maxHeight = document.body.scrollHeight - window.innerHeight;
+            const progress = (scrolled / maxHeight) * 100;
+
+            progressFill.style.height = `${progress}%`;
+
+            let currentSection = '';
+            sectionsData.forEach(section => {
+                if (scrolled >= section.offsetTop - 300) {
+                    currentSection = section.id;
+                    currentSectionTitle = section.title;
+                }
+            });
+        }
+
+        progressBar.addEventListener('click', (e) => {
+            const rect = progressBar.getBoundingClientRect();
+            const clickY = e.clientY - rect.top;
+            const progressHeight = rect.height;
+            const clickPercent = clickY / progressHeight;
+
+            const maxHeight = document.body.scrollHeight - window.innerHeight;
+            const targetScroll = maxHeight * clickPercent;
+
+            window.scrollTo({
+                top: targetScroll,
+                behavior: 'smooth'
+            });
+        });
+
+        progressBar.addEventListener('mouseenter', () => {
+            if (currentSectionTitle) {
+                progressTooltip.textContent = currentSectionTitle;
+                progressTooltip.classList.add('show');
+            }
+        });
+
+        progressBar.addEventListener('mouseleave', () => {
+            progressTooltip.classList.remove('show');
+        });
+
+        progressTooltip.addEventListener('mouseenter', () => {
+            progressTooltip.classList.add('show');
+        });
+
+        progressTooltip.addEventListener('mouseleave', () => {
+            progressTooltip.classList.remove('show');
+        });
+
+        window.addEventListener('resize', () => {
+            setTimeout(initSections, 100);
+        });
+
+        window.addEventListener('scroll', updateProgress);
+
+        window.addEventListener('load', () => {
+            initSections();
+            updateProgress();
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const now = new Date();
+            const month = now.getMonth();
+            const quarter = Math.floor(month / 3) + 1;
+            const year = now.getFullYear();
+
+            const dateCN = `${year}年Q${quarter}`;
+            const dateEN = `Q${quarter} ${year}`;
+
+            document.getElementById('date-cn').textContent = dateCN;
+            document.getElementById('date-en').textContent = dateEN;
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            document.body.style.opacity = '0';
+            document.body.style.transition = 'opacity 1s ease';
+
+            setTimeout(() => {
+                document.body.style.opacity = '1';
+            }, 100);
+        });
+    </script>
+</body>
+</html>

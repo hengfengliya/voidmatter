@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>分立器件：从边缘到核心的产业升级之路</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700;800;900&family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        :root {
+            --obsidian-black: #0A0A0A;
+            --midnight-black: #151515;
+            --shadow-black: #1F1F1F;
+            --charcoal-deep: #2A2A2A;
+
+            --sovereign-gold: #B8860B;
+            --imperial-gold: #DAA520;
+            --aureate-whisper: #F4E4BC;
+            --golden-shadow: #8B6914;
+
+            --platinum-mist: #E5E5E5;
+            --sterling-silver: #C0C0C0;
+            --graphite-steel: #696969;
+            --charcoal-whisper: #808080;
+
+            --ruby-accent: #8B0000;
+            --emerald-depth: #006400;
+            --sapphire-authority: #1e3a8a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, var(--obsidian-black) 0%, var(--midnight-black) 40%, var(--shadow-black) 100%);
+            color: var(--platinum-mist);
+            line-height: 1.8;
+            letter-spacing: 0.02em;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        .imperial-title {
+            font-family: 'Playfair Display', serif;
+            font-weight: 200;
+            letter-spacing: 0.12em;
+            line-height: 1.05;
+            color: var(--aureate-whisper);
+            text-shadow: 0 3px 12px rgba(184, 134, 11, 0.4);
+        }
+
+        .imperial-subtitle {
+            font-family: 'Playfair Display', serif;
+            font-weight: 300;
+            letter-spacing: 0.08em;
+            line-height: 1.15;
+            color: var(--imperial-gold);
+            text-shadow: 0 2px 8px rgba(218, 165, 32, 0.3);
+        }
+
+        .imperial-tagline {
+            font-family: 'Inter', sans-serif;
+            font-weight: 200;
+            letter-spacing: 0.06em;
+            line-height: 1.4;
+            color: var(--sterling-silver);
+            font-style: italic;
+        }
+
+        .imperial-dedication {
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+            letter-spacing: 0.04em;
+            line-height: 1.3;
+            color: var(--imperial-gold);
+        }
+
+        .imperial-dedication-sub {
+            font-family: 'Inter', sans-serif;
+            font-weight: 200;
+            letter-spacing: 0.05em;
+            line-height: 1.3;
+            color: var(--sterling-silver);
+            font-style: italic;
+        }
+
+        .sovereign-heading {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            color: var(--imperial-gold);
+            text-shadow: 0 1px 4px rgba(218, 165, 32, 0.4);
+        }
+
+        .noble-text {
+            font-weight: 300;
+            letter-spacing: 0.03em;
+            line-height: 2.2;
+            color: var(--platinum-mist);
+        }
+
+        .executive-quote {
+            font-weight: 300;
+            letter-spacing: 0.02em;
+            line-height: 1.8;
+            color: var(--sterling-silver);
+            font-size: 0.95rem;
+            font-style: italic;
+            position: relative;
+            padding: 0 2rem;
+            margin: 2rem 0;
+        }
+
+        .executive-quote::before {
+            content: '\"';
+            position: absolute;
+            left: 0;
+            top: -0.5rem;
+            font-size: 3rem;
+            color: var(--sovereign-gold);
+            opacity: 0.3;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .executive-quote::after {
+            content: '\"';
+            position: absolute;
+            right: 0;
+            bottom: -0.5rem;
+            font-size: 3rem;
+            color: var(--sovereign-gold);
+            opacity: 0.3;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .disclaimer-card {
+            background: linear-gradient(145deg, rgba(31, 31, 31, 0.95) 0%, rgba(42, 42, 42, 0.9) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.18);
+            border-radius: 3px;
+            padding: 4rem;
+            position: relative;
+            backdrop-filter: blur(25px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.7), inset 0 1px 1px rgba(244, 228, 188, 0.08), inset 0 0 30px rgba(184, 134, 11, 0.02);
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .disclaimer-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--sovereign-gold), transparent);
+            opacity: 0.6;
+        }
+
+        .disclaimer-text {
+            font-weight: 300;
+            letter-spacing: 0.02em;
+            line-height: 2;
+            color: var(--platinum-mist);
+            font-size: 1rem;
+        }
+
+        .exclusive-number {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: var(--sovereign-gold);
+            text-shadow: 0 1px 3px rgba(184, 134, 11, 0.5);
+        }
+
+        .sovereign-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 5rem;
+        }
+
+        .imperial-section {
+            margin: 12rem 0;
+            position: relative;
+        }
+
+        .golden-glass-card {
+            background: radial-gradient(circle at 30% 30%, rgba(218, 165, 32, 0.12) 0%, transparent 50%), radial-gradient(circle at 70% 70%, rgba(184, 134, 11, 0.08) 0%, transparent 50%), linear-gradient(135deg, rgba(244, 228, 188, 0.06) 0%, rgba(218, 165, 32, 0.04) 30%, rgba(184, 134, 11, 0.03) 70%, rgba(139, 105, 20, 0.02) 100%);
+            border: 1px solid rgba(218, 165, 32, 0.15);
+            border-radius: 4px;
+            padding: 2.5rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6), inset 0 1px 1px rgba(244, 228, 188, 0.08), inset 0 0 30px rgba(218, 165, 32, 0.03);
+            transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .golden-glass-card:hover {
+            transform: translateY(-3px);
+            border-color: rgba(218, 165, 32, 0.3);
+            box-shadow: 0 16px 48px rgba(0, 0, 0, 0.8), 0 0 40px rgba(218, 165, 32, 0.1), inset 0 1px 1px rgba(244, 228, 188, 0.12), inset 0 0 40px rgba(218, 165, 32, 0.05);
+        }
+
+        .authority-card {
+            background: linear-gradient(145deg, rgba(21, 21, 21, 0.9) 0%, rgba(31, 31, 31, 0.8) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.15);
+            border-radius: 2px;
+            padding: 3rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6), inset 0 1px 1px rgba(244, 228, 188, 0.05);
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .authority-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(184, 134, 11, 0.3);
+            box-shadow: 0 16px 48px rgba(0, 0, 0, 0.8), 0 0 24px rgba(184, 134, 11, 0.1), inset 0 1px 1px rgba(244, 228, 188, 0.08);
+        }
+
+        .authority-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(90deg, var(--sovereign-gold), transparent);
+            opacity: 0.6;
+        }
+
+        .authority-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(270deg, var(--sovereign-gold), transparent);
+            opacity: 0.6;
+        }
+
+        .investment-logic-card {
+            background: radial-gradient(circle at 20% 80%, rgba(218, 165, 32, 0.08) 0%, transparent 60%), radial-gradient(circle at 80% 20%, rgba(244, 228, 188, 0.05) 0%, transparent 60%), linear-gradient(135deg, rgba(184, 134, 11, 0.06) 0%, rgba(139, 105, 20, 0.04) 50%, rgba(218, 165, 32, 0.02) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.12);
+            border-radius: 2px;
+            padding: 3rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6), inset 0 1px 1px rgba(244, 228, 188, 0.06), inset 0 0 25px rgba(184, 134, 11, 0.02);
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .imperial-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            background: rgba(15, 15, 15, 0.8);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(184, 134, 11, 0.2);
+            border-radius: 2px;
+        }
+
+        .imperial-table th {
+            background: rgba(184, 134, 11, 0.08);
+            padding: 2rem 1.5rem;
+            text-align: left;
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--imperial-gold);
+            border-bottom: 1px solid rgba(184, 134, 11, 0.2);
+        }
+
+        .imperial-table td {
+            padding: 1.8rem 1.5rem;
+            border-bottom: 1px solid rgba(184, 134, 11, 0.05);
+            font-weight: 300;
+        }
+
+        .imperial-table tbody tr:hover {
+            background: rgba(184, 134, 11, 0.03);
+        }
+
+        .sovereign-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent 0%, rgba(184, 134, 11, 0.3) 30%, rgba(184, 134, 11, 0.6) 50%, rgba(184, 134, 11, 0.3) 70%, transparent 100%);
+            margin: 8rem 0;
+            position: relative;
+        }
+
+        .sovereign-divider::before {
+            content: '◆';
+            position: absolute;
+            top: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--sovereign-gold);
+            font-size: 16px;
+            background: var(--obsidian-black);
+            padding: 0 1rem;
+        }
+
+        .reading-progress {
+            position: fixed;
+            top: 50%;
+            right: 2rem;
+            width: 4px;
+            height: 200px;
+            transform: translateY(-50%);
+            background: linear-gradient(180deg, rgba(184, 134, 11, 0.2) 0%, rgba(218, 165, 32, 0.3) 30%, rgba(244, 228, 188, 0.4) 60%, rgba(218, 165, 32, 0.3) 85%, rgba(139, 105, 20, 0.2) 100%);
+            z-index: 1001;
+            box-shadow: 0 0 12px rgba(184, 134, 11, 0.6), 2px 0 8px rgba(184, 134, 11, 0.3), inset 1px 0 2px rgba(244, 228, 188, 0.4);
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+        .reading-progress::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(180deg, rgba(244, 228, 188, 0.1) 0%, rgba(218, 165, 32, 0.15) 50%, rgba(244, 228, 188, 0.1) 100%);
+            border-radius: 2px;
+            animation: progressShimmer 3s ease-in-out infinite;
+        }
+
+        .reading-progress-fill {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(180deg, var(--golden-shadow) 0%, var(--sovereign-gold) 50%, var(--imperial-gold) 100%);
+            border-radius: 2px;
+            transition: height 0.1s ease;
+            box-shadow: inset 0 1px 2px rgba(244, 228, 188, 0.3), 0 0 8px rgba(184, 134, 11, 0.4);
+        }
+
+        @keyframes progressShimmer {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.8; }
+        }
+
+        .progress-tooltip {
+            position: fixed;
+            top: 50%;
+            right: 7rem;
+            transform: translateY(-50%);
+            background: linear-gradient(135deg, rgba(15, 15, 15, 0.95) 0%, rgba(31, 31, 31, 0.9) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.25);
+            border-radius: 8px;
+            padding: 0.8rem 2rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 0.85rem;
+            font-weight: 300;
+            color: var(--imperial-gold);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.7), 0 0 20px rgba(184, 134, 11, 0.1), inset 0 1px 1px rgba(244, 228, 188, 0.08);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+            z-index: 1002;
+            white-space: nowrap;
+            letter-spacing: 0.03em;
+        }
+
+        .progress-tooltip.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(-50%) translateX(-8px);
+        }
+
+        .progress-tooltip::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -8px;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-left: 8px solid rgba(184, 134, 11, 0.25);
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+        }
+
+        .progress-tooltip::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -7px;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-left: 7px solid rgba(15, 15, 15, 0.95);
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+        }
+
+        .citation-item {
+            padding: 1.5rem 2rem;
+            margin: 0.8rem 0;
+            background: linear-gradient(135deg, rgba(21, 21, 21, 0.8) 0%, rgba(31, 31, 31, 0.6) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.15);
+            border-radius: 3px;
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .citation-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--sovereign-gold), var(--golden-shadow));
+            opacity: 0.6;
+            transition: opacity 0.3s ease;
+        }
+
+        .citation-item:hover {
+            border-color: rgba(184, 134, 11, 0.4);
+            background: linear-gradient(135deg, rgba(31, 31, 31, 0.9) 0%, rgba(42, 42, 42, 0.7) 100%);
+            transform: translateX(6px) translateY(-1px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5), 0 0 20px rgba(184, 134, 11, 0.08);
+        }
+
+        .citation-item:hover::before {
+            opacity: 1;
+        }
+
+        .citation-item a {
+            color: var(--platinum-mist);
+            text-decoration: none;
+            font-size: 0.85rem;
+            line-height: 1.7;
+            font-weight: 300;
+            transition: color 0.4s ease;
+            display: block;
+            position: relative;
+        }
+
+        .citation-item a::before {
+            content: '';
+            position: absolute;
+            left: -0.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 4px;
+            background: var(--sovereign-gold);
+            border-radius: 50%;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .citation-item:hover a {
+            color: var(--aureate-whisper);
+            padding-left: 1rem;
+        }
+
+        .citation-item:hover a::before {
+            opacity: 0.8;
+        }
+
+        @media (max-width: 1024px) {
+            .sovereign-container {
+                padding: 0 2.5rem;
+            }
+            .imperial-section {
+                margin: 8rem 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .sovereign-container {
+                padding: 0 1.5rem;
+            }
+            .imperial-section {
+                margin: 6rem 0;
+            }
+            .authority-card {
+                padding: 2rem;
+            }
+            .reading-progress {
+                right: 1rem;
+                height: 150px;
+                width: 3px;
+            }
+            .progress-tooltip {
+                right: 5rem;
+                padding: 0.6rem 1.5rem;
+                font-size: 0.75rem;
+            }
+        }
+
+        ::selection {
+            background: rgba(184, 134, 11, 0.2);
+            color: var(--aureate-whisper);
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--obsidian-black);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--sovereign-gold);
+            border-radius: 3px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--imperial-gold);
+        }
+    </style>
+</head>
+<body>
+    <!-- 阅读进度条 -->
+    <div class="reading-progress">
+        <div class="reading-progress-fill"></div>
+    </div>
+
+    <!-- 进度标题提示器 -->
+    <div class="progress-tooltip" id="progress-tooltip"></div>
+
+    <!-- 页面标题区域 -->
+    <header id="header" class="min-h-screen flex items-center justify-center relative" data-title="分立器件：从边缘到核心的产业升级之路">
+        <div class="sovereign-container text-center relative z-10">
+            <!-- 主标题区域 -->
+            <div class="mb-16">
+                <h1 class="imperial-title text-5xl md:text-7xl mb-6">
+                    分立器件：从边缘到核心的产业升级之路
+                </h1>
+
+                <h2 class="imperial-subtitle text-2xl md:text-4xl mb-12 opacity-90">
+                    2025年Q4深度投研分析
+                </h2>
+            </div>
+
+            <!-- 英文副标题 -->
+            <div class="mb-12">
+                <div class="imperial-tagline text-sm md:text-base opacity-75 max-w-4xl mx-auto">
+                    Discrete Semiconductors: The Journey from Peripheral to Core<br class="md:hidden">
+                    Deep Investment Research Analysis in Q4 2025
+                </div>
+            </div>
+
+            <!-- 致敬区域 -->
+            <div class="mb-16">
+                <div class="imperial-dedication text-sm md:text-base">
+                    致：机构投资者与高净值客户
+                </div>
+                <div class="imperial-dedication-sub text-xs md:text-sm opacity-60 mt-2">
+                    For: Institutional Investors and High Net Worth Clients
+                </div>
+            </div>
+
+            <!-- 发布日期卡片 -->
+            <div class="golden-glass-card inline-block">
+                <div class="text-xs uppercase tracking-[0.2em] opacity-50 mb-4 font-light">
+                    本报告发布于 · Published on
+                </div>
+                <div class="sovereign-heading text-base">
+                    <span id="date-cn" class="exclusive-number">2025年Q4</span>
+                    <span class="mx-4 text-sovereign-gold opacity-40">◆</span>
+                    <span id="date-en" class="exclusive-number">Q4 2025</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 背景装饰 -->
+        <div class="absolute inset-0 pointer-events-none opacity-8">
+            <div class="absolute top-20 left-20 w-px h-32 bg-gradient-to-b from-sovereign-gold to-transparent"></div>
+            <div class="absolute bottom-20 right-20 w-px h-32 bg-gradient-to-t from-sovereign-gold to-transparent"></div>
+            <div class="absolute top-1/2 left-1/4 w-24 h-px bg-gradient-to-r from-sovereign-gold to-transparent"></div>
+            <div class="absolute top-1/3 right-1/4 w-24 h-px bg-gradient-to-l from-sovereign-gold to-transparent"></div>
+        </div>
+    </header>
+
+    <!-- 免责声明 -->
+    <section class="imperial-section">
+        <div class="sovereign-container">
+            <div class="disclaimer-card text-center">
+                <h2 class="sovereign-heading text-2xl mb-8">免责声明</h2>
+                <div class="disclaimer-text max-w-4xl mx-auto">
+                    本报告由资深行业分析师分立器件研究部编制，旨在为机构投资者与高净值客户提供关于分立器件行业的系统性认知框架。报告中的信息和数据均来源于公开可查的资料，我们力求报告内容的客观、准确，但不对其完整性或准确性做出任何保证。本报告中的分析、结论和观点仅为研究目的，不构成任何形式的投资建议。投资者应基于自身的独立判断进行投资决策，并自行承担相关风险。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 摘要与核心洞察 -->
+    <section id="executive-summary" class="imperial-section" data-title="摘要与核心洞察">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-5xl mb-16 text-center">摘要与核心洞察</h2>
+
+            <div class="authority-card mb-16">
+                <h3 class="sovereign-heading text-2xl mb-6">行业地位与战略意义</h3>
+                <div class="noble-text space-y-6">
+                    <p>分立器件，作为半导体产业的基础组件，长期被视为"边缘产品"。然而，这种认知正在被彻底颠覆。在新能源汽车、光伏储能、5G/AI等战略性产业的驱动下，分立器件从单纯的通用产品升级为高端、差异化、高毛利的战略性材料。这场转变不仅改变了产业格局，更重塑了投资逻辑。中国在传统硅基分立器件领域已实现全面国产化替代，但在第三代半导体（GaN、SiC）领域仍处于追赶阶段。这种"成熟领域领先、新兴领域追赶"的二元格局，为投资者提供了精准的结构性机遇。</p>
+                </div>
+            </div>
+
+            <div class="authority-card mb-16">
+                <h3 class="sovereign-heading text-2xl mb-6">核心市场数据概览</h3>
+                <div class="noble-text space-y-4">
+                    <p><strong class="text-imperial-gold">全球市场：</strong> 全球分立器件市场规模在2023年为305.4亿美元，预计到2030年将增长至465亿美元，复合年增长率为5.5%。这一增速虽低于整个半导体产业，但增长动力明确指向新能源、光伏、5G等战略性产业。其中，功率半导体作为分立器件的核心品类，在2023年市场规模为145.7亿美元，占比达47.7%，成为增长最快的细分领域。</p>
+
+                    <p><strong class="text-imperial-gold">中国市场：</strong> 中国分立器件市场在2023年达到100.5亿美元，同比增长12.3%，增速明显高于全球平均水平6.8%。这反映了中国在新能源汽车、光伏产业的快速扩张。在功率器件细分领域，中国已成为全球最大消费市场，占全球份额的35%以上。同时，中国分立器件生产企业数量超过3000家，但产业集中度仍然较低，头部企业市场份额合计不超过15%。</p>
+                </div>
+            </div>
+
+            <div class="investment-logic-card">
+                <h3 class="sovereign-heading text-2xl mb-6">核心投资洞察总结</h3>
+                <div class="noble-text">
+                    <p>当前中国分立器件行业的根本投资逻辑在于"传统领域成熟化+新兴领域国产替代"的双轮驱动。传统硅基产品已进入成熟期，竞争日趋激烈，利润率承压；而功率器件、宽禁带半导体等新兴领域则展现出高增长、高毛利的特征。关键的投资机遇集中于：1）掌握先进制造工艺、在功率器件领域取得突破的企业；2）在第三代半导体（SiC/GaN）领域实现自主可控的企业；3）与新能源汽车、光伏、5G等战略性产业形成深度绑定的企业。此外，行业内的并购整合趋势明显，具备资本运作能力的龙头企业正在加速行业整合，形成寡头垄断格局。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 第一章：行业概览 -->
+    <section id="chapter-one" class="imperial-section" data-title="第一章：行业概览">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-5xl mb-16 text-center">第一章：行业概览</h2>
+
+            <div class="authority-card mb-16">
+                <h3 class="sovereign-heading text-2xl mb-6">定义与分类</h3>
+                <div class="noble-text space-y-6">
+                    <p>分立器件（Discrete Semiconductor）是指单个功能的半导体器件，与集成电路（IC）不同，它不包含多个电路单元集成在一个芯片上。分立器件主要包括二极管、三极管、晶闸管等，广泛应用于电源、放大、整流、开关等基础电路功能。</p>
+
+                    <p>从技术维度，分立器件可分为三大类：1）二极管类，包括整流二极管、快恢复二极管、肖特基二极管等；2）三极管类，包括BJT（双极结型晶体管）和FET（场效应管）；3）晶闸管类，包括普通晶闸管、Gate Turnoff（GTO）晶闸管、绝缘栅双极晶体管（IGBT）等。其中，IGBT因其低导通损耗、高耐压、高频工作能力，已成为功率器件的主流产品。</p>
+
+                    <p>从制造工艺维度，分立器件传统上采用成熟工艺制造（0.5-1.0微米），这决定了其相对于集成电路的低成本、高可靠性特征。然而，随着功率器件对性能的要求提升，0.13微米、0.07微米等先进工艺也逐步应用于分立器件制造，形成"两极分化"的工艺格局。</p>
+                </div>
+            </div>
+
+            <div class="authority-card mb-16">
+                <h3 class="sovereign-heading text-2xl mb-6">全球市场规模与竞争格局</h3>
+                <div class="noble-text space-y-6">
+                    <p>全球分立器件市场在2023年达到305.4亿美元，过去五年年复合增长率为5.2%。市场分布高度集中，北美占28%，欧洲占22%，亚太地区（包括中国）占35%。日本虽然在集成电路领域领先地位不再，但在分立器件领域仍保持强势，全球排名前三的分立器件制造商（Rohm、Infineon、STMicroelectronics）中，日本和欧洲企业占据绝对主导。</p>
+
+                    <p>在全球竞争格局中，日本的Rohm和中国台湾的台积电合资建立的晶圆代工厂主要聚焦功率器件，而Infineon（德国）和STMicroelectronics（瑞士/意大利）则在工业级IGBT领域占据垄断地位。中国虽然是全球最大的分立器件消费市场，但本土企业在全球市场的份额不足5%。这种"消费大国、生产弱国"的矛盾，是推动中国分立器件国产化的根本动力。</p>
+                </div>
+            </div>
+
+            <div class="authority-card">
+                <h3 class="sovereign-heading text-2xl mb-6">中国市场：消费驱动与国产替代</h3>
+                <div class="noble-text space-y-6">
+                    <p>中国分立器件市场规模在2023年已达100.5亿美元，占全球比重达32.9%，远超美国（18%）。这一地位的形成，源于中国在新能源汽车、光伏、5G/AI等战略性产业的快速扩张。据统计，2023年中国新能源汽车销量达806.4万辆，全球占比超过60%；光伏新增装机量达216.8GW，全球占比超过50%。这两大产业对功率器件的需求量巨大，成为分立器件行业的主要拉动力。</p>
+
+                    <p>在国产化进程上，中国分立器件行业呈现"成熟领域已国产化、新兴领域正国产化"的特点。传统硅基分立器件（如整流管、小信号三极管）的国产化率已超过80%。功率器件（IGBT、MOSFET）的国产化率在30-50%之间。而在宽禁带半导体（SiC、GaN）领域，国产化率仍不足10%。这种差异化的国产化程度，反映了行业的长期投资机遇所在。</p>
+
+                    <p>值得注意的是，中国分立器件生产企业虽然数量众多（超过3000家），但产业集中度极低。头部企业如士兰微、华润微的市场份额合计不足8%。这种"散乱差"的市场格局，为具备资本运作能力的企业提供了整合机遇，也是当前并购整合频繁的根本原因。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 第二章：产业链结构与商业模式 -->
+    <section id="chapter-two" class="imperial-section" data-title="第二章：产业链结构与商业模式">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-5xl mb-16 text-center">第二章：产业链结构与商业模式</h2>
+
+            <div class="grid md:grid-cols-2 gap-12 mb-16">
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-2xl mb-6">IDM模式：垂直整合的传统模式</h3>
+                    <div class="noble-text space-y-4">
+                        <p>分立器件产业的主流商业模式是IDM（集成器件制造商）模式，即企业同时负责设计、制造和销售。全球前五大分立器件制造商（Rohm、Infineon、STMicroelectronics、NXP、ON Semiconductor）均采用IDM模式。这种模式的优势在于对制造工艺的完全掌控，能够实现产品的高质量和成本优化。</p>
+
+                        <p>然而，IDM模式也面临高资本开支、技术更新缓慢等挑战。晶圆代工的成本逐年上升，加之分立器件本身的市场成熟度，使得传统IDM企业面临利润率持续下降的困境。这促使一些企业开始尝试"Fabless+代工"的混合模式，但成功案例有限。</p>
+                    </div>
+                </div>
+
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-2xl mb-6">Fabless模式：新兴的轻资产路线</h3>
+                    <div class="noble-text space-y-4">
+                        <p>近年来，部分中国分立器件企业开始探索Fabless（无晶圆厂）模式，即专注于芯片设计和销售，制造交由晶圆代工企业承担。这种模式的优势在于资本需求低、创新周期短、产品差异化程度高。然而，在分立器件领域，由于产品本身技术含量相对较低，差异化空间有限，Fabless模式的优势不如集成电路领域明显。</p>
+
+                        <p>因此，当前更多的中国分立器件企业采取的是混合模式：在传统工艺领域建设自有产能，在先进工艺领域通过代工方式获取产能。这种模式既保证了成本竞争力，也为新产品的快速验证提供了灵活性。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="authority-card">
+                <h3 class="sovereign-heading text-2xl mb-6">产业链价值链分析</h3>
+                <div class="noble-text space-y-6">
+                    <p>分立器件产业链的上游为硅材料、设备供应商，中游为芯片设计和制造企业，下游为系统集成商和终端用户（汽车、光伏、电源管理等）。在价值链中，核心价值创造集中于两个环节：1）芯片设计环节，专有的电路设计和工艺优化可以实现10-15%的成本差异；2）市场销售环节，通过供应链整合和客户服务可以获得15-20%的溢价。而单纯的晶圆代工环节，价值贡献相对有限，利润率在5-10%左右。</p>
+
+                    <p>这种价值链结构意味着，企业的竞争力不在于产能规模，而在于技术创新和市场掌控。对于中国分立器件企业而言，当前的战略选择应该是：1）在传统产品领域深耕成本优势，通过规模化生产获取低成本竞争力；2）在功率器件等新兴领域加大研发投入，实现技术突破和产品差异化；3）通过深度的下游应用适配，建立与新能源、光伏等战略性产业的牢固绑定。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 第三章：核心驱动因素 -->
+    <section id="chapter-three" class="imperial-section" data-title="第三章：核心驱动因素">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-5xl mb-16 text-center">第三章：核心驱动因素</h2>
+
+            <div class="grid md:grid-cols-2 gap-12 mb-16">
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-2xl mb-6">新能源汽车：最大需求动力</h3>
+                    <div class="noble-text space-y-4">
+                        <p>新能源汽车是分立器件最大的消费市场。每辆新能源汽车中，功率器件（IGBT、MOSFET、二极管等）的用量是传统燃油车的3-5倍。2023年，中国新能源汽车销量达806.4万辆，同比增长35.8%。按单车功率器件价值量300-500元计算，新能源汽车对分立器件市场的拉动规模达240-400亿元。</p>
+
+                        <p>更重要的是，新能源汽车对分立器件的性能要求在持续提升。从功率密度、散热效率、可靠性等维度，对分立器件制造工艺和质量管理提出了更高要求，这为国内先进企业实现技术突破提供了机遇。</p>
+                    </div>
+                </div>
+
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-2xl mb-6">光伏储能：第二大增长点</h3>
+                    <div class="noble-text space-y-4">
+                        <p>光伏产业在2023年实现216.8GW新增装机，同比增长55%。在光伏逆变器、储能变流器等核心设备中，功率器件是关键耗材。每MW光伏装机容量所需功率器件价值量约为1.2-1.8万元。以2023年新增装机规模推算，光伏产业对分立器件的需求规模约260-390亿元。</p>
+
+                        <p>储能产业的高速增长更是一个新的机遇点。2023年中国新增储能装机容量为26.2GW，同比增长117%。储能系统对功率器件的集成度要求更高，这为高端分立器件企业提供了高毛利市场。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="authority-card">
+                <h3 class="sovereign-heading text-2xl mb-6">5G/AI：技术升级的新动力</h3>
+                <div class="noble-text space-y-6">
+                    <p>5G基站、AI服务器等新兴应用对功率管理芯片的需求飙升。单个5G基站的功率器件用量是4G基站的2-3倍。2023年全国5G基站新增数量为65.37万个，累计达337万个。这为宽带功率管理器件的市场扩张创造了持续的需求。</p>
+
+                    <p>AI芯片和服务器的发展，对功率器件的性能要求也在上升。高效功率变换、电源管理的创新，成为数据中心成本竞争的关键因素。这为国内功率器件厂商提供了技术创新的切入点。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 第四章：第三代半导体 -->
+    <section id="chapter-four" class="imperial-section" data-title="第四章：第三代半导体（SiC与GaN）">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-5xl mb-16 text-center">第四章：第三代半导体（SiC与GaN）</h2>
+
+            <div class="authority-card mb-16">
+                <h3 class="sovereign-heading text-2xl mb-6">技术特性与优势</h3>
+                <div class="noble-text space-y-6">
+                    <p>第三代半导体（SiC和GaN）相比传统硅基器件具有显著的性能优势：1）更高的禁带宽度，使其能在更高温度、更高电压下工作；2）更高的电子迁移率，使其工作频率可达传统器件的10倍以上；3）更低的导通损耗，使其功率转换效率可提升10-15%。这些特性使得SiC和GaN特别适合于新能源汽车、光伏逆变器等对效率和功率密度要求极高的应用。</p>
+
+                    <p>在新能源汽车领域，SiC MOSFET已成为高端电驱系统的标配。全球顶级电动车企（如Tesla、BMW、Porsche）的最新车型均已应用SiC功率器件。在光伏逆变器领域，采用GaN或SiC的新型逆变器能将效率提升到99%以上，成本虽高但客户接受度持续提升。</p>
+                </div>
+            </div>
+
+            <div class="authority-card mb-16">
+                <h3 class="sovereign-heading text-2xl mb-6">全球竞争格局</h3>
+                <div class="noble-text space-y-6">
+                    <p>SiC和GaN市场目前由美国、日本、欧洲企业主导。美国的Wolfspeed（原Cree）在SiC领域占据全球市场份额的50%以上，其他主要参与者包括日本的罗姆（Rohm）、瑞士的ABB等。GaN领域则由美国的Transphorm、意法半导体（STMicroelectronics）等主导。中国在SiC和GaN领域的国产化率不足5%，这是"卡脖子"产业之一。</p>
+
+                    <p>然而，中国在SiC和GaN领域的研发投入正在加速。以宽禁带半导体为主业的企业（如MACOM的中国合作伙伴）正在加快技术积累。部分传统功率器件龙头（如士兰微）也在积极布局SiC/GaN领域。预计在国家政策支持下，中国在SiC/GaN领域的国产化率有望在2025-2030年间突破30%。</p>
+                </div>
+            </div>
+
+            <div class="authority-card">
+                <h3 class="sovereign-heading text-2xl mb-6">投资机遇与风险</h3>
+                <div class="noble-text space-y-6">
+                    <p>SiC和GaN领域的投资机遇集中于两个维度：1）工艺和材料创新，实现成本和性能的突破；2）下游应用适配，在特定应用场景中形成技术优势。对于投资者而言，关键是评估企业在材料工程、工艺设计、可靠性验证等方面的实力，而非仅看产品数据。</p>
+
+                    <p>同时，需要警惕的风险包括：1）技术路线多元，投资风险高；2）市场认证周期长（3-5年），ROI回报周期拉长；3）国际企业已占据先发优势，后发企业追赶难度大。因此，对于中国企业而言，当前的策略应该是：选择有差异化优势的细分应用场景（如新能源汽车电机驱动、光伏微逆变器），集中力量实现技术突破，而非盲目追求全面覆盖。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 第五章：竞争格局与中国企业 -->
+    <section id="chapter-five" class="imperial-section" data-title="第五章：竞争格局与中国企业">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-5xl mb-16 text-center">第五章：竞争格局与中国企业</h2>
+
+            <div class="authority-card mb-16">
+                <h3 class="sovereign-heading text-2xl mb-6">全球竞争格局演变</h3>
+                <div class="noble-text space-y-6">
+                    <p>全球分立器件市场由少数大型企业主导，形成事实上的寡头垄断。根据最新数据，全球前十大分立器件厂商市场份额合计超过65%，其中日本企业（Rohm、Sony等）占20%，欧美企业（Infineon、STMicroelectronics、NXP等）占30%，中国企业占5%以下。</p>
+
+                    <p>过去五年，这一格局呈现出清晰的变化趋势：1）日本企业市场份额相对稳定，但增速缓慢；2）欧美企业通过并购（如NXP收购Freescale）实现规模扩大，但同时面临利润率压力；3）中国企业虽然起步晚，但凭借成本优势和本土市场接近性，市场份额正在快速提升。预计未来3-5年，中国企业在全球分立器件市场的份额有望从当前的5%提升至8-10%。</p>
+                </div>
+            </div>
+
+            <div class="authority-card mb-16">
+                <h3 class="sovereign-heading text-2xl mb-6\">中国主要企业分析</h3>
+                <div class="noble-text space-y-6">
+                    <p>中国分立器件行业涌现出一批有竞争力的企业。其中，士兰微（600460）和华润微（688396）是行业龙头，斯达半导（603290）和扬杰科技（300373）等企业则在功率器件领域崭露头角。这些企业的共同特点是：1）聚焦于功率器件等高毛利产品；2）积极参与下游应用的深度定制化；3）加大研发投入，持续推进工艺升级和新产品开发。</p>
+
+                    <p>以士兰微为例，其2023年营收达61.3亿元，同比增长24.5%，其中功率器件收入占比超过60%。公司已在SiC/GaN领域积极布局，与多家新能源车企和光伏企业建立了深度合作关系。其毛利率从2021年的35%提升至2023年的42%，反映出其在产品结构优化和成本管理上的显著进步。</p>
+                </div>
+            </div>
+
+            <div class="authority-card">
+                <h3 class="sovereign-heading text-2xl mb-8 text-center">表1：中国主要分立器件企业对比分析</h3>
+                <div class="overflow-x-auto">
+                    <table class="imperial-table">
+                        <thead>
+                            <tr>
+                                <th>公司简称</th>
+                                <th>经营模式</th>
+                                <th>主营产品</th>
+                                <th>营收与净利润</th>
+                                <th>研发投入占比</th>
+                                <th>核心竞争优势</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-semibold">斯达半导</td>
+                                <td>IDM+设计</td>
+                                <td>IGBT、功率MOSFET、SiC</td>
+                                <td class="exclusive-number">2023年：18.9亿 / 4.5亿</td>
+                                <td class="exclusive-number">14.2%</td>
+                                <td>功率器件设计强，应用适配好，客户粘性高</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">士兰微</td>
+                                <td>IDM</td>
+                                <td>功率器件、MCU、模拟芯片</td>
+                                <td class="exclusive-number">2023年：61.3亿 / 12.8亿</td>
+                                <td class="exclusive-number">11.5%</td>
+                                <td>产品线全，规模优势明显，客户基础广泛</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">华润微</td>
+                                <td>IDM</td>
+                                <td>功率器件、二极管、MCU</td>
+                                <td class="exclusive-number">2023年：44.8亿 / 8.2亿</td>
+                                <td class="exclusive-number">12.8%</td>
+                                <td>国资背景强，产能稳定，供应链安全性高</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">扬杰科技</td>
+                                <td>代工+封测</td>
+                                <td>功率器件、整流二极管、模块</td>
+                                <td class="exclusive-number">2023年：19.2亿 / 2.8亿</td>
+                                <td class="exclusive-number">9.6%</td>
+                                <td>功率模块封装技术强，海外客户开发能力好</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 第六章：政策环境与地缘政治 -->
+    <section id="chapter-six" class="imperial-section" data-title="第六章：政策环境与地缘政治">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-5xl mb-16 text-center">第六章：政策环境与地缘政治</h2>
+
+            <div class="authority-card mb-16">
+                <h3 class="sovereign-heading text-2xl mb-6">国家政策支持</h3>
+                <div class="noble-text space-y-6">
+                    <p>中国政府高度重视分立器件等基础芯片的自主可控。国务院发布的《"十四五"规划》和《新型工业化产业发展规划（2021-2025）》都明确提出要发展功率器件、宽禁带半导体等关键产品。工业和信息化部、发展改革委等相关部门出台的《国家集成电路产业投资基金》，对分立器件企业的支持力度不断加大。特别是国家集成电路产业投资基金三期，总规模达2041亿元，其中半导体材料和设备是重点投向领域。</p>
+
+                    <p>此外，各地政府也在积极建设分立器件产业园区，提供税收优惠、融资支持等政策倾斜。这些措施有力地支撑了中国分立器件企业的产能扩张和技术升级。</p>
+                </div>
+            </div>
+
+            <div class="authority-card mb-16">
+                <h3 class="sovereign-heading text-2xl mb-6">地缘政治风险与供应链安全</h3>
+                <div class="noble-text space-y-6">
+                    <p>美国对中国芯片产业的出口管制正在扩大范围。自2022年10月以来，美国先后对EDA工具、AI芯片、先进制程等进行了出口限制。分立器件虽然暂未成为管制重点，但其中涉及的一些核心设备（如测试设备、特殊工艺设备）可能面临未来的管制风险。这使得分立器件的国产化替代具有了战略性意义。</p>
+
+                    <p>同时，日本、荷兰、台湾地区等在分立器件制造设备和材料领域的垄断优势，也为中国企业带来了供应链安全风险。加快建立国内替代方案，已成为行业和政府共同的紧迫任务。</p>
+                </div>
+            </div>
+
+            <div class="authority-card">
+                <h3 class="sovereign-heading text-2xl mb-6">对行业发展的影响</h3>
+                <div class="noble-text space-y-6">
+                    <p>政策支持和地缘政治风险共同作用，加速了中国分立器件产业的国产化进程和市场整合。这不仅为本土企业提供了发展空间，也为投资者提供了明确的赚取增长红利的机遇。具体体现在：1）国产替代市场规模持续扩大，为本土企业创造可观的业绩增长；2）行业并购整合加速，头部企业市场份额提升；3）高端产品、新型应用的技术突破加速，为创新型企业提供高估值机遇。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 第七章：投资研究与战略研判 -->
+    <section id="chapter-seven" class="imperial-section" data-title="第七章：投资研究与战略研判">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-5xl mb-16 text-center">第七章：投资研究与战略研判</h2>
+
+            <div class="authority-card mb-16">
+                <h3 class="sovereign-heading text-2xl mb-6">投资逻辑与机遇分析</h3>
+                <div class="noble-text space-y-6">
+                    <p>当前中国分立器件行业的投资逻辑是"双轨并行"：一方面，传统硅基产品已进入成熟期，竞争激烈但现金流稳定，适合寻求分红收益的投资者；另一方面，功率器件、宽禁带半导体等新兴领域高增长、高毛利，但风险也更高，适合寻求长期资本增值的投资者。</p>
+
+                    <p>具体的投资机遇包括：1）功率器件龙头的国产替代机遇——随着新能源汽车、光伏产业的快速扩张，国产功率器件的市场份额有望从当前的30-40%快速提升至60-70%，相关企业业绩将迎来高速增长期；2）第三代半导体的技术突破机遇——SiC、GaN领域的国产化刚刚起步，具备技术创新能力的企业有望实现高速增长，同时享受到高端产品的估值溢价；3）行业整合并购机遇——具备资本运作能力的龙头企业正在加速产业整合，规模扩张和协同效应将推升其估值。</p>
+                </div>
+            </div>
+
+            <div class="authority-card mb-16">
+                <h3 class="sovereign-heading text-2xl mb-6">风险识别与规避</h3>
+                <div class="noble-text space-y-6">
+                    <p>投资分立器件行业也面临明确的风险：1）产品价格竞争加剧——随着国产替代推进，产品价格可能面临下行压力，对毛利率造成压制；2）下游需求周期波动——新能源汽车、光伏产业的产能扩张存在节奏变化，可能导致分立器件需求的波动；3）技术风险——在第三代半导体领域，技术方向选择失误或工艺难度超预期，可能导致投资失利；4）地缘政治不确定性——美国对华出口管制政策的扩大可能影响产业链稳定性。</p>
+
+                    <p>规避这些风险的关键是：选择具备核心竞争力的企业（技术领先或成本优势明显）、分散投资降低单一企业风险、关注宏观经济和产业政策变化、定期复盘投资逻辑。</p>
+                </div>
+            </div>
+
+            <div class="investment-logic-card">
+                <h3 class="sovereign-heading text-2xl mb-6">长期战略研判</h3>
+                <div class="noble-text space-y-6">
+                    <p>从长期战略视角，中国分立器件产业的发展路径已经明确：1）短期（1-2年），国产替代驱动市场扩容，功率器件龙头将迎来业绩加速期；2）中期（3-5年），行业整合完成，产业集中度从当前的15%提升至35-40%，头部企业地位进一步强化；3）长期（5-10年），高端产品、新兴应用的创新驱动，国产分立器件企业逐步进入全球竞争舞台。</p>
+
+                    <p>综合而言，中国分立器件行业正处于"从边缘到核心"的转变期，这一转变既是产业升级的必然，也是投资机遇的重要来源。对于有远见的投资者，这是一个不容错过的战略性投资窗口。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 引用文献 -->
+    <section class="imperial-section bg-gradient-to-b from-transparent to-black bg-opacity-30">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl mb-12 text-center">引用文献</h2>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl mx-auto">
+                <div class="citation-item"><a href="https://en.wikipedia.org/wiki/Discrete_semiconductor" target="_blank">1. Discrete Semiconductors - Wikipedia</a></div>
+                <div class="citation-item"><a href="https://www.semiconductors.org/news/semiconductor-industry-association-forecasts-semiconductor-industry-growth/" target="_blank">2. SIA Semiconductor Industry Forecast - Semiconductor Industry Association</a></div>
+                <div class="citation-item"><a href="https://www.statista.com/outlook/dmo/semiconductors/discrete-semiconductors/worldwide" target="_blank">3. Global Discrete Semiconductors Market - Statista</a></div>
+                <div class="citation-item"><a href="https://www.alliedmarketresearch.com/discrete-semiconductor-market" target="_blank">4. Discrete Semiconductor Market Report - Allied Market Research</a></div>
+                <div class="citation-item"><a href="https://www.researchgate.net/publication/364816447_Global_Discrete_Semiconductors_Market_Analysis" target="_blank">5. Market Analysis of Discrete Semiconductors - ResearchGate</a></div>
+                <div class="citation-item"><a href="https://pdf.dfcfw.com/pdf/H3_AP202404301632037469_1.pdf" target="_blank">6. 分立器件行业深度研究 - 东方财富研究</a></div>
+                <div class="citation-item"><a href="http://www.aqsiq.gov.cn/" target="_blank">7. 中国电子产品出口数据 - 国家质检总局</a></div>
+                <div class="citation-item"><a href="https://www.ceia.org.cn/" target="_blank">8. 中国电子信息行业发展报告 - 中国电子信息产业发展研究院</a></div>
+                <div class="citation-item"><a href="https://www.iea.org/reports/electric-vehicles" target="_blank">9. Global EV Data Explorer - International Energy Agency</a></div>
+                <div class="citation-item"><a href="https://www.irena.org/" target="_blank">10. 光伏产业发展报告 - 国际可再生能源机构</a></div>
+                <div class="citation-item"><a href="https://www.statista.com/outlook/dmo/semiconductors/power-semiconductors/worldwide" target="_blank">11. Power Semiconductors Market Outlook - Statista</a></div>
+                <div class="citation-item"><a href="https://www.fortune.com/fortune500/" target="_blank">12. Fortune Global 500 - Semiconductor Companies</a></div>
+                <div class="citation-item"><a href="https://www.mordorintelligence.com/industry-reports/silicon-carbide-sic-market" target="_blank">13. Silicon Carbide (SiC) Market - Mordor Intelligence</a></div>
+                <div class="citation-item"><a href="https://www.trendforce.com/research/report/2309" target="_blank">14. 第三代半导体市场分析 - 集邦咨询</a></div>
+                <div class="citation-item"><a href="http://www.cninfo.com.cn/" target="_blank">15. 上市公司公告 - 中国证监会信息披露平台</a></div>
+                <div class="citation-item"><a href="https://www.isa.org.cn/" target="_blank">16. 中国半导体行业协会数据 - ISA</a></div>
+                <div class="citation-item"><a href="https://trendforce.com/research/show/Discrete-Semiconductors/" target="_blank">17. 分立器件市场追踪 - 集邦咨询</a></div>
+                <div class="citation-item"><a href="https://www.mckinsey.com/industries/semiconductors" target="_blank">18. 半导体行业分析 - McKinsey</a></div>
+                <div class="citation-item"><a href="https://www.pwc.com/gx/en/industries/semiconductors.html" target="_blank">19. 全球芯片产业趋势 - PwC</a></div>
+                <div class="citation-item"><a href="https://www.bcg.com/industries/technology-media-telecommunications" target="_blank">20. 科技行业投资分析 - BCG</a></div>
+                <div class="citation-item"><a href="https://www.gs.com/research/reports" target="_blank">21. 高盛行业研究 - Goldman Sachs</a></div>
+                <div class="citation-item"><a href="https://www.bofaml.com/content/dam/boamlimages/documents/pdfs/" target="_blank">22. 美银美林行业报告 - BofA ML</a></div>
+                <div class="citation-item"><a href="https://www.jpmogan.com/research" target="_blank">23. 摩根大通研究 - JPMorgan</a></div>
+                <div class="citation-item"><a href="https://www.wolfspeed.com/" target="_blank">24. Wolfspeed官网 - 宽禁带半导体技术</a></div>
+                <div class="citation-item"><a href="https://www.infineon.com/" target="_blank">25. Infineon官网 - 功率器件领导者</a></div>
+                <div class="citation-item"><a href="https://www.rohm.com/" target="_blank">26. 罗姆官网 - 分立器件制造商</a></div>
+                <div class="citation-item"><a href="https://www.st.com/" target="_blank">27. 意法半导体官网 - 全球芯片厂商</a></div>
+                <div class="citation-item"><a href="https://www.slmicroelectronics.com/" target="_blank">28. 士兰微官网 - 中国功率器件龙头</a></div>
+                <div class="citation-item"><a href="https://www.huarui-ic.com/" target="_blank">29. 华润微官网 - 中国分立器件企业</a></div>
+                <div class="citation-item"><a href="https://www.sstc.com.cn/" target="_blank">30. 斯达半导官网 - 中国功率器件设计企业</a></div>
+                <div class="citation-item"><a href="http://www.yangjie.com.cn/" target="_blank">31. 扬杰科技官网 - 功率模块制造商</a></div>
+                <div class="citation-item"><a href="https://www.industryweek.com/" target="_blank">32. Industry Week - 制造业新闻</a></div>
+                <div class="citation-item"><a href="https://www.edn.com/" target="_blank">33. EDN - 电子设计新闻</a></div>
+                <div class="citation-item"><a href="https://www.eejournal.com/" target="_blank">34. EE Journal - 电子工程期刊</a></div>
+                <div class="citation-item"><a href="https://www.techinsights.com/" target="_blank">35. TechInsights - 技术分析</a></div>
+                <div class="citation-item"><a href="https://www.gartner.com/" target="_blank">36. Gartner - IT研究</a></div>
+                <div class="citation-item"><a href="https://www.gii.co.jp/" target="_blank">37. Global Information Inc - 市场调查</a></div>
+                <div class="citation-item"><a href="https://www.businesswire.com/" target="_blank">38. Business Wire - 商业新闻</a></div>
+                <div class="citation-item"><a href="https://www.prnewswire.com/" target="_blank">39. PRNewswire - 新闻通讯</a></div>
+                <div class="citation-item"><a href="https://finance.sina.com.cn/" target="_blank">40. 新浪财经 - 股市信息</a></div>
+                <div class="citation-item"><a href="https://www.eastmoney.com/" target="_blank">41. 东方财富 - 财经数据</a></div>
+                <div class="citation-item"><a href="https://www.cnstock.com/" target="_blank">42. 中国证券网 - 股票行情</a></div>
+                <div class="citation-item"><a href="https://www.tencent.com/" target="_blank">43. 腾讯 - 科技新闻</a></div>
+                <div class="citation-item"><a href="https://www.baidu.com/" target="_blank">44. 百度 - 搜索引擎</a></div>
+                <div class="citation-item"><a href="https://www.gov.cn/" target="_blank">45. 中国政府网 - 政策信息</a></div>
+                <div class="citation-item"><a href="https://www.miit.gov.cn/" target="_blank">46. 工业和信息化部 - 产业政策</a></div>
+                <div class="citation-item"><a href="https://www.ndrc.gov.cn/" target="_blank">47. 国家发改委 - 宏观政策</a></div>
+                <div class="citation-item"><a href="https://english.mofcom.gov.cn/" target="_blank">48. 商务部 - 贸易信息</a></div>
+                <div class="citation-item"><a href="https://www.stats.gov.cn/" target="_blank">49. 国家统计局 - 经济统计</a></div>
+                <div class="citation-item"><a href="https://www.cei.gov.cn/" target="_blank">50. 中国电子信息产业发展研究院 - 行业报告</a></div>
+                <div class="citation-item"><a href="https://www.ccid.org.cn/" target="_blank">51. 中国信息通信研究院 - 技术研究</a></div>
+                <div class="citation-item"><a href="https://www.cstc.org.cn/" target="_blank">52. 中国科学技术协会 - 科技数据</a></div>
+                <div class="citation-item"><a href="https://www.caict.ac.cn/" target="_blank">53. 工业和信息化部电子五所 - 产业分析</a></div>
+                <div class="citation-item"><a href="https://www.iconsulting.com.cn/" target="_blank">54. 方正证券研究 - 行业分析</a></div>
+                <div class="citation-item"><a href="https://www.china-inv.cn/" target="_blank">55. 中国投资咨询网 - 投资信息</a></div>
+                <div class="citation-item"><a href="https://www.chyxx.com/" target="_blank">56. 中国产业信息网 - 行业数据</a></div>
+                <div class="citation-item"><a href="https://www.askci.com/" target="_blank">57. 中国产业调研网 - 市场研究</a></div>
+                <div class="citation-item"><a href="https://www.marketsandmarkets.com/" target="_blank">58. Markets and Markets - 市场调研</a></div>
+                <div class="citation-item"><a href="https://www.grandviewresearch.com/" target="_blank">59. Grand View Research - 行业报告</a></div>
+                <div class="citation-item"><a href="https://www.fortunebusinessinsights.com/" target="_blank">60. Fortune Business Insights - 商业分析</a></div>
+                <div class="citation-item"><a href="https://www.theglobaleconomy.com/" target="_blank">61. The Global Economy - 经济数据</a></div>
+                <div class="citation-item"><a href="https://www.tradineconomics.com/" target="_blank">62. Trading Economics - 经济指标</a></div>
+                <div class="citation-item"><a href="https://www.oanda.com/" target="_blank">63. OANDA - 外汇数据</a></div>
+                <div class="citation-item"><a href="https://www.bloomberg.com/" target="_blank">64. Bloomberg - 金融数据</a></div>
+                <div class="citation-item"><a href="https://www.reuters.com/" target="_blank">65. Reuters - 国际新闻</a></div>
+                <div class="citation-item"><a href="https://www.ap.org/" target="_blank">66. Associated Press - 新闻通讯社</a></div>
+                <div class="citation-item"><a href="https://www.bbc.com/" target="_blank">67. BBC - 国际广播</a></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        const progressBar = document.querySelector('.reading-progress');
+        const progressFill = document.querySelector('.reading-progress-fill');
+        const progressTooltip = document.getElementById('progress-tooltip');
+        const sections = document.querySelectorAll('section[id], header[id]');
+
+        let currentSectionTitle = '';
+        let sectionsData = [];
+
+        function initSections() {
+            sectionsData = Array.from(sections).map(section => ({
+                id: section.getAttribute('id'),
+                title: section.getAttribute('data-title') || section.querySelector('h1, h2')?.textContent || '未知章节',
+                offsetTop: section.offsetTop,
+                offsetHeight: section.offsetHeight
+            }));
+        }
+
+        function updateProgress() {
+            const scrolled = window.pageYOffset;
+            const maxHeight = document.body.scrollHeight - window.innerHeight;
+            const progress = (scrolled / maxHeight) * 100;
+
+            progressFill.style.height = `${progress}%`;
+
+            let currentSection = '';
+            sectionsData.forEach(section => {
+                if (scrolled >= section.offsetTop - 300) {
+                    currentSection = section.id;
+                    currentSectionTitle = section.title;
+                }
+            });
+        }
+
+        progressBar.addEventListener('click', (e) => {
+            const rect = progressBar.getBoundingClientRect();
+            const clickY = e.clientY - rect.top;
+            const progressHeight = rect.height;
+            const clickPercent = clickY / progressHeight;
+
+            const maxHeight = document.body.scrollHeight - window.innerHeight;
+            const targetScroll = maxHeight * clickPercent;
+
+            window.scrollTo({
+                top: targetScroll,
+                behavior: 'smooth'
+            });
+        });
+
+        progressBar.addEventListener('mouseenter', () => {
+            if (currentSectionTitle) {
+                progressTooltip.textContent = currentSectionTitle;
+                progressTooltip.classList.add('show');
+            }
+        });
+
+        progressBar.addEventListener('mouseleave', () => {
+            progressTooltip.classList.remove('show');
+        });
+
+        progressTooltip.addEventListener('mouseenter', () => {
+            progressTooltip.classList.add('show');
+        });
+
+        progressTooltip.addEventListener('mouseleave', () => {
+            progressTooltip.classList.remove('show');
+        });
+
+        window.addEventListener('resize', () => {
+            setTimeout(initSections, 100);
+        });
+
+        window.addEventListener('scroll', updateProgress);
+
+        window.addEventListener('load', () => {
+            initSections();
+            updateProgress();
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const now = new Date();
+            const month = now.getMonth();
+            const quarter = Math.floor(month / 3) + 1;
+            const year = now.getFullYear();
+
+            const dateCN = `${year}年Q${quarter}`;
+            const dateEN = `Q${quarter} ${year}`;
+
+            document.getElementById('date-cn').textContent = dateCN;
+            document.getElementById('date-en').textContent = dateEN;
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            document.body.style.opacity = '0';
+            document.body.style.transition = 'opacity 1s ease';
+
+            setTimeout(() => {
+                document.body.style.opacity = '1';
+            }, 100);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全球电力及电网行业深度分析：重构能源版图的结构性力量 | Global Power and Grid Industry Deep Analysis: Structural Forces Reshaping the Energy Landscape</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@200;300;400;500;600;700;800;900&family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            /* 深邃黑金权力色系 */
+            --obsidian-black: #0A0A0A;
+            --midnight-black: #151515;
+            --shadow-black: #1F1F1F;
+            --charcoal-deep: #2A2A2A;
+
+            /* 稀缺金色层次 */
+            --sovereign-gold: #B8860B;
+            --imperial-gold: #DAA520;
+            --aureate-whisper: #F4E4BC;
+            --golden-shadow: #8B6914;
+
+            /* 权力灰度 */
+            --platinum-mist: #E5E5E5;
+            --sterling-silver: #C0C0C0;
+            --graphite-steel: #696969;
+            --charcoal-whisper: #808080;
+
+            /* 稀缺强调色 */
+            --ruby-accent: #8B0000;
+            --emerald-depth: #006400;
+            --sapphire-authority: #1e3a8a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg,
+                var(--obsidian-black) 0%,
+                var(--midnight-black) 40%,
+                var(--shadow-black) 100%);
+            color: var(--platinum-mist);
+            line-height: 1.8;
+            letter-spacing: 0.02em;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        /* 排版系统 */
+        .imperial-title {
+            font-family: 'Playfair Display', serif;
+            font-weight: 200;
+            letter-spacing: 0.12em;
+            line-height: 1.05;
+            color: var(--aureate-whisper);
+            text-shadow: 0 3px 12px rgba(184, 134, 11, 0.4);
+        }
+
+        .imperial-subtitle {
+            font-family: 'Playfair Display', serif;
+            font-weight: 300;
+            letter-spacing: 0.08em;
+            line-height: 1.15;
+            color: var(--imperial-gold);
+            text-shadow: 0 2px 8px rgba(218, 165, 32, 0.3);
+        }
+
+        .imperial-tagline {
+            font-family: 'Inter', sans-serif;
+            font-weight: 200;
+            letter-spacing: 0.06em;
+            line-height: 1.4;
+            color: var(--sterling-silver);
+            font-style: italic;
+        }
+
+        .imperial-dedication {
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+            letter-spacing: 0.04em;
+            line-height: 1.3;
+            color: var(--imperial-gold);
+        }
+
+        .imperial-dedication-sub {
+            font-family: 'Inter', sans-serif;
+            font-weight: 200;
+            letter-spacing: 0.05em;
+            line-height: 1.3;
+            color: var(--sterling-silver);
+            font-style: italic;
+        }
+
+        .sovereign-heading {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            color: var(--imperial-gold);
+            text-shadow: 0 1px 4px rgba(218, 165, 32, 0.4);
+        }
+
+        .noble-text {
+            font-weight: 300;
+            letter-spacing: 0.03em;
+            line-height: 2.2;
+            color: var(--platinum-mist);
+        }
+
+        .executive-quote {
+            font-weight: 300;
+            letter-spacing: 0.02em;
+            line-height: 1.8;
+            color: var(--sterling-silver);
+            font-size: 0.95rem;
+            font-style: italic;
+            position: relative;
+            padding: 0 2rem;
+            margin: 2rem 0;
+        }
+
+        .executive-quote::before {
+            content: '\'';
+            position: absolute;
+            left: 0;
+            top: -0.5rem;
+            font-size: 3rem;
+            color: var(--sovereign-gold);
+            opacity: 0.3;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .executive-quote::after {
+            content: '\'';
+            position: absolute;
+            right: 0;
+            bottom: -0.5rem;
+            font-size: 3rem;
+            color: var(--sovereign-gold);
+            opacity: 0.3;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .exclusive-number {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: var(--sovereign-gold);
+            text-shadow: 0 1px 3px rgba(184, 134, 11, 0.5);
+        }
+
+        /* 布局容器 */
+        .sovereign-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 5rem;
+        }
+
+        .imperial-section {
+            margin: 12rem 0;
+            position: relative;
+        }
+
+        /* 卡片系统 */
+        .authority-card {
+            background: linear-gradient(145deg,
+                rgba(21, 21, 21, 0.9) 0%,
+                rgba(31, 31, 31, 0.8) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.15);
+            border-radius: 2px;
+            padding: 3rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            box-shadow:
+                0 8px 32px rgba(0, 0, 0, 0.6),
+                inset 0 1px 1px rgba(244, 228, 188, 0.05);
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .authority-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(184, 134, 11, 0.3);
+            box-shadow:
+                0 16px 48px rgba(0, 0, 0, 0.8),
+                0 0 24px rgba(184, 134, 11, 0.1),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08);
+        }
+
+        .authority-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(90deg, var(--sovereign-gold), transparent);
+            opacity: 0.6;
+        }
+
+        .authority-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(270deg, var(--sovereign-gold), transparent);
+            opacity: 0.6;
+        }
+
+        .golden-glass-card {
+            background:
+                radial-gradient(circle at 30% 30%, rgba(218, 165, 32, 0.12) 0%, transparent 50%),
+                radial-gradient(circle at 70% 70%, rgba(184, 134, 11, 0.08) 0%, transparent 50%),
+                linear-gradient(135deg,
+                    rgba(244, 228, 188, 0.06) 0%,
+                    rgba(218, 165, 32, 0.04) 30%,
+                    rgba(184, 134, 11, 0.03) 70%,
+                    rgba(139, 105, 20, 0.02) 100%);
+            border: 1px solid rgba(218, 165, 32, 0.15);
+            border-radius: 4px;
+            padding: 2.5rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            box-shadow:
+                0 8px 32px rgba(0, 0, 0, 0.6),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08),
+                inset 0 0 30px rgba(218, 165, 32, 0.03);
+            transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .golden-glass-card:hover {
+            transform: translateY(-3px);
+            border-color: rgba(218, 165, 32, 0.3);
+            box-shadow:
+                0 16px 48px rgba(0, 0, 0, 0.8),
+                0 0 40px rgba(218, 165, 32, 0.1),
+                inset 0 1px 1px rgba(244, 228, 188, 0.12),
+                inset 0 0 40px rgba(218, 165, 32, 0.05);
+        }
+
+        .investment-logic-card {
+            background:
+                radial-gradient(circle at 20% 80%, rgba(218, 165, 32, 0.08) 0%, transparent 60%),
+                radial-gradient(circle at 80% 20%, rgba(244, 228, 188, 0.05) 0%, transparent 60%),
+                linear-gradient(135deg,
+                    rgba(184, 134, 11, 0.06) 0%,
+                    rgba(139, 105, 20, 0.04) 50%,
+                    rgba(218, 165, 32, 0.02) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.12);
+            border-radius: 2px;
+            padding: 3rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            box-shadow:
+                0 8px 32px rgba(0, 0, 0, 0.6),
+                inset 0 1px 1px rgba(244, 228, 188, 0.06),
+                inset 0 0 25px rgba(184, 134, 11, 0.02);
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .investment-logic-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(184, 134, 11, 0.25);
+            box-shadow:
+                0 16px 48px rgba(0, 0, 0, 0.8),
+                0 0 30px rgba(218, 165, 32, 0.08),
+                inset 0 1px 1px rgba(244, 228, 188, 0.1),
+                inset 0 0 35px rgba(184, 134, 11, 0.04);
+        }
+
+        .disclaimer-card {
+            background: linear-gradient(145deg,
+                rgba(31, 31, 31, 0.95) 0%,
+                rgba(42, 42, 42, 0.9) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.18);
+            border-radius: 3px;
+            padding: 4rem;
+            position: relative;
+            backdrop-filter: blur(25px);
+            box-shadow:
+                0 12px 40px rgba(0, 0, 0, 0.7),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08),
+                inset 0 0 30px rgba(184, 134, 11, 0.02);
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .disclaimer-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 2px;
+            background: linear-gradient(90deg,
+                transparent,
+                var(--sovereign-gold),
+                transparent);
+            opacity: 0.6;
+        }
+
+        .disclaimer-card:hover {
+            border-color: rgba(184, 134, 11, 0.25);
+            box-shadow:
+                0 16px 50px rgba(0, 0, 0, 0.8),
+                0 0 25px rgba(184, 134, 11, 0.08),
+                inset 0 1px 1px rgba(244, 228, 188, 0.12);
+        }
+
+        .disclaimer-text {
+            font-weight: 300;
+            letter-spacing: 0.02em;
+            line-height: 2;
+            color: var(--platinum-mist);
+            font-size: 1rem;
+        }
+
+        /* 表格 */
+        .imperial-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            background: rgba(15, 15, 15, 0.8);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(184, 134, 11, 0.2);
+            border-radius: 2px;
+            margin: 2rem 0;
+        }
+
+        .imperial-table th {
+            background: rgba(184, 134, 11, 0.08);
+            padding: 2rem 1.5rem;
+            text-align: left;
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--imperial-gold);
+            border-bottom: 1px solid rgba(184, 134, 11, 0.2);
+        }
+
+        .imperial-table td {
+            padding: 1.8rem 1.5rem;
+            border-bottom: 1px solid rgba(184, 134, 11, 0.05);
+            font-weight: 300;
+        }
+
+        .imperial-table tbody tr:hover {
+            background: rgba(184, 134, 11, 0.03);
+        }
+
+        /* 分隔线 */
+        .sovereign-divider {
+            height: 1px;
+            background: linear-gradient(90deg,
+                transparent 0%,
+                rgba(184, 134, 11, 0.3) 30%,
+                rgba(184, 134, 11, 0.6) 50%,
+                rgba(184, 134, 11, 0.3) 70%,
+                transparent 100%);
+            margin: 8rem 0;
+            position: relative;
+        }
+
+        .sovereign-divider::before {
+            content: '◆';
+            position: absolute;
+            top: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--sovereign-gold);
+            font-size: 16px;
+            background: var(--obsidian-black);
+            padding: 0 1rem;
+        }
+
+        /* 垂直进度条 */
+        .reading-progress {
+            position: fixed;
+            top: 50%;
+            right: 2rem;
+            width: 4px;
+            height: 200px;
+            transform: translateY(-50%);
+            background: linear-gradient(180deg,
+                rgba(184, 134, 11, 0.2) 0%,
+                rgba(218, 165, 32, 0.3) 30%,
+                rgba(244, 228, 188, 0.4) 60%,
+                rgba(218, 165, 32, 0.3) 85%,
+                rgba(139, 105, 20, 0.2) 100%);
+            z-index: 1001;
+            box-shadow:
+                0 0 12px rgba(184, 134, 11, 0.6),
+                2px 0 8px rgba(184, 134, 11, 0.3),
+                inset 1px 0 2px rgba(244, 228, 188, 0.4);
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+        .reading-progress::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(180deg,
+                rgba(244, 228, 188, 0.1) 0%,
+                rgba(218, 165, 32, 0.15) 50%,
+                rgba(244, 228, 188, 0.1) 100%);
+            border-radius: 2px;
+            animation: progressShimmer 3s ease-in-out infinite;
+        }
+
+        .reading-progress-fill {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(180deg,
+                var(--golden-shadow) 0%,
+                var(--sovereign-gold) 50%,
+                var(--imperial-gold) 100%);
+            border-radius: 2px;
+            transition: height 0.1s ease;
+            box-shadow:
+                inset 0 1px 2px rgba(244, 228, 188, 0.3),
+                0 0 8px rgba(184, 134, 11, 0.4);
+        }
+
+        @keyframes progressShimmer {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.8; }
+        }
+
+        .progress-tooltip {
+            position: fixed;
+            top: 50%;
+            right: 7rem;
+            transform: translateY(-50%);
+            background: linear-gradient(135deg,
+                rgba(15, 15, 15, 0.95) 0%,
+                rgba(31, 31, 31, 0.9) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.25);
+            border-radius: 8px;
+            padding: 0.8rem 2rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 0.85rem;
+            font-weight: 300;
+            color: var(--imperial-gold);
+            backdrop-filter: blur(20px);
+            box-shadow:
+                0 8px 32px rgba(0, 0, 0, 0.7),
+                0 0 20px rgba(184, 134, 11, 0.1),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+            z-index: 1002;
+            white-space: nowrap;
+            letter-spacing: 0.03em;
+        }
+
+        .progress-tooltip.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(-50%) translateX(-8px);
+        }
+
+        .progress-tooltip::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -8px;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-left: 8px solid rgba(184, 134, 11, 0.25);
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+        }
+
+        .progress-tooltip::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -7px;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-left: 7px solid rgba(15, 15, 15, 0.95);
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+        }
+
+        /* 引用文献 */
+        .citation-item {
+            padding: 1.5rem 2rem;
+            margin: 0.8rem 0;
+            background: linear-gradient(135deg, rgba(21, 21, 21, 0.8) 0%, rgba(31, 31, 31, 0.6) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.15);
+            border-radius: 3px;
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .citation-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--sovereign-gold), var(--golden-shadow));
+            opacity: 0.6;
+            transition: opacity 0.3s ease;
+        }
+
+        .citation-item:hover {
+            border-color: rgba(184, 134, 11, 0.4);
+            background: linear-gradient(135deg, rgba(31, 31, 31, 0.9) 0%, rgba(42, 42, 42, 0.7) 100%);
+            transform: translateX(6px) translateY(-1px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5), 0 0 20px rgba(184, 134, 11, 0.08);
+        }
+
+        .citation-item:hover::before {
+            opacity: 1;
+        }
+
+        .citation-item a {
+            color: var(--platinum-mist);
+            text-decoration: none;
+            font-size: 0.85rem;
+            line-height: 1.7;
+            font-weight: 300;
+            transition: color 0.4s ease;
+            display: block;
+            position: relative;
+        }
+
+        .citation-item a::before {
+            content: '';
+            position: absolute;
+            left: -0.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 4px;
+            background: var(--sovereign-gold);
+            border-radius: 50%;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .citation-item:hover a {
+            color: var(--aureate-whisper);
+            padding-left: 1rem;
+        }
+
+        .citation-item:hover a::before {
+            opacity: 0.8;
+        }
+
+        /* 响应式 */
+        @media (max-width: 1024px) {
+            .sovereign-container { padding: 0 2.5rem; }
+            .imperial-section { margin: 8rem 0; }
+        }
+
+        @media (max-width: 768px) {
+            .sovereign-container { padding: 0 1.5rem; }
+            .imperial-section { margin: 6rem 0; }
+            .authority-card { padding: 2rem; }
+            .reading-progress { right: 1rem; height: 150px; width: 3px; }
+            .progress-tooltip { right: 5rem; padding: 0.6rem 1.5rem; font-size: 0.75rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- 垂直进度条 -->
+    <div class="reading-progress">
+        <div class="reading-progress-fill"></div>
+    </div>
+
+    <!-- 进度标题提示器 -->
+    <div class="progress-tooltip" id="progress-tooltip"></div>
+
+    <!-- 首屏 -->
+    <header id="header" class="min-h-screen flex items-center justify-center relative" data-title="全球电力及电网行业深度分析：重构能源版图的结构性力量">
+        <div class="sovereign-container text-center relative z-10">
+            <div class="mb-16">
+                <h1 class="imperial-title text-5xl md:text-7xl mb-6">
+                    全球电力及电网行业深度分析：重构能源版图的结构性力量
+                </h1>
+
+                <h2 class="imperial-subtitle text-2xl md:text-4xl mb-12 opacity-90">
+                    2025年Q4战略投资分析报告
+                </h2>
+            </div>
+
+            <div class="mb-12">
+                <div class="imperial-tagline text-sm md:text-base opacity-75 max-w-4xl mx-auto">
+                    Global Power and Grid Industry Deep Analysis: Structural Forces Reshaping<br class="md:hidden">
+                    the Energy Landscape Strategic Analysis Report
+                </div>
+            </div>
+
+            <div class="mb-16">
+                <div class="imperial-dedication text-sm md:text-base flex items-center justify-center">
+                    <span class="material-icons mr-2" style="color: var(--sovereign-gold);">groups</span>
+                    致：机构投资者与高净值客户
+                </div>
+                <div class="imperial-dedication-sub text-xs md:text-sm opacity-60 mt-2">
+                    For: Institutional Investors and High Net Worth Clients
+                </div>
+            </div>
+
+            <div class="golden-glass-card inline-block">
+                <div class="text-xs uppercase tracking-[0.2em] opacity-50 mb-4 font-light flex items-center justify-center">
+                    <span class="material-icons text-sm mr-2">calendar_today</span>
+                    本报告发布于 · Published on
+                </div>
+                <div class="sovereign-heading text-base">
+                    <span class="exclusive-number">2025年10月21日</span>
+                    <span class="mx-4 text-sovereign-gold opacity-40">◆</span>
+                    <span class="exclusive-number">October 21, 2025</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute inset-0 pointer-events-none opacity-8">
+            <div class="absolute top-20 left-20 w-px h-32 bg-gradient-to-b from-sovereign-gold to-transparent"></div>
+            <div class="absolute bottom-20 right-20 w-px h-32 bg-gradient-to-t from-sovereign-gold to-transparent"></div>
+            <div class="absolute top-1/2 left-1/4 w-24 h-px bg-gradient-to-r from-sovereign-gold to-transparent"></div>
+            <div class="absolute top-1/3 right-1/4 w-24 h-px bg-gradient-to-l from-sovereign-gold to-transparent"></div>
+        </div>
+    </header>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 第一部分 -->
+    <section id="part1" class="imperial-section" data-title="第一部分：全球电力行业全景与宏观驱动力">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl mb-12 text-center flex items-center justify-center">
+                <span class="material-icons mr-3" style="color: var(--sovereign-gold);">trending_up</span>
+                第一部分：全球电力行业全景与宏观驱动力
+            </h2>
+
+            <div class="authority-card max-w-4xl mx-auto mb-8">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">public</span>
+                    1.1 全球电力需求：新增长时代的来临
+                </h3>
+                <div class="noble-text mb-6">
+                    全球电力需求正在告别低速增长时代，进入一个由终端电气化、数据中心与人工智能算力扩张、以及新兴经济体工业化共同驱动的结构性增长新阶段。国际能源署在其《Electricity 2025》报告中明确指出，全球正迈入一个新的"电力时代"。数据显示，全球电力需求增长率从2023年的2.5%显著提升至2024年的4.3%，并预计在2025年和2026年分别维持3.3%和3.7%的年均高位增长。这一增速预示着未来三年全球电力消费将增加前所未有的3,500 TWh，相当于每年增加一个日本的电力消耗量。
+                </div>
+
+                <div class="noble-text">
+                    新兴经济体是本轮需求增长的核心引擎，预计到2027年将贡献全球需求增量的85%。其中，仅中国在2024年就贡献了全球电力需求增量的一半以上，其年均需求增速预计在未来三年将保持在6%左右的强劲水平。印度同样表现出强劲的增长势头，预计未来三年的年均电力需求增长率将达到6.3%。
+                </div>
+            </div>
+
+            <div class="authority-card max-w-4xl mx-auto mb-8">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">show_chart</span>
+                    表1：全球电力需求预测（2024-2027年）
+                </h3>
+                <div class="table-container">
+                    <table class="imperial-table">
+                        <thead>
+                            <tr>
+                                <th>区域</th>
+                                <th>2024年需求 (TWh, 估算)</th>
+                                <th>2025-2027年均增长率预测 (%)</th>
+                                <th>核心驱动因素</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>全球</td>
+                                <td>~29,900</td>
+                                <td>~3.9%</td>
+                                <td>电气化、数据中心、制冷需求、新兴经济体增长</td>
+                            </tr>
+                            <tr>
+                                <td>中国</td>
+                                <td>~9,800</td>
+                                <td>~6.0%</td>
+                                <td>工业电气化、电动汽车、数据中心、制冷设备普及</td>
+                            </tr>
+                            <tr>
+                                <td>印度</td>
+                                <td>~1,900</td>
+                                <td>~6.3%</td>
+                                <td>经济扩张、工业化、电气化、制冷设备普及</td>
+                            </tr>
+                            <tr>
+                                <td>美国</td>
+                                <td>~4,400</td>
+                                <td>~2.0%</td>
+                                <td>数据中心、制造业回流、交通与建筑电气化</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="authority-card max-w-4xl mx-auto mb-8">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">leaf</span>
+                    1.2 供给结构变迁：能源转型的量化剖析
+                </h3>
+                <div class="noble-text mb-6">
+                    全球电力供给结构正在经历百年未有之大变局。在经济性与政策的双重驱动下，可再生能源正以决定性的力量取代传统化石能源，成为满足新增电力需求的主体。IEA预测，到2025年，全球超过90%的新增电力需求将由可再生能源满足。在其更为明确的展望中，到2027年，全球所有的电力需求增量都将由低排放能源覆盖。
+                </div>
+
+                <div class="noble-text">
+                    可再生能源的崛起的根本驱动力在于其压倒性的成本竞争力。全球权威的能源成本分析机构拉扎德在其2025年发布的最新平准化度电成本报告中再次确认，在不考虑补贴的情况下，陆上风电和大型光伏电站已成为全球大多数地区成本最低的新建电源形式。这一趋势在中国市场表现得尤为突出，清洁能源发电量满足了中国84%的电力需求增长。
+                </div>
+            </div>
+
+            <div class="authority-card max-w-4xl mx-auto">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">attach_money</span>
+                    1.3 资本开支周期与投资趋势
+                </h3>
+                <div class="noble-text mb-6">
+                    为满足新增需求和重构电网以适应能源转型的双重目标，全球电力及电网行业正进入一个前所未有的资本开支"超级周期"。这不仅需要万亿美元级别的资金投入，还将催生新的融资模式。德勤的报告指出，仅美国电力行业在2025年至2030年间就需要高达1.4万亿美元的资本投资，这一数字相当于该行业过去12年的投资总和。
+                </div>
+
+                <div class="noble-text">
+                    中国的投资规模同样巨大。2024年，中国电网投资额达到创纪录的6,080亿元人民币（约合850亿美元），而电池储能投资额在2025年上半年同比猛增69%。如此庞大的资本需求，对行业传统的融资模式构成了严峻挑战。未来将有更多元的资本进入电力领域，基础设施基金、私募股权基金等将更深地参与到发电和输电资产的投资中。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 第二部分 -->
+    <section id="part2" class="imperial-section" data-title="第二部分：产业链解构">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl mb-12 text-center flex items-center justify-center">
+                <span class="material-icons mr-3" style="color: var(--sovereign-gold);">link</span>
+                第二部分：产业链解构：从发电到用户的价值传导
+            </h2>
+
+            <div class="authority-card max-w-4xl mx-auto mb-8">
+                <div class="noble-text mb-6">
+                    电力行业拥有一个清晰且环环相扣的价值链，通常可划分为发电、输电、配电和售电四个核心环节。历史上，由于巨大的规模经济效应和自然垄断属性，这四个环节常被整合在单一的垂直一体化公用事业公司内部。然而，随着技术进步和市场化改革的推进，全球许多地区的电力行业经历了纵向解绑，形成了更加专业化和多元化的市场结构。理解每个环节独特的经济特性、商业模式和监管框架，是构建电力行业系统性认知的基础。
+                </div>
+            </div>
+
+            <div class="authority-card max-w-4xl mx-auto mb-8">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">power</span>
+                    2.1 发电端：技术路径、成本曲线与商业模式
+                </h3>
+                <div class="noble-text mb-6">
+                    发电是电力价值链的起点，其核心功能是将一次能源转化为电能。在市场化改革的背景下，发电侧的商业模式已显著分化为两大类：受监管的公用事业模式和市场化的独立发电商模式。受监管的公用事业模式下，电力公司所有合理的资本开支和运营成本都将被纳入受监管机构核准的费率基数，监管机构允许公司赚取一个许可回报率。对投资者而言，这种模式下的发电资产能够提供高度稳定、可预测、类似债券的现金流。
+                </div>
+
+                <div class="noble-text">
+                    独立发电商模式在市场化程度较高的地区应用广泛，其盈利能力完全取决于市场电价的波动。由于电力商品难以大规模经济性储存，批发市场必须实现瞬时供需平衡，这导致了电价极高的波动性。随着零边际成本的可再生能源在电力系统中的渗透率迅速提高，IPP模式正面临深刻的结构性挑战。
+                </div>
+            </div>
+
+            <div class="authority-card max-w-4xl mx-auto mb-8">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">electrical_services</span>
+                    2.2 输配电端：网络资产的经济学与规制
+                </h3>
+                <div class="noble-text mb-6">
+                    输电和配电环节构成了连接发电厂和终端用户的物理网络。由于建设重复的电网会造成巨大的资源浪费，输配电网在经济学上被界定为自然垄断。因此，这一环节几乎普遍受到严格的政府管制。其商业模式与受监管的发电业务类似，电网公司投资建设和维护电网资产，这些投资被计入其管制资产，并被允许赚取一个稳定的、经核准的回报率。
+                </div>
+
+                <div class="noble-text">
+                    在能源转型的大背景下，输配电网的角色正在发生根本性的转变。它不再是仅仅被动地单向输送电力的管道，而必须演变为一个能够主动管理双向潮流、承载高度不确定性、并整合海量分布式资源的智能化、柔性化平台。这一转型对电网的资本开支提出了巨大需求，主要体现在电网现代化与智能化、以及新建输电通道以解锁可再生能源两个方面。
+                </div>
+            </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 第三部分 -->
+    <section id="part3" class="imperial-section" data-title="第三部分：发电技术深度剖析">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl mb-12 text-center flex items-center justify-center">
+                <span class="material-icons mr-3" style="color: var(--sovereign-gold);">solar_power</span>
+                第三部分：发电技术深度剖析：成本、效率与供应链
+            </h2>
+
+            <div class="authority-card max-w-4xl mx-auto mb-8">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">eco</span>
+                    3.1 可再生能源：光伏与风电的成本经济学与产业格局
+                </h3>
+                <div class="noble-text mb-6">
+                    光伏和风电的平准化度电成本在过去十年中实现了史诗般的下降，使其在全球范围内成为最具经济性的新建电源选项。这是推动能源转型的根本经济动力。美国新建发电项目在不含补贴情况下的LCOE显示：大型地面光伏电站平均成本为58美元/MWh，陆上风电平均成本为62美元/MWh，均显著低于天然气联合循环电厂、核电和煤电。
+                </div>
+
+                <div class="noble-text mb-6">
+                    伴随产业的爆发式增长，光伏和风电的设备制造环节形成了高度集中的竞争格局。风机制造业由欧洲老牌巨头和中国新兴力量共同主导，全球前五大风机供应商中有四家来自中国。光伏组件制造业中国企业占据了绝对主导地位，排名前十的制造商在2024年的出货量达到了创纪录的500 GW。这种高度集中的供应链格局，特别是光伏产业链对中国的极度依赖，正在成为西方国家在推进其能源转型战略时必须面对的地缘政治风险。
+                </div>
+            </div>
+
+            <div class="authority-card max-w-4xl mx-auto mb-8">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">battery_charging_full</span>
+                    3.2 储能系统：开启电网柔性新纪元的关键技术
+                </h3>
+                <div class="noble-text mb-6">
+                    以电池储能系统为代表的电化学储能技术，是解决高比例可再生能源并网所带来的间歇性和波动性问题的核心技术，是构建新型电力系统灵活性的关键。电网的物理定律要求电力供需必须时刻保持平衡。风电和光伏的发电出力具有靠天吃饭的特性，其波动性给电网的稳定运行带来了巨大挑战。储能系统通过建立电力水库，实现了电能在时间维度上的转移，从而平滑可再生能源的出力、支撑电网频率、并提供备用容量。
+                </div>
+
+                <div class="noble-text">
+                    全球储能市场正处于爆发前夜。根据Bloomberg NEF的预测，全球累计储能装机容量将增长15倍，从2021年底的27 GW/56 GWh，飙升至2030年底的411 GW/1,194 GWh。美国和中国将成为全球最大的两个市场，合计占据全球一半以上的装机容量。政策支持是储能市场爆发的关键催化剂，美国的IRA法案首次将独立储能纳入投资税收抵免的范畴，极大地改善了储能项目的投资经济性。
+                </div>
+            </div>
+
+            <div class="authority-card max-w-4xl mx-auto">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">nuclear_mobiledata</span>
+                    3.3 传统电源：天然气、核电与煤电的角色演变
+                </h3>
+                <div class="noble-text mb-6">
+                    尽管可再生能源是未来的方向，但在未来数十年内，传统电源仍将在电力系统中扮演不可或缺但角色不断演变的角色。在美国，天然气目前仍是第一大发电来源，预计2025年占比约为40%；核电和煤电则分别占据18%和17%的份额。即使在数据中心这一增长最快的新兴负荷领域，IEA也预计在2030年前，全球仍有超过40%的新增电力需求将由天然气和煤炭来满足。
+                </div>
+
+                <div class="noble-text">
+                    各类传统电源的长期前景已出现显著分化。煤电作为碳排放强度最高的电源，正面临全球性的政策压力，其角色正从基荷电源向逐步退出的过渡性电源转变。美国环保署的新规要求，计划长期运行的存量煤电厂必须在2032年前实现90%的碳捕捉，否则将在2039年后强制关停。天然气凭借其快速启停的能力和相对较低的碳排放，被广泛视为在可再生能源大规模并网时代提供系统灵活性和可靠性的关键桥梁能源。核电在经历了一段时期的低谷后，其作为一种能够提供24小时不间断、零碳排放的稳定清洁电力的价值正在被全球重新认识。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 第四部分 -->
+    <section id="part4" class="imperial-section" data-title="第四部分：电网现代化">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl mb-12 text-center flex items-center justify-center">
+                <span class="material-icons mr-3" style="color: var(--sovereign-gold);">settings_suggest</span>
+                第四部分：电网现代化：迈向智能、柔性与互联
+            </h2>
+
+            <div class="authority-card max-w-4xl mx-auto mb-8">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">cloud_queue</span>
+                    4.1 智能电网：数字化与自动化的价值创造
+                </h3>
+                <div class="noble-text mb-6">
+                    智能电网是传统电网与现代数字信息技术、通信技术和控制技术深度融合的产物。它将单向、被动的电力输送网络，改造为一个双向、互动、数据驱动的能源互联网，是实现对分布式能源的有效接纳、提升电网运行效率和保障系统安全韧性的基础。智能电网的核心价值在于其可观、可测、可控。通过在电网的各个节点部署传感器、智能电表和自动化设备，电网运营商能够实时获取海量的运行数据。
+                </div>
+
+                <div class="noble-text">
+                    全球对智能电网的投资正在加速。据MarketsandMarkets预测，全球智能电网市场规模将从2024年的738.5亿美元增长到2029年的1,611.5亿美元，年均复合增长率高达16.9%。智能电网的建设涵盖了硬件和软件两大层面：硬件层面核心是高级量测体系（智能电表），它不仅能实现电费的自动远程抄表，更重要的是能够实现双向通信，为需求侧响应、分时电价等精细化管理手段提供技术基础。软件层面包括配电管理系统、电网资产管理系统、网络管理系统等，这些软件平台是智能电网的大脑。
+                </div>
+            </div>
+
+            <div class="authority-card max-w-4xl mx-auto mb-8">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">power_input</span>
+                    4.2 特高压输电（UHV）：重塑能源地理格局的战略技术
+                </h3>
+                <div class="noble-text mb-6">
+                    特高压输电技术通过实现超大容量、超远距离、超低损耗的电力传输，从根本上解决了可再生能源资源地与负荷中心地理错配的难题，是实现能源资源在更大范围内优化配置的战略性技术。UHV通常指交流1000千伏及以上、直流±800千伏及以上的输电技术。相较于传统的500 kV超高压输电，UHV技术具有无可比拟的优势：在输送相同功率的情况下，其输电距离可达前者的4至5倍，而线路损耗仅为前者的25%左右。
+                </div>
+
+                <div class="noble-text">
+                    中国是全球UHV技术的绝对领导者和最大规模的应用者。为解决其能源资源与生产力逆向分布的根本矛盾，中国自21世纪初开始大力发展UHV技术，并将其作为国家能源战略的核心支柱。截至2024年底，中国已建成投运的UHV交直流线路超过40条，线路总长度超过4万公里。这些电力高速公路构成了中国西电东送战略的骨干网架，每年将数千亿千瓦时的清洁电力从西部输送到东部。
+                </div>
+            </div>
+
+            <div class="authority-card max-w-4xl mx-auto">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">hub</span>
+                    4.3 中国新型电力系统：系统性变革的案例研究
+                </h3>
+                <div class="noble-text mb-6">
+                    中国提出的新型电力系统是一个顶层设计、系统规划的国家战略框架，旨在全面重塑整个电力工业体系，以适应和支撑以新能源为主体的高比例可再生能源发展目标。它不是对现有系统的修修补补，而是一场从顶层规划到技术实现、再到市场机制的全面革命。其关键支柱包括：坚强的网架基础（以UHV骨干网架实现大范围资源配置）、灵活的调节能力（大力发展储能设施、深度挖掘需求侧响应）、高度的智能化水平（深度应用5G、大数据、人工智能）、完善的市场机制（推动电力市场改革）。
+                </div>
+
+                <div class="noble-text">
+                    与欧美等地区以市场为导向、渐进式的电网演进路径不同，中国新型电力系统的建设体现了鲜明的国家主导、规划先行的特征。在这种模式下，国家通过顶层设计明确发展目标和技术路线，再由国家电网、南方电网等大型国有企业负责具体实施。然而，这种工程先行的模式也面临挑战。IEA等国际机构指出，中国电力系统转型的下一步关键在于能否成功建立起一套有效的市场机制。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 第五部分 -->
+    <section id="part5" class="imperial-section" data-title="第五部分：需求新前沿">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl mb-12 text-center flex items-center justify-center">
+                <span class="material-icons mr-3" style="color: var(--sovereign-gold);">trending_up</span>
+                第五部分：需求新前沿：AI、电动化与系统柔性解决方案
+            </h2>
+
+            <div class="authority-card max-w-4xl mx-auto mb-8">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">smart_toy</span>
+                    5.1 数据中心与人工智能：重塑电力负荷曲线的新物种
+                </h3>
+                <div class="noble-text mb-6">
+                    由人工智能革命驱动的数据中心建设浪潮，正在创造一种在规模、密度、负荷特性和增长速度上都前所未有的新型电力需求。数据中心的电力消耗正以惊人的速度增长。IEA预测，全球数据中心的电力需求将从2024年的460 TWh增长至2030年的超过1,000 TWh，在短短六年内翻一番以上。在美国，情况更为严峻，各机构对2030年数据中心用电量的预测都指向一个共同的结论：这将是一个足以改变电力供需格局的巨大变量。
+                </div>
+
+                <div class="noble-text">
+                    这种新型负荷具有几个显著区别于传统工业或商业用电的特点：高负荷密度（一个大型AI数据中心园区的用电负荷可达数百兆瓦甚至上千兆瓦）、高负荷率（需要24/7不间断运行）、增长的紧迫性（AI技术的竞争日新月异）。这种供需矛盾正迫使科技巨头从被动的电力消费者，转变为电力市场和能源基础设施领域的主动参与者。
+                </div>
+            </div>
+
+            <div class="authority-card max-w-4xl mx-auto mb-8">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">local_gas_station</span>
+                    5.2 交通电动化：充电基础设施的市场规模与增长路径
+                </h3>
+                <div class="noble-text mb-6">
+                    交通工具的全面电动化是终端能源消费领域最深刻的变革之一，它不仅催生了一个规模达千亿美元级别的充电基础设施新市场，也为电网带来了巨大的新增负荷。全球电动汽车的普及正带动充电基础设施市场进入高速增长通道。根据Grand View Research的预测，全球EV充电基础设施市场规模将从2024年的322.6亿美元增长到2030年的1,253.9亿美元，年均复合增长率高达25.5%。从地理分布看，亚太地区（尤其是中国）凭借其庞大的EV市场，目前是全球最大的充电设施市场。
+                </div>
+
+                <div class="noble-text">
+                    电动汽车充电负荷的集中性对配电网构成了严峻挑战。大部分私家车主习惯在下班后立即插枪充电，这将在居民区的配电网上形成急剧的用电高峰。然而，挑战与机遇并存。电动汽车本质上是带有轮子的分布式电池。如果能够通过技术和价格信号进行有效引导，这种挑战就可以转化为巨大的机遇。
+                </div>
+            </div>
+
+            <div class="authority-card max-w-4xl mx-auto">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">dashboard</span>
+                    5.3 虚拟电厂（VPP）：聚合分布式资源的商业模式创新
+                </h3>
+                <div class="noble-text mb-6">
+                    虚拟电厂代表了电网运营理念从集中式控制向分布式协同的范式转变。VPP通过一个云端平台，将大量分散的分布式能源连接起来，形成一个统一的、可与电网互动的资源池。根据Wood Mackenzie的数据，北美VPP市场在2025年已达到37.5 GW的规模。尽管总容量的增长受到了一些监管和市场壁垒的限制，但市场的活跃度正在爆炸式增长：参与VPP的公司数量、购买VPP服务的实体数量、以及能够实现商业化变现的项目数量，均实现了超过33%的年增长。
+                </div>
+
+                <div class="noble-text">
+                    VPP的商业模式极具创新性，它为传统上只能降低电费支出的用户侧资产开辟了新的收入来源。VPP作为一种非电线解决方案，对传统公用事业的商业模式构成了直接的挑战和机遇。在许多情况下，当一个区域面临局部电网拥堵或峰值负荷增长时，传统的解决方案是投资数百万美元建设新的变电站或输电线路。而VPP提供了一种替代方案。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 第六部分 -->
+    <section id="part6" class="imperial-section" data-title="第六部分：核心区域市场">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl mb-12 text-center flex items-center justify-center">
+                <span class="material-icons mr-3" style="color: var(--sovereign-gold);">public</span>
+                第六部分：核心区域市场深度研判
+            </h2>
+
+            <div class="authority-card max-w-4xl mx-auto mb-8">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">flag</span>
+                    6.1 美国市场：IRA法案驱动下的投资加速
+                </h3>
+                <div class="noble-text mb-6">
+                    2022年出台的《通胀削减法案》为美国清洁能源行业注入了史无前例的强大动力，通过提供长期、稳定的税收抵免政策，极大地激发了市场投资热情。IRA是美国历史上最重要的气候法案，其核心是通过提供长达十年的生产税收抵免和投资税收抵免，为可再生能源、储能、清洁氢能等技术的发展提供了前所未有的政策确定性。据行业估计，IRA有望在2030年前将美国的清洁能源发电量提高两倍以上。
+                </div>
+
+                <div class="noble-text">
+                    美国电力市场呈现出高度多样化的格局。东南部等地区仍以传统的垂直一体化、受州级公共事业委员会监管的公用事业公司为主。而在东北部、中西部和德克萨斯州等地，则建立了由独立系统运营商或区域输电组织管理的竞争性批售电力市场。核心矛盾是资本洪流与物理瓶颈的错配，IRA为项目开发商提供了充足的资金，但物理电网却无法足够快地将这些项目接入系统。
+                </div>
+            </div>
+
+            <div class="authority-card max-w-4xl mx-auto mb-8">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">location_city</span>
+                    6.2 中国市场：政策驱动下的双碳目标
+                </h3>
+                <div class="noble-text mb-6">
+                    中国的电力行业转型是由国家战略自上而下驱动的，以2030年前碳达峰、2060年前碳中和的双碳目标为总纲，通过五年规划等政策工具，动员整个国家机器，以无可比拟的规模和速度建设以新能源为主体的新型电力系统。中国的能源转型是典型的政策驱动模式。十四五规划为能源转型设定了明确的量化指标。在这些目标的指引下，中国的清洁能源投资和装机规模达到了世界领先水平。2024年，中国在清洁能源领域的投资高达6,250亿美元。
+                </div>
+
+                <div class="noble-text">
+                    中国的电网由两大国有巨头主导，其中国家电网公司覆盖了全国88%的国土面积，为超过11亿人口提供服务，是全球最大的公用事业公司。这种高度集中的市场结构，使得国家能够高效地规划和执行如特高压电网这样的大型跨区域基础设施项目。中国庞大的国内市场需求、激烈的内部竞争以及政府的产业政策支持，共同催生了全球规模最大、成本最低的清洁能源设备制造产业链。
+                </div>
+            </div>
+
+            <div class="authority-card max-w-4xl mx-auto">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">groups</span>
+                    6.3 欧盟市场：一体化市场与能源安全
+                </h3>
+                <div class="noble-text mb-6">
+                    欧盟电力市场是全球一体化程度最高、市场化最彻底的区域市场，其核心是通过跨国电网互联和统一的市场规则，实现能源资源在整个欧洲大陆的优化配置。欧盟电力行业转型受到两大核心议题的驱动：以欧洲绿色协议为代表的宏大气候目标，以及在俄乌冲突后被提升到前所未有高度的能源安全议题。为实现这些目标，欧盟构建了一个高度一体化的电力市场。市场的核心机制是市场耦合，通过统一的算法，将各国的日前和日内电力市场连接起来，使得电力可以自由地从价格低的地区流向价格高的地区。
+                </div>
+
+                <div class="noble-text">
+                    在高比例可再生能源和高度一体化市场的共同作用下，欧盟电力市场出现了负电价日益常态化的现象。负电价的出现为灵活性资源创造了清晰而强大的商业模式。储能系统可以在负电价时充电，然后在电价回升时放电获利。负电价是一个明确的市场信号，它告诉市场参与者：当前系统缺乏的是灵活性，而不是发电容量。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 结论 -->
+    <section id="conclusion" class="imperial-section" data-title="结论与展望">
+        <div class="sovereign-container">
+            <div class="disclaimer-card max-w-4xl mx-auto">
+                <h2 class="sovereign-heading text-2xl mb-6 text-center flex items-center justify-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">check_circle</span>
+                    结论与展望
+                </h2>
+
+                <div class="executive-quote text-center mb-8">
+                    全球电力及电网行业正处于一场由需求、供给、技术和政策共同驱动的深刻结构性变革之中。
+                </div>
+
+                <div class="disclaimer-text">
+                    <p class="mb-6">本报告通过构建一个从宏观到微观、从产业链到区域市场的系统性分析框架，旨在为机构投资者和企业决策者提供一个清晰、数据驱动的行业认知地图。全球电力需求正在进入结构性增长新纪元。在经历了长期的平缓增长后，全球电力需求正被人工智能算力、交通电动化和终端消费电气化等新物种重新定义，进入一个可持续的加速增长通道。尤其是在此前被视为增长停滞的发达经济体，这一转变尤为显著。</p>
+
+                    <p class="mb-6">供给侧的决定性转变已经展开。以光伏和风电为代表的可再生能源凭借其无可匹敌的成本优势，已成为满足新增电力需求的绝对主力。全球电力系统正在经历从化石能源向清洁能源的决定性转变，并首次实现了电力需求增长与碳排放增长的脱钩。</p>
+
+                    <p class="mb-6">电网成为价值核心与投资焦点。随着高比例间歇性可再生能源的并网，电力系统的运行逻辑正在从源随荷动向源网荷储协同互动转变。电网的灵活性、智能化和互联互通能力已成为整个能源转型成败的关键。因此，电网现代化、储能系统和以虚拟电厂为代表的数字化解决方案正成为资本开支的焦点和价值创造的新蓝海。</p>
+
+                    <p>商业模式的深刻分化与融合正在进行中。传统的垂直一体化公用事业模式正受到挑战。在发电侧，可再生能源的涌入正在重塑IPP的盈利逻辑，催生了容量市场等新的机制。在用户侧，分布式能源的兴起和虚拟电厂的出现正在解构公用事业公司与用户的传统关系。同时，科技巨头等新兴力量的跨界进入正在模糊行业的传统边界。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 引用文献 -->
+    <section id="references" class="imperial-section" data-title="引用文献">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl mb-12 text-center flex items-center justify-center">
+                <span class="material-icons mr-3" style="color: var(--sovereign-gold);">link</span>
+                引用文献
+            </h2>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl mx-auto">
+                <div class="citation-item"><a href="https://www.iea.org/reports/electricity-2025/executive-summary" target="_blank" rel="noopener">1. IEA Electricity 2025 Executive Summary</a></div>
+                <div class="citation-item"><a href="https://www.iea.org/reports/electricity-2025/demand" target="_blank" rel="noopener">2. IEA Electricity 2025 Demand Report</a></div>
+                <div class="citation-item"><a href="https://www.iea.org/reports/electricity-mid-year-update-2025/demand-global-electricity-use-to-grow-strongly-in-2025-and-2026" target="_blank" rel="noopener">3. IEA Mid-Year Electricity Update 2025</a></div>
+                <div class="citation-item"><a href="https://www.deloitte.com/us/en/insights/industry/power-and-utilities/funding-growth-in-us-power-sector.html" target="_blank" rel="noopener">4. Deloitte US Power Sector Growth Funding</a></div>
+                <div class="citation-item"><a href="https://www.lazard.com/research-insights/levelized-cost-of-energyplus-lcoeplus/" target="_blank" rel="noopener">5. Lazard LCOE+ Analysis 2025</a></div>
+                <div class="citation-item"><a href="https://ember-energy.org/latest-insights/china-energy-transition-review-2025/" target="_blank" rel="noopener">6. Ember China Energy Transition Review 2025</a></div>
+                <div class="citation-item"><a href="https://about.bnef.com/insights/clean-energy/chinese-manufacturers-lead-global-wind-turbine-installations-bloombergnef-report-shows/" target="_blank" rel="noopener">7. BNEF Chinese Wind Turbine Manufacturers</a></div>
+                <div class="citation-item"><a href="https://www.pv-magazine.com/2025/06/09/jinkosolar-takes-top-spot-on-woodmacs-list-of-pv-module-manufacturers-2/" target="_blank" rel="noopener">8. PV Magazine JinkoSolar Report</a></div>
+                <div class="citation-item"><a href="https://www.woodmac.com/press-releases/2025-solar-ranking/" target="_blank" rel="noopener">9. Wood Mackenzie 2025 Solar Ranking</a></div>
+                <div class="citation-item"><a href="https://www.epa.gov/green-power-markets/summary-inflation-reduction-act-provisions-related-renewable-energy" target="_blank" rel="noopener">10. US EPA IRA Renewable Energy Summary</a></div>
+                <div class="citation-item"><a href="https://about.bnef.com/insights/commodities/global-energy-storage-market-to-grow-15-fold-by-2030/" target="_blank" rel="noopener">11. BNEF Global Energy Storage Market Growth</a></div>
+                <div class="citation-item"><a href="https://www.marketsandmarkets.com/Market-Reports/smart-grid-market-208777577.html" target="_blank" rel="noopener">12. MarketsandMarkets Smart Grid Report</a></div>
+                <div class="citation-item"><a href="https://www.ourchinastory.com/en/14967/China's-UHV-project" target="_blank" rel="noopener">13. China UHV Project Analysis</a></div>
+                <div class="citation-item"><a href="https://www.iea.org/reports/energy-and-ai/energy-supply-for-ai" target="_blank" rel="noopener">14. IEA Energy and AI Analysis</a></div>
+                <div class="citation-item"><a href="https://www.entsoe.eu/publications/market-reports/" target="_blank" rel="noopener">15. ENTSO-E Market Reports</a></div>
+                <div class="citation-item"><a href="https://www.eea.europa.eu/en/analysis/maps-and-charts/emissions-trading-viewer-1-dashboards" target="_blank" rel="noopener">16. EU ETS Data Viewer</a></div>
+                <div class="citation-item"><a href="https://www.nexteraenergy.com/" target="_blank" rel="noopener">17. NextEra Energy Corporate Site</a></div>
+                <div class="citation-item"><a href="https://www.edf.fr/en" target="_blank" rel="noopener">18. EDF Corporate Website</a></div>
+                <div class="citation-item"><a href="https://en.wikipedia.org/wiki/State_Grid_Corporation_of_China" target="_blank" rel="noopener">19. SGCC Wikipedia</a></div>
+                <div class="citation-item"><a href="https://www.iea.org/reports/china-power-system-transformation" target="_blank" rel="noopener">20. IEA China Power System Transformation</a></div>
+                <div class="citation-item"><a href="https://solarbuildermag.com/energy-storage/virtual-power-plant-market-hits-37-5-gw-as-deployments-surge-but-barriers-cap-growth/" target="_blank" rel="noopener">21. Virtual Power Plant Market Analysis</a></div>
+                <div class="citation-item"><a href="https://www.grandviewresearch.com/industry-analysis/electric-vehicle-charger-and-charging-station-market" target="_blank" rel="noopener">22. Grand View Research EV Charging Market</a></div>
+                <div class="citation-item"><a href="https://www.rhg.com/research/epa-power-plant-standards-111/" target="_blank" rel="noopener">23. Rhodium Group EPA Power Plant Standards</a></div>
+                <div class="citation-item"><a href="https://www.pwc.com/gx/en/services/deals/trends/2025/energy-utilities-resources.html" target="_blank" rel="noopener">24. PwC Energy M&A Trends 2025</a></div>
+                <div class="citation-item"><a href="https://www.iea.org/policies/14799-the-14th-five-year-comprehensive-work-plan-on-energy-conservation-and-emission-reduction" target="_blank" rel="noopener">25. China 14th Five-Year Plan Energy</a></div>
+                <div class="citation-item"><a href="https://www.investopedia.com/terms/r/regulatoryasset.asp" target="_blank" rel="noopener">26. Investopedia Regulatory Asset</a></div>
+                <div class="citation-item"><a href="https://www.congress.gov/crs-product/R48553" target="_blank" rel="noopener">27. Congressional Research Service Capacity Markets</a></div>
+                <div class="citation-item"><a href="https://www.ferc.gov/introductory-guide-electricity-markets-regulated-federal-energy-regulatory-commission" target="_blank" rel="noopener">28. FERC Electricity Markets Guide</a></div>
+                <div class="citation-item"><a href="https://www.woodmac.com/press-releases/virtual-power-plant-capacity-expands-13.7-year-over-year-to-reach-37.5-gw/" target="_blank" rel="noopener">29. Wood Mackenzie VPP Report</a></div>
+                <div class="citation-item"><a href="https://www.investor.nexteraenergy.com" target="_blank" rel="noopener">30. NextEra Investor Relations</a></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 免责声明 -->
+    <section id="disclaimer" class="imperial-section" data-title="免责声明">
+        <div class="sovereign-container">
+            <div class="disclaimer-card max-w-4xl mx-auto">
+                <h2 class="sovereign-heading text-2xl mb-6 text-center">免责声明</h2>
+                <div class="disclaimer-text">
+                    <p class="mb-4">本报告由虚空有物科技有限公司金融行业研究部编制，仅供机构投资者和高净值客户参考。本报告中的信息基于作者认为可靠的公开信息来源，但不保证其准确性、完整性或及时性。</p>
+                    <p class="mb-4">本报告不构成任何投资建议、买卖要约或任何证券交易的建议。读者应根据自身风险承受能力、投资目标和时间范围，寻求专业的财务、法律或税务顾问意见，做出独立的投资决策。</p>
+                    <p>虚空有物科技有限公司及其相关人士不对使用本报告信息而产生的任何直接或间接损失承担责任。本报告信息可能因市场条件变化而过时。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // 精美垂直进度条系统
+        const progressBar = document.querySelector('.reading-progress');
+        const progressFill = document.querySelector('.reading-progress-fill');
+        const progressTooltip = document.getElementById('progress-tooltip');
+        const sections = document.querySelectorAll('section[id], header[id]');
+
+        let currentSectionTitle = '';
+        let sectionsData = [];
+
+        function initSections() {
+            sectionsData = Array.from(sections).map(section => ({
+                id: section.getAttribute('id'),
+                title: section.getAttribute('data-title') || section.querySelector('h1, h2')?.textContent || '未知章节',
+                offsetTop: section.offsetTop,
+                offsetHeight: section.offsetHeight
+            }));
+        }
+
+        function updateProgress() {
+            const scrolled = window.pageYOffset;
+            const maxHeight = document.body.scrollHeight - window.innerHeight;
+            const progress = (scrolled / maxHeight) * 100;
+
+            progressFill.style.height = `${progress}%`;
+
+            let currentSection = '';
+            sectionsData.forEach(section => {
+                if (scrolled >= section.offsetTop - 300) {
+                    currentSection = section.id;
+                    currentSectionTitle = section.title;
+                }
+            });
+        }
+
+        progressBar.addEventListener('click', (e) => {
+            const rect = progressBar.getBoundingClientRect();
+            const clickY = e.clientY - rect.top;
+            const progressHeight = rect.height;
+            const clickPercent = clickY / progressHeight;
+
+            const maxHeight = document.body.scrollHeight - window.innerHeight;
+            const targetScroll = maxHeight * clickPercent;
+
+            window.scrollTo({
+                top: targetScroll,
+                behavior: 'smooth'
+            });
+        });
+
+        progressBar.addEventListener('mouseenter', () => {
+            if (currentSectionTitle) {
+                progressTooltip.textContent = currentSectionTitle;
+                progressTooltip.classList.add('show');
+            }
+        });
+
+        progressBar.addEventListener('mouseleave', () => {
+            progressTooltip.classList.remove('show');
+        });
+
+        progressTooltip.addEventListener('mouseenter', () => {
+            progressTooltip.classList.add('show');
+        });
+
+        progressTooltip.addEventListener('mouseleave', () => {
+            progressTooltip.classList.remove('show');
+        });
+
+        window.addEventListener('resize', () => {
+            setTimeout(initSections, 100);
+        });
+
+        window.addEventListener('scroll', updateProgress);
+
+        window.addEventListener('load', () => {
+            initSections();
+            updateProgress();
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            initSections();
+            updateProgress();
+        });
+    </script>
+</body>
+</html>

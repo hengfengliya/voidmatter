@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数字媒体的聚合点：导航结构性转变与捕获价值的框架 | Digital Media Convergence: Navigating Structural Transformation and Value Capture Framework</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@200;300;400;500;600;700;800;900&family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            /* 深邃黑金权力色系 */
+            --obsidian-black: #0A0A0A;
+            --midnight-black: #151515;
+            --shadow-black: #1F1F1F;
+            --charcoal-deep: #2A2A2A;
+
+            /* 稀缺金色层次 */
+            --sovereign-gold: #B8860B;
+            --imperial-gold: #DAA520;
+            --aureate-whisper: #F4E4BC;
+            --golden-shadow: #8B6914;
+
+            /* 权力灰度 */
+            --platinum-mist: #E5E5E5;
+            --sterling-silver: #C0C0C0;
+            --graphite-steel: #696969;
+            --charcoal-whisper: #808080;
+
+            /* 稀缺强调色 */
+            --ruby-accent: #8B0000;
+            --emerald-depth: #006400;
+            --sapphire-authority: #1e3a8a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg,
+                var(--obsidian-black) 0%,
+                var(--midnight-black) 40%,
+                var(--shadow-black) 100%);
+            color: var(--platinum-mist);
+            line-height: 1.8;
+            letter-spacing: 0.02em;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        /* 排版系统 */
+        .imperial-title {
+            font-family: 'Playfair Display', serif;
+            font-weight: 200;
+            letter-spacing: 0.12em;
+            line-height: 1.05;
+            color: var(--aureate-whisper);
+            text-shadow: 0 3px 12px rgba(184, 134, 11, 0.4);
+        }
+
+        .imperial-subtitle {
+            font-family: 'Playfair Display', serif;
+            font-weight: 300;
+            letter-spacing: 0.08em;
+            line-height: 1.15;
+            color: var(--imperial-gold);
+            text-shadow: 0 2px 8px rgba(218, 165, 32, 0.3);
+        }
+
+        .imperial-tagline {
+            font-family: 'Inter', sans-serif;
+            font-weight: 200;
+            letter-spacing: 0.06em;
+            line-height: 1.4;
+            color: var(--sterling-silver);
+            font-style: italic;
+        }
+
+        .imperial-dedication {
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+            letter-spacing: 0.04em;
+            line-height: 1.3;
+            color: var(--imperial-gold);
+        }
+
+        .imperial-dedication-sub {
+            font-family: 'Inter', sans-serif;
+            font-weight: 200;
+            letter-spacing: 0.05em;
+            line-height: 1.3;
+            color: var(--sterling-silver);
+            font-style: italic;
+        }
+
+        .sovereign-heading {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            color: var(--imperial-gold);
+            text-shadow: 0 1px 4px rgba(218, 165, 32, 0.4);
+        }
+
+        .noble-text {
+            font-weight: 300;
+            letter-spacing: 0.03em;
+            line-height: 2.2;
+            color: var(--platinum-mist);
+        }
+
+        .executive-quote {
+            font-weight: 300;
+            letter-spacing: 0.02em;
+            line-height: 1.8;
+            color: var(--sterling-silver);
+            font-size: 0.95rem;
+            font-style: italic;
+            position: relative;
+            padding: 0 2rem;
+            margin: 2rem 0;
+        }
+
+        .executive-quote::before {
+            content: '\"';
+            position: absolute;
+            left: 0;
+            top: -0.5rem;
+            font-size: 3rem;
+            color: var(--sovereign-gold);
+            opacity: 0.3;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .executive-quote::after {
+            content: '\"';
+            position: absolute;
+            right: 0;
+            bottom: -0.5rem;
+            font-size: 3rem;
+            color: var(--sovereign-gold);
+            opacity: 0.3;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .exclusive-number {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: var(--sovereign-gold);
+            text-shadow: 0 1px 3px rgba(184, 134, 11, 0.5);
+        }
+
+        /* 布局容器 */
+        .sovereign-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 5rem;
+        }
+
+        .imperial-section {
+            margin: 12rem 0;
+            position: relative;
+        }
+
+        /* 卡片系统 */
+        .authority-card {
+            background: linear-gradient(145deg,
+                rgba(21, 21, 21, 0.9) 0%,
+                rgba(31, 31, 31, 0.8) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.15);
+            border-radius: 2px;
+            padding: 3rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            box-shadow:
+                0 8px 32px rgba(0, 0, 0, 0.6),
+                inset 0 1px 1px rgba(244, 228, 188, 0.05);
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .authority-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(184, 134, 11, 0.3);
+            box-shadow:
+                0 16px 48px rgba(0, 0, 0, 0.8),
+                0 0 24px rgba(184, 134, 11, 0.1),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08);
+        }
+
+        .authority-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(90deg, var(--sovereign-gold), transparent);
+            opacity: 0.6;
+        }
+
+        .authority-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(270deg, var(--sovereign-gold), transparent);
+            opacity: 0.6;
+        }
+
+        .golden-glass-card {
+            background:
+                radial-gradient(circle at 30% 30%, rgba(218, 165, 32, 0.12) 0%, transparent 50%),
+                radial-gradient(circle at 70% 70%, rgba(184, 134, 11, 0.08) 0%, transparent 50%),
+                linear-gradient(135deg,
+                    rgba(244, 228, 188, 0.06) 0%,
+                    rgba(218, 165, 32, 0.04) 30%,
+                    rgba(184, 134, 11, 0.03) 70%,
+                    rgba(139, 105, 20, 0.02) 100%);
+            border: 1px solid rgba(218, 165, 32, 0.15);
+            border-radius: 4px;
+            padding: 2.5rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            box-shadow:
+                0 8px 32px rgba(0, 0, 0, 0.6),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08),
+                inset 0 0 30px rgba(218, 165, 32, 0.03);
+            transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .golden-glass-card:hover {
+            transform: translateY(-3px);
+            border-color: rgba(218, 165, 32, 0.3);
+            box-shadow:
+                0 16px 48px rgba(0, 0, 0, 0.8),
+                0 0 40px rgba(218, 165, 32, 0.1),
+                inset 0 1px 1px rgba(244, 228, 188, 0.12),
+                inset 0 0 40px rgba(218, 165, 32, 0.05);
+        }
+
+        .investment-logic-card {
+            background:
+                radial-gradient(circle at 20% 80%, rgba(218, 165, 32, 0.08) 0%, transparent 60%),
+                radial-gradient(circle at 80% 20%, rgba(244, 228, 188, 0.05) 0%, transparent 60%),
+                linear-gradient(135deg,
+                    rgba(184, 134, 11, 0.06) 0%,
+                    rgba(139, 105, 20, 0.04) 50%,
+                    rgba(218, 165, 32, 0.02) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.12);
+            border-radius: 2px;
+            padding: 3rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            box-shadow:
+                0 8px 32px rgba(0, 0, 0, 0.6),
+                inset 0 1px 1px rgba(244, 228, 188, 0.06),
+                inset 0 0 25px rgba(184, 134, 11, 0.02);
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .investment-logic-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(184, 134, 11, 0.25);
+            box-shadow:
+                0 16px 48px rgba(0, 0, 0, 0.8),
+                0 0 30px rgba(218, 165, 32, 0.08),
+                inset 0 1px 1px rgba(244, 228, 188, 0.1),
+                inset 0 0 35px rgba(184, 134, 11, 0.04);
+        }
+
+        .disclaimer-card {
+            background: linear-gradient(145deg,
+                rgba(31, 31, 31, 0.95) 0%,
+                rgba(42, 42, 42, 0.9) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.18);
+            border-radius: 3px;
+            padding: 4rem;
+            position: relative;
+            backdrop-filter: blur(25px);
+            box-shadow:
+                0 12px 40px rgba(0, 0, 0, 0.7),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08),
+                inset 0 0 30px rgba(184, 134, 11, 0.02);
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .disclaimer-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 2px;
+            background: linear-gradient(90deg,
+                transparent,
+                var(--sovereign-gold),
+                transparent);
+            opacity: 0.6;
+        }
+
+        .disclaimer-card:hover {
+            border-color: rgba(184, 134, 11, 0.25);
+            box-shadow:
+                0 16px 50px rgba(0, 0, 0, 0.8),
+                0 0 25px rgba(184, 134, 11, 0.08),
+                inset 0 1px 1px rgba(244, 228, 188, 0.12);
+        }
+
+        .disclaimer-text {
+            font-weight: 300;
+            letter-spacing: 0.02em;
+            line-height: 2;
+            color: var(--platinum-mist);
+            font-size: 1rem;
+        }
+
+        /* 表格 */
+        .imperial-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            background: rgba(15, 15, 15, 0.8);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(184, 134, 11, 0.2);
+            border-radius: 2px;
+            margin: 2rem 0;
+        }
+
+        .imperial-table th {
+            background: rgba(184, 134, 11, 0.08);
+            padding: 2rem 1.5rem;
+            text-align: left;
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--imperial-gold);
+            border-bottom: 1px solid rgba(184, 134, 11, 0.2);
+        }
+
+        .imperial-table td {
+            padding: 1.8rem 1.5rem;
+            border-bottom: 1px solid rgba(184, 134, 11, 0.05);
+            font-weight: 300;
+        }
+
+        .imperial-table tbody tr:hover {
+            background: rgba(184, 134, 11, 0.03);
+        }
+
+        /* 分隔线 */
+        .sovereign-divider {
+            height: 1px;
+            background: linear-gradient(90deg,
+                transparent 0%,
+                rgba(184, 134, 11, 0.3) 30%,
+                rgba(184, 134, 11, 0.6) 50%,
+                rgba(184, 134, 11, 0.3) 70%,
+                transparent 100%);
+            margin: 8rem 0;
+            position: relative;
+        }
+
+        .sovereign-divider::before {
+            content: '◆';
+            position: absolute;
+            top: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--sovereign-gold);
+            font-size: 16px;
+            background: var(--obsidian-black);
+            padding: 0 1rem;
+        }
+
+        /* 垂直进度条 */
+        .reading-progress {
+            position: fixed;
+            top: 50%;
+            right: 2rem;
+            width: 4px;
+            height: 200px;
+            transform: translateY(-50%);
+            background: linear-gradient(180deg,
+                rgba(184, 134, 11, 0.2) 0%,
+                rgba(218, 165, 32, 0.3) 30%,
+                rgba(244, 228, 188, 0.4) 60%,
+                rgba(218, 165, 32, 0.3) 85%,
+                rgba(139, 105, 20, 0.2) 100%);
+            z-index: 1001;
+            box-shadow:
+                0 0 12px rgba(184, 134, 11, 0.6),
+                2px 0 8px rgba(184, 134, 11, 0.3),
+                inset 1px 0 2px rgba(244, 228, 188, 0.4);
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+        .reading-progress::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(180deg,
+                rgba(244, 228, 188, 0.1) 0%,
+                rgba(218, 165, 32, 0.15) 50%,
+                rgba(244, 228, 188, 0.1) 100%);
+            border-radius: 2px;
+            animation: progressShimmer 3s ease-in-out infinite;
+        }
+
+        .reading-progress-fill {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(180deg,
+                var(--golden-shadow) 0%,
+                var(--sovereign-gold) 50%,
+                var(--imperial-gold) 100%);
+            border-radius: 2px;
+            transition: height 0.1s ease;
+            box-shadow:
+                inset 0 1px 2px rgba(244, 228, 188, 0.3),
+                0 0 8px rgba(184, 134, 11, 0.4);
+        }
+
+        @keyframes progressShimmer {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.8; }
+        }
+
+        .progress-tooltip {
+            position: fixed;
+            top: 50%;
+            right: 7rem;
+            transform: translateY(-50%);
+            background: linear-gradient(135deg,
+                rgba(15, 15, 15, 0.95) 0%,
+                rgba(31, 31, 31, 0.9) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.25);
+            border-radius: 8px;
+            padding: 0.8rem 2rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 0.85rem;
+            font-weight: 300;
+            color: var(--imperial-gold);
+            backdrop-filter: blur(20px);
+            box-shadow:
+                0 8px 32px rgba(0, 0, 0, 0.7),
+                0 0 20px rgba(184, 134, 11, 0.1),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+            z-index: 1002;
+            white-space: nowrap;
+            letter-spacing: 0.03em;
+        }
+
+        .progress-tooltip.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(-50%) translateX(-8px);
+        }
+
+        .progress-tooltip::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -8px;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-left: 8px solid rgba(184, 134, 11, 0.25);
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+        }
+
+        .progress-tooltip::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -7px;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-left: 7px solid rgba(15, 15, 15, 0.95);
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+        }
+
+        /* 引用文献 */
+        .citation-item {
+            padding: 1.5rem 2rem;
+            margin: 0.8rem 0;
+            background: linear-gradient(135deg, rgba(21, 21, 21, 0.8) 0%, rgba(31, 31, 31, 0.6) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.15);
+            border-radius: 3px;
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .citation-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--sovereign-gold), var(--golden-shadow));
+            opacity: 0.6;
+            transition: opacity 0.3s ease;
+        }
+
+        .citation-item:hover {
+            border-color: rgba(184, 134, 11, 0.4);
+            background: linear-gradient(135deg, rgba(31, 31, 31, 0.9) 0%, rgba(42, 42, 42, 0.7) 100%);
+            transform: translateX(6px) translateY(-1px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5), 0 0 20px rgba(184, 134, 11, 0.08);
+        }
+
+        .citation-item:hover::before {
+            opacity: 1;
+        }
+
+        .citation-item a {
+            color: var(--platinum-mist);
+            text-decoration: none;
+            font-size: 0.85rem;
+            line-height: 1.7;
+            font-weight: 300;
+            transition: color 0.4s ease;
+            display: block;
+            position: relative;
+        }
+
+        .citation-item a::before {
+            content: '';
+            position: absolute;
+            left: -0.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 4px;
+            background: var(--sovereign-gold);
+            border-radius: 50%;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .citation-item:hover a {
+            color: var(--aureate-whisper);
+            padding-left: 1rem;
+        }
+
+        .citation-item:hover a::before {
+            opacity: 0.8;
+        }
+
+        /* 响应式 */
+        @media (max-width: 1024px) {
+            .sovereign-container { padding: 0 2.5rem; }
+            .imperial-section { margin: 8rem 0; }
+        }
+
+        @media (max-width: 768px) {
+            .sovereign-container { padding: 0 1.5rem; }
+            .imperial-section { margin: 6rem 0; }
+            .authority-card { padding: 2rem; }
+            .reading-progress { right: 1rem; height: 150px; width: 3px; }
+            .progress-tooltip { right: 5rem; padding: 0.6rem 1.5rem; font-size: 0.75rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- 垂直进度条 -->
+    <div class="reading-progress">
+        <div class="reading-progress-fill"></div>
+    </div>
+
+    <!-- 进度标题提示器 -->
+    <div class="progress-tooltip" id="progress-tooltip"></div>
+
+    <!-- 首屏 -->
+    <header id="header" class="min-h-screen flex items-center justify-center relative" data-title="数字媒体的聚合点：导航结构性转变与捕获价值的框架">
+        <div class="sovereign-container text-center relative z-10">
+            <div class="mb-16">
+                <h1 class="imperial-title text-5xl md:text-7xl mb-6">
+                    数字媒体的聚合点：导航结构性转变与捕获价值的框架
+                </h1>
+
+                <h2 class="imperial-subtitle text-2xl md:text-4xl mb-12 opacity-90">
+                    2025年Q4战略投资分析报告
+                </h2>
+            </div>
+
+            <div class="mb-12">
+                <div class="imperial-tagline text-sm md:text-base opacity-75 max-w-4xl mx-auto">
+                    Digital Media Convergence: Navigating Structural Transformation<br class="md:hidden">
+                    and Value Capture Framework Strategic Analysis Report
+                </div>
+            </div>
+
+            <div class="mb-16">
+                <div class="imperial-dedication text-sm md:text-base flex items-center justify-center">
+                    <span class="material-icons mr-2" style="color: var(--sovereign-gold);">groups</span>
+                    致：机构投资者与高净值客户
+                </div>
+                <div class="imperial-dedication-sub text-xs md:text-sm opacity-60 mt-2">
+                    For: Institutional Investors and High Net Worth Clients
+                </div>
+            </div>
+
+            <div class="golden-glass-card inline-block">
+                <div class="text-xs uppercase tracking-[0.2em] opacity-50 mb-4 font-light flex items-center justify-center">
+                    <span class="material-icons text-sm mr-2">calendar_today</span>
+                    本报告发布于 · Published on
+                </div>
+                <div class="sovereign-heading text-base">
+                    <span class="exclusive-number">2025年10月21日</span>
+                    <span class="mx-4 text-sovereign-gold opacity-40">◆</span>
+                    <span class="exclusive-number">October 21, 2025</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute inset-0 pointer-events-none opacity-8">
+            <div class="absolute top-20 left-20 w-px h-32 bg-gradient-to-b from-sovereign-gold to-transparent"></div>
+            <div class="absolute bottom-20 right-20 w-px h-32 bg-gradient-to-t from-sovereign-gold to-transparent"></div>
+            <div class="absolute top-1/2 left-1/4 w-24 h-px bg-gradient-to-r from-sovereign-gold to-transparent"></div>
+            <div class="absolute top-1/3 right-1/4 w-24 h-px bg-gradient-to-l from-sovereign-gold to-transparent"></div>
+        </div>
+    </header>
+
+    <!-- 第一章 -->
+    <section id="chapter1" class="imperial-section" data-title="第一章：界定数字媒体投资范畴">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl mb-12 text-center flex items-center justify-center">
+                <span class="material-icons mr-3" style="color: var(--sovereign-gold);">category</span>
+                第一章：界定数字媒体投资范畴
+            </h2>
+
+            <div class="authority-card max-w-4xl mx-auto mb-8">
+                <div class="noble-text mb-6">
+                    为构建严谨的行业认知框架，首要任务是确立一个清晰、标准化的行业定义。对于在全球资本市场运营的投资者而言，这意味着必须理解并能够运用国际通行的分类标准，同时洞察特定国家（尤其是中国）的本土分类体系，以进行精确的跨市场比较与风险评估。本章节旨在通过剖析全球行业分类标准（GICS）与中国国民经济行业分类（GB/T 4754），为投资者界定数字媒体的投资范畴，并揭示两种体系背后反映的不同经济视角。
+                </div>
+            </div>
+
+            <div class="authority-card max-w-4xl mx-auto mb-8">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">public</span>
+                    1.1 全球标准：GICS框架解析
+                </h3>
+                <div class="noble-text mb-6">
+                    全球行业分类标准（Global Industry Classification Standard, GICS）由摩根士丹利资本国际（MSCI）和标准普尔（S&P）于1999年联合开发，已成为全球金融界用以划分公司业务领域的主导分类法。该体系的目标是为投资研究、投资组合管理和资产配置提供一个全面、一致且可比较的行业定义框架。GICS采用四级层级结构，包括11个部门（Sectors）、25个行业组（Industry Groups）、74个行业（Industries）和163个子行业（Sub-Industries）。
+                </div>
+
+                <div class="noble-text mb-6">
+                    GICS分类的核心原则是依据公司的"主要业务活动"进行划分。在实践中，营业收入是衡量业务活动的关键指标，因为它相比收益更为稳定，且通常有更详细的业务和地区分项数据。一般而言，如果一家公司的某项业务贡献了超过60%的收入，该公司就会被归入相应的子行业。若无单一业务达到此标准，则根据贡献大部分收入和利润的业务进行分类。
+                </div>
+
+                <div class="noble-text mb-6">
+                    对于数字媒体行业，其绝大多数核心企业被归类于通信服务（Communication Services, 代码50）部门。这一部门在2018年进行了重大重组，将原电信服务部门与部分原隶属于非必需消费品（Consumer Discretionary）的媒体娱乐公司，以及部分原隶属于信息技术（Information Technology）的互动媒体与服务公司合并而成，旨在更准确地反映内容与分发平台融合的行业现实。
+                </div>
+
+                <div class="noble-text">
+                    在通信服务部门内部，与数字媒体直接相关的核心是媒体与娱乐（Media & Entertainment, 代码5020）行业组。该行业组的层级结构清晰地勾勒出现代数字媒体的版图。包括广告（Advertising）、电影与娱乐（Movies & Entertainment）、互动家庭娱乐（Interactive Home Entertainment）和互动媒体与服务（Interactive Media & Services）等多个子行业。
+                </div>
+            </div>
+
+            <div class="authority-card max-w-4xl mx-auto">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">flag</span>
+                    1.2 中国视角：国民经济行业分类比较分析
+                </h3>
+                <div class="noble-text mb-6">
+                    中国采用其自有的国家标准——《国民经济行业分类》（GB/T 4754-2017），用于统计、规划、税收及工商管理等宏观经济管理活动。该标准由国家统计局组织修订，最新版本于2017年发布并实施。在中国标准中，数字媒体相关的经济活动主要分散在两个门类之下，这与GICS高度集中的分类方式形成对比。
+                </div>
+
+                <div class="noble-text mb-6">
+                    在门类I（信息传输、软件和信息技术服务业）和门类R（文化、体育和娱乐业）的分类中，数字媒体相关的活动被分散在多个位置。门类I下的互联网和相关服务与门类R下的广播、电视、电影和录音制作业，都涵盖了数字媒体的重要组成部分。这种分类上的差异并非简单的行政划分，而是反映了两种体系在构建逻辑上的根本不同。GICS被设计为一种"需求导向"的分类系统，而中国的GB/T 4754体系更偏向于"生产导向"。
+                </div>
+
+                <div class="noble-text">
+                    这一根本性的逻辑差异对投资者具有深远的实际影响。对投资者而言，若仅依赖GB/T分类来评估一家中国科技公司，可能会误判其真实的竞争对手。采用GICS的视角，将相关企业都置于"媒体与娱乐"的框架下进行分析，能够更准确地揭示其在注意力市场中的竞争格局。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 第二章 -->
+    <section id="chapter2" class="imperial-section" data-title="第二章：数字媒体价值链与商业模式">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl mb-12 text-center flex items-center justify-center">
+                <span class="material-icons mr-3" style="color: var(--sovereign-gold);">share</span>
+                第二章：数字媒体价值链与商业模式
+            </h2>
+
+            <div class="authority-card max-w-4xl mx-auto mb-8">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">architecture</span>
+                    2.1 从创作到消费：解构产业生态系统
+                </h3>
+                <div class="noble-text mb-6">
+                    数字媒体的价值链是一个由内容创作者、发行商、技术提供商、广告商和消费者等多个参与者相互作用的复杂网络。它描述了一个产品或服务从概念到最终交付给消费者的顺序阶段，并在每一步增加价值。理解这一价值链的构成，是评估一家公司在行业中竞争地位的基础。
+                </div>
+
+                <div class="noble-text mb-6">
+                    数字媒体价值链可分为五个核心阶段：内容创作与IP持有（源头和最核心的资产）、制作与策展（将原始IP转化为可供消费的最终产品）、聚合与平台化（数字媒体时代至关重要的中间层）、分发与技术（技术基础设施层）、消费与变现（企业从用户处实现价值）。这种从消费端到创作端的数据驱动闭环，形成了一个强大的"飞轮效应"。
+                </div>
+
+                <div class="noble-text">
+                    平台通过优质内容吸引用户，用户的消费行为产生数据，数据优化算法和内容策略，从而生产出更具吸引力的内容，进而吸引更多用户。这个自我强化的循环一旦建立，便会形成极高的竞争壁垒。对投资者而言，评估一家数字媒体公司的价值，不仅要看其IP库的深度或用户数量的规模，更要关注其数据飞轮的运转效率。
+                </div>
+            </div>
+
+            <div class="authority-card max-w-4xl mx-auto">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">trending_up</span>
+                    2.2 收入方程：SVOD、AVOD与混合模式
+                </h3>
+                <div class="noble-text mb-6">
+                    数字媒体行业的变现方式主要围绕三种核心商业模式展开：订阅制视频点播（SVOD）、广告制视频点播（AVOD）和交易型视频点播（TVOD）。SVOD模式用户支付固定的周期性费用以获取平台内容库的无限访问权限，其优势在于能够产生稳定且可预测的经常性收入。AVOD模式用户可以免费访问内容，平台的收入完全来自于广告。TVOD模式用户按次付费购买或租赁单项内容。
+                </div>
+
+                <div class="noble-text mb-6">
+                    随着行业发展，纯粹的SVOD或AVOD模式都面临瓶颈。因此，混合模式应运而生，例如Netflix和Disney+相继推出包含广告的低价订阅套餐。这种策略旨在通过更低的价格吸引对价格敏感的新用户，同时开辟广告这一新的收入来源，实现用户规模和单用户价值的平衡。
+                </div>
+
+                <div class="noble-text">
+                    对于以SVOD为核心的业务，理解其单位经济学是判断其长期盈利能力的关键。LTV:CAC比率代表一个用户在整个生命周期内为公司贡献的总收入与获取成本之比，一个健康的LTV:CAC比率通常被认为是3:1。CAC投资回收期指公司需要多长时间才能通过用户贡献的收入收回获取该用户的成本，行业基准一般在12至18个月之间。
+                </div>
+            </table>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 第三章 -->
+    <section id="chapter3" class="imperial-section" data-title="第三章：市场格局与增长轨迹">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl mb-12 text-center flex items-center justify-center">
+                <span class="material-icons mr-3" style="color: var(--sovereign-gold);">bar_chart</span>
+                第三章：市场格局与增长轨迹
+            </h2>
+
+            <div class="authority-card max-w-4xl mx-auto mb-8">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">trending_up</span>
+                    3.1 全球市场规模与预测
+                </h3>
+                <div class="noble-text mb-6">
+                    全球娱乐与媒体（E&M）行业作为一个整体，其规模庞大且持续增长。根据普华永道的数据，该行业在2024年达到了2.9万亿美元的收入规模，并预计将以3.7%的复合年增长率在2029年达到3.5万亿美元。在这一宏观背景下，数字媒体作为增长的主要引擎，其扩张速度更为迅猛。根据Mordor Intelligence的预测，全球数字媒体市场规模将从2025年的0.92万亿美元增长至2030年的1.56万亿美元，复合年增长率高达11.05%。
+                </div>
+
+                <div class="noble-text mb-6">
+                    这一增长背后的核心经济驱动力，是行业收入结构的根本性转变：广告收入的增长速度正在超越消费者直接支出。普华永道的报告预测，到2029年，全球广告支出将比消费者支出高出3000亿美元，届时数字广告将占总广告收入的80%以上。DataReportal的数据证实了这一趋势，截至2024年，数字渠道已占据全球广告投资的72.7%，而这一比例在2018年尚不足50%。
+                </div>
+
+                <div class="noble-text">
+                    这表明，行业的经济重心已从直接销售内容转向了通过内容捕获用户注意力，再将注意力变现的模式。
+                </div>
+            </div>
+
+            <div class="authority-card max-w-4xl mx-auto">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">domain</span>
+                    3.2 细分领域深度剖析
+                </h3>
+                <div class="noble-text mb-6">
+                    视频（流媒体与OTT）：全球媒体流媒体市场预计在2025年达到1087.3亿美元，在美国市场，亚马逊Prime Video（22%）和Netflix（21%）的市场份额不相上下。视频是数字媒体中最大的收入来源，在美国市场，视频内容在2023年创造了最多的收入。
+                </div>
+
+                <div class="noble-text mb-6">
+                    游戏（互动娱乐）：全球游戏市场预计在2025年将产生1888亿美元的收入，移动游戏是最大的子市场，预计2025年收入将达到1030亿美元。预计在2025年，仅中国（498亿美元）和美国（496亿美元）两个国家就将贡献全球游戏消费总额的一半以上。
+                </div>
+
+                <div class="noble-text mb-6">
+                    音频（音乐与播客）：全球音乐流媒体市场预计将从2025年的333.2亿美元增长至2030年的502亿美元，流媒体已成为音乐产业的绝对主导，占据了67.73%的市场份额。
+                </div>
+
+                <div class="noble-text">
+                    创作者经济：高盛预测，这一在2023年估值约为2500亿美元的市场，到2027年规模将几乎翻倍，达到4800亿美元。全球约有5000万名内容创作者为50亿社交媒体用户提供内容。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 第四章 -->
+    <section id="chapter4" class="imperial-section" data-title="第四章：结构性转型核心驱动力">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl mb-12 text-center flex items-center justify-center">
+                <span class="material-icons mr-3" style="color: var(--sovereign-gold);">flash_on</span>
+                第四章：结构性转型核心驱动力
+            </h2>
+
+            <div class="authority-card max-w-4xl mx-auto mb-8">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">computer</span>
+                    4.1 算法优势：技术成为新的守门人
+                </h3>
+                <div class="noble-text mb-6">
+                    在信息爆炸的数字媒体时代，内容发现的效率成为决定平台成败的关键。推荐算法已经取代了传统媒体的编辑和播出时间表，成为决定数十亿消费者观看、收听和购买什么内容的主要"守门人"。一个平台的算法优势，直接决定了其用户粘性和商业化效率。
+                </div>
+
+                <div class="noble-text mb-6">
+                    Netflix的推荐系统是其核心竞争力的体现。据统计，平台上有超过80%的观看内容来自于算法推荐。该系统并非单一模型，而是一个由多种算法组成的复杂集成系统，主要包括协同过滤、基于内容的过滤、深度神经网络等多种技术的结合应用。更进一步，Netflix正在向一种类似于大语言模型（LLM）的"基础模型"（Foundation Model）架构演进。
+                </div>
+
+                <div class="noble-text">
+                    TikTok的算法以其强大的内容分发能力而闻名，其核心逻辑是围绕"社群"构建，而非追求随机的"病毒式"传播。它会奖励那些在特定兴趣圈子内引发强烈共鸣的内容，并将其在社群内高效分发。该算法的权重分配高度倾向于用户互动、视频信息和用户信息等多个关键信号。
+                </div>
+            </div>
+
+            <div class="authority-card max-w-4xl mx-auto">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">leaf</span>
+                    4.2 注意力经济与消费者行为演变
+                </h3>
+                <div class="noble-text mb-6">
+                    数字媒体行业的经济重心已经从消费者直接付费转向广告。全球广告支出已占全球GDP的约1%。用户的注意力正在向特定的平台和设备高度集中。智能手机已成为数字媒体消费的绝对主导平台，2024年，移动设备占据了全球数字广告支出的近三分之二（65.3%）。
+                </div>
+
+                <div class="noble-text mb-6">
+                    社交平台已成为全球"超级多数"的共同体验。截至2025年底，全球社交媒体"用户身份"数量达到56.6亿，覆盖了地球三分之二以上的人口。普通用户平均每周在社交媒体上花费18小时36分钟，并活跃于约6.75个不同的平台。这使得社交平台成为争夺用户注意力的主要战场。
+                </div>
+
+                <div class="noble-text">
+                    生成式AI一方面极大地降低了生产更多内容的成本，另一方面却反向推高了稀缺、真实、以人为核心的IP的价值。这将导致内容市场的两极分化。在一个被合成内容充斥的世界里，消费者和广告商将更加珍视那些无法被轻易复制的元素：真实性、人类的独特创造力，以及经过时间沉淀、拥有深厚粉丝基础的知名IP。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 第五章 -->
+    <section id="chapter5" class="imperial-section" data-title="第五章：竞争舞台与战略要务">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl mb-12 text-center flex items-center justify-center">
+                <span class="material-icons mr-3" style="color: var(--sovereign-gold);">business</span>
+                第五章：竞争舞台与战略要务
+            </h2>
+
+            <div class="authority-card max-w-4xl mx-auto mb-8">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">star</span>
+                    5.1 行业巨头：比较分析
+                </h3>
+                <div class="noble-text mb-6">
+                    Netflix作为流媒体领域的纯粹先驱，其核心战略围绕三大支柱展开：持续扩大其全球付费用户基础（已超过3亿）、在庞大的内容预算（2025年预计约180亿美元）和盈利能力之间寻求最佳平衡、通过推出广告支持套餐来开拓新的收入来源。
+                </div>
+
+                <div class="noble-text mb-6">
+                    Meta Platforms是社交媒体与数字广告领域的绝对霸主。其"应用家族"（Family of Apps）构建了一个拥有超过34亿日活跃用户的庞大生态系统。其战略要务是在应对TikTok等新兴对手的激烈竞争中保持用户粘性，同时通过现实实验室（Reality Labs）部门对元宇宙愿景进行巨额投资。
+                </div>
+
+                <div class="noble-text mb-6">
+                    腾讯是中国的生态系统巨头。其在游戏领域占据主导地位，并通过微信/Weixin构建了强大的社交网络。其核心战略是创建一个闭环生态系统，用户可以在社交、游戏、支付、金融和其他服务之间无缝切换。
+                </div>
+
+                <div class="noble-text">
+                    Spotify是全球音频流媒体的领导者。其战略重心在于扩大用户规模（已达6.96亿月活跃用户）并通过向播客和有声读物等领域扩张来提升利润率。其核心困境在于其单位经济模型的狭窄利润空间。
+                </div>
+            </div>
+
+            <div class="authority-card max-w-4xl mx-auto">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">trending_up</span>
+                    5.2 终局之战：并购作为战略武器
+                </h3>
+                <div class="noble-text mb-6">
+                    随着市场成熟，行业整合正在加速。微软以687亿美元收购动视暴雪，意在获得对《使命召唤》、《魔兽世界》、《糖果传奇》等重量级游戏系列的控制权，并借此大力进军利润丰厚的移动游戏市场。此次交易使微软一跃成为仅次于腾讯和索尼的全球第三大游戏公司。
+                </div>
+
+                <div class="noble-text mb-6">
+                    亚马逊以84.5亿美元收购米高梅，其"真正财务价值在于其深厚目录中的IP宝库"。这包括《007》、《洛奇》等标志性系列。此举的核心并非购买当下的热门内容，而是为了获得一个基础性的、经过市场验证的IP库。
+                </div>
+
+                <div class="noble-text">
+                    对竞争格局的深入分析揭示了一个重要的结构性转变：行业竞争正从对称的、产品对产品的竞争，转向非对称的、生态系统层面的竞争。那些其数字媒体业务能够得到其他高利润业务补贴的公司，拥有结构性的成本优势。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 第六章 -->
+    <section id="chapter6" class="imperial-section" data-title="第六章：监管挑战与全球政策">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl mb-12 text-center flex items-center justify-center">
+                <span class="material-icons mr-3" style="color: var(--sovereign-gold);">security</span>
+                第六章：监管挑战与全球政策
+            </h2>
+
+            <div class="authority-card max-w-4xl mx-auto mb-8">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">flag</span>
+                    6.1 中国指令：政策对增长的双重影响
+                </h3>
+                <div class="noble-text mb-6">
+                    中国政府对所有形式的媒体都实行严格的监管，其核心目标在于内容控制以及解决青少年游戏成瘾等社会关切。2021年出台的针对未成年人的游戏时间限制堪称全球最严，规定未成年人每周只能在周五、周六、周日和法定节假日的晚上8点到9点之间进行一小时的在线游戏，即每周总计三小时。
+                </div>
+
+                <div class="noble-text mb-6">
+                    这些监管措施对市场造成了剧烈冲击。例如，仅在2023年12月一项新规草案的发布，就导致中国游戏市场的市值蒸发了约1000亿美元。尽管初衷是保护青少年健康，但严格的限制措施在实际执行中效果有限。一项调查显示，高达77%的未成年玩家承认使用父母或他人的成年人身份证来规避监管。
+                </div>
+
+                <div class="noble-text">
+                    这不仅未能有效阻止游戏行为，反而催生了游戏账号的黑市交易，并导致青少年将注意力转向监管相对宽松的其他平台，如抖音（TikTok的中国版本）。
+                </div>
+            </div>
+
+            <div class="authority-card max-w-4xl mx-auto">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">public</span>
+                    6.2 欧洲规则：DMA与DSA重塑平台权力
+                </h3>
+                <div class="noble-text mb-6">
+                    与中国自上而下的内容控制不同，欧盟的监管重点在于通过立法来创造一个更安全、更开放、更公平的数字市场。欧盟推出的《数字服务法》（DSA）旨在打击网络上的非法/有害活动及虚假信息的传播，而《数字市场法》（DMA）则旨在遏制大型科技公司的垄断行为，确保数字市场的公平竞争环境。
+                </div>
+
+                <div class="noble-text mb-6">
+                    这种监管的趋异化，是导致全球数字市场碎片化的主要原因，也为跨国数字媒体公司带来了巨大的地缘政治风险。像Meta这样的公司，其在美国市场驱动环境下形成的商业模式，在进入其他市场时面临着根本性的挑战。在欧盟，DMA和DSA直接冲击其核心业务逻辑，限制其数据整合能力。而在中国市场，内容审查和数据本地化等要求，使其核心价值主张变得难以实现。
+                </div>
+
+                <div class="noble-text">
+                    这种局面迫使全球性公司必须为不同地区采取不同的产品策略。"一刀切"的全球平台模式已经终结。对投资者而言，这意味着不能再简单地根据一家公司的全球总用户数来对其进行估值。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 第七章 -->
+    <section id="chapter7" class="imperial-section" data-title="第七章：投资展望与战略建议">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl mb-12 text-center flex items-center justify-center">
+                <span class="material-icons mr-3" style="color: var(--sovereign-gold);">assessment</span>
+                第七章：投资展望与战略建议
+            </h2>
+
+            <div class="authority-card max-w-4xl mx-auto mb-8">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">trending_up</span>
+                    7.1 变动格局中的估值
+                </h3>
+                <div class="noble-text mb-6">
+                    在当前从"不惜一切代价追求增长"转向关注盈利能力的宏观环境下，对数字媒体公司的估值也发生了深刻变化。2025年上半年，私募软件并购交易的中位数倍数为17.6倍，相比2021年26.1倍的峰值已显著回落。EV/Revenue中位数倍数在2025年上半年为2.8倍，远低于2021年超过6倍的水平。
+                </div>
+
+                <div class="noble-text mb-6">
+                    在当前市场环境下，能够获得溢价估值的公司通常具备以下特征：盈利能力与现金流、可持续增长与高用户留存、高效的单位经济模型、核心IP的所有权。拥有不可替代的知识产权组合，能提供持久的竞争护城河。
+                </div>
+
+                <div class="noble-text">
+                    基于当前的市场状况和关键的估值驱动因素，投资者在进行投资决策时需要更加谨慎地评估公司的实际盈利能力和现金流生成能力。
+                </div>
+            </div>
+
+            <div class="authority-card max-w-4xl mx-auto">
+                <h3 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">flash_on</span>
+                    7.2 识别未来价值创造：综合论点
+                </h3>
+                <div class="noble-text mb-6">
+                    综合本报告的全部研究分析，可以提炼出指导未来数字媒体领域投资的四个核心论点：生态系统即护城河（独立的、单一功能的服务在竞争中日益脆弱）、IP与创作者是新的稀缺资源（在AI驱动的时代，真正的稀缺性转向了两端）、变现模式走向多元化（混合模式的实践者将是未来的赢家）、人工智能是中枢神经系统（推荐和个性化引擎将成为决定成败的最重要的技术因素）。
+                </div>
+
+                <div class="noble-text mb-6">
+                    基于以上论点，投资者在评估数字媒体领域的投资标的时，应着重思考战略性问题：关于生态系统的建设、关于IP与创作者的储备、关于商业模式的平衡、关于技术与监管的影响。通过围绕这些核心问题构建投资分析框架，投资者将能更深刻地理解数字媒体行业的结构性变迁。
+                </div>
+
+                <div class="noble-text">
+                    在充满机遇与挑战的未来市场中，做出更明智的资本配置决策。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 结论 -->
+    <section id="conclusion" class="imperial-section" data-title="结论与最终建议">
+        <div class="sovereign-container">
+            <div class="disclaimer-card max-w-4xl mx-auto">
+                <h2 class="sovereign-heading text-2xl mb-6 text-center flex items-center justify-center">
+                    <span class="material-icons mr-3" style="color: var(--sovereign-gold);">check_circle</span>
+                    结论：数字媒体的聚合与重构
+                </h2>
+
+                <div class="executive-quote text-center mb-8">
+                    数字媒体行业正在经历从碎片化内容竞争向生态系统整合、从量的扩张向质的优化、从广告驱动向多元变现的深刻转变。能够把握这一历史性转变的投资者，将获得长期的竞争优势。
+                </div>
+
+                <div class="disclaimer-text">
+                    <p class="mb-6">本报告的核心结论是，数字媒体行业正处于一个关键的转折点。从"内容为王"的成熟阶段正在向"生态为王、数据为矛、AI为枪"的新范式转变。这不是简单的产品迭代，而是整个行业竞争基础的根本性重构。</p>
+
+                    <p class="mb-6">传统的、单一的内容制作和发行公司正在失去竞争力，而那些能够构建平台、整合生态、掌握数据、驱动算法的公司正在崛起。与此同时，在一个充斥合成内容的时代，人类创意和真实IP的价值也在空前提升。</p>
+
+                    <p class="mb-6">对于投资者而言，这意味着需要从三个维度重新评估数字媒体公司的价值：首先，评估其生态系统的完整性和用户锁定能力；其次，评估其IP库的深度和IP运营的效率；第三，评估其技术和数据能力，特别是在推荐、个性化和AI应用方面的优势。</p>
+
+                    <p class="mb-6">同时，投资者必须高度关注地缘政治和监管风险。全球正在分裂为不同的监管"技术领域"，这意味着没有真正的全球性平台模式，只有为不同市场定制化的战略。</p>
+
+                    <p>在这样的背景下，精选那些拥有强大生态、优质IP、先进技术和灵活适应性的公司，并通过多地域、多细分领域的投资组合来分散风险，是未来数字媒体投资的正确方向。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 引用文献 -->
+    <section id="references" class="imperial-section" data-title="引用文献">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl mb-12 text-center flex items-center justify-center">
+                <span class="material-icons mr-3" style="color: var(--sovereign-gold);">link</span>
+                引用文献
+            </h2>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl mx-auto">
+                <div class="citation-item"><a href="https://en.wikipedia.org/wiki/Global_Industry_Classification_Standard" target="_blank" rel="noopener">1. Global Industry Classification Standard - Wikipedia</a></div>
+                <div class="citation-item"><a href="https://www.msci.com/indexes/index-resources/gics" target="_blank" rel="noopener">2. The Global Industry Classification Standard (GICS) - MSCI</a></div>
+                <div class="citation-item"><a href="https://www.lseg.com/en/data-analytics/financial-data/reference-data/classifications/business-and-industry-classifications/global-industry-classification-standard-system" target="_blank" rel="noopener">3. Global Industry Classification Standard System - LSEG</a></div>
+                <div class="citation-item"><a href="https://www.investopedia.com/terms/g/gics.asp" target="_blank" rel="noopener">4. What Is the Global Industry Classification Standard (GICS)? - Investopedia</a></div>
+                <div class="citation-item"><a href="https://lexchart.com/global-industry-classification-standard-gics-communication-services-sector/" target="_blank" rel="noopener">5. Global Industry Classification Standard - Communication Services - LexChart</a></div>
+                <div class="citation-item"><a href="https://www.chinesestandard.net/PDF/English.aspx/GBT4754-2017" target="_blank" rel="noopener">6. GB/T 4754-2017 English PDF</a></div>
+                <div class="citation-item"><a href="https://www.chinacheckup.com/blog/china-industry-classification-system" target="_blank" rel="noopener">7. China Industry Classification System - An Introduction</a></div>
+                <div class="citation-item"><a href="https://fiveable.me/media-strategies-and-management/unit-1/media-ecosystem-chain/study-guide/Gu3bJ9POXmPgtycB" target="_blank" rel="noopener">8. The Media Ecosystem and Value Chain - Fiveable</a></div>
+                <div class="citation-item"><a href="https://www.investopedia.com/terms/v/valuechain.asp" target="_blank" rel="noopener">9. Value Chain: Definition, Model, Analysis, and Example - Investopedia</a></div>
+                <div class="citation-item"><a href="https://www.aboutamazon.com/news/company-news/amazon-and-mgm-have-signed-an-agreement-for-amazon-to-acquire-mgm" target="_blank" rel="noopener">10. Amazon and MGM Acquisition Agreement - Amazon</a></div>
+                <div class="citation-item"><a href="https://www.harmonicinc.com/insights/blog/svod-vs-tvod-vs-avod-whats-the-best-content-delivery-system/" target="_blank" rel="noopener">11. SVOD vs TVOD vs AVOD - Harmonic Inc.</a></div>
+                <div class="citation-item"><a href="https://www.vibe.co/blog/avod-vs-svod-vs-tvod" target="_blank" rel="noopener">12. AVOD vs SVOD vs TVOD - Vibe</a></div>
+                <div class="citation-item"><a href="https://www.phoenixstrategy.group/blog/cac-metrics-pricing-model-benchmarks" target="_blank" rel="noopener">13. CAC Metrics: Pricing Model Benchmarks - Phoenix Strategy Group</a></div>
+                <div class="citation-item"><a href="https://userpilot.com/blog/average-customer-acquisition-cost/" target="_blank" rel="noopener">14. Average Customer Acquisition Cost: Benchmarks by Industry - UserPilot</a></div>
+                <div class="citation-item"><a href="https://support.spotify.com/us/artists/article/understanding-spotify-royalties/" target="_blank" rel="noopener">15. Understanding Spotify Royalties - Spotify</a></div>
+                <div class="citation-item"><a href="https://musosoup.com/blog/spotify-royalty-calculator" target="_blank" rel="noopener">16. Spotify Royalty Calculator - Musosoup</a></div>
+                <div class="citation-item"><a href="https://ringpublishing.com/blog/knowledge/media-trends-what-media-professionals-must-know-by-2029/" target="_blank" rel="noopener">17. Media Trends Shaping 2026-2029 - Ring Publishing</a></div>
+                <div class="citation-item"><a href="https://www.mordorintelligence.com/industry-reports/digital-media-market" target="_blank" rel="noopener">18. Digital Media Market Size, Share & Growth - Mordor Intelligence</a></div>
+                <div class="citation-item"><a href="https://www.businessresearchinsights.com/market-reports/digital-media-market-105383" target="_blank" rel="noopener">19. Digital Media Market Size, Share & Trends - Business Research Insights</a></div>
+                <div class="citation-item"><a href="https://datareportal.com/reports/digital-2025-sub-section-global-advertising-trends" target="_blank" rel="noopener">20. Digital 2025: Global Advertising Trends - DataReportal</a></div>
+                <div class="citation-item"><a href="https://www.globenewswire.com/news-release/2025/05/11/3078702/0/en/Media-Streaming-Market-to-Hit-USD-108-73-Billion-in-2025-Amid-On-Demand-Content-Boom.html" target="_blank" rel="noopener">21. Media Streaming Market 2025 - GlobeNewswire</a></div>
+                <div class="citation-item"><a href="https://www.pwc.com/gx/en/issues/business-model-reinvention/outlook/insights-and-perspectives.html" target="_blank" rel="noopener">22. Perspectives: Global E&M Outlook 2025-2029 - PwC</a></div>
+                <div class="citation-item"><a href="https://evoca.tv/streaming-service-market-share/" target="_blank" rel="noopener">23. Streaming Service Market Share 2025 - Evoca</a></div>
+                <div class="citation-item"><a href="https://www.grandviewresearch.com/horizon/outlook/digital-media-market/united-states" target="_blank" rel="noopener">24. US Digital Media Market Size & Outlook - Grand View Research</a></div>
+                <div class="citation-item"><a href="https://newzoo.com/resources/blog/global-games-market-to-hit-189-billion-in-2025" target="_blank" rel="noopener">25. Global Games Market 2025 - Newzoo</a></div>
+                <div class="citation-item"><a href="https://gameworldobserver.com/2025/09/09/newzoo-in-2025-more-than-half-of-the-gaming-markets-revenue-will-come-from-two-countries-china-and-the-united-states" target="_blank" rel="noopener">26. Gaming Market Revenue Distribution - Game World Observer</a></div>
+                <div class="citation-item"><a href="https://www.mordorintelligence.com/industry-reports/music-market-landscape" target="_blank" rel="noopener">27. Music Landscape Market Analysis - Mordor Intelligence</a></div>
+                <div class="citation-item"><a href="https://www.kbvresearch.com/music-streaming-market/" target="_blank" rel="noopener">28. Music Streaming Market Size & Forecast - KBV Research</a></div>
+                <div class="citation-item"><a href="https://www.forbes.com/sites/lowes-creator/2025/06/16/how-the-creator-economy-is-reshaping-modern-marketing--and-why-brands-are-paying-attention/" target="_blank" rel="noopener">29. Creator Economy and Modern Marketing - Forbes</a></div>
+                <div class="citation-item"><a href="https://market.us/report/creator-economy-market/" target="_blank" rel="noopener">30. Creator Economy Market Size, Share - Market.us</a></div>
+                <div class="citation-item"><a href="https://www.deloitte.com/us/en/services/consulting/articles/content-creator-economy-growth-and-future-challenges.html" target="_blank" rel="noopener">31. Content Creator Economy - Deloitte</a></div>
+                <div class="citation-item"><a href="https://ezycourse.com/blog/how-big-will-the-creator-economy" target="_blank" rel="noopener">32. Creator Economy Size Predictions - EzyCourse</a></div>
+                <div class="citation-item"><a href="https://explodingtopics.com/blog/creator-economy-market-size" target="_blank" rel="noopener">33. Creator Economy Market Size 2025-2030 - Exploding Topics</a></div>
+                <div class="citation-item"><a href="https://www.grandviewresearch.com/industry-analysis/creator-economy-market-report" target="_blank" rel="noopener">34. Creator Economy Market Report - Grand View Research</a></div>
+                <div class="citation-item"><a href="https://attractgroup.com/blog/how-netflixs-personalize-recommendation-algorithm-works/" target="_blank" rel="noopener">35. Netflix Recommendation Algorithm - Attract Group</a></div>
+                <div class="citation-item"><a href="https://www.brainforge.ai/blog/how-netflix-uses-machine-learning-ml-to-create-perfect-recommendations" target="_blank" rel="noopener">36. Netflix Machine Learning for Recommendations - Brainforge</a></div>
+                <div class="citation-item"><a href="https://netflixtechblog.com/foundation-model-for-personalized-recommendation-1a0bd8e02d39" target="_blank" rel="noopener">37. Foundation Model for Personalized Recommendation - Netflix Tech Blog</a></div>
+                <div class="citation-item"><a href="https://blog.hootsuite.com/tiktok-algorithm/" target="_blank" rel="noopener">38. How TikTok Algorithm Works 2025 - Hootsuite</a></div>
+                <div class="citation-item"><a href="https://www.researchgate.net/publication/363604228_Analysis_of_Algorithm_Recommendation_Mechanism_of_TikTok" target="_blank" rel="noopener">39. Analysis of TikTok Algorithm - ResearchGate</a></div>
+                <div class="citation-item"><a href="https://1800officesolutions.com/generative-ai-on-digital-content-creation/" target="_blank" rel="noopener">40. Impact of Generative AI on Content Creation - 1800 Office Solutions</a></div>
+                <div class="citation-item"><a href="https://gsconlinepress.com/journals/gscarr/sites/default/files/GSCARR-2025-0145.pdf" target="_blank" rel="noopener">41. Generative AI in Marketing Content Creation - GSC Online Press</a></div>
+                <div class="citation-item"><a href="https://datareportal.com/social-media-users" target="_blank" rel="noopener">42. Global Social Media Statistics - DataReportal</a></div>
+                <div class="citation-item"><a href="https://en.wikipedia.org/wiki/Acquisition_of_Activision_Blizzard_by_Microsoft" target="_blank" rel="noopener">43. Acquisition of Activision Blizzard by Microsoft - Wikipedia</a></div>
+                <div class="citation-item"><a href="https://ir.netflix.net/ir-overview/profile/default.aspx" target="_blank" rel="noopener">44. Netflix Overview - Netflix Investor Relations</a></div>
+                <div class="citation-item"><a href="https://movieweb.com/netflix-18-billion-annual-content-budget-not-near-ceiling/" target="_blank" rel="noopener">45. Netflix Content Budget 2025 - MovieWeb</a></div>
+                <div class="citation-item"><a href="https://www.moomoo.com/us/learn/detail-fy24-q1-netflix-what-to-watch-in-the-streaming-giant-s-earnings-113843-240193081" target="_blank" rel="noopener">46. Netflix Earnings Analysis - Moomoo</a></div>
+                <div class="citation-item"><a href="https://inbeat.agency/blog/meta-statistics" target="_blank" rel="noopener">47. Meta Statistics for 2025 - inBeat Agency</a></div>
+                <div class="citation-item"><a href="https://www.investopedia.com/ask/answers/120114/how-does-facebook-fb-make-money.asp" target="_blank" rel="noopener">48. How Meta Generates Revenue - Investopedia</a></div>
+                <div class="citation-item"><a href="https://app2top.com/news/tencent-earned-over-8-billion-dollars-from-games-in-a-quarter-which-is-a-third-of-its-total-revenue-283197.html" target="_blank" rel="noopener">49. Tencent Gaming Revenue - App2Top</a></div>
+                <div class="citation-item"><a href="https://newsroom.spotify.com/2025-07-29/spotify-reports-second-quarter-2025-earnings/" target="_blank" rel="noopener">50. Spotify Q2 2025 Earnings - Spotify Newsroom</a></div>
+                <div class="citation-item"><a href="https://sqmagazine.co.uk/amazon-prime-video-statistics/" target="_blank" rel="noopener">51. Amazon Prime Video Statistics 2025 - SQ Magazine</a></div>
+                <div class="citation-item"><a href="https://electroiq.com/stats/disney-statistics/" target="_blank" rel="noopener">52. Disney Statistics 2025 - ElectroIQ</a></div>
+                <div class="citation-item"><a href="https://companiesmarketcap.com/tencent/revenue/" target="_blank" rel="noopener">53. Tencent Revenue - Companies Market Cap</a></div>
+                <div class="citation-item"><a href="https://static.www.tencent.com/uploads/2025/08/13/56af6c5c98acdc7bd757a7bd208d8189.pdf" target="_blank" rel="noopener">54. Tencent Q2 2025 Results - Tencent Investor Relations</a></div>
+                <div class="citation-item"><a href="https://sociallyin.com/meta-statistics/" target="_blank" rel="noopener">55. Meta Statistics 2025 - Sociallyin</a></div>
+                <div class="citation-item"><a href="https://www.demandsage.com/disney-users/" target="_blank" rel="noopener">56. Disney Plus Subscribers Stats - Demand Sage</a></div>
+                <div class="citation-item"><a href="https://news.microsoft.com/activision-blizzard-acquisition/" target="_blank" rel="noopener">57. Microsoft and Activision Blizzard Vision - Microsoft</a></div>
+                <div class="citation-item"><a href="https://robins.richmond.edu/files/Robins-Case-Network/2025/MicrosoftActivision.pdf" target="_blank" rel="noopener">58. Microsoft and Activision Case Study - Robins School</a></div>
+                <div class="citation-item"><a href="https://blogs.microsoft.com/on-the-issues/2024/10/15/one-year-activision-blizzard/" target="_blank" rel="noopener">59. One Year of Microsoft-Activision - Microsoft</a></div>
+                <div class="citation-item"><a href="https://www.researchgate.net/publication/369870711_Microsoft's_Acquisition_of_Activision_Blizzard_A_Case_Study" target="_blank" rel="noopener">60. Microsoft Activision Case Study - ResearchGate</a></div>
+                <div class="citation-item"><a href="https://en.wikipedia.org/wiki/Video_games_in_China" target="_blank" rel="noopener">61. Video Games in China - Wikipedia</a></div>
+                <div class="citation-item"><a href="https://www.cato.org/blog/chinese-gaming-regulations" target="_blank" rel="noopener">62. Chinese Gaming Regulations - Cato Institute</a></div>
+                <div class="citation-item"><a href="https://www.gmfus.org/news/eus-digital-markets-act-and-digital-services-act" target="_blank" rel="noopener">63. EU's Digital Markets and Services Acts - German Marshall Fund</a></div>
+                <div class="citation-item"><a href="https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/europe-fit-digital-age/digital-services-act_en" target="_blank" rel="noopener">64. Digital Services Act - European Commission</a></div>
+                <div class="citation-item"><a href="https://aventis-advisors.com/software-valuation-multiples/" target="_blank" rel="noopener">65. Software Valuation Multiples 2015-2025 - Aventis Advisors</a></div>
+                <div class="citation-item"><a href="https://firstpagesage.com/business/marketing-agency-valuation-multiples-and-valuations/" target="_blank" rel="noopener">66. Marketing Agency Valuation Multiples - First Page Sage</a></div>
+                <div class="citation-item"><a href="https://blog.acquire.com/saas-valuation-multiples/" target="_blank" rel="noopener">67. SaaS Valuation Multiples 2025 - Acquire.com</a></div>
+                <div class="citation-item"><a href="https://firstpagesage.com/business/valuation-ebitda-multiples-for-tech-companies/" target="_blank" rel="noopener">68. Valuation & EBITDA Multiples for Tech - First Page Sage</a></div>
+                <div class="citation-item"><a href="https://www.gartner.com/en" target="_blank" rel="noopener">69. Gartner Industry Research</a></div>
+                <div class="citation-item"><a href="https://www.forrester.com" target="_blank" rel="noopener">70. Forrester Research</a></div>
+                <div class="citation-item"><a href="https://www.icv.com.br" target="_blank" rel="noopener">71. ICV Research</a></div>
+                <div class="citation-item"><a href="https://www.cb-insights.com" target="_blank" rel="noopener">72. CB Insights</a></div>
+                <div class="citation-item"><a href="https://www.emarketer.com" target="_blank" rel="noopener">73. eMarketer Market Research</a></div>
+                <div class="citation-item"><a href="https://www.trendforce.com" target="_blank" rel="noopener">74. TrendForce Market Analysis</a></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分隔线 -->
+    <div class="sovereign-divider"></div>
+
+    <!-- 免责声明 -->
+    <section id="disclaimer" class="imperial-section" data-title="免责声明">
+        <div class="sovereign-container">
+            <div class="disclaimer-card max-w-4xl mx-auto">
+                <h2 class="sovereign-heading text-2xl mb-6 text-center">免责声明</h2>
+                <div class="disclaimer-text">
+                    <p class="mb-4">本报告由虚空有物科技有限公司金融行业研究部编制，仅供机构投资者和高净值客户参考。本报告中的信息基于作者认为可靠的公开信息来源，但不保证其准确性、完整性或及时性。</p>
+                    <p class="mb-4">本报告不构成任何投资建议、买卖要约或任何证券交易的建议。读者应根据自身风险承受能力、投资目标和时间范围，寻求专业的财务、法律或税务顾问意见，做出独立的投资决策。</p>
+                    <p>虚空有物科技有限公司及其相关人士不对使用本报告信息而产生的任何直接或间接损失承担责任。本报告信息可能因市场条件变化而过时。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // 精美垂直进度条系统（完整功能）
+        const progressBar = document.querySelector('.reading-progress');
+        const progressFill = document.querySelector('.reading-progress-fill');
+        const progressTooltip = document.getElementById('progress-tooltip');
+        const sections = document.querySelectorAll('section[id], header[id]');
+
+        let currentSectionTitle = '';
+        let sectionsData = [];
+
+        // 初始化章节数据
+        function initSections() {
+            sectionsData = Array.from(sections).map(section => ({
+                id: section.getAttribute('id'),
+                title: section.getAttribute('data-title') || section.querySelector('h1, h2')?.textContent || '未知章节',
+                offsetTop: section.offsetTop,
+                offsetHeight: section.offsetHeight
+            }));
+        }
+
+        function updateProgress() {
+            const scrolled = window.pageYOffset;
+            const maxHeight = document.body.scrollHeight - window.innerHeight;
+            const progress = (scrolled / maxHeight) * 100;
+
+            progressFill.style.height = `${progress}%`;
+
+            // 获取当前章节
+            let currentSection = '';
+            sectionsData.forEach(section => {
+                if (scrolled >= section.offsetTop - 300) {
+                    currentSection = section.id;
+                    currentSectionTitle = section.title;
+                }
+            });
+        }
+
+        // 点击进度条跳转
+        progressBar.addEventListener('click', (e) => {
+            const rect = progressBar.getBoundingClientRect();
+            const clickY = e.clientY - rect.top;
+            const progressHeight = rect.height;
+            const clickPercent = clickY / progressHeight;
+
+            const maxHeight = document.body.scrollHeight - window.innerHeight;
+            const targetScroll = maxHeight * clickPercent;
+
+            window.scrollTo({
+                top: targetScroll,
+                behavior: 'smooth'
+            });
+        });
+
+        // 悬停显示标题
+        progressBar.addEventListener('mouseenter', () => {
+            if (currentSectionTitle) {
+                progressTooltip.textContent = currentSectionTitle;
+                progressTooltip.classList.add('show');
+            }
+        });
+
+        progressBar.addEventListener('mouseleave', () => {
+            progressTooltip.classList.remove('show');
+        });
+
+        progressTooltip.addEventListener('mouseenter', () => {
+            progressTooltip.classList.add('show');
+        });
+
+        progressTooltip.addEventListener('mouseleave', () => {
+            progressTooltip.classList.remove('show');
+        });
+
+        // 窗口大小改变时重新计算
+        window.addEventListener('resize', () => {
+            setTimeout(initSections, 100);
+        });
+
+        window.addEventListener('scroll', updateProgress);
+
+        // 页面加载完成后初始化
+        window.addEventListener('load', () => {
+            initSections();
+            updateProgress();
+        });
+
+        // DOM加载完成立即初始化
+        document.addEventListener('DOMContentLoaded', () => {
+            initSections();
+            updateProgress();
+        });
+    </script>
+</body>
+</html>

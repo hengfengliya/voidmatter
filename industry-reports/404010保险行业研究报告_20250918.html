@@ -1,0 +1,1464 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>顶尖投研分析报告：新周期下中国保险业的结构性重塑与价值重估</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700;800;900&family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        :root {
+            /* 深邃黑金权力色系 */
+            --obsidian-black: #0A0A0A;
+            --midnight-black: #151515;
+            --shadow-black: #1F1F1F;
+            --charcoal-deep: #2A2A2A;
+
+            /* 稀缺金色层次 */
+            --sovereign-gold: #B8860B;
+            --imperial-gold: #DAA520;
+            --aureate-whisper: #F4E4BC;
+            --golden-shadow: #8B6914;
+
+            /* 权力灰度 */
+            --platinum-mist: #E5E5E5;
+            --sterling-silver: #C0C0C0;
+            --graphite-steel: #696969;
+            --charcoal-whisper: #808080;
+
+            /* 稀缺强调色 */
+            --ruby-accent: #8B0000;
+            --emerald-depth: #006400;
+            --sapphire-authority: #1e3a8a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg,
+                var(--obsidian-black) 0%,
+                var(--midnight-black) 40%,
+                var(--shadow-black) 100%);
+            color: var(--platinum-mist);
+            line-height: 1.8;
+            letter-spacing: 0.02em;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        /* 排版系统 */
+        .imperial-title {
+            font-family: 'Playfair Display', serif;
+            font-weight: 200;
+            letter-spacing: 0.12em;
+            line-height: 1.05;
+            color: var(--aureate-whisper);
+            text-shadow: 0 3px 12px rgba(184, 134, 11, 0.4);
+        }
+
+        .imperial-subtitle {
+            font-family: 'Playfair Display', serif;
+            font-weight: 300;
+            letter-spacing: 0.08em;
+            line-height: 1.15;
+            color: var(--imperial-gold);
+            text-shadow: 0 2px 8px rgba(218, 165, 32, 0.3);
+        }
+
+        .imperial-tagline {
+            font-family: 'Inter', sans-serif;
+            font-weight: 200;
+            letter-spacing: 0.06em;
+            line-height: 1.4;
+            color: var(--sterling-silver);
+            font-style: italic;
+        }
+
+        .imperial-dedication {
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+            letter-spacing: 0.04em;
+            line-height: 1.3;
+            color: var(--imperial-gold);
+        }
+
+        .imperial-dedication-sub {
+            font-family: 'Inter', sans-serif;
+            font-weight: 200;
+            letter-spacing: 0.05em;
+            line-height: 1.3;
+            color: var(--sterling-silver);
+            font-style: italic;
+        }
+
+        .sovereign-heading {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            color: var(--imperial-gold);
+            text-shadow: 0 1px 4px rgba(218, 165, 32, 0.4);
+        }
+
+        .noble-text {
+            font-weight: 300;
+            letter-spacing: 0.03em;
+            line-height: 2.2;
+            color: var(--platinum-mist);
+        }
+
+        .executive-quote {
+            font-weight: 300;
+            letter-spacing: 0.02em;
+            line-height: 1.8;
+            color: var(--sterling-silver);
+            font-size: 0.95rem;
+            font-style: italic;
+            position: relative;
+            padding: 0 2rem;
+            margin: 2rem 0;
+        }
+
+        .executive-quote::before {
+            content: '"';
+            position: absolute;
+            left: 0;
+            top: -0.5rem;
+            font-size: 3rem;
+            color: var(--sovereign-gold);
+            opacity: 0.3;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .executive-quote::after {
+            content: '"';
+            position: absolute;
+            right: 0;
+            bottom: -0.5rem;
+            font-size: 3rem;
+            color: var(--sovereign-gold);
+            opacity: 0.3;
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* 免责声明卡片 */
+        .disclaimer-card {
+            background: linear-gradient(145deg,
+                rgba(31, 31, 31, 0.95) 0%,
+                rgba(42, 42, 42, 0.9) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.18);
+            border-radius: 3px;
+            padding: 4rem;
+            position: relative;
+            backdrop-filter: blur(25px);
+            box-shadow:
+                0 12px 40px rgba(0, 0, 0, 0.7),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08),
+                inset 0 0 30px rgba(184, 134, 11, 0.02);
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .disclaimer-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 2px;
+            background: linear-gradient(90deg,
+                transparent,
+                var(--sovereign-gold),
+                transparent);
+            opacity: 0.6;
+        }
+
+        .disclaimer-text {
+            font-weight: 300;
+            letter-spacing: 0.02em;
+            line-height: 2;
+            color: var(--platinum-mist);
+            font-size: 1rem;
+        }
+
+        .exclusive-number {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: var(--sovereign-gold);
+            text-shadow: 0 1px 3px rgba(184, 134, 11, 0.5);
+        }
+
+        /* 容器系统 */
+        .sovereign-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 5rem;
+        }
+
+        .imperial-section {
+            margin: 12rem 0;
+            position: relative;
+        }
+
+        /* 卡片系统 */
+        .golden-glass-card {
+            background:
+                radial-gradient(circle at 30% 30%, rgba(218, 165, 32, 0.12) 0%, transparent 50%),
+                radial-gradient(circle at 70% 70%, rgba(184, 134, 11, 0.08) 0%, transparent 50%),
+                linear-gradient(135deg,
+                    rgba(244, 228, 188, 0.06) 0%,
+                    rgba(218, 165, 32, 0.04) 30%,
+                    rgba(184, 134, 11, 0.03) 70%,
+                    rgba(139, 105, 20, 0.02) 100%);
+            border: 1px solid rgba(218, 165, 32, 0.15);
+            border-radius: 4px;
+            padding: 2.5rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            box-shadow:
+                0 8px 32px rgba(0, 0, 0, 0.6),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08),
+                inset 0 0 30px rgba(218, 165, 32, 0.03);
+            transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .golden-glass-card:hover {
+            transform: translateY(-3px);
+            border-color: rgba(218, 165, 32, 0.3);
+            box-shadow:
+                0 16px 48px rgba(0, 0, 0, 0.8),
+                0 0 40px rgba(218, 165, 32, 0.1),
+                inset 0 1px 1px rgba(244, 228, 188, 0.12),
+                inset 0 0 40px rgba(218, 165, 32, 0.05);
+        }
+
+        /* 权威卡片 */
+        .authority-card {
+            background: linear-gradient(145deg,
+                rgba(21, 21, 21, 0.9) 0%,
+                rgba(31, 31, 31, 0.8) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.15);
+            border-radius: 2px;
+            padding: 3rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            box-shadow:
+                0 8px 32px rgba(0, 0, 0, 0.6),
+                inset 0 1px 1px rgba(244, 228, 188, 0.05);
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .authority-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(184, 134, 11, 0.3);
+            box-shadow:
+                0 16px 48px rgba(0, 0, 0, 0.8),
+                0 0 24px rgba(184, 134, 11, 0.1),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08);
+        }
+
+        .authority-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(90deg, var(--sovereign-gold), transparent);
+            opacity: 0.6;
+        }
+
+        .authority-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(270deg, var(--sovereign-gold), transparent);
+            opacity: 0.6;
+        }
+
+        /* 投资逻辑卡片 */
+        .investment-logic-card {
+            background:
+                radial-gradient(circle at 20% 80%, rgba(218, 165, 32, 0.08) 0%, transparent 60%),
+                radial-gradient(circle at 80% 20%, rgba(244, 228, 188, 0.05) 0%, transparent 60%),
+                linear-gradient(135deg,
+                    rgba(184, 134, 11, 0.06) 0%,
+                    rgba(139, 105, 20, 0.04) 50%,
+                    rgba(218, 165, 32, 0.02) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.12);
+            border-radius: 2px;
+            padding: 3rem;
+            position: relative;
+            backdrop-filter: blur(20px);
+            box-shadow:
+                0 8px 32px rgba(0, 0, 0, 0.6),
+                inset 0 1px 1px rgba(244, 228, 188, 0.06),
+                inset 0 0 25px rgba(184, 134, 11, 0.02);
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .investment-logic-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(184, 134, 11, 0.25);
+            box-shadow:
+                0 16px 48px rgba(0, 0, 0, 0.8),
+                0 0 30px rgba(218, 165, 32, 0.08),
+                inset 0 1px 1px rgba(244, 228, 188, 0.1),
+                inset 0 0 35px rgba(184, 134, 11, 0.04);
+        }
+
+        /* 权威表格 */
+        .imperial-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            background: rgba(15, 15, 15, 0.8);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(184, 134, 11, 0.2);
+            border-radius: 2px;
+        }
+
+        .imperial-table th {
+            background: rgba(184, 134, 11, 0.08);
+            padding: 2rem 1.5rem;
+            text-align: left;
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--imperial-gold);
+            border-bottom: 1px solid rgba(184, 134, 11, 0.2);
+        }
+
+        .imperial-table td {
+            padding: 1.8rem 1.5rem;
+            border-bottom: 1px solid rgba(184, 134, 11, 0.05);
+            font-weight: 300;
+        }
+
+        .imperial-table tbody tr:hover {
+            background: rgba(184, 134, 11, 0.03);
+        }
+
+        /* 分隔线 */
+        .sovereign-divider {
+            height: 1px;
+            background: linear-gradient(90deg,
+                transparent 0%,
+                rgba(184, 134, 11, 0.3) 30%,
+                rgba(184, 134, 11, 0.6) 50%,
+                rgba(184, 134, 11, 0.3) 70%,
+                transparent 100%);
+            margin: 8rem 0;
+            position: relative;
+        }
+
+        .sovereign-divider::before {
+            content: '◆';
+            position: absolute;
+            top: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--sovereign-gold);
+            font-size: 16px;
+            background: var(--obsidian-black);
+            padding: 0 1rem;
+        }
+
+        /* 垂直进度条系统 */
+        .reading-progress {
+            position: fixed;
+            top: 50%;
+            right: 2rem;
+            width: 4px;
+            height: 200px;
+            transform: translateY(-50%);
+            background: linear-gradient(180deg,
+                rgba(184, 134, 11, 0.2) 0%,
+                rgba(218, 165, 32, 0.3) 30%,
+                rgba(244, 228, 188, 0.4) 60%,
+                rgba(218, 165, 32, 0.3) 85%,
+                rgba(139, 105, 20, 0.2) 100%);
+            z-index: 1001;
+            box-shadow:
+                0 0 12px rgba(184, 134, 11, 0.6),
+                2px 0 8px rgba(184, 134, 11, 0.3),
+                inset 1px 0 2px rgba(244, 228, 188, 0.4);
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+        .reading-progress::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(180deg,
+                rgba(244, 228, 188, 0.1) 0%,
+                rgba(218, 165, 32, 0.15) 50%,
+                rgba(244, 228, 188, 0.1) 100%);
+            border-radius: 2px;
+            animation: progressShimmer 3s ease-in-out infinite;
+        }
+
+        .reading-progress-fill {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(180deg,
+                var(--golden-shadow) 0%,
+                var(--sovereign-gold) 50%,
+                var(--imperial-gold) 100%);
+            border-radius: 2px;
+            transition: height 0.1s ease;
+            box-shadow:
+                inset 0 1px 2px rgba(244, 228, 188, 0.3),
+                0 0 8px rgba(184, 134, 11, 0.4);
+        }
+
+        @keyframes progressShimmer {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.8; }
+        }
+
+        /* 进度标题提示器 */
+        .progress-tooltip {
+            position: fixed;
+            top: 50%;
+            right: 7rem;
+            transform: translateY(-50%);
+            background: linear-gradient(135deg,
+                rgba(15, 15, 15, 0.95) 0%,
+                rgba(31, 31, 31, 0.9) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.25);
+            border-radius: 8px;
+            padding: 0.8rem 2rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 0.85rem;
+            font-weight: 300;
+            color: var(--imperial-gold);
+            backdrop-filter: blur(20px);
+            box-shadow:
+                0 8px 32px rgba(0, 0, 0, 0.7),
+                0 0 20px rgba(184, 134, 11, 0.1),
+                inset 0 1px 1px rgba(244, 228, 188, 0.08);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+            z-index: 1002;
+            white-space: nowrap;
+            letter-spacing: 0.03em;
+        }
+
+        .progress-tooltip.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(-50%) translateX(-8px);
+        }
+
+        .progress-tooltip::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -8px;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-left: 8px solid rgba(184, 134, 11, 0.25);
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+        }
+
+        .progress-tooltip::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -7px;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-left: 7px solid rgba(15, 15, 15, 0.95);
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+        }
+
+        /* 引用文献 */
+        .citation-item {
+            padding: 1.5rem 2rem;
+            margin: 0.8rem 0;
+            background: linear-gradient(135deg,
+                rgba(21, 21, 21, 0.8) 0%,
+                rgba(31, 31, 31, 0.6) 100%);
+            border: 1px solid rgba(184, 134, 11, 0.15);
+            border-radius: 3px;
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .citation-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            background: linear-gradient(180deg, var(--sovereign-gold), var(--golden-shadow));
+            opacity: 0.6;
+            transition: opacity 0.3s ease;
+        }
+
+        .citation-item:hover {
+            border-color: rgba(184, 134, 11, 0.4);
+            background: linear-gradient(135deg,
+                rgba(31, 31, 31, 0.9) 0%,
+                rgba(42, 42, 42, 0.7) 100%);
+            transform: translateX(6px) translateY(-1px);
+            box-shadow:
+                0 8px 25px rgba(0, 0, 0, 0.5),
+                0 0 20px rgba(184, 134, 11, 0.08);
+        }
+
+        .citation-item:hover::before {
+            opacity: 1;
+        }
+
+        .citation-item a {
+            color: var(--platinum-mist);
+            text-decoration: none;
+            font-size: 0.85rem;
+            line-height: 1.7;
+            font-weight: 300;
+            transition: color 0.4s ease;
+            display: block;
+            position: relative;
+        }
+
+        .citation-item a::before {
+            content: '';
+            position: absolute;
+            left: -0.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 4px;
+            background: var(--sovereign-gold);
+            border-radius: 50%;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .citation-item:hover a {
+            color: var(--aureate-whisper);
+            padding-left: 1rem;
+        }
+
+        .citation-item:hover a::before {
+            opacity: 0.8;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 1024px) {
+            .sovereign-container {
+                padding: 0 2.5rem;
+            }
+            .imperial-section {
+                margin: 8rem 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .sovereign-container {
+                padding: 0 1.5rem;
+            }
+            .imperial-section {
+                margin: 6rem 0;
+            }
+            .authority-card {
+                padding: 2rem;
+            }
+            .reading-progress {
+                right: 1rem;
+                height: 150px;
+                width: 3px;
+            }
+            .progress-tooltip {
+                right: 5rem;
+                padding: 0.6rem 1.5rem;
+                font-size: 0.75rem;
+            }
+        }
+
+        /* 选择高亮 */
+        ::selection {
+            background: rgba(184, 134, 11, 0.2);
+            color: var(--aureate-whisper);
+        }
+
+        /* 滚动条 */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--obsidian-black);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--sovereign-gold);
+            border-radius: 3px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--imperial-gold);
+        }
+    </style>
+</head>
+<body>
+    <!-- 阅读进度条 -->
+    <div class="reading-progress">
+        <div class="reading-progress-fill"></div>
+    </div>
+
+    <!-- 进度标题提示器 -->
+    <div class="progress-tooltip" id="progress-tooltip"></div>
+
+    <!-- 页面标题区域 -->
+    <header id="header" class="min-h-screen flex items-center justify-center relative" data-title="顶尖投研分析报告">
+        <div class="sovereign-container text-center relative z-10">
+            <!-- 主标题区域 -->
+            <div class="mb-16">
+                <h1 class="imperial-title text-5xl md:text-7xl mb-6">
+                    新周期下中国保险业的结构性重塑
+                </h1>
+
+                <h2 class="imperial-subtitle text-2xl md:text-4xl mb-12 opacity-90">
+                    结构性重塑与价值重估
+                </h2>
+            </div>
+
+            <!-- 英文副标题 -->
+            <div class="mb-12">
+                <div class="imperial-tagline text-sm md:text-base opacity-75 max-w-4xl mx-auto">
+                    China Insurance Industry In-Depth Research:<br class="md:hidden">
+                    Structural Reshaping and Value Revaluation Under New Cycle
+                </div>
+            </div>
+
+            <!-- 致敬区域 -->
+            <div class="mb-16">
+                <div class="imperial-dedication text-sm md:text-base">
+                    致：机构投资者与高净值客户
+                </div>
+                <div class="imperial-dedication-sub text-xs md:text-sm opacity-60 mt-2">
+                    For: Institutional Investors and High Net Worth Clients
+                </div>
+            </div>
+
+            <!-- 发布日期卡片 -->
+            <div class="golden-glass-card inline-block">
+                <div class="text-xs uppercase tracking-[0.2em] opacity-50 mb-4 font-light">
+                    本报告发布于 · Published on
+                </div>
+                <div class="sovereign-heading text-base">
+                    <span id="date-cn" class="exclusive-number">2025年Q3</span>
+                    <span class="mx-4 text-sovereign-gold opacity-40">◆</span>
+                    <span id="date-en" class="exclusive-number">Q3 2025</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 背景装饰 -->
+        <div class="absolute inset-0 pointer-events-none opacity-8">
+            <div class="absolute top-20 left-20 w-px h-32 bg-gradient-to-b from-sovereign-gold to-transparent"></div>
+            <div class="absolute bottom-20 right-20 w-px h-32 bg-gradient-to-t from-sovereign-gold to-transparent"></div>
+            <div class="absolute top-1/2 left-1/4 w-24 h-px bg-gradient-to-r from-sovereign-gold to-transparent"></div>
+            <div class="absolute top-1/3 right-1/4 w-24 h-px bg-gradient-to-l from-sovereign-gold to-transparent"></div>
+        </div>
+    </header>
+
+    <!-- 免责声明 -->
+    <section class="imperial-section">
+        <div class="sovereign-container">
+            <div class="disclaimer-card text-center">
+                <h2 class="sovereign-heading text-2xl mb-8">免责声明</h2>
+                <div class="disclaimer-text max-w-4xl mx-auto">
+                    本报告由资深行业分析师保险研究部编制，旨在为机构投资者与高净值客户提供关于保险行业的系统性认知框架。报告中的信息和数据均来源于公开可查的资料，我们力求报告内容的客观、准确，但不对其完整性或准确性做出任何保证。本报告中的分析、结论和观点仅为研究目的，不构成任何形式的投资建议。投资者应基于自身的独立判断进行投资决策，并自行承担相关风险。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 导言部分 -->
+    <section id="introduction" class="imperial-section" data-title="导言：新周期下的中国保险业">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-5xl mb-16 text-center">导言：新周期下的中国保险业</h2>
+
+            <div class="executive-quote max-w-4xl mx-auto text-center">
+                2024年，中国保险行业正处于一场由内而外的深刻变革之中。宏观层面，全球经济复苏面临复杂性；微观层面，监管政策密集出台。
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 mb-16">
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-xl mb-6 flex items-center">
+                        <i class="material-icons text-xl mr-3">trending_down</i>
+                        行业面临的核心挑战
+                    </h3>
+                    <div class="noble-text space-y-4">
+                        <p>国内市场利率持续下行，对保险公司的资产端投资收益构成严峻挑战。监管政策密集出台，旨在重塑行业生态，从根本上改变其增长模式与盈利逻辑。</p>
+
+                        <p>"报行合一"与人身险产品预定利率下调正加速挤出长期积累的费用与利差泡沫，倒逼行业回归保障本源。</p>
+                    </div>
+                </div>
+
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-xl mb-6 flex items-center">
+                        <i class="material-icons text-xl mr-3">policy</i>
+                        结构性机遇与价值重估
+                    </h3>
+                    <div class="noble-text space-y-4">
+                        <p>头部险企凭借其强大的资本实力、资产负债管理能力、渠道转型韧性与科技赋能优势，正逐步构建起新的竞争壁垒。</p>
+
+                        <p>这种结构性重塑导致了行业内部的深度分化，同时也为具备核心竞争力的公司创造了价值重估的结构性机会。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 第一章：宏观环境 -->
+    <section id="chapter-one" class="imperial-section" data-title="宏观环境与行业基本面：挑战与韧性">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-5xl mb-16 text-center">宏观环境与行业基本面</h2>
+            <h3 class="sovereign-heading text-3xl mb-12 text-center">挑战与韧性</h3>
+
+            <div class="authority-card mb-16">
+                <h4 class="sovereign-heading text-2xl mb-8 flex items-center">
+                    <i class="material-icons text-xl mr-3">public</i>
+                    全球与中国保险市场概览
+                </h4>
+                <div class="noble-text space-y-6 mb-12">
+                    <p>保险业作为国民经济的"稳定器"和"助推器"，其发展与宏观经济走势密切相关。从全球视角看，2024年全球保险业呈现稳健增长态势，总保费收入显著增加5570亿欧元，达到7.0万亿欧元的新高度，其中人寿险仍是最大的业务板块。</p>
+
+                    <p>聚焦中国市场，2024年全年保险业累计实现原保险保费收入5.7万亿元，按可比口径计算，同比增长5.7%，显示出行业在复杂环境下依然保持了扩张势头。然而，这一整体数据背后隐藏着值得关注的结构性矛盾：2024年上半年赔款和给付支出却大幅增长33.1%，增速远超保费收入增速。</p>
+                </div>
+
+                <div class="overflow-x-auto">
+                    <table class="imperial-table">
+                        <thead>
+                            <tr>
+                                <th>指标</th>
+                                <th>全球市场</th>
+                                <th>中国市场</th>
+                                <th>同比增长</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-semibold">保费总收入</td>
+                                <td class="exclusive-number">7.0万亿欧元</td>
+                                <td class="exclusive-number">5.7万亿元</td>
+                                <td class="text-emerald-400 font-bold">5.7%</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">人寿险保费</td>
+                                <td class="exclusive-number">2.9万亿欧元</td>
+                                <td>占市场主体</td>
+                                <td>稳健增长</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">赔付支出增速</td>
+                                <td>全球稳定</td>
+                                <td>H1 33.1%增长</td>
+                                <td class="text-red-400 font-bold">超预期增长</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="investment-logic-card">
+                <h4 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <i class="material-icons text-xl mr-3">info</i>
+                    结构性背离的深层含义
+                </h4>
+                <div class="noble-text">
+                    <p>这种赔付高增速与保费相对稳健增长的结构性背离，揭示了行业在承保端的潜在挑战。保费收入的增长主要受居民储蓄意愿增强以及部分长期储蓄型产品热销的驱动，客户寻求在低利率环境下锁定长期稳定收益。然而，上半年赔付支出的显著增长表明，尽管负债端仍在扩张，承保端却面临更高的赔付压力。这凸显了保险公司在平衡业务规模扩张与承保盈利之间的挑战，预示着承保盈利能力的潜在下滑，并强调了精细化运营和风险控制的重要性。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 第二章：负债端 -->
+    <section id="chapter-two" class="imperial-section" data-title="负债端：从粗放式增长到内涵式发展">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-5xl mb-16 text-center">负债端改革</h2>
+            <h3 class="sovereign-heading text-3xl mb-12 text-center">从粗放式增长到内涵式发展</h3>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <div class="authority-card">
+                    <h4 class="sovereign-heading text-lg mb-6 flex items-center">
+                        <i class="material-icons text-lg mr-2">account_balance</i>
+                        银保渠道
+                    </h4>
+                    <div class="noble-text space-y-3 text-sm">
+                        <p><strong class="text-imperial-gold">H1新单保费：</strong> 同比下降22%，下滑近2000亿元</p>
+                        <p><strong class="text-imperial-gold">政策影响：</strong> "报行合一"费用压缩导致销售人员收益下滑</p>
+                        <p><strong class="text-imperial-gold">头部表现：</strong> 中国人寿通过队伍专业化保持稳定</p>
+                    </div>
+                </div>
+
+                <div class="authority-card">
+                    <h4 class="sovereign-heading text-lg mb-6 flex items-center">
+                        <i class="material-icons text-lg mr-2">trending_up</i>
+                        经代渠道
+                    </h4>
+                    <div class="noble-text space-y-3 text-sm">
+                        <p><strong class="text-imperial-gold">市场占比：</strong> 行业总保费贡献率约5.6%</p>
+                        <p><strong class="text-imperial-gold">风险聚焦：</strong> 中小保险公司主销售渠道面临压力</p>
+                        <p><strong class="text-imperial-gold">趋势：</strong> 佣金下滑导致中小险企业务萎缩</p>
+                    </div>
+                </div>
+
+                <div class="authority-card">
+                    <h4 class="sovereign-heading text-lg mb-6 flex items-center">
+                        <i class="material-icons text-lg mr-2">people</i>
+                        个险渠道
+                    </h4>
+                    <div class="noble-text space-y-3 text-sm">
+                        <p><strong class="text-imperial-gold">市场占比：</strong> 贡献行业近一半的业务量</p>
+                        <p><strong class="text-imperial-gold">竞争逻辑：</strong> 从高佣金竞争转向产品与服务</p>
+                        <p><strong class="text-imperial-gold">头部优势：</strong> 品牌与产品差异化成为关键</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="authority-card mb-16">
+                <h4 class="sovereign-heading text-2xl mb-6">产品定价机制改革</h4>
+                <div class="noble-text space-y-4">
+                    <p><strong class="text-imperial-gold">监管新规（2024年）：</strong> 国家金融监督管理总局发布《关于健全人身保险产品定价机制的通知》，对普通型、分红型、万能型保险产品的预定利率上限分别下调至2.5%、2.0%和1.5%。</p>
+
+                    <p><strong class="text-imperial-gold">改革逻辑：</strong> 这是监管层应对低利率环境、防范系统性"利差损"风险的主动行为，将竞争从过去的"价格战"引向"价值战"。</p>
+
+                    <p><strong class="text-imperial-gold">公司影响：</strong> 虽然保费规模增速可能因价格上涨而受影响，但新业务的盈利质量却在显著提高。以中国平安为例，其寿险新业务价值在可比口径下同比增长28.8%，人均新业务价值大幅增长43.3%。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 第三章：资产端 -->
+    <section id="chapter-three" class="imperial-section" data-title="资产端：低利率环境下的投资困境与配置策略">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-5xl mb-16 text-center">资产端投资困境</h2>
+            <h3 class="sovereign-heading text-3xl mb-12 text-center">低利率环境下的配置策略</h3>
+
+            <div class="authority-card mb-16">
+                <h4 class="sovereign-heading text-2xl mb-8 flex items-center">
+                    <i class="material-icons text-xl mr-3">analytics</i>
+                    投资收益分析
+                </h4>
+                <div class="noble-text space-y-4 mb-8">
+                    <p>在持续的低利率环境下，保险公司的投资收益面临前所未有的挑战。2024年的投资收益数据显示一个显著的结构性问题：财务投资收益率与综合投资收益率的背离。</p>
+                </div>
+
+                <div class="overflow-x-auto">
+                    <table class="imperial-table">
+                        <thead>
+                            <tr>
+                                <th>指标</th>
+                                <th>行业整体</th>
+                                <th>人身险公司</th>
+                                <th>财产险公司</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-semibold">财务投资收益率</td>
+                                <td class="exclusive-number">3.43%</td>
+                                <td class="exclusive-number">3.48%</td>
+                                <td class="exclusive-number">3.05%</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">综合投资收益率</td>
+                                <td class="exclusive-number">7.21%</td>
+                                <td class="exclusive-number">7.45%</td>
+                                <td class="exclusive-number">5.51%</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">收益差异</td>
+                                <td class="text-amber-400 font-bold">+3.78%</td>
+                                <td class="text-amber-400 font-bold">+3.97%</td>
+                                <td class="text-amber-400 font-bold">+2.46%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="investment-logic-card">
+                <h4 class="sovereign-heading text-xl mb-4 flex items-center">
+                    <i class="material-icons text-lg mr-2">warning</i>
+                    背离的风险含义
+                </h4>
+                <div class="noble-text text-sm">
+                    <p>综合投资收益率的大幅提升，主要受益于股市反弹带来的公允价值变动收益，以及利率下行导致的债券浮盈。这种背离表明，综合投资收益率的靓丽表现掩盖了财务投资收益率承压的深层问题。当市场波动加剧时，这些浮盈可能迅速转化为浮亏，从而对当期利润和净资产造成冲击。这种不稳定的收益结构，易受市场波动影响，凸显了保险公司在追求长期投资回报上的挑战。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 第四章：监管与科技 -->
+    <section id="chapter-four" class="imperial-section" data-title="监管体系与科技赋能：构建行业新生态">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-5xl mb-16 text-center">监管与科技赋能</h2>
+            <h3 class="sovereign-heading text-3xl mb-12 text-center">构建行业新生态</h3>
+
+            <div class="grid md:grid-cols-2 gap-12 mb-16">
+                <div class="authority-card">
+                    <h4 class="sovereign-heading text-2xl mb-6 flex items-center">
+                        <i class="material-icons text-xl mr-3">security</i>
+                        偿付能力监管新规
+                    </h4>
+                    <div class="noble-text space-y-4">
+                        <p><strong class="text-imperial-gold">核心要求：</strong> 核心偿付能力充足率不低于50%、综合偿付能力充足率不低于100%、风险综合评级在B类及以上。</p>
+
+                        <p><strong class="text-imperial-gold">行业分化：</strong> 头部险企偿付能力稳健，部分中小险企面临较大的资本补充压力。</p>
+
+                        <p><strong class="text-imperial-gold">优胜劣汰：</strong> 严格的资本要求促使行业内部分化加剧，资本雄厚的头部险企更具竞争优势。</p>
+                    </div>
+                </div>
+
+                <div class="authority-card">
+                    <h4 class="sovereign-heading text-2xl mb-6 flex items-center">
+                        <i class="material-icons text-xl mr-3">computer</i>
+                        科技赋能保险(InsurTech)
+                    </h4>
+                    <div class="noble-text space-y-4">
+                        <p><strong class="text-imperial-gold">承保定价：</strong> AI、大数据实现"千人千面"的精准定价和个性化服务。</p>
+
+                        <p><strong class="text-imperial-gold">理赔风控：</strong> 自动化核实、反欺诈能力显著降低运营成本和赔付风险。</p>
+
+                        <p><strong class="text-imperial-gold">人均产能：</strong> 智能投顾赋能销售队伍，头部险企人均新业务价值增长超40%。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 第五章：竞争格局 -->
+    <section id="chapter-five" class="imperial-section" data-title="竞争格局与核心险企深度分析">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-5xl mb-16 text-center">竞争格局与核心险企</h2>
+            <h3 class="sovereign-heading text-3xl mb-12 text-center">行业分化与价值重估</h3>
+
+            <div class="authority-card mb-16">
+                <h4 class="sovereign-heading text-2xl mb-12 text-center">核心上市险企关键指标</h4>
+                <div class="overflow-x-auto">
+                    <table class="imperial-table">
+                        <thead>
+                            <tr>
+                                <th>公司</th>
+                                <th>归母净利润（亿元）</th>
+                                <th>NBV同比增长</th>
+                                <th>代理人数量</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-semibold">中国平安</td>
+                                <td class="exclusive-number">1266</td>
+                                <td class="text-emerald-400 font-bold">+28.8%</td>
+                                <td class="exclusive-number">36.3万人</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">中国人寿</td>
+                                <td class="exclusive-number">1069.35</td>
+                                <td class="text-emerald-400 font-bold">+24.3%</td>
+                                <td class="exclusive-number">61.5万人</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">中国太保</td>
+                                <td class="exclusive-number">449.6</td>
+                                <td class="text-emerald-400 font-bold">+20.9%</td>
+                                <td>业界领先</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="mt-8 noble-text space-y-4">
+                    <p><strong class="text-imperial-gold">头部公司的护城河：</strong> 中国平安、中国人寿等已入选《财富》世界500强，显示出头部险企的强大实力。它们的优势在于多重维度（渠道、产品、资本、科技、品牌）的综合实力。</p>
+
+                    <p><strong class="text-imperial-gold">中小险企的突围：</strong> 面对头部公司的多维碾压，中小险企的突围路径在于差异化和专业化，如聚焦健康险、借助技术平台降本增效等。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 第六章：估值与展望 -->
+    <section id="chapter-six" class="imperial-section" data-title="估值逻辑与投资展望">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-5xl mb-16 text-center">估值逻辑与投资展望</h2>
+
+            <div class="investment-logic-card mb-16">
+                <h4 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <i class="material-icons text-xl mr-3">trending_up</i>
+                    P/EV估值框架与行业认知滞后
+                </h4>
+                <div class="noble-text space-y-4">
+                    <p><strong class="text-imperial-gold">估值方法：</strong> P/EV估值法通常适用于无形资产占比较高的企业如保险公司。其理论基础是"市值/内含价值≥1"。</p>
+
+                    <p><strong class="text-imperial-gold">市场现象：</strong> 中国保险公司长期以来估值偏低，P/EV普遍低于1，这反映了市场对其核心业务价值和长期投资回报的担忧。</p>
+
+                    <p><strong class="text-imperial-gold">投资机遇：</strong> 这种估值折价，在一定程度上反映了市场情绪和认知滞后，而非公司基本面的全面恶化。当市场情绪修复或基本面改善得到验证时，估值有望迎来"戴维斯双击"。</p>
+                </div>
+            </div>
+
+            <div class="authority-card">
+                <h4 class="sovereign-heading text-2xl mb-6 flex items-center">
+                    <i class="material-icons text-xl mr-3">visibility</i>
+                    长期展望与结构性机会
+                </h4>
+                <div class="noble-text space-y-4">
+                    <p><strong class="text-imperial-gold">结构性机会：</strong> 人口老龄化、居民财富增长和健康意识提升为养老、健康保险市场提供了长期增长空间。</p>
+
+                    <p><strong class="text-imperial-gold">潜在风险：</strong> 长期利率持续下行导致的"利差损"风险、全球市场波动对投资收益的影响、以及技术颠覆带来的新挑战。</p>
+
+                    <p><strong class="text-imperial-gold">价值重估：</strong> 在这一历史性转型中，具备强大综合实力、持续深化改革并有效利用科技赋能的头部险企，将率先迎来价值修复，并有望成为新周期下的投资首选。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sovereign-divider"></div>
+
+    <!-- 引用文献 -->
+    <section class="imperial-section bg-gradient-to-b from-transparent to-black bg-opacity-30">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl mb-12 text-center">引用文献</h2>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl mx-auto">
+                <div class="citation-item">
+                    <a href="https://www.yicai.com/news/102703711.html" target="_blank">
+                        1. 中国保险市场增速领跑亚洲
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.51ldb.com/shsldb/cj/content/0197ef334155c0010000d7c90f012edc.htm" target="_blank">
+                        2. 中国2024年总保费收入7540亿欧元
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.iachina.cn/art/2025/4/27/art_22_108350.html" target="_blank">
+                        3. 中国保险业2024年十件大事
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="http://www.news.cn/20250202/49e4044c7624499a834379a4b63254df/c.html" target="_blank">
+                        4. 保险业2024年原保险保费收入
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://jrj.wuhan.gov.cn/ztzl_57/xyrd/bxy/202502/t20250207_2529699.shtml" target="_blank">
+                        5. 保险业2024年成绩单
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://news.cnstock.com/news,bwkx-202401-5184432.htm" target="_blank">
+                        6. 新发展新趋势保险竞争力排行
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.lhratings.com/file/fc775571c7b.pdf" target="_blank">
+                        7. 2024年保险行业分析
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.fitchbohua.cn/sites/default/files/2024-01/liluxiaxingtuishengshouxiangongsilichasunfengxian.pdf" target="_blank">
+                        8. 利率下行推升寿险利差损
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://pdf.dfcfw.com/pdf/H3_AP202503021643657900_1.pdf" target="_blank">
+                        9. 低利率下保险业困境
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://econ.pku.edu.cn/ccissr/bdbxpl/376615.htm" target="_blank">
+                        10. 低利率风险转移研究
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="http://www.news.cn/20250113/998b380ac7164b4fa41720ea9f82ba98/c.html" target="_blank">
+                        11. 人身险预定利率动态调整
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.cf40.org.cn/article/1/28896" target="_blank">
+                        12. 低利率保险高质量发展
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://sichuan.scol.com.cn/ggxw/202408/82586345.html" target="_blank">
+                        13. 保险产品定价机制变革
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="http://paper.ce.cn/pad/content/202408/29/content_300172.html" target="_blank">
+                        14. 人身险回归服务属性
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.dehenglaw.com/CN/tansuocontent/0008/032691/7.aspx" target="_blank">
+                        15. 保险行业监管回顾展望
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.gov.cn/gongbao/2023/issue_10826/202311/content_6915815.html" target="_blank">
+                        16. 保险销售行为管理办法
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.stcn.com/article/detail/1663651.html" target="_blank">
+                        17. 人身险负面清单扩容
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://m.21jingji.com/article/20240123/herald/dbdd849f8e4407a58bd710fb7ac65bd5_zaker.html" target="_blank">
+                        18. 报行合一银保合作方向
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://news.cnstock.com/news,bwkx-202401-5184432.htm" target="_blank">
+                        19. 三大销售渠道成本分析
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.21jingji.com/article/20250213/84eafd2ece50bc76306f527a18251363.html" target="_blank">
+                        20. 2024上市险企保费大比拼
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.jl.chinanews.com.cn/jrcy/2025-03-27/248894.html" target="_blank">
+                        21. 中国人寿2024年业绩公布
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://pdf.dfcfw.com/pdf/H3_AP202503271648232248_1.pdf" target="_blank">
+                        22. 中国人寿年报点评
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.21jingji.com/article/20240531/herald/99b012ce7b02fe00b1d925a18de8fac7.html" target="_blank">
+                        23. 经代渠道报行合一
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.gov.cn/zhengce/2021-01/25/content_5725857.htm" target="_blank">
+                        24. 偿付能力管理规定
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://jrj.wuhan.gov.cn/ztzl_57/xyrd/bxy/202411/t20241118_2485941.shtml" target="_blank">
+                        25. 保险业发展六大趋势
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="http://m.ce.cn/xpl/202507/t20250730_2424585.shtml" target="_blank">
+                        26. 理性看待预定利率下调
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.stcn.com/article/detail/2788972.html" target="_blank">
+                        27. 人身险利率变化分析
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://pdf.dfcfw.com/pdf/H3_AP202503201645150084_1.pdf" target="_blank">
+                        28. 中国平安年报点评
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://m.mp.oeeee.com/a/BAAFRD000020230118758541.html" target="_blank">
+                        29. 人口变化与养老需求
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="http://www.stcn.com/article/detail/1078684.html" target="_blank">
+                        30. 养老金资产规模预测
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://pdf.dfcfw.com/pdf/H3_AP202401221617916084_1.pdf" target="_blank">
+                        31. 2023中国保险行业概览
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://stcn.com/article/detail/1309260.html" target="_blank">
+                        32. 头部保险新业务价值增长
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="http://www.news.cn/money/20250206/b9c92475b1424a6a9ee2328cd240300d/c.html" target="_blank">
+                        33. 健康险市场增长数据
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://property.picc.com/tzzgx/gstj/202403/P020240326638730122016.pdf" target="_blank">
+                        34. 财产险2023年业绩
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.21jingji.com/article/20250217/herald/e1750bdaa304290f65de06879db8907b.html" target="_blank">
+                        35. 财产险分化加剧分析
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.stcn.com/article/detail/1577018.html" target="_blank">
+                        36. 财险综合成本率分析
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://wap.eastmoney.com/a/202502223326748992.html" target="_blank">
+                        37. 险资2024年业绩出炉
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://cj.sina.cn/articles/view/1872005590/6f9489d6019017xvs" target="_blank">
+                        38. 险资投向领域分析
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://pdf.dfcfw.com/pdf/H301_AP202303281584606985_1.pdf" target="_blank">
+                        39. 海外保险资管经验
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://news.cnstock.com/news,jg-202307-5090561.htm" target="_blank">
+                        40. 资产负债管理匹配
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://econ.pku.edu.cn/ccissr/bdbxpl/308899.htm" target="_blank">
+                        41. 寿险利润影响因素
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="http://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/CNSESZ_STOCK/2025/2025-3/2025-03-15/10785628.PDF" target="_blank">
+                        42. 平安银行年度报告
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.sem.tsinghua.edu.cn/2024nianzhongguobaoxianyezhuliguojiazhanlveshengtaiquanjiansheyanjiubaogao.pdf" target="_blank">
+                        43. 保险业助力国家战略
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="http://www.news.cn/20250527/7ace1bb9859f4d9db9021be6a7906274/c.html" target="_blank">
+                        44. 风险综合评级分析
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.pwccn.com/zh/insurance/high-quality-development-small-medium-sized-life-oct2023.pdf" target="_blank">
+                        45. 中小寿险高质量发展
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://sfi.cuhk.edu.cn/zh-hans/node/8445" target="_blank">
+                        46. 大数据在保险行业应用
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.ibm.com/cn-zh/think/topics/ai-in-insurance" target="_blank">
+                        47. 保险业中的AI应用
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.aia.com.hk/zh-hk/health-and-wellness/healthy-living-with-aia/healthy-finances/ai-insurance" target="_blank">
+                        48. AI智能改寫保險業
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.nda.gov.cn/sjj/zhuanti/ztsjysx/ds/0208/20250208130907874623884_pc.html" target="_blank">
+                        49. 数据要素金融服务案例
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.cls.cn/detail/1704034" target="_blank">
+                        50. 券商IT投入分析
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.ey.com/content/dam/ey-unified-site/ey-com/en-cn/insights/insurance/documents/ey-gl-global-insurance-outlook-01-2025-zh.pdf" target="_blank">
+                        51. 2025年全球保险业展望
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.deloitte.com/cn/zh/Industries/insurance/perspectives/2025-insurance-industry-outlook.html" target="_blank">
+                        52. 德勤2025年保险展望
+                    </a>
+                </div>
+                <div class="citation-item">
+                    <a href="https://www.21jingji.com/article/20240807/herald/b262ea88c096df62a7392d0093bf3b21.html" target="_blank">
+                        53. 保险企业世界500强排名
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        // 精美垂直进度条系统（支持悬停显示标题 + 点击跳转）
+        const progressBar = document.querySelector('.reading-progress');
+        const progressFill = document.querySelector('.reading-progress-fill');
+        const progressTooltip = document.getElementById('progress-tooltip');
+        const sections = document.querySelectorAll('section[id], header[id]');
+
+        let currentSectionTitle = '';
+        let sectionsData = [];
+
+        // 初始化章节数据
+        function initSections() {
+            sectionsData = Array.from(sections).map(section => ({
+                id: section.getAttribute('id'),
+                title: section.getAttribute('data-title') || section.querySelector('h1, h2')?.textContent || '未知章节',
+                offsetTop: section.offsetTop,
+                offsetHeight: section.offsetHeight
+            }));
+        }
+
+        function updateProgress() {
+            const scrolled = window.pageYOffset;
+            const maxHeight = document.body.scrollHeight - window.innerHeight;
+            const progress = (scrolled / maxHeight) * 100;
+
+            // 更新垂直进度条填充高度
+            progressFill.style.height = `${progress}%`;
+
+            // 获取当前章节
+            let currentSection = '';
+            sectionsData.forEach(section => {
+                if (scrolled >= section.offsetTop - 300) {
+                    currentSection = section.id;
+                    currentSectionTitle = section.title;
+                }
+            });
+        }
+
+        // 点击进度条跳转到对应位置
+        progressBar.addEventListener('click', (e) => {
+            const rect = progressBar.getBoundingClientRect();
+            const clickY = e.clientY - rect.top;
+            const progressHeight = rect.height;
+            const clickPercent = clickY / progressHeight;
+
+            const maxHeight = document.body.scrollHeight - window.innerHeight;
+            const targetScroll = maxHeight * clickPercent;
+
+            window.scrollTo({
+                top: targetScroll,
+                behavior: 'smooth'
+            });
+        });
+
+        // 鼠标悬停显示当前章节标题
+        progressBar.addEventListener('mouseenter', () => {
+            if (currentSectionTitle) {
+                progressTooltip.textContent = currentSectionTitle;
+                progressTooltip.classList.add('show');
+            }
+        });
+
+        progressBar.addEventListener('mouseleave', () => {
+            progressTooltip.classList.remove('show');
+        });
+
+        // 提示框悬停保持显示
+        progressTooltip.addEventListener('mouseenter', () => {
+            progressTooltip.classList.add('show');
+        });
+
+        progressTooltip.addEventListener('mouseleave', () => {
+            progressTooltip.classList.remove('show');
+        });
+
+        // 窗口大小改变时重新计算章节位置
+        window.addEventListener('resize', () => {
+            setTimeout(initSections, 100);
+        });
+
+        window.addEventListener('scroll', updateProgress);
+
+        // 页面加载完成后初始化
+        window.addEventListener('load', () => {
+            initSections();
+            updateProgress();
+        });
+
+        // 日期显示
+        document.addEventListener('DOMContentLoaded', () => {
+            const now = new Date();
+
+            // 计算季度
+            const month = now.getMonth();
+            const quarter = Math.floor(month / 3) + 1;
+            const year = now.getFullYear();
+
+            const dateCN = `${year}年Q${quarter}`;
+            const dateEN = `Q${quarter} ${year}`;
+
+            document.getElementById('date-cn').textContent = dateCN;
+            document.getElementById('date-en').textContent = dateEN;
+        });
+
+        // 优雅的页面加载动画
+        document.addEventListener('DOMContentLoaded', () => {
+            document.body.style.opacity = '0';
+            document.body.style.transition = 'opacity 1s ease';
+
+            setTimeout(() => {
+                document.body.style.opacity = '1';
+            }, 100);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新硅缘地缘政治：洞悉半导体材料与设备的结构性变局</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700;800;900&family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        :root {
+            --obsidian-black: #0A0A0A;
+            --midnight-black: #151515;
+            --shadow-black: #1F1F1F;
+            --charcoal-deep: #2A2A2A;
+            --sovereign-gold: #B8860B;
+            --imperial-gold: #DAA520;
+            --aureate-whisper: #F4E4BC;
+            --golden-shadow: #8B6914;
+            --platinum-mist: #E5E5E5;
+            --sterling-silver: #C0C0C0;
+            --graphite-steel: #696969;
+            --charcoal-whisper: #808080;
+            --ruby-accent: #8B0000;
+            --emerald-depth: #006400;
+            --sapphire-authority: #1e3a8a;
+        }
+        * {margin: 0; padding: 0; box-sizing: border-box;}
+        body {font-family: 'Inter', sans-serif; background: linear-gradient(135deg, var(--obsidian-black) 0%, var(--midnight-black) 40%, var(--shadow-black) 100%); color: var(--platinum-mist); line-height: 1.8; letter-spacing: 0.02em; overflow-x: hidden; min-height: 100vh;}
+        .imperial-title {font-family: 'Playfair Display', serif; font-weight: 200; letter-spacing: 0.12em; line-height: 1.05; color: var(--aureate-whisper); text-shadow: 0 3px 12px rgba(184, 134, 11, 0.4);}
+        .imperial-subtitle {font-family: 'Playfair Display', serif; font-weight: 300; letter-spacing: 0.08em; line-height: 1.15; color: var(--imperial-gold); text-shadow: 0 2px 8px rgba(218, 165, 32, 0.3);}
+        .imperial-tagline {font-family: 'Inter', sans-serif; font-weight: 200; letter-spacing: 0.06em; line-height: 1.4; color: var(--sterling-silver); font-style: italic;}
+        .imperial-dedication {font-family: 'Inter', sans-serif; font-weight: 300; letter-spacing: 0.04em; line-height: 1.3; color: var(--imperial-gold);}
+        .imperial-dedication-sub {font-family: 'Inter', sans-serif; font-weight: 200; letter-spacing: 0.05em; line-height: 1.3; color: var(--sterling-silver); font-style: italic;}
+        .sovereign-heading {font-family: 'Playfair Display', serif; font-weight: 600; letter-spacing: 0.06em; color: var(--imperial-gold); text-shadow: 0 1px 4px rgba(218, 165, 32, 0.4);}
+        .noble-text {font-weight: 300; letter-spacing: 0.03em; line-height: 2.2; color: var(--platinum-mist);}
+        .exclusive-number {font-family: 'Playfair Display', serif; font-weight: 700; color: var(--sovereign-gold); text-shadow: 0 1px 3px rgba(184, 134, 11, 0.5);}
+        .sovereign-container {max-width: 1400px; margin: 0 auto; padding: 0 5rem;}
+        .imperial-section {margin: 12rem 0; position: relative;}
+        .golden-glass-card {background: radial-gradient(circle at 30% 30%, rgba(218, 165, 32, 0.12) 0%, transparent 50%), linear-gradient(135deg, rgba(244, 228, 188, 0.06) 0%, rgba(218, 165, 32, 0.04) 30%, rgba(184, 134, 11, 0.03) 70%); border: 1px solid rgba(218, 165, 32, 0.15); border-radius: 4px; padding: 2.5rem; position: relative; backdrop-filter: blur(20px); box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6), inset 0 1px 1px rgba(244, 228, 188, 0.08);}
+        .authority-card {background: linear-gradient(145deg, rgba(21, 21, 21, 0.9) 0%, rgba(31, 31, 31, 0.8) 100%); border: 1px solid rgba(184, 134, 11, 0.15); border-radius: 2px; padding: 3rem; position: relative; backdrop-filter: blur(20px); box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6), inset 0 1px 1px rgba(244, 228, 188, 0.05);}
+        .investment-logic-card {background: radial-gradient(circle at 20% 80%, rgba(218, 165, 32, 0.08) 0%, transparent 60%), linear-gradient(135deg, rgba(184, 134, 11, 0.06) 0%, rgba(139, 105, 20, 0.04) 50%); border: 1px solid rgba(184, 134, 11, 0.12); border-radius: 2px; padding: 3rem; position: relative; backdrop-filter: blur(20px); box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6), inset 0 1px 1px rgba(244, 228, 188, 0.06);}
+        .imperial-table {width: 100%; border-collapse: separate; border-spacing: 0; background: rgba(15, 15, 15, 0.8); backdrop-filter: blur(15px); border: 1px solid rgba(184, 134, 11, 0.2); border-radius: 2px;}
+        .imperial-table th {background: rgba(184, 134, 11, 0.08); padding: 2rem 1.5rem; text-align: left; font-family: 'Playfair Display', serif; font-weight: 600; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--imperial-gold); border-bottom: 1px solid rgba(184, 134, 11, 0.2);}
+        .imperial-table td {padding: 1.8rem 1.5rem; border-bottom: 1px solid rgba(184, 134, 11, 0.05); font-weight: 300;}
+        .sovereign-divider {height: 1px; background: linear-gradient(90deg, transparent 0%, rgba(184, 134, 11, 0.3) 30%, rgba(184, 134, 11, 0.6) 50%, rgba(184, 134, 11, 0.3) 70%, transparent 100%); margin: 8rem 0; position: relative;}
+        .sovereign-divider::before {content: '◆'; position: absolute; top: -8px; left: 50%; transform: translateX(-50%); color: var(--sovereign-gold); font-size: 16px; background: var(--obsidian-black); padding: 0 1rem;}
+        .reading-progress {position: fixed; top: 50%; right: 2rem; width: 4px; height: 200px; transform: translateY(-50%); background: linear-gradient(180deg, rgba(184, 134, 11, 0.2) 0%, rgba(218, 165, 32, 0.3) 30%, rgba(244, 228, 188, 0.4) 60%, rgba(218, 165, 32, 0.3) 85%, rgba(139, 105, 20, 0.2) 100%); z-index: 1001; box-shadow: 0 0 12px rgba(184, 134, 11, 0.6), 2px 0 8px rgba(184, 134, 11, 0.3), inset 1px 0 2px rgba(244, 228, 188, 0.4); border-radius: 2px; cursor: pointer;}
+        .reading-progress-fill {position: absolute; bottom: 0; left: 0; width: 100%; background: linear-gradient(180deg, var(--golden-shadow) 0%, var(--sovereign-gold) 50%, var(--imperial-gold) 100%); border-radius: 2px; transition: height 0.1s ease; box-shadow: inset 0 1px 2px rgba(244, 228, 188, 0.3), 0 0 8px rgba(184, 134, 11, 0.4);}
+        .progress-tooltip {position: fixed; top: 50%; right: 7rem; transform: translateY(-50%); background: linear-gradient(135deg, rgba(15, 15, 15, 0.95) 0%, rgba(31, 31, 31, 0.9) 100%); border: 1px solid rgba(184, 134, 11, 0.25); border-radius: 8px; padding: 0.8rem 2rem; font-family: 'Playfair Display', serif; font-size: 0.85rem; font-weight: 300; color: var(--imperial-gold); backdrop-filter: blur(20px); box-shadow: 0 8px 32px rgba(0, 0, 0, 0.7), 0 0 20px rgba(184, 134, 11, 0.1); opacity: 0; visibility: hidden; transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1); z-index: 1002; white-space: nowrap; letter-spacing: 0.03em;}
+        .progress-tooltip.show {opacity: 1; visibility: visible; transform: translateY(-50%) translateX(-8px);}
+        .citation-item {padding: 1.5rem 2rem; margin: 0.8rem 0; background: linear-gradient(135deg, rgba(21, 21, 21, 0.8) 0%, rgba(31, 31, 31, 0.6) 100%); border: 1px solid rgba(184, 134, 11, 0.15); border-radius: 3px; transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1); position: relative; overflow: hidden;}
+        .citation-item a {color: var(--platinum-mist); text-decoration: none; font-size: 0.85rem; line-height: 1.7; font-weight: 300; transition: color 0.4s ease; display: block; position: relative;}
+        .citation-item:hover a {color: var(--aureate-whisper); padding-left: 1rem;}
+        @media (max-width: 768px) {
+            .sovereign-container {padding: 0 1.5rem;}
+            .imperial-section {margin: 6rem 0;}
+        }
+        ::selection {background: rgba(184, 134, 11, 0.2); color: var(--aureate-whisper);}
+        ::-webkit-scrollbar {width: 6px;}
+        ::-webkit-scrollbar-track {background: var(--obsidian-black);}
+        ::-webkit-scrollbar-thumb {background: var(--sovereign-gold); border-radius: 3px;}
+    </style>
+</head>
+<body>
+    <div class="reading-progress"><div class="reading-progress-fill"></div></div>
+    <div class="progress-tooltip" id="progress-tooltip"></div>
+    <header id="header" class="min-h-screen flex items-center justify-center relative" data-title="新硅缘地缘政治：洞悉半导体材料与设备的结构性变局">
+        <div class="sovereign-container text-center relative z-10">
+            <div class="mb-16">
+                <h1 class="imperial-title text-5xl md:text-7xl mb-6">新硅缘地缘政治：洞悉半导体材料与设备的结构性变局</h1>
+                <h2 class="imperial-subtitle text-2xl md:text-4xl mb-12 opacity-90">2025年Q4深度投研分析</h2>
+            </div>
+            <div class="mb-12">
+                <div class="imperial-tagline text-sm md:text-base opacity-75 max-w-4xl mx-auto">Semiconductor Materials and Equipment: Paradigm Shift in Geopolitics<br class="md:hidden">Deep Investment Research Analysis in Q4 2025</div>
+            </div>
+            <div class="mb-16">
+                <div class="imperial-dedication text-sm md:text-base">致：机构投资者与高净值客户</div>
+                <div class="imperial-dedication-sub text-xs md:text-sm opacity-60 mt-2">For: Institutional Investors and High Net Worth Clients</div>
+            </div>
+            <div class="golden-glass-card inline-block">
+                <div class="text-xs uppercase tracking-[0.2em] opacity-50 mb-4 font-light">本报告发布于 · Published on</div>
+                <div class="sovereign-heading text-base"><span id="date-cn" class="exclusive-number">2025年Q4</span><span class="mx-4 text-sovereign-gold opacity-40">◆</span><span id="date-en" class="exclusive-number">Q4 2025</span></div>
+            </div>
+        </div>
+    </header>
+    <section class="imperial-section">
+        <div class="sovereign-container">
+            <div class="authority-card text-center">
+                <h2 class="sovereign-heading text-2xl mb-8">免责声明</h2>
+                <div class="noble-text max-w-4xl mx-auto">本报告由资深行业分析师半导体材料与设备研究部编制，旨在为机构投资者与高净值客户提供关于半导体材料与设备行业的系统性认知框架。报告中的信息和数据均来源于公开可查的资料，我们力求报告内容的客观、准确，但不对其完整性或准确性做出任何保证。本报告中的分析、结论和观点仅为研究目的，不构成任何形式的投资建议。投资者应基于自身的独立判断进行投资决策，并自行承担相关风险。</div>
+            </div>
+        </div>
+    </section>
+    <div class="sovereign-divider"></div>
+    <section id="executive-summary" class="imperial-section" data-title="执行摘要">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-5xl mb-16 text-center">执行摘要</h2>
+            <div class="authority-card mb-16">
+                <h3 class="sovereign-heading text-2xl mb-6">2024年的反弹与人工智能驱动的超级周期</h3>
+                <div class="noble-text space-y-6">
+                    <p>半导体行业在经历了2023年的周期性下滑后，于2024年进入了强劲的复苏阶段。根据半导体产业协会（SIA）的数据，全球半导体市场总额增长了19.1%，达到了创纪录的6276亿美元。此次反弹不仅是周期性的，其结构性增长动力更源于人工智能（AI）需求的爆发式增长，这一因素正在从根本上重塑资本配置、技术路线图及整个价值链。根据国际半导体产业协会（SEMI）的报告，2024年全球半导体设备市场销售额增长10%，创下1171亿美元的历史新高，而半导体材料市场则增长3.8%，达到675亿美元，标志着全行业的广泛复苏。</p>
+                </div>
+            </div>
+            <div class="authority-card mb-16">
+                <h3 class="sovereign-heading text-2xl mb-6">核心发现：转型的三大支柱</h3>
+                <div class="noble-text space-y-6">
+                    <p>本报告识别出三大力量正在从根本上重塑半导体材料与设备行业：</p>
+                    <p><strong>1. 结构性需求驱动力：</strong> 人工智能、汽车电动化与智能化以及5G通信已不再是周期性趋势，而是演变为对高性能和专用半导体的永久性、结构性需求驱动力。这些终端应用正在以前所未有的规模和速度拉动对上游材料与设备的资本开支。</p>
+                    <p><strong>2. 技术拐点：</strong> 摩尔定律的物理极限正迫使行业向新的范式转变，包括新的晶体管架构（GAA）、先进光刻技术（High-NA EUV）、复杂封装（CoWoS、Foveros）以及新型材料（SiC、GaN）。这些技术拐点正在创造新的产业瓶颈和价值捕获机会，决定了未来十年的技术领导权归属。</p>
+                    <p><strong>3. 地缘政治重构：</strong> 一个由美国、中国和欧盟构成的"三极"半导体世界格局正在形成。各国激进的产业政策（如《CHIPS法案》、"国家大基金"）和战略性脱钩（如出口管制）正在割裂曾经全球化的供应链，催生出独特的区域性产业生态系统。</p>
+                </div>
+            </div>
+            <div class="investment-logic-card">
+                <h3 class="sovereign-heading text-2xl mb-6">核心投资逻辑</h3>
+                <div class="noble-text">
+                    <p>我们认为，长期的价值创造将集中于以下三类企业：（1）在新技术路线图中不可或缺的"卡脖子"环节供应商，例如EUV光刻、先进刻蚀与沉积设备领域的领导者；（2）支撑下一代芯片性能的关键材料供应商，例如先进光刻胶、碳化硅（SiC）衬底等领域的龙头企业；（3）在地缘政治保护的生态系统内，受益于国产化替代浪潮的本土冠军企业，尤其是在中国市场。在行业周期性加剧和地缘政治风险升高的背景下，投资者应聚焦于这些具备结构性增长动能的赢家。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="sovereign-divider"></div>
+    <section id="chapter-one" class="imperial-section" data-title="第二章：半导体产业剖析">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-5xl mb-16 text-center">第二章：半导体产业剖析：价值链、周期与宏观展望</h2>
+            <div class="authority-card mb-16">
+                <h3 class="sovereign-heading text-2xl mb-6">解构全球价值链：从沙粒到系统</h3>
+                <div class="noble-text space-y-6">
+                    <p>半导体价值链是一个高度专业化、地理上分散且紧密相连的全球生态系统，这使得任何单一国家几乎不可能建立一个完全自给自足的完整产业链。正是这种全球一体化，使得芯片的最终成本相比完全本地化的供应链降低了35%至65%，从而推动了技术的广泛应用。这个复杂的链条可以大致分为四个核心阶段：</p>
+                    <p><strong>上游（研发、设计与EDA）：</strong> 此阶段是创新的源头，主要由美国主导，其芯片设计市场份额高达50.2%。它涵盖了电子设计自动化（EDA）软件（主要供应商为Cadence、Synopsys）和IP核（ARM是核心参与者）。这一环节是整个价值链中研发投入最为密集的部分，决定了芯片的性能蓝图。</p>
+                    <p><strong>中游（材料与设备）：</strong> 这是本报告的核心研究领域。它涉及硅晶圆、光刻胶、特种气体等原材料的供应，以及用于芯片制造的复杂设备的生产。这一领域的技术领导权主要集中在美国、日本和欧洲（尤其是荷兰）。</p>
+                    <p><strong>核心制造（晶圆制造）：</strong> 这是资本最为密集的阶段，目前由中国台湾（台积电）和韩国（三星、SK海力士）主导。此阶段的商业模式分为两种：一是集设计、制造于一体的整合元件制造商（IDM），如英特尔和三星；二是专注于代工生产的纯晶圆代工厂（Pure-play Foundry），如台积电。</p>
+                    <p><strong>下游（封装、测试与组装）：</strong> 这是制造的最后环节，涉及将晶圆切割成独立的芯片并进行封装保护和功能测试。该环节的产能地理上高度集中于中国台湾、中国大陆和东南亚地区。主要参与者是外包半导体封测（OSAT）厂商，如日月光（ASE）和安靠（Amkor）。</p>
+                </div>
+            </div>
+            <div class="authority-card mb-16">
+                <h3 class="sovereign-heading text-2xl mb-6">解码产业周期：收入、资本支出与库存的联动分析</h3>
+                <div class="noble-text space-y-6">
+                    <p>半导体行业以其显著的周期性而闻名，在过去34年中经历了九次衰退。这些周期的根本驱动力在于，资本支出驱动的产能扩张具有较长的交付周期，而终端市场的需求却波动频繁，两者之间的错配导致了库存的累积与去化，从而引发行业景气度的循环。2023年的行业下行便是典型的周期性调整，全球销售额下降9.4%至5200亿美元。</p>
+                    <p>当前，传统的库存与资本支出周期正被两个更为强大的新周期所叠加和扭曲：一个是地缘政治与产业政策周期，另一个是技术驱动的人工智能周期。这种"叠加周期"结构正在重塑行业的运行规律。地缘政治周期正在改变资本支出的决策逻辑。如今的资本支出不再仅仅依据市场需求预测，而是越来越多地受到国家安全指令的驱动。美国和欧盟的《CHIPS法案》以及中国的"国家大基金"，都在推动地理上可能并非最优效但政治上必需的晶圆厂建设。</p>
+                </div>
+            </div>
+            <div class="authority-card">
+                <h3 class="sovereign-heading text-2xl mb-6">全球半导体市场展望</h3>
+                <div class="noble-text space-y-6">
+                    <p>在经历了2023年的收缩后，全球半导体市场于2024年强劲反弹，销售额同比增长19.1%，达到6276亿美元。各大分析机构对2025年的市场前景普遍持乐观态度，预测将实现两位数的增长。Gartner预测市场将增长13.8%，达到7170亿美元。从长期来看，行业普遍共识是全球半导体市场规模将在2030年前超过1万亿美元。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="sovereign-divider"></div>
+    <section id="chapter-two" class="imperial-section" data-title="第三章：产业赋能者">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-5xl mb-16 text-center">第三章：产业赋能者 - 半导体设备市场深度解析</h2>
+            <div class="authority-card mb-16">
+                <h3 class="sovereign-heading text-2xl mb-6">全球市场格局：规模、增长与区域资本支出</h3>
+                <div class="noble-text space-y-6">
+                    <p>全球半导体设备市场在2023年经历了短暂回调，销售额从2022年的高点下滑至1063亿美元，但很快在2024年强劲反弹10%，创下1171亿美元的历史新高。从地理分布来看，设备市场高度集中。2024年，中国大陆、韩国和中国台湾三大市场合计占据了全球74%的份额。</p>
+                    <p><strong>中国大陆：</strong> 凭借积极的国家主导的产能扩张计划，特别是在成熟制程领域，中国大陆已巩固其全球最大半导体设备市场的地位。2024年，其设备支出同比飙升35%，达到496亿美元，成为全球增长的主要引擎。</p>
+                    <p><strong>韩国：</strong> 作为全球第二大市场，2024年设备支出达到205亿美元，同比增长3%。这一增长主要得益于存储器市场的企稳回升以及对高带宽内存（HBM）制造设备的强劲需求。</p>
+                    <p><strong>中国台湾：</strong> 位列第三大市场。在经历了连续四年的增长后，其设备支出在2023年收缩了27%，降至196亿美元。</p>
+                    <p><strong>北美、欧洲与日本：</strong> 北美在《CHIPS法案》的激励下增长14%至137亿美元；欧洲下降25%至49亿美元；日本下滑1%至78亿美元。</p>
+                </div>
+            </div>
+            <div class="authority-card mb-16">
+                <h3 class="sovereign-heading text-2xl mb-6">前道与后道：细分市场深度剖析</h3>
+                <div class="noble-text space-y-6">
+                    <p>半导体设备市场主要分为前道（Front-End）和后道（Back-End）两大环节。前道设备，即晶圆制造设备，占据了市场的绝大部分份额。2023年，其市场占比超过72.5%。后道设备，包括封装、组装和测试设备，在经历了连续两年的下滑后，于2024年迎来了强劲复苏。其中，组装与封装设备销售额大幅增长25%，测试设备销售额增长20%。这一复苏趋势与人工智能和HBM制造的复杂性急剧增加直接相关。</p>
+                </div>
+            </div>
+            <div class="authority-card">
+                <h3 class="sovereign-heading text-2xl mb-8 text-center">表1：全球领先半导体设备公司财务业绩对比</h3>
+                <div class="overflow-x-auto">
+                    <table class="imperial-table">
+                        <thead>
+                            <tr>
+                                <th>公司</th>
+                                <th>总收入 (十亿美元)</th>
+                                <th>收入增长</th>
+                                <th>毛利率</th>
+                                <th>研发占比</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-semibold">ASML</td>
+                                <td class="exclusive-number">28.3</td>
+                                <td class="exclusive-number">0.0%</td>
+                                <td class="exclusive-number">51.3%</td>
+                                <td class="exclusive-number">15.2%</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">Applied Materials</td>
+                                <td class="exclusive-number">26.5</td>
+                                <td class="exclusive-number">-0.2%</td>
+                                <td class="exclusive-number">46.7%</td>
+                                <td class="exclusive-number">11.7%</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">Lam Research</td>
+                                <td class="exclusive-number">14.9</td>
+                                <td class="exclusive-number">-14.5%</td>
+                                <td class="exclusive-number">46.8%</td>
+                                <td class="exclusive-number">12.8%</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">北方华创</td>
+                                <td class="exclusive-number">6.1</td>
+                                <td class="exclusive-number">39.4%</td>
+                                <td class="exclusive-number">45.0%</td>
+                                <td class="exclusive-number">18.5%</td>
+                            </tr>
+                            <tr>
+                                <td class="font-semibold">中微公司</td>
+                                <td class="exclusive-number">1.4</td>
+                                <td class="exclusive-number">44.7%</td>
+                                <td class="exclusive-number">42.0%</td>
+                                <td class="exclusive-number">22.3%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="sovereign-divider"></div>
+    <section id="chapter-three" class="imperial-section" data-title="第四章：产业基石">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-5xl mb-16 text-center">第四章：产业基石 - 半导体材料市场深度解析</h2>
+            <div class="authority-card mb-16">
+                <h3 class="sovereign-heading text-2xl mb-6">全球市场格局：消费、增长与供应链</h3>
+                <div class="noble-text space-y-6">
+                    <p>半导体材料是芯片制造的物质基础，其市场规模与景气度直接反映了晶圆厂的产能利用率和技术演进方向。全球半导体材料市场在2022年达到727亿美元的创纪录高点后，于2023年随着行业去库存而收缩8.2%，降至667亿美元。进入2024年，市场重拾增长，规模扩大3.8%至675亿美元，显示出稳健的复苏态势。</p>
+                    <p>市场通常被划分为晶圆制造材料和封装材料两大板块。晶圆制造材料在2023年下滑7.0%至415亿美元，2024年则恢复增长3.3%，达到429亿美元。该领域包括硅晶圆、光刻胶、电子气体、化学机械抛光（CMP）浆料等核心耗材。封装材料在2023年下滑10.1%至252亿美元，但在2024年实现了4.7%的较快增长。</p>
+                </div>
+            </div>
+            <div class="authority-card mb-16">
+                <h3 class="sovereign-heading text-2xl mb-6">关键材料分析</h3>
+                <div class="noble-text space-y-6">
+                    <p>硅晶圆作为芯片制造的基底材料，其市场规模在2022/2023年约为154亿至180亿美元。受行业库存修正影响，尤其是在成熟制程领域，2024年硅晶圆销售收入下降了7.1%。光刻材料（光刻胶及配套试剂）随着先进制程的复杂性不断提升，在2024年实现了强劲的两位数增长。全球光刻胶市场在2023年的规模约为41亿至43亿美元。电子气体全球半导体气体市场在2023年价值100.7亿美元，预计将以7.5%的年均复合增长率持续增长。其中，用于特定工艺步骤的电子特种气体（ESG）是市场的主导部分。</p>
+                </div>
+            </div>
+            <div class="authority-card">
+                <h3 class="sovereign-heading text-2xl mb-6">竞争格局：市场份额与战略定位</h3>
+                <div class="noble-text space-y-6">
+                    <p>半导体材料市场的多个关键细分领域均呈现高度集中的竞争格局，技术壁垒和客户认证周期构成了强大的护城河。硅晶圆市场高度集中，主要由日本的信越化学和SUMCO，中国台湾的环球晶圆，德国的世创，以及韩国的SK Siltron等五大供应商主导。光刻胶日本企业在该领域拥有绝对的统治地位。东京应化工业、JSR株式会社和信越化学三家公司合计占据了全球约60-70%的市场份额。电子气体市场主要由全球工业气体巨头如法国液化空气、德国/美国林德等以及一些专注于电子特气的公司所占据。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="sovereign-divider"></div>
+    <section id="chapter-four" class="imperial-section" data-title="第五章：核心需求驱动力">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-5xl mb-16 text-center">第五章：核心需求驱动力</h2>
+            <div class="grid md:grid-cols-3 gap-12 mb-16">
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-xl mb-4">AI与数据中心</h3>
+                    <div class="noble-text text-sm">
+                        <p>人工智能已成为半导体行业最强劲的增长引擎。数据中心已迅速崛起为仅次于智能手机的第二大半导体市场。Yole Group预测数据中心半导体市场将从2024年的2090亿美元增长到2030年的近5000亿美元，届时将占据整个半导体市场的半壁江山。</p>
+                    </div>
+                </div>
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-xl mb-4">汽车电动化</h3>
+                    <div class="noble-text text-sm">
+                        <p>电动汽车的半导体含量远高于传统内燃机汽车。一辆ICE汽车的半导体价值约为400至600美元，而一辆EV的半导体价值则跃升至1500至3000美元。预计到2030年，每辆汽车的平均半导体价值将从2022年的540美元上升至912美元。</p>
+                    </div>
+                </div>
+                <div class="authority-card">
+                    <h3 class="sovereign-heading text-xl mb-4">5G通信</h3>
+                    <div class="noble-text text-sm">
+                        <p>5G网络的部署正在催生对新型、高性能半导体的巨大需求。5G智能手机所需的半导体成本远高于4G手机。5G的低延迟、高可靠性特性使其成为关键物联网应用的理想选择。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="sovereign-divider"></div>
+    <section id="chapter-five" class="imperial-section" data-title="第六章：技术前沿">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-5xl mb-16 text-center">第六章：技术前沿：重塑产业格局的拐点</h2>
+            <div class="authority-card mb-16">
+                <h3 class="sovereign-heading text-2xl mb-6">摩尔定律的演进</h3>
+                <div class="noble-text space-y-6">
+                    <p>摩尔定律在过去五十多年里一直是半导体行业发展的黄金法则，它通过不断缩小晶体管尺寸带来了计算性能的指数级提升。然而，自2010年左右开始，这种微缩速度已经放缓。随着晶体管尺寸接近原子级别，量子隧穿效应等物理问题日益突出。同时，制造设备的成本急剧上升，EUV光刻机的价格每四年翻一番，使得进一步微缩的经济效益递减。</p>
+                    <p>行业的应对策略是从单纯的2D微缩转向更加多元化的创新路径。这包括采用新的晶体管架构（如FinFET和GAA）、开发更先进的3D堆叠和封装技术，以及使用新材料。这种系统级的整体创新，被视为延续摩尔定律精神的新范式。</p>
+                </div>
+            </div>
+            <div class="authority-card mb-16">
+                <h3 class="sovereign-heading text-2xl mb-6">晶体管架构革命：从FinFET到GAA</h3>
+                <div class="noble-text space-y-6">
+                    <p>为了在更小的尺寸下更好地控制电流，晶体管的结构从2D平面演进到了3D。</p>
+                    <p><strong>FinFET（鳍式场效应晶体管）：</strong> FinFET通过将沟道设计成立体的"鳍"状结构，使栅极能够从三面对其进行包裹和控制，从而显著减少了漏电并提高了性能。这项技术是过去十年先进制程（从16/14nm到5nm）的核心。</p>
+                    <p><strong>GAA（环绕栅极晶体管）：</strong> 当制程节点进入3nm及以下时，FinFET的鳍片宽度已接近物理极限，难以进一步控制短沟道效应。GAA架构应运而生，它通过将鳍片"放倒"并堆叠成水平的纳米片或纳米线，使栅极能够从四个方向完全包裹住沟道，实现了近乎完美的静电控制。</p>
+                    <p><strong>制造工艺的变革：</strong> GAA的制造流程比FinFET更为复杂。其关键步骤包括：通过外延生长交替沉积硅和硅锗层；刻蚀形成鳍状柱；通过选择性刻蚀去除作为牺牲层的硅锗；最后通过原子层沉积生长栅极介电层和金属栅极。ALD和ALE等原子级精度的工艺在GAA制造中至关重要。</p>
+                </div>
+            </div>
+            <div class="authority-card mb-16">
+                <h3 class="sovereign-heading text-2xl mb-6">光刻技术的极限突破：High-NA EUV的时代</h3>
+                <div class="noble-text space-y-6">
+                    <p>光刻是芯片制造中最关键、最昂贵的环节，其分辨率直接决定了芯片的集成度。</p>
+                    <p><strong>EUV（极紫外光刻）：</strong> EUV光刻技术采用13.5nm波长的光，取代了传统的DUV，使得7nm及以下的先进制程成为可能。ASML在该领域拥有100%的垄断地位。</p>
+                    <p><strong>High-NA EUV（高数值孔径EUV）：</strong> 为了进一步提升分辨率以支持2nm及以下的节点，ASML开发了数值孔径从0.33提升至0.55的High-NA EUV光刻机。更高的NA意味着更强的光线聚焦能力，可将分辨率提升至8nm半间距。第一台High-NA EUV原型机已于2023年底交付，预计将在2025-2026年投入量产。</p>
+                </div>
+            </div>
+            <div class="authority-card">
+                <h3 class="sovereign-heading text-2xl mb-6">先进封装与新材料</h3>
+                <div class="noble-text space-y-6">
+                    <p>随着摩尔定律的传统微缩路径日益接近物理极限，先进封装已成为提升系统性能、功耗和成本效益的核心技术。通过将不同的芯片（Chiplet）集成在同一个封装内，可以实现超越单个芯片的强大功能。2.5D封装（如TSMC的CoWoS）通过一个硅中介层将多个芯片水平互连，主要用于集成GPU和HBM。3D封装则直接将芯片垂直堆叠，实现更短的互连距离和更高的数据带宽。</p>
+                    <p>为了满足电动汽车、5G基站和数据中心电源等应用对高功率、高频率和高效率的需求，碳化硅（SiC）和氮化镓（GaN）为代表的宽禁带半导体材料正迎来快速发展。SiC器件相比传统硅器件具有更高的耐压、更低的损耗和更高的工作温度。GaN器件在更高频率下的开关性能优于SiC，使其在消费类快充、数据中心电源和5G射频等领域具备优势。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="sovereign-divider"></div>
+    <section id="chapter-six" class="imperial-section" data-title="第七章：地缘政治棋局">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-5xl mb-16 text-center">第七章：地缘政治棋局：产业政策与战略脱钩</h2>
+            <div class="authority-card mb-16">
+                <h3 class="sovereign-heading text-2xl mb-6">美国《CHIPS与科学法案》：重塑全球领导力</h3>
+                <div class="noble-text space-y-6">
+                    <p>美国于2022年8月签署的《CHIPS与科学法案》是一项历史性的产业政策，旨在通过大规模补贴和投资，重振其本土半导体制造业。该法案总授权金额约2800亿美元，其中直接用于半导体产业的资金为527亿美元。这笔资金主要分为三部分：制造激励390亿美元、研发投入130亿美元、供应链安全与其他约25亿美元。</p>
+                    <p>法案的核心目标是将美国在全球半导体制造业中的份额从目前的12%提升，并夺回在先进制程制造领域的领导地位。自法案提出以来，截至2024年8月，半导体生态系统内的公司已宣布在美国28个州投资超过90个新项目，总投资额近4500亿美元。</p>
+                    <p>关键项目投资包括：英特尔获得高达85亿美元的直接拨款和110亿美元的贷款；台积电在亚利桑那州凤凰城投资建设三座晶圆厂，总投资额超过650亿美元；三星计划在德克萨斯州泰勒市投资约450亿美元。</p>
+                </div>
+            </div>
+            <div class="authority-card mb-16">
+                <h3 class="sovereign-heading text-2xl mb-6">欧盟《欧洲芯片法案》：追求技术主权</h3>
+                <div class="noble-text space-y-6">
+                    <p>面对全球芯片短缺和对亚洲供应链的过度依赖，欧盟也推出了自己的《芯片法案》，旨在提升其在全球半导体市场的地位。该法案于2023年9月生效，目标是将欧盟在全球半导体市场的份额从目前的约10%提高到2030年的20%。为此，法案计划动员超过430亿欧元的公共和私人投资。</p>
+                    <p>法案的三大支柱包括：整合欧盟、成员国和私营部门的资源支持技术能力建设和创新；通过简化审批程序和提供国家援助吸引投资；建立协调机制监测半导体供应链。尽管目标宏大，但《欧洲芯片法案》的实施面临挑战，包括复杂的监管环境、资金分配效率以及与美国和亚洲相比仍然存在的投资规模差距。</p>
+                </div>
+            </div>
+            <div class="authority-card mb-16">
+                <h3 class="sovereign-heading text-2xl mb-6">中国"国家大基金"与国产化替代战略</h3>
+                <div class="noble-text space-y-6">
+                    <p>面对美国日益收紧的技术出口管制，中国正通过国家主导的投资和产业政策，全力加速半导体产业链的自主化进程。国家大基金（国家集成电路产业投资基金）是中国推动半导体产业发展的核心政策工具。该基金通过对国内半导体公司的股权投资，支持其研发、扩产和并购。</p>
+                    <p>国家大基金的三期投资分别在2014年、2019年和2024年启动，募集资金分别为1387亿元、2041亿元和3440亿元人民币。第三期规模超过前两期总和，预计将继续投资于产业链的"卡脖子"环节。在政策和市场的双重驱动下，中国半导体设备和材料的国产化率正在加速提升。</p>
+                </div>
+            </div>
+            <div class="authority-card">
+                <h3 class="sovereign-heading text-2xl mb-6">出口管制：技术脱钩的"利刃"</h3>
+                <div class="noble-text space-y-6">
+                    <p>美国政府将出口管制作为遏制中国技术进步，特别是其在AI和军事现代化领域发展的关键工具。自2022年10月7日起，美国商务部工业与安全局实施了一系列严格的出口管制措施，并在此后不断更新升级。这些措施主要限制向中国出口用于AI和超级计算的高性能芯片、用于制造先进制程芯片的设备零部件和技术。</p>
+                    <p>管制针对的是能够生产以下级别芯片的设施：逻辑芯片16/14nm或更先进的非平面晶体管架构；DRAM内存18nm半间距或更小；NAND闪存128层或更多。这些管制措施对全球设备和材料公司产生了深远影响，美国公司应用材料和泛林集团在中国的业务受到直接冲击，盟友公司如ASML也面临类似压力。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="sovereign-divider"></div>
+    <section id="chapter-seven" class="imperial-section" data-title="第八章：投资展望与战略结论">
+        <div class="sovereign-container">
+            <h2 class="imperial-title text-5xl mb-16 text-center">第八章：投资展望与战略结论</h2>
+            <div class="authority-card mb-16">
+                <h3 class="sovereign-heading text-2xl mb-6">结构性赢家：识别长期价值所在</h3>
+                <div class="noble-text space-y-6">
+                    <p>在当前由AI、地缘政治和技术拐点共同塑造的复杂环境中，投资策略应超越短期的周期性波动，聚焦于具备长期结构性增长动能和强大护城河的企业。我们识别出三类核心的"结构性赢家"：</p>
+                    <p><strong>1. 技术路线图上的"收费站"：</strong> 随着半导体制造工艺日益复杂，少数在关键技术节点上拥有垄断或寡头地位的公司，其战略价值愈发凸显。ASML在EUV光刻领域的绝对垄断地位、KLA在过程控制领域的市场主导地位、以及在原子层沉积（ALD）和原子层刻蚀（ALE）等新兴原子级制造工艺中占据技术领先地位的公司，将在GAA等新晶体管架构的量产中扮演关键角色。</p>
+                    <p><strong>2. 赋能下一代性能的关键材料供应商：</strong> 芯片性能的提升越来越依赖于新材料的创新。先进光刻胶供应商、宽禁带半导体材料供应商特别是碳化硅（SiC）晶圆领域的领导者、先进封装材料供应商，都将长期受益于行业的技术进步。</p>
+                    <p><strong>3. 地缘政治庇护下的本土冠军：</strong> 在全球供应链重构和国产化替代的大趋势下，特定区域的本土龙头企业将获得独特的市场机遇。中国设备与材料龙头如北方华创和中微公司，正受益于国内巨大的市场空间和国家政策的强力支持。</p>
+                </div>
+            </div>
+            <div class="authority-card mb-16">
+                <h3 class="sovereign-heading text-2xl mb-6">风险与挑战：驾驭不确定性</h3>
+                <div class="noble-text space-y-6">
+                    <p>尽管长期前景光明，但投资者必须清醒地认识到行业面临的显著风险：地缘政治风险加剧、周期性波动依然存在、技术转型的执行风险。中美科技博弈是当前最大的不确定性，出口管制的范围和力度可能随时变化。由政府补贴驱动的全球性产能扩张可能导致部分领域出现供过于求。High-NA EUV、GAA等新技术的商业化之路充满挑战。</p>
+                </div>
+            </div>
+            <div class="investment-logic-card">
+                <h3 class="sovereign-heading text-2xl mb-6">战略性结论</h3>
+                <div class="noble-text space-y-6">
+                    <p>对于寻求在半导体材料与设备领域进行长期资本配置的投资者，我们提出以下战略性结论：拥抱复杂性，投资"赋能者"；区分周期与结构，长线布局；将地缘政治纳入估值框架。总之，半导体材料与设备行业正处在一个前所未有的十字路口。旧的、由PC和智能手机驱动的全球化周期正在被新的、由AI和地缘政治驱动的多元化、区域化周期所取代。能够深刻理解并驾驭这一结构性变局的投资者，将有望在未来十年捕获这一"硬科技"领域的核心价值。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="sovereign-divider"></div>
+    <section class="imperial-section bg-gradient-to-b from-transparent to-black bg-opacity-30">
+        <div class="sovereign-container">
+            <h2 class="sovereign-heading text-3xl mb-12 text-center">引用文献</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl mx-auto">
+                <div class="citation-item"><a href="https://www.semiconductors.org/policies/tax/market-data/?type=post" target="_blank">1. Market Data - Semiconductor Industry Association</a></div>
+                <div class="citation-item"><a href="https://www.semiconductors.org/global-semiconductor-sales-increase-19-1-in-2024-double-digit-growth-projected-in-2025/" target="_blank">2. Global Semiconductor Sales Increase 19.1% in 2024</a></div>
+                <div class="citation-item"><a href="https://silicon-saxony.de/en/semi-global-spending-on-semiconductor-equipment-will-rise-to-117-billion-us-dollars-in-2024/" target="_blank">3. SEMI: Global spending on semiconductor equipment</a></div>
+                <div class="citation-item"><a href="https://www.semi.org/en/semi-press-release/global-semiconductor-equipment-billings-surged-to-117-billion-dollars-in-2024-semi-reports" target="_blank">4. Global Semiconductor Equipment Billings Surged</a></div>
+                <div class="citation-item"><a href="https://www.prnewswire.com/news-releases/global-semiconductor-equipment-billings-surged-to-117-billion-in-2024-semi-reports-302423925.html" target="_blank">5. Global Semiconductor Equipment Billings 2024</a></div>
+                <div class="citation-item"><a href="https://evertiq.com/news/2025-04-29-global-semiconductor-materials-market-posts-675b-in-2024-revenue" target="_blank">6. Global semiconductor materials market posts 2024 revenue</a></div>
+                <div class="citation-item"><a href="https://www.semi.org/en/semi-press-releases/2024-global-semiconductor-materials-market-posts-67.5-billion-dollars-in-revenue-semi-reports" target="_blank">7. 2024 Global Semiconductor Materials Market Posts Revenue</a></div>
+                <div class="citation-item"><a href="https://flevy.com/blog/semiconductor-industry-value-chain-deep-dive/" target="_blank">8. Semiconductor Industry Value Chain: Deep Dive</a></div>
+                <div class="citation-item"><a href="https://www.semiconductors.org/wp-content/uploads/2018/06/SIA-Beyond-Borders-Report-FINAL-June-7.pdf" target="_blank">9. BEYOND BORDERS - Semiconductor Industry Association</a></div>
+                <div class="citation-item"><a href="https://www.rabobank.com/knowledge/d011371771-mapping-global-supply-chains-the-case-of-semiconductors" target="_blank">10. Mapping Global Supply Chains – The Case of Semiconductors</a></div>
+                <div class="citation-item"><a href="https://www.semiconductors.org/wp-content/uploads/2024/05/Report_Emerging-Resilience-in-the-Semiconductor-Supply-Chain.pdf" target="_blank">11. EMERGING RESILIENCE IN THE SEMICONDUCTOR SUPPLY CHAIN</a></div>
+                <div class="citation-item"><a href="https://www.semiconductors.org/wp-content/uploads/2024/05/SIA-2024-Factbook.pdf" target="_blank">12. FACTBOOK - Semiconductor Industry Association</a></div>
+                <div class="citation-item"><a href="https://www.yolegroup.com/product/report/overview-of-the-semiconductor-devices-industry-h1-2025/" target="_blank">13. Overview of the Semiconductor Devices Industry</a></div>
+                <div class="citation-item"><a href="https://quartr.com/insights/company-research/understanding-the-semiconductor-value-chain-key-players-and-dynamics" target="_blank">14. Understanding the Semiconductor Value Chain</a></div>
+                <div class="citation-item"><a href="https://en.wikipedia.org/wiki/Semiconductor_industry" target="_blank">15. Semiconductor industry - Wikipedia</a></div>
+                <div class="citation-item"><a href="https://en.wikipedia.org/wiki/United_States_New_Export_Controls_on_Advanced_Computing_and_Semiconductors_to_China" target="_blank">16. United States Export Controls on Semiconductors</a></div>
+                <div class="citation-item"><a href="https://en.wikipedia.org/wiki/China_Integrated_Circuit_Industry_Investment_Fund" target="_blank">17. China Integrated Circuit Industry Investment Fund</a></div>
+                <div class="citation-item"><a href="https://elnion.com/2025/09/06/beijing-turns-the-screw-china-pushes-domestic-firms-to-source-half-their-chips-locally/" target="_blank">18. Beijing Turns the Screw: China Pushes Domestic Firms</a></div>
+                <div class="citation-item"><a href="https://www.deloitte.com/us/en/insights/industry/technology/technology-media-telecom-outlooks/semiconductor-industry-outlook.html" target="_blank">19. 2025 global semiconductor industry outlook</a></div>
+                <div class="citation-item"><a href="https://en.macromicro.me/charts/88498/world-semi-mfg-inventory-days-yoy" target="_blank">20. Major Semiconductor Companies - Inventory Days</a></div>
+                <div class="citation-item"><a href="https://www.techinsights.com/blog/case-mild-slowing-2023-semiconductor-cyclicality" target="_blank">21. The Case for a Mild Slowing in 2023</a></div>
+                <div class="citation-item"><a href="https://www.deloitte.com/us/en/Industries/tmt/articles/semiconductor-industry-outlook.html" target="_blank">22. 2024 Semiconductor Industry Outlook</a></div>
+                <div class="citation-item"><a href="https://www.semiconductorintelligence.com/semiconductor-capex-down-in-2023/" target="_blank">23. Semiconductor CapEx down in 2023 – SC-IQ</a></div>
+                <div class="citation-item"><a href="https://semiwiki.com/uncategorized/331322-semiconductor-capex-down-in-2023/" target="_blank">24. Semiconductor CapEx down in 2023 - SemiWiki</a></div>
+                <div class="citation-item"><a href="https://www.deloitte.com/us/en/Industries/tmt/articles/semiconductor-capital-spending.html" target="_blank">25. Semiconductor expansion and capital spending</a></div>
+                <div class="citation-item"><a href="https://www.yolegroup.com/product/report/datacenter-semiconductor-trends-2025/" target="_blank">26. Data Center Semiconductor Trends 2025</a></div>
+                <div class="citation-item"><a href="https://www.yolegroup.com/press-release/data-center-semiconductor-trends-2025-artificial-intelligence-reshapes-compute-and-memory-markets/" target="_blank">27. Data center semiconductor trends 2025</a></div>
+                <div class="citation-item"><a href="https://www.semiconductors.org/wp-content/uploads/2024/09/SIA_State-of-Industry-Report_2024_final_091124.pdf" target="_blank">28. 2024 state of the us semiconductor industry</a></div>
+                <div class="citation-item"><a href="https://www.eenewseurope.com/en/gartner-is-bullish-on-ai-sees-12-6-chip-market-growth-in-2025/" target="_blank">29. Gartner is bullish on AI, sees 12.6% chip market growth</a></div>
+                <div class="citation-item"><a href="https://evertiq.com/news/56674" target="_blank">30. Global semiconductor revenue to grow 14% in 2025</a></div>
+                <div class="citation-item"><a href="https://www.gartner.com/en/newsroom/press-releases/2024-10-28-gartner-forecasts-worldwide-semiconductor-revenue-to-grow-14-percent-in-2025" target="_blank">31. Gartner Forecasts Worldwide Semiconductor Revenue 2025</a></div>
+                <div class="citation-item"><a href="https://think.ing.com/articles/expect-robust-semiconductor-demand-in-2025-but-not-in-all-segments/" target="_blank">32. Expect robust semiconductor demand in 2025</a></div>
+                <div class="citation-item"><a href="https://anysilicon.com/gartner-forecasts-strong-semiconductor-market-recovery-driven-by-ai-memory-and-gpu-growth/" target="_blank">33. Gartner Forecasts Strong Semiconductor Market Recovery</a></div>
+                <div class="citation-item"><a href="https://my.idc.com/getdoc.jsp?containerId=prUS53791725" target="_blank">34. Investment in AI Infrastructure Drives Semiconductor Growth</a></div>
+                <div class="citation-item"><a href="https://sourceability.com/post/planning-for-the-future-2025-semiconductor-market-outlook" target="_blank">35. Planning for the future: 2025 semiconductor market outlook</a></div>
+                <div class="citation-item"><a href="https://www.pwc.com/gx/en/industries/technology/state-of-the-semicon-industry.html" target="_blank">36. State of the semiconductor industry</a></div>
+                <div class="citation-item"><a href="https://www.pwc.com/gx/en/industries/technology/state-of-the-semiconductor-industry-report.pdf" target="_blank">37. State of the semiconductor industry - PwC Report</a></div>
+                <div class="citation-item"><a href="https://www.pwc.com/gx/en/industries/technology/pwc-semiconductor-and-beyond-2026-full-report.pdf" target="_blank">38. PwC Semiconductor and beyond 2026</a></div>
+                <div class="citation-item"><a href="https://www.semi.org/en/news-media-press-releases/semi-press-releases/global-semiconductor-equipment-billings-slip-to-%24106.3-billion-in-2023-semi-reports" target="_blank">39. Global Semiconductor Equipment Billings 2023</a></div>
+                <div class="citation-item"><a href="https://market.us/report/semiconductor-manufacturing-equipment-market/" target="_blank">40. Semiconductor Manufacturing Equipment Market</a></div>
+                <div class="citation-item"><a href="https://www.fortunebusinessinsights.com/semiconductor-manufacturing-equipment-market-101964" target="_blank">41. Semiconductor Manufacturing Equipment Market Forecast</a></div>
+                <div class="citation-item"><a href="https://www.grandviewresearch.com/horizon/outlook/semiconductor-manufacturing-equipment-market-size/global" target="_blank">42. Semiconductor Manufacturing Equipment Market Size & Outlook</a></div>
+                <div class="citation-item"><a href="https://www.eetimes.com/intels-embarrassment-of-riches-advanced-packaging/" target="_blank">43. Intel's Embarrassment of Riches: Advanced Packaging</a></div>
+                <div class="citation-item"><a href="https://www.idtechex.com/en/research-report/advanced-semiconductor-packaging/1042" target="_blank">44. Advanced Semiconductor Packaging 2025-2035</a></div>
+                <div class="citation-item"><a href="https://www.snsinsider.com/reports/semiconductor-equipment-market-4935" target="_blank">45. Semiconductor Equipment Market Size, Share & Growth</a></div>
+                <div class="citation-item"><a href="https://www.yolegroup.com/strategy-insights/semiconductor-equipment-market-share-reshuffles-amid-memory-demand-decline/" target="_blank">46. Semiconductor equipment: market share reshuffles</a></div>
+                <div class="citation-item"><a href="https://www.asml.com/en/news/press-releases/2025/q3-2025-financial-results" target="_blank">47. ASML Q3 2025 Financial Results</a></div>
+                <div class="citation-item"><a href="https://www.asml.com/en/news/press-releases/2024/asml-expects-impact-of-updated-export-restrictions-to-fall-within-outlook-for-2025" target="_blank">48. ASML Export Restrictions Impact 2025</a></div>
+                <div class="citation-item"><a href="https://markets.financialcontent.com/wral/article/tokenring-2025-10-16-asml-navigates-geopolitical-storm-with-strong-earnings-and-ai-tailwinds-china-policies-reshape-semiconductor-future" target="_blank">49. ASML Navigates Geopolitical Storm</a></div>
+                <div class="citation-item"><a href="https://www.caixinglobal.com/2025-10-16/asml-sees-china-sales-normalizing-in-2026-after-backlog-fueled-surge-102372186.html" target="_blank">50. ASML Sees China Sales Normalizing in 2026</a></div>
+                <div class="citation-item"><a href="https://www.gurufocus.com/news/3130597/applied-materials-amat-faces-revenue-hit-from-expanded-export-restrictions?mobile=true" target="_blank">51. Applied Materials Faces Revenue Hit</a></div>
+                <div class="citation-item"><a href="https://www.alphaspread.com/market-news/regulatory-actions/applied-materials-warns-of-revenue-loss-due-to-new-us-export-restrictions-to-china" target="_blank">52. Applied Materials Export Restrictions</a></div>
+                <div class="citation-item"><a href="https://www.investopedia.com/applied-materials-sees-710m-hit-from-china-curbs-heres-what-you-should-know-11823701" target="_blank">53. Applied Materials Sees Revenue Hit From China</a></div>
+                <div class="citation-item"><a href="https://globaltradealert.org/intervention/86463-china-market-regulation-authority-witholds-approval-for-us-firm-applied-materials-acquisition-of-kokusai-electric" target="_blank">54. China Withholds Approval for Applied Materials Acquisition</a></div>
+                <div class="citation-item"><a href="https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-announces-update-kokusai-electric-acquisition/" target="_blank">55. Applied Materials Kokusai Electric Acquisition</a></div>
+                <div class="citation-item"><a href="https://www.tradingview.com/news/tradingview:3eb97361a9c80:0-lam-research-corp-sec-10-k-report/" target="_blank">56. LAM RESEARCH CORP SEC 10-K Report</a></div>
+                <div class="citation-item"><a href="https://www.justice.gov/archives/opa/pr/lam-research-corp-and-kla-tencor-corp-abandon-merger-plans" target="_blank">57. Lam Research and KLA-Tencor Abandon Merger</a></div>
+                <div class="citation-item"><a href="https://finbox.com/SZSE:002371/explorer/total_rev" target="_blank">58. NAURA Technology Group Revenue</a></div>
+                <div class="citation-item"><a href="https://stockanalysis.com/quote/she/002371/revenue/" target="_blank">59. NAURA Technology Group Revenue - Stock Analysis</a></div>
+                <div class="citation-item"><a href="https://www.moomoo.com/news/post/49945636/cinno-research-in-2024-the-top-10-global-semiconductor-equipment" target="_blank">60. CINNO Research: Top 10 Semiconductor Equipment Manufacturers</a></div>
+                <div class="citation-item"><a href="https://www.yicaiglobal.com/star50news/2025_02_276798549332673953796" target="_blank">61. AMEC Revenue Growth Analysis</a></div>
+                <div class="citation-item"><a href="https://tracenable.com/company/advanced-micro-fabrication-equipment-inc-china/income-statement" target="_blank">62. Advanced Micro-Fabrication Equipment Income Statement</a></div>
+                <div class="citation-item"><a href="https://www.yicaiglobal.com/star50news/2025_01_166782759873269465113" target="_blank">63. Semiconductor Equipment Manufacturers Growth Rate</a></div>
+                <div class="citation-item"><a href="https://www.metal.com/en/newscontent/103275214" target="_blank">64. Investment Surged - Semiconductor Industry Localization</a></div>
+                <div class="citation-item"><a href="https://www.asml.com/en/investors/financial-results" target="_blank">65. Financial results ASML</a></div>
+                <div class="citation-item"><a href="https://ir.appliedmaterials.com/static-files/5b132b88-2f33-43b4-9294-7f28fd9eb297" target="_blank">66. Applied Materials Form 10-K</a></div>
+                <div class="citation-item"><a href="https://www.sec.gov/Archives/edgar/data/707549/000070754924000063/lrcx-20240630.htm" target="_blank">67. Lam Research SEC Filing</a></div>
+                <div class="citation-item"><a href="https://www.tel.com/ir/index.html" target="_blank">68. Tokyo Electron Investor Relations</a></div>
+                <div class="citation-item"><a href="https://ir.kla.com/sec-filings/all-sec-filings/content/0000319201-25-000024/0000319201-25-000024.pdf" target="_blank">69. KLA 10-K SEC Filing</a></div>
+            </div>
+        </div>
+    </section>
+    <script>
+        const progressBar = document.querySelector('.reading-progress');
+        const progressFill = document.querySelector('.reading-progress-fill');
+        const progressTooltip = document.getElementById('progress-tooltip');
+        const sections = document.querySelectorAll('section[id], header[id]');
+        let currentSectionTitle = '';
+        let sectionsData = [];
+
+        function initSections() {
+            sectionsData = Array.from(sections).map(section => ({
+                id: section.getAttribute('id'),
+                title: section.getAttribute('data-title') || section.querySelector('h1, h2')?.textContent || '未知章节',
+                offsetTop: section.offsetTop,
+                offsetHeight: section.offsetHeight
+            }));
+        }
+
+        function updateProgress() {
+            const scrolled = window.pageYOffset;
+            const maxHeight = document.body.scrollHeight - window.innerHeight;
+            const progress = (scrolled / maxHeight) * 100;
+            progressFill.style.height = `${progress}%`;
+
+            let currentSection = '';
+            sectionsData.forEach(section => {
+                if (scrolled >= section.offsetTop - 300) {
+                    currentSection = section.id;
+                    currentSectionTitle = section.title;
+                }
+            });
+        }
+
+        progressBar.addEventListener('click', (e) => {
+            const rect = progressBar.getBoundingClientRect();
+            const clickY = e.clientY - rect.top;
+            const progressHeight = rect.height;
+            const clickPercent = clickY / progressHeight;
+            const maxHeight = document.body.scrollHeight - window.innerHeight;
+            const targetScroll = maxHeight * clickPercent;
+            window.scrollTo({top: targetScroll, behavior: 'smooth'});
+        });
+
+        progressBar.addEventListener('mouseenter', () => {
+            if (currentSectionTitle) {
+                progressTooltip.textContent = currentSectionTitle;
+                progressTooltip.classList.add('show');
+            }
+        });
+
+        progressBar.addEventListener('mouseleave', () => {
+            progressTooltip.classList.remove('show');
+        });
+
+        window.addEventListener('scroll', updateProgress);
+        window.addEventListener('load', () => {
+            initSections();
+            updateProgress();
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const now = new Date();
+            const month = now.getMonth();
+            const quarter = Math.floor(month / 3) + 1;
+            const year = now.getFullYear();
+            document.getElementById('date-cn').textContent = `${year}年Q${quarter}`;
+            document.getElementById('date-en').textContent = `Q${quarter} ${year}`;
+        });
+    </script>
+</body>
+</html>
