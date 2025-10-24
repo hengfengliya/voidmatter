@@ -14,7 +14,7 @@ const reportsDatabase = [
         viewCount: 3200,
         downloadCount: 680,
         rating: 4.9,
-        filePath: 'industry-reports/全球油气开采与油田服务.html',
+        filePath: 'industry-reports/101010油气开采与油田服务行业研究报告_20250701.html',
         classification: {
             industry: '能源',
             subIndustry: '能源', 
@@ -31,7 +31,7 @@ const reportsDatabase = [
         viewCount: 2950,
         downloadCount: 725,
         rating: 4.8,
-        filePath: 'industry-reports/石油天然气行业深度分析.html',
+        filePath: 'industry-reports/101020石油与天然气行业研究报告_20250701.html',
         classification: {
             industry: '能源',
             subIndustry: '能源',
@@ -48,7 +48,7 @@ const reportsDatabase = [
         viewCount: 2650,
         downloadCount: 580,
         rating: 4.7,
-        filePath: 'industry-reports/农用化工行业深度研究报告.html',
+        filePath: 'industry-reports/151010农用化工行业研究报告_20250701.html',
         classification: {
             industry: '原材料',
             subIndustry: '化工',
@@ -65,12 +65,12 @@ const reportsDatabase = [
         viewCount: 1800,
         downloadCount: 420,
         rating: 4.6,
-        filePath: 'industry-reports/化学工业.html',
+        filePath: 'industry-reports/151030化学原料行业研究报告_20250701.html',
         classification: {
             industry: '原材料',
             subIndustry: '化工',
-            thirdLevel: '基础化工',
-            fourthLevel: '化学制品'
+            thirdLevel: '化学原料',
+            fourthLevel: ''
         }
     },
     {
@@ -82,7 +82,7 @@ const reportsDatabase = [
         viewCount: 1650,
         downloadCount: 380,
         rating: 4.5,
-        filePath: 'industry-reports/化学纤维.html',
+        filePath: 'industry-reports/151020化学纤维行业研究报告_20250701.html',
         classification: {
             industry: '原材料',
             subIndustry: '化工',
@@ -99,7 +99,7 @@ const reportsDatabase = [
         viewCount: 2100,
         downloadCount: 510,
         rating: 4.7,
-        filePath: 'industry-reports/塑料.html',
+        filePath: 'industry-reports/151050塑料行业研究报告_20250701.html',
         classification: {
             industry: '原材料',
             subIndustry: '化工',
@@ -116,7 +116,7 @@ const reportsDatabase = [
         viewCount: 1500,
         downloadCount: 350,
         rating: 4.4,
-        filePath: 'industry-reports/橡胶.html',
+        filePath: 'industry-reports/151060橡胶行业研究报告_20250701.html',
         classification: {
             industry: '原材料',
             subIndustry: '化工',
